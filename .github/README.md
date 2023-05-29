@@ -30,7 +30,7 @@ You can find more in [my resume](https://cv.julien.io) in English (also availabl
 
 - [Josh Highet](https://github.com/joshhighet) for the original [ransomwatch](https://github.com/joshhighet/ransomwatch) project. 
 - [Ransomlook](https://github.com/RansomLook/Ransomlook) for ideas of new features included in [Ransomware.live](https://www.ransomware.live).
-- [Valéry Rieß-Marchive](https://twitter.com/ValeryMarchive) for the ideas and his involvement in the cyber community.
+- [Valéry Rieß-Marchive](https://twitter.com/ValeryMarchive) for ideas and his involvement in the cyber community.
 
 ## 📜 License
 
