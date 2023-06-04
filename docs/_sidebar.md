@@ -1,0 +1,13 @@
+- [🏡 Home](README.md)
+- [📅 Recent victims](recentposts.md)
+- [🥷 Recent cyberattacks](recentcyberattacks.md)
+- [📄 All posts](allposts.md)
+- [🚦 Groups status](status.md)
+- [🏴‍☠️ Group profiles](profiles.md)
+- [💬 Negotiations](negotiations.md)
+- [📊 Stats & graphs](stats.md)
+- [🔓 Decryption Tools](decryption.md)
+- [💁🏻‍♂️ About](about.md)
+- [📰 Changelog](CHANGELOG.md)
+- [⚠️ Disclaimer](disclaimer.md)
+
