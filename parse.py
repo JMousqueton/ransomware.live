@@ -180,7 +180,8 @@ def appender(post_title, group_name, description="", website="", published="", p
         #    toteams(newpost['post_title'], newpost['group_name'])
         # Mastodon notification 
         if os.environ.get('MASTODON_TOKEN') is not None:
-            toMastodon(post_title,group_name)
+ #           toMastodon(post_title,group_name)
+            print("")
 
         # Pushover notification 
         if os.environ.get('PUSH_API') is not None:

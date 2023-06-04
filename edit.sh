@@ -1,4 +1,7 @@
 #!/bin/bash
+## 
+# Edit either posts.json or groups.json if possible (not locked by parsing or scraping) 
+##
 
 if [[ "$1" != "groups" && "$1" != "posts" ]]
 then

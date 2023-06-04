@@ -11,6 +11,19 @@ logging.basicConfig(
 
 NowTime=dt.now()
 
+
+def get_file_date(file_path):
+    stat = os.stat(file_path)
+    timestamp = stat.st_mtime
+    file_date = dt.fromtimestamp(timestamp)
+    return file_date
+
+def is_file_less_than_days_old(file_path):
+    file_date = get_file_date(file_path)
+    current_date = dt.now()
+    time_difference = current_date - file_date
+    return time_difference.days < 3
+
 def openjson(url):
     '''
     opens a file and returns the json as a dict
@@ -96,17 +109,34 @@ def tweetmarkdown():
                     dir_name = 'REvil'
                 case _:
                     dir_name = group_name.capitalize()
+            if is_file_less_than_days_old('/var/www/chat.ransomware.live/data/'+dir_name+'/'+chat_name+'.json'):
+                note = '  🆕' 
+            else:
+                note ='' 
 
             with open('/var/www/chat.ransomware.live/data/'+dir_name+'/'+chat_name+'.json') as srcfile:
                     data = json.load(srcfile)
             chat_id = data['chat_id'].replace('\n',' ')
             count = sum(1 for message in data['messages'] if 'content' in message)
 
+            try:
+                date_object = dt.strptime(chat_id, "%Y%m%d")
+                chat_id = 'Date: ' + date_object.strftime("%Y-%m-%d")
+            except:
+                pass
+            if data['chat_id'] is '':
+                try:
+                    date_object = dt.strptime(chat_name[:8], "%Y%m%d")
+                    chat_id = 'Date: ' + date_object.strftime("%Y-%m-%d") 
+                except:
+                    pass
+
             if est_domaine(chat_name.replace('_','.')):
-                    name = chat_name.replace('_','.') +' <a href="https://www.'+chat_name.replace('_','.')+'" rel="nofollow" target=_blank>🔗</a>' 
+                    # name = chat_name.replace('_','.') +' <a href="https://www.'+chat_name.replace('_','.')+'" rel="nofollow" target=_blank>🔗</a>' 
+                    name = '[`' + chat_name.replace('_','.') + '`](https://www.'+ chat_name.replace('_','.') + ')'
             else:
                 name = chat_name.replace('_','.')
-            writeline(tweetspage,'| [' + group_name + '](profiles.md?id=' + link + ')  | ' +  name + ' | ' + chat_id + ' | ' + str(count) + ' | <a href="https://chat.ransomware.live/chat/' + group_name + '/' + chat_name + '.html" target=_blank> 💬 </a> | ')
+            writeline(tweetspage,'| [' + group_name + '](profiles.md?id=' + link + ')  | ' +  name + ' ' + note + ' | ' + chat_id + ' | ' + str(count) + ' | <a href="https://chat.ransomware.live/chat/' + group_name + '/' + chat_name + '.html" target=_blank> 💬 </a> | ')
 
 
     

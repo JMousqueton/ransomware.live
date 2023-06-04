@@ -427,7 +427,7 @@ def profilepage():
         directory = '/var/www/chat.ransomware.live/docs/chat/' + nego +'/'
         if directory_exists(directory):
             writeline(profilepage, '')
-            writeline(profilepage, '### Negotiations')
+            writeline(profilepage, '### Negotiation chats')
             writeline(profilepage, '')
             writeline(profilepage, '| Name | Link |')
             writeline(profilepage, '|---|---|')
@@ -665,7 +665,7 @@ def profile():
         directory = '/var/www/chat.ransomware.live/docs/chat/' + nego +'/'
         if directory_exists(directory):
             writeline(profilepage, '')
-            writeline(profilepage, '### Negotiations')
+            writeline(profilepage, '### Negotiation chat')
             writeline(profilepage, '')
             writeline(profilepage, '| Name | Link |')
             writeline(profilepage, '|---|---|')

@@ -1,5 +1,7 @@
 #!/bin/bash
-
+##
+# check what is going on ;)
+##
 if ps -ef | grep -q "[s]crape\|[p]arse\|[m]arkdown"; then
   process_name=$(ps -ef | grep -o '[s]crape\|[p]arse\|[m]arkdown')
   elapsed_seconds=$(ps -p $(pgrep -f "python3 ransomwatch.py $process_name") -o etimes= | awk '{print $1}')

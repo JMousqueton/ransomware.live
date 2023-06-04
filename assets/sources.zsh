@@ -3,7 +3,7 @@
 # onionwsoiu53xre32jwve7euacadvhprq2jytfttb55hrbo3execodad.onion
 
 # PROBE=TRUE ./sources.zsh --socks5 telemetry.dark:9050
-
+source .env
 #set -ex
 
 SOCKS5_PROXY=localhost:9050

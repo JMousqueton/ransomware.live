@@ -11,6 +11,8 @@ import os
 from bs4 import BeautifulSoup
 from sharedutils import errlog
 from parse import appender
+import re
+from datetime import datetime
 
 def main():
     for filename in os.listdir('source'):
@@ -19,16 +21,24 @@ def main():
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                divs_name=soup.find_all('div', {"class": "card"})
-                for div in divs_name:
-                    link = div.get('data-id')
-                    parts = filename.split('-')
-                    url = parts[1].replace('.html','')
-                    post_url = 'http://' + url + '.onion/detail?id=' + link
-                    title = div.find('h3', {"class":"card-title"}).text
-                    description = div.find("div", {"class": "card-body"}).text.strip()
-                    published = div.find("div", {"class": "date-updated"}).text.strip() + '.12345'
-                    appender(title, 'medusaiocker', description,'',published,post_url)
+                articles = soup.find_all('article')
+                for article in articles:
+                    # Extract the link
+                    link = article.find('a')['href']
+
+                    # Extract the title
+                    title = article.find('h2', class_='entry-title').text.strip()
+
+                    # Extract the content
+                    content = article.find('div', class_='entry-content').text.strip()
+
+                    # Extract the published date
+                    date_element = article.find('time', class_='entry-date')
+                    published_date = date_element['datetime']
+                    # Format the published date
+                    formatted_date = datetime.strptime(published_date, "%Y-%m-%dT%H:%M:%S%z").strftime("%Y-%m-%d %H:%M:%S.%f")
+
+                    appender(title, 'medusalocker', content,'',formatted_date, link)
                 file.close()
         except:
             errlog('medusa locker : ' + 'parsing fail')

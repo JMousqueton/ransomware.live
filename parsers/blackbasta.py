@@ -29,7 +29,7 @@ def main():
                     description = ''
                     for desc in descs:
                         description += desc.text.strip()
-                    appender(title, 'blackbasta', description.replace('\n','').replace('ADDRESS',' Address '),"","",post)
+                    appender(title, 'blackbasta', description.replace('\n',' ').replace('ADDRESS',' Address '),"","",post)
                 file.close()
         except:
             errlog('blackbasta: ' + 'parsing fail')

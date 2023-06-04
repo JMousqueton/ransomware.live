@@ -7,9 +7,12 @@ docs/graphs/*.png
 docs/screenshots/*.png
 docs/screenshots/*/*.png
 !docs/screenshots/*/.empty
-docs/*.md
 docs/*/*.md
 docs/ransomware_notes/*
 !docs/ransomware_notes/README.md
 docs/google74c95375c7a4a9a1.html
 !*/.empty
+.DS_Store
+dev-graph/*.py
+BCK/
+assets/tmp/
