@@ -14,6 +14,7 @@ You can find all ransomware victims in **json** format [here](https://data.ranso
 - [ransomwhe.re](https://ransomwhe.re/) for the crypto wallet information 
 - [Zscaler ThreatLabz](https://github.com/threatlabz/ransomware_notes) for the ransomware notes 
 - [Valéry Rieß-Marchive](https://twitter.com/ValeryMarchive) for the information about [cyberattacks](https://github.com/Casualtek/Cyberwatch/) and the [negotiations chats](https://github.com/Casualtek/Ransomchats)
+- [Malpedia](https://malpedia.caad.fkie.fraunhofer.de/) for the Ransomware description 
 
 
 ## 👨🏼‍💼 About me 
@@ -35,3 +36,4 @@ You can find more in [my resume](https://cv.julien.io) in English (also availabl
 ## 📜 License
 
 ransomwatch is [licensed](https://github.com/jmousqueton/ransomware.live/blob/main/LICENSE) under [unlicense.org](https://unlicense.org/)
+
