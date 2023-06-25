@@ -1,4 +1,48 @@
+## 2023-06-21 🎶
 
+**New Features:**
+
+- Only show 10 last victims on [All Victims](allvictims) for all victims see the group dedicated page
+
+**New ransomware Group:**
+
+**Issues fixed:**
+
+
+## 2023-06-17
+
+**New Features:**
+
+- Add a TOP10 for current year ransomware gang in [Home](README) page
+- Add a [❤️ Support](about?id=%e2%9d%a4%ef%b8%8f-support) link to help me pay domain name and hosting 
+
+**New ransomware Group:**
+
+**Issues fixed:**
+
+
+## 2023-06-15
+
+**New Features:**
+
+- Replace long text from home page by graphics 
+
+**New ransomware Group:**
+
+**Issues fixed:**
+
+- [Cl0p](profiles?id=clop) parser now gets the victim website title as description. Update previous victims
+
+
+## 2023-06-05
+
+**New Features:**
+
+**New ransomware Group:**
+
+- Add [Rhysida](profiles?id=rhysida) parser.
+
+**Issues fixed:**
 
 
 ## 2023-06-03

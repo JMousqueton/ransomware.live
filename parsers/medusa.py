@@ -28,7 +28,7 @@ def main():
                     title = div.find('h3', {"class":"card-title"}).text
                     description = div.find("div", {"class": "card-body"}).text.strip()
                     published = div.find("div", {"class": "date-updated"}).text.strip() + '.12345'
-                    appender(title, 'medusa', description,'',published,post_url)
+                    appender(title, 'medusa', description.replace('\n',' '),'',published,post_url)
                 file.close()
         except:
             errlog('medusa: ' + 'parsing fail')

@@ -1,0 +1,690 @@
+<!DOCTYPE html><html lang="en"><head>
+<title>STORMOUS</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500&amp;family=Kanit:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&amp;family=Ubuntu:wght@300;400;500&amp;display=swap" rel="stylesheet">
+  <style>
+      /* header.html */
+  @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500&family=Kanit:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:wght@300;400;500&display=swap');
+#stm-header {
+margin: 0px auto;
+margin-bottom: 1rem;
+display: flex;
+justify-content: center;
+}
+/* pagest.html */
+.pagest > ul {
+list-style: none;
+display: flex;
+padding: 0px;
+margin: 0px;
+width: 100%;
+flex-wrap: wrap;
+text-align: center;
+}
+.pagest li {
+font-weight: bold;
+padding: 0.5rem;
+margin: 0px;
+background-color: #f5f1f9;
+border: thin solid #000000;
+flex: 1 0 25%;
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 44px;
+}
+.pagest .currentpage,
+.pagest .currentpage a:link, 
+.pagest .currentpage a:visited {
+color: white;
+background-color: #000000;
+}
+
+img.right,
+img.left {
+vertical-align: top;
+margin-bottom: 1em;
+}
+img.left{
+float: left;
+margin-right: 1em;
+}
+img.right{
+float: right;
+margin-left: 1em;
+}
+ul.images {
+list-style: none;
+padding: 0;
+}
+ul.images > li {
+clear: both;
+margin-bottom: 1em;
+}
+#nst-foot {
+color: #e0f7ff;
+font-family: sans-serif;
+}
+#nst-foot-search {
+margin: 1rem 0px;
+}
+
+body {
+background-color: #000000;
+min-width: 300px;
+width: auto !important;
+width: 300px;
+}
+
+#nst-wrapper {
+padding: 0.5rem;
+max-width: 960px;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* header grid */
+#nst-head {
+display: grid;
+grid-template:
+ "logo gnav" auto
+ "logo search" 2rem
+ "snav snav" auto
+ / 168px minmax(0, 1fr);
+gap: 0.5rem;
+padding-bottom: 0.5rem;
+background-color: #000000;
+color: #ffffff;
+}
+#nst-logo {
+grid-area: logo;
+justify-self: left;
+display: flex;
+align-items: flex-end;
+height: 90px
+}
+#nst-logo > img {
+width: 120px;
+height: auto;
+}
+#nst-gnav {
+grid-area: gnav;
+height: 0px;
+visibility: hidden;
+display: grid;
+grid-template-columns: repeat(4, min-content);
+justify-items: right;
+justify-content: right;
+gap: 0.5rem 1rem;
+}
+#nst-head-search {
+grid-area: search;
+}
+/* sitenav is actually in main, but JS will move it to header */
+#nst-sitenav {
+grid-area: snav;
+display: flex;
+flex-wrap: wrap;
+gap: 2px;
+/* Fake the header background */
+box-shadow: 0px 0px 0px 0.5em #000000;
+background-color: #000000;
+margin-top: -0.5rem;
+margin-bottom: 1rem;
+}
+#nst-sitenav > a,
+.nst-search-button {
+text-align: center;
+font-weight: bold;
+border: 0;
+color: #e0f7ff;
+box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+            inset -2px -2px 3px rgba(0, 0, 0, .6);
+border-radius: 0.5rem;
+background-color: #000000;
+background-image: linear-gradient(#454447, #000000);
+}
+#nst-sitenav > a {
+padding: 0.6em;
+flex: 1;
+}
+
+.nlink {
+color: inherit;
+text-decoration: none;
+}
+.nlink:hover {
+color: #f0e0ff;
+text-decoration: underline;
+}
+
+#nst-head, #nst-sitenav {
+font-family: sans-serif;
+white-space: nowrap;
+}
+.nst-search-button:hover,
+#nst-sitenav > a:hover {
+background-image: none;
+background-color: #1d1b1e;
+text-decoration: underline;
+}
+.nst-search-button:active,
+#nst-sitenav > a:active {
+box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+            inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+/* current page */
+#nst-sitenav > .here {
+ background-image: none;
+ font-style: italic;
+}
+
+#nst-content {
+background-color: white;
+padding: 0.5rem;
+border-radius: 1rem;
+}
+
+.nst-search {
+display: flex;
+gap: 0.2em;
+width: 100%;
+height: 2em;
+}
+.nst-search-q {
+flex: 1;
+width: 0px;
+}
+.nst-search-button {
+aspect-ratio: 1;
+height: 100%;
+}
+
+#nst-content img {
+max-width: 100%;
+height: auto;
+}
+
+/* Narrow screen menu items */
+#menu-open, #menu-close {
+color: inherit;
+display: none;
+position: absolute;
+right: 1rem;
+top: 1rem;
+z-index: 1;
+}
+.blur {
+background: linear-gradient(#000000, transparent);
+}
+/* Hide header screenshots */
+@media screen and (max-width: 980px) {
+ #stm-header > .header-img {
+ display: none;
+ }
+}
+@media screen and (max-width: 700px) {
+/* Hide the "nmap banner" image carousel */
+ #nmap_bnr {
+ display: none;
+ }
+ /* Fold global nav to 2x2 grid */
+ #nst-gnav {
+  grid-template-columns: repeat(2, min-content);
+ }
+}
+/* Activate narrow screen menu */
+@media screen and (max-width: 450px) {
+ #nst-sitenav {
+  display: none;
+ }
+ #nst-head {
+ grid-template:
+  "logo" 90px
+  "search" 2rem
+  "snav" auto
+  "gnav" auto;
+ justify-items: center;
+ padding-bottom: 1rem;
+ }
+ #nst-head, #nst-sitenav, #nst-gnav {
+ gap: 1rem;
+ }
+ #menu {
+ height: calc(90px + 0.5rem);
+ overflow: hidden;
+ }
+ /* show the menu icon */
+ #menu-open {
+ display: block;
+ }
+ 
+ /* menu clicked */
+ #menu.open,
+ #menu:target {
+ overflow: visible;
+ }
+ #menu.open > .blur,
+ #menu:target > .blur {
+ position: fixed;
+ left: 0;
+ top: 0;
+ padding: 7px;
+ height: 150%;
+ width: 100%;
+ }
+ /* swap menu and close icons */
+ #menu.open #menu-open,
+ #menu:target #menu-open {
+ display: none;
+ }
+ #menu.open #menu-close,
+ #menu:target #menu-close {
+ display: block;
+ }
+}
+
+.breadcrumb-nav {
+display: flex;
+list-style-type: none;
+padding: 0;
+flex-wrap: wrap;
+width: fit-content;
+margin: 0.5em 0px;
+}
+.breadcrumb.current {
+margin-left: auto;
+}
+.breadcrumb:not(.current)::after {
+content: "/";
+margin-inline: 0.25em;
+}
+
+/* general styles */
+.center {
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+}
+pre {
+overflow-x: auto;
+}
+.stormousheader {
+font-size: large;
+padding: 0;
+color: white;
+background: #000000;
+font-family: sans-serif;
+font-weight: bold;
+font-size: 140%;
+text-align: center;
+clear: both;
+border-radius: 7px;
+}
+.stormousheader-company{
+  font-size: large;
+padding: 0;
+color: white;
+background: #4a4949;
+font-family: sans-serif;
+font-weight: bold;
+font-size: 140%;
+text-align: center;
+clear: both;
+border-radius: 7px;
+}
+/* Makes a purple box with big bold text */
+.pbbox  { 
+border: 1px solid #2A0D45;
+background: #F5F1F9;
+font-size: larger;
+font-weight: bold;
+padding: 1rem;
+width: fit-content;
+clear: both; 
+}
+
+.purple, .purple a, .purple a:visited {
+color: white;
+}
+/*Shop*/ 
+table{
+     list-style: none;
+     display: inline-block;
+     margin: 0 10px;
+     position: relative;
+}
+text {
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+p.text1 {
+    color: white;
+    font: 14px Verdana, Arial, Helvetica, sans-serif;
+}
+
+p.textprice {
+    color: rgb(0, 0, 0);
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+p.h1 {
+    color: #e99922;
+    font: 11px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+p.description{
+    font: 12px Verdana, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+.item {
+  display: flex;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-image {
+  flex: 1;
+}
+
+.item-image img {
+  width: 180px;
+  padding-left: 50px;
+  display: block;
+}
+
+.item-details {
+  flex: 2;
+  padding: 10px;
+}
+
+.item-details h3 {
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+
+.item-details p {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Ubuntu',sans-serif;
+  margin-bottom: 10px;
+}
+
+.item-details button {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.item-details button:hover {
+  background-color: #ffffff;
+  color: rgb(255, 0, 0);
+}
+
+  </style>
+</head>
+<body><div id="nst-wrapper">
+
+<div id="menu">
+ <div class="blur">
+  <header id="nst-head">
+
+    <a id="menu-open" href="#menu" aria-label="Open menu">
+     <img width="44" height="44" alt="" aria-hidden="true" src="/shared/images/nst-icons.svg#menu">
+    </a>
+    <a id="menu-close" href="#" aria-label="Close menu">
+     <img width="44" height="44" alt="" aria-hidden="true" src="/shared/images/nst-icons.svg#close">
+    </a>
+
+   <a id="nst-logo" aria-label="Home page">
+    <img alt="Home page logo" srcset="images/stm.png, images/stm.png-2x.png 2x" src="images/stm.png" onerror="this.onerror=null;this.srcset=this.src" height="90" width="168"></a>
+
+   <form class="nst-search" id="nst-head-search" action="/search/">
+    <input class="nst-search-q" name="q" type="search" placeholder="Site Search">
+    <button class="nst-search-button" title="Search">
+     </button>
+   </form>
+
+  </header>
+ </div>
+</div>
+
+<main id="nst-content">
+
+<nav id="nst-sitenav">
+<a class="nlink" href="job.html">Job application</a>
+<a class="nlink" href="contact.html">contact</a>
+
+</nav>
+
+
+
+
+
+
+<h1 id="news" class="stormousheader"></h1>
+<h1 style="font-size: 15px;">
+
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/marehotels.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="">  <h3>marehotels</h3></a>
+      <p>In 2013, Mare expanded its business and opened the Mare Hotel complex within the same compound. The hotel features modern and meticulous decor, and is equipped with all the necessary amenities for a unique stay. Additionally, it offers a delightful culinary experience with the Mare Asian Food restaurant</p>
+     <a href="marehotels.html"> <button>DETAILS</button></a>
+    </div>
+  </div>
+
+
+
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/archi+.png" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="https://www.archiplusinter.com/">  <h3>archiplusinter.com</h3></a>
+      <p>The Sage Partner Network is a vibrant, close-knit partner community focused on winning together. Partner with a strong brand that can attract and retain customers. Sage provides attractive sales models and margins to help you maximize your investment in your business. </p>
+     <a href="archi+.html"> <button>DETAILS</button></a>
+    </div>
+  </div>
+
+
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/treenovum.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="https://www.treenovum.es/">  <h3>treenovum.es</h3></a>
+      <p>creative software agency that specializes in making customized software solutions </p>
+     <a href="turvatehnika.html"> <button>DETAILS</button></a>
+    </div>
+  </div>
+
+
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/ocean.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="">  <h3>ocean</h3></a>
+      <p>The Marine Engineering Study Program was established to prepare its graduates to master competence and be able to compete at the national, regional </p>
+     <a href="ocean.html"> <button>DETAILS</button></a>
+    </div>
+  </div>
+
+
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/TWHOUSE.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="">  <h3>TWHOUSE</h3></a>
+      <p>
+        The Wholesale House is a company founded in 1978 by Steven and Mary Hite. Starting from humble beginnings with two people working from their home to multiple warehouses today, one thing has never changed: their commitment to exceeding customer expectations. Through a combination of hard work and dedication, the company has become one of the largest distributors of consumer products in the United States, specializing in the mobile audio and video market</p>
+     <a href="twhouse.html"> <button>DETAILS</button></a>
+    </div>
+  </div>
+
+
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/Melco.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="">  <h3>Melco</h3></a>
+      <p>Melco Resorts &amp; Entertainment Limited (Melco) is a developer, owner and operator of integrated resort facilities in Asia and Europe.</p>
+     <a href="melco-resorts.html"> <button>DETAILS</button></a>
+    </div>
+  </div>
+
+
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/ieseco.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="">  <h3>ieseco</h3></a>
+      <p>
+        A wide range of subjects and disciplines are taught, from basic education to higher levels of vocational education and training. This includes teaching in plastic arts, humanities, social sciences, electricity, electronics, food processing, olive oil and wine, bodywork, vehicle mechanics, administrative management, electrical and automatic installation, management, finance, teaching, social and sports animation, and viticulture. This provides students with a variety of options to choose from to meet their future educational and career needs.</p>
+     <a href="ies"> <button>DETAILS</button></a>
+    </div>
+  </div>
+
+
+
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/Matrix.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="">  <h3>Matrix</h3></a>
+      <p>Company of the ICCNET group, created in 1997, MATRIX TELECOMS is a Networks and Telecoms operator with a state-of-the-art infrastructure for all types of telecommunications solution needs</p>
+     <a href="matrix.html"> <button>DETAILS</button></a>
+    </div>
+  </div>
+
+
+
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/OKS.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="">  <h3>OKS</h3></a>
+      <p>Delivering business and legal process outsourcing solutions to some of the worldâ€™s largest and most demanding organizations</p>
+     <a href="oksgroup.html"> <button>DETAILS</button></a>
+    </div>
+  </div>
+
+
+
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/Arrowall.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="">  <h3>Arrowall</h3></a>
+      <p>Arrowall Co. is curtainwall designer, manufacturer, and installer with over 30 yearsâ€™ experience in the central Texas market. The company is selective about the amount and type of work it pursues and focuses on â€œGetting It Rightâ€ in every step of the process from estimating to installation in as safe of a manner as possible</p>
+     <a href="arrowall.html"> <button>DETAILS</button></a>
+    </div>
+  </div>
+
+
+
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/Ingersoll Rand.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="">  <h3>Ingersoll Rand</h3></a>
+      <p>ngersoll Rand is a global market leader with a broad range of innovative and mission-critical air, fluid, energy and medical technologies, providing services and solutions to increase industrial productivity and efficiency. Since merging with Gardner Denver in early 2020, we have more than 300 years of combined experience and innovative expertise </p>
+     <a href=""> <button>The payment has been completed</button></a>
+    </div>
+  </div>
+  
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/furuno.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="">  <h3>FURUNO</h3></a>
+      <p>Furuno Spain S.A. is a subsidiary company of Furuno Electric Co., a world leader in marine electronics, headquartered in Nishinomiya - Japan. Since it began with the commercialization of the first fishing probe in 1948, Furuno strives to increase the security and peace of mind of its users, by being able to visualize what was previously invisible. Its capacity for innovation and development has earned it numerous international recognitions and awards. Furuno EspaÃ±a S.A., established in Madrid - Spain in 1992, is in charge, through its extensive network of authorized distributors, of commercial promotion and after-sales service, in Spain and Portugal, of products and services related to marine electronics in all maritime sectors</p>
+        <a href=""> <button>The payment has been completed</button></a>
+    </div>
+  </div>
+  
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/La Providence.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="">  <h3>La Providence</h3></a>
+      <p>Catholic educational establishment located in Blois, Campus La Providence is organized around a vocational high school, a technological high school, a higher education center, a CFA and a continuing education center .In contract with the Ministry of National Education, Youth and Sports, as well as declared to the Ministry of Labor and partner of the Center Val de Loire Regional Council, the establishment has evolved over the years into a Campus of trades services to organizations and the CFA-CFC obtained QUALIOPI certification in October 2021 for the CFA and the CFC for training actions and apprenticeship training</p>
+        <a href="laprovidense.html"> <button>DETAILS</button></a>
+    </div>
+  </div>
+ 
+  <div class="item">
+    <div class="item-image">
+      <img src="./images/companyimage/confido.jpg" alt="Item Image">
+    </div>
+    <div class="item-details">
+    <a href="">  <h3>confido</h3></a>
+      <p>Confido Technical Services LLC is a Control Systems Consultancy and Systems Integrator with particular strengths in open systems integration and legacy systems adaptation, whilst retaining the option for future development. Our flexible approach to customer requirements has resulted in a successful delivery of a diverse portfolio of solutions. Our services span a wide spectrum from Controls construction and strategy through bespoke application design and hardware development to enterprise-wide deployment and subsequent training, support and maintenance. Customer satisfaction is our first priority and we ensure our deliverables are consistent with our customers</p>
+   
+        <a href="confido.html"> <button>DETAILS</button></a>
+      </div>
+    </div>
+ 
+  
+    <div class="item">
+      <div class="item-image">
+        <img src="./images/companyimage/novelis.jpg" alt="Item Image">
+      </div>
+      <div class="item-details">
+      <a href="">  <h3>Novelis</h3></a>
+        <p> Novelis is an aluminum company created by Alcan's spin-off Alcan in 2005. It was acquired by Hindalco in 2007. In 2007, Hindalco announced through Novelis its intention to acquire Aleris, an American aluminum company for $2.6 billion</p>
+     
+          <a href="novelis.html"> <button>DETAILS</button></a>
+        </div>
+      </div>
+  
+
+      <div class="item">
+        <div class="item-image">
+          <img src="./images/companyimage/berjaya.jpg" alt="Item Image">
+        </div>
+        <div class="item-details">
+        <a href="">  <h3>berjaya</h3></a>
+          <p> For years, the name Berjaya Clubs has been sparking visions of scenic surroundings, great golfing experiences, wonderful activities, excellent food, memorable events or simply a good time. Today, we bring you the same inspiring experiences, but with a brand new touch of higher quality, class and elegance.</p>
+       
+            <a href="berjayaclubs.html"> <button>DETAILS</button></a>
+          </div>
+        </div>
+
+
+
+
+</h1></main></div></body></html>

@@ -152,6 +152,10 @@ def country2flag(pays):
             flag="AT"
         case "CHL":
             flag="CL"
+        case "UK":
+            flag="GB"
+        case "JAM":
+            flag="JM"
         case _:
             flag=pays[:2]
     return "![" + pays + "](https://images.ransomware.live/flags/"+flag+".svg)"

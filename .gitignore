@@ -13,6 +13,9 @@ docs/ransomware_notes/*
 docs/google74c95375c7a4a9a1.html
 !*/.empty
 .DS_Store
-dev-graph/*.py
+dev-graph
 BCK/
 assets/tmp/
+docs/6a70e4ea73834288ba42618200e262c7.txt
+docs/BingSiteAuth.xml
+docs/logo

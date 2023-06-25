@@ -94,7 +94,7 @@ def existingpost(post_title, group_name):
     posts = openjson('posts.json')
     # posts = openjson('posts.json')
     for post in posts:
-        if post['post_title'] == post_title and post['group_name'] == group_name:
+        if post['post_title'].lower() == post_title.lower() and post['group_name'] == group_name:
             #dbglog('post already exists: ' + post_title)
             return True
     dbglog('post does not exist: ' + post_title)
@@ -108,7 +108,7 @@ def gettitlefromURL(website_url):
         website_url = "https://" + website_url
     # retrieve the title of the website from its URL
     try:
-        with open("asset/useragent.txt", "r") as f:
+        with open("assets/useragents.txt", "r") as f:
             user_agents = f.readlines()
         # Strip newlines from the user agents
         user_agents = [ua.strip() for ua in user_agents]

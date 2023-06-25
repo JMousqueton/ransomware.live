@@ -18,30 +18,48 @@ Source : [Github Casualtek/Ransomchats](https://github.com/Casualtek/Ransomchats
 | [avaddon](profiles.md?id=avaddon)  | 20210518.2  | Date: 2021-05-18 | 24 | <a href="https://chat.ransomware.live/chat/avaddon/20210518_2.html" target=_blank> 💬 </a> | 
 | [avaddon](profiles.md?id=avaddon)  | 20210518.3  | Date: 2021-05-18 | 103 | <a href="https://chat.ransomware.live/chat/avaddon/20210518_3.html" target=_blank> 💬 </a> | 
 | [avos](profiles.md?id=avos)  | 20210903  | Date: 2021-09-03 | 86 | <a href="https://chat.ransomware.live/chat/avos/20210903.html" target=_blank> 💬 </a> | 
-| [babuk](profiles.md?id=babuk)  | 20210203   🆕 | Date: 2021-02-03 | 106 | <a href="https://chat.ransomware.live/chat/babuk/20210203.html" target=_blank> 💬 </a> | 
+| [babuk](profiles.md?id=babuk)  | 20210203  | Date: 2021-02-03 | 106 | <a href="https://chat.ransomware.live/chat/babuk/20210203.html" target=_blank> 💬 </a> | 
 | [babuk](profiles.md?id=babuk)  | 20210428  | Date: 2021-04-28 | 44 | <a href="https://chat.ransomware.live/chat/babuk/20210428.html" target=_blank> 💬 </a> | 
 | [blackmatter](profiles.md?id=blackmatter)  | 20210829  | Date: 2021-08-29 | 44 | <a href="https://chat.ransomware.live/chat/blackmatter/20210829.html" target=_blank> 💬 </a> | 
 | [blackmatter](profiles.md?id=blackmatter)  | 20210907  | Date: 2021-09-07 | 77 | <a href="https://chat.ransomware.live/chat/blackmatter/20210907.html" target=_blank> 💬 </a> | 
-| [conti](profiles.md?id=conti)  | 20201017   🆕 | Date: 2020-10-17 | 78 | <a href="https://chat.ransomware.live/chat/conti/20201017.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20201017  | Date: 2020-10-17 | 78 | <a href="https://chat.ransomware.live/chat/conti/20201017.html" target=_blank> 💬 </a> | 
 | [conti](profiles.md?id=conti)  | 20201019  | Date: 2020-10-19 | 9 | <a href="https://chat.ransomware.live/chat/conti/20201019.html" target=_blank> 💬 </a> | 
-| [conti](profiles.md?id=conti)  | 20201109   🆕 | Date: 2020-11-09 | 255 | <a href="https://chat.ransomware.live/chat/conti/20201109.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20201109  | Date: 2020-11-09 | 255 | <a href="https://chat.ransomware.live/chat/conti/20201109.html" target=_blank> 💬 </a> | 
 | [conti](profiles.md?id=conti)  | 20201121  | Date: 2020-11-21 | 6 | <a href="https://chat.ransomware.live/chat/conti/20201121.html" target=_blank> 💬 </a> | 
-| [conti](profiles.md?id=conti)  | 20201230   🆕 | Date: 2020-12-30 | 146 | <a href="https://chat.ransomware.live/chat/conti/20201230.html" target=_blank> 💬 </a> | 
-| [conti](profiles.md?id=conti)  | 20210107   🆕 | Date: 2021-01-07 | 139 | <a href="https://chat.ransomware.live/chat/conti/20210107.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20201230  | Date: 2020-12-30 | 146 | <a href="https://chat.ransomware.live/chat/conti/20201230.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210107  | Date: 2021-01-07 | 139 | <a href="https://chat.ransomware.live/chat/conti/20210107.html" target=_blank> 💬 </a> | 
 | [conti](profiles.md?id=conti)  | 20210126  | Date: 2021-01-26 | 9 | <a href="https://chat.ransomware.live/chat/conti/20210126.html" target=_blank> 💬 </a> | 
-| [conti](profiles.md?id=conti)  | 20210219   🆕 | Date: 2021-02-19 | 12 | <a href="https://chat.ransomware.live/chat/conti/20210219.html" target=_blank> 💬 </a> | 
-| [conti](profiles.md?id=conti)  | 20210426   🆕 | Date: 2021-04-26 | 12 | <a href="https://chat.ransomware.live/chat/conti/20210426.html" target=_blank> 💬 </a> | 
-| [conti](profiles.md?id=conti)  | 20210428   🆕 | Date: 2021-04-28 | 13 | <a href="https://chat.ransomware.live/chat/conti/20210428.html" target=_blank> 💬 </a> | 
-| [conti](profiles.md?id=conti)  | 20210715   🆕 | Date: 2021-07-15 | 10 | <a href="https://chat.ransomware.live/chat/conti/20210715.html" target=_blank> 💬 </a> | 
-| [conti](profiles.md?id=conti)  | 20210812   🆕 | Date: 2021-08-12 | 46 | <a href="https://chat.ransomware.live/chat/conti/20210812.html" target=_blank> 💬 </a> | 
-| [conti](profiles.md?id=conti)  | 20210904   🆕 | Date: 2021-09-04 | 17 | <a href="https://chat.ransomware.live/chat/conti/20210904.html" target=_blank> 💬 </a> | 
-| [conti](profiles.md?id=conti)  | 20210923   🆕 | Date: 2021-09-23 | 14 | <a href="https://chat.ransomware.live/chat/conti/20210923.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210219  | Date: 2021-02-19 | 12 | <a href="https://chat.ransomware.live/chat/conti/20210219.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210305  | Date: 2021-03-05 | 45 | <a href="https://chat.ransomware.live/chat/conti/20210305.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210315  | Date: 2021-03-15 | 49 | <a href="https://chat.ransomware.live/chat/conti/20210315.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210316  | Date: 2021-03-16 | 63 | <a href="https://chat.ransomware.live/chat/conti/20210316.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210426  | Date: 2021-04-26 | 12 | <a href="https://chat.ransomware.live/chat/conti/20210426.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210428  | Date: 2021-04-28 | 13 | <a href="https://chat.ransomware.live/chat/conti/20210428.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210513  | Date: 2021-05-13 | 78 | <a href="https://chat.ransomware.live/chat/conti/20210513.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210517  | Date: 2021-05-17 | 56 | <a href="https://chat.ransomware.live/chat/conti/20210517.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210517.b  | Date: 2021-05-17 | 69 | <a href="https://chat.ransomware.live/chat/conti/20210517_b.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210520  | Date: 2021-05-20 | 101 | <a href="https://chat.ransomware.live/chat/conti/20210520.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210602  | Date: 2021-06-02 | 81 | <a href="https://chat.ransomware.live/chat/conti/20210602.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210611  | Date: 2021-06-11 | 48 | <a href="https://chat.ransomware.live/chat/conti/20210611.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210628  | Date: 2021-06-28 | 34 | <a href="https://chat.ransomware.live/chat/conti/20210628.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210708  | Date: 2021-07-08 | 25 | <a href="https://chat.ransomware.live/chat/conti/20210708.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210715  | Date: 2021-07-15 | 10 | <a href="https://chat.ransomware.live/chat/conti/20210715.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210805  | Date: 2021-08-05 | 47 | <a href="https://chat.ransomware.live/chat/conti/20210805.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210812  | Date: 2021-08-12 | 46 | <a href="https://chat.ransomware.live/chat/conti/20210812.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210820  | Date: 2021-08-20 | 50 | <a href="https://chat.ransomware.live/chat/conti/20210820.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210902  | Date: 2021-09-02 | 43 | <a href="https://chat.ransomware.live/chat/conti/20210902.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210904  | Date: 2021-09-04 | 17 | <a href="https://chat.ransomware.live/chat/conti/20210904.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20210923  | Date: 2021-09-23 | 14 | <a href="https://chat.ransomware.live/chat/conti/20210923.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20211108  | Date: 2021-11-08 | 32 | <a href="https://chat.ransomware.live/chat/conti/20211108.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20211112  | Date: 2021-11-12 | 32 | <a href="https://chat.ransomware.live/chat/conti/20211112.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20211205  | Date: 2021-12-05 | 63 | <a href="https://chat.ransomware.live/chat/conti/20211205.html" target=_blank> 💬 </a> | 
+| [conti](profiles.md?id=conti)  | 20211217  | Date: 2021-12-17 | 27 | <a href="https://chat.ransomware.live/chat/conti/20211217.html" target=_blank> 💬 </a> | 
 | [darkside](profiles.md?id=darkside)  | 20200811  | You need pay  $ 2,000,000 190.363 BTC (+10%) or 22537.751 XMR | 85 | <a href="https://chat.ransomware.live/chat/darkside/20200811.html" target=_blank> 💬 </a> | 
-| [darkside](profiles.md?id=darkside)  | 20201115   🆕 | Date: 2020-11-15 | 243 | <a href="https://chat.ransomware.live/chat/darkside/20201115.html" target=_blank> 💬 </a> | 
+| [darkside](profiles.md?id=darkside)  | 20201115  | Date: 2020-11-15 | 243 | <a href="https://chat.ransomware.live/chat/darkside/20201115.html" target=_blank> 💬 </a> | 
 | [darkside](profiles.md?id=darkside)  | 20210215  | Date: 2021-02-15 | 24 | <a href="https://chat.ransomware.live/chat/darkside/20210215.html" target=_blank> 💬 </a> | 
 | [darkside](profiles.md?id=darkside)  | 20210413  | You must pay  $ 250000 5.51 BTC (+20%) or 603.89 XMR | 63 | <a href="https://chat.ransomware.live/chat/darkside/20210413.html" target=_blank> 💬 </a> | 
 | [darkside](profiles.md?id=darkside)  | 20210418  | You must pay  $ 10000000 220.02 BTC (+20%) or 23879.46 XMR | 10 | <a href="https://chat.ransomware.live/chat/darkside/20210418.html" target=_blank> 💬 </a> | 
-| [hive](profiles.md?id=hive)  | 20211004   🆕 | Date: 2021-10-04 | 70 | <a href="https://chat.ransomware.live/chat/hive/20211004.html" target=_blank> 💬 </a> | 
+| [hive](profiles.md?id=hive)  | 20211004  | Date: 2021-10-04 | 70 | <a href="https://chat.ransomware.live/chat/hive/20211004.html" target=_blank> 💬 </a> | 
 | [hive](profiles.md?id=hive)  | 20211005  | Date: 2021-10-05 | 19 | <a href="https://chat.ransomware.live/chat/hive/20211005.html" target=_blank> 💬 </a> | 
 | [hive](profiles.md?id=hive)  | 20211026  | Date: 2021-10-26 | 46 | <a href="https://chat.ransomware.live/chat/hive/20211026.html" target=_blank> 💬 </a> | 
 | [hive](profiles.md?id=hive)  | 20211102  | Date: 2021-11-02 | 58 | <a href="https://chat.ransomware.live/chat/hive/20211102.html" target=_blank> 💬 </a> | 
@@ -97,11 +115,18 @@ Source : [Github Casualtek/Ransomchats](https://github.com/Casualtek/Ransomchats
 | [revil](profiles.md?id=revil)  | 20210401  | Date: 2021-04-01 | 78 | <a href="https://chat.ransomware.live/chat/revil/20210401.html" target=_blank> 💬 </a> | 
 | [revil](profiles.md?id=revil)  | 20210407  | Date: 2021-04-07 | 15 | <a href="https://chat.ransomware.live/chat/revil/20210407.html" target=_blank> 💬 </a> | 
 | [revil](profiles.md?id=revil)  | 20210413  | Date: 2021-04-13 | 156 | <a href="https://chat.ransomware.live/chat/revil/20210413.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210603   🆕 | Date: 2021-06-03 | 63 | <a href="https://chat.ransomware.live/chat/revil/20210603.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210604   🆕 | Date: 2021-06-04 | 10 | <a href="https://chat.ransomware.live/chat/revil/20210604.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210609   🆕 | Date: 2021-06-09 | 58 | <a href="https://chat.ransomware.live/chat/revil/20210609.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210613   🆕 | Date: 2021-06-13 | 132 | <a href="https://chat.ransomware.live/chat/revil/20210613.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210616   🆕 | Date: 2021-06-16 | 31 | <a href="https://chat.ransomware.live/chat/revil/20210616.html" target=_blank> 💬 </a> | 
 | [revil](profiles.md?id=revil)  | 20210617  | Date: 2021-06-17 | 67 | <a href="https://chat.ransomware.live/chat/revil/20210617.html" target=_blank> 💬 </a> | 
 | [revil](profiles.md?id=revil)  | 20210622  | Date: 2021-06-22 | 52 | <a href="https://chat.ransomware.live/chat/revil/20210622.html" target=_blank> 💬 </a> | 
 | [revil](profiles.md?id=revil)  | 20210628  | Date: 2021-06-28 | 39 | <a href="https://chat.ransomware.live/chat/revil/20210628.html" target=_blank> 💬 </a> | 
 | [revil](profiles.md?id=revil)  | 20210630  | Date: 2021-06-30 | 42 | <a href="https://chat.ransomware.live/chat/revil/20210630.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210708   🆕 | Date: 2021-07-09 | 28 | <a href="https://chat.ransomware.live/chat/revil/20210708.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210709   🆕 | Date: 2021-07-09 | 1 | <a href="https://chat.ransomware.live/chat/revil/20210709.html" target=_blank> 💬 </a> | 
 
-📈 91 ransom chats
+📈 116 ransom chats
  
-Last update : _Saturday 03/06/2023 08.05 (UTC)_
+Last update : _Tuesday 20/06/2023 12.01 (UTC)_

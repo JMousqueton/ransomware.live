@@ -37,7 +37,7 @@ def statsgroup(specific_group_name):
 
     # plt.plot(dates, counts)
     ax.bar(dates, counts, color = '#42b983')
-    ax.set_xlabel('Date', color = '#42b983')
+    ax.set_xlabel('Date\nRansomware.live', color = '#42b983')
     ax.set_ylabel('Number of Victims', color = '#42b983')
     ax.set_title('Number of Victims for Group: ' + specific_group_name, color = '#42b983')
     ax.tick_params(axis='x', rotation=45)
@@ -51,6 +51,23 @@ def statsgroup(specific_group_name):
     plt.savefig('docs/graphs/stats-' + specific_group_name + '.png')
     plt.close(fig)
 
+print(
+    '''
+       _______________                        |*\_/*|________
+      |  ___________  |                      ||_/-\_|______  |
+      | |           | |                      | |           | |
+      | |   0   0   | |                      | |   0   0   | |
+      | |     -     | |                      | |     -     | |
+      | |   \___/   | |                      | |   \___/   | |
+      | |___     ___| |                      | |___________| |
+      |_____|\_/|_____|                      |_______________|
+        _|__|/ \|_|_.............💔.............._|________|_
+       / ********** \                          / ********** \ 
+     /  ************  \     ransomwhat?      /  ************  \ 
+    --------------------                    --------------------
+    '''
+)
+
 
 # Read groups.json and extract group names
 with open('groups.json', 'r') as groups_file:
@@ -60,5 +77,6 @@ with open('groups.json', 'r') as groups_file:
 for group_name in group_names:
     try:
         statsgroup(group_name)
-    except:
+    except:  
+        print("no graph for " + group_name) 
         pass

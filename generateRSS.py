@@ -4,6 +4,23 @@ import uuid
 from xml.etree.ElementTree import Element, SubElement, Comment, tostring
 from sharedutils import stdlog
 
+print(
+    '''
+       _______________                        |*\_/*|________
+      |  ___________  |                      ||_/-\_|______  |
+      | |           | |                      | |           | |
+      | |   0   0   | |                      | |   0   0   | |
+      | |     -     | |                      | |     -     | |
+      | |   \___/   | |                      | |   \___/   | |
+      | |___     ___| |                      | |___________| |
+      |_____|\_/|_____|                      |_______________|
+        _|__|/ \|_|_.............💔.............._|________|_
+       / ********** \                          / ********** \ 
+     /  ************  \     ransomwhat?      /  ************  \ 
+    --------------------                    --------------------
+    '''
+)
+
 # Chargez les données du fichier JSON
 with open('posts.json') as f:
   data = json.load(f)
