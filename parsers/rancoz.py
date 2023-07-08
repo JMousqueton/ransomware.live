@@ -23,8 +23,7 @@ def main():
                 for div in divs_name:
                     title = div.find_all('td')[0].text.strip()
                     description = div.find_all('td')[2].text.strip()
-                    parts = filename.split('-')
-                    url = parts[1].replace('.html','')
+                    url = 'ze677xuzard4lx4iul2yzf5ks4gqqzoulgj5u4n5n4bbbsxjbfr7eayd'
                     link = div.find('a')
                     link = link.get('href')
                     post_url = 'http://' + url + '.onion' + link

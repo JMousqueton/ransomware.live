@@ -32,8 +32,7 @@ def main():
                 data = json.loads(post_links)
                 for element in data:
                     title = element['title']
-                    parts = filename.split('-')
-                    url = parts[1].replace('.html','')
+                    url = "rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd"
                     link = 'http://' + url + '.onion/?' + element['link']
                     published = datetime.datetime.fromtimestamp(int(element['timestamp'])).strftime('%Y-%m-%d %H:%M:%S.%f')
                     appender(title, 'ragnarlocker',"", "", published,link)

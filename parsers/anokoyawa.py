@@ -31,8 +31,6 @@ def main():
                     title = decoded_url = unquote(title)
                     website = str(entry['url'])
                     website = decoded_url = unquote(website)
-                    #parts = filename.split('-')
-                    #url = parts[1].replace('.html','')
                     url="nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid"
                     post_url = 'http://' + url + '.onion/leak/' +  entry['_id'].strip() 
                     description = html.unescape((re.sub(r'<[^>]*>', '',entry['description'])))

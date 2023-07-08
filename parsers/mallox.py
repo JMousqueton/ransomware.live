@@ -28,8 +28,7 @@ def main():
                         description+=p.text + ' '
                     post = div.find('a', {'class': 'btn btn-primary btn-sm'})
                     post = post.get('href')
-                    parts = filename.split('-')
-                    url = parts[1].replace('.html','')
+                    url = "wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad"
                     url = 'http://' + url + '.onion' + post
                     publish = div.find('span', {'class': 'badge badge-info'}).text.strip()
                     date_obj = datetime.strptime(publish, "%d/%m/%Y %H:%M")

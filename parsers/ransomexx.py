@@ -24,8 +24,7 @@ def main():
                     description = div.find_all('p', {"class", "card-text"})[1].text.strip()
                     link = div.find('a', {"class", "btn btn-outline-primary"})
                     link = link.get('href')
-                    parts = filename.split('-')
-                    url = parts[1].replace('.html','')
+                    url = "rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad"
                     post_url = 'http://' + url + '.onion' + link
                     appender(title, 'ransomexx', description,"","",post_url)
                 file.close()

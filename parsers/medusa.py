@@ -22,8 +22,7 @@ def main():
                 divs_name=soup.find_all('div', {"class": "card"})
                 for div in divs_name:
                     link = div.get('data-id')
-                    parts = filename.split('-')
-                    url = parts[1].replace('.html','')
+                    url = "medusaxko7jxtrojdkxo66j7ck4q5tgktf7uqsqyfry4ebnxlcbkccyd"
                     post_url = 'http://' + url + '.onion/detail?id=' + link
                     title = div.find('h3', {"class":"card-title"}).text
                     description = div.find("div", {"class": "card-body"}).text.strip()

@@ -21,7 +21,7 @@ def main():
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                if 'alphvmmm' in filename:
+                if '25b7b08e96f4ca66942d8b4b8512fed7' in filename:
                         stdlog('alphv : Parse ' +  'json file')
                         html_doc='source/'+filename
                         file=open(html_doc, 'r')
@@ -30,8 +30,7 @@ def main():
                         data = json.loads(jsonfile)
                         for entry in data['items']:
                             title = entry['title'].strip()
-                            parts = filename.split('-')
-                            url = parts[1].replace('.html','')
+                            url = "alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad" 
                             post_url = 'http://' + url + '.onion/' +  entry['id'].strip() 
                             published = entry['createdDt']
                             timestamp = int(published) / 1000

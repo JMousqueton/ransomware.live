@@ -22,8 +22,7 @@ def main():
                 divs_name=soup.find_all('div', {"class": "sm:w-1/2 mb-10 px-4"})
                 for div in divs_name:
                     title = div.find('h2').text.strip()
-                    parts = filename.split('-')
-                    url = parts[1].replace('.html','')
+                    url = "powerj7kmpzkdhjg4szvcxxgktgk36ezpjxvtosylrpey7svpmrjyuyd"
                     website = div.find('a')
                     website = website.attrs['href']
                     post_url = 'http://' + url + '.onion/' + website

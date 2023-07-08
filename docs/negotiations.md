@@ -115,18 +115,18 @@ Source : [Github Casualtek/Ransomchats](https://github.com/Casualtek/Ransomchats
 | [revil](profiles.md?id=revil)  | 20210401  | Date: 2021-04-01 | 78 | <a href="https://chat.ransomware.live/chat/revil/20210401.html" target=_blank> 💬 </a> | 
 | [revil](profiles.md?id=revil)  | 20210407  | Date: 2021-04-07 | 15 | <a href="https://chat.ransomware.live/chat/revil/20210407.html" target=_blank> 💬 </a> | 
 | [revil](profiles.md?id=revil)  | 20210413  | Date: 2021-04-13 | 156 | <a href="https://chat.ransomware.live/chat/revil/20210413.html" target=_blank> 💬 </a> | 
-| [revil](profiles.md?id=revil)  | 20210603   🆕 | Date: 2021-06-03 | 63 | <a href="https://chat.ransomware.live/chat/revil/20210603.html" target=_blank> 💬 </a> | 
-| [revil](profiles.md?id=revil)  | 20210604   🆕 | Date: 2021-06-04 | 10 | <a href="https://chat.ransomware.live/chat/revil/20210604.html" target=_blank> 💬 </a> | 
-| [revil](profiles.md?id=revil)  | 20210609   🆕 | Date: 2021-06-09 | 58 | <a href="https://chat.ransomware.live/chat/revil/20210609.html" target=_blank> 💬 </a> | 
-| [revil](profiles.md?id=revil)  | 20210613   🆕 | Date: 2021-06-13 | 132 | <a href="https://chat.ransomware.live/chat/revil/20210613.html" target=_blank> 💬 </a> | 
-| [revil](profiles.md?id=revil)  | 20210616   🆕 | Date: 2021-06-16 | 31 | <a href="https://chat.ransomware.live/chat/revil/20210616.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210603  | Date: 2021-06-03 | 63 | <a href="https://chat.ransomware.live/chat/revil/20210603.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210604  | Date: 2021-06-04 | 10 | <a href="https://chat.ransomware.live/chat/revil/20210604.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210609  | Date: 2021-06-09 | 58 | <a href="https://chat.ransomware.live/chat/revil/20210609.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210613  | Date: 2021-06-13 | 132 | <a href="https://chat.ransomware.live/chat/revil/20210613.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210616  | Date: 2021-06-16 | 31 | <a href="https://chat.ransomware.live/chat/revil/20210616.html" target=_blank> 💬 </a> | 
 | [revil](profiles.md?id=revil)  | 20210617  | Date: 2021-06-17 | 67 | <a href="https://chat.ransomware.live/chat/revil/20210617.html" target=_blank> 💬 </a> | 
 | [revil](profiles.md?id=revil)  | 20210622  | Date: 2021-06-22 | 52 | <a href="https://chat.ransomware.live/chat/revil/20210622.html" target=_blank> 💬 </a> | 
 | [revil](profiles.md?id=revil)  | 20210628  | Date: 2021-06-28 | 39 | <a href="https://chat.ransomware.live/chat/revil/20210628.html" target=_blank> 💬 </a> | 
 | [revil](profiles.md?id=revil)  | 20210630  | Date: 2021-06-30 | 42 | <a href="https://chat.ransomware.live/chat/revil/20210630.html" target=_blank> 💬 </a> | 
-| [revil](profiles.md?id=revil)  | 20210708   🆕 | Date: 2021-07-09 | 28 | <a href="https://chat.ransomware.live/chat/revil/20210708.html" target=_blank> 💬 </a> | 
-| [revil](profiles.md?id=revil)  | 20210709   🆕 | Date: 2021-07-09 | 1 | <a href="https://chat.ransomware.live/chat/revil/20210709.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210708  | Date: 2021-07-09 | 28 | <a href="https://chat.ransomware.live/chat/revil/20210708.html" target=_blank> 💬 </a> | 
+| [revil](profiles.md?id=revil)  | 20210709  | Date: 2021-07-09 | 1 | <a href="https://chat.ransomware.live/chat/revil/20210709.html" target=_blank> 💬 </a> | 
 
 📈 116 ransom chats
  
-Last update : _Tuesday 20/06/2023 12.01 (UTC)_
+Last update : _Monday 03/07/2023 06.42 (UTC)_

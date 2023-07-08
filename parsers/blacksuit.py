@@ -27,8 +27,7 @@ def main():
                     title = article.find('div', class_='title').text.strip()
 
                     # Extract the URL
-                    parts = filename.split('-')
-                    url_site = parts[1].replace('.html','')
+                    url_site = "weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd"
                     url = article.find('div', class_='title').a['href']
                     post_url = 'http://' + url_site + '.onion/' +  url
 

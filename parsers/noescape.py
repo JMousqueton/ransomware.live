@@ -38,8 +38,7 @@ def main():
 
                     #<a href="/post/9962b964-ac11-4bac-811d-d0bf10d81b24" class="btn btn-sm btn-primary h2 mb-0 fs-6"
 
-                    parts = filename.split('-')
-                    url_site = parts[1].replace('.html','')
+                    url_site = "noescapemsqxvizdxyl7f7rmg5cdjwp33pg2wpmiaaibilb4btwzttad"
                     #post_url = 'http://' + url_site + '.onion/' +  url
 
                     link_element = soup.find('a', class_="btn btn-sm btn-primary h2 mb-0 fs-6")

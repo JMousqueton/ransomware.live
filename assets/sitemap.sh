@@ -75,7 +75,7 @@ echo "<url>"
 for GROUP in $(jq '.[].name' groups.json | tr -d \")
 do 
   echo "<url>"
-  echo " <loc>${URL}profiles/${GROUP}.md</loc>"
+  echo " <loc>${URL}group/${GROUP}</loc>"
   echo " <lastmod>$DATE</lastmod>"
   echo " <changefreq>$FREQ</changefreq>"
   echo "</url>"

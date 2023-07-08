@@ -34,7 +34,7 @@ def screenshot(webpage,delay=15000,output=None):
                     page.wait_for_load_state('networkidle')
                     page.mouse.wheel(delta_y=2000, delta_x=0)
                     page.wait_for_load_state('networkidle')
-                    page.wait_for_timeout(5000)
+                    page.wait_for_timeout(6000)
                     page.screenshot(path=name, full_page=True)
                     image = Image.open(name)
                     draw = ImageDraw.Draw(image)

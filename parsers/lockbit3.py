@@ -24,8 +24,7 @@ def main():
                 divs_name=soup.find_all('div', {"class": "post-block bad"})
                 for div in divs_name:
                     post = div['onclick'].split("'")[1]
-                    parts = filename.split('-')
-                    url = parts[1].replace('.html','')
+                    url = "lockbitapt2d73krlbewgv27tquljgxr33xbwwsp6rkyieto7u4ncead"
                     post = 'http://' + url + '.onion' + post
                     title = div.find('div',{"class": "post-title"}).text.strip()
                     description = div.find('div',{"class" : "post-block-text"}).text.strip()
@@ -36,8 +35,7 @@ def main():
                 divs_name=soup.find_all('div', {"class": "post-block good"})
                 for div in divs_name:
                     post = div['onclick'].split("'")[1]
-                    parts = filename.split('-')
-                    url = parts[1].replace('.html','')
+                    url = "lockbitapt2d73krlbewgv27tquljgxr33xbwwsp6rkyieto7u4ncead"
                     post = 'http://' + url + '.onion' + post
                     title = div.find('div',{"class": "post-title"}).text.strip()
                     description = div.find('div',{"class" : "post-block-text"}).text.strip()

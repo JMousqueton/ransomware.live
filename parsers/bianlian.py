@@ -25,8 +25,7 @@ def main():
                     title = div.h1.text.strip()
                     post = div.find('a', {'class': 'readmore'})
                     post = post.get('href')
-                    parts = filename.split('-')
-                    url = parts[1].replace('.html','')
+                    url = "bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad"
                     description = div.div.text.strip()
                     appender(title, 'bianlian', description,"","",'http://' + url + '.onion' + post)
                 file.close()

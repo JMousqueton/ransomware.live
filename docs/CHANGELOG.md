@@ -1,3 +1,24 @@
+
+## 2023-07-02
+
+**New Features:**
+
+- Add an [index of all ransom notes](ransomnotes) and dedicated pages (thank to [Ransomlook](https://github.com/ransomlook) for the idea) 
+
+**New ransomware Group:**
+
+**Issue fixed**
+
+## 2023-07-01
+
+**New Features:**
+
+**New Ransomware group:**
+
+- Add [Cyclops](group/cyclops) group & paarser.
+
+**Issues fixed:** 
+
 ## 2023-06-21 🎶
 
 **New Features:**

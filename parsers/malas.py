@@ -17,7 +17,6 @@ from html import unescape
 def main():
     for filename in os.listdir('source'):
             if filename.startswith('malas-'):
-                print('MALAS')
                 html_doc='source/'+filename
                 with open(html_doc, "r") as file:
                     html = file.read()

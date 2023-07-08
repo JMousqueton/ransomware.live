@@ -1,0 +1,33 @@
+[
+	{
+		"date": "2023-07-06",
+		"source": "Le MagIT",
+		"url": "https://www.lemagit.fr/actualites/252496405/Ransomware-quand-les-attaquants-detruisent-les-sauvegardes",
+		"title": "Ransomware : quand les attaquants détruisent les sauvegardes" 
+	},
+	{
+		"date": "2023-05-12",
+		"source": "Deutsche Versicherungsboerses",
+		"url": "https://www.deutsche-versicherungsboerse.de/maklerprozesse/QDas-ultimative-Vertriebstool-f%C3%BCr-die-Cyber-Versicherung-mp_40.html?mg=0&newsletterType=page&userKey=",
+		"title": "Das ultimative Vertriebstool für die Cyber-Versicherung" 
+	},
+	{
+		"date": "2023-02-09",
+		"source": "Medium",
+		"url": "https://medium.com/coinmonks/hidden-secrets-of-lockbit-ransomware-revealed-538b85296afc",
+		"title": "Hidden Secrets of LockBit Ransomware Revealed!!!" 
+	},
+	{
+		"date": "2023-05-05",
+		"source": "CIO.de",
+		"url": "https://www.cio.de/a/deutscher-autoersatzteilespezialist-bilstein-gehackt,3680894",
+		"title": "Deutscher Autoersatzteilespezialist Bilstein gehackt"
+	},
+	{
+		"date": "2023-05-05",
+		"source": "CSO Deutchland",
+		"url": "https://www.csoonline.com/de/a/daten-von-lux-automation-im-darknet,3680897",
+		"title": "Daten von Lux Automation im Darknet"
+	}
+
+]

@@ -6,7 +6,7 @@ ransomwatch
 does what it says on the tin
 '''
 # from ast import parse
-import os
+import os, hashlib
 import json
 import argparse
 from datetime import datetime
@@ -49,7 +49,7 @@ print(
     '''
 )
 
-parser = argparse.ArgumentParser(description='👀 🦅 ransomwatch')
+parser = argparse.ArgumentParser(description='👀  ransomwatch')
 parser.add_argument("--name", help='provider name')
 parser.add_argument("--location", help='onionsite fqdn')
 parser.add_argument("--append", help='add onionsite fqdn to existing record')
@@ -140,7 +140,7 @@ def scraper(force=''):
                 # here 
                 try:
                     with sync_playwright() as play:
-                            if group['name'] in ['blackbasta']:
+                            if group['name'] in ['blackbasta','clop']:
                                 browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                                     args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])
                             else:
@@ -163,7 +163,11 @@ def scraper(force=''):
                             page.mouse.wheel(delta_y=2000, delta_x=0)
                             page.wait_for_load_state('networkidle')
                             page.wait_for_timeout(5000)
-                            filename = group['name'] + '-' + str(striptld(host['slug'])) + '.html'
+                            #filename = group['name'] + '-' + str(striptld(host['slug'])) + '.html'
+                            hash_object = hashlib.md5()
+                            hash_object.update(host['slug'].encode('utf-8'))
+                            hex_digest = hash_object.hexdigest()
+                            filename = group['name'] + '-' + hex_digest + '.html'
                             name = os.path.join(os.getcwd(), 'source', filename)
                             with open(name, 'w', encoding='utf-8') as sitesource:
                                 sitesource.write(page.content())

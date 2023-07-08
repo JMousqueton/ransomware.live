@@ -1274,6 +1274,16 @@
 
 ---
 
+## Plutocrypt Ransom
+
+> Plutocrypt Decryptor is designed to decrypt files encrypted by Plutocrypt Ransom.
+
+ 📖 For more information please see this [how-to guide](https://www.nomoreransom.org/uploads/User Manual - PlutoCrypt_Decryptor.pdf).
+
+🌍 [Prodaft](https://github.com/prodaft/malware-ioc/raw/master/PlutoCrypt/plutocrypt_decryptor.exe)
+
+---
+
 ## Popcorn Ransom
 
 > Popcorn Decryptor is designed to decrypt files encrypted by Popcorn Ransom.
@@ -1727,4 +1737,4 @@
 
 _Source : [No More Ransom](https://www.nomoreransom.org/)_
 
-Last update : _Sunday 25/06/2023 12.21 (UTC)_
+Last update : _Saturday 08/07/2023 08.02 (UTC)_

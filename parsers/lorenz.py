@@ -36,8 +36,8 @@ def main():
                         formatted_date = posted_date.strftime('%Y-%m-%d %H:%M:%S.%f')
 
                     except ValueError:
-                        print('Invalid date:', posted_date_str)
-                        print('Using current date instead.')
+                        #print('Invalid date:', posted_date_str)
+                        #print('Using current date instead.')
                         posted_date = datetime.today()
                         formatted_date = datetime.combine(posted_date, datetime.min.time()).strftime('%Y-%m-%d %H:%M:%S.%f')
 
