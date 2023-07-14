@@ -6,7 +6,7 @@
 ██╔══██╗██╔══██║██║╚██╗██║╚════██║██║   ██║██║╚██╔╝██║██║███╗██║██╔══██║██╔══██╗██╔══╝     ██║     ██║╚██╗ ██╔╝██╔══╝  
 ██║  ██║██║  ██║██║ ╚████║███████║╚██████╔╝██║ ╚═╝ ██║╚███╔███╔╝██║  ██║██║  ██║███████╗██╗███████╗██║ ╚████╔╝ ███████╗
 ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝     ╚═╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝╚══════╝╚═╝  ╚═══╝  ╚══════╝
-version 2023-06 
+version 2023-07
 by Julien Mousqueton https://julien.io 
 -->
 <html lang="en">
@@ -14,23 +14,28 @@ by Julien Mousqueton https://julien.io
   <meta charset="UTF-8">
   <title>Ransomware.live 👀  - Ransomware Groups Monitoring</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Ransomware.live : Ransomware Groups Monitoring Tool - based on ransomwatch">
-  <meta name="keywords" content="ransomware, breach, leak, post, gang, data, cybersecurity, victims, ransom, julien, mousqueton, julien mousqueton, CyberSoc, CTI">
+  <meta name="description" content="Ransomware.live: Ransomware Groups & victims Monitoring Tool - based on ransomwatch">
+  <meta name="keywords" content="ransomware, API, RSS, breach, leak, post, gang, data, cybersecurity, victims, ransom, ransomwatch, julien, mousqueton, julien mousqueton, CyberSoc, CTI, negotiations, note">
   <!-- Open Graph / Facebook -->
    <meta property="og:type" content="website">
    <meta property="og:url" content="https://www.ransomware.live">
    <meta property="og:title" content="Ransomware.live 👀">
-   <meta property="og:description" content="Ransomware.live : Ransomware Groups Monitoring Tool - Based on ransomwatch. Statistics are updated hourly">
+   <meta property="og:description" content="Ransomware.live: Ransomware Groups & Victims Monitoring Tool - Based on ransomwatch. Statistics are updated hourly">
    <meta property="og:image" content="https://www.ransomware.live/ransomware.png">
   <!-- Twitter -->
    <meta property="twitter:card" content="summary_large_image">
    <meta property="twitter:url" content="https://www.ransomware.live/">
    <meta property="twitter:title" content="Ransomware.live 👀">
-   <meta property="twitter:description" content="Ransomware.live :Ransomware Groups Monitoring Tool - based on ransomwatch. Statistics are updated hourly">
+   <meta property="twitter:description" content="Ransomware.live: Ransomware Groups & Victims Monitoring Tool - based on ransomwatch. Statistics are updated hourly">
    <meta property="twitter:image" content="https://www.ransomware.live/ransomware.png">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="canonical" href="https://www.ransomware.live">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="https://ransomware.live/rss.xml">
+  
   <style>
     .cover-main h1 a span {
         color: #ffffff;
@@ -39,32 +44,34 @@ by Julien Mousqueton https://julien.io
     .cover-main blockquote {
         color: #5e5e5e;
     }
-</style>
-<link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/icon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-<link href="https://infosec.exchange/@JMousqueton" rel="me">
+  </style>
 
-<!-- 
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
- -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css" title="docsify-darklight-theme" type="text/css" /> 
-<meta name="google-site-verification" content="OoSDY8je1T30faCwMkM2jL18Q1tLlfylSM1xdJ5UQp0" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png">
 
+  <link rel="icon" type="image/png" sizes="192x192"  href="/icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+
+  <link rel="manifest" href="/manifest.json">
+
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link href="https://infosec.exchange/@JMousqueton" rel="me">
+
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css" title="docsify-darklight-theme" type="text/css" /> 
+
+  <meta name="google-site-verification" content="OoSDY8je1T30faCwMkM2jL18Q1tLlfylSM1xdJ5UQp0" />
 
 </head>
 <body>

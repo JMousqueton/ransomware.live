@@ -1,4 +1,4 @@
-_july 8th, 2023_
+_july 14th, 2023_
 
 ---
 
@@ -19,15 +19,15 @@ _july 8th, 2023_
     "numbers": true
   },
   "data": [
-      { "label": "📡 Relays & mirrors", "value": 283},
-      { "label": "🏴‍☠️  Groups", "value": 157},
-      { "label": "🟢 Online", "value": 70 }
+      { "label": "📡 Relays & mirrors", "value": 286},
+      { "label": "🏴‍☠️  Groups", "value": 159},
+      { "label": "🟢 Online", "value": 78 }
   ]
 }
 ```
 ```charty
 {
-  "title":   "📆 Victims monitored",
+  "title":   "📆 Victims detected",
   "caption": "",
   "type":    "review",
   "options": {
@@ -37,18 +37,18 @@ _july 8th, 2023_
   },
   "data": [
       { "label": "Last 24 hours", "value": 16},
-      { "label": "Last 7 days", "value": 91},
-      { "label": "Last 30 days", "value": 429},
-      { "label": "In 2023", "value": 2230},
+      { "label": "Last 7 days", "value": 132},
+      { "label": "Last 30 days", "value": 473},
+      { "label": "In 2023", "value": 2514},
       { "label": "In 2022", "value": 3041}
   ]
 }
 ```
-📸 There are `155` ransomware group host screenshots and `1624` post screenshots
+📸 There are `157` ransomware group host screenshots and `1723` post screenshots
 
-📝 There are `142` ransomware notes and `117` negotiation chats
+📝 There are `144` ransomware notes and `117` negotiation chats
 
-⚙️ There are `84` custom parsers indexing posts
+⚙️ Ransomware.live has `84` parsers indexing victims
 ```charty
 {
   "title":   "🏆 Top 10 Ranwomware groups for 2023",
@@ -60,20 +60,20 @@ _july 8th, 2023_
     "numbers": true
   },
   "data": [
-{ "label": "lockbit3", "value": 539},
-{ "label": "clop", "value": 234},
-{ "label": "alphv", "value": 227},
-{ "label": "bianlian", "value": 162},
+{ "label": "lockbit3", "value": 545},
+{ "label": "clop", "value": 274},
+{ "label": "alphv", "value": 234},
+{ "label": "malas", "value": 171},
+{ "label": "bianlian", "value": 169},
 { "label": "play", "value": 131},
 { "label": "royal", "value": 122},
 { "label": "blackbasta", "value": 90},
-{ "label": "medusa", "value": 71},
-{ "label": "8base", "value": 66},
-{ "label": "akira", "value": 62},
-{ "label": "Others", "value": 471}
+{ "label": "8base", "value": 84},
+{ "label": "medusa", "value": 72},
+{ "label": "Others", "value": 566}
    ]
 }
 ```
 
-Last update : _Saturday 08/07/2023 10.48 (UTC)_
+Last update : _Friday 14/07/2023 12.35 (UTC)_
 

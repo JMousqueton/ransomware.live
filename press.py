@@ -104,9 +104,12 @@ def pressmarkdown():
     with open(tweetspage, 'w', encoding='utf-8') as f:
         f.close()
     writeline(tweetspage,'')
-    writeline(tweetspage, '> Ransomware.live in the press')
+    writeline(tweetspage, '# 🗞️ Ransomware.live in the press')
+    writeline(tweetspage,'\n')
+    writeline(tweetspage, '> [!TIP]')
+    writeline(tweetspage, '> `Ransomware.live` is mentionned in the press, find bellow the recent articles found.')
     writeline(tweetspage,'')
-    writeline(tweetspage, ' ')
+    writeline(tweetspage, '\n')
     writeline(tweetspage, '| Date | Source | Title | Screenshot | ')
     writeline(tweetspage, '|---|---|---|---|')
     compteur = 0  # Initialisation du compteur à 0

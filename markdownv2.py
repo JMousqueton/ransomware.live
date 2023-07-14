@@ -27,7 +27,7 @@ from sharedutils import grouppostavailable
 from sharedutils import postcountgroup
 # from sharedutils import stdlog, dbglog, errlog, honk
 from sharedutils import stdlog
-from plotting import trend_posts_per_day, plot_posts_by_group, pie_posts_by_group, plot_posts_by_group_past_7_days,trend_posts_per_day_2022, trend_posts_per_day_2023, plot_posts_by_group_by_year, pie_posts_by_group_by_year, pie_posts_by_group_by_month, trend_posts_per_day_month, plot_posts_by_group_by_month
+from plotting import trend_posts_per_day, plot_posts_by_group, pie_posts_by_group, plot_posts_by_group_past_7_days,trend_posts_per_day_2022, trend_posts_per_day_2023, plot_posts_by_group_by_year, pie_posts_by_group_by_year, pie_posts_by_group_by_month, trend_posts_per_day_month, plot_posts_by_group_by_month,plot_victims_by_month
 from bs4 import BeautifulSoup
 
 def suffix(d):
@@ -127,7 +127,7 @@ def mainpage():
     writeline(uptime_sheet, '```')
     writeline(uptime_sheet, '```charty')
     writeline(uptime_sheet, '{')
-    writeline(uptime_sheet, '  "title":   "📆 Victims monitored",')
+    writeline(uptime_sheet, '  "title":   "📆 Victims detected",')
     writeline(uptime_sheet, '  "caption": "",')
     writeline(uptime_sheet, '  "type":    "review",')
     writeline(uptime_sheet, '  "options": {')
@@ -148,7 +148,7 @@ def mainpage():
     writeline(uptime_sheet, '')
     writeline(uptime_sheet, '📝 There are `' +  str(nbransom_notes) + '` ransomware notes and `' + str(nbsnego) +'` negotiation chats')
     writeline(uptime_sheet, '')
-    writeline(uptime_sheet, '⚙️ There are `' + str(parsercount()) + '` custom parsers indexing posts')
+    writeline(uptime_sheet, '⚙️ Ransomware.live has `' + str(parsercount()) + '` parsers indexing victims')
 
 
     with open('posts.json') as file:
@@ -273,7 +273,7 @@ def recentpage():
     writeline(recentpage,'')
     writeline(recentpage, '> `Ransomware.live` provides tracking of ransomware groups and their victims. Descriptions available in the [group profiles view](profiles.md)')
     writeline(recentpage,'')
-    writeline(recentpage, '**📰 200 last victims**')
+    writeline(recentpage, '**📰 200 last victims sorted by published date**')
     writeline(recentpage, '')
     writeline(recentpage, '| Date | Title | Group | 📸 |')
     writeline(recentpage, '|---|---|---|---|')
@@ -771,6 +771,7 @@ def main():
         trend_posts_per_day()
         plot_posts_by_group() 
         pie_posts_by_group()
+        plot_victims_by_month()
         plot_posts_by_group_past_7_days()
         stdlog('Creating graphs for '+ str(year))
         pie_posts_by_group_by_year(2023)
