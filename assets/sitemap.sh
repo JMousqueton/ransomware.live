@@ -81,6 +81,15 @@ do
   echo "</url>"
 done
 
+for NOTES in $(ls /var/www/ransomware.live/docs/ransomware_notes/) 
+do
+  echo "<url>"
+  echo " <loc>${URL}notes/${NOTES}</loc>"
+  echo " <lastmod>$DATE</lastmod>"
+  echo " <changefreq>$FREQ</changefreq>"
+  echo "</url>"
+done
+
 for TOOLS in $(grep '## ' docs/decryption.md | cut -d ' ' -f2- | sed 's/ /-/g'  | tr '[:upper:]' '[:lower:]')
 do
   echo "<url>"

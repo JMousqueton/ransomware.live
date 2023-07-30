@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import datetime
+import datetime, json
 import matplotlib.pyplot as plt
 
 from sharedutils import gcount, gcountYear, gcountMonth, last_day_of_month
@@ -371,3 +371,61 @@ def plot_posts_by_group_by_month(year,month=0):
         plt.savefig('docs/graphs/postsbygroup'+str(year)+str(month)+'.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     plt.clf()
     plt.cla()
+
+def plot_victims_by_month():
+    # Read the JSON file and load the data
+    data = openjson('posts.json')
+    
+    # Count the number of post titles (victims) by month for the years 2022 and 2023
+    year_data = {}
+    for post in data:
+        # Assuming the JSON data has a "published" field and a "post_title" field
+        date = post['published']
+        title = post['post_title']
+        
+        year = date[:4]  # Extract the year from the date
+        
+        if year in ['2022', '2023']:
+            if year not in year_data:
+                year_data[year] = {}
+            
+            month = date[5:7]  # Extract the month from the date
+            
+            if month not in year_data[year]:
+                year_data[year][month] = 0
+            
+            year_data[year][month] += 1
+
+    # Prepare the data for plotting
+    months = ['{:02d}'.format(i) for i in range(1, 13)]
+    years = ['2022', '2023']
+    data_2022 = [year_data['2022'].get(month, 0) for month in months]
+    data_2023 = [year_data['2023'].get(month, 0) for month in months]
+
+    # Set the figure size
+    plt.figure(figsize=(12, 6))
+    plt.set_loglevel('WARNING')
+    plt.rcParams['text.color'] = "#42b983"
+    plt.rcParams['axes.labelcolor'] = "#42b983"
+    plt.rcParams['xtick.color'] = "#42b983"
+    plt.rcParams['ytick.color'] = "#42b983"
+
+    # Plotting the line chart
+    plt.plot(months, data_2022, label='2022')
+    plt.plot(months, data_2023, label='2023')
+
+    # Customize the chart
+    plt.title('Number of Victims by Month (2022-2023)')
+    plt.xlabel('Month\n© Ransomware.live')
+    plt.ylabel('Number of Victims')
+    plt.legend()
+
+    # Add grid
+    plt.grid(True)
+
+    # Save the chart as PNG
+    plt.savefig('docs/graphs/victims_by_month.png')
+    plt.clf()
+    plt.cla()
+
+

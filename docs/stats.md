@@ -1,9 +1,13 @@
 
 
 
+## Victims by month
+
+![](graphs/victims_by_month.png)
+
 ## 2023
 
-!> [Month by month](stats2023.md)
+!> [Check month by month](stats2023.md)
 
 
  | ![](graphs/postsbyday2023.png) | ![](graphs/postsbygroup2023.png) |
@@ -14,7 +18,7 @@
 
 ## 2022
 
-!> [Month by month](stats2022.md)
+!> [Check month by month](stats2022.md)
 
 
 | ![](graphs/postsbyday2022.png) | ![](graphs/postsbygroup2022.png) |

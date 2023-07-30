@@ -1,4 +1,47 @@
 
+## 2023-07-14 🇫🇷 🎉
+
+
+**New Features:**
+
+- Add a new [graph](stats) with all victims by month for 2022 and 2023 
+
+**New ransomware Group:**
+
+**Issue fixed**
+
+## 2023-07-13
+
+**New Features:**
+
+- Add a new entrypoint for `api.ransomare.live` to get recent cyberattacks. See [API documentation](https://api.ransomware.live/apidocs)
+
+**New ransomware Group:**
+
+-  Add [undergound](group/underground) ransomware site 
+
+**Issue fixed**
+
+## 2023-07-10
+
+**New Features:**
+
+- Rewrite the `Ransomware.live` [API](https://api.ransomware.live/apidocs)
+
+**New ransomware Group:**
+
+**Issue fixed**
+
+## 2023-07-09 🎂
+
+**New Features:**
+
+**New ransomware Group:**
+
+**Issue fixed**
+
+- Fix url and parser for [DonutLeaks](group/donutleaks.md) (thanks to [Ransomwatch](https://github.com/joshhighet/ransomwatch/commit/7b12aea47056bc49306882b6c9d537116d15c5c4))
+
 ## 2023-07-02
 
 **New Features:**

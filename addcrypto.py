@@ -39,13 +39,14 @@ for group in groups:
     # Iterate through the sorted result list
     for address_info in result["result"]:
         family = address_info.get("family", "").split(" ", 1)[0].lower()
-        # print(family)
         if family == group["name"]:
             keep = True 
             url = address_info['address']
             if address_info['blockchain'] == "bitcoin":
                 url='[' + address_info['address'] + '](https://www.blockchain.com/explorer/addresses/btc/' + address_info['address'] + ')'
             writeline(cryptofile, '| ' + url + ' | ' + address_info['blockchain'] + ' | $ ' + str(round(float(address_info['balanceUSD']))) + ' |')
+        #else:
+        #    print(family)
     writeline(cryptofile, '')
     writeline(cryptofile, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
     writeline(cryptofile, '')

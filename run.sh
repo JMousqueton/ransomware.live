@@ -10,12 +10,14 @@ python3 ransomwatchv2.py scrape
 python3 ransomwatchv2.py parse 
 ## Generate the RSS feed 
 python3 generateRSS.py 
+## Generate ransomware Cloud 
+python3 GenerateCloud.py
 ## Crypto information 
 python3 addcrypto.py
 ## Generate the website in markdown
 python3 ransomwatchv2.py markdown
 ## Generate recent attacks page 
-python3 recentcyberattacks.py 
+python3 cyberattack.py 
 ## Generate graph for each ransomware group 
 #python3 graphgroup.py
 ## Generate ransomware negotiation 
@@ -23,7 +25,7 @@ python3 negociation.py
 ## Search for new ransomware group
 ./assets/sources.zsh
 ## Generate sitemap.xml
-./assets/sitemap.sh
+python3 sitemap.py
 # Update ransom_notes
 cd docs/ransomware_notes
 git fetch
