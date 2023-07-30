@@ -38,11 +38,25 @@ You can find more in [my resume](https://cv.julien.io) in English (also availabl
 - [Ransomlook](https://github.com/RansomLook/Ransomlook) for ideas of new features included in [Ransomware.live](https://www.ransomware.live).
 - [Valéry Rieß-Marchive](https://twitter.com/ValeryMarchive) for ideas and his involvement in the cyber community.
 
+## ⚙️ API
+
+An API is available for `ransomware.live`'s data
+
+You can find more information about it : [here](https://api.ransomware.live/apidocs)
+
 ## ❤️ Support 
 
 If you want to support ransomware.live :
 
 <a href="https://www.buymeacoffee.com/ransomwarelive" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
+## 🗞️ They talk about ransomware.live
+
+Find [articles](press.md) about `ransomware.live`
+
+## 👓 Feed RSS 
+
+You can follow `ransomware.live` from its [RSS Feed](https://ransomware.live/rss.xml)
 
 ## 📜 License
 
