@@ -1,10 +1,115 @@
 
 > `Ransomware.live` provides tracking of ransomware groups and their victims. Descriptions available in the [group profiles view](profiles.md)
 
-**📰 200 last victims**
+**📰 200 last victims sorted by published date**
 
 | Date | Title | Group | 📸 |
 |---|---|---|---|
+| 2023-07-14 | [`JTI.COM`](https://google.com/search?q=JTI.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/92ec99d2bec77ebe83421284f9966e3a.png" target=_blank>👀</a> |
+| 2023-07-14 | [`VOSS.NET`](https://google.com/search?q=VOSS.NET) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/c4406b81069749b0141a50ab8e92b3f6.png" target=_blank>👀</a> |
+| 2023-07-14 | [`UFCU.ORG`](https://google.com/search?q=UFCU.ORG) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/ec07b9254a6d91cf3b733e73b827ad56.png" target=_blank>👀</a> |
+| 2023-07-14 | [`YAKULT.COM.PH`](https://google.com/search?q=YAKULT.COM.PH) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/a579482758574146f1018ece6a27ae0d.png" target=_blank>👀</a> |
+| 2023-07-14 | [`ROCHESTER.EDU`](https://google.com/search?q=ROCHESTER.EDU) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/3b14ec6ce457f486b0bdb4fc3b177878.png" target=_blank>👀</a> |
+| 2023-07-14 | [`eyedoc.com.na`](https://google.com/search?q=eyedoc.com.na) | [lockbit3](group/lockbit3) | <a href="https://images.ransomware.live/screenshots/posts/2a251a83d324bf05be300a276f9248e3.png" target=_blank>👀</a> |
+| 2023-07-14 | [`The Big Life group`](https://google.com/search?q=The+Big+Life+group) | [rhysida](group/rhysida) |   |
+| 2023-07-14 | [`Info Salons`](https://google.com/search?q=Info+Salons) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/faf136f50ee55e4865920fca5498f5fb.png" target=_blank>👀</a> |
+| 2023-07-14 | [`CPA Advisors Group`](https://google.com/search?q=CPA+Advisors+Group) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/b67249a704460a452423a2709f9042a5.png" target=_blank>👀</a> |
+| 2023-07-13 | [`Blackjewel L.L.C.`](https://google.com/search?q=Blackjewel+L.L.C.) | [lockbit3](group/lockbit3) | <a href="https://images.ransomware.live/screenshots/posts/8c146b2605e742ed5387164cdcbb995e.png" target=_blank>👀</a> |
+| 2023-07-13 | [`SHUTTERFLY.COM`](https://google.com/search?q=SHUTTERFLY.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/47902a07613eefa47a74523f997d4d04.png" target=_blank>👀</a> |
+| 2023-07-13 | [`DISCOVERY.COM`](https://google.com/search?q=DISCOVERY.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/ecb0ccdcf14cef51d0e2f9f92b30e527.png" target=_blank>👀</a> |
+| 2023-07-13 | [`ASPENTECH.COM`](https://google.com/search?q=ASPENTECH.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/61df36c7970d314cddce60a0f3733303.png" target=_blank>👀</a> |
+| 2023-07-13 | [`MOTHERSON.COM`](https://google.com/search?q=MOTHERSON.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/c4c8e44313349320eae57194862b9a07.png" target=_blank>👀</a> |
+| 2023-07-13 | [`PAYCOM.COM`](https://google.com/search?q=PAYCOM.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/58fa1b942cc8a1ca69d35b81a40ace44.png" target=_blank>👀</a> |
+| 2023-07-13 | [`Gerber ChildrenswearLLC`](https://google.com/search?q=Gerber+ChildrenswearLLC) | [akira](group/akira) |   |
+| 2023-07-13 | [`BTU`](https://google.com/search?q=BTU) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/e0dd4a6f31f4ee62de54d4b7a7cb13c3.png" target=_blank>👀</a> |
+| 2023-07-13 | [`ANL Packaging`](https://google.com/search?q=ANL+Packaging) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/77a6df17193f57d2f9b33d8cff206f59.png" target=_blank>👀</a> |
+| 2023-07-13 | [`Dental One Craigieburn`](https://google.com/search?q=Dental+One+Craigieburn) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/7114925b40f7b912d4582e9d15ac48d5.png" target=_blank>👀</a> |
+| 2023-07-13 | [`Jadranka Group`](https://google.com/search?q=Jadranka+Group) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/b61391d94ab42a105b8c3237d443b2cf.png" target=_blank>👀</a> |
+| 2023-07-13 | [`Quikcard Solutions Inc.`](https://google.com/search?q=Quikcard+Solutions+Inc.) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/6a7ec8cc1a5f95099a72bed101471abe.png" target=_blank>👀</a> |
+| 2023-07-13 | [`The Traffic Tech`](https://google.com/search?q=The+Traffic+Tech) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/4325a8d935b9d3d542ed9b9499b9dce9.png" target=_blank>👀</a> |
+| 2023-07-13 | [`Telepizza`](https://google.com/search?q=Telepizza) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/1632988ad5382f25c2d3ba68afd41f82.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Ministerio de Cultura de la Republica de Cuba " STORMOUS + GhostSec "`](https://google.com/search?q=Ministerio+de+Cultura+de+la+Republica+de+Cuba+%22+STORMOUS+%2B+GhostSec+%22) | [stormous](group/stormous) | <a href="https://images.ransomware.live/screenshots/posts/ae6cdcbbcadc6644e5e94dba814d3e05.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Ministry of Foreign Trade " STORMOUS + GhostSec "`](https://google.com/search?q=Ministry+of+Foreign+Trade+%22+STORMOUS+%2B+GhostSec+%22) | [stormous](group/stormous) | <a href="https://images.ransomware.live/screenshots/posts/09b55cfc5b716f080f119e0453985255.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Ministry of Energy and Mines (Cuba) " STORMOUS + GhostSec "`](https://google.com/search?q=Ministry+of+Energy+and+Mines+%28Cuba%29+%22+STORMOUS+%2B+GhostSec+%22) | [stormous](group/stormous) | <a href="https://images.ransomware.live/screenshots/posts/daac36e8afe39ed82868a55bb087f26f.png" target=_blank>👀</a> |
+| 2023-07-12 | [`GRIPA.ORG`](https://google.com/search?q=GRIPA.ORG) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/b2d7474534a3ec8cfbfa9321b25a1272.png" target=_blank>👀</a> |
+| 2023-07-12 | [`SLB.COM`](https://google.com/search?q=SLB.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/3e3dde79675b2b4869d38c61b0b9022c.png" target=_blank>👀</a> |
+| 2023-07-12 | [`AMCTHEATRES.COM`](https://google.com/search?q=AMCTHEATRES.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/474f1aa8bcb9e58dee855ab14da780f6.png" target=_blank>👀</a> |
+| 2023-07-12 | [`AINT.COM`](https://google.com/search?q=AINT.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/f80bc8fa8e60a7f74c6b44b35082eb6b.png" target=_blank>👀</a> |
+| 2023-07-12 | [`JACKENTERTAINMENT.COM`](https://google.com/search?q=JACKENTERTAINMENT.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/1dffc6e38f4f7ad5b77d43b3f4e2a5f5.png" target=_blank>👀</a> |
+| 2023-07-12 | [`NASCO.COM`](https://google.com/search?q=NASCO.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/105e6c4bec39d018cb0cd8104bac8da3.png" target=_blank>👀</a> |
+| 2023-07-12 | [`TGIDIRECT.COM`](https://google.com/search?q=TGIDIRECT.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/375cfd0c90f522ff0873ff402aae7036.png" target=_blank>👀</a> |
+| 2023-07-12 | [`HONEYWELL.COM`](https://google.com/search?q=HONEYWELL.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/4dbf7929859262aeca312fd2a4d1bc88.png" target=_blank>👀</a> |
+| 2023-07-12 | [`CLEARESULT.COM`](https://google.com/search?q=CLEARESULT.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/6bfb8890fc5f3ca4679ece4538c48d2c.png" target=_blank>👀</a> |
+| 2023-07-12 | [`RADIUSGS.COM`](https://google.com/search?q=RADIUSGS.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/ad881c17bdd55bc0c0c44000538cd47e.png" target=_blank>👀</a> |
+| 2023-07-12 | [`affinityhealthservices.ne`](https://google.com/search?q=affinityhealthservices.ne) | [lockbit3](group/lockbit3) | <a href="https://images.ransomware.live/screenshots/posts/5ec3037d373deb6246c5d2fbdf25f156.png" target=_blank>👀</a> |
+| 2023-07-12 | [`ATS Infrastructure`](https://google.com/search?q=ATS+Infrastructure) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/83283ce3398ed6450f9ffb574fce0fab.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Henock Construction`](https://google.com/search?q=Henock+Construction) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/e2e22149882cf07908bdd1e06051bf70.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Lyon & Healy`](https://google.com/search?q=Lyon+%26+Healy) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/a8cb13220db272c5372f919d89c77de6.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Mission Parks`](https://google.com/search?q=Mission+Parks) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/d387e8a5ec980741b2c533ded7ce2745.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Maruchan Inc`](https://google.com/search?q=Maruchan+Inc) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/eccbed3972bc90e73cd21d7cd54d176d.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Amber Court 2020 was hacking. A lot of customers' personal information was stolen.`](https://google.com/search?q=Amber+Court+2020+was+hacking.+A+lot+of+customers%27+personal+information+was+stolen.) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/f64c260d6c5cb6ba28bace5e130ad6d7.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Algeiba.com has a critical level of security on its network. Customer and partner data is `](https://google.com/search?q=Algeiba.com+has+a+critical+level+of+security+on+its+network.+Customer+and+partner+data+is+) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/1c6cd9925b82187a7abeefd5a4f9435b.png" target=_blank>👀</a> |
+| 2023-07-12 | [`SMS-SME was hacked. A huge amount of confidential information was stolen, information of c`](https://google.com/search?q=SMS-SME+was+hacked.+A+huge+amount+of+confidential+information+was+stolen%2C+information+of+c) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/b86b2b5d72cd963be68286a20a110049.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Eastin Hotel Makkasan Bangkok was hacked. Customers' financial and personal information ha`](https://google.com/search?q=Eastin+Hotel+Makkasan+Bangkok+was+hacked.+Customers%27+financial+and+personal+information+ha) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/855c000e0fc56c0cf1102a5bcb5b0a04.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Divgi-TTS was hacked. Due to the extreme low level of security, a huge amount of confident`](https://google.com/search?q=Divgi-TTS+was+hacked.+Due+to+the+extreme+low+level+of+security%2C+a+huge+amount+of+confident) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/556e407231b166de8b3888187659bf77.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Wright Moore DeHart Dupuis & Hutchinson`](https://google.com/search?q=Wright+Moore+DeHart+Dupuis+%26+Hutchinson) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/f94d836da2ad04d25d5d0e4d67ed7544.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Better System Co.,Ltd`](https://google.com/search?q=Better+System+Co.%2CLtd) | [qilin](group/qilin) | <a href="https://images.ransomware.live/screenshots/posts/25a3b13e5f546e8d08a4130f991c3f73.png" target=_blank>👀</a> |
+| 2023-07-12 | [`Schmidt Salzman & Moran, Ltd`](https://google.com/search?q=Schmidt+Salzman+%26+Moran%2C+Ltd) | [akira](group/akira) |   |
+| 2023-07-11 | [`CONSOLENERGY.COM`](https://google.com/search?q=CONSOLENERGY.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/94ffcdb626fbbfe70a3c16d59cc4465d.png" target=_blank>👀</a> |
+| 2023-07-11 | [`KALEAERO.COM`](https://google.com/search?q=KALEAERO.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/a43dfec487808885b16b1522de812f2a.png" target=_blank>👀</a> |
+| 2023-07-11 | [`AGILYSYS.COM`](https://google.com/search?q=AGILYSYS.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/423cf9d6694a0cfff4424ee5f1f1b437.png" target=_blank>👀</a> |
+| 2023-07-11 | [`SCCU.COM`](https://google.com/search?q=SCCU.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/95abbaef8863bb97e6504d990e8599bc.png" target=_blank>👀</a> |
+| 2023-07-11 | [`ARVATO.COM`](https://google.com/search?q=ARVATO.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/1c91c36278a37c289bc8aec22587b4d2.png" target=_blank>👀</a> |
+| 2023-07-11 | [`RITEAID.COM`](https://google.com/search?q=RITEAID.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/e1086f4ded361da40e248e09039cb0e2.png" target=_blank>👀</a> |
+| 2023-07-11 | [`PIONEERELECTRONICS.COM`](https://google.com/search?q=PIONEERELECTRONICS.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/6b369c7c9bc348c52ad7743d6efdb6c7.png" target=_blank>👀</a> |
+| 2023-07-11 | [`BAM.COM.GT`](https://google.com/search?q=BAM.COM.GT) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/9d02ecc00ae5f2f4dac8ca8a2a7cf4a9.png" target=_blank>👀</a> |
+| 2023-07-11 | [`TOMTOM.COM`](https://google.com/search?q=TOMTOM.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/953dec4bf51ba3185619470851f9d1b9.png" target=_blank>👀</a> |
+| 2023-07-11 | [`EMERSON.COM`](https://google.com/search?q=EMERSON.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/78fd8d0f6439391e3f91fd9d80b9758d.png" target=_blank>👀</a> |
+| 2023-07-11 | [`berjaya`](https://google.com/search?q=berjaya) | [stormous](group/stormous) |   |
+| 2023-07-11 | [`Ingersoll Rand`](https://google.com/search?q=Ingersoll+Rand) | [stormous](group/stormous) |   |
+| 2023-07-11 | [`Arrowall`](https://google.com/search?q=Arrowall) | [stormous](group/stormous) |   |
+| 2023-07-11 | [`OKS`](https://google.com/search?q=OKS) | [stormous](group/stormous) |   |
+| 2023-07-11 | [`Matrix`](https://google.com/search?q=Matrix) | [stormous](group/stormous) |   |
+| 2023-07-11 | [`treenovum.es`](https://google.com/search?q=treenovum.es) | [stormous](group/stormous) |   |
+| 2023-07-11 | [`archiplusinter.com`](https://google.com/search?q=archiplusinter.com) | [stormous](group/stormous) |   |
+| 2023-07-11 | [`marehotels`](https://google.com/search?q=marehotels) | [stormous](group/stormous) |   |
+| 2023-07-11 | [`mamboafricaadventure`](https://google.com/search?q=mamboafricaadventure) | [stormous](group/stormous) |   |
+| 2023-07-11 | [`Nipun Consultancy`](https://google.com/search?q=Nipun+Consultancy) | [stormous](group/stormous) |   |
+| 2023-07-11 | [`Murfreesboro Medical Clinic`](https://google.com/search?q=Murfreesboro+Medical+Clinic) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/2659a0bc704efb8ed0f84fa6a7fa26c9.png" target=_blank>👀</a> |
+| 2023-07-11 | [`MicroPort Scientific / LivaNova`](https://google.com/search?q=MicroPort+Scientific+%2F+LivaNova) | [qilin](group/qilin) | <a href="https://images.ransomware.live/screenshots/posts/97e0673432f4d5385a09f344e9cee6f1.png" target=_blank>👀</a> |
+| 2023-07-11 | [`panoramaeyecare.com`](https://google.com/search?q=panoramaeyecare.com) | [lockbit3](group/lockbit3) | <a href="https://images.ransomware.live/screenshots/posts/f4c242cb53fbc9607d931f2a706a5e3a.png" target=_blank>👀</a> |
+| 2023-07-11 | [`gis4.addison-il`](https://google.com/search?q=gis4.addison-il) | [cuba](group/cuba) | <a href="https://images.ransomware.live/screenshots/posts/ad05d8099336ef6890b435ca43d13e79.png" target=_blank>👀</a> |
+| 2023-07-11 | [`A123 Systems`](https://google.com/search?q=A123+Systems) | [akira](group/akira) |   |
+| 2023-07-11 | [`Weitkamp · Hirsch and Kollegen Steuerberatungsgesellschaft mbH`](https://google.com/search?q=Weitkamp+%C2%B7+Hirsch+and+Kollegen+Steuerberatungsgesellschaft+mbH) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/4e7b4a26682bdbdfcb195c8535963698.png" target=_blank>👀</a> |
+| 2023-07-11 | [`Pesquera Diamante S.A.`](https://google.com/search?q=Pesquera+Diamante+S.A.) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/138847851365646ebbc78fd6e24d510b.png" target=_blank>👀</a> |
+| 2023-07-10 | [`RICOHACUMEN.COM`](https://google.com/search?q=RICOHACUMEN.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/1c12e61421b867be4f64968ac1da34fb.png" target=_blank>👀</a> |
+| 2023-07-10 | [`SMA.DE`](https://google.com/search?q=SMA.DE) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/3f305c5a687350bf377c2b9035b8688d.png" target=_blank>👀</a> |
+| 2023-07-10 | [`VRM.DE`](https://google.com/search?q=VRM.DE) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/10e892c5647aeadc6c93d8ec7b94b30f.png" target=_blank>👀</a> |
+| 2023-07-10 | [`UMASSMED.EDU`](https://google.com/search?q=UMASSMED.EDU) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/b398680d5247b879e54236d0712f652b.png" target=_blank>👀</a> |
+| 2023-07-10 | [`VISIONWARE.CA`](https://google.com/search?q=VISIONWARE.CA) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/ed9e22dd8bebb8d42e5f8e2c336bb9e0.png" target=_blank>👀</a> |
+| 2023-07-10 | [`JHU.EDU`](https://google.com/search?q=JHU.EDU) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/92c47a17ac4bae0c08b38e85b1974c63.png" target=_blank>👀</a> |
+| 2023-07-10 | [`FMFCU.ORG`](https://google.com/search?q=FMFCU.ORG) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/1dae9b891920a99eb3b8e2368d21d38c.png" target=_blank>👀</a> |
+| 2023-07-10 | [`JPRMP.COM`](https://google.com/search?q=JPRMP.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/ab21fee4aab8671e9b741bc79204d21d.png" target=_blank>👀</a> |
+| 2023-07-10 | [`WESTAT.COM`](https://google.com/search?q=WESTAT.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/74c693d66d157bd92329ea1ce0044d37.png" target=_blank>👀</a> |
+| 2023-07-10 | [`RADISSONHOTELSAMERICAS.COM`](https://google.com/search?q=RADISSONHOTELSAMERICAS.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/acea45b29329b6a8e11dae38a26453f7.png" target=_blank>👀</a> |
+| 2023-07-10 | [`Belize Electricity Limited - Leaked`](https://google.com/search?q=Belize+Electricity+Limited+-+Leaked) | [ragnarlocker](group/ragnarlocker) | <a href="https://images.ransomware.live/screenshots/posts/29b72a69de8915b92ef3a72fbf83a1f5.png" target=_blank>👀</a> |
+| 2023-07-10 | [`Citta Nuova`](https://google.com/search?q=Citta+Nuova) | [rhysida](group/rhysida) |   |
+| 2023-07-10 | [`Green Diamond`](https://google.com/search?q=Green+Diamond) | [akira](group/akira) |   |
+| 2023-07-10 | [`Hamre Schumann Mueller & Larson HSML`](https://google.com/search?q=Hamre+Schumann+Mueller+%26+Larson+HSML) | [akira](group/akira) |   |
+| 2023-07-09 | [`Garuda Indonesia`](https://google.com/search?q=Garuda+Indonesia) | [mallox](group/mallox) |   |
+| 2023-07-09 | [`roys.co.uk`](https://google.com/search?q=roys.co.uk) | [lockbit3](group/lockbit3) | <a href="https://images.ransomware.live/screenshots/posts/57d58c970140d793828f313c339b6062.png" target=_blank>👀</a> |
+| 2023-07-09 | [`Evergreen Seamless Pipes & Tubes`](https://google.com/search?q=Evergreen+Seamless+Pipes+%26+Tubes) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/e50e7d434297afe2872bdc04aa6b624e.png" target=_blank>👀</a> |
+| 2023-07-09 | [`M****** *****`](https://google.com/search?q=M%2A%2A%2A%2A%2A%2A+%2A%2A%2A%2A%2A) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/63fe56214c6303b42bebff211c84e8ef.png" target=_blank>👀</a> |
+| 2023-07-09 | [`leeindustries.com`](https://google.com/search?q=leeindustries.com) | [lockbit3](group/lockbit3) | <a href="https://images.ransomware.live/screenshots/posts/c3d9bd2274f389804400c810891702bb.png" target=_blank>👀</a> |
+| 2023-07-09 | [`Bitimen exchange`](https://google.com/search?q=Bitimen+exchange) | [arvinclub](group/arvinclub) | <a href="https://images.ransomware.live/screenshots/posts/bceafd6a2ebefedaec4b07ea3d46ecee.png" target=_blank>👀</a> |
+| 2023-07-08 | [`Cabra Consulting Ltd`](https://google.com/search?q=Cabra+Consulting+Ltd) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/e367fef31f9bf30bd81a46f884eab0f7.png" target=_blank>👀</a> |
+| 2023-07-08 | [`Motor Components, LLC`](https://google.com/search?q=Motor+Components%2C+LLC) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/5e45b75fe7e36f5e17b7aa10f7385326.png" target=_blank>👀</a> |
+| 2023-07-08 | [`Citelis Mobility`](https://google.com/search?q=Citelis+Mobility) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/20f5a1eaab95499c442d2ead012433d8.png" target=_blank>👀</a> |
+| 2023-07-08 | [`Advanced Fiberglass Industries`](https://google.com/search?q=Advanced+Fiberglass+Industries) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/e5c9cda2d3465f025f14c363996b4bf0.png" target=_blank>👀</a> |
+| 2023-07-08 | [`Danbury Public Schools`](https://google.com/search?q=Danbury+Public+Schools) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/de554497b7c4a8852479ef74707a8b23.png" target=_blank>👀</a> |
+| 2023-07-08 | [`Kansas medical center LLC`](https://google.com/search?q=Kansas+medical+center+LLC) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/1643f4a7b6996ca2805525895ea54234.png" target=_blank>👀</a> |
+| 2023-07-08 | [`Weitkamp · Hirsch & Kollegen Steuerberatungsgesellschaft mbH`](https://google.com/search?q=Weitkamp+%C2%B7+Hirsch+%26+Kollegen+Steuerberatungsgesellschaft+mbH) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/4e7b4a26682bdbdfcb195c8535963698.png" target=_blank>👀</a> |
+| 2023-07-08 | [`Protactics`](https://google.com/search?q=Protactics) | [noescape](group/noescape) | <a href="https://images.ransomware.live/screenshots/posts/637cd0f6765b5cbd24c909b21da22630.png" target=_blank>👀</a> |
 | 2023-07-07 | [`Lane Valente Industries`](https://google.com/search?q=Lane+Valente+Industries) | [play](group/play) | <a href="https://images.ransomware.live/screenshots/posts/7d214c52a955cafcf31afa1330615fa5.png" target=_blank>👀</a> |
 | 2023-07-07 | [`Industrial Heat Transfer (iht-inc.com)`](https://google.com/search?q=Industrial+Heat+Transfer+%28iht-inc.com%29) | [rancoz](group/rancoz) | <a href="https://images.ransomware.live/screenshots/posts/899fc8aaa62a9c45dd6a71966e8824e1.png" target=_blank>👀</a> |
 | 2023-07-07 | [`CROWE.COM`](https://google.com/search?q=CROWE.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/ac97df3bf6b8668ef6d61062b1ffcafe.png" target=_blank>👀</a> |
@@ -19,6 +124,7 @@
 | 2023-07-07 | [`UOFLHEALTH.ORG`](https://google.com/search?q=UOFLHEALTH.ORG) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/334c1a5e966a5627ef9f31cb1370f820.png" target=_blank>👀</a> |
 | 2023-07-07 | [`L8SOLUTIONS.CO.UK`](https://google.com/search?q=L8SOLUTIONS.CO.UK) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/c25c32f21c6fa94929dc0d18a0d9488f.png" target=_blank>👀</a> |
 | 2023-07-07 | [`TDAMERITRADE.COM`](https://google.com/search?q=TDAMERITRADE.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/bcecc8e3a988bae34acc774ed0bd312a.png" target=_blank>👀</a> |
+| 2023-07-07 | [`Tracker de Colombia SAS`](https://google.com/search?q=Tracker+de+Colombia+SAS) | [medusa](group/medusa) | <a href="https://images.ransomware.live/screenshots/posts/ef69b14981c2067dd0d4e9e1248ddfe5.png" target=_blank>👀</a> |
 | 2023-07-07 | [`Kenya Bureau Of Standards`](https://google.com/search?q=Kenya+Bureau+Of+Standards) | [rhysida](group/rhysida) |   |
 | 2023-07-07 | [`Lazer Tow`](https://google.com/search?q=Lazer+Tow) | [play](group/play) | <a href="https://images.ransomware.live/screenshots/posts/c47eef27b877121cd9a1bdeade82fd51.png" target=_blank>👀</a> |
 | 2023-07-07 | [`Star Island Resort`](https://google.com/search?q=Star+Island+Resort) | [play](group/play) | <a href="https://images.ransomware.live/screenshots/posts/a4789357335d02bf354c3d4879d48269.png" target=_blank>👀</a> |
@@ -26,6 +132,7 @@
 | 2023-07-07 | [`Lawer SpA`](https://google.com/search?q=Lawer+SpA) | [play](group/play) | <a href="https://images.ransomware.live/screenshots/posts/c47eef27b877121cd9a1bdeade82fd51.png" target=_blank>👀</a> |
 | 2023-07-07 | [`ROBERT L BAYLESS PRODUCER LLC`](https://google.com/search?q=ROBERT+L+BAYLESS+PRODUCER+LLC) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/27407de7bce8c8f3dcc55c3b194e0453.png" target=_blank>👀</a> |
 | 2023-07-07 | [`New Century Advisors, LLC`](https://google.com/search?q=New+Century+Advisors%2C+LLC) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/673ce998a4829f4dbef2e55e3c8bd8b4.png" target=_blank>👀</a> |
+| 2023-07-07 | [`Innodis Group`](https://google.com/search?q=Innodis+Group) | [noescape](group/noescape) | <a href="https://images.ransomware.live/screenshots/posts/637cd0f6765b5cbd24c909b21da22630.png" target=_blank>👀</a> |
 | 2023-07-06 | [`DELARUE.COM`](https://google.com/search?q=DELARUE.COM) | [clop](group/clop) |   |
 | 2023-07-06 | [`ENERGYTRANSFER.COM`](https://google.com/search?q=ENERGYTRANSFER.COM) | [clop](group/clop) |   |
 | 2023-07-06 | [`PAYCOR.COM`](https://google.com/search?q=PAYCOR.COM) | [clop](group/clop) |   |
@@ -83,10 +190,11 @@
 | 2023-07-03 | [`Ayuntamiento de Arganda City Council`](https://google.com/search?q=Ayuntamiento+de+Arganda+City+Council) | [rhysida](group/rhysida) |   |
 | 2023-07-03 | [`Hollywood Forever`](https://google.com/search?q=Hollywood+Forever) | [rhysida](group/rhysida) |   |
 | 2023-07-03 | [`Duncan Disability Law`](https://google.com/search?q=Duncan+Disability+Law) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/e3e2c708b57e752bc0e709f2eb1705e3.png" target=_blank>👀</a> |
-| 2023-07-03 | [`Luna Hotels & Resorts `](https://google.com/search?q=Luna+Hotels+%26+Resorts+) | [medusa](group/medusa) |   |
-| 2023-07-03 | [`Mutuelle LMP`](https://google.com/search?q=Mutuelle+LMP) | [medusa](group/medusa) |   |
+| 2023-07-03 | [`Luna Hotels & Resorts `](https://google.com/search?q=Luna+Hotels+%26+Resorts+) | [medusa](group/medusa) | <a href="https://images.ransomware.live/screenshots/posts/3a0b9faf4a86a06827eae88db7e8d5b9.png" target=_blank>👀</a> |
+| 2023-07-03 | [`Mutuelle LMP`](https://google.com/search?q=Mutuelle+LMP) | [medusa](group/medusa) | <a href="https://images.ransomware.live/screenshots/posts/1d38ff110f50e64b60ddc24f518ae034.png" target=_blank>👀</a> |
 | 2023-07-03 | [`BM GROUP POLYTEC S.p.A.`](https://google.com/search?q=BM+GROUP+POLYTEC+S.p.A.) | [rhysida](group/rhysida) |   |
 | 2023-07-03 | [`Brett Martin`](https://google.com/search?q=Brett+Martin) | [blackbyte](group/blackbyte) |   |
+| 2023-07-03 | [`Peroni Pompe`](https://google.com/search?q=Peroni+Pompe) | [donutleaks](group/donutleaks) | <a href="https://images.ransomware.live/screenshots/posts/0c0ce0942a7574ea749e36ae70b301b0.png" target=_blank>👀</a> |
 | 2023-07-02 | [`blowtherm.it`](https://google.com/search?q=blowtherm.it) | [lockbit3](group/lockbit3) | <a href="https://images.ransomware.live/screenshots/posts/6a8ab19f0a6412efd27d8ec0cbe17b23.png" target=_blank>👀</a> |
 | 2023-07-02 | [`Ucamco Belgium`](https://google.com/search?q=Ucamco+Belgium) | [medusalocker](group/medusalocker) | <a href="https://images.ransomware.live/screenshots/posts/cb0a34428452c895edfa0da479c5ce79.png" target=_blank>👀</a> |
 | 2023-07-01 | [`Ashley HomeStore`](https://google.com/search?q=Ashley+HomeStore) | [mallox](group/mallox) | <a href="https://images.ransomware.live/screenshots/posts/39ef1b4b842c69cfea56d125c7d46d6c.png" target=_blank>👀</a> |
@@ -97,113 +205,5 @@
 | 2023-07-01 | [`Kondratoff Persick LLP`](https://google.com/search?q=Kondratoff+Persick+LLP) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/ce1eeb2781424a686f210dab6e0c8e91.png" target=_blank>👀</a> |
 | 2023-07-01 | [`Undisclosed Staffing Company`](https://google.com/search?q=Undisclosed+Staffing+Company) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/cf9d2396f18a39b47079460ddcd60c02.png" target=_blank>👀</a> |
 | 2023-06-30 | [`ENCORECAPITAL.COM`](https://google.com/search?q=ENCORECAPITAL.COM) | [clop](group/clop) |   |
-| 2023-06-30 | [`TRELLISWARE.COM`](https://google.com/search?q=TRELLISWARE.COM) | [clop](group/clop) |   |
-| 2023-06-30 | [`CLICKSGROUP.CO.ZA`](https://google.com/search?q=CLICKSGROUP.CO.ZA) | [clop](group/clop) |   |
-| 2023-06-30 | [`HORNBECKOFFSHORE.COM`](https://google.com/search?q=HORNBECKOFFSHORE.COM) | [clop](group/clop) |   |
-| 2023-06-30 | [`FISGLOBAL.COM`](https://google.com/search?q=FISGLOBAL.COM) | [clop](group/clop) |   |
-| 2023-06-30 | [`DIGITALINSIGHT.COM`](https://google.com/search?q=DIGITALINSIGHT.COM) | [clop](group/clop) |   |
-| 2023-06-30 | [`IRONBOW.COM`](https://google.com/search?q=IRONBOW.COM) | [clop](group/clop) |   |
-| 2023-06-30 | [`VERICAST.COM`](https://google.com/search?q=VERICAST.COM) | [clop](group/clop) |   |
-| 2023-06-30 | [`RHENUS.GROUP`](https://google.com/search?q=RHENUS.GROUP) | [clop](group/clop) |   |
-| 2023-06-30 | [`SOVOS.COM`](https://google.com/search?q=SOVOS.COM) | [clop](group/clop) |   |
-| 2023-06-30 | [`HARRINGTONCOMPANY.COM`](https://google.com/search?q=HARRINGTONCOMPANY.COM) | [clop](group/clop) |   |
-| 2023-06-30 | [`CITYNATIONAL.COM`](https://google.com/search?q=CITYNATIONAL.COM) | [clop](group/clop) |   |
-| 2023-06-30 | [`barts health nhs trust`](https://google.com/search?q=barts+health+nhs+trust) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/22238681322e290cbc8b2684ee1314a4.png" target=_blank>👀</a> |
-| 2023-06-30 | [`Guatemala Military Intelligence Directorate`](https://google.com/search?q=Guatemala+Military+Intelligence+Directorate) | [cyclops](group/cyclops) |   |
-| 2023-06-29 | [`tsmc.com`](https://google.com/search?q=tsmc.com) | [lockbit3](group/lockbit3) | <a href="https://images.ransomware.live/screenshots/posts/bde31c6e332a834dfa2bc3720a6f8e9b.png" target=_blank>👀</a> |
-| 2023-06-29 | [`Enfield Grammar School`](https://google.com/search?q=Enfield+Grammar+School) | [rhysida](group/rhysida) | <a href="https://images.ransomware.live/screenshots/posts/035fcbf8a340d5ff2f257dc4c1e75da2.png" target=_blank>👀</a> |
-| 2023-06-29 | [`amepl.com.au`](https://google.com/search?q=amepl.com.au) | [lockbit3](group/lockbit3) | <a href="https://images.ransomware.live/screenshots/posts/01c4c79f21a38288c4f1dfce3f73dc8e.png" target=_blank>👀</a> |
-| 2023-06-29 | [`ALTARGRUP`](https://google.com/search?q=ALTARGRUP) | [cyclops](group/cyclops) |   |
-| 2023-06-29 | [`Atherfield Medical Service`](https://google.com/search?q=Atherfield+Medical+Service) | [cyclops](group/cyclops) |   |
-| 2023-06-29 | [`KLGATES.COM`](https://google.com/search?q=KLGATES.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`KIRKLAND & ELLIS LLP`](https://google.com/search?q=KIRKLAND+%26+ELLIS+LLP) | [clop](group/clop) |   |
-| 2023-06-29 | [`DARLINGCONSULTING.COM`](https://google.com/search?q=DARLINGCONSULTING.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`CPIAI.COM`](https://google.com/search?q=CPIAI.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`DELTADENTAL.COM`](https://google.com/search?q=DELTADENTAL.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`COGNIZANT.COM`](https://google.com/search?q=COGNIZANT.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`ENSTARGROUP.COM`](https://google.com/search?q=ENSTARGROUP.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`SAPIENS.COM`](https://google.com/search?q=SAPIENS.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`CARESOURCE.COM`](https://google.com/search?q=CARESOURCE.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`JACKSON.COM`](https://google.com/search?q=JACKSON.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`STARMOUNTLIFE.COM`](https://google.com/search?q=STARMOUNTLIFE.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`KOTAKLIFE.COM`](https://google.com/search?q=KOTAKLIFE.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`KIRKLAND.COM`](https://google.com/search?q=KIRKLAND.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`PROSKAUER.COM`](https://google.com/search?q=PROSKAUER.COM) | [clop](group/clop) |   |
-| 2023-06-29 | [`Western National Group`](https://google.com/search?q=Western+National+Group) | [rhysida](group/rhysida) |   |
-| 2023-06-29 | [`Nycon`](https://google.com/search?q=Nycon) | [akira](group/akira) |   |
-| 2023-06-29 | [`LCG company (URGENT!)`](https://google.com/search?q=LCG+company+%28URGENT%21%29) | [akira](group/akira) |   |
-| 2023-06-29 | [`Hospitality StaffingSolutions`](https://google.com/search?q=Hospitality+StaffingSolutions) | [akira](group/akira) |   |
-| 2023-06-28 | [`Alberta Newsprint`](https://google.com/search?q=Alberta+Newsprint) | [rhysida](group/rhysida) | <a href="https://images.ransomware.live/screenshots/posts/4ab49fa4f212a49d27be2cb97098866c.png" target=_blank>👀</a> |
-| 2023-06-28 | [`ibafrance.fr`](https://google.com/search?q=ibafrance.fr) | [lockbit3](group/lockbit3) | <a href="https://images.ransomware.live/screenshots/posts/280cd62be8053a387fdaef2ba83edbc3.png" target=_blank>👀</a> |
-| 2023-06-28 | [`CentroMed`](https://google.com/search?q=CentroMed) | [karakurt](group/karakurt) | <a href="https://images.ransomware.live/screenshots/posts/85a461d7575066a7cbf137d22841f0df.png" target=_blank>👀</a> |
-| 2023-06-28 | [`Pan Pacific Hotels Group`](https://google.com/search?q=Pan+Pacific+Hotels+Group) | [karakurt](group/karakurt) | <a href="https://images.ransomware.live/screenshots/posts/f7854eba0d3cfb2dd8d83245609d5049.png" target=_blank>👀</a> |
-| 2023-06-28 | [`JBCC Corp`](https://google.com/search?q=JBCC+Corp) | [mallox](group/mallox) | <a href="https://images.ransomware.live/screenshots/posts/be6e0759b75a105150a9a705f7b2a8b7.png" target=_blank>👀</a> |
-| 2023-06-28 | [`Arab Shipbuilding and Repair Yard`](https://google.com/search?q=Arab+Shipbuilding+and+Repair+Yard) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/b88ae9e77b832a84acfa38e9cc13d210.png" target=_blank>👀</a> |
-| 2023-06-28 | [`Misr Life Insurance`](https://google.com/search?q=Misr+Life+Insurance) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/fdf696ec4cc3e7fd47d1568fd8b0b3f2.png" target=_blank>👀</a> |
-| 2023-06-28 | [`N** ********* **********`](https://google.com/search?q=N%2A%2A+%2A%2A%2A%2A%2A%2A%2A%2A%2A+%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/a21cad7335eda376dca56c4e281da40a.png" target=_blank>👀</a> |
-| 2023-06-28 | [`Piramal Group`](https://google.com/search?q=Piramal+Group) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/96641dbc14b6ed7ff2442562af865c93.png" target=_blank>👀</a> |
-| 2023-06-28 | [`Coachella Valley Collection Service`](https://google.com/search?q=Coachella+Valley+Collection+Service) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/827fd1b0e5484ad95665aed5c50dadd7.png" target=_blank>👀</a> |
-| 2023-06-28 | [`GraphTec`](https://google.com/search?q=GraphTec) | [blackbasta](group/blackbasta) | <a href="https://images.ransomware.live/screenshots/posts/170cd404e825160b7e7a08c08dfb5742.png" target=_blank>👀</a> |
-| 2023-06-28 | [`MODERNIND_2`](https://google.com/search?q=MODERNIND_2) | [blackbasta](group/blackbasta) | <a href="https://images.ransomware.live/screenshots/posts/ac1157130451c48d80af95854c684bd1.png" target=_blank>👀</a> |
-| 2023-06-28 | [`GIAMBELLI`](https://google.com/search?q=GIAMBELLI) | [blackbasta](group/blackbasta) | <a href="https://images.ransomware.live/screenshots/posts/dfe6abf1c98964e4d020a329d52f5864.png" target=_blank>👀</a> |
-| 2023-06-28 | [`Wilcom`](https://google.com/search?q=Wilcom) | [akira](group/akira) |   |
-| 2023-06-28 | [`Stoughton Trailers`](https://google.com/search?q=Stoughton+Trailers) | [akira](group/akira) |   |
-| 2023-06-28 | [`Texas Heat Treating`](https://google.com/search?q=Texas+Heat+Treating) | [play](group/play) |   |
-| 2023-06-28 | [`Intoximeters`](https://google.com/search?q=Intoximeters) | [play](group/play) |   |
-| 2023-06-28 | [`Algotech`](https://google.com/search?q=Algotech) | [play](group/play) |   |
-| 2023-06-28 | [`Cambridge Group of Clubs`](https://google.com/search?q=Cambridge+Group+of+Clubs) | [play](group/play) |   |
-| 2023-06-28 | [`CON-STRUCT`](https://google.com/search?q=CON-STRUCT) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/dc9c2b0dc8773ef8794e93ebcc8c3aeb.png" target=_blank>👀</a> |
-| 2023-06-28 | [`PORTERROOFING`](https://google.com/search?q=PORTERROOFING) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/2b00ba508c6f025d29c09750b2327756.png" target=_blank>👀</a> |
-| 2023-06-28 | [`ISPE Connecting Pharmaceutical Knowledge`](https://google.com/search?q=ISPE+Connecting+Pharmaceutical+Knowledge) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/9f67d5f0e49b672919fe9a91785f0abf.png" target=_blank>👀</a> |
-| 2023-06-27 | [`iMatica`](https://google.com/search?q=iMatica) | [rhysida](group/rhysida) | <a href="https://images.ransomware.live/screenshots/posts/fb07c8d59b8f88683c4db4eec9d5ba46.png" target=_blank>👀</a> |
-| 2023-06-27 | [`COMPASS INFRASTRUCTURE GROUP`](https://google.com/search?q=COMPASS+INFRASTRUCTURE+GROUP) | [mallox](group/mallox) | <a href="https://images.ransomware.live/screenshots/posts/0b2eb0fc319e2d7d9ea0c5bf7cee4d99.png" target=_blank>👀</a> |
-| 2023-06-27 | [`ITW Food Equipment Group`](https://google.com/search?q=ITW+Food+Equipment+Group) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/8579945d225530a436b9fb3e6955db24.png" target=_blank>👀</a> |
-| 2023-06-27 | [`Hochschule Kaiserslautern`](https://google.com/search?q=Hochschule+Kaiserslautern) | [rhysida](group/rhysida) | <a href="https://images.ransomware.live/screenshots/posts/1715d24058f3945e79fb030c95126092.png" target=_blank>👀</a> |
-| 2023-06-26 | [`ABBVIE.COM`](https://google.com/search?q=ABBVIE.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/d9e98e88660c1967a1521069fc9573fe.png" target=_blank>👀</a> |
-| 2023-06-26 | [`UCLA.EDU`](https://google.com/search?q=UCLA.EDU) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/15519784b74359b6c9663eea1943be5f.png" target=_blank>👀</a> |
-| 2023-06-26 | [`SIEMENS-ENERGY.COM`](https://google.com/search?q=SIEMENS-ENERGY.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/55522ab84020b41a829f17c6bcaf9c68.png" target=_blank>👀</a> |
-| 2023-06-26 | [`SE.COM`](https://google.com/search?q=SE.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/8e0c818cc020f3d7173cb3b0feb24952.png" target=_blank>👀</a> |
-| 2023-06-26 | [`WERUM.COM`](https://google.com/search?q=WERUM.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/d1d76a59f6dd65985430ac4ae8b82c4f.png" target=_blank>👀</a> |
-| 2023-06-26 | [`Greenfiber`](https://google.com/search?q=Greenfiber) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/7269b8cd0e1411613ce7e28d1a4ef06a.png" target=_blank>👀</a> |
-| 2023-06-26 | [`Reeds Spring School District`](https://google.com/search?q=Reeds+Spring+School+District) | [karakurt](group/karakurt) |   |
-| 2023-06-26 | [`Fassi Gru S.p.A.`](https://google.com/search?q=Fassi+Gru+S.p.A.) | [rhysida](group/rhysida) |   |
-| 2023-06-26 | [`Hiberus Tecnología`](https://google.com/search?q=Hiberus+Tecnolog%C3%ADa) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/e6fc9260161301de5662a17be1628ce1.png" target=_blank>👀</a> |
-| 2023-06-26 | [`London Capital Group(LCG)`](https://google.com/search?q=London+Capital+Group%28LCG%29) | [akira](group/akira) |   |
-| 2023-06-26 | [`Chariton Valley`](https://google.com/search?q=Chariton+Valley) | [akira](group/akira) |   |
-| 2023-06-26 | [`Knights of Old Group`](https://google.com/search?q=Knights+of+Old+Group) | [akira](group/akira) |   |
-| 2023-06-26 | [`PNEUMAX`](https://google.com/search?q=PNEUMAX) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/c3d62d852444710cb0704291933f933d.png" target=_blank>👀</a> |
-| 2023-06-26 | [`LEGALILAVORO`](https://google.com/search?q=LEGALILAVORO) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/adc8fd991ce087ae9f73c490e09bb95e.png" target=_blank>👀</a> |
-| 2023-06-26 | [`Lysander Shipping`](https://google.com/search?q=Lysander+Shipping) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/6d11d6b592c26e04908f1052faa59db6.png" target=_blank>👀</a> |
-| 2023-06-26 | [`CLEAR MEDI HEALTHCARE`](https://google.com/search?q=CLEAR+MEDI+HEALTHCARE) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/f124a83a2b591f0b4edfde45e5b7b426.png" target=_blank>👀</a> |
-| 2023-06-26 | [`JOB-SA BETON J.O.B SA`](https://google.com/search?q=JOB-SA+BETON+J.O.B+SA) | [8base](group/8base) | <a href="https://images.ransomware.live/screenshots/posts/4cdb4fc9c3fa40286e5e71c0e10120c0.png" target=_blank>👀</a> |
-| 2023-06-25 | [`Universitas Matthiae Belii association`](https://google.com/search?q=Universitas+Matthiae+Belii+association) | [medusa](group/medusa) | <a href="https://images.ransomware.live/screenshots/posts/5065ed77149d47576453424b1c564c62.png" target=_blank>👀</a> |
-| 2023-06-25 | [`Real Estate Systems Integrator`](https://google.com/search?q=Real+Estate+Systems+Integrator) | [medusa](group/medusa) | <a href="https://images.ransomware.live/screenshots/posts/8a7e194d41c321bcda116ab9403c84fa.png" target=_blank>👀</a> |
-| 2023-06-24 | [`Jacobs Farm`](https://google.com/search?q=Jacobs+Farm) | [ransomexx](group/ransomexx) | <a href="https://images.ransomware.live/screenshots/posts/5f012d4b8bb9277533e8fb6a721425cb.png" target=_blank>👀</a> |
-| 2023-06-24 | [`The City of Nassau Bay`](https://google.com/search?q=The+City+of+Nassau+Bay) | [akira](group/akira) |   |
-| 2023-06-24 | [`Tlantic`](https://google.com/search?q=Tlantic) | [mallox](group/mallox) | <a href="https://images.ransomware.live/screenshots/posts/4ba37cfac3bab631495231af8d541e67.png" target=_blank>👀</a> |
-| 2023-06-23 | [`MSAMLIN.COM`](https://google.com/search?q=MSAMLIN.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/e70bc34d9e9fe997267c55011111d361.png" target=_blank>👀</a> |
-| 2023-06-23 | [`**** H****`](https://google.com/search?q=%2A%2A%2A%2A+H%2A%2A%2A%2A) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/04e7959b4ec3f37477ab19232d5b548f.png" target=_blank>👀</a> |
-| 2023-06-23 | [`*i***** *****`](https://google.com/search?q=%2Ai%2A%2A%2A%2A%2A+%2A%2A%2A%2A%2A) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/09a2ce994dd603fce16b4d5657839a9a.png" target=_blank>👀</a> |
-| 2023-06-23 | [`American Crane Rental`](https://google.com/search?q=American+Crane+Rental) | [bianlian](group/bianlian) | <a href="https://images.ransomware.live/screenshots/posts/8337770d7068ee30969d132897355ec8.png" target=_blank>👀</a> |
-| 2023-06-23 | [`GUSCANADA.CA`](https://google.com/search?q=GUSCANADA.CA) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/46621969f09ff2879818be1ce6ce368e.png" target=_blank>👀</a> |
-| 2023-06-23 | [`PWC.COM`](https://google.com/search?q=PWC.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/fe40383a45b91c8d765dd4f2d612c963.png" target=_blank>👀</a> |
-| 2023-06-23 | [`EY.COM`](https://google.com/search?q=EY.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/df24373d3cb832c97a2b908232117dff.png" target=_blank>👀</a> |
-| 2023-06-23 | [`SONY.COM`](https://google.com/search?q=SONY.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/6c7faa82189fb77c2b7bce99835ec094.png" target=_blank>👀</a> |
-| 2023-06-23 | [`ANDESASERVICES.COM`](https://google.com/search?q=ANDESASERVICES.COM) | [clop](group/clop) | <a href="https://images.ransomware.live/screenshots/posts/34dd3800ea257abb68c00a13703abc68.png" target=_blank>👀</a> |
-| 2023-06-23 | [`M&M Industries`](https://google.com/search?q=M%26M+Industries) | [blackbasta](group/blackbasta) | <a href="https://images.ransomware.live/screenshots/posts/806574c84bbe7ea95d021423b8e28e23.png" target=_blank>👀</a> |
-| 2023-06-23 | [`Galveston College`](https://google.com/search?q=Galveston+College) | [akira](group/akira) |   |
-| 2023-06-23 | [`Perpetual Group`](https://google.com/search?q=Perpetual+Group) | [akira](group/akira) |   |
-| 2023-06-23 | [`The Akron-Summit County Public Library`](https://google.com/search?q=The+Akron-Summit+County+Public+Library) | [akira](group/akira) |   |
-| 2023-06-22 | [`Daiwa House Industry Co.`](https://google.com/search?q=Daiwa+House+Industry+Co.) | [qilin](group/qilin) |   |
-| 2023-06-22 | [`Hill International`](https://google.com/search?q=Hill+International) | [play](group/play) |   |
-| 2023-06-22 | [`National Institutional Facilitation Technologies (Pvt.) Limited`](https://google.com/search?q=National+Institutional+Facilitation+Technologies+%28Pvt.%29+Limited) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/68d50c01a5d601f54234bfca35edfe86.png" target=_blank>👀</a> |
-| 2023-06-22 | [`londonandcapital`](https://google.com/search?q=londonandcapital) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/1e092bcae6ad2322542ab3f6b5148068.png" target=_blank>👀</a> |
-| 2023-06-22 | [`GC&E`](https://google.com/search?q=GC%26E) | [akira](group/akira) |   |
-| 2023-06-22 | [`DBSA hit by ransomware attack.`](https://google.com/search?q=DBSA+hit+by+ransomware+attack.) | [akira](group/akira) |   |
-| 2023-06-22 | [`Refractron`](https://google.com/search?q=Refractron) | [akira](group/akira) |   |
-| 2023-06-21 | [`Avannubo`](https://google.com/search?q=Avannubo) | [rhysida](group/rhysida) | <a href="https://images.ransomware.live/screenshots/posts/7898821f5027a5a02e2af20daa90ee8d.png" target=_blank>👀</a> |
-| 2023-06-21 | [`Craig & Associates, LLC`](https://google.com/search?q=Craig+%26+Associates%2C+LLC) | [alphv](group/alphv) | <a href="https://images.ransomware.live/screenshots/posts/ac47af93d36680115884a31eed5b2c62.png" target=_blank>👀</a> |
-| 2023-06-21 | [`Peter Mark`](https://google.com/search?q=Peter+Mark) | [play](group/play) |   |
-| 2023-06-21 | [`Dancie Perugini Ware Public Relations`](https://google.com/search?q=Dancie+Perugini+Ware+Public+Relations) | [play](group/play) |   |
 
-Last update : _Saturday 08/07/2023 10.48 (UTC)_
+Last update : _Friday 14/07/2023 12.35 (UTC)_

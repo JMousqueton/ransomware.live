@@ -6,12 +6,6 @@
 		"title": "Ransomware : quand les attaquants détruisent les sauvegardes" 
 	},
 	{
-		"date": "2023-05-12",
-		"source": "Deutsche Versicherungsboerses",
-		"url": "https://www.deutsche-versicherungsboerse.de/maklerprozesse/QDas-ultimative-Vertriebstool-f%C3%BCr-die-Cyber-Versicherung-mp_40.html?mg=0&newsletterType=page&userKey=",
-		"title": "Das ultimative Vertriebstool für die Cyber-Versicherung" 
-	},
-	{
 		"date": "2023-02-09",
 		"source": "Medium",
 		"url": "https://medium.com/coinmonks/hidden-secrets-of-lockbit-ransomware-revealed-538b85296afc",
@@ -28,6 +22,18 @@
 		"source": "CSO Deutchland",
 		"url": "https://www.csoonline.com/de/a/daten-von-lux-automation-im-darknet,3680897",
 		"title": "Daten von Lux Automation im Darknet"
+	},
+	{
+		"date": "2023-02-28",
+		"source": "potato.id",
+		"url": "https://potato.id/posts/lesson-learned-from-ransomware/",
+		"title": "Lesson Learned from Ransomware"
+	},
+	{
+		"date": "2023-05-12",
+		"source": "Deutsche Versicherungsboerses",
+		"url": "https://www.deutsche-versicherungsboerse.de/maklerprozesse/Das-ultimative-Vertriebstool-f%C3%BCr-die-Cyber-Versicherung-mp_40.html",
+		"title": "Das ultimative Vertriebstool für die Cyber-Versicherung"
 	}
 
 ]

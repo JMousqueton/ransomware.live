@@ -4,7 +4,7 @@
         <title>Qilin blog</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <meta name="csrf-param" content="_csrf-blog">
-<meta name="csrf-token" content="Ho7ccUCvi4Z_mRPtcKZ022kN4RAbhDt0PCVIxT4-cY9vz7MYFJnj3wyvVaUgkUOqA1KQWXTvT0RbVAGwUmwc7Q==">
+<meta name="csrf-token" content="D_YomFKBxbX8lXWugp3gfzzS0OTUMh3PYKXDT8jERtJMsRjtI_G148r9AevA7poUToOBiZNFa54P46U1-6UTmA==">
 
 <link href="/assets/c8efe592/css/bootstrap.css" rel="stylesheet">
 <link href="/css/site.css" rel="stylesheet">
@@ -13,6 +13,122 @@
 <body>
 <div class="bg3"></div>
 
+
+<div id="registration_modal" class="fade modal" role="dialog" tabindex="-1" aria-hidden="true" aria-labelledby="registration_modal-label">
+<div class="modal-dialog modal-dialog-centered modal-md" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 id="registration_modal-label" class="modal-title">Registration</h5>
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+</div>
+<div class="modal-body">
+
+<form id="reg-form" action="/site/signup" method="post">
+<input type="hidden" name="_csrf-blog" value="D_YomFKBxbX8lXWugp3gfzzS0OTUMh3PYKXDT8jERtJMsRjtI_G148r9AevA7poUToOBiZNFa54P46U1-6UTmA==">    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group field-signupform-login required">
+<label for="signupform-login">Login</label>
+<input type="text" id="signupform-login" class="form-control" name="SignupForm[login]" aria-required="true">
+
+<div class="invalid-feedback"></div>
+</div>        </div>
+        <div class="col-sm-6">
+            <div class="form-group field-signupform-username required">
+<label for="signupform-username">Username</label>
+<input type="text" id="signupform-username" class="form-control" name="SignupForm[username]" aria-required="true">
+
+<div class="invalid-feedback"></div>
+</div>        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group field-signupform-password required">
+<label for="signupform-password">Password</label>
+<input type="password" id="signupform-password" class="form-control" name="SignupForm[password]" aria-required="true">
+
+<div class="invalid-feedback"></div>
+</div>        </div>
+        <div class="col-sm-6">
+            <div class="form-group field-signupform-confirm_password required">
+<label for="signupform-confirm_password">Confirm Password</label>
+<input type="password" id="signupform-confirm_password" class="form-control" name="SignupForm[confirm_password]" aria-required="true">
+
+<div class="invalid-feedback"></div>
+</div>        </div>
+        <div class="col-12">
+            <div class="form-group clearfix field-signupform-verifycode">
+<label for="signupform-verifycode">Verify Code</label>
+<img id="signupform-verifycode-image" src="/site/captcha?v=64b134dba6b464.79241633" alt=""> <input type="text" id="signupform-verifycode" class="form-control" name="SignupForm[verifyCode]">
+
+<div class="invalid-feedback"></div>
+</div>        </div>
+        <div class="col-12">
+            <div class="form-group d-flex align-items-center justify-content-between">
+                <div>
+                    <input type="hidden" name="reg-button" value="y">
+                    <button type="submit" class="btn btn-danger js-registration" style="width:200px;">Sign up</button>                </div>
+                <div>
+                    <a href="#" class="item_box-info__link" data-dismiss="modal" data-toggle="modal" data-target="#login_modal">Login</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</form>
+</div>
+
+</div>
+</div>
+</div>
+<div id="login_modal" class="fade modal" role="dialog" tabindex="-1" aria-hidden="true" aria-labelledby="login_modal-label">
+<div class="modal-dialog modal-dialog-centered modal-md" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 id="login_modal-label" class="modal-title">Login</h5>
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
+</div>
+<div class="modal-body">
+
+<form id="login-form" action="/site/signup" method="post">
+<input type="hidden" name="_csrf-blog" value="D_YomFKBxbX8lXWugp3gfzzS0OTUMh3PYKXDT8jERtJMsRjtI_G148r9AevA7poUToOBiZNFa54P46U1-6UTmA==">    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group field-loginform-login required">
+<label for="loginform-login">Login</label>
+<input type="text" id="loginform-login" class="form-control" name="LoginForm[login]" aria-required="true">
+
+<div class="invalid-feedback"></div>
+</div>        </div>
+        <div class="col-sm-12">
+            <div class="form-group field-loginform-password required">
+<label for="loginform-password">Password</label>
+<input type="password" id="loginform-password" class="form-control" name="LoginForm[password]" aria-required="true">
+
+<div class="invalid-feedback"></div>
+</div>        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="form-group d-flex justify-content-between align-items-center">
+                <div class="text-right">
+
+                    <input type="hidden" name="reg-button" value="y">
+                    <button type="submit" class="btn btn-danger js-login" style="width:200px;">Login</button>                </div>
+                <div>
+                    <a href="#" class="item_box-info__link" data-dismiss="modal" data-toggle="modal" data-target="#registration_modal">Sign up</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</form>
+</div>
+
+</div>
+</div>
+</div>
 <div class="container-wrapper">
     <header>
         <div class="container">
@@ -45,7 +161,133 @@
 
 
         <div id="w0" class="list-view"><div class="summary"></div>
-<div data-key="116">    <div class="item_box">
+<div data-key="118">    <div class="item_box">
+        <div class="row align-items-center">
+            <div class="col-md-9">
+
+                <div class="row">
+                    <div class="col-4 col-md-2 item_box-logo mb-2">
+                        <a href="/site/view?uuid=d539a5de-d2b5-385c-8e55-fcb17f6da03b">
+                            <img src="/uploads/blog/logos/5b21a1475a403d0c3fea6b4cb514d67b..png" class="rounded-circle" alt="">
+                        </a>
+
+                    </div>
+                    <div class="col-md-10 mb-2">
+                        <a href="/site/view?uuid=d539a5de-d2b5-385c-8e55-fcb17f6da03b" class="item_box-title mb-2 mt-1">Better System Co.,Ltd</a>
+                        <div class="item_box-info uppercase d-flex mb-2">
+                            <div class="item_box-info__item d-flex align-items-center">
+                                <img src="/images/link.png" class="item_box__icon" alt="">
+                                <a href="www.bettersystem.co.th" class="item_box-info__link">www.bettersystem.co.th</a>
+                            </div>
+                            <div class="item_box-info__item d-flex align-items-center">
+                                <img src="/images/clock.png" class="item_box__icon" alt="">
+                                Jul 12, 2023                            </div>
+                        </div>
+                        <div class="item_box-info d-flex mb-2">
+                            <div class="item_box-info__item d-flex align-items-center">
+                                <img src="/images/image.png" class="item_box__icon">
+                                0 photos                            </div>
+
+
+                            <div class="item_box-info__item d-flex align-items-center">
+                                <img src="/images/file-text.png" class="item_box__icon">
+                                1 file                            </div>
+                            <div class="item_box-info__item d-flex align-items-center">
+                                <img src="/images/download-cloud.png" class="item_box__icon">
+                                14.00 GB                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 ps-lg-0 text-right mb-2 d-flex justify-content-md-end">
+                <a href="/site/view?uuid=d539a5de-d2b5-385c-8e55-fcb17f6da03b" class="learn_more pt-2 pb-2 px-4">Learn More</a>
+            </div>
+        </div>
+        <hr>
+        <div class="item_box_text">
+            Some of the data taken from the servers of this company can be found below                    </div>
+            </div>
+</div>
+<div data-key="117">    <div class="item_box">
+        <div class="row align-items-center">
+            <div class="col-md-9">
+
+                <div class="row">
+                    <div class="col-4 col-md-2 item_box-logo mb-2">
+                        <a href="/site/view?uuid=d5b49e34-fcc5-3951-a594-4e57e4a59f54">
+                            <img src="/uploads/blog/logos/f48ec9af6ffe0d80b9ddd19df4412309..jpg" class="rounded-circle" alt="">
+                        </a>
+
+                    </div>
+                    <div class="col-md-10 mb-2">
+                        <a href="/site/view?uuid=d5b49e34-fcc5-3951-a594-4e57e4a59f54" class="item_box-title mb-2 mt-1">MicroPort Scientific / LivaNova</a>
+                        <div class="item_box-info uppercase d-flex mb-2">
+                            <div class="item_box-info__item d-flex align-items-center">
+                                <img src="/images/link.png" class="item_box__icon" alt="">
+                                <a href="microport.com" class="item_box-info__link">microport.com</a>
+                            </div>
+                            <div class="item_box-info__item d-flex align-items-center">
+                                <img src="/images/clock.png" class="item_box__icon" alt="">
+                                Jul 11, 2023                            </div>
+                        </div>
+                        <div class="item_box-info d-flex mb-2">
+                            <div class="item_box-info__item d-flex align-items-center">
+                                <img src="/images/image.png" class="item_box__icon">
+                                5 photos                            </div>
+
+
+                            <div class="item_box-info__item d-flex align-items-center">
+                                <img src="/images/file-text.png" class="item_box__icon">
+                                2 files                            </div>
+                            <div class="item_box-info__item d-flex align-items-center">
+                                <img src="/images/download-cloud.png" class="item_box__icon">
+                                10.69 GB                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 ps-lg-0 text-right mb-2 d-flex justify-content-md-end">
+                <a href="/site/view?uuid=d5b49e34-fcc5-3951-a594-4e57e4a59f54" class="learn_more pt-2 pb-2 px-4">Learn More</a>
+            </div>
+        </div>
+        <hr>
+        <div class="item_box_text">
+            Our team has prepared a big announcement for the public to check out some interesting files of this company. In addition to developments ( 1 ). We will publish terabytes of various data from European and Chinese servers. To start with, we wil            ...        </div>
+                    <div class="item_box_photos row">
+                                    <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
+                        <a href="/uploads/blog/117/photos/1.png" data-fancybox="galleryd5b49e34-fcc5-3951-a594-4e57e4a59f54">
+                            <img src="/uploads/blog/117/photos/thumbs/1.png">
+                        </a>
+                    </div>
+                                                    <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
+                        <a href="/uploads/blog/117/photos/2.png" data-fancybox="galleryd5b49e34-fcc5-3951-a594-4e57e4a59f54">
+                            <img src="/uploads/blog/117/photos/thumbs/2.png">
+                        </a>
+                    </div>
+                                                    <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
+                        <a href="/uploads/blog/117/photos/3.png" data-fancybox="galleryd5b49e34-fcc5-3951-a594-4e57e4a59f54">
+                            <img src="/uploads/blog/117/photos/thumbs/3.png">
+                        </a>
+                    </div>
+                                                                            <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
+                            <div class="item_box_photos__more">
+                                <div class="item_box_photos__more-text">
+                                    +<br>2 more
+                                </div>
+                            </div>
+
+                        </div>
+                    <php ?else:="" ?="">
+                        <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
+                            <a href="/uploads/blog/117/photos/3.png" data-fancybox="galleryd5b49e34-fcc5-3951-a594-4e57e4a59f54">
+                                <img src="/uploads/blog/117/photos/thumbs/3.png">
+                            </a>
+                        </div>
+                                    
+            </php></div>
+            </div>
+</div>
+<div data-key="115">    <div class="item_box">
         <div class="row align-items-center">
             <div class="col-md-9">
 
@@ -75,10 +317,10 @@
 
                             <div class="item_box-info__item d-flex align-items-center">
                                 <img src="/images/file-text.png" class="item_box__icon">
-                                0 files                            </div>
+                                1 file                            </div>
                             <div class="item_box-info__item d-flex align-items-center">
                                 <img src="/images/download-cloud.png" class="item_box__icon">
-                                0.00 KB                            </div>
+                                140.18 GB                            </div>
                         </div>
                     </div>
                 </div>
@@ -1035,169 +1277,6 @@ They decided to hide and forget about this kind of leak.
 We publish some of the data leaked from their servers.                    </div>
             </div>
 </div>
-<div data-key="87">    <div class="item_box">
-        <div class="row align-items-center">
-            <div class="col-md-9">
-
-                <div class="row">
-                    <div class="col-4 col-md-2 item_box-logo mb-2">
-                        <a href="/site/view?uuid=3d1a5909-ba10-3238-be03-2e1a40c30fe6">
-                            <img src="/uploads/blog/logos/bd5b09c46fe703e443d55ccca5a9d48b..png" class="rounded-circle" alt="">
-                        </a>
-
-                    </div>
-                    <div class="col-md-10 mb-2">
-                        <a href="/site/view?uuid=3d1a5909-ba10-3238-be03-2e1a40c30fe6" class="item_box-title mb-2 mt-1">Sippex</a>
-                        <div class="item_box-info uppercase d-flex mb-2">
-                            <div class="item_box-info__item d-flex align-items-center">
-                                <img src="/images/link.png" class="item_box__icon" alt="">
-                                <a href="https://www.sippex.com" class="item_box-info__link">https://www.sippex.com</a>
-                            </div>
-                            <div class="item_box-info__item d-flex align-items-center">
-                                <img src="/images/clock.png" class="item_box__icon" alt="">
-                                Apr 12, 2023                            </div>
-                        </div>
-                        <div class="item_box-info d-flex mb-2">
-                            <div class="item_box-info__item d-flex align-items-center">
-                                <img src="/images/image.png" class="item_box__icon">
-                                11 photos                            </div>
-
-
-                            <div class="item_box-info__item d-flex align-items-center">
-                                <img src="/images/file-text.png" class="item_box__icon">
-                                0 files                            </div>
-                            <div class="item_box-info__item d-flex align-items-center">
-                                <img src="/images/download-cloud.png" class="item_box__icon">
-                                0.00 KB                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 ps-lg-0 text-right mb-2 d-flex justify-content-md-end">
-                <a href="/site/view?uuid=3d1a5909-ba10-3238-be03-2e1a40c30fe6" class="learn_more pt-2 pb-2 px-4">Learn More</a>
-            </div>
-        </div>
-        <hr>
-        <div class="item_box_text">
-            Another company that does not care about the data of its employees and customers at all.
-Publishing another leak.
-Let's add some data taken from them. So that people understand who they are working with and who they are giving their data to            ...        </div>
-                    <div class="item_box_photos row">
-                                    <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
-                        <a href="/uploads/blog/87/photos/74cc5291870e8b5e410c0ba30f0bba4d.png" data-fancybox="gallery3d1a5909-ba10-3238-be03-2e1a40c30fe6">
-                            <img src="/uploads/blog/87/photos/thumbs/74cc5291870e8b5e410c0ba30f0bba4d.png">
-                        </a>
-                    </div>
-                                                    <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
-                        <a href="/uploads/blog/87/photos/d011066c4a19f0895e190bf33339edd9.png" data-fancybox="gallery3d1a5909-ba10-3238-be03-2e1a40c30fe6">
-                            <img src="/uploads/blog/87/photos/thumbs/d011066c4a19f0895e190bf33339edd9.png">
-                        </a>
-                    </div>
-                                                    <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
-                        <a href="/uploads/blog/87/photos/326302a8ac22783e5c714d71243054dc.png" data-fancybox="gallery3d1a5909-ba10-3238-be03-2e1a40c30fe6">
-                            <img src="/uploads/blog/87/photos/thumbs/326302a8ac22783e5c714d71243054dc.png">
-                        </a>
-                    </div>
-                                                                            <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
-                            <div class="item_box_photos__more">
-                                <div class="item_box_photos__more-text">
-                                    +<br>8 more
-                                </div>
-                            </div>
-
-                        </div>
-                    <php ?else:="" ?="">
-                        <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
-                            <a href="/uploads/blog/87/photos/326302a8ac22783e5c714d71243054dc.png" data-fancybox="gallery3d1a5909-ba10-3238-be03-2e1a40c30fe6">
-                                <img src="/uploads/blog/87/photos/thumbs/326302a8ac22783e5c714d71243054dc.png">
-                            </a>
-                        </div>
-                                    
-            </php></div>
-            </div>
-</div>
-<div data-key="85">    <div class="item_box">
-        <div class="row align-items-center">
-            <div class="col-md-9">
-
-                <div class="row">
-                    <div class="col-4 col-md-2 item_box-logo mb-2">
-                        <a href="/site/view?uuid=31b5fda5-5991-33e0-91ce-12cd5c095c44">
-                            <img src="/uploads/blog/logos/b30ba1a7e19f612439ce7230c575c903..jpeg" class="rounded-circle" alt="">
-                        </a>
-
-                    </div>
-                    <div class="col-md-10 mb-2">
-                        <a href="/site/view?uuid=31b5fda5-5991-33e0-91ce-12cd5c095c44" class="item_box-title mb-2 mt-1">Attent Zorg en Behandeling</a>
-                        <div class="item_box-info uppercase d-flex mb-2">
-                            <div class="item_box-info__item d-flex align-items-center">
-                                <img src="/images/link.png" class="item_box__icon" alt="">
-                                <a href="https://www.attentzorgenbehandeling.nl/" class="item_box-info__link">https://www.attentzorgenbehandeling.nl/</a>
-                            </div>
-                            <div class="item_box-info__item d-flex align-items-center">
-                                <img src="/images/clock.png" class="item_box__icon" alt="">
-                                Mar 1, 2023                            </div>
-                        </div>
-                        <div class="item_box-info d-flex mb-2">
-                            <div class="item_box-info__item d-flex align-items-center">
-                                <img src="/images/image.png" class="item_box__icon">
-                                6 photos                            </div>
-
-
-                            <div class="item_box-info__item d-flex align-items-center">
-                                <img src="/images/file-text.png" class="item_box__icon">
-                                1 file                            </div>
-                            <div class="item_box-info__item d-flex align-items-center">
-                                <img src="/images/download-cloud.png" class="item_box__icon">
-                                0.11 GB                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 ps-lg-0 text-right mb-2 d-flex justify-content-md-end">
-                <a href="/site/view?uuid=31b5fda5-5991-33e0-91ce-12cd5c095c44" class="learn_more pt-2 pb-2 px-4">Learn More</a>
-            </div>
-        </div>
-        <hr>
-        <div class="item_box_text">
-            Dear friends decided to deceive us and their customers, saying that everything works fine for them and there were no serious leaks in the network.
-https://www.attentzorgenbehandeling.nl/nieuws/update-ongeautoriseerde-toegang-it-systemen
-
-W            ...        </div>
-                    <div class="item_box_photos row">
-                                    <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
-                        <a href="/uploads/blog/85/photos/a44f29ff368e33a210f17d02d2ec647c.png" data-fancybox="gallery31b5fda5-5991-33e0-91ce-12cd5c095c44">
-                            <img src="/uploads/blog/85/photos/thumbs/a44f29ff368e33a210f17d02d2ec647c.png">
-                        </a>
-                    </div>
-                                                    <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
-                        <a href="/uploads/blog/85/photos/4957eccdd2c621f50a921a674382703f.png" data-fancybox="gallery31b5fda5-5991-33e0-91ce-12cd5c095c44">
-                            <img src="/uploads/blog/85/photos/thumbs/4957eccdd2c621f50a921a674382703f.png">
-                        </a>
-                    </div>
-                                                    <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
-                        <a href="/uploads/blog/85/photos/765e7fd34d90490acf63be264dcd40fb.png" data-fancybox="gallery31b5fda5-5991-33e0-91ce-12cd5c095c44">
-                            <img src="/uploads/blog/85/photos/thumbs/765e7fd34d90490acf63be264dcd40fb.png">
-                        </a>
-                    </div>
-                                                                            <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
-                            <div class="item_box_photos__more">
-                                <div class="item_box_photos__more-text">
-                                    +<br>3 more
-                                </div>
-                            </div>
-
-                        </div>
-                    <php ?else:="" ?="">
-                        <div class="col-6 col-sm-3 mb-4 item_box_photos-photo">
-                            <a href="/uploads/blog/85/photos/765e7fd34d90490acf63be264dcd40fb.png" data-fancybox="gallery31b5fda5-5991-33e0-91ce-12cd5c095c44">
-                                <img src="/uploads/blog/85/photos/thumbs/765e7fd34d90490acf63be264dcd40fb.png">
-                            </a>
-                        </div>
-                                    
-            </php></div>
-            </div>
-</div>
 <ul class="pagination"><li class="prev disabled"><span>«</span></li>
 <li class="active"><a href="/?page=1" data-page="0">1</a></li>
 <li><a href="/?page=2" data-page="1">2</a></li>
@@ -1210,123 +1289,7 @@ W            ...        </div>
 
 </div>
     </div>
-
-    
-<div id="registration_modal" class="fade modal" role="dialog" tabindex="-1" aria-hidden="true" aria-labelledby="registration_modal-label">
-<div class="modal-dialog modal-dialog-centered modal-md" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<h5 id="registration_modal-label" class="modal-title">Registration</h5>
-<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
 </div>
-<div class="modal-body">
-
-<form id="reg-form" action="/site/signup" method="post">
-<input type="hidden" name="_csrf-blog" value="Ho7ccUCvi4Z_mRPtcKZ022kN4RAbhDt0PCVIxT4-cY9vz7MYFJnj3wyvVaUgkUOqA1KQWXTvT0RbVAGwUmwc7Q==">    <div class="row">
-        <div class="col-sm-6">
-            <div class="form-group field-signupform-login required">
-<label for="signupform-login">Login</label>
-<input type="text" id="signupform-login" class="form-control" name="SignupForm[login]" aria-required="true">
-
-<div class="invalid-feedback"></div>
-</div>        </div>
-        <div class="col-sm-6">
-            <div class="form-group field-signupform-username required">
-<label for="signupform-username">Username</label>
-<input type="text" id="signupform-username" class="form-control" name="SignupForm[username]" aria-required="true">
-
-<div class="invalid-feedback"></div>
-</div>        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="form-group field-signupform-password required">
-<label for="signupform-password">Password</label>
-<input type="password" id="signupform-password" class="form-control" name="SignupForm[password]" aria-required="true">
-
-<div class="invalid-feedback"></div>
-</div>        </div>
-        <div class="col-sm-6">
-            <div class="form-group field-signupform-confirm_password required">
-<label for="signupform-confirm_password">Confirm Password</label>
-<input type="password" id="signupform-confirm_password" class="form-control" name="SignupForm[confirm_password]" aria-required="true">
-
-<div class="invalid-feedback"></div>
-</div>        </div>
-        <div class="col-12">
-            <div class="form-group clearfix field-signupform-verifycode">
-<label for="signupform-verifycode">Verify Code</label>
-<img id="signupform-verifycode-image" src="/site/captcha?v=64a93e4a1497b2.47555402" alt=""> <input type="text" id="signupform-verifycode" class="form-control" name="SignupForm[verifyCode]">
-
-<div class="invalid-feedback"></div>
-</div>        </div>
-        <div class="col-12">
-            <div class="form-group d-flex align-items-center justify-content-between">
-                <div>
-                    <input type="hidden" name="reg-button" value="y">
-                    <button type="submit" class="btn btn-danger js-registration" style="width:200px;">Sign up</button>                </div>
-                <div>
-                    <a href="#" class="item_box-info__link" data-dismiss="modal" data-toggle="modal" data-target="#login_modal">Login</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</form>
-</div>
-
-</div>
-</div>
-</div>    
-<div id="login_modal" class="fade modal" role="dialog" tabindex="-1" aria-hidden="true" aria-labelledby="login_modal-label">
-<div class="modal-dialog modal-dialog-centered modal-md" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<h5 id="login_modal-label" class="modal-title">Login</h5>
-<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span></button>
-</div>
-<div class="modal-body">
-
-<form id="login-form" action="/site/signup" method="post">
-<input type="hidden" name="_csrf-blog" value="Ho7ccUCvi4Z_mRPtcKZ022kN4RAbhDt0PCVIxT4-cY9vz7MYFJnj3wyvVaUgkUOqA1KQWXTvT0RbVAGwUmwc7Q==">    <div class="row">
-        <div class="col-sm-12">
-            <div class="form-group field-loginform-login required">
-<label for="loginform-login">Login</label>
-<input type="text" id="loginform-login" class="form-control" name="LoginForm[login]" aria-required="true">
-
-<div class="invalid-feedback"></div>
-</div>        </div>
-        <div class="col-sm-12">
-            <div class="form-group field-loginform-password required">
-<label for="loginform-password">Password</label>
-<input type="password" id="loginform-password" class="form-control" name="LoginForm[password]" aria-required="true">
-
-<div class="invalid-feedback"></div>
-</div>        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <div class="form-group d-flex justify-content-between align-items-center">
-                <div class="text-right">
-
-                    <input type="hidden" name="reg-button" value="y">
-                    <button type="submit" class="btn btn-danger js-login" style="width:200px;">Login</button>                </div>
-                <div>
-                    <a href="#" class="item_box-info__link" data-dismiss="modal" data-toggle="modal" data-target="#registration_modal">Sign up</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-</form>
-</div>
-
-</div>
-</div>
-</div></div>
 <div class="footer">
     <div class="row justify-content-center align-items-center">
         <div class="col-8">
@@ -1345,7 +1308,7 @@ W            ...        </div>
 <script src="/assets/c8efe592/js/bootstrap.bundle.js"></script>
 <script>jQuery(function ($) {
 jQuery('#signupform-verifycode-image').yiiCaptcha({"refreshUrl":"\/site\/captcha?refresh=1","hashKey":"yiiCaptcha\/site\/captcha"});
-jQuery('#reg-form').yiiActiveForm([{"id":"signupform-login","name":"login","container":".field-signupform-login","input":"#signupform-login","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, {"skipOnArray":true,"skipOnEmpty":false,"chars":false}, value);yii.validation.required(value, messages, {"message":"Login cannot be blank."});yii.validation.string(value, messages, {"message":"Login must be a string.","min":6,"tooShort":"Login should contain at least 6 characters.","max":254,"tooLong":"Login should contain at most 254 characters.","skipOnEmpty":1});}},{"id":"signupform-username","name":"username","container":".field-signupform-username","input":"#signupform-username","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, {"skipOnArray":true,"skipOnEmpty":false,"chars":false}, value);yii.validation.required(value, messages, {"message":"Username cannot be blank."});yii.validation.string(value, messages, {"message":"Username must be a string.","min":6,"tooShort":"Username should contain at least 6 characters.","max":254,"tooLong":"Username should contain at most 254 characters.","skipOnEmpty":1});}},{"id":"signupform-password","name":"password","container":".field-signupform-password","input":"#signupform-password","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, {"skipOnArray":true,"skipOnEmpty":false,"chars":false}, value);yii.validation.required(value, messages, {"message":"Password cannot be blank."});yii.validation.string(value, messages, {"message":"Password must be a string.","min":6,"tooShort":"Password should contain at least 6 characters.","max":254,"tooLong":"Password should contain at most 254 characters.","skipOnEmpty":1});}},{"id":"signupform-confirm_password","name":"confirm_password","container":".field-signupform-confirm_password","input":"#signupform-confirm_password","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, {"skipOnArray":true,"skipOnEmpty":false,"chars":false}, value);yii.validation.required(value, messages, {"message":"Confirm Password cannot be blank."});yii.validation.compare(value, messages, {"operator":"==","type":"string","compareAttribute":"signupform-password","compareAttributeName":"SignupForm[password]","skipOnEmpty":1,"message":"Confirm Password must be equal to \u0022Password\u0022."}, $form);}},{"id":"signupform-verifycode","name":"verifyCode","container":".field-signupform-verifycode","input":"#signupform-verifycode","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {yii.validation.captcha(value, messages, {"hash":222224,"hashKey":"yiiCaptcha\/site\/captcha","caseSensitive":false,"message":"The verification code is incorrect."});}}], {"errorSummary":".alert.alert-danger","errorCssClass":"is-invalid","successCssClass":"is-valid","validationStateOn":"input"});
+jQuery('#reg-form').yiiActiveForm([{"id":"signupform-login","name":"login","container":".field-signupform-login","input":"#signupform-login","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, {"skipOnArray":true,"skipOnEmpty":false,"chars":false}, value);yii.validation.required(value, messages, {"message":"Login cannot be blank."});yii.validation.string(value, messages, {"message":"Login must be a string.","min":6,"tooShort":"Login should contain at least 6 characters.","max":254,"tooLong":"Login should contain at most 254 characters.","skipOnEmpty":1});}},{"id":"signupform-username","name":"username","container":".field-signupform-username","input":"#signupform-username","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, {"skipOnArray":true,"skipOnEmpty":false,"chars":false}, value);yii.validation.required(value, messages, {"message":"Username cannot be blank."});yii.validation.string(value, messages, {"message":"Username must be a string.","min":6,"tooShort":"Username should contain at least 6 characters.","max":254,"tooLong":"Username should contain at most 254 characters.","skipOnEmpty":1});}},{"id":"signupform-password","name":"password","container":".field-signupform-password","input":"#signupform-password","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, {"skipOnArray":true,"skipOnEmpty":false,"chars":false}, value);yii.validation.required(value, messages, {"message":"Password cannot be blank."});yii.validation.string(value, messages, {"message":"Password must be a string.","min":6,"tooShort":"Password should contain at least 6 characters.","max":254,"tooLong":"Password should contain at most 254 characters.","skipOnEmpty":1});}},{"id":"signupform-confirm_password","name":"confirm_password","container":".field-signupform-confirm_password","input":"#signupform-confirm_password","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, {"skipOnArray":true,"skipOnEmpty":false,"chars":false}, value);yii.validation.required(value, messages, {"message":"Confirm Password cannot be blank."});yii.validation.compare(value, messages, {"operator":"==","type":"string","compareAttribute":"signupform-password","compareAttributeName":"SignupForm[password]","skipOnEmpty":1,"message":"Confirm Password must be equal to \u0022Password\u0022."}, $form);}},{"id":"signupform-verifycode","name":"verifyCode","container":".field-signupform-verifycode","input":"#signupform-verifycode","error":".invalid-feedback","validate":function (attribute, value, messages, deferred, $form) {yii.validation.captcha(value, messages, {"hash":76872,"hashKey":"yiiCaptcha\/site\/captcha","caseSensitive":false,"message":"The verification code is incorrect."});}}], {"errorSummary":".alert.alert-danger","errorCssClass":"is-invalid","successCssClass":"is-valid","validationStateOn":"input"});
 jQuery('#registration_modal').modal({"show":false});
     $(document).ready(function (){
         $('body').on('click', '.js-registration',function (e){

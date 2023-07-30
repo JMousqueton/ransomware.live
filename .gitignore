@@ -1,7 +1,7 @@
 .env
 parsers/__pycache__/
 __pycache__/
-sources/*.html
+source/*.html
 docs/graphs/*.png
 !docs/*/.empty
 docs/screenshots/*.png
@@ -26,3 +26,9 @@ double.py
 IndexNow.py
 assets/howitworks.pptx
 assets/uptimekuma-importer.py
+*.json.GOOD
+*.txt.GOOD
+docs/tmp.html
+test.py
+temp.py
+*.json.ORIG

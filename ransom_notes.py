@@ -28,7 +28,13 @@ for subdir in os.listdir(source_dir):
             for group in data:
                 if subdir.lower() in group['name']:
                     file.write('> 🔗 ['+ subdir + '](group/' + subdir.lower() + ')\n')
-            
+        
+            header = "\n\n"
+            header += "> [!TIP]"
+            header += "> Ransomware notes are provided by [Zscaler ThreatLabz](https://github.com/threatlabz/ransomware_notes) under MIT License\n"
+            header += "> \n"
+            header += "\n\n"
+
         # Iterate over the files in the subdirectory
         for filename in os.listdir(subdir_path):
             file_path_source = os.path.join(subdir_path, filename)
@@ -45,6 +51,7 @@ for subdir in os.listdir(source_dir):
                     target_file.write(content)
                     target_file.write('\n```\n')
         with open(file_path, 'a', encoding='utf-8') as target_file:
+            target_file.write(header)
             target_file.write('\n\nLast update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_\n\n')
 
 # Get a list of all directories in the specified directory, excluding .git
@@ -54,6 +61,12 @@ directories = [d for d in os.listdir(source_dir) if os.path.isdir(os.path.join(s
 directories = sorted(directories, key=lambda x: x.lower())
 
 header = "\n"
+header += "> All ransomware notes by groups"
+header += "\n\n"
+header += "> [!TIP]"
+header += "> Ransomware notes are provided by [Zscaler ThreatLabz](https://github.com/threatlabz/ransomware_notes) under MIT License\n"
+header += "> \n"
+header += "\n\n"
 # Prepare the Markdown table header
 header += "| | | | | | | | | | |\n"  # Empty header row
 header += "|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|:------------:|\n"  # Table formatting
