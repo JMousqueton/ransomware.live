@@ -1,9 +1,13 @@
-
+[[2023]](stats?id=_2023) [[2022]](stats?id=_2022)
 
 
 ## Victims by month
-
 ![](graphs/victims_by_month.png)
+
+
+## Victims by month Cumulative 
+![](graphs/victims_by_month_cumulative.png)
+
 
 ## 2023
 
@@ -33,3 +37,8 @@
 | ![](graphs/postsbygroup7days.png) | ![](graphs/postsbyday.png) |
 |---|---|
 | ![](graphs/postsbygroup.png) | ![](graphs/grouppie.png) |
+
+
+## ☁️ Ransomware Cloud 
+
+![](ransomwarecloud.png)
