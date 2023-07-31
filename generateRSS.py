@@ -25,6 +25,8 @@ print(
 with open('posts.json') as f:
   data = json.load(f)
 
+data.sort(key=lambda item: datetime.strptime(item['published'], '%Y-%m-%d %H:%M:%S.%f'))
+
 # Créez l'élément rss et ajoutez-y les attributs nécessaires
 rss = Element('rss', {'version': '2.0', 'xmlns:atom': 'http://www.w3.org/2005/Atom'})
 
@@ -54,7 +56,11 @@ for i in reversed(range(len(data)-50, len(data))):
   item_link = SubElement(rss_item, 'link')
   item_link.text = 'https://www.ransomware.live/#/profiles/{}'.format(item['group_name'])
   item_description = SubElement(rss_item, 'description')
-  item_description.text = '{}'.format(item['description'])
+  
+  try:
+      item_description.text = '{}'.format(item['description'])
+  except:
+      item_description.text = ''
   item_guid = SubElement(rss_item, 'guid')
   item_guid.text = 'https://www.ransomware.live/#/profiles/' + str(item['group_name']) + '?' +  str(uuid.uuid1(1234567890))
   
