@@ -234,11 +234,11 @@ def gcountMonth(posts,year,month=0):
     group_counts = {}
     for post in posts:
         if post['group_name'] in group_counts:
-            date = datetime.strptime(post['discovered'], date_format)
+            date = datetime.strptime(post['published'], date_format)
             if date <= date_fin and date >= date_debut:
                 group_counts[post['group_name']] += 1
         else:
-            date = datetime.strptime(post['discovered'], date_format)
+            date = datetime.strptime(post['published'], date_format)
             if date <= date_fin and date >= date_debut:
                 group_counts[post['group_name']] = 1
     return group_counts
@@ -342,11 +342,11 @@ def grouppostcount(groupname):
         if post['group_name'] == groupname:
             grouppost_count += 1
     if grouppost_count > 1:
-        grouppost_count = str(grouppost_count) + ' posts found'
+        grouppost_count = str(grouppost_count) + ' victims found'
     elif grouppost_count == 1:
-        grouppost_count = '1 post found'
+        grouppost_count = '1 victim found'
     elif grouppost_count ==0:
-        grouppost_count = 'no post found'
+        grouppost_count = 'no victim found'
     return grouppost_count
 
 def postcountgroup(groupname):
@@ -421,7 +421,7 @@ def monthlypostcount():
     current_month = datetime.now().month
     current_year = datetime.now().year
     for post in posts:
-        datetime_object = datetime.strptime(post['discovered'], '%Y-%m-%d %H:%M:%S.%f')
+        datetime_object = datetime.strptime(post['published'], '%Y-%m-%d %H:%M:%S.%f')
         if datetime_object.year == current_year and datetime_object.month == current_month:
             post_count += 1
     return post_count
@@ -431,7 +431,7 @@ def postssince(days):
     post_count = 0
     posts = openjson('posts.json')
     for post in posts:
-        datetime_object = datetime.strptime(post['discovered'], '%Y-%m-%d %H:%M:%S.%f')
+        datetime_object = datetime.strptime(post['published'], '%Y-%m-%d %H:%M:%S.%f')
         if datetime_object > datetime.now() - timedelta(days=days):
             post_count += 1
     return post_count
@@ -442,7 +442,7 @@ def poststhisyear():
     posts = openjson('posts.json')
     current_year = datetime.now().year
     for post in posts:
-        datetime_object = datetime.strptime(post['discovered'], '%Y-%m-%d %H:%M:%S.%f')
+        datetime_object = datetime.strptime(post['published'], '%Y-%m-%d %H:%M:%S.%f')
         if datetime_object.year == current_year:
             post_count += 1
     return post_count
@@ -456,7 +456,7 @@ def postslastyear():
     previous_year = datetime.now() - timedelta(days=365)
     previous_year = previous_year.year 
     for post in posts:
-        datetime_object = datetime.strptime(post['discovered'], '%Y-%m-%d %H:%M:%S.%f')
+        datetime_object = datetime.strptime(post['published'], '%Y-%m-%d %H:%M:%S.%f')
         if datetime_object.year == previous_year:
             post_count += 1
     return post_count
@@ -466,7 +466,7 @@ def postslast24h():
     post_count = 0
     posts = openjson('posts.json')
     for post in posts:
-        datetime_object = datetime.strptime(post['discovered'], '%Y-%m-%d %H:%M:%S.%f')
+        datetime_object = datetime.strptime(post['published'], '%Y-%m-%d %H:%M:%S.%f')
         if datetime_object > datetime.now() - timedelta(hours=24):
             post_count += 1
     return post_count
@@ -483,6 +483,24 @@ def countcaptchahosts():
 def postsjson2cvs():
     df = pd.read_json (r'posts.json')
     df.to_csv (r'docs/posts.csv', index = None) 
+
+
+def countpostsyeartodate():
+    posts = openjson('posts.json')
+    # Obtenir l'année courante et soustraire 1 pour obtenir l'année précédente
+    current_year = datetime.now().year
+    year_last_year = current_year - 1
+    # Convertir la date actuelle de l'année précédente au format datetime
+    date_last_year = datetime.now().replace(year=year_last_year)
+    # Compter les publications qui tombent dans la plage de dates
+    count_posts_last_year = 0
+    for post in posts:
+        published_date = datetime.strptime(post["published"], "%Y-%m-%d %H:%M:%S.%f")
+        if datetime(year_last_year, 1, 1) <= published_date <= date_last_year:
+            count_posts_last_year += 1
+    return count_posts_last_year
+
+
 
 def totwitter(post_title, group):
     dbglog('sharedutils: ' + 'posting to twitter')
