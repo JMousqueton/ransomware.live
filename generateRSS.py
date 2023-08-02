@@ -1,5 +1,6 @@
 import json
 from datetime import datetime
+import hashlib,os
 import uuid
 from xml.etree.ElementTree import Element, SubElement, Comment, tostring
 from sharedutils import stdlog
@@ -47,22 +48,41 @@ image_title.text = 'Ransomware.live RSS Feed'
 image_link = SubElement(image, 'link')
 image_link.text = 'https://www.ransomware.live/rss.xml'
 
+# Add atom:link element
+atom_link = SubElement(channel, 'atom:link', href='https://www.ransomware.live/rss.xml', rel='self', type='application/rss+xml')
+
 # Parcourez les données du fichier JSON et ajoutez un élément item pour chaque enregistrement
 for i in reversed(range(len(data)-50, len(data))):
   item = data[i]
   rss_item = SubElement(channel, 'item')
   item_title = SubElement(rss_item, 'title')
-  item_title.text = "🏴‍☠️ " + str(item['group_name']) + " has just published a now post : " + str(item['post_title'])
+  item_title.text = "🏴‍☠️ " + str(item['group_name']) + " has just published a new post : " + str(item['post_title'])
   item_link = SubElement(rss_item, 'link')
-  item_link.text = 'https://www.ransomware.live/#/profiles/{}'.format(item['group_name'])
+  item_link.text = 'https://www.ransomware.live/#/group/{}'.format(item['group_name'])
   item_description = SubElement(rss_item, 'description')
   
   try:
       item_description.text = '{}'.format(item['description'])
   except:
       item_description.text = ''
+
+  if item.get('post_url'):
+    md5_hash = hashlib.md5(item['post_url'].encode()).hexdigest()
+    image_url = f"https://images.ransomware.live/screenshots/posts/{md5_hash}.png"
+    image_path = f"./docs/screenshots/posts/{md5_hash}.png"  # Path to the image file
+
+    if os.path.exists(image_path):
+            image_size = os.path.getsize(image_path)  # Get file size in bytes
+
+    enclosure = SubElement(rss_item, 'enclosure')
+    enclosure.set('url', image_url)
+    enclosure.set('type', 'image/png')
+    enclosure.set('length', str(image_size))  # Set the image length attribute
+    
+  
+
   item_guid = SubElement(rss_item, 'guid')
-  item_guid.text = 'https://www.ransomware.live/#/profiles/' + str(item['group_name']) + '?' +  str(uuid.uuid1(1234567890))
+  item_guid.text = 'https://www.ransomware.live/#/group/' + str(item['group_name']) + '?' +  str(uuid.uuid1(1234567890))
   
   date_iso = item['published']
   date_rfc822 = datetime.strptime(date_iso, '%Y-%m-%d %H:%M:%S.%f').strftime('%a, %d %b %Y %H:%M:%S +0000')
