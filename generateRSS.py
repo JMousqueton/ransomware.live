@@ -4,6 +4,7 @@ import hashlib,os
 import uuid
 from xml.etree.ElementTree import Element, SubElement, Comment, tostring
 from sharedutils import stdlog
+import html  # Import the html module
 
 print(
     '''
@@ -62,9 +63,10 @@ for i in reversed(range(len(data)-50, len(data))):
   item_description = SubElement(rss_item, 'description')
   
   try:
-      item_description.text = '{}'.format(item['description'])
+    description_text = html.escape(item['description'])
+    item_description.text = description_text
   except:
-      item_description.text = ''
+    item_description.text = ''
 
   if item.get('post_url'):
     md5_hash = hashlib.md5(item['post_url'].encode()).hexdigest()
