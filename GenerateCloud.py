@@ -34,6 +34,9 @@ try:
 except:
     errlog('Ransomware Cloud: Error reading posts.json')
 
+# Filter the posts for the year 2023
+data = [post for post in data if 'discovered' in post and post['discovered'].startswith('2023')]
+
 # Extract the group_name values from each post
 group_names = [post.get('group_name', '') for post in data]
 

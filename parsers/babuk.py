@@ -13,6 +13,7 @@ from bs4 import BeautifulSoup
 from sharedutils import errlog
 from parse import appender
 
+
 def main():
     for filename in os.listdir('source'):
         try:
@@ -30,3 +31,4 @@ def main():
                 file.close()
         except:
             errlog("Babuk - Failed during : " + filename)
+

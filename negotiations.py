@@ -124,7 +124,7 @@ def tweetmarkdown():
                 chat_id = 'Date: ' + date_object.strftime("%Y-%m-%d")
             except:
                 pass
-            if data['chat_id'] is '':
+            if data['chat_id'] == '':
                 try:
                     date_object = dt.strptime(chat_name[:8], "%Y%m%d")
                     chat_id = 'Date: ' + date_object.strftime("%Y-%m-%d") 
@@ -136,7 +136,7 @@ def tweetmarkdown():
                     name = '[`' + chat_name.replace('_','.') + '`](https://www.'+ chat_name.replace('_','.') + ')'
             else:
                 name = chat_name.replace('_','.')
-            writeline(tweetspage,'| [' + group_name + '](profiles.md?id=' + link + ')  | ' +  name + ' ' + note + ' | ' + chat_id + ' | ' + str(count) + ' | <a href="https://chat.ransomware.live/chat/' + group_name + '/' + chat_name + '.html" target=_blank> 💬 </a> | ')
+            writeline(tweetspage,'| [' + group_name + '](group/' + link + ')  | ' +  name + ' ' + note + ' | ' + chat_id + ' | ' + str(count) + ' | <a href="https://chat.ransomware.live/chat/' + group_name + '/' + chat_name + '.html" target=_blank> 💬 </a> | ')
 
 
     

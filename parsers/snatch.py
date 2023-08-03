@@ -27,8 +27,7 @@ def main():
                     published = datetime.strftime(date_obj, '%Y-%m-%d %H:%M:%S.%f')
                     link = div.find('button', {'class': 'a-b-b-r-l-button'})
                     link = link['onclick'].replace('window.location=','')
-                    parts = filename.split('-')
-                    url = parts[1].replace('.html','')
+                    url = 'hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad'
                     link = 'http://' + url + '.onion/' + link 
                     description = div.find('div', {'class': 'a-b-text'}).text.strip()
                     appender(title, 'snatch', description,"",published,link.replace('\'',''))

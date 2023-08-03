@@ -14,7 +14,7 @@ from parse import appender
 
 def main():
     for filename in os.listdir('source'):
-        try:
+        #try:
             if filename.startswith('ragroup-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -23,12 +23,14 @@ def main():
                 for div in divs_name:
                     title = div.find("a").text
                     url =  div.find("a")["href"]
-                    parts = filename.split('-')
-                    site = parts[1].replace('.html','')
+                    site = "pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd"
                     post_url = 'http://' + site + '.onion' + url
-                    if "(Full Leaked)" not in title:
-                        appender(title, 'ragroup', '','','',post_url)
+                    title = title.replace('(Full Leaked)','')
+                    title = title.replace('(Unpaid)','')
+                    title = title.replace('\t','')
+                    #if "(Full Leaked)" not in title:
+                    appender(title, 'ragroup', '','','',post_url)
                 file.close()
-        except:
-            errlog('ragroup: ' + 'parsing fail')
-            pass    
+        #except:
+        #    errlog('ragroup: ' + 'parsing fail')
+        #    pass    

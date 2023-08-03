@@ -25,7 +25,10 @@ def main():
                 for div in div_containers:
                     title_div = div.find('div', class_='m-2 h4')
                     title = title_div.text.strip() if title_div else ''
-                    url = title_div.find('a')['href'] if title_div.find('a') else ''
+                    try:
+                        url = title_div.find('a')['href'] 
+                    except: 
+                        url = ''
 
                     description_div = div.find('div', class_='m-2')
                     description = description_div.text.strip().replace('\n',' ') if description_div else ''

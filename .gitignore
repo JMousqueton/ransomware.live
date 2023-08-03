@@ -2,14 +2,6 @@
 parsers/__pycache__/
 __pycache__/
 source/*.html
-docs/graphs/*.png
-!docs/*/.empty
-docs/screenshots/*.png
-docs/screenshots/*/*.png
-!docs/screenshots/*/.empty
-docs/*/*.md
-docs/ransomware_notes/*
-!docs/ransomware_notes/README.md
 docs/google74c95375c7a4a9a1.html
 !*/.empty
 .DS_Store
@@ -32,3 +24,6 @@ docs/tmp.html
 test.py
 temp.py
 *.json.ORIG
+groups copy.json
+posts.json.OLD
+source/*.html

@@ -43,4 +43,10 @@
 |---|---|
 | ![](graphs/grouppie202307.png) | | 
 
-Last update : _Friday 14/07/2023 12.35 (UTC)_
+## August
+
+| ![](graphs/postsbyday202308.png) | ![](graphs/postsbygroup202308.png) |
+|---|---|
+| ![](graphs/grouppie202308.png) | | 
+
+Last update : _Thursday 03/08/2023 00.16 (UTC)_

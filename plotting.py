@@ -86,7 +86,7 @@ def trend_posts_per_day():
     posts = openjson('posts.json')
     dates = []
     for post in posts:
-        dates.append(post['discovered'][0:10])
+        dates.append(post['published'][0:10])
     # list of duplicate dates should be marged to show a count of posts per day
     # i.e ['2021-12-07', '2021-12-07', '2021-12-07', '2021-12-07', '2021-12-07']
     # becomes [{'2021-12-07',4}] etc
@@ -124,7 +124,7 @@ def trend_posts_per_day_2022():
     posts = openjson('posts.json')
     dates = []
     for post in posts:
-        dates.append(post['discovered'][0:10])
+        dates.append(post['published'][0:10])
     # list of duplicate dates should be marged to show a count of posts per day
     # i.e ['2021-12-07', '2021-12-07', '2021-12-07', '2021-12-07', '2021-12-07']
     # becomes [{'2021-12-07',4}] etc
@@ -161,7 +161,7 @@ def trend_posts_per_day_2023():
     posts = openjson('posts.json')
     dates = []
     for post in posts:
-        dates.append(post['discovered'][0:10])
+        dates.append(post['published'][0:10])
     # list of duplicate dates should be marged to show a count of posts per day
     # i.e ['2021-12-07', '2021-12-07', '2021-12-07', '2021-12-07', '2021-12-07']
     # becomes [{'2021-12-07',4}] etc
@@ -295,7 +295,7 @@ def trend_posts_per_day_month(year,month=0):
     posts = openjson('posts.json')
     dates = []
     for post in posts:
-        dates.append(post['discovered'][0:10])
+        dates.append(post['published'][0:10])
     # list of duplicate dates should be marged to show a count of posts per day
     # i.e ['2021-12-07', '2021-12-07', '2021-12-07', '2021-12-07', '2021-12-07']
     # becomes [{'2021-12-07',4}] etc
@@ -428,4 +428,68 @@ def plot_victims_by_month():
     plt.clf()
     plt.cla()
 
+
+
+def plot_victims_by_month_cumulative():
+    # Read the JSON file and load the data
+    data = openjson('posts.json')
+
+    # Count the number of post titles (victims) by month for the years 2022 and 2023
+    year_data = {}
+    for post in data:
+        # Assuming the JSON data has a "published" field and a "post_title" field
+        date = post['published']
+        title = post['post_title']
+
+        year = date[:4]  # Extract the year from the date
+
+        if year in ['2022', '2023']:
+            if year not in year_data:
+                year_data[year] = {}
+
+            month = date[5:7]  # Extract the month from the date
+
+            if month not in year_data[year]:
+                year_data[year][month] = 0
+
+            year_data[year][month] += 1
+
+    # Prepare the data for plotting
+    months = ['{:02d}'.format(i) for i in range(1, 13)]
+    years = ['2022', '2023']
+
+    # Calculate cumulative victims for each year
+    cumulative_data = {}
+    for year in years:
+        cumulative_data[year] = []
+        cumulative_sum = 0
+        for month in months:
+            cumulative_sum += year_data[year].get(month, 0)
+            cumulative_data[year].append(cumulative_sum)
+
+    # Set the figure size
+    plt.figure(figsize=(12, 6))
+    plt.set_loglevel('WARNING')
+    plt.rcParams['text.color'] = "#42b983"
+    plt.rcParams['axes.labelcolor'] = "#42b983"
+    plt.rcParams['xtick.color'] = "#42b983"
+    plt.rcParams['ytick.color'] = "#42b983"
+
+    # Plotting the line chart
+    plt.plot(months, cumulative_data['2022'], label='2022')
+    plt.plot(months, cumulative_data['2023'], label='2023')
+
+    # Customize the chart
+    plt.title('Cumulative Number of Victims by Month (2022-2023)')
+    plt.xlabel('Month\n© Ransomware.live')
+    plt.ylabel('Cumulative Number of Victims')
+    plt.legend()
+
+    # Add grid
+    plt.grid(True)
+
+    # Save the chart as PNG
+    plt.savefig('docs/graphs/victims_by_month_cumulative.png')
+    plt.clf()
+    plt.cla()
 

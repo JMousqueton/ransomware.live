@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ransomware.live : Contact Us</title>
+    <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #42b983;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #42b983;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .notice {
+            font-family: 'Anaheim', cursive, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            background-color: #f9f9f9;
+            border-left: 4px solid #42b983;
+            padding: 10px;
+            margin: 20px 0;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #ffffff; /* Keep the same color for visited links */
+        }
+        footer a {
+            font-family: 'Borel', cursive, sans-serif;
+            font-size: 18px;
+            color: #42b983;
+            text-decoration: none;
+        }
+
+        footer a:visited {
+            color: #42b983; /* Keep the same color for visited links */
+        }
+        /* Floating button styles */
+        .floating-btn {
+            position: fixed;
+            top: 30px; /* Updated to position it in the upper left corner */
+            left: 30px; /* Updated to position it in the upper left corner */
+            background-color: #42b983;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            font-size: 20px;
+            z-index: 999;
+            cursor: pointer;
+        }
+    </style>
+    <!-- Matomo -->
+<script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://stats.mousqueton.io/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '10']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+</head>
+<body>
+    <header>
+        <h1>Contact <a href='https://www.ransomware.live'>Ransomware.live</a>'s team</h1>
+    </header>
+    <div class="container">
+        <p class="notice">If you have any questions, feedback, or inquiries, please feel free to get in touch with us by using the contact form below. We would love to hear from you and will do our best to respond as soon as possible.</p>
+        <form id="contact-form" method="post" data-format="inline">
+            <label for="name">Name<sup>*</sup>:</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email<sup>*</sup>:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+            <label for="message">Message<sup>*</sup>:</label>
+            <textarea rows="5" id="message" placeholder="Message" required></textarea>
+
+            <input type="text" name="_norobots" style="display:none !important;">
+            <span id="responsemsg"></span>
+            <button type="submit" onclick="processForm();return false;">Submit</button>
+        </form>
+        <p>* Required field</p>
+        <script>
+            function formAlert(text, className) {
+                document.getElementById('responsemsg').innerHTML = '<p class="callout ' + className + '">' + text + '</p>';
+            }
+            
+            function sendData() {
+                formAlert('Une secondes ...', 'secondary');
+                var postURL = 'https://hooks.zapier.com/hooks/catch/3124785/31zfjl1/';
+                var http = new XMLHttpRequest();
+                http.open('POST', postURL, true);
+                http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                var params = 'name=' + document.forms['contact-form']['name'].value +
+                    '&email=' + document.forms['contact-form']['email'].value +
+                    '&message=' + document.forms['contact-form']['message'].value +
+                    '&source_url=' + window.location.href;
+                http.send(params);
+                http.onload = function() {
+                    formAlert('Thanks for your message. We will answer you shortly!', 'success');
+                    document.getElementById('contact-form').reset();
+                }
+            }
+        
+            function validateForm() {
+                var returner = false;
+                var x = document.forms['contact-form']['name'].value.length * document.forms['contact-form']['email'].value.length * document.forms['contact-form']['message'].value.length;
+                var robotTextLength = document.forms['contact-form']['_norobots'].value.length;
+                if (x !== 0 && robotTextLength === 0) {
+                    returner = true;
+                }
+                return returner;
+            }
+            
+            function processForm() {
+                if (validateForm() === true) {
+                    sendData();
+                } else {
+                    formAlert('Please fill out all the fields.', 'alert')
+                }
+            }
+        </script>
+    </div>
+    <div class="container">
+    <p>
+        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="ransomwarelive" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+        </p>
+    </div>
+    <footer>
+        &copy; 2023 <a href=https://ransomware.live>Ransomware.live</a>. All rights reserved.
+    </footer>
+
+    <!-- Floating button -->
+    <div class="floating-btn" onclick="scrollToTop()">🏠</div>
+
+    <script>
+        // JavaScript function to scroll to the top of the page
+        function scrollToTop() {
+            window.location.href = 'https://www.ransomware.live';
+        }
+    </script>
+</body>
+</html>

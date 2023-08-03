@@ -57,7 +57,7 @@ for i in reversed(range(len(data)-50, len(data))):
   item = data[i]
   rss_item = SubElement(channel, 'item')
   item_title = SubElement(rss_item, 'title')
-  item_title.text = "🏴‍☠️ " + str(item['group_name']) + " has just published a new post : " + str(item['post_title'])
+  item_title.text = "🏴‍☠️ " + str(item['group_name']) + " has just published a new victim : " + str(item['post_title'])
   item_link = SubElement(rss_item, 'link')
   item_link.text = 'https://www.ransomware.live/#/group/{}'.format(item['group_name'])
   item_description = SubElement(rss_item, 'description')
@@ -65,6 +65,7 @@ for i in reversed(range(len(data)-50, len(data))):
   try:
     description_text = html.escape(item['description'])
     item_description.text = description_text
+    # item_description.text = '{}'.format(item['description'])
   except:
     item_description.text = ''
 

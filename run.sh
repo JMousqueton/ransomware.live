@@ -5,17 +5,17 @@ cd /var/www/ransomware.live/
 ## Load all env. variable 
 source .env
 ## Scrape all ransomware group website 
-python3 ransomwatchv2.py scrape 
+python3 ransomwatch.py scrape 
 ## Parse HTML file to find new victim
-python3 ransomwatchv2.py parse 
+python3 ransomwatch.py parse 
 ## Generate the RSS feed 
 python3 generateRSS.py 
 ## Generate ransomware Cloud 
-python3 GenerateCloud.py
+python3 generateCloud.py
 ## Crypto information 
 python3 addcrypto.py
 ## Generate the website in markdown
-python3 ransomwatchv2.py markdown
+python3 ransomwatch.py markdown
 ## Generate recent attacks page 
 python3 cyberattack.py 
 ## Generate graph for each ransomware group 

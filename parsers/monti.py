@@ -27,7 +27,7 @@ def main():
                     post = div.find('a')
                     post = post.get('href')
                     parts = filename.split('-')
-                    url = parts[1].replace('.html','')
+                    url = 'mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid'
                     url = 'http://' + url + '.onion' + post
                     description =  div.find('p').text.strip()
                     published = div.find('div', {'class': 'col-auto published'}).text.strip()

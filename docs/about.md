@@ -4,8 +4,8 @@ Ransomware.live is a ransomware groups observatory based on [ransomwatch](https:
 Ransomware.live is a ransomware leak site monitoring tool. It will scrape all of the entries on various ransomware leak sites and published them [here](recentposts.md).
 
 >[!WARNING]
->Contents within ransomware.live, posts.json, groups.json and the docs/ & source/ directories are dynamically generated based on hosting choices of real-world threat actors in near-real-time.
-whilst sanitisation efforts have been taken, by viewing or accessing ransomwatch you acknowledge you are doing so at your own risk.
+>Contents within ransomware.live, posts.json, groups.json are dynamically generated based on hosting choices of real-world threat actors in near-real-time.
+Whilst sanitisation efforts have been taken, by viewing or accessing ransomwatch you acknowledge you are doing so at your own risk.
 
 ## 🔭 Sources 
 
@@ -17,7 +17,7 @@ You can find all ransomware's victims in **json** format [here](https://data.ran
 
 - [ransomwhe.re](https://ransomwhe.re/) for the crypto wallet information 
 - [Zscaler ThreatLabz](https://github.com/threatlabz/ransomware_notes) for the ransomware notes 
-- [Valéry Rieß-Marchive](https://twitter.com/ValeryMarchive) for the information about [cyberattacks](https://github.com/Casualtek/Cyberwatch/) and the [negotiations chats](https://github.com/Casualtek/Ransomchats)
+- [Valéry Rieß-Marchive](https://twitter.com/ValeryMarchive) for the information about [cyberattacks](https://github.com/Casualtek/Cyberwatch/) and the [negotiation chats](https://github.com/Casualtek/Ransomchats)
 - [Malpedia](https://malpedia.caad.fkie.fraunhofer.de/) for the Ransomware description 
 
 
@@ -31,6 +31,13 @@ I'm **Julien Mousqueton**
 - I'm a **board member** at the [French Tech Corporate Community](https://www.linkedin.com/company/frenchtechcorporatecommunity) and co-leader of the cybersecurity initiative
 
 You can find more in [my resume](https://cv.julien.io) in English (also available in [French](https://cv.julien.io/fr) / aussi disponible en [français](https://cv.julien.io/fr))
+
+
+👉🏻 **I'm currently open to job offers and excited to explore new opportunities.** ***Don't hesitate to get in touch.***
+
+## 📫 Contact me
+
+You can contact me using the [following form](https://www.ransomware.live/contact.html). 
 
 ## 🤩 Credits
 

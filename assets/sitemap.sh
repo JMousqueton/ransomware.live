@@ -11,11 +11,14 @@ exec 1> docs/sitemap.xml
 
 DATE=$(date +%F)
 
-# print head
 echo '<?xml version="1.0" encoding="UTF-8"?>'
-echo '<!-- generator="Julien Mousqueton Sitemap Generator" -->'
-echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+echo '<urlset'
+echo '      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
+echo '      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"'
+echo '      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9'
+echo '            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">'
 
+echo '<!-- generator="Julien Mousqueton Sitemap Generator" -->'
 
 echo "<url>"
   echo " <loc>https://www.ransomware.live/#/recentposts</loc>"
@@ -98,5 +101,12 @@ do
   echo " <changefreq>$FREQ</changefreq>"
   echo "</url>"
 done
+
+echo "<url>"
+echo " <loc>${URL}press</loc>"
+echo " <lastmod>$DATE</lastmod>"
+echo " <changefreq>$FREQ</changefreq>"
+echo "</url>" 
+
 # print foot
 echo "</urlset>"

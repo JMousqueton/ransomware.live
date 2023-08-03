@@ -6,7 +6,7 @@ with open('posts.json') as file:
     posts_data = json.load(file)
 
 # Define the cutoff date
-cutoff_date = datetime(2021, 12, 31)
+cutoff_date = datetime(2022, 1, 1)
 
 # Dictionary to store the latest published date for each group name
 group_latest_publish_date = {}

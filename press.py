@@ -25,7 +25,7 @@ def screenshot(webpage,output,delay=15000,option=None):
     stdlog('webshot: {}'.format(webpage))
     name = 'docs/screenshots/press/' + output + '.png'
     with sync_playwright() as play:
-                #try:
+                try:
                     browser = play.chromium.launch()
                     context = browser.new_context(ignore_https_errors= True )
                     Image.MAX_IMAGE_PIXELS = None
@@ -43,12 +43,12 @@ def screenshot(webpage,output,delay=15000,option=None):
                     draw = ImageDraw.Draw(image)
                     draw.text((10, 10), "https://www.ransomware.live", fill=(0, 0, 0))
                     image.save(name)
-                #except PlaywrightTimeoutError:
-                #    stdlog('Timeout!')
-                #except Exception as exception:
-                #    errlog(exception)
-                #    errlog("error")
-                ##browser.close()
+                except PlaywrightTimeoutError:
+                    stdlog('Timeout!')
+                except Exception as exception:
+                    errlog(exception)
+                    errlog("error")
+                #browser.close()
 
 
 

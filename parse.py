@@ -193,12 +193,12 @@ def appender(post_title, group_name, description="", website="", published="", p
             hash_object.update(post_url.encode('utf-8'))
             hex_digest = hash_object.hexdigest()
             screenshot(post_url,None,15000,hex_digest)
-        ### Screenshot git 
-        groups = openjson('groups.json')
-        for group in groups:
-            if group["name"] == group_name:
-                for webpage in group['locations']:
-                    delay = webpage['delay']*1000 if ( 'delay' in webpage and webpage['delay'] is not None ) \
-                        else 15000
-                    screenshot('http://'+webpage['fqdn'],webpage['fqdn'],delay)
+        ### Screenshot blog
+        #groups = openjson('groups.json')
+        #for group in groups:
+        #    if group["name"] == group_name:
+        #        for webpage in group['locations']:
+        #            delay = webpage['delay']*1000 if ( 'delay' in webpage and webpage['delay'] is not None ) \
+        #                else 15000
+        #            screenshot('http://'+webpage['fqdn'],webpage['fqdn'],delay)
 

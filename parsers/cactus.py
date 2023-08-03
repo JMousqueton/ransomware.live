@@ -14,7 +14,7 @@ from datetime import datetime
 
 def main():
     for filename in os.listdir('source'):
-        try
+        try:
             if filename.startswith('cactus-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r') 
@@ -31,6 +31,6 @@ def main():
                     title = article.select_one('h2').text.strip()
                     content = article.select_one('p').text.strip()
                     appender(title, 'cactus',content)
-         except:
+        except:
             errlog('blacksuit : ' + 'parsing fail')
             pass

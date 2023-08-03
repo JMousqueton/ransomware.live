@@ -1,5 +1,5 @@
 - [🏡 Home](README.md)
-- [📅 Recent victims](recentvictims.md)
+- [📅 **Recent victims**](recentvictims.md)
 - [🥷 Recent cyberattacks](recentcyberattacks.md)
 - [📄 All victims](allvictims.md)
 - [🚦 Groups status](status.md)
@@ -11,4 +11,3 @@
 - [💁🏻‍♂️ About](about.md)
 - [📰 Changelog](CHANGELOG.md)
 - [⚠️ Disclaimer](disclaimer.md)
-

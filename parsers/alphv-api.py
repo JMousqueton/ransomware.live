@@ -1,18 +1,28 @@
 import requests
 import socks
 import json
-from sharedutils import stdlog, dbglog, errlog   
+from sharedutils import stdlog, dbglog, errlog   # , honk
+from sharedutils import openjson
 import datetime
 from parse import appender
-from parse import existingpost 
 
-domain = "alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad"
 
 # Assuming Tor is running on default port 9050.
 proxies = {
     'http': 'socks5h://localhost:9050',
     'https': 'socks5h://localhost:9050'
 }
+
+def existingpost(post_title, group_name):
+    '''
+    check if a post already exists in posts.json
+    '''
+    posts = openjson('posts.json')
+    # posts = openjson('posts.json')
+    for post in posts:
+        if post['post_title'].lower() == post_title.lower() and post['group_name'] == group_name:
+            return True
+    return False
 
 def fetch_json_from_onion_url(onion_url):
     try:
@@ -34,15 +44,16 @@ def convert_date(timestamp):
     return formatted_date
 
 def main():
-    onion_url= 'http://`+ domain + '.onion/api/blog/brief/0/20'
+    onion_url= 'http://alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad.onion/api/blog/brief/0/10'
 
     json_data = fetch_json_from_onion_url(onion_url)
     if json_data is not None:
+        i=0
         for item in json_data['items']:
             id = item['id']
-            post_title = item['title'].strip()
+            post_title = item['title'].strip().rstrip('.')
             if existingpost(post_title, 'alphv') is False:
-                desc_url = 'http://'+domain+'/api/blog/' + id
+                desc_url = 'http://alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad.onion/api/blog/' + id
                 json_data_item = fetch_json_from_onion_url(desc_url)
                 if json_data_item is not None:
                         created_dt = json_data_item.get('createdDt')
@@ -59,8 +70,8 @@ def main():
                         +------------------------------+------------------+----------+
                         | Description | Published Date | Victim's Website | Post URL |
                         +------------------------------+------------------+----------+
-                        |      X      |      X         |         x        |     x    |
+                        |      X      |      X         |                 |     x    |
                         +------------------------------+------------------+----------+
                         Rappel : def appender(post_title, group_name, description="", website="", published="", post_url=""):
                         """
-                        appender(title.replace('.',''), 'alphv', description.replace('\n',' '),url,convert_date(created_dt),'http://'+domain+'.onion/' + id)
+                        appender(title.rstrip('.'), 'alphv', description.replace('\n',' '),url,convert_date(created_dt)+'.123456','http://alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad.onion/' + id)

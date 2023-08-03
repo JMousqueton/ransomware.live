@@ -19,8 +19,8 @@ from urllib.parse import unquote
 
 def main():
     for filename in os.listdir('source'):
-        #try:
-            if filename.startswith('nokoyawa-nok'):
+        try:
+            if filename.startswith('nokoyawa-'):
                 html_doc='source/'+filename
                 file=open(html_doc, 'r')
                 soup=BeautifulSoup(file,'html.parser')
@@ -41,6 +41,6 @@ def main():
                     published = dt_object.strftime("%Y-%m-%d %H:%M:%S.%f")
                     appender(title, 'nokoyawa', description.replace('\n',''),website,published,post_url)
                 file.close()
-        #except:
-        #    errlog('nokoyawa: ' + 'parsing fail')
-        #    pass    
+        except:
+            errlog('nokoyawa: ' + 'parsing fail')
+            pass    

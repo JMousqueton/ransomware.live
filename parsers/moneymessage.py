@@ -21,24 +21,36 @@ def main():
            if filename.startswith('moneymessage-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
-                """
-                htmlfile = file.read()
-                jsonfile = re.sub(r'<[^>]+>', '', htmlfile)
-                data = json.loads(jsonfile)
-                title = data['name'].strip()
-                #published = data['incidentDate']
-                #date_obj = datetime.strptime(published, "%d.%m.%Y")
-                #published = datetime.strftime(date_obj, "%Y-%m-%d %H:%M:%S.%f")
-                description = data["description"].replace('\n', '').replace('\r', '')
-                """
-                soup=BeautifulSoup(file,'html.parser')
-                divs_name=soup.find_all('div', {"class": "MuiBox-root css-0"})
-                for div in divs_name:
-                    title = div.find('h5').text
-                    description = div.find("div", {"class": "css-1j63rwj"}).text.strip()
-                    appender(title, 'moneymessage', description)
+                soup = BeautifulSoup(content, "html.parser")
+
+                # Find all <a> elements with the specified class
+                a_elements = soup.find_all("a", class_="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-j1mjqc")
+
+                # Extract the link, title, and date information and store them in lists
+                links = [a["href"] for a in a_elements]
+                titles = [a.find("p").get_text() for a in a_elements]
+
+                # Print the extracted information
+                for link, title in zip(links, titles):
+                    link = "http://blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd.onion"+link
+                    linn = ""
+                    appender(title, 'moneymessage', '','','',link)
+
+                a_elements = soup.find_all("a", class_="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-xvpw3o")
+
+                # Extract the link, title, and date information and store them in lists
+                links = [a["href"] for a in a_elements]
+                titles = [a.find("p").get_text() for a in a_elements]
+
+                # Print the extracted information
+                for link, title in zip(links, titles):
+                    link = "http://blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd.onion"+link
+                    link = ""
+                    appender(title, 'moneymessage', '','','',link)
                 file.close()
         except:
             errlog('moneymessage: ' + 'parsing fail')
             pass
+
+
 
