@@ -31,7 +31,7 @@ If you want to support ransomware.live :
 
 ## 🗞️ They talk about ransomware.live
 
-Find [articles](press.md) about `ransomware.live`
+Find [articles](../docs/press.md) about `ransomware.live`
 
 ## 👓 Feed RSS 
 
