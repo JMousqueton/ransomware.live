@@ -5,7 +5,7 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| 404 Not Found | 🟢 | 03/08/2023 06:22 | `http://p66slxmtum2ox4jpayco6ai3qfehd5urgrs4oximjzklxcol264driqd.onion` | <a href="https://images.ransomware.live/screenshots/p66slxmtum2ox4jpayco6ai3qfehd5urgrs4oximjzklxcol264driqd-onion.png" target=_blank>📸</a> | 
+| 404 Not Found | 🟢 | 07/08/2023 11:24 | `http://p66slxmtum2ox4jpayco6ai3qfehd5urgrs4oximjzklxcol264driqd.onion` | <a href="https://images.ransomware.live/screenshots/p66slxmtum2ox4jpayco6ai3qfehd5urgrs4oximjzklxcol264driqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -25,4 +25,4 @@
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

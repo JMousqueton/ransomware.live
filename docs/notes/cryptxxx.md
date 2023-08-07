@@ -1,4 +1,4 @@
-# Ransom notes for group cryptxxx
+# 💰 _Ransom notes for group_ cryptxxx
 * **[!Recovery_[rand].txt](https://ransomware.live/ransomware_notes/cryptxxx/!Recovery_[rand].txt)**
 
 ```
@@ -44,5 +44,5 @@ Be sure to copy your personal ID and the instruction link to your notepad not to
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

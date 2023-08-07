@@ -22,6 +22,7 @@ import pandas as pd
 from dotenv import load_dotenv
 import http.client, urllib
 from mastodon import Mastodon
+import hashlib
 
 sockshost = '127.0.0.1'
 socksport = 9050
@@ -635,3 +636,32 @@ def toteams(post_title, group):
         honk('sharedutils: ' + 'recieved microsoft teams webhook error resonse ' + str(hookpost.status_code) + ' with text ' + str(hookpost.text))
     return False
     
+def find_slug_by_md5(group_name, target_md5):
+    # Load the JSON data from the file or source
+    data = openjson('groups.json')
+    
+    # Find the group entry in the data
+    group_entry = next((group for group in data if group['name'] == group_name), None)
+
+    if group_entry:
+        # Extract the slugs from the locations
+        slugs = [location['slug'] for location in group_entry['locations']]
+        
+        # Calculate the MD5 hash for each slug and compare with the target MD5
+        for slug in slugs:
+            md5 = hashlib.md5(slug.encode()).hexdigest()
+            if md5 == target_md5:
+                return slug
+    else:
+        return None
+
+def extract_md5_from_filename(file_name):
+    parts = file_name.rsplit("-", 1)
+    
+    if len(parts) == 2:
+        before_hyphen, after_hyphen = parts
+        dot_position = after_hyphen.rfind(".")
+        
+        if dot_position != -1:
+            extracted_text = after_hyphen[:dot_position]
+            return extracted_text

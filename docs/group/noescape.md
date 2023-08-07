@@ -8,8 +8,8 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| NoEscape | 🟢 | 03/08/2023 06:39 | `http://noescapemsqxvizdxyl7f7rmg5cdjwp33pg2wpmiaaibilb4btwzttad.onion` | <a href="https://images.ransomware.live/screenshots/noescapemsqxvizdxyl7f7rmg5cdjwp33pg2wpmiaaibilb4btwzttad-onion.png" target=_blank>📸</a> | 
-| Welcome | 🟢 | 03/08/2023 06:40 | `http://noescaperjh3gg6oy7rck57fiefyuzmj7kmvojxgvlmwd5pdzizrb7ad.onion` | <a href="https://images.ransomware.live/screenshots/noescaperjh3gg6oy7rck57fiefyuzmj7kmvojxgvlmwd5pdzizrb7ad-onion.png" target=_blank>📸</a> | 
+| NoEscape | 🔴 | 06/08/2023 22:39 | `http://noescapemsqxvizdxyl7f7rmg5cdjwp33pg2wpmiaaibilb4btwzttad.onion` | <a href="https://images.ransomware.live/screenshots/noescapemsqxvizdxyl7f7rmg5cdjwp33pg2wpmiaaibilb4btwzttad-onion.png" target=_blank>📸</a> | 
+| Welcome | 🟢 | 07/08/2023 11:49 | `http://noescaperjh3gg6oy7rck57fiefyuzmj7kmvojxgvlmwd5pdzizrb7ad.onion` | <a href="https://images.ransomware.live/screenshots/noescaperjh3gg6oy7rck57fiefyuzmj7kmvojxgvlmwd5pdzizrb7ad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -22,11 +22,14 @@
 
 ### Posts
 
-> 22 victims found
+> 25 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Kreacta`](https://www.kreacta.com) | 01/08/2023 | Kreacta are specialized in technical consultancy and2D/3D mechanical design of special and automatic machines, equipment, complete production lines, and installations for industrial production in general.We provide high-... |   |
+| [`Republican Vilnius Psychiatric Hospital`](https://rvpl.lt) | 30/07/2023 | Republican Vilnius Psychiatric Hospital (RVPL) is the largest and widest range of mental health care institution in Lithuania. More than 600 employees work in the hospital, and professional assistance is provided to more... |   |
 | [`Newton IT Solutions`](https://newtonit.co.uk) | 27/07/2023 | Newton IT Solutions is a managed services provider providing innovative business technology solutions. We pride ourselves on having our advanced, wholly owned and private infrastructure in the cloud, allowing our clients... | <a href="https://images.ransomware.live/screenshots/posts/11a5634b16e5fe5daf495bea1048d309.png" target=_blank>📸</a> |
+| [`Avertronics Inc`](https://www.avertronics.com) | 27/07/2023 | Avertronics INC offers the processing of connecting elements, connecting wire modules, wireless application modules, system products, and related technology for the electronic, electrical, mechanic, photonics and health ... |   |
 | [`Grupo SCA - Business Information`](https://www.gruposca.com) | 25/07/2023 | Grupo SCA is a national consulting company specializing in solutions and consulting, operating on the market for more than twenty years. Our management team has been trained by multinational firms in the sector and our e... | <a href="https://images.ransomware.live/screenshots/posts/50ed38ef13577560d6534e3687d9ea6e.png" target=_blank>📸</a> |
 | [`Addison Electronique`](https://www.addison-electronique.com) | 24/07/2023 | Addison Electronique is a family business founded in 1961 specializing in electronic components.The company was successfully encrypted and compromised. We have data such as passports, credit cards, insurance, agreements,... | <a href="https://images.ransomware.live/screenshots/posts/407b24ce084e23fb14f2f4fd59f3255d.png" target=_blank>📸</a> |
 | [`BEIJER REF`](https://www.beijer.es) | 24/07/2023 | Beijer Ref is the European leader in distribution and production of industrial and commercial refrigeration equipment, and components and air conditioning systems. It employs 21-50 people and has $10M-$25M of revenue. Th... | <a href="https://images.ransomware.live/screenshots/posts/4a76443e1f24d3b096b9c769a65f0d45.png" target=_blank>📸</a> |
@@ -51,4 +54,4 @@
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

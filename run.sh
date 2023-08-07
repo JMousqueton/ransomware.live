@@ -17,15 +17,17 @@ python3 addcrypto.py
 ## Generate the website in markdown
 python3 ransomwatch.py markdown
 ## Generate recent attacks page 
-python3 cyberattack.py 
+python3 cyberattacks.py
 ## Generate graph for each ransomware group 
 #python3 graphgroup.py
 ## Generate ransomware negotiation 
-python3 negociation.py
+python3 negotiations.py 
 ## Search for new ransomware group
 ./assets/sources.zsh
 ## Generate sitemap.xml
 python3 sitemap.py
+# update Cartographie 
+curl https://raw.githubusercontent.com/cert-orangecyberdefense/ransomware_map/main/OCD_WorldWatch_Ransomware-ecosystem-map.pdf -o docs/OCD_WorldWatch_Ransomware-ecosystem-map.pdf
 # Update ransom_notes
 cd docs/ransomware_notes
 git fetch
@@ -43,3 +45,4 @@ else
   cd -
   python3 ransom_notes.py
 fi
+

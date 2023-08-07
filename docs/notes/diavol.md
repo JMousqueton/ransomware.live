@@ -1,4 +1,4 @@
-# Ransom notes for group diavol
+# 💰 _Ransom notes for group_ diavol
 > 🔗 [diavol](group/diavol)
 * **[diavol1.txt](https://ransomware.live/ransomware_notes/diavol/diavol1.txt)**
 
@@ -50,5 +50,5 @@ NOTE : If TOR network is unavailable by any reason - you can use any VPN service
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

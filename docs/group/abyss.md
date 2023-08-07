@@ -8,7 +8,7 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Abyss-data | 🟢 | 03/08/2023 07:04 | `http://3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd.onion` | <a href="https://images.ransomware.live/screenshots/3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd-onion.png" target=_blank>📸</a> | 
+| Abyss-data | 🟢 | 07/08/2023 12:04 | `http://3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd.onion` | <a href="https://images.ransomware.live/screenshots/3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -43,4 +43,4 @@
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

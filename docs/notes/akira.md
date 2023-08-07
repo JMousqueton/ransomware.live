@@ -1,4 +1,4 @@
-# Ransom notes for group akira
+# 💰 _Ransom notes for group_ akira
 > 🔗 [akira](group/akira)
 * **[akira_readme.txt](https://ransomware.live/ransomware_notes/akira/akira_readme.txt)**
 
@@ -50,5 +50,5 @@ Keep in mind that the faster you will get in touch, the less damage we cause.
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

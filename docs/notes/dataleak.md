@@ -1,4 +1,4 @@
-# Ransom notes for group dataleak
+# 💰 _Ransom notes for group_ dataleak
 > 🔗 [dataleak](group/dataleak)
 * **[!!!file was stolen!!!.txt](https://ransomware.live/ransomware_notes/dataleak/!!!file%20was%20stolen!!!.txt)**
 
@@ -56,5 +56,5 @@ tox id:
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

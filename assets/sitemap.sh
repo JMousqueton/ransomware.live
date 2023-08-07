@@ -11,6 +11,13 @@ exec 1> docs/sitemap.xml
 
 DATE=$(date +%F)
 
+# print head
+#echo '<?xml version="1.0" encoding="UTF-8"?>'
+#echo '<!-- generator="Julien Mousqueton Sitemap Generator" -->'
+#echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+
+
+
 echo '<?xml version="1.0" encoding="UTF-8"?>'
 echo '<urlset'
 echo '      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'

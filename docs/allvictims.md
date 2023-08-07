@@ -1,6 +1,7 @@
 
+# All victims
 
-_All `7592` posts_
+_All `7644` posts_
 
 
 💾 [Download](https://data.ransomware.live/posts.json) full list in **json** format
@@ -10,6 +11,48 @@ _All `7592` posts_
 
 | Date | Title | Group |
 |---|---|---|
+| 2023-08-07 | [`Papel Prensa SA`](https://google.com/search?q=Papel+Prensa+SA) | [akira](/group/akira) |
+| 2023-08-07 | [`Parsian Bitumen`](https://google.com/search?q=Parsian+Bitumen) | [arvinclub](/group/arvinclub) |
+| 2023-08-07 | [`varian.com`](https://google.com/search?q=varian.com) | [lockbit3](/group/lockbit3) |
+| 2023-08-06 | [`IBL`](https://google.com/search?q=IBL) | [alphv](/group/alphv) |
+| 2023-08-06 | [`premierbpo.com`](https://google.com/search?q=premierbpo.com) | [alphv](/group/alphv) |
+| 2023-08-06 | [`SatCom Marketing`](https://google.com/search?q=SatCom+Marketing) | [8base](/group/8base) |
+| 2023-08-06 | [`Oregon Sports Medicine`](https://google.com/search?q=Oregon+Sports+Medicine) | [8base](/group/8base) |
+| 2023-08-06 | [`Delaney Browne Recruitment`](https://google.com/search?q=Delaney+Browne+Recruitment) | [8base](/group/8base) |
+| 2023-08-05 | [`Rayden Solicitors`](https://google.com/search?q=Rayden+Solicitors) | [alphv](/group/alphv) |
+| 2023-08-05 | [`haynesintl.com`](https://google.com/search?q=haynesintl.com) | [lockbit3](/group/lockbit3) |
+| 2023-08-05 | [`Kovair Software Data Leak`](https://google.com/search?q=Kovair+Software+Data+Leak) | [everest](/group/everest) |
+| 2023-08-05 | [`Henlaw`](https://google.com/search?q=Henlaw) | [alphv](/group/alphv) |
+| 2023-08-05 | [`Draje food industrial group`](https://google.com/search?q=Draje+food+industrial+group) | [arvinclub](/group/arvinclub) |
+| 2023-08-04 | [`atser.com`](https://google.com/search?q=atser.com) | [lockbit3](/group/lockbit3) |
+| 2023-08-04 | [`scottevest.com`](https://google.com/search?q=scottevest.com) | [lockbit3](/group/lockbit3) |
+| 2023-08-04 | [`Galicia en Goles`](https://google.com/search?q=Galicia+en+Goles) | [alphv](/group/alphv) |
+| 2023-08-04 | [`iqcontrols.com`](https://google.com/search?q=iqcontrols.com) | [lockbit3](/group/lockbit3) |
+| 2023-08-04 | [`armortex.com`](https://google.com/search?q=armortex.com) | [lockbit3](/group/lockbit3) |
+| 2023-08-04 | [`mipe.com`](https://google.com/search?q=mipe.com) | [lockbit3](/group/lockbit3) |
+| 2023-08-04 | [`tetco.com`](https://google.com/search?q=tetco.com) | [lockbit3](/group/lockbit3) |
+| 2023-08-04 | [`P****X`](https://google.com/search?q=P%2A%2A%2A%2AX) | [ragroup](/group/ragroup) |
+| 2023-08-04 | [`Z****ta`](https://google.com/search?q=Z%2A%2A%2A%2Ata) | [ragroup](/group/ragroup) |
+| 2023-08-04 | [`Koury Engineering`](https://google.com/search?q=Koury+Engineering) | [akira](/group/akira) |
+| 2023-08-04 | [`SBS Construction`](https://google.com/search?q=SBS+Construction) | [alphv](/group/alphv) |
+| 2023-08-04 | [`Grupo Garza Ponce was hacked! Due to a massive company vulnerability, more than 2 TB of se`](https://google.com/search?q=Grupo+Garza+Ponce+was+hacked%21+Due+to+a+massive+company+vulnerability%2C+more+than+2+TB+of+se) | [alphv](/group/alphv) |
+| 2023-08-04 | [`Pharmatech Repblica Dominicana was hacked. All sensitive company and customer information `](https://google.com/search?q=Pharmatech+Repblica+Dominicana+was+hacked.+All+sensitive+company+and+customer+information+) | [alphv](/group/alphv) |
+| 2023-08-04 | [`seaside-kish co`](https://google.com/search?q=seaside-kish+co) | [arvinclub](/group/arvinclub) |
+| 2023-08-04 | [`Studio Domaine LLC`](https://google.com/search?q=Studio+Domaine+LLC) | [nokoyawa](/group/nokoyawa) |
+| 2023-08-04 | [`Abatti Companies - Press Release`](https://google.com/search?q=Abatti+Companies+-+Press+Release) | [monti](/group/monti) |
+| 2023-08-04 | [`Ofimedic`](https://google.com/search?q=Ofimedic) | [alphv](/group/alphv) |
+| 2023-08-04 | [`THECHANGE`](https://google.com/search?q=THECHANGE) | [alphv](/group/alphv) |
+| 2023-08-03 | [`H********** ********* ***`](https://google.com/search?q=H%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A+%2A%2A%2A%2A%2A%2A%2A%2A%2A+%2A%2A%2A) | [bianlian](/group/bianlian) |
+| 2023-08-03 | [`Spokane Spinal Sports Care Clinic`](https://google.com/search?q=Spokane+Spinal+Sports+Care+Clinic) | [bianlian](/group/bianlian) |
+| 2023-08-03 | [`pointpleasant.k12.nj.us`](https://google.com/search?q=pointpleasant.k12.nj.us) | [lockbit3](/group/lockbit3) |
+| 2023-08-03 | [`Roman Catholic Diocese of Albany`](https://google.com/search?q=Roman+Catholic+Diocese+of+Albany) | [nokoyawa](/group/nokoyawa) |
+| 2023-08-03 | [`Venture General Agency`](https://google.com/search?q=Venture+General+Agency) | [akira](/group/akira) |
+| 2023-08-03 | [`Datawatch Systems`](https://google.com/search?q=Datawatch+Systems) | [akira](/group/akira) |
+| 2023-08-03 | [`United Tractors`](https://google.com/search?q=United+Tractors) | [rhysida](/group/rhysida) |
+| 2023-08-03 | [`admsc.com`](https://google.com/search?q=admsc.com) | [lockbit3](/group/lockbit3) |
+| 2023-08-03 | [`riggsabney`](https://google.com/search?q=riggsabney) | [alphv](/group/alphv) |
+| 2023-08-03 | [`Rossman Realty Group, inc.`](https://google.com/search?q=Rossman+Realty+Group%2C+inc.) | [8base](/group/8base) |
+| 2023-08-03 | [`RevZero, Inc`](https://google.com/search?q=RevZero%2C+Inc) | [8base](/group/8base) |
 | 2023-08-02 | [`Tempur Sealy International`](https://google.com/search?q=Tempur+Sealy+International) | [alphv](/group/alphv) |
 | 2023-08-02 | [`bestmotel.de`](https://google.com/search?q=bestmotel.de) | [lockbit3](/group/lockbit3) |
 | 2023-08-02 | [`fec-corp.com`](https://google.com/search?q=fec-corp.com) | [lockbit3](/group/lockbit3) |
@@ -37,6 +80,7 @@ _All `7592` posts_
 | 2023-08-01 | [`Parathon by JDA eHealth Systems`](https://google.com/search?q=Parathon+by+JDA+eHealth+Systems) | [akira](/group/akira) |
 | 2023-08-01 | [`Jacklett Construction LLC`](https://google.com/search?q=Jacklett+Construction+LLC) | [8base](/group/8base) |
 | 2023-08-01 | [`MBS Equipment TTI`](https://google.com/search?q=MBS+Equipment+TTI) | [8base](/group/8base) |
+| 2023-08-01 | [`Kreacta`](https://google.com/search?q=Kreacta) | [noescape](/group/noescape) |
 | 2023-07-31 | [`Great Opportunity to monetize your corporate access`](https://google.com/search?q=Great+Opportunity+to+monetize+your+corporate+access) | [everest](/group/everest) |
 | 2023-07-31 | [`obrelli.it`](https://google.com/search?q=obrelli.it) | [lockbit3](/group/lockbit3) |
 | 2023-07-31 | [`nbcc.org`](https://google.com/search?q=nbcc.org) | [lockbit3](/group/lockbit3) |
@@ -56,6 +100,8 @@ _All `7592` posts_
 | 2023-07-30 | [`Bluelinea`](https://google.com/search?q=Bluelinea) | [ragroup](/group/ragroup) |
 | 2023-07-30 | [`Decimal Point Analytics Pvt`](https://google.com/search?q=Decimal+Point+Analytics+Pvt) | [ragroup](/group/ragroup) |
 | 2023-07-30 | [`twv-staderland.de`](https://google.com/search?q=twv-staderland.de) | [lockbit3](/group/lockbit3) |
+| 2023-07-30 | [`Republican Vilnius Psychiatric Hospital`](https://google.com/search?q=Republican+Vilnius+Psychiatric+Hospital) | [noescape](/group/noescape) |
+| 2023-07-29 | [`Padena Factory`](https://google.com/search?q=Padena+Factory) | [arvinclub](/group/arvinclub) |
 | 2023-07-29 | [`One Health Solutions`](https://google.com/search?q=One+Health+Solutions) | [nokoyawa](/group/nokoyawa) |
 | 2023-07-29 | [`Modern Eyez`](https://google.com/search?q=Modern+Eyez) | [nokoyawa](/group/nokoyawa) |
 | 2023-07-29 | [`Village Church of Barrington`](https://google.com/search?q=Village+Church+of+Barrington) | [nokoyawa](/group/nokoyawa) |
@@ -73,13 +119,16 @@ _All `7592` posts_
 | 2023-07-28 | [`Regional Family Medicine`](https://google.com/search?q=Regional+Family+Medicine) | [karakurt](/group/karakurt) |
 | 2023-07-28 | [`Rouzbeh Educational Complex`](https://google.com/search?q=Rouzbeh+Educational+Complex) | [rhysida](/group/rhysida) |
 | 2023-07-28 | [`Frost & Sullivan`](https://google.com/search?q=Frost+%26+Sullivan) | [akira](/group/akira) |
+| 2023-07-27 | [`150k sib360 Database`](https://google.com/search?q=150k+sib360+Database) | [arvinclub](/group/arvinclub) |
 | 2023-07-27 | [`Protected: INSULCANA CONTRACTING LTD`](https://google.com/search?q=Protected%3A+INSULCANA+CONTRACTING+LTD) | [medusalocker](/group/medusalocker) |
+| 2023-07-27 | [`INSULCANA CONTRACTING LTD`](https://google.com/search?q=INSULCANA+CONTRACTING+LTD) | [medusalocker](/group/medusalocker) |
 | 2023-07-27 | [`ohiohistory.org`](https://google.com/search?q=ohiohistory.org) | [lockbit3](/group/lockbit3) |
 | 2023-07-27 | [`West Cargo`](https://google.com/search?q=West+Cargo) | [mallox](/group/mallox) |
 | 2023-07-27 | [`Offutt Nord`](https://google.com/search?q=Offutt+Nord) | [akira](/group/akira) |
 | 2023-07-27 | [`Morehead State University (MSU)`](https://google.com/search?q=Morehead+State+University+%28MSU%29) | [akira](/group/akira) |
 | 2023-07-27 | [`Handi Quilter`](https://google.com/search?q=Handi+Quilter) | [akira](/group/akira) |
 | 2023-07-27 | [`Newton IT Solutions`](https://google.com/search?q=Newton+IT+Solutions) | [noescape](/group/noescape) |
+| 2023-07-27 | [`Avertronics Inc`](https://google.com/search?q=Avertronics+Inc) | [noescape](/group/noescape) |
 | 2023-07-26 | [`Kovair Software`](https://google.com/search?q=Kovair+Software) | [everest](/group/everest) |
 | 2023-07-26 | [`scmh.org.tw`](https://google.com/search?q=scmh.org.tw) | [lockbit3](/group/lockbit3) |
 | 2023-07-26 | [`MACOM.COM`](https://google.com/search?q=MACOM.COM) | [clop](/group/clop) |
@@ -154,6 +203,7 @@ _All `7592` posts_
 | 2023-07-26 | [`AGILYSYSAP.COM`](https://google.com/search?q=AGILYSYSAP.COM) | [clop](/group/clop) |
 | 2023-07-26 | [`Azimut - Time of publication!`](https://google.com/search?q=Azimut+-+Time+of+publication%21) | [alphv](/group/alphv) |
 | 2023-07-26 | [`important information（Knight）`](https://google.com/search?q=important+information%EF%BC%88Knight%EF%BC%89) | [cyclops](/group/cyclops) |
+| 2023-07-26 | [`Important Updates`](https://google.com/search?q=Important+Updates) | [knight](/group/knight) |
 | 2023-07-26 | [`CF Assicurazioni`](https://google.com/search?q=CF+Assicurazioni) | [alphv](/group/alphv) |
 | 2023-07-26 | [`Globacom Limited`](https://google.com/search?q=Globacom+Limited) | [alphv](/group/alphv) |
 | 2023-07-26 | [`University of Salerno`](https://google.com/search?q=University+of+Salerno) | [rhysida](/group/rhysida) |
@@ -205,6 +255,7 @@ _All `7592` posts_
 | 2023-07-23 | [`Sun Pain Management`](https://google.com/search?q=Sun+Pain+Management) | [medusa](/group/medusa) |
 | 2023-07-23 | [`Exbon Development, Inc`](https://google.com/search?q=Exbon+Development%2C+Inc) | [8base](/group/8base) |
 | 2023-07-23 | [`Jackson Township Police Department and Administration.`](https://google.com/search?q=Jackson+Township+Police+Department+and+Administration.) | [donutleaks](/group/donutleaks) |
+| 2023-07-22 | [`Haraz dairy`](https://google.com/search?q=Haraz+dairy) | [arvinclub](/group/arvinclub) |
 | 2023-07-22 | [`Hungarian Investment Promotion Agency Press Release`](https://google.com/search?q=Hungarian+Investment+Promotion+Agency+Press+Release) | [monti](/group/monti) |
 | 2023-07-22 | [`Siden & Associates Press Release`](https://google.com/search?q=Siden+%26+Associates+Press+Release) | [monti](/group/monti) |
 | 2023-07-22 | [`Samson Electric`](https://google.com/search?q=Samson+Electric) | [play](/group/play) |
@@ -215,6 +266,7 @@ _All `7592` posts_
 | 2023-07-21 | [`Hirsch Bedner Associates`](https://google.com/search?q=Hirsch+Bedner+Associates) | [alphv](/group/alphv) |
 | 2023-07-21 | [`plbint.com`](https://google.com/search?q=plbint.com) | [abyss](/group/abyss) |
 | 2023-07-21 | [`Yamaha Canada Music Ltd`](https://google.com/search?q=Yamaha+Canada+Music+Ltd) | [akira](/group/akira) |
+| 2023-07-20 | [`hamyari Shahrdari golestan`](https://google.com/search?q=hamyari+Shahrdari+golestan) | [arvinclub](/group/arvinclub) |
 | 2023-07-20 | [`Pechexport`](https://google.com/search?q=Pechexport) | [cyclops](/group/cyclops) |
 | 2023-07-20 | [`Cvlan`](https://google.com/search?q=Cvlan) | [cyclops](/group/cyclops) |
 | 2023-07-20 | [`CANAROPA Inc`](https://google.com/search?q=CANAROPA+Inc) | [nokoyawa](/group/nokoyawa) |
@@ -272,6 +324,7 @@ _All `7592` posts_
 | 2023-07-19 | [`VOG`](https://google.com/search?q=VOG) | [alphv](/group/alphv) |
 | 2023-07-19 | [`Anesco Ltd`](https://google.com/search?q=Anesco+Ltd) | [8base](/group/8base) |
 | 2023-07-18 | [`EA SMITH`](https://google.com/search?q=EA+SMITH) | [alphv](/group/alphv) |
+| 2023-07-18 | [`AFTA Isfahan`](https://google.com/search?q=AFTA+Isfahan) | [arvinclub](/group/arvinclub) |
 | 2023-07-18 | [`The Estée Lauder Companies`](https://google.com/search?q=The+Est%C3%A9e+Lauder+Companies) | [alphv](/group/alphv) |
 | 2023-07-18 | [`DTD Express `](https://google.com/search?q=DTD+Express+) | [medusa](/group/medusa) |
 | 2023-07-18 | [`KUITS`](https://google.com/search?q=KUITS) | [alphv](/group/alphv) |
@@ -438,7 +491,7 @@ _All `7592` posts_
 | 2023-07-09 | [`Evergreen Seamless Pipes & Tubes`](https://google.com/search?q=Evergreen+Seamless+Pipes+%26+Tubes) | [bianlian](/group/bianlian) |
 | 2023-07-09 | [`M****** *****`](https://google.com/search?q=M%2A%2A%2A%2A%2A%2A+%2A%2A%2A%2A%2A) | [bianlian](/group/bianlian) |
 | 2023-07-09 | [`leeindustries.com`](https://google.com/search?q=leeindustries.com) | [lockbit3](/group/lockbit3) |
-| 2023-07-09 | [`Bitimen exchange`](https://google.com/search?q=Bitimen+exchange) | [arvinclub](/group/arvinclub) |
+| 2023-07-09 | [`Bitimen`](https://google.com/search?q=Bitimen) | [arvinclub](/group/arvinclub) |
 | 2023-07-08 | [`Superloop ISP`](https://google.com/search?q=Superloop+ISP) | [cyclops](/group/cyclops) |
 | 2023-07-08 | [`Beverly Hills Plastic Surgery`](https://google.com/search?q=Beverly+Hills+Plastic+Surgery) | [alphv](/group/alphv) |
 | 2023-07-08 | [`Cabra Consulting Ltd`](https://google.com/search?q=Cabra+Consulting+Ltd) | [8base](/group/8base) |
@@ -7602,4 +7655,4 @@ _All `7592` posts_
 | 2020-06-10 | [`Leaks Company Birch Communications inc.`](https://google.com/search?q=Leaks+Company+Birch+Communications+inc.) | [ragnarlocker](/group/ragnarlocker) |
 | 2020-01-12 | [`Windemuller`](https://google.com/search?q=Windemuller) | [lorenz](/group/lorenz) |
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

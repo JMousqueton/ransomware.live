@@ -1,4 +1,4 @@
-# Ransom notes for group zeon
+# 💰 _Ransom notes for group_ zeon
 > 🔗 [zeon](group/zeon)
 * **[zeon.txt](https://ransomware.live/ransomware_notes/zeon/zeon.txt)**
 
@@ -35,5 +35,5 @@ So it will be better for both sides if you contact us as soon as possible.
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

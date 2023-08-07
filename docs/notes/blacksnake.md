@@ -1,4 +1,4 @@
-# Ransom notes for group blacksnake
+# 💰 _Ransom notes for group_ blacksnake
 * **[UNLOCK_MY_FILES.txt](https://ransomware.live/ransomware_notes/blacksnake/UNLOCK_MY_FILES.txt)**
 
 ```
@@ -89,5 +89,5 @@ CAN CORRUPT YOUR FILES AND THEREFORE NOT EVEN US WILL BE ABLE TO DECRYPT THEM.
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

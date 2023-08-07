@@ -29,6 +29,7 @@ from sharedutils import countpostsyeartodate
 # from sharedutils import stdlog, dbglog, errlog, honk
 from sharedutils import stdlog
 from plotting import trend_posts_per_day, plot_posts_by_group, pie_posts_by_group, plot_posts_by_group_past_7_days,trend_posts_per_day_2022, trend_posts_per_day_2023, plot_posts_by_group_by_year, pie_posts_by_group_by_year, pie_posts_by_group_by_month, trend_posts_per_day_month, plot_posts_by_group_by_month,plot_victims_by_month, plot_victims_by_month_cumulative
+from plotting import create_victims_per_day_graph
 from bs4 import BeautifulSoup
 
 def suffix(d):
@@ -37,9 +38,10 @@ def suffix(d):
 def custom_strftime(fmt, t):
     return t.strftime(fmt).replace('{S}', str(t.day) + suffix(t.day))
 
-friendly_tz = custom_strftime('%B {S}, %Y', dt.now()).lower()
+friendly_tz = custom_strftime('%B {S}, %Y', dt.now()).lower().capitalize()
 
 NowTime=dt.now()
+
 
 
 def directory_exists(directory):
@@ -101,7 +103,8 @@ def mainpage():
     # writeline(uptime_sheet, '## 📈 Ransomware.live')
     writeline(uptime_sheet, '_' + friendly_tz + '_')
     writeline(uptime_sheet,'')
-    writeline(uptime_sheet,'---')
+    writeline(uptime_sheet, '_Tracking ransomware\'s victims since April 2022_')
+    writeline(uptime_sheet,'')
     writeline(uptime_sheet,'')
     writeline(uptime_sheet,'> A **ransomware** is a type of malware used by cybercriminals to encrypt the victim\'s files and make them inaccessible unless they pay the ransom. Today cybercriminals are more sophisticated, and they not only encrypt the victim\'s files also they leaking their data to the Darknet unless they will pay the ransom.')
     writeline(uptime_sheet,'')
@@ -276,8 +279,9 @@ def recentpage():
     # delete contents of file
     with open(recentpage, 'w', encoding='utf-8') as f:
         f.close()
+    writeline(recentpage,'# Recent victims')
     writeline(recentpage,'')
-    writeline(recentpage, '> `Ransomware.live` provides tracking of ransomware groups and their victims. Descriptions available in the [group profiles view](profiles.md)')
+    writeline(recentpage, '> [!INFO] `Ransomware.live` provides tracking of ransomware groups and their victims. Descriptions available in the [group profiles view](profiles.md)')
     writeline(recentpage,'')
     writeline(recentpage, '**📰 200 last victims sorted by published date**')
     writeline(recentpage, '')
@@ -316,6 +320,7 @@ def allposts():
     with open(allpage, 'w', encoding='utf-8') as f:
         f.close()
     writeline(allpage, '')
+    writeline(allpage, '# All victims')
     writeline(allpage, '')
     writeline(allpage, '_All `' + str(postcount()) + '` posts_')
     writeline(allpage, '')
@@ -343,7 +348,6 @@ def allposts():
     writeline(allpage, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
     stdlog('all posts page generated')
 
-
 def profilepage():
     '''
     create a profile page with each group in their unique markdown files within docs/profiles
@@ -367,16 +371,13 @@ def profilepage():
         if group['meta'] is not None:
             writeline(profilepage, '_`' + group['meta'] + '`_')
             writeline(profilepage, '')
-        if len(group['profile']):
-            writeline(profilepage, '### External analysis')
-            for profile in group['profile']:
-                writeline(profilepage, '- ' + profile)
-                writeline(profilepage, '')
         if group['parser']:
             writeline(profilepage,'')
             writeline(profilepage,'🔎 `ransomware.live`has an active  parser for indexing '+ group['name']+'\'s victims')
-            writeline(profilepage, '')  
-        writeline(profilepage, '### URLs')
+            writeline(profilepage, '') 
+        writeline(profilepage, '')
+        writeline(profilepage, '<!-- tabs:start -->') 
+        writeline(profilepage, '#### **URLs**')
         writeline(profilepage, '| Title | Available | Last visit | fqdn | Screenshot ')
         writeline(profilepage, '|---|---|---|---|---|')        
         for host in group['locations']:
@@ -401,6 +402,11 @@ def profilepage():
             else:
                 line = '| none | ' + statusemoji +  ' | ' + date + ' ' + time + ' | `http://' + host['fqdn'] + '` | ' + screen + ' | ' 
                 writeline(profilepage, line)
+        if len(group['profile']):
+            writeline(profilepage, '#### **External information**')
+            for profile in group['profile']:
+                writeline(profilepage, '- ' + profile)
+                writeline(profilepage, '')
         cpt_note = 0 
         directory = 'docs/ransomware_notes/' + group['name'] +'/'
         if directory_exists(directory):
@@ -413,12 +419,12 @@ def profilepage():
             else:
                 pluriel=''
             writeline(profilepage, '')
-            writeline(profilepage, '### Ransom note')
+            writeline(profilepage, '#### **Ransom note**')
             writeline(profilepage,'* [📝 ' +  str(cpt_note) + ' ransom note' + pluriel + '](notes/'+ group['name'] + ')')
         if os.path.exists('docs/crypto/'+group['name']+'.md'):
             ### Crypto 
             writeline(profilepage, '')
-            writeline(profilepage, '### Crypto wallets')
+            writeline(profilepage, '#### **Crypto Wallet**')
             writeline(profilepage, '* 💰 <a href="/#/crypto/'+group['name']+'.md">Crypto wallet(s) available</a>')
             writeline(profilepage, '')
         
@@ -431,7 +437,7 @@ def profilepage():
         directory = '/var/www/chat.ransomware.live/docs/chat/' + nego +'/'
         if directory_exists(directory):
             writeline(profilepage, '')
-            writeline(profilepage, '### Negotiation chats')
+            writeline(profilepage, '#### ** Negotiation chats**')
             writeline(profilepage, '')
             writeline(profilepage, '| Name | Link |')
             writeline(profilepage, '|---|---|')
@@ -439,18 +445,19 @@ def profilepage():
                 line = '|' + os.path.splitext(filename)[0].replace('_','.') + '| <a href="https://chat.ransomware.live/chat/'+ nego + '/' + filename + '" target=_blank> 💬 </a> |'
                 writeline(profilepage, line)
             writeline(profilepage, '')
+        writeline(profilepage, '<!-- tabs:end -->')
         
         ### GRAPH
         if os.path.exists('docs/graphs/stats-'+group['name']+'.png'):
             writeline(profilepage, '')
-            writeline(profilepage, '### Total Attacks Over Time')
+            writeline(profilepage, '### _Total Attacks Over Time_')
             writeline(profilepage, '')
             writeline(profilepage,'![Statistics](/graphs/stats-' + group['name'] + '.png)') 
             writeline(profilepage, '')
 
         ### POSTS 
         writeline(profilepage, '')
-        writeline(profilepage, '### Posts')
+        writeline(profilepage, '### _Posts_')
         writeline(profilepage, '')
         writeline(profilepage, '> ' + grouppostcount(group['name']))
         writeline(profilepage, '')
@@ -467,6 +474,7 @@ def profilepage():
                         description = re.sub(r"folder/.*", "folder/******", (post['description']))
                         description = re.sub(r".com/file/.*", ".com/file/******", description)
                         description = re.sub(r"anonfiles.com/.*/", "anonfiles.com/******/", description)
+                        description = re.sub(r"dropmefiles.com/.* ","dropmefiles.com/******** ", description)
                     except:
                         description=' '
                     try:
@@ -507,7 +515,7 @@ def profilepage():
         writeline(profilepage,' --- ')
         writeline(profilepage, '')
         groupcpt +=1
-        stdlog('[' + str(groupcpt) + '/' + str(groupcount()) + '] Added ' + group['name'] + ' to profile page')
+        stdlog('[' + str(groupcpt) + '/' + str(groupcount()) + '] Added ' + group['name'] + ' to all profiles page')
     writeline(profilepage, '')
     writeline(profilepage, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
     stdlog('profile page generation complete')
@@ -697,6 +705,7 @@ def profile():
                         description = re.sub(r"folder/.*", "folder/******", (post['description']))
                         description = re.sub(r".com/file/.*", ".com/file/******", description)
                         description = re.sub(r"anonfiles.com/.*/", "anonfiles.com/******/", description)
+                        description = re.sub(r"dropmefiles.com/.* ","dropmefiles.com/******** ", description)
                     except:
                         description=' '
                     try:
@@ -780,18 +789,20 @@ def main():
     allposts()
     profilepage()
     profile()
-    try:
-        if os.path.getmtime('docs/decryption.md') < (time.time() - 14400):
-            decryptiontools()
-    except:
-        decryptiontools()
+    #if os.path.getmtime('docs/decryption.md') > (time.time() - 14400):
+    #   try:
+    #        decryptiontools()
+    #   except:
+    #       stdlog("decryptiontools failled")
     mainsummaryjson()
     # if posts.json has been modified within the last 45 mins, assume new posts discovered and recreate graphs
     if os.path.getmtime('posts.json') > (time.time() - 2700):
+    #if True:
         stdlog('posts.json has been modified within the last 45 mins, assuming new posts discovered and recreating graphs')
         trend_posts_per_day()
         plot_posts_by_group() 
         pie_posts_by_group()
+        stdlog('generating stats graph per month')
         plot_victims_by_month()
         plot_victims_by_month_cumulative()
         plot_posts_by_group_past_7_days()
@@ -812,13 +823,188 @@ def main():
                 writeline(currentgraph, '') 
                 writeline(currentgraph, '| ![](graphs/postsbyday' + str(year) + month_digit(month) + '.png) | ![](graphs/postsbygroup' + str(year) + month_digit(month) + '.png) |')
                 writeline(currentgraph, '|---|---|')
-                writeline(currentgraph, '| ![](graphs/grouppie' + str(year) + month_digit(month) + '.png) | | ')
+                writeline(currentgraph, '| ![](graphs/grouppie' + str(year) + month_digit(month) + '.png) |  ![](graphs/victims_per_day_' + str(year) + month_digit(month) + '.png)| ')
                 stdlog('generating graphs for ' + str(month) + '/' +  str(year))
                 pie_posts_by_group_by_month(year,month)
                 trend_posts_per_day_month(year,month)
                 plot_posts_by_group_by_month(year,month)
+                create_victims_per_day_graph(year,month)
         writeline(currentgraph, '')
         writeline(currentgraph, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
         stdlog('stats for ' +  str(year) + ' generated')
     else:
         stdlog('posts.json has not been modified within the last 45 mins, assuming no new posts discovered')
+
+'''
+    Unused functions
+'''
+
+
+def profilepageOLD():
+    '''
+    create a profile page with each group in their unique markdown files within docs/profiles
+    '''
+    stdlog('generating profile pages')
+    profilepage = 'docs/profiles.md'
+    # delete contents of file
+    with open(profilepage, 'w', encoding='utf-8') as f:
+        f.close()
+    writeline(profilepage, '')
+    groups = openjson('groups.json')
+    groupcpt=0
+    for group in groups:
+        writeline(profilepage, '## **' + group['name']+'**')
+        try: 
+            writeline(profilepage,'')
+            writeline(profilepage,'> ' + group['description'].replace('\n',''))
+            writeline(profilepage, '')
+        except:
+            writeline(profilepage, '')
+        if group['meta'] is not None:
+            writeline(profilepage, '_`' + group['meta'] + '`_')
+            writeline(profilepage, '')
+        if len(group['profile']):
+            writeline(profilepage, '### External analysis')
+            for profile in group['profile']:
+                writeline(profilepage, '- ' + profile)
+                writeline(profilepage, '')
+        if group['parser']:
+            writeline(profilepage,'')
+            writeline(profilepage,'🔎 `ransomware.live`has an active  parser for indexing '+ group['name']+'\'s victims')
+            writeline(profilepage, '')  
+        writeline(profilepage, '### URLs')
+        writeline(profilepage, '| Title | Available | Last visit | fqdn | Screenshot ')
+        writeline(profilepage, '|---|---|---|---|---|')        
+        for host in group['locations']:
+            if host['available'] is True:
+                statusemoji = '🟢'
+            elif host['available'] is False:
+                statusemoji = '🔴'
+            # convert date to ddmmyyyy hh:mm
+            date = host['lastscrape'].split(' ')[0]
+            date = date.split('-')
+            date = date[2] + '/' + date[1] + '/' + date[0]
+            time = host['lastscrape'].split(' ')[1]
+            time = time.split(':')
+            time = time[0] + ':' + time[1]
+            screenshot=host['fqdn'].replace('.', '-') + '.png'
+            screen='❌'
+            if os.path.exists('docs/screenshots/'+screenshot):
+                screen='<a href="https://images.ransomware.live/screenshots/' + screenshot + '" target=_blank>📸</a>'
+            if host['title'] is not None:
+                line = '| ' + host['title'].replace('|', '-') + ' | ' + statusemoji +  ' | ' + date + ' ' + time + ' | `http://' + host['fqdn'] + '` | ' + screen + ' | ' 
+                writeline(profilepage, line)
+            else:
+                line = '| none | ' + statusemoji +  ' | ' + date + ' ' + time + ' | `http://' + host['fqdn'] + '` | ' + screen + ' | ' 
+                writeline(profilepage, line)
+        cpt_note = 0 
+        directory = 'docs/ransomware_notes/' + group['name'] +'/'
+        if directory_exists(directory):
+            for filename in sorted(os.listdir(directory)):
+                cpt_note += 1
+            writeline(profilepage, '')        
+        if cpt_note > 0:
+            if cpt_note > 1:
+                pluriel='s'
+            else:
+                pluriel=''
+            writeline(profilepage, '')
+            writeline(profilepage, '### Ransom note')
+            writeline(profilepage,'* [📝 ' +  str(cpt_note) + ' ransom note' + pluriel + '](notes/'+ group['name'] + ')')
+        if os.path.exists('docs/crypto/'+group['name']+'.md'):
+            ### Crypto 
+            writeline(profilepage, '')
+            writeline(profilepage, '### Crypto wallets')
+            writeline(profilepage, '* 💰 <a href="/#/crypto/'+group['name']+'.md">Crypto wallet(s) available</a>')
+            writeline(profilepage, '')
+        
+         ### NEGO
+        nego = group['name']
+        if group['name'] == 'lockbit3':
+            nego='lockbit3.0'
+        if group['name'] == 'ragnarlocker':
+            nego='ragnar-locker'
+        directory = '/var/www/chat.ransomware.live/docs/chat/' + nego +'/'
+        if directory_exists(directory):
+            writeline(profilepage, '')
+            writeline(profilepage, '### Negotiation chats')
+            writeline(profilepage, '')
+            writeline(profilepage, '| Name | Link |')
+            writeline(profilepage, '|---|---|')
+            for filename in sorted(os.listdir(directory)):
+                line = '|' + os.path.splitext(filename)[0].replace('_','.') + '| <a href="https://chat.ransomware.live/chat/'+ nego + '/' + filename + '" target=_blank> 💬 </a> |'
+                writeline(profilepage, line)
+            writeline(profilepage, '')
+        
+        ### GRAPH
+        if os.path.exists('docs/graphs/stats-'+group['name']+'.png'):
+            writeline(profilepage, '')
+            writeline(profilepage, '### Total Attacks Over Time')
+            writeline(profilepage, '')
+            writeline(profilepage,'![Statistics](/graphs/stats-' + group['name'] + '.png)') 
+            writeline(profilepage, '')
+
+        ### POSTS 
+        writeline(profilepage, '')
+        writeline(profilepage, '### Posts')
+        writeline(profilepage, '')
+        writeline(profilepage, '> ' + grouppostcount(group['name']))
+        writeline(profilepage, '')
+        if grouppostavailable(group['name']):
+            writeline(profilepage, '| post | date | Description | Screenshot | ')
+            writeline(profilepage, '|---|---|---|---|')
+            posts = openjson('posts.json')
+            sorted_posts = sorted(posts, key=lambda x: x['published'], reverse=True)
+            filtered_posts = [post for post in sorted_posts if post['group_name'] == group['name']]
+            last_10_posts = filtered_posts[:10]
+
+            for post in last_10_posts:
+                    try:    
+                        description = re.sub(r"folder/.*", "folder/******", (post['description']))
+                        description = re.sub(r".com/file/.*", ".com/file/******", description)
+                        description = re.sub(r"anonfiles.com/.*/", "anonfiles.com/******/", description)
+                        description = re.sub(r"dropmefiles.com/.* ","dropmefiles.com/******** ", description)
+                    except:
+                        description=' '
+                    try:
+                        if post['website'] == "": 
+                            urlencodedtitle = urllib.parse.quote_plus(post['post_title'])
+                            postURL = '[`' + post['post_title'].replace('|', '') + '`](https://google.com/search?q=' + urlencodedtitle  + ')'
+                        else: 
+                            if 'http' in post['website']:                       
+                                postURL = '[`' + post['post_title'].replace('|', '') + '`](' + post['website'] + ')'
+                            else:
+                                postURL = '[`' + post['post_title'].replace('|', '') + '`](https://' + post['website'] + ')'
+                    except: 
+                        urlencodedtitle = urllib.parse.quote_plus(post['post_title'])
+                        postURL = '[`' + post['post_title'].replace('|', '') + '`](https://google.com/search?q=' + urlencodedtitle  + ')'
+                    date = post['published'].split(' ')[0]
+                    try:
+                        datetime.datetime.strptime(date, '%Y-%m-%d')
+                    except ValueError:
+                        date = post['discovered'].split(' ')[0]
+                    date = date.split('-')
+                    date = date[2] + '/' + date[1] + '/' + date[0]
+                    screenpost=' '
+                    if post['post_url'] is not None: 
+                        # Create an MD5 hash object
+                        hash_object = hashlib.md5()
+                        # Update the hash object with the string
+                        hash_object.update(post['post_url'].encode('utf-8'))
+                        # Get the hexadecimal representation of the hash
+                        hex_digest = hash_object.hexdigest()
+                        if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
+                            screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>📸</a>'
+                    line = '| ' + postURL + ' | ' + date + ' | ' + description + ' | ' + screenpost + ' |'
+                    writeline(profilepage, line)
+        writeline(profilepage, '')
+        if  postcountgroup(group['name']) > 10:
+            writeline(profilepage, '↪️ More victims [here](/group/' + group['name'] + '?id=posts)')
+            writeline(profilepage, '')
+        writeline(profilepage,' --- ')
+        writeline(profilepage, '')
+        groupcpt +=1
+        stdlog('[' + str(groupcpt) + '/' + str(groupcount()) + '] Added ' + group['name'] + ' to all profiles page')
+    writeline(profilepage, '')
+    writeline(profilepage, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
+    stdlog('profile page generation complete')

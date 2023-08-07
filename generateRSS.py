@@ -77,15 +77,15 @@ for i in reversed(range(len(data)-50, len(data))):
     if os.path.exists(image_path):
             image_size = os.path.getsize(image_path)  # Get file size in bytes
 
-    enclosure = SubElement(rss_item, 'enclosure')
-    enclosure.set('url', image_url)
-    enclosure.set('type', 'image/png')
-    enclosure.set('length', str(image_size))  # Set the image length attribute
-    
+            enclosure = SubElement(rss_item, 'enclosure')
+            enclosure.set('url', image_url)
+            enclosure.set('type', 'image/png')
+            enclosure.set('length', str(image_size))  # Set the image length attribute
+
   
 
   item_guid = SubElement(rss_item, 'guid')
-  item_guid.text = 'https://www.ransomware.live/#/group/' + str(item['group_name']) + '?' +  str(uuid.uuid1(1234567890))
+  item_guid.text = 'https://www.ransomware.live/#/group/' + str(item['group_name']) # + '?' +  str(uuid.uuid1(1234567890))
   
   date_iso = item['published']
   date_rfc822 = datetime.strptime(date_iso, '%Y-%m-%d %H:%M:%S.%f').strftime('%a, %d %b %Y %H:%M:%S +0000')

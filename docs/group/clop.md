@@ -17,8 +17,8 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://ekbgzchl6x2ias37.onion` | ❌ | 
-| DDOS Protection | 🔴 | 02/08/2023 14:13 | `http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion` | <a href="https://images.ransomware.live/screenshots/santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 03/08/2023 06:16 | `http://toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad.onion` | <a href="https://images.ransomware.live/screenshots/toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad-onion.png" target=_blank>📸</a> | 
+| DDOS Protection | 🔴 | 07/08/2023 05:14 | `http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion` | <a href="https://images.ransomware.live/screenshots/santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 07/08/2023 11:16 | `http://toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad.onion` | <a href="https://images.ransomware.live/screenshots/toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -535,4 +535,4 @@
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

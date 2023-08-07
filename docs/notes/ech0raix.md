@@ -1,4 +1,4 @@
-# Ransom notes for group ech0raix
+# 💰 _Ransom notes for group_ ech0raix
 > 🔗 [ech0raix](group/ech0raix)
 * **[README_FOR_DECRYPT.txtt](https://ransomware.live/ransomware_notes/ech0raix/README_FOR_DECRYPT.txtt)**
 
@@ -17,5 +17,5 @@ https://duckduckgo.com/html?q=tor+browser+how+to
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

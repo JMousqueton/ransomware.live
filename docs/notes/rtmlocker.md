@@ -1,4 +1,4 @@
-# Ransom notes for group rtmlocker
+# 💰 _Ransom notes for group_ rtmlocker
 * **[How To Restore Your Files.txt](https://ransomware.live/ransomware_notes/rtmlocker/How%20To%20Restore%20Your%20Files.txt)**
 
 ```
@@ -37,5 +37,5 @@ OTHERWISE YOU MAY LOSE ALL YOUR FILES FOREVER!
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

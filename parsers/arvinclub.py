@@ -16,7 +16,7 @@ from parse import appender
 
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('arvinclub-'):
                 current_datetime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S.%f')[:-3]
                 html_doc='source/'+filename

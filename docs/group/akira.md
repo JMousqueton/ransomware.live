@@ -8,7 +8,7 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| none | 🟢 | 03/08/2023 07:04 | `http://akiral2iz6a7qgd3ayp3l6yub7xx2uep76idk3u2kollpj5z3z636bad.onion` | <a href="https://images.ransomware.live/screenshots/akiral2iz6a7qgd3ayp3l6yub7xx2uep76idk3u2kollpj5z3z636bad-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 07/08/2023 12:04 | `http://akiral2iz6a7qgd3ayp3l6yub7xx2uep76idk3u2kollpj5z3z636bad.onion` | <a href="https://images.ransomware.live/screenshots/akiral2iz6a7qgd3ayp3l6yub7xx2uep76idk3u2kollpj5z3z636bad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -21,10 +21,14 @@
 
 ### Posts
 
-> 80 victims found
+> 84 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Papel Prensa SA`](https://google.com/search?q=Papel+Prensa+SA) | 07/08/2023 | Papel Prensa SA is an Argentina-based company engaged in the manufacture of newsprint paper. Confidential contracts, agreements, personal employee information and other business docs. About 120GB. Please wait for the release. |   |
+| [`Koury Engineering`](https://google.com/search?q=Koury+Engineering) | 04/08/2023 | Koury Engineering provides geotechnical engineering, material testing, and inspection services for residential and commercial construction projects throughout Southern California. More that 80GB of confidential contracts, agreements and NDAs, complete employeedata, projects information and much other documents will be uploaded later. All questions to messages section please. |   |
+| [`Venture General Agency`](https://google.com/search?q=Venture+General+Agency) | 03/08/2023 | Venture General Agency, LLC (VGA) is a family run Texas based Managing General Agency. These guys are not very talkative. All the data we have from this company will be released here next week. Personal docs and customer information, contracts and payments details - everything will be shared. If you are interested in something specific, let us know in messages section. |   |
+| [`Datawatch Systems`](https://google.com/search?q=Datawatch+Systems) | 03/08/2023 | Datawatch Systems experts work in partnership with you to design,install, and operate a security system to safeguard your facility. It's frustrating when one tries to save someone's property andbecome a victim for himself. We took from these experts 100  GB of data containing confidential agreements and contracts, personal documents, customers data and their projects details. Watch your data! Uploading is coming. |   |
 | [`Guido`](https://google.com/search?q=Guido) | 02/08/2023 | Guido Companies is a privately held Commercial Construction and Building Materials firm. We hold 115 GB of their corporate data including HR, accounting, financials and so on and so forth. Feel free to check soon! |   |
 | [`TGRWA `](https://google.com/search?q=TGRWA+) | 02/08/2023 | TGRWA is a structural engineering firm that specializes in new construction, renovation, and investigation services. All the information of employees, projects, financials, and business processesinformation will be released soon. |   |
 | [`Parathon by JDA eHealth Systems`](https://google.com/search?q=Parathon+by+JDA+eHealth+Systems) | 01/08/2023 | Parathon is a full-scale healthcare Revenue Cycle Management dataintegrator. We're almost ready to share the  560GB of data we'vetaken from their network . Contracts, employee personal information, and confidential documents will be posted shortly. |   |
@@ -108,4 +112,4 @@
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

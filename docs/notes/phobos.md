@@ -1,4 +1,4 @@
-# Ransom notes for group phobos
+# 💰 _Ransom notes for group_ phobos
 * **[phobos.txt](https://ransomware.live/ransomware_notes/phobos/phobos.txt)**
 
 ```
@@ -16,5 +16,5 @@ If there is no response from our mail, you can install the Jabber client and wri
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

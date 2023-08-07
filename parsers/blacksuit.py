@@ -9,7 +9,7 @@ Rappel : def appender(post_title, group_name, description="", website="", publis
 """
 import os
 from bs4 import BeautifulSoup
-from sharedutils import errlog
+from sharedutils import errlog, find_slug_by_md5, extract_md5_from_filename
 from parse import appender
 import re
 from datetime import datetime
@@ -27,9 +27,10 @@ def main():
                     title = article.find('div', class_='title').text.strip()
 
                     # Extract the URL
-                    url_site = "weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd"
+                    url_site = find_slug_by_md5('blacksuit', extract_md5_from_filename(html_doc))
+                    #url_site = "weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd"
                     url = article.find('div', class_='title').a['href']
-                    post_url = 'http://' + url_site + '.onion/' +  url
+                    post_url = url_site + '/' +  url
 
                     website= article.find('div', class_='url').a['href']
                     try:

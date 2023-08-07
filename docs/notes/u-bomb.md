@@ -1,4 +1,4 @@
-# Ransom notes for group u-bomb
+# 💰 _Ransom notes for group_ u-bomb
 > 🔗 [u-bomb](group/u-bomb)
 * **[RECOVERY_INSTRUCTIONS.txt](https://ransomware.live/ransomware_notes/u-bomb/RECOVERY_INSTRUCTIONS.txt)**
 
@@ -37,5 +37,5 @@ IF YOU DON'T CONTACT US WITHIN 72 HOURS, PRICE WILL BE HIGHER.
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

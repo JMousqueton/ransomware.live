@@ -1,10 +1,14 @@
-
-> Last 100 cyberattacks reported by [Valéry Marchive](https://twitter.com/ValeryMarchive)
-
-> [!TIP]
+ 
+# Last 100 cyberattacks
+ 
+_reported by [Valéry Marchive](https://twitter.com/ValeryMarchive)_
+ 
+> [!INFO]
 > `Valéry Marchive` works in the technology industry as a journalist. He is the editor-in-chief of [LeMagIT](https://www.lemagit.fr). He also comments and analyzes ransomware attacks on [social media](https://twitter.com/valerymarchive?lang=en).
 > 
 Source : [Github Casualtek/Cyberwatch](https://github.com/Casualtek/Cyberwatch/)
+ 
+> [!TIP]Check [here](allcyberattacks) for 🎯 all cyberattacks
  
    
  
@@ -111,6 +115,6 @@ Source : [Github Casualtek/Cyberwatch](https://github.com/Casualtek/Cyberwatch/)
 | 2023-06-04 | ![NLD](https://images.ransomware.live/flags/NL.svg) | [`Bibliothèque de Gouda`](https://google.com/search?q=Bibliothèque%20de%20Gouda) | [vpngids.nl](https://www.vpngids.nl/nieuws/bibliotheek-gouda-doelwit-van-ransomware-aanval/) | [📸](https://images.ransomware.live/screenshots/news/804f99cb394a28afda38c92fd3b52b7e.png) | 
 | 2023-06-03 | ![ITA](https://images.ransomware.live/flags/IT.svg) | [`Sky`](https://google.com/search?q=Sky) | [assistenza.sky.it](https://assistenza.sky.it/info/guida-comunicazione) | [📸](https://images.ransomware.live/screenshots/news/f57451c3796a5727c6565a770c36e362.png) | 
 
-📈 100 cyberattacks - Check [🎯 All cyberattacks](allcyberattacks)
+📈 Last 100 cyberattacks - Check [🎯 All cyberattacks](allcyberattacks)
  
-Last update : _Saturday 29/07/2023 13.46 (UTC)_
+Last update : _Monday 07/08/2023 12.15 (UTC)_

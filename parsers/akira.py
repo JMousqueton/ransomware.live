@@ -16,7 +16,7 @@ import datetime
 
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('akira-'):
                 html_doc='source/'+filename
                 file=open(html_doc, 'r')
@@ -27,10 +27,16 @@ def main():
                     title = html.unescape(entry['title'])
                     date_str = entry['date']
                     description = entry['content']
-                    dt_object = datetime.datetime.strptime(date_str, "%Y-%m-%d").replace(hour=1, minute=2, second=3, microsecond=456789)
-                    published = dt_object.strftime("%Y-%m-%d %H:%M:%S.%f")
+                    #dt_object = datetime.datetime.strptime(date_str, "%Y-%m-%d").replace(hour=1, minute=2, second=3, microsecond=456789)
+                    dt_object = datetime.datetime.strptime(date_str, "%Y-%m-%d")
+                    # Get the current time
+                    current_time = datetime.datetime.now().time()
+                    # Combine the parsed date with the current time
+                    combined_datetime = datetime.datetime.combine(dt_object.date(), current_time)
+                    published = combined_datetime.strftime("%Y-%m-%d %H:%M:%S.%f")
+                    #published = dt_object.strftime("%Y-%m-%d %H:%M:%S.%f")
                     appender(title.replace('\n',''), 'akira', description.replace('\n',''),'',published)
                 file.close()
-        #except:
-            #errlog('akira: ' + 'parsing fail')
-            #pass    
+        except:
+            errlog('akira: ' + 'parsing fail')
+            pass    

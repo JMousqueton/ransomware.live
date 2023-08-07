@@ -23,5 +23,5 @@
 | [1PopeZ4LNLanisswLndAJB1QntTF8hpLsD](https://www.blockchain.com/explorer/addresses/btc/1PopeZ4LNLanisswLndAJB1QntTF8hpLsD) | bitcoin | $ 866858 |
 | [1AereQUh8yjNPs9Wzeg1Le47dsqC8NNaNM](https://www.blockchain.com/explorer/addresses/btc/1AereQUh8yjNPs9Wzeg1Le47dsqC8NNaNM) | bitcoin | $ 731990 |
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_
 

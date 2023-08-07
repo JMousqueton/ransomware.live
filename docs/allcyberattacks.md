@@ -1,12 +1,12 @@
-
-> All cyberattacks reported by [Valéry Marchive](https://twitter.com/ValeryMarchive)
-
-> [!TIP]
+ 
+# All cyberattacks
+ 
+_reported by [Valéry Marchive](https://twitter.com/ValeryMarchive)_
+ 
+> [!INFO]
 > `Valéry Marchive` works in the technology industry as a journalist. He is the editor-in-chief of [LeMagIT](https://www.lemagit.fr). He also comments and analyzes ransomware attacks on [social media](https://twitter.com/valerymarchive?lang=en).
 > 
 Source : [Github Casualtek/Cyberwatch](https://github.com/Casualtek/Cyberwatch/)
- 
-   
  
 | Date | Country | Victim | Source | Screenshot | 
 |---|---|---|---|---|
@@ -326,4 +326,4 @@ Source : [Github Casualtek/Cyberwatch](https://github.com/Casualtek/Cyberwatch/)
 
 📈 313 cyberattacks
  
-Last update : _Saturday 29/07/2023 13.46 (UTC)_
+Last update : _Monday 07/08/2023 12.15 (UTC)_

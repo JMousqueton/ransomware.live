@@ -24,7 +24,7 @@ for subdir in os.listdir(source_dir):
         
         # Open the file in write mode and write the name of the directory
         with open(file_path, 'w', encoding='utf-8') as file:
-            file.write('# Ransom notes for group '+ subdir + '\n')
+            file.write('# 💰 _Ransom notes for group_ '+ subdir + '\n')
             for group in data:
                 if subdir.lower() in group['name']:
                     file.write('> 🔗 ['+ subdir + '](group/' + subdir.lower() + ')\n')
@@ -61,9 +61,9 @@ directories = [d for d in os.listdir(source_dir) if os.path.isdir(os.path.join(s
 directories = sorted(directories, key=lambda x: x.lower())
 
 header = "\n"
-header += "> All ransomware notes by groups"
+header += "# 💰 All ransomware notes by groups"
 header += "\n\n"
-header += "> [!TIP]"
+header += "> [!INFO]"
 header += "> Ransomware notes are provided by [Zscaler ThreatLabz](https://github.com/threatlabz/ransomware_notes) under MIT License\n"
 header += "> \n"
 header += "\n\n"

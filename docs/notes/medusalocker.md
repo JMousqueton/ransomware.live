@@ -1,4 +1,4 @@
-# Ransom notes for group medusalocker
+# 💰 _Ransom notes for group_ medusalocker
 > 🔗 [medusalocker](group/medusalocker)
 * **[HOW_TO_RECOVER_DATA.html](https://ransomware.live/ransomware_notes/medusalocker/HOW_TO_RECOVER_DATA.html)**
 
@@ -163,5 +163,5 @@ IF YOU DON'T CONTACT US WITHIN 72 HOURS, PRICE WILL BE HIGHER.</b><br>
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

@@ -1,4 +1,4 @@
-# Ransom notes for group karakurt
+# 💰 _Ransom notes for group_ karakurt
 > 🔗 [karakurt](group/karakurt)
 * **[alert!.txt](https://ransomware.live/ransomware_notes/karakurt/alert!.txt)**
 
@@ -154,5 +154,5 @@ This link is available via "Tor Browser" only!
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

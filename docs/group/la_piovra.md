@@ -11,7 +11,7 @@
 |---|---|---|---|---|
 |  La Piovra Ransomware  | 🔴 | 14/06/2023 10:25 | `http://et22fibzuzfyzgurm35sttm52qbzvdgzy5qhzy46a3gmkrrht3lec5ad.onion` | <a href="https://images.ransomware.live/screenshots/et22fibzuzfyzgurm35sttm52qbzvdgzy5qhzy46a3gmkrrht3lec5ad-onion.png" target=_blank>📸</a> | 
 | La Piovra Ransomware – a new cartel | 🔴 | 14/06/2023 10:26 | `http://h3txev6jev7rcm6p2qkxn2vctybi4dvochr3inymzgif53n2j2oqviqd.onion` | <a href="https://images.ransomware.live/screenshots/h3txev6jev7rcm6p2qkxn2vctybi4dvochr3inymzgif53n2j2oqviqd-onion.png" target=_blank>📸</a> | 
-| La Piovra Ransomware - Members Only  | 🟢 | 03/08/2023 06:24 | `http://wx3djgl4cacl6y4x7r4e4mbqrrub24ectue7ixyix2du25nfowtvfiyd.onion` | <a href="https://images.ransomware.live/screenshots/wx3djgl4cacl6y4x7r4e4mbqrrub24ectue7ixyix2du25nfowtvfiyd-onion.png" target=_blank>📸</a> | 
+| La Piovra Ransomware - Members Only  | 🟢 | 07/08/2023 11:28 | `http://wx3djgl4cacl6y4x7r4e4mbqrrub24ectue7ixyix2du25nfowtvfiyd.onion` | <a href="https://images.ransomware.live/screenshots/wx3djgl4cacl6y4x7r4e4mbqrrub24ectue7ixyix2du25nfowtvfiyd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -28,4 +28,4 @@
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

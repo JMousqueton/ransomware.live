@@ -1,4 +1,4 @@
-# Ransom notes for group xorist
+# 💰 _Ransom notes for group_ xorist
 * **[xorist.txt](https://ransomware.live/ransomware_notes/xorist/xorist.txt)**
 
 ```
@@ -31,5 +31,5 @@ After we confirm the payment , we send the private key so you can decrypt your s
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

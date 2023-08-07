@@ -1,4 +1,4 @@
-# Ransom notes for group qlocker
+# 💰 _Ransom notes for group_ qlocker
 > 🔗 [qlocker](group/qlocker)
 * **[!!!READ_ME.txt](https://ransomware.live/ransomware_notes/qlocker/!!!READ_ME.txt)**
 
@@ -28,5 +28,5 @@ gvka2m4qt5fod2fltkjmdk4gxh5oxemhpgmnmtjptms6fkgfzdd62tad.onion
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

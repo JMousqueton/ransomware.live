@@ -1,7 +1,7 @@
 
-> All ransomware notes by groups
+# 💰 All ransomware notes by groups
 
-> [!TIP]> Ransomware notes are provided by [Zscaler ThreatLabz](https://github.com/threatlabz/ransomware_notes) under MIT License
+> [!INFO]> Ransomware notes are provided by [Zscaler ThreatLabz](https://github.com/threatlabz/ransomware_notes) under MIT License
 > 
 
 
@@ -20,5 +20,5 @@
 | [teslacrypt](notes/teslacrypt)| [trigona](notes/trigona)| [u-bomb](notes/u-bomb)| [underground](notes/underground)| [vicesociety](notes/vicesociety)| [vohuk](notes/vohuk)| [wastedlocker](notes/wastedlocker)| [xorist](notes/xorist)| [yanluowang](notes/yanluowang)| [zeon](notes/zeon)|
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

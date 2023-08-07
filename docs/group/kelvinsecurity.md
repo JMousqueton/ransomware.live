@@ -10,7 +10,7 @@ _`not a ransomware group`_
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Error | 🟢 | 03/08/2023 06:24 | `http://kelvinsecteamcyber.wixsite.com` | <a href="https://images.ransomware.live/screenshots/kelvinsecteamcyber-wixsite-com.png" target=_blank>📸</a> | 
+| 403 Forbidden | 🟢 | 07/08/2023 11:27 | `http://kelvinsecteamcyber.wixsite.com` | <a href="https://images.ransomware.live/screenshots/kelvinsecteamcyber-wixsite-com.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -52,4 +52,4 @@ _`not a ransomware group`_
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

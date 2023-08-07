@@ -1,4 +1,4 @@
-# Ransom notes for group noescape
+# 💰 _Ransom notes for group_ noescape
 > 🔗 [noescape](group/noescape)
 * **[HOW_TO_RECOVER_FILES.txt](https://ransomware.live/ransomware_notes/noescape/HOW_TO_RECOVER_FILES.txt)**
 
@@ -69,5 +69,5 @@ WHAT SHOULD I NOT DO?
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

@@ -1,4 +1,4 @@
-# Ransom notes for group revil
+# 💰 _Ransom notes for group_ revil
 > 🔗 [revil](group/revil)
 * **[revil2.txt](https://ransomware.live/ransomware_notes/revil/revil2.txt)**
 
@@ -162,5 +162,5 @@ ONE MORE TIME: Its in your interests to get your files back. From our side, we (
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

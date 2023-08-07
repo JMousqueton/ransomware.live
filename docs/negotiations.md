@@ -1,7 +1,9 @@
 
-> Negotiating with ransomware groups by [Valéry Marchive](https://twitter.com/ValeryMarchive)
+# 💬 Negotiating with ransomware groups
 
-> [!TIP]
+_by [Valéry Marchive](https://twitter.com/ValeryMarchive)_
+
+> [!INFO]
 > `Valéry Marchive` works in the technology industry as a journalist. He is the editor-in-chief of [LeMagIT](https://www.lemagit.fr). He also comments and analyzes ransomware attacks on [social media](https://twitter.com/valerymarchive?lang=en).
 > 
 Source : [Github Casualtek/Ransomchats](https://github.com/Casualtek/Ransomchats/)
@@ -129,4 +131,4 @@ Source : [Github Casualtek/Ransomchats](https://github.com/Casualtek/Ransomchats
 
 📈 116 ransom chats
  
-Last update : _Wednesday 02/08/2023 19.26 (UTC)_
+Last update : _Monday 07/08/2023 12.20 (UTC)_

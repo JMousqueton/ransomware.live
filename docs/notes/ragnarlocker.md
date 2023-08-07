@@ -1,4 +1,4 @@
-# Ransom notes for group ragnarlocker
+# 💰 _Ransom notes for group_ ragnarlocker
 > 🔗 [ragnarlocker](group/ragnarlocker)
 * **[ragnarlocker1.txt](https://ransomware.live/ransomware_notes/ragnarlocker/ragnarlocker1.txt)**
 
@@ -214,5 +214,5 @@ Also check the tab "About Us" in our Blog (http://rgleaktxuey67yrgspmhvtnrqtgogu
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

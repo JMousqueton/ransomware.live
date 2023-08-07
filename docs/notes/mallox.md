@@ -1,4 +1,4 @@
-# Ransom notes for group mallox
+# 💰 _Ransom notes for group_ mallox
 > 🔗 [mallox](group/mallox)
 * **[FILE RECOVERY.txt](https://ransomware.live/ransomware_notes/mallox/FILE%20RECOVERY.txt)**
 
@@ -34,5 +34,5 @@ Waiting for a response via mail can be several days. Do not use it if you have n
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

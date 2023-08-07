@@ -8,7 +8,8 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Blog - Knight | 🟢 | 03/08/2023 06:18 | `http://nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad.onion` | <a href="https://images.ransomware.live/screenshots/nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad-onion.png" target=_blank>📸</a> | 
+| Blog - Knight | 🟢 | 07/08/2023 11:19 | `http://nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad.onion` | <a href="https://images.ransomware.live/screenshots/nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad-onion.png" target=_blank>📸</a> | 
+| Blog - Knight | 🟢 | 07/08/2023 11:21 | `http://knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd.onion` | <a href="https://images.ransomware.live/screenshots/knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -31,4 +32,4 @@
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

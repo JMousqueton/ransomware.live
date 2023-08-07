@@ -13,7 +13,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Arvin Club – آزادی برای اتصال | 🔴 | 01/08/2022 20:10 | `http://3kp6j22pz3zkv76yutctosa6djpj4yib2icvdqxucdaxxedumhqicpad.onion` | ❌ | 
-| Blog | 🟢 | 03/08/2023 06:07 | `http://arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid.onion` | <a href="https://images.ransomware.live/screenshots/arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid-onion.png" target=_blank>📸</a> | 
+| Blog | 🟢 | 07/08/2023 12:07 | `http://arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid.onion` | <a href="https://images.ransomware.live/screenshots/arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -22,11 +22,19 @@
 
 ### Posts
 
-> 21 victims found
+> 29 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
-| [`Bitimen exchange`](https://bitimen.com) | 09/07/2023 | A harmful truth is better than a useful lie | <a href="https://images.ransomware.live/screenshots/posts/bceafd6a2ebefedaec4b07ea3d46ecee.png" target=_blank>📸</a> |
+| [`Parsian Bitumen`](https://www.parsianbitumen.com) | 07/08/2023 |  |   |
+| [`Draje food industrial group`](https://anonfiles.com/WdN1L06cza/draje_rar) | 05/08/2023 |  |   |
+| [`seaside-kish co`](https://google.com/search?q=seaside-kish+co) | 04/08/2023 |  |   |
+| [`Padena Factory`](https://padenacc.ir) | 29/07/2023 |  |   |
+| [`150k sib360 Database`](https://sib360.com) | 27/07/2023 |  |   |
+| [`Haraz dairy`](http://doosheh.com) | 22/07/2023 |  |   |
+| [`hamyari Shahrdari golestan`](http://hamyarigolestan.ir) | 20/07/2023 |  |   |
+| [`AFTA Isfahan`](https://ito.gov.ir/fa/afta) | 18/07/2023 |  |   |
+| [`Bitimen`](https://bitimen.com) | 09/07/2023 | A harmful truth is better than a useful lie | <a href="https://images.ransomware.live/screenshots/posts/bceafd6a2ebefedaec4b07ea3d46ecee.png" target=_blank>📸</a> |
 | [`Al Bijjar`](https://google.com/search?q=Al+Bijjar) | 21/04/2022 |   |   |
 | [`AM International`](https://google.com/search?q=AM+International) | 20/04/2022 |   |   |
 | [`stormous`](https://google.com/search?q=stormous) | 20/03/2022 |   |   |
@@ -50,4 +58,4 @@
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

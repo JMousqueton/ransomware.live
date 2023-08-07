@@ -1,4 +1,6 @@
 
+# 💁🏻‍♂️ About
+
 Ransomware.live is a ransomware groups observatory based on [ransomwatch](https://github.com/joshhighet/ransomwatch) and inspired by [ransomlook](https://github.com/RansomLook/RansomLook). 
 
 Ransomware.live is a ransomware leak site monitoring tool. It will scrape all of the entries on various ransomware leak sites and published them [here](recentposts.md).
@@ -16,9 +18,10 @@ You can find all ransomware's victims in **json** format [here](https://data.ran
 ### External
 
 - [ransomwhe.re](https://ransomwhe.re/) for the crypto wallet information 
-- [Zscaler ThreatLabz](https://github.com/threatlabz/ransomware_notes) for the ransomware notes 
+- [Zscaler ThreatLabz](https://github.com/threatlabz/ransomware_notes) for the [ransomware notes](ransomnotes)
 - [Valéry Rieß-Marchive](https://twitter.com/ValeryMarchive) for the information about [cyberattacks](https://github.com/Casualtek/Cyberwatch/) and the [negotiation chats](https://github.com/Casualtek/Ransomchats)
-- [Malpedia](https://malpedia.caad.fkie.fraunhofer.de/) for the Ransomware description 
+- [Malpedia](https://malpedia.caad.fkie.fraunhofer.de/) for the Ransomware description
+- [CERT Orange Cyberdefense](https://www.orangecyberdefense.com/) for the [Ransomware map](cartography)
 
 
 ## 👨🏼‍💼 About me 

@@ -1,4 +1,4 @@
-# Ransom notes for group chilelocker
+# 💰 _Ransom notes for group_ chilelocker
 > 🔗 [chilelocker](group/chilelocker)
 * **[readme_for_unlock.txt](https://ransomware.live/ransomware_notes/chilelocker/readme_for_unlock.txt)**
 
@@ -184,5 +184,5 @@ DO NOT:
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

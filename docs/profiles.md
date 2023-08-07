@@ -2,18 +2,21 @@
 ## **0mega**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| 0mega - Blog | 🟢 | 03/08/2023 07:01 | `http://omegalock5zxwbhswbisc42o2q2i54vdulyvtqqbudqousisjgc7j7yd.onion` | <a href="https://images.ransomware.live/screenshots/omegalock5zxwbhswbisc42o2q2i54vdulyvtqqbudqousisjgc7j7yd-onion.png" target=_blank>📸</a> | 
-| 0mega - Blog | 🟢 | 03/08/2023 07:01 | `http://0mega.cc` | <a href="https://images.ransomware.live/screenshots/0mega-cc.png" target=_blank>📸</a> | 
+| 0mega - Blog | 🟢 | 07/08/2023 12:01 | `http://omegalock5zxwbhswbisc42o2q2i54vdulyvtqqbudqousisjgc7j7yd.onion` | <a href="https://images.ransomware.live/screenshots/omegalock5zxwbhswbisc42o2q2i54vdulyvtqqbudqousisjgc7j7yd-onion.png" target=_blank>📸</a> | 
+| 0mega - Blog | 🟢 | 07/08/2023 12:01 | `http://0mega.cc` | <a href="https://images.ransomware.live/screenshots/0mega-cc.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-0mega.png)
 
 
-### Posts
+### _Posts_
 
 > 4 victims found
 
@@ -29,42 +32,45 @@
 ## **8base**
 
 
-### External analysis
-- https://blogs.vmware.com/security/2023/06/8base-ransomware-a-heavy-hitting-player.html
-
 
 🔎 `ransomware.live`has an active  parser for indexing 8base's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Home | 🟢 | 03/08/2023 07:02 | `http://basemmnnqwxevlymli5bs36o5ynti55xojzvn246spahniugwkff2pad.onion` | <a href="https://images.ransomware.live/screenshots/basemmnnqwxevlymli5bs36o5ynti55xojzvn246spahniugwkff2pad-onion.png" target=_blank>📸</a> | 
+| Home | 🟢 | 07/08/2023 12:02 | `http://basemmnnqwxevlymli5bs36o5ynti55xojzvn246spahniugwkff2pad.onion` | <a href="https://images.ransomware.live/screenshots/basemmnnqwxevlymli5bs36o5ynti55xojzvn246spahniugwkff2pad-onion.png" target=_blank>📸</a> | 
+#### **External information**
+- https://blogs.vmware.com/security/2023/06/8base-ransomware-a-heavy-hitting-player.html
 
 
-### Ransom note
+
+#### **Ransom note**
 * [📝 1 ransom note](notes/8base)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-8base.png)
 
 
-### Posts
+### _Posts_
 
-> 146 victims found
+> 151 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`SatCom Marketing`](https://google.com/search?q=SatCom+Marketing) | 06/08/2023 | SatCom Marketing, LLC SatCom Marketing built its reputation as a leading teleservices provider to the cable/broadband industry. SatCom specializes in outbound sales, inbound sales, customer service calls, survey work and lead generation for business and consumer markets. We have deep experience in marketing and selling voice, video and data products. In addition, we have a wealth of experience in upselling ancillary products like internet speed upgrades, DVR service, digital tiers and premium channels. Our mission is to deliver quality sales and meaningful customer interactions for our clients to help them meet their business goals and ROI objectives. SatCom is a sales organization, focused on delivering quality sales and the highest close rates in the industry. We believe in a consultative sales approach which means tailoring our presentations to the needs of the customer. SatCom was founded with the idea that quality is the cornerstone of our business.http://www.satcommarketing.com/ | <a href="https://images.ransomware.live/screenshots/posts/0e9b2aeba3140d072bdb88522ed45e2e.png" target=_blank>📸</a> |
+| [`Oregon Sports Medicine`](https://google.com/search?q=Oregon+Sports+Medicine) | 06/08/2023 | The goal of the skilled orthopedic team at Sports Medicine Oregon in Tigard and Wilsonville, Oregon, is to restore your active lifestyle. Serving all ages and levels of athletes, from the weekend warrior to the professional player, individuals receive the highest quality orthopedic care available. The practice has served the Northwest communities for more than 24 years, and Sports Medicine Oregon has been the go-to medical team for the Timbers even before they were a Major League Soccer team. The doctors take pride in providing comprehensive care at the offices, which feature on-site X-rays, outpatient physical therapy, and an adjoining surgery center. The practice specializes in sports injuries, including Achilles tendon injuries along with hip, knee, elbow, shoulder, foot, and hand injuries. Trust the practice with your ACL reconstruction, rotator cuff repair, or treatment for arthritis, hammertoe and foot fractures. Even if your injury isn’t directly related to sports, the team can help. The thorough, compassionate care provided by the specially-trained physicians is second to none. Make an appointment for a consultation today by calling and speaking with a friendly staff member or use the online tool to schedule.https://www.sportsmedicineoregon.com | <a href="https://images.ransomware.live/screenshots/posts/cf7699d12e9bbc88cdcd8a77ab8a78b1.png" target=_blank>📸</a> |
+| [`Delaney Browne Recruitment`](https://google.com/search?q=Delaney+Browne+Recruitment) | 06/08/2023 | Delaney Browne Appointments is a recruitment agency serving companies and candidates in Buckinghamshire and Berkshire. We are based in Reading. Since 1999 our dedicated team of fully qualified consultants and support staff have been specialising in temporary and permanent placements within the office sector, from director level to junior support and across a broad spectrum of industry sectorshttps://www.delaneybrowne.co.uk/ | <a href="https://images.ransomware.live/screenshots/posts/8713227178c72385fd52409c70b3db1f.png" target=_blank>📸</a> |
+| [`Rossman Realty Group, inc.`](https://google.com/search?q=Rossman+Realty+Group%2C+inc.) | 03/08/2023 | See all the Southwest FL Homes and Condos for Sale or Rent - up to 72 hours before they appear on Zillow! We also offer property management services! Rossman Realty Group, Inc has a large inventory of Fannie Mae listings and the expertise to help you acquire one! Whether you are searching for your first home, your dream or vacation home, REO or foreclosure, investment property, commercial property, full time annual or seasonal vacation rentals, Gulf Access homes or vacant lots, you have found the right place!https://www.rossmanrentals.com/https://www.rossmanhomes.com/ | <a href="https://images.ransomware.live/screenshots/posts/4a1d44339727864642eb16862c938a24.png" target=_blank>📸</a> |
+| [`RevZero, Inc`](https://google.com/search?q=RevZero%2C+Inc) | 03/08/2023 | We focus on medical device contract manufacturing, 5-axis milling & medical device machining as per the client’s needs and requirements. Visit our website now! RevZero, Inc. is an Agile Medical Device Manufucatring company. Capabilities include Swiss screw, wire EDM, EDM hole drilling, CNCl milling and turning, and cleaning and citric passivation for rapid prototyping and volume manufacturing requirementshttps://www.revzeroinc.com/ | <a href="https://images.ransomware.live/screenshots/posts/311fd51645ac92b6ea00454c2fdfcc22.png" target=_blank>📸</a> |
 | [`Jacklett Construction LLC`](https://google.com/search?q=Jacklett+Construction+LLC) | 01/08/2023 | The team at Jacklett Construction has experience in both residential and commercial site development.  Your project is never just another job.  We strive to produce a quality product while developing long term relationships with our clients.  Jacklett Construction relies on decades of experience and utilizes the latest technology to deliver a product that exceeds expectations.https://jacklett.com/ | <a href="https://images.ransomware.live/screenshots/posts/c185c54eea1b90452c4b12ff8be83f6a.png" target=_blank>📸</a> |
 | [`MBS Equipment TTI`](https://google.com/search?q=MBS+Equipment+TTI) | 01/08/2023 | MBS Equipment Company, a division of The MBS Group, offers the world's largest inventory of lighting, grip and expendables. Our technologically advanced solutions and sustainable energy alternatives can change the content producers create. The MBS Group is the world's premier studio operator and studio production services companyhttps://the-mbsgroup.com/services/ | <a href="https://images.ransomware.live/screenshots/posts/fbf7d647e3f480b33e3249516061c0b0.png" target=_blank>📸</a> |
 | [`BoomData  Data & Analytics Consultancy`](https://google.com/search?q=BoomData+%7C+Data+%26+Analytics+Consultancy) | 25/07/2023 | BOOMDATA - Microsoft Data & Analytics Specialists The data journey isn't always easy so having the right people to help navigate this journey is important in delivering success. BOOMDATA are a purely Microsoft focussed, data and analytics end-to-end consulting firm and certified Microsoft Data & AI Azure Solutions Partner based in Australia. Combining thinking and delivery, we support mid to large sized businesses with senior teams across the region offering advisory, scoping, design, delivery and training services in the areas of data management, data governance, business intelligence, reporting and analytics. We're here to help by being easy to work with, knowing our stuff, taking the time to get to know your business, and by being responsive and flexible to work in the way that best suits you. | <a href="https://images.ransomware.live/screenshots/posts/868f72ffff84f5bb3a5ef41a293864f6.png" target=_blank>📸</a> |
 | [`CROWD`](https://google.com/search?q=CROWD) | 25/07/2023 | Talent Agency for Advertisement, Fashion, Cinema, TV and Events.Casting Studio. | <a href="https://images.ransomware.live/screenshots/posts/6c9b60ebc34bccd74cb07fc11d9d9484.png" target=_blank>📸</a> |
 | [`DV8 Technology Group`](https://google.com/search?q=DV8+Technology+Group) | 25/07/2023 | DV8 Technology Group (DV8) is fledging information and communications technology (ICT) giant that is small enough to be flexible and nimble but operates at a scale that allows it to offer cost-effective cutting-edge solutions. DV8 Technology Group (DV8) is fledging information and communications technology (ICT) giant that is small enough to be flexible and nimble but operates at a scale that allows it to offer cost-effective cutting-edge solutions. The optimal scale of our business enables us to undercut the competition, which mainly comprises multinational ICT behemoths, while offering the same quality – and often superior – products and services | <a href="https://images.ransomware.live/screenshots/posts/507b9bb65fef8927416d91ddcb2804f0.png" target=_blank>📸</a> |
-| [`FANSIPAN CONSTRUCTION CONSULTANTS CO.,LTD`](https://google.com/search?q=FANSIPAN+CONSTRUCTION+CONSULTANTS+CO.%2CLTD) | 25/07/2023 | Fansipan Construction Consultants Company Limited with the legal representative -Director Mr., Huynh Thanh Sang was granted Business Registration Certificate No. 0312364637 dated July 10, 2013 issued by Department of Planning and Investment of Ho Chi Minh City. Fansipan Construction Consultants Company Limited is a civil and construction company that provides the best quality products, the best quality services on time at a reasonable price as well as help both contractor and clients own a lot of successful project | <a href="https://images.ransomware.live/screenshots/posts/5564a846b73a4fd804d01609f65a9274.png" target=_blank>📸</a> |
-| [`Institut Mensalus S.L.`](https://google.com/search?q=Institut+Mensalus+S.L.) | 25/07/2023 | We are a multidisciplinary team with more than 30 professionals from Psychology, Psychiatry, Neuropsychology, Educational Psychology and Speech Therapy. More than 30 years of experience guarantee our services. Our services are divided into 4 main areas: ASSISTANCE AND TREATMENT: We offer a wide variety of treatments designed individually for each person, as well as advice or one-off consultations. The psychiatry and psychology teams of the Center work in a coordinated way in order to make a joint diagnostic assessment. | <a href="https://images.ransomware.live/screenshots/posts/1e14b3a7b4d7a39c72c7294824d9e3ce.png" target=_blank>📸</a> |
-| [`Miranda Brokerage`](https://google.com/search?q=Miranda+Brokerage) | 25/07/2023 | We are a dedicated US Customs Broker that provides our clients with an effective and personalized customer service because we clearly understand that service is the product that we offer which is based on compliance, technology and personalized service. | <a href="https://images.ransomware.live/screenshots/posts/01caf5c1fba1284aabb07c7c51d15d26.png" target=_blank>📸</a> |
-| [`Spectra Industrial`](https://google.com/search?q=Spectra+Industrial) | 25/07/2023 | Spectra Industrial commenced operations in 2010 specialising in importation and distribution of forklifts, generator sets, PPE, solar products and heavy equipment,including trucks and earthmoving machinery. The company grew quickly and expanded from its Port Moresby base opening Lae branch in 2011.The range and brands supported have increased rapidly with Spectra now having taken a position as a leading supplier for its key categories in the PNG marketplace.Hang Cha forklifts are now the leading brand and commonplace through out the country. Guardian Gensets are recognised as being a quality Cummins powered diesel generator and represent quality and value. Windsor, Winchester and Riggers brands are synonymous with quality and durability in the safety footwear and clothing categories and as always represent real value without compromising on quality.Spectra strives to be top of mind when customers seek value. Value in the sticker price but also in the after sales service as provided by our dedicated Spectra teams situated in both Lae or POM.Spectra Hire division was introduced in 2012 and is now a leader in both short and long term hire for an extensive range of equipment. We encourage our clients to invest their capex Kina in profit generating pursuits and leave the mundane and time consuming aspects of fleet maintenance management to us.COMPETITIVE RESPONSIVE COMMITTED is the mantra engrained into every Spectra employee from their induction. Each understands that our growth will come through delivering value. | <a href="https://images.ransomware.live/screenshots/posts/36100907c7bc8c86d7118138687d27cb.png" target=_blank>📸</a> |
-| [`BoomData Data and Analytics Consultancy`](https://google.com/search?q=BoomData+%7CData+and+Analytics+Consultancy) | 25/07/2023 | BOOMDATA - Microsoft Data & Analytics Specialists The data journey isn't always easy so having the right people to help navigate this journey is important in delivering success. BOOMDATA are a purely Microsoft focussed, data and analytics end-to-end consulting firm and certified Microsoft Data & AI Azure Solutions Partner based in Australia. Combining thinking and delivery, we support mid to large sized businesses with senior teams across the region offering advisory, scoping, design, delivery and training services in the areas of data management, data governance, business intelligence, reporting and analytics. We're here to help by being easy to work with, knowing our stuff, taking the time to get to know your business, and by being responsive and flexible to work in the way that best suits you. | <a href="https://images.ransomware.live/screenshots/posts/868f72ffff84f5bb3a5ef41a293864f6.png" target=_blank>📸</a> |
 
 ↪️ More victims [here](/group/8base?id=posts)
 
@@ -73,13 +79,16 @@
 ## **Abrahams_Ax**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| تبر ابراهیم – Abraham's Ax | 🟢 | 03/08/2023 07:02 | `http://abrahamm32umasogaqojib3ey2w2nwoafffrguq43tsyke4s3fz3w4yd.onion` | <a href="https://images.ransomware.live/screenshots/abrahamm32umasogaqojib3ey2w2nwoafffrguq43tsyke4s3fz3w4yd-onion.png" target=_blank>📸</a> | 
-| تبر ابراهیم – Abraham's Ax | 🟢 | 03/08/2023 07:03 | `http://abrahams-ax.se` | <a href="https://images.ransomware.live/screenshots/abrahams-ax-se.png" target=_blank>📸</a> | 
+| تبر ابراهیم – Abraham's Ax | 🟢 | 07/08/2023 12:03 | `http://abrahamm32umasogaqojib3ey2w2nwoafffrguq43tsyke4s3fz3w4yd.onion` | <a href="https://images.ransomware.live/screenshots/abrahamm32umasogaqojib3ey2w2nwoafffrguq43tsyke4s3fz3w4yd-onion.png" target=_blank>📸</a> | 
+| تبر ابراهیم – Abraham's Ax | 🟢 | 07/08/2023 12:03 | `http://abrahams-ax.se` | <a href="https://images.ransomware.live/screenshots/abrahams-ax-se.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -89,12 +98,15 @@
 ## **aGl0bGVyCg**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Error Response Page | 🔴 | 30/10/2022 18:20 | `http://hitleransomware.cf` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -107,17 +119,20 @@
 
 🔎 `ransomware.live`has an active  parser for indexing abyss's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Abyss-data | 🟢 | 03/08/2023 07:04 | `http://3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd.onion` | <a href="https://images.ransomware.live/screenshots/3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd-onion.png" target=_blank>📸</a> | 
+| Abyss-data | 🟢 | 07/08/2023 12:04 | `http://3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd.onion` | <a href="https://images.ransomware.live/screenshots/3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-abyss.png)
 
 
-### Posts
+### _Posts_
 
 > 19 victims found
 
@@ -143,15 +158,18 @@
 
 _`extensions .admin1 .admin2 .admin3 .1admin .2admin .3admin`_
 
-### External analysis
-- http://t.me/dotADMINbot
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Admin Locker | 🔴 | 20/05/2022 03:49 | `http://adminavf4cikzbv6mbbp7ujpwhygnn2t3egiz2pswldj32krrml42wyd.onion` | ❌ | 
+#### **External information**
+- http://t.me/dotADMINbot
 
-### Posts
+<!-- tabs:end -->
+
+### _Posts_
 
 > no victim found
 
@@ -163,12 +181,15 @@ _`extensions .admin1 .admin2 .admin3 .1admin .2admin .3admin`_
 
 _`closed forum, access sold from https://sellix.io/atwforums`_
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Threat Actors - Onion Forums  - Internal Error | 🔴 | 07/01/2023 20:56 | `http://giphvoitymatg4cv7bxqh5dz6sn6bfscywoat4qtslztkomf5lavrayd.onion` | <a href="https://images.ransomware.live/screenshots/giphvoitymatg4cv7bxqh5dz6sn6bfscywoat4qtslztkomf5lavrayd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -181,36 +202,39 @@ _`closed forum, access sold from https://sellix.io/atwforums`_
 
 🔎 `ransomware.live`has an active  parser for indexing akira's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| none | 🟢 | 03/08/2023 07:04 | `http://akiral2iz6a7qgd3ayp3l6yub7xx2uep76idk3u2kollpj5z3z636bad.onion` | <a href="https://images.ransomware.live/screenshots/akiral2iz6a7qgd3ayp3l6yub7xx2uep76idk3u2kollpj5z3z636bad-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 07/08/2023 12:04 | `http://akiral2iz6a7qgd3ayp3l6yub7xx2uep76idk3u2kollpj5z3z636bad.onion` | <a href="https://images.ransomware.live/screenshots/akiral2iz6a7qgd3ayp3l6yub7xx2uep76idk3u2kollpj5z3z636bad-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/akira)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-akira.png)
 
 
-### Posts
+### _Posts_
 
-> 80 victims found
+> 84 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Papel Prensa SA`](https://google.com/search?q=Papel+Prensa+SA) | 07/08/2023 | Papel Prensa SA is an Argentina-based company engaged in the manufacture of newsprint paper. Confidential contracts, agreements, personal employee information and other business docs. About 120GB. Please wait for the release. |   |
+| [`Koury Engineering`](https://google.com/search?q=Koury+Engineering) | 04/08/2023 | Koury Engineering provides geotechnical engineering, material testing, and inspection services for residential and commercial construction projects throughout Southern California. More that 80GB of confidential contracts, agreements and NDAs, complete employeedata, projects information and much other documents will be uploaded later. All questions to messages section please. |   |
+| [`Venture General Agency`](https://google.com/search?q=Venture+General+Agency) | 03/08/2023 | Venture General Agency, LLC (VGA) is a family run Texas based Managing General Agency. These guys are not very talkative. All the data we have from this company will be released here next week. Personal docs and customer information, contracts and payments details - everything will be shared. If you are interested in something specific, let us know in messages section. |   |
+| [`Datawatch Systems`](https://google.com/search?q=Datawatch+Systems) | 03/08/2023 | Datawatch Systems experts work in partnership with you to design,install, and operate a security system to safeguard your facility. It's frustrating when one tries to save someone's property andbecome a victim for himself. We took from these experts 100  GB of data containing confidential agreements and contracts, personal documents, customers data and their projects details. Watch your data! Uploading is coming. |   |
 | [`Guido`](https://google.com/search?q=Guido) | 02/08/2023 | Guido Companies is a privately held Commercial Construction and Building Materials firm. We hold 115 GB of their corporate data including HR, accounting, financials and so on and so forth. Feel free to check soon! |   |
 | [`TGRWA `](https://google.com/search?q=TGRWA+) | 02/08/2023 | TGRWA is a structural engineering firm that specializes in new construction, renovation, and investigation services. All the information of employees, projects, financials, and business processesinformation will be released soon. |   |
 | [`Parathon by JDA eHealth Systems`](https://google.com/search?q=Parathon+by+JDA+eHealth+Systems) | 01/08/2023 | Parathon is a full-scale healthcare Revenue Cycle Management dataintegrator. We're almost ready to share the  560GB of data we'vetaken from their network . Contracts, employee personal information, and confidential documents will be posted shortly. |   |
 | [`Frost & Sullivan`](https://google.com/search?q=Frost+%26+Sullivan) | 28/07/2023 | Frost & Sullivan, the Growth Consulting Company, partners with clients to accelerate their growth. Planning is always not an easy process and sometimes leads to a failure. These guys underestimated their data and we suppose their clients won't be happy seeing news of this leak. Tons of contracts with big names of international businesses, personal documents including top management and more. >90GBs of data will be available soon. |   |
 | [`Offutt Nord`](https://google.com/search?q=Offutt+Nord) | 27/07/2023 | Offutt Nord is a group of insurance attorneys that represent clients involved in general civil litigation statewide in many statesand regions. Their clients' information will be released soon here as always. There are about 70GB of personal documents, judicial processes and much other. |   |
 | [`Morehead State University (MSU)`](https://google.com/search?q=Morehead+State+University+%28MSU%29) | 27/07/2023 | Morehead State University is a comprehensive public university with undergraduate and graduate programs, emerging doctoral programs, and an emphasis on regional engagement. This university underwent our attack and lost a lot of data. President Jay Morgan said "no personal data has been compromised" (https://www.wmky.org/news/2023-07-13/morehead-state-university-hit-by-cyber-attack). But that was only a matter of time. Since we haven't been contacted from their part, we will upload every file of this university we have. Complete personal information of students and employees, finance and marketing data will be available soon. |   |
-| [`Handi Quilter`](https://google.com/search?q=Handi+Quilter) | 27/07/2023 | Handi Quilter is the worldwide leader and quilters’ choice for longarm machines for both stand-up and sit-down quilting. More than100GB of this company data will be available for downloading soon. They are not of those who want to keep their data confidentially, so we will share their business information with you. Source codes, contracts, financials... Wait for the release. |   |
-| [`Becht Engineering`](https://google.com/search?q=Becht+Engineering) | 25/07/2023 | Becht provides technically excellent engineering solutions, plantservices, and software tools to our worldwide clients. This is the company a client will go to when they see their data in open access. All the information of employees, projects, financials, and business processes information will be released soon. |   |
-| [`Charles & Colvard Ltd.`](https://google.com/search?q=Charles+%26+Colvard+Ltd.) | 24/07/2023 | Charles & Colvard, manufactures, markets, and distributes moissanite jewels and finished jewelry featuring moissanite worldwide. We are going to distribute all the date we have from them. Their brilliants will be available for downloading here in our blog soon. |   |
-| [`SBM`](https://google.com/search?q=SBM) | 24/07/2023 | SBM is a soft service provider focused on developing empowered associates, standardized processes, management systems, and reporting tools that make your life easier. The management of this company hasn't been not very focused on developing communication with us, so we decided to report about the leak everyone who might be interested. Their data of more than 100GB size will be uploaded here withing this week. Passports, ndas, contracts, confidential agreements are about to be uploaded.  |   |
 
 ↪️ More victims [here](/group/akira?id=posts)
 
@@ -220,23 +244,26 @@ _`closed forum, access sold from https://sellix.io/atwforums`_
 
 > A Windows ransomware that will run certain tasks to prepare the target system for the encryption of files. MedusaLocker avoids executable files, probably to avoid rendering the targeted system unusable for paying the ransom. It uses a combination of AES and RSA-2048, and reportedly appends extensions such as .encrypted, .bomber, .boroff, .breakingbad, .locker16, .newlock, .nlocker, and .skynet.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://kwvhrdibgmmpkhkidrby4mccwqpds5za6uo2thcw5gz75qncv7rbhyad.onion` | ❌ | 
+#### **External information**
 - https://digital.nhs.uk/cyber-alerts/2020/cc-3345
 
 - https://www.bleepingcomputer.com/news/security/ako-ransomware-another-day-another-infection-attacking-businesses/
 
 - https://malwiki.org/index.php?title=Ako
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://kwvhrdibgmmpkhkidrby4mccwqpds5za6uo2thcw5gz75qncv7rbhyad.onion` | ❌ | 
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/ako.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -249,7 +276,19 @@ _`closed forum, access sold from https://sellix.io/atwforums`_
 
 _`aka blackcat - fileserver `ihoqnxnvdwybrv6kiteiesjc3ic6du6axtv3arouxr6ddswrxa2wrbyd.onion``_
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing alphv's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+|   | 🟢 | 07/08/2023 12:06 | `http://alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad.onion` | <a href="https://images.ransomware.live/screenshots/alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 07/08/2023 12:07 | `http://alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad.onion` | <a href="https://images.ransomware.live/screenshots/alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad-onion.png" target=_blank>📸</a> | 
+| none | 🔴 | 01/05/2021 00:00 | `http://2cuqgeerjdba2rhdiviezodpu3lc4qz2sjf4qin6f7std2evleqlzjid.onion` | ❌ | 
+|   | 🔴 | 07/06/2023 03:03 | `http://vqifktlreqpudvulhbzmc5gocbeawl67uvs2pttswemdorbnhaddohyd.onion` | <a href="https://images.ransomware.live/screenshots/vqifktlreqpudvulhbzmc5gocbeawl67uvs2pttswemdorbnhaddohyd-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://therecord.media/alphv-blackcat-is-the-first-professional-ransomware-gang-to-use-rust/
 
 - https://www.bleepingcomputer.com/news/security/alphv-blackcat-this-years-most-sophisticated-ransomware/
@@ -259,41 +298,32 @@ _`aka blackcat - fileserver `ihoqnxnvdwybrv6kiteiesjc3ic6du6axtv3arouxr6ddswrxa2
 - https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/noberus-blackcat-alphv-rust-ransomware
 
 
-🔎 `ransomware.live`has an active  parser for indexing alphv's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-|   | 🟢 | 03/08/2023 07:05 | `http://alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad.onion` | <a href="https://images.ransomware.live/screenshots/alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 03/08/2023 07:06 | `http://alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad.onion` | <a href="https://images.ransomware.live/screenshots/alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad-onion.png" target=_blank>📸</a> | 
-| none | 🔴 | 01/05/2021 00:00 | `http://2cuqgeerjdba2rhdiviezodpu3lc4qz2sjf4qin6f7std2evleqlzjid.onion` | ❌ | 
-|   | 🔴 | 07/06/2023 03:03 | `http://vqifktlreqpudvulhbzmc5gocbeawl67uvs2pttswemdorbnhaddohyd.onion` | <a href="https://images.ransomware.live/screenshots/vqifktlreqpudvulhbzmc5gocbeawl67uvs2pttswemdorbnhaddohyd-onion.png" target=_blank>📸</a> | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 4 ransom notes](notes/alphv)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-alphv.png)
 
 
-### Posts
+### _Posts_
 
-> 458 victims found
+> 469 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
-| [`Tempur Sealy International`](https://tempursealy.com) | 02/08/2023 | Tempur Sealy International, Inc. is an American manufacturer of mattresses and bedding products. It was formed when Tempur-Pedic International, a manufacturer of memory foam mattresses acquired its biggest competitor Sealy Corporation in 2012. | <a href="https://images.ransomware.live/screenshots/posts/f5a10cd663359f051dd5acae14cd1068.png" target=_blank>📸</a> |
-| [`Helen F. Dalton Lawyers`](https://helendalton.com/) | 02/08/2023 | With over 25 years experience specializing in Personal Injury and Labor Law, the Law Offices of Helen F. Dalton and Associates has the experience and resources necessary to fight for you. | <a href="https://images.ransomware.live/screenshots/posts/0595d8c53b21999b9fbcf26bcc5fcc3d.png" target=_blank>📸</a> |
-| [`KIMCO Staffing Service`](https://www.kimco.com) | 01/08/2023 | We have helped more than 212,000 people find employment since 1986. You can count on Kimco Staffing Services to connect you with top employers and guide you every step of the way in your job search. With more than 30 years of award-winning service, our specialty practices are:      Office Professionals     Contact Center/Customer Care     Accounting Operations     Technical Support     Industrial Staffing     Premier Partnership     Kimco Direct  | <a href="https://images.ransomware.live/screenshots/posts/5f9a09dbfd6a41d73a186e858330a371.png" target=_blank>📸</a> |
-| [`Coachella Valley Collection Service`](https:\\www.cvcollection.com) | 29/07/2023 | Coachella Valley Collection Service provides debt collection services, including “medical, retail, commercial, judgment, and check debt collection.” In addition, CVCS “provides acknowledgement report, debtor activity report, monthly remittance statement, actuary report, and closure report” services | <a href="https://images.ransomware.live/screenshots/posts/827fd1b0e5484ad95665aed5c50dadd7.png" target=_blank>📸</a> |
-| [`Azimut - Time of publication!`](https://www.azimut.it/) | 26/07/2023 | Founded in 1989, Azimut Holding is an independent Italian Group operating in the asset management sector | <a href="https://images.ransomware.live/screenshots/posts/c61060efb78f6a5a52433975da8b63ec.png" target=_blank>📸</a> |
-| [`CF Assicurazioni`](https://www.cfassicurazioni.com/) | 26/07/2023 | CF Assicurazioni is an Italian insurance company. Has a wide client base. Ready to leak. | <a href="https://images.ransomware.live/screenshots/posts/4f97b537287ee13b20384e9aa32c265e.png" target=_blank>📸</a> |
-| [`Globacom Limited`](https://www.gloworld.com) | 26/07/2023 | Globacom Limited, commonly known as Glo, is a Nigerian multinational telecommunications company with annual revenue about $1.3B. Network of this company has been breached and over 600Gb of data were leaked from there. Now we are offering top management of Gloworld and Mike Adenuga specially to contact us in next 3 days to protect this stolen data. In case if they will completely refuse to negotiate all data related to Gloworld will be exposed for free download. These data contains following information:   - payments  - financial data of your company  - financial data of your employees  - signed contracts and agreements  - employees personal data  - phone call records  - simcards registrations with abonent data  - phone calls detailed tracing of your all registered numbers  - full clients base with all data related   Management of Globacom Limited decided to hide this incident and not to inform both regulators and customers. Globacom's top management has last chance July 29rd, if they want to protect data of Globacom's business, partners and customers.   | <a href="https://images.ransomware.live/screenshots/posts/f4e4cbac6bc42a5c5231a144723d5dae.png" target=_blank>📸</a> |
-| [`NEBRASKALAND`](https://www.nebraskaland.com) | 25/07/2023 | Nebraskaland, Inc. distributes and sells seafood and meat products to customers in New York metro area. It provides boxed beef, chicken, pork, lamb, veal, and various meats, as well as a range of frozen and processed foods | <a href="https://images.ransomware.live/screenshots/posts/346dbb8b41bd39d421fdd22cce9ab3b5.png" target=_blank>📸</a> |
-| [`Republic.bz`](https:/republicsteel.com) | 25/07/2023 | !!!! | <a href="https://images.ransomware.live/screenshots/posts/3ada7e37a5b59626e48804b929f75400.png" target=_blank>📸</a> |
-| [`Greenfiber`](https://greenfiber.com) | 24/07/2023 | All data published and available for downloading! Enjoy!  Greenfiber is a national manufacturer of cellulose insulation. Providing energy saving and cost effective insulation choices for the US and Canada. Greenfiber has the industry's leading cellulose insulation products | <a href="https://images.ransomware.live/screenshots/posts/7269b8cd0e1411613ce7e28d1a4ef06a.png" target=_blank>📸</a> |
+| [`IBL`](https://iblhc.com/) | 06/08/2023 | total size of 161Gb.   Quick scope of data we have downloaded from your network:   payments  contracts  agreements  salaries  registration documents  financial data  quality control  medicine recipes  medicine tests  medicine preparation guides  IBL OPS data  United Brands data  IBL Logistics data  Searle pharma data  | <a href="https://images.ransomware.live/screenshots/posts/c86928d0362368bbc8a8cb9049a4605e.png" target=_blank>📸</a> |
+| [`premierbpo.com`](https://www.premierbpo.com/) | 06/08/2023 | Back Office Services  Customer Care Services  IT Services  Medical Billing  Software Support | <a href="https://images.ransomware.live/screenshots/posts/b51553de0dc786133164ec487eb32d78.png" target=_blank>📸</a> |
+| [`Rayden Solicitors`](https://raydensolicitors.co.uk) | 05/08/2023 | Rayden Solicitors is an award-winning specialist firm of family law solicitors with offices in Beaconsfield, Berkhamsted, Birmingham, Bishop’s Stortford, Epping, Hampstead, Harpenden, London Bridge and St Albans. Our solicitors advise on all aspects of family law and are experts in financial and children matters relating to relationship breakdown, divorce and separation. Our clients are based across the UK and internationally. | <a href="https://images.ransomware.live/screenshots/posts/0b1d68648d1fdd524378f7a4cf0179c0.png" target=_blank>📸</a> |
+| [`Henlaw`](https://www.henlaw.com/) | 05/08/2023 | Henderson, Franklin, Starnes & Holt, P.A. Founded in 1924, Henderson, Franklin, Starnes & Holt, P.A. is one of the largest and most experienced full-service law firms between Tampa and Miami. With over 55 attorneys who live, work and have deep roots in Southwest Florida, Henderson Franklin provides high-quality, personalized legal services to a roster of corporate and individual clients.  Founded on a culture of adhering to the highest ethical standards, integrity, and good citizenship, Henderson Franklin upholds these principles while remaining deeply invested in the Southwest Florida community. We act as trusted advisors and partners to our clients throughout every stage of their business. | <a href="https://images.ransomware.live/screenshots/posts/fce049862c5cb7f3a05496d631cda346.png" target=_blank>📸</a> |
+| [`Galicia en Goles`](https://www.g24.gal/) | 04/08/2023 | Galicia en Goles is a company that operates in the Media and Entertainment industry. It employs 1,001-2,000 people and has $500M-$1B of revenue | <a href="https://images.ransomware.live/screenshots/posts/adcb27c25ae9aacc5fac1f730af6807d.png" target=_blank>📸</a> |
+| [`SBS Construction`](https://sbsworld.net/) | 04/08/2023 | SBS Construction, headquartered in Boerne, Texas has been in operation since 1995. Along with its regional office in Baton Rouge, Louisiana, SBS offers a full range of design-build, general contracting and construction management services to an elite group  | <a href="https://images.ransomware.live/screenshots/posts/f6066361cba0ad4577a68bf849fcde52.png" target=_blank>📸</a> |
+| [`Grupo Garza Ponce was hacked! Due to a massive company vulnerability, more than 2 TB of se`](https://www.grupogp.com.mx) | 04/08/2023 | Headquarters: 1000 Zaragoza 1, Monterrey, Nl, 64000, Mexico Phone Number: +52 8181503500 Website: www.grupogp.com.mx  Grupo Garza Ponce is a Mexican construction company based in Monterrey, Nuevo León. It was founded in 1966 by civil engineer José María Garza Ponce after he decided to take advantage of the boom in public works that Mexico was experiencing during that time.  | <a href="https://images.ransomware.live/screenshots/posts/f026859d54a4b6ea88a7ce981dd9ebd5.png" target=_blank>📸</a> |
+| [`Pharmatech Repblica Dominicana was hacked. All sensitive company and customer information `](https://www.pharmatechrd.com) | 04/08/2023 | Who is Pharmatech Repblica Dominicana  Leading company in the commercialization of pharmaceutical products in the Dominican Republic.  Website: www.pharmatechrd.com Revenue: $14.1M Santo Domingo: Calle Desiderio Valverde No.103, Zona Universitaria, Santo Domingo, D.N.,  Rep. Dom. Tel.: 809-620-8000 X 221; Fax: 809-682-1333 Santiago:  Ave. Juan Pablo Duarte,Plaza Las Barajas (1er Nivel) #103-104, Santiago, Rep. Dom. Tel.: 809-276-5286; Fax: 809-276-5289 Facebook: http://www.facebook.com/pharmatechdominicana Twitter: http://www.twitter.com/pharmatechrd | <a href="https://images.ransomware.live/screenshots/posts/a4f152bc4be53e0269f85129aa423389.png" target=_blank>📸</a> |
+| [`Ofimedic`](https://www.ofimedic.com/) | 04/08/2023 | Medical Software | <a href="https://images.ransomware.live/screenshots/posts/9117a6b9a19fb84a62f4d71b3e81b80b.png" target=_blank>📸</a> |
+| [`THECHANGE`](https://www.thechange.co.uk/) | 04/08/2023 | ESTABLISHED IN NOVEMBER, 1993 Now a driving force in the UK IT Distribution channel, The Change Organisation began its journey back in 1993.    Starting from humble beginnings (a garage in Kent), we have continued to achieve year on year organic growth through delivering not only the right products at the right price, but in providing maximum product availability, flexibility, excellent logistics & a genuinely personable customer service..  ‍ Almost 30 years on, the company has evolved into a well-oiled machine, operating across 4 sites with a group turnover of £80 million. Our 70+ staff all possess a shared passion for their personal and our collective corporate development.    As the commercial world moves inexorably towards e-commerce, AI, and automated telephony, the Change Organisation continues to uphold it’s maxim of providing traditional service in the modern manner.     We believe this demands dedicated and empowered account managers answering your calls. A culture of full accountability with a commitment to effect quick resolutions (when we’ve fallen short) establishing long term relationships built on trust. | <a href="https://images.ransomware.live/screenshots/posts/0c829ae2210f888c5df05810d9c0df23.png" target=_blank>📸</a> |
 
 ↪️ More victims [here](/group/alphv?id=posts)
 
@@ -302,40 +332,43 @@ _`aka blackcat - fileserver `ihoqnxnvdwybrv6kiteiesjc3ic6du6axtv3arouxr6ddswrxa2
 ## **arvinclub**
 
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Arvin Club – آزادی برای اتصال | 🔴 | 01/08/2022 20:10 | `http://3kp6j22pz3zkv76yutctosa6djpj4yib2icvdqxucdaxxedumhqicpad.onion` | ❌ | 
+| Blog | 🟢 | 07/08/2023 12:07 | `http://arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid.onion` | <a href="https://images.ransomware.live/screenshots/arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - http://t.me/arvin_club
 
 - https://sosintel.co.uk/a-special-investigation-exposing-a-ransomware-groups-clear-web-ip-and-their-duplicate-identities/
 
 - D6164C90642CD93D9D3F353511B4BDBD1428309C90CDE13D3D7088AA5BE3010A52E485834E84
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| Arvin Club – آزادی برای اتصال | 🔴 | 01/08/2022 20:10 | `http://3kp6j22pz3zkv76yutctosa6djpj4yib2icvdqxucdaxxedumhqicpad.onion` | ❌ | 
-| Blog | 🟢 | 03/08/2023 06:07 | `http://arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid.onion` | <a href="https://images.ransomware.live/screenshots/arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-arvinclub.png)
 
 
-### Posts
+### _Posts_
 
-> 21 victims found
+> 29 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
-| [`Bitimen exchange`](https://bitimen.com) | 09/07/2023 | A harmful truth is better than a useful lie | <a href="https://images.ransomware.live/screenshots/posts/bceafd6a2ebefedaec4b07ea3d46ecee.png" target=_blank>📸</a> |
+| [`Parsian Bitumen`](https://www.parsianbitumen.com) | 07/08/2023 |  |   |
+| [`Draje food industrial group`](https://anonfiles.com/WdN1L06cza/draje_rar) | 05/08/2023 |  |   |
+| [`seaside-kish co`](https://google.com/search?q=seaside-kish+co) | 04/08/2023 |  |   |
+| [`Padena Factory`](https://padenacc.ir) | 29/07/2023 |  |   |
+| [`150k sib360 Database`](https://sib360.com) | 27/07/2023 |  |   |
+| [`Haraz dairy`](http://doosheh.com) | 22/07/2023 |  |   |
+| [`hamyari Shahrdari golestan`](http://hamyarigolestan.ir) | 20/07/2023 |  |   |
+| [`AFTA Isfahan`](https://ito.gov.ir/fa/afta) | 18/07/2023 |  |   |
+| [`Bitimen`](https://bitimen.com) | 09/07/2023 | A harmful truth is better than a useful lie | <a href="https://images.ransomware.live/screenshots/posts/bceafd6a2ebefedaec4b07ea3d46ecee.png" target=_blank>📸</a> |
 | [`Al Bijjar`](https://google.com/search?q=Al+Bijjar) | 21/04/2022 |   |   |
-| [`AM International`](https://google.com/search?q=AM+International) | 20/04/2022 |   |   |
-| [`stormous`](https://google.com/search?q=stormous) | 20/03/2022 |   |   |
-| [`bedfordshire.police.uk`](https://google.com/search?q=bedfordshire.police.uk) | 12/03/2022 |   |   |
-| [`afcx.co`](https://google.com/search?q=afcx.co) | 28/11/2021 |   |   |
-| [`vidisha.kvs.ac.in`](https://google.com/search?q=vidisha.kvs.ac.in) | 24/10/2021 |   |   |
-| [`Revil`](https://google.com/search?q=Revil) | 22/10/2021 |   |   |
-| [`Bureau van Dijk(bvdinfo.com)`](https://google.com/search?q=Bureau+van+Dijk%28bvdinfo.com%29) | 20/09/2021 |   |   |
-| [`Compilation of Many Breaches (COMB)`](https://google.com/search?q=Compilation+of+Many+Breaches+%28COMB%29) | 10/09/2021 |   |   |
 
 ↪️ More victims [here](/group/arvinclub?id=posts)
 
@@ -345,24 +378,27 @@ _`aka blackcat - fileserver `ihoqnxnvdwybrv6kiteiesjc3ic6du6axtv3arouxr6ddswrxa2
 
 > 
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| AtomSilo | 🔴 | 17/12/2021 05:02 | `http://mhdehvkomeabau7gsetnsrhkfign4jgnx3wajth5yb5h6kvzbd72wlqd.onion` | ❌ | 
+| AtomSilo | 🔴 | 25/01/2022 06:15 | `http://l5cjga2ksw6rxumu5l4xxn3cmahhi2irkbwg3amx6ajroyfmfgpfllid.onion` | ❌ | 
+#### **External information**
 - https://www.cyfirma.com/outofband/malware-research-on-atomsilo-ransomware/
 
 - https://www.zscaler.com/blogs/security-research/atomsilo-ransomware-enters-league-double-extortion
 
 - https://twitter.com/vinopaljiri/status/1449550289204391940
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| AtomSilo | 🔴 | 17/12/2021 05:02 | `http://mhdehvkomeabau7gsetnsrhkfign4jgnx3wajth5yb5h6kvzbd72wlqd.onion` | ❌ | 
-| AtomSilo | 🔴 | 25/01/2022 06:15 | `http://l5cjga2ksw6rxumu5l4xxn3cmahhi2irkbwg3amx6ajroyfmfgpfllid.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/atomsilo)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 4 victims found
 
@@ -379,25 +415,27 @@ _`aka blackcat - fileserver `ihoqnxnvdwybrv6kiteiesjc3ic6du6axtv3arouxr6ddswrxa2
 
 > Avaddon is a ransomware malware targeting Windows systems often spread via malicious spam. The first known attack where Avaddon ransomware was distributed was in February 2020. Avaddon encrypts files using the extension .avdn and uses a TOR payment site for the ransom payment.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://avaddongun7rngel.onion` | ❌ | 
+#### **External information**
 - https://www.acronis.com/en-us/articles/avaddon-ransomware
 
 - https://www.cyber.gov.au/sites/default/files/2021-05/2021-003%20Ongoing%20campaign%20using%20Avaddon%20Ransomware%20-%2020210508.pdf
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://avaddongun7rngel.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/avaddon)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/avaddon.md">Crypto wallet(s) available</a>
 
 
-### Negotiation chats
+#### ** Negotiation chats**
 
 | Name | Link |
 |---|---|
@@ -409,8 +447,9 @@ _`aka blackcat - fileserver `ihoqnxnvdwybrv6kiteiesjc3ic6du6axtv3arouxr6ddswrxa2
 |20210518.2| <a href="https://chat.ransomware.live/chat/avaddon/20210518_2.html" target=_blank> 💬 </a> |
 |20210518.3| <a href="https://chat.ransomware.live/chat/avaddon/20210518_3.html" target=_blank> 💬 </a> |
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 142 victims found
 
@@ -434,23 +473,26 @@ _`aka blackcat - fileserver `ihoqnxnvdwybrv6kiteiesjc3ic6du6axtv3arouxr6ddswrxa2
 ## **avos**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://avos2fuj6olp6x36.onion` | ❌ | 
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/avos.md">Crypto wallet(s) available</a>
 
 
-### Negotiation chats
+#### ** Negotiation chats**
 
 | Name | Link |
 |---|---|
 |20210903| <a href="https://chat.ransomware.live/chat/avos/20210903.html" target=_blank> 💬 </a> |
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -463,7 +505,17 @@ _`aka blackcat - fileserver `ihoqnxnvdwybrv6kiteiesjc3ic6du6axtv3arouxr6ddswrxa2
 
 _`captcha prevents indexing`_
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing avoslocker's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| DDOS Protection | 🔴 | 08/07/2023 00:10 | `http://avosqxh72b5ia23dl5fgwcpndkctuzqvh2iefk5imp3pi5gfhel5klad.onion` | <a href="https://images.ransomware.live/screenshots/avosqxh72b5ia23dl5fgwcpndkctuzqvh2iefk5imp3pi5gfhel5klad-onion.png" target=_blank>📸</a> | 
+| AvosLocker | 🟢 | 07/08/2023 12:08 | `http://avosjon4pfh3y7ew3jdwz6ofw7lljcxlbk7hcxxmnxlh5kvf2akcqjad.onion` | <a href="https://images.ransomware.live/screenshots/avosjon4pfh3y7ew3jdwz6ofw7lljcxlbk7hcxxmnxlh5kvf2akcqjad-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://blog.cyble.com/2021/07/23/deep-dive-analysis-avoslocker-ransomware
 
 - https://blog.malwarebytes.com/threat-intelligence/2021/07/avoslocker-enters-the-ransomware-scene-asks-for-partners
@@ -473,28 +525,21 @@ _`captcha prevents indexing`_
 - previous parser: ZWdyZXAgLW8gJ3RpdGxlPSIoW1s6YWxudW06XV18IHxcLikrIicgc291cmNlL2F2b3Nsb2NrZXItKi5odG1sIHwgY3V0IC1kICciJyAtZjI=
 
 
-🔎 `ransomware.live`has an active  parser for indexing avoslocker's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| DDOS Protection | 🔴 | 08/07/2023 00:10 | `http://avosqxh72b5ia23dl5fgwcpndkctuzqvh2iefk5imp3pi5gfhel5klad.onion` | <a href="https://images.ransomware.live/screenshots/avosqxh72b5ia23dl5fgwcpndkctuzqvh2iefk5imp3pi5gfhel5klad-onion.png" target=_blank>📸</a> | 
-| AvosLocker | 🟢 | 03/08/2023 06:07 | `http://avosjon4pfh3y7ew3jdwz6ofw7lljcxlbk7hcxxmnxlh5kvf2akcqjad.onion` | <a href="https://images.ransomware.live/screenshots/avosjon4pfh3y7ew3jdwz6ofw7lljcxlbk7hcxxmnxlh5kvf2akcqjad-onion.png" target=_blank>📸</a> | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/avoslocker)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/avoslocker.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-avoslocker.png)
 
 
-### Posts
+### _Posts_
 
 > 71 victims found
 
@@ -518,12 +563,15 @@ _`captcha prevents indexing`_
 ## **aztroteam**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://anewset3pcya3xvk73hj7yunuamutxxsm5sohkdi32blhmql55tvgqad.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -534,27 +582,30 @@ _`captcha prevents indexing`_
 
 > Babuk Ransomware is a sophisticated ransomware compiled for several platforms. Windows and ARM for Linux are the most used compiled versions, but ESX and a 32bit old PE executable were observed over time. as well It uses an Elliptic Curve Algorithm (Montgomery Algorithm) to build the encryption keys.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Babuk - Leaks site | 🟢 | 07/08/2023 12:08 | `http://nq4zyac4ukl4tykmidbzgdlvaboqeqsemkp4t35bzvjeve6zm2lqcjid.onion` | <a href="https://images.ransomware.live/screenshots/nq4zyac4ukl4tykmidbzgdlvaboqeqsemkp4t35bzvjeve6zm2lqcjid-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://www.bleepingcomputer.com/news/security/leaked-babuk-locker-ransomware-builder-used-in-new-attacks
 
 - https://www.bleepingcomputer.com/news/security/babuk-ransomwares-full-source-code-leaked-on-hacker-forum
 
 - https://blog.cyberint.com/babuk-locker
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| Babuk - Leaks site | 🟢 | 03/08/2023 06:08 | `http://nq4zyac4ukl4tykmidbzgdlvaboqeqsemkp4t35bzvjeve6zm2lqcjid.onion` | <a href="https://images.ransomware.live/screenshots/nq4zyac4ukl4tykmidbzgdlvaboqeqsemkp4t35bzvjeve6zm2lqcjid-onion.png" target=_blank>📸</a> | 
 
-### Negotiation chats
+#### ** Negotiation chats**
 
 | Name | Link |
 |---|---|
 |20210203| <a href="https://chat.ransomware.live/chat/babuk/20210203.html" target=_blank> 💬 </a> |
 |20210428| <a href="https://chat.ransomware.live/chat/babuk/20210428.html" target=_blank> 💬 </a> |
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 6 victims found
 
@@ -572,15 +623,18 @@ _`captcha prevents indexing`_
 ## **babyduck**
 
 
-### External analysis
-- https://twitter.com/PolarToffee/status/1445873002801889280?s=20
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://babydovegkmhbontykziyq7qivwzy33mu4ukqefe4mqpiiwd3wibnjqd.onion` | ❌ | 
+#### **External information**
+- https://twitter.com/PolarToffee/status/1445873002801889280?s=20
 
-### Posts
+<!-- tabs:end -->
+
+### _Posts_
 
 > no victim found
 
@@ -591,7 +645,16 @@ _`captcha prevents indexing`_
 
 > ⚠️ A decryption tool is available on [Avast](https://decoded.avast.io/threatresearch/decrypted-bianlian-ransomware/#bianlian_how_to_decrypt) site
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing bianlian's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| BianLian - Home | 🟢 | 07/08/2023 12:09 | `http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion` | <a href="https://images.ransomware.live/screenshots/bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://decoded.avast.io/threatresearch/decrypted-bianlian-ransomware/
 
 - https://redacted.com/blog/bianlian-ransomware-gang-gives-it-a-go/
@@ -603,28 +666,24 @@ _`captcha prevents indexing`_
 - SWikipedia@mail2tor.com
 
 
-🔎 `ransomware.live`has an active  parser for indexing bianlian's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| BianLian - Home | 🟢 | 03/08/2023 06:08 | `http://bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion` | <a href="https://images.ransomware.live/screenshots/bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad-onion.png" target=_blank>📸</a> | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/bianlian)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-bianlian.png)
 
 
-### Posts
+### _Posts_
 
-> 275 victims found
+> 277 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`H********** ********* ***`](https://google.com/search?q=H%2A%2A%2A%2A%2A%2A%2A%2A%2A%2A+%2A%2A%2A%2A%2A%2A%2A%2A%2A+%2A%2A%2A) | 03/08/2023 | Software provider in healthcare industry. | <a href="https://images.ransomware.live/screenshots/posts/ea0c175c48ac883d14e8c55b41fe5658.png" target=_blank>📸</a> |
+| [`Spokane Spinal Sports Care Clinic`](https://google.com/search?q=Spokane+Spinal+Sports+Care+Clinic) | 03/08/2023 | Spinal & Sports Care Clinic is a medical group practice located in Spokane Valley, WA that specializes in Massage Therapy and Chiropractic. | <a href="https://images.ransomware.live/screenshots/posts/36a49ec39882b1f91cab058d5e779518.png" target=_blank>📸</a> |
 | [`TELNET Redes Inteligentes S.A.`](https://google.com/search?q=TELNET+Redes+Inteligentes+S.A.) | 31/07/2023 | The telecommunications firm that produces solutions such as optical cards, fiber optic cables, and antennas. | <a href="https://images.ransomware.live/screenshots/posts/7c5ef85d3b89cc929b54f748bf2da745.png" target=_blank>📸</a> |
 | [`Retail Information Systems`](https://google.com/search?q=Retail+Information+Systems) | 31/07/2023 | Retail Information Systems provides cost-effective, highly configurable and scalable point of sale and inventory control software solutions to retailers worldwide. | <a href="https://images.ransomware.live/screenshots/posts/3da3a39648fa5b40b1a99adbcce246a7.png" target=_blank>📸</a> |
 | [`N** ******* ******`](https://google.com/search?q=N%2A%2A+%2A%2A%2A%2A%2A%2A%2A+%2A%2A%2A%2A%2A%2A) | 29/07/2023 | Real Estate company located in California. | <a href="https://images.ransomware.live/screenshots/posts/710162cfe78e28ab91cd55030f343300.png" target=_blank>📸</a> |
@@ -633,8 +692,6 @@ _`captcha prevents indexing`_
 | [`Dekko Window Systems`](https://google.com/search?q=Dekko+Window+Systems) | 28/07/2023 | Established in 1998, Dekko Window Systems is one of the North West region's most respected fabricators of aluminium and high-end uPVC doors and windows. | <a href="https://images.ransomware.live/screenshots/posts/26922ff56d42728acc04a749d41e4da5.png" target=_blank>📸</a> |
 | [`Collins Aerospace (An RTX Business)`](https://google.com/search?q=Collins+Aerospace+%28An+RTX+Business%29) | 24/07/2023 | Collins Aerospace Systems, a unit of Raytheon Technologies is a provider in technology and solutions for the global aerospace and defense industry. | <a href="https://images.ransomware.live/screenshots/posts/b7b40cf0b5a61f39ec46628eb28ba52c.png" target=_blank>📸</a> |
 | [`Hightway Care`](https://google.com/search?q=Hightway+Care) | 20/07/2023 | Highway and security turnkey solutions provider. | <a href="https://images.ransomware.live/screenshots/posts/e2fb1b646a783aa0e649543547546f6b.png" target=_blank>📸</a> |
-| [`Magnolia Steel`](https://google.com/search?q=Magnolia+Steel) | 20/07/2023 | Company fabricates reinforcement steel for concrete construction of bridges, roads, and buildings. | <a href="https://images.ransomware.live/screenshots/posts/15cdbe0517eaf34f6cab7ddae2695a9f.png" target=_blank>📸</a> |
-| [`New Braunfels Cardiology`](https://google.com/search?q=New+Braunfels+Cardiology) | 20/07/2023 | Company a part of New Braunfels community, it provides it's patients with Cardiovascular care. | <a href="https://images.ransomware.live/screenshots/posts/cdfdef1bcfb0684f44aa58d25f8c29b6.png" target=_blank>📸</a> |
 
 ↪️ More victims [here](/group/bianlian?id=posts)
 
@@ -649,23 +706,26 @@ _`Solve a scrapping issue on 2023-03-08`_
 
 🔎 `ransomware.live`has an active  parser for indexing blackbasta's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Black Basta Blog | 🟢 | 03/08/2023 06:09 | `http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd.onion` | <a href="https://images.ransomware.live/screenshots/stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd-onion.png" target=_blank>📸</a> | 
-| Chat Black Basta | 🟢 | 03/08/2023 06:09 | `http://aazsbsgya565vlu2c6bzy6yfiebkcbtvvcytvolt33s77xypi7nypxyd.onion` | <a href="https://images.ransomware.live/screenshots/aazsbsgya565vlu2c6bzy6yfiebkcbtvvcytvolt33s77xypi7nypxyd-onion.png" target=_blank>📸</a> | 
-| Chat Black Basta | 🟢 | 03/08/2023 06:10 | `http://bastad5huzwkepdixedg2gekg7jk22ato24zyllp6lnjx7wdtyctgvyd.onion` | ❌ | 
+| Black Basta Blog | 🟢 | 07/08/2023 12:09 | `http://stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd.onion` | <a href="https://images.ransomware.live/screenshots/stniiomyjliimcgkvdszvgen3eaaoz55hreqqx6o77yvmpwt7gklffqd-onion.png" target=_blank>📸</a> | 
+| Chat Black Basta | 🟢 | 07/08/2023 12:10 | `http://aazsbsgya565vlu2c6bzy6yfiebkcbtvvcytvolt33s77xypi7nypxyd.onion` | <a href="https://images.ransomware.live/screenshots/aazsbsgya565vlu2c6bzy6yfiebkcbtvvcytvolt33s77xypi7nypxyd-onion.png" target=_blank>📸</a> | 
+| Chat Black Basta | 🟢 | 07/08/2023 12:10 | `http://bastad5huzwkepdixedg2gekg7jk22ato24zyllp6lnjx7wdtyctgvyd.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 3 ransom notes](notes/blackbasta)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-blackbasta.png)
 
 
-### Posts
+### _Posts_
 
 > 251 victims found
 
@@ -690,7 +750,21 @@ _`Solve a scrapping issue on 2023-03-08`_
 
 > Ransomware. Uses dropper written in JavaScript to deploy a .NET payload.
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing blackbyte's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://6iaj3efye3q62xjgfxyegrufhewxew7yt4scxjd45tlfafyja6q4ctqd.onion` | ❌ | 
+| BlackByte BLOG | 🔴 | 30/12/2021 09:14 | `http://f5uzduboq4fa2xkjloprmctk7ve3dm46ff7aniis66cbekakvksxgeqd.onion` | ❌ | 
+| BlackByte BLOG | 🔴 | 28/03/2022 11:17 | `http://dlyo7r3n4qy5fzv4645nddjwarj7wjdd6wzckomcyc7akskkxp4glcad.onion` | ❌ | 
+| BlackByte BLOG | 🔴 | 24/04/2022 20:21 | `http://fl3xpz5bmgzxy4fmebhgsbycgnz24uosp3u4g33oiln627qq3gyw37ad.onion` | ❌ | 
+| BlackByte BLOG | 🔴 | 12/07/2022 20:09 | `http://ce6roic2ykdjunyzazsxmjpz5wsar4pflpoqzntyww5c2eskcp7dq4yd.onion` | ❌ | 
+| BB Auction | 🟢 | 07/08/2023 12:12 | `http://jbeg2dct2zhku6c2vwnpxtm2psnjo2xnqvvpoiiwr5hxnc6wrp3uhnad.onion` | <a href="https://images.ransomware.live/screenshots/jbeg2dct2zhku6c2vwnpxtm2psnjo2xnqvvpoiiwr5hxnc6wrp3uhnad-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - 61141FCA047691D0E47CFD84717B59D3BEDF822442B5E907BE147FD6B8A11B723A48DF7FCA47
 
 - BlackByteSupp0rt@onionmail.org
@@ -704,28 +778,17 @@ _`Solve a scrapping issue on 2023-03-08`_
 - https://www.techtarget.com/searchsecurity/news/252510334/BlackByte-ransomware-attacks-exploiting-ProxyShell-flaws
 
 
-🔎 `ransomware.live`has an active  parser for indexing blackbyte's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://6iaj3efye3q62xjgfxyegrufhewxew7yt4scxjd45tlfafyja6q4ctqd.onion` | ❌ | 
-| BlackByte BLOG | 🔴 | 30/12/2021 09:14 | `http://f5uzduboq4fa2xkjloprmctk7ve3dm46ff7aniis66cbekakvksxgeqd.onion` | ❌ | 
-| BlackByte BLOG | 🔴 | 28/03/2022 11:17 | `http://dlyo7r3n4qy5fzv4645nddjwarj7wjdd6wzckomcyc7akskkxp4glcad.onion` | ❌ | 
-| BlackByte BLOG | 🔴 | 24/04/2022 20:21 | `http://fl3xpz5bmgzxy4fmebhgsbycgnz24uosp3u4g33oiln627qq3gyw37ad.onion` | ❌ | 
-| BlackByte BLOG | 🔴 | 12/07/2022 20:09 | `http://ce6roic2ykdjunyzazsxmjpz5wsar4pflpoqzntyww5c2eskcp7dq4yd.onion` | ❌ | 
-| BB Auction | 🟢 | 03/08/2023 06:12 | `http://jbeg2dct2zhku6c2vwnpxtm2psnjo2xnqvvpoiiwr5hxnc6wrp3uhnad.onion` | <a href="https://images.ransomware.live/screenshots/jbeg2dct2zhku6c2vwnpxtm2psnjo2xnqvvpoiiwr5hxnc6wrp3uhnad-onion.png" target=_blank>📸</a> | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 3 ransom notes](notes/blackbyte)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-blackbyte.png)
 
 
-### Posts
+### _Posts_
 
 > 123 victims found
 
@@ -752,33 +815,36 @@ _`Solve a scrapping issue on 2023-03-08`_
 
 _`support host supp24maprinktc7uizgfyqhisx7lkszb6ogh6lwdzpac23w3mh4tvyd.onion`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| BlackMatter | 🔴 | 04/11/2021 21:45 | `http://blackmax7su6mbwtcyo3xwtpfxpm356jjqrs34y4crcytpw7mifuedyd.onion` | ❌ | 
+#### **External information**
 - https://www.tripwire.com/state-of-security/featured/blackmatter-pose-new-ransomware-threat
 
 - https://venturebeat.com/2021/08/23/sophoslabs-research-shows-blackmatter-ransomware-is-closely-acquainted-with-darkside
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| BlackMatter | 🔴 | 04/11/2021 21:45 | `http://blackmax7su6mbwtcyo3xwtpfxpm356jjqrs34y4crcytpw7mifuedyd.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/blackmatter)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/blackmatter.md">Crypto wallet(s) available</a>
 
 
-### Negotiation chats
+#### ** Negotiation chats**
 
 | Name | Link |
 |---|---|
 |20210829| <a href="https://chat.ransomware.live/chat/blackmatter/20210829.html" target=_blank> 💬 </a> |
 |20210907| <a href="https://chat.ransomware.live/chat/blackmatter/20210907.html" target=_blank> 💬 </a> |
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 31 victims found
 
@@ -804,15 +870,18 @@ _`support host supp24maprinktc7uizgfyqhisx7lkszb6ogh6lwdzpac23w3mh4tvyd.onion`_
 
 _`previous clearnet domain blackshadow.cc`_
 
-### External analysis
-- previous parser: ZWdyZXAgLW8gJ19zZWxmIj4oW1s6YWxudW06XV18IHxcLikrPC9hPicgIHNvdXJjZS9ibGFja3NoYWRvdy1ibGFja3NoYWRvdy5odG1sIHwgY3V0IC1kICc+JyAtZiAyIHwgY3V0IC1kICc8JyAtZiAxIHwgc2VkIC1lICcvRG9uYXRlL2QnIC1lICcvSG9tZS9kJyAtZSAnL0NvbnRhY3QgVVMvZCcgLWUgJy9UZWxlZ3JhbSBjaGFubmVsL2QnIHwgc29ydCAtdQ==
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://544corkfh5hwhtn4.onion` | ❌ | 
+#### **External information**
+- previous parser: ZWdyZXAgLW8gJ19zZWxmIj4oW1s6YWxudW06XV18IHxcLikrPC9hPicgIHNvdXJjZS9ibGFja3NoYWRvdy1ibGFja3NoYWRvdy5odG1sIHwgY3V0IC1kICc+JyAtZiAyIHwgY3V0IC1kICc8JyAtZiAxIHwgc2VkIC1lICcvRG9uYXRlL2QnIC1lICcvSG9tZS9kJyAtZSAnL0NvbnRhY3QgVVMvZCcgLWUgJy9UZWxlZ3JhbSBjaGFubmVsL2QnIHwgc29ydCAtdQ==
 
-### Posts
+<!-- tabs:end -->
+
+### _Posts_
 
 > 3 victims found
 
@@ -831,21 +900,24 @@ _`previous clearnet domain blackshadow.cc`_
 
 🔎 `ransomware.live`has an active  parser for indexing blacksuit's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Black Suit | 🟢 | 03/08/2023 06:12 | `http://weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd.onion` | <a href="https://images.ransomware.live/screenshots/weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd-onion.png" target=_blank>📸</a> | 
+| Black Suit | 🔴 | 07/08/2023 09:13 | `http://weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd.onion` | <a href="https://images.ransomware.live/screenshots/weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/blacksuit)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-blacksuit.png)
 
 
-### Posts
+### _Posts_
 
 > 5 victims found
 
@@ -862,12 +934,15 @@ _`previous clearnet domain blackshadow.cc`_
 ## **blacktor**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Bl@ckt0r - Bug Hunter and Data Breacher Group | 🔴 | 07/01/2023 21:07 | `http://bl4cktorpms2gybrcyt52aakcxt6yn37byb65uama5cimhifcscnqkid.onion` | <a href="https://images.ransomware.live/screenshots/bl4cktorpms2gybrcyt52aakcxt6yn37byb65uama5cimhifcscnqkid-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 4 victims found
 
@@ -883,16 +958,19 @@ _`previous clearnet domain blackshadow.cc`_
 ## **bluesky**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| BlueSky DECRYPTOR | 🟢 | 03/08/2023 06:13 | `http://ccpyeuptrlatb2piua4ukhnhi7lrxgerrcrj4p2b5uhbzqm2xgdjaqid.onion` | <a href="https://images.ransomware.live/screenshots/ccpyeuptrlatb2piua4ukhnhi7lrxgerrcrj4p2b5uhbzqm2xgdjaqid-onion.png" target=_blank>📸</a> | 
+| BlueSky DECRYPTOR | 🟢 | 07/08/2023 11:13 | `http://ccpyeuptrlatb2piua4ukhnhi7lrxgerrcrj4p2b5uhbzqm2xgdjaqid.onion` | <a href="https://images.ransomware.live/screenshots/ccpyeuptrlatb2piua4ukhnhi7lrxgerrcrj4p2b5uhbzqm2xgdjaqid-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/bluesky)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -904,12 +982,15 @@ _`previous clearnet domain blackshadow.cc`_
 
 _`claim to donate 80% of earnings to charity`_
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | 502 Bad Gateway | 🔴 | 28/12/2021 14:14 | `http://bonacifryrxr4siz6ptvokuihdzmjzpveruklxumflz5thmkgauty2qd.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 3 victims found
 
@@ -921,21 +1002,65 @@ _`claim to donate 80% of earnings to charity`_
 
  --- 
 
+## **cactus**
+
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🟢 | 07/08/2023 11:14 | `http://cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid.onion` | ❌ | 
+
+
+#### **Ransom note**
+* [📝 4 ransom notes](notes/cactus)
+<!-- tabs:end -->
+
+### _Total Attacks Over Time_
+
+![Statistics](/graphs/stats-cactus.png)
+
+
+### _Posts_
+
+> 18 victims found
+
+| post | date | Description | Screenshot | 
+|---|---|---|---|
+| [`Alberto Couto Alves`](https://google.com/search?q=Alberto+Couto+Alves) | 20/07/2023 | ACA Engenharia & Construção operates in a wide range of areas from Roads and Infrastructures, Buildings to the production of Bituminous mixtures, Concrete and Aggregates. | <a href="https://images.ransomware.live/screenshots/posts/c9346411d5cdf5b4608c70cd0d015ab1.png" target=_blank>📸</a> |
+| [`Agoravita`](https://google.com/search?q=Agoravita) | 20/07/2023 | Since 1999, Agoravita has supported companies in their infrastructure projects and IT services, digital communications, software development and training, which form the basis of their digital transition. | <a href="https://images.ransomware.live/screenshots/posts/53dc49d194917a72d42385ca06b3afb7.png" target=_blank>📸</a> |
+| [`American Meteorological Society`](https://google.com/search?q=American+Meteorological+Society) | 20/07/2023 | The American Meteorological Society, founded in 1919, is a global community committed to advancing weather, water, and climate science and service. | <a href="https://images.ransomware.live/screenshots/posts/07af8a671830108bc3aece0abb4d1ff5.png" target=_blank>📸</a> |
+| [`Biocair International`](https://google.com/search?q=Biocair+International) | 20/07/2023 | Biocair is a global GDP logistics specialist with over 35 years of experience in the pharmaceutical, biotechnology and life sciences sectors. | <a href="https://images.ransomware.live/screenshots/posts/4951bf0409f6a43e4ebb52039856b9e8.png" target=_blank>📸</a> |
+| [`Confartigianato Federimpresa FC`](https://google.com/search?q=Confartigianato+Federimpresa+FC) | 20/07/2023 | Confartigianato Federimpresa FC is a company that operates in the Financial Services industry. | <a href="https://images.ransomware.live/screenshots/posts/e5dfa88b91bfd237607c5b02f1a54987.png" target=_blank>📸</a> |
+| [`ScanSource`](https://google.com/search?q=ScanSource) | 20/07/2023 | Founded in 1992, ScanSource, Inc is an international distributor of technology products and solutions, focusing on point-of-sale (POS), payments, barcode, physical security, unified communications and collaboration, cloud and telecom services. | <a href="https://images.ransomware.live/screenshots/posts/ffabc016b43a44f0a2a0445b8778b2bb.png" target=_blank>📸</a> |
+| [`CWS`](https://google.com/search?q=CWS) | 20/07/2023 | CWS Srl is a company that operates in the Information Technology and Services industry. | <a href="https://images.ransomware.live/screenshots/posts/c358ad7e0facba5059283df4a098ac24.png" target=_blank>📸</a> |
+| [`Hawa Sliding Solutions`](https://google.com/search?q=Hawa+Sliding+Solutions) | 20/07/2023 | Hawa AG has been producing sliding solutions for creative building culture for more than 50 years. It is well-known as a premium provider of sliding fitting systems for equipment, room partitioning, shop fronts and facades. | <a href="https://images.ransomware.live/screenshots/posts/6aef8385504d22078dc0d374a4dfe7a8.png" target=_blank>📸</a> |
+| [`Imagination`](https://google.com/search?q=Imagination) | 20/07/2023 | Imagination is an independent experience company with 12 offices worldwide. We specialise in designing experiences which change how people feel, think and act. | <a href="https://images.ransomware.live/screenshots/posts/34be205b1c152860750ce61c4ffb2b23.png" target=_blank>📸</a> |
+| [`Italkraft`](https://google.com/search?q=Italkraft) | 20/07/2023 | Headquartered in Miami, Florida, we provide our customers with Italian Design kitchen, bathroom and closet cabinetry of the highest standard and style. | <a href="https://images.ransomware.live/screenshots/posts/e69fda414c6a458226576c1830d581a0.png" target=_blank>📸</a> |
+
+↪️ More victims [here](/group/cactus?id=posts)
+
+ --- 
+
 ## **cheers**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Cheers! | 🔴 | 20/09/2022 06:46 | `http://rwiajgajdr4kzlnrj5zwebbukpcbrjhupjmk6gufxv6tg7myx34iocad.onion` | ❌ | 
 | sembmarine | 🔴 | 20/09/2022 08:22 | `http://crkfkmrh4qzbddfrl2axnkvjp5tgwx73d7lq4oycsfxc7pfgbfhtfiid.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-cheers.png)
 
 
-### Posts
+### _Posts_
 
 > 15 victims found
 
@@ -959,16 +1084,19 @@ _`claim to donate 80% of earnings to charity`_
 ## **chilelocker**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Login | 🔴 | 19/04/2023 13:15 | `http://z6vidveub2ypo3d3x7omsmcxqwxkkmvn5y3paoufyd2tt4bfbkg33kid.onion` | <a href="https://images.ransomware.live/screenshots/z6vidveub2ypo3d3x7omsmcxqwxkkmvn5y3paoufyd2tt4bfbkg33kid-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 3 ransom notes](notes/chilelocker)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -979,7 +1107,18 @@ _`claim to donate 80% of earnings to charity`_
 
 > Clop is a ransomware which uses the .clop extension after having encrypted the victim's files. Another unique characteristic belonging with Clop is in the string: "Dont Worry C|0P" included into the ransom notes. It is a variant of CryptoMix ransomware, but it additionally attempts to disable Windows Defender and to remove the Microsoft Security Essentials in order to avoid user space detection.
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing clop's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://ekbgzchl6x2ias37.onion` | ❌ | 
+| DDOS Protection | 🔴 | 07/08/2023 05:14 | `http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion` | <a href="https://images.ransomware.live/screenshots/santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 07/08/2023 11:16 | `http://toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad.onion` | <a href="https://images.ransomware.live/screenshots/toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://blog.malwarebytes.com/malwarebytes-news/2021/02/clop-targets-execs-ransomware-tactics-get-another-new-twist
 
 - https://unit42.paloaltonetworks.com/clop-ransomware
@@ -987,25 +1126,17 @@ _`claim to donate 80% of earnings to charity`_
 - https://fourcore.io/blogs/clop-ransomware-history-adversary-simulation
 
 
-🔎 `ransomware.live`has an active  parser for indexing clop's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://ekbgzchl6x2ias37.onion` | ❌ | 
-| DDOS Protection | 🔴 | 02/08/2023 14:13 | `http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion` | <a href="https://images.ransomware.live/screenshots/santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 03/08/2023 06:16 | `http://toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad.onion` | <a href="https://images.ransomware.live/screenshots/toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad-onion.png" target=_blank>📸</a> | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 2 ransom notes](notes/clop)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-clop.png)
 
 
-### Posts
+### _Posts_
 
 > 497 victims found
 
@@ -1032,27 +1163,29 @@ _`claim to donate 80% of earnings to charity`_
 
 _`livechat host contirecj4hbzmyzuydyzrvm2c65blmvhoj2cvf25zqj2dwrrqcq5oad.onion`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| CONTI.News | 🔴 | 22/06/2022 06:25 | `http://continewsnv5otx5kaoje7krkto2qbu3gtqef22mnr7eaxw3y6ncz3ad.onion` | ❌ | 
+| continews.click | 🔴 | 07/08/2023 10:18 | `http://continews.click` | <a href="https://images.ransomware.live/screenshots/continews-click.png" target=_blank>📸</a> | 
+| Error Response Page | 🔴 | 23/11/2022 12:36 | `http://continews.bz` | ❌ | 
+#### **External information**
 - https://threatpost.com/affiliate-leaks-conti-ransomware-playbook/168442
 
 - https://unit42.paloaltonetworks.com/conti-ransomware-gang
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| CONTI.News | 🔴 | 22/06/2022 06:25 | `http://continewsnv5otx5kaoje7krkto2qbu3gtqef22mnr7eaxw3y6ncz3ad.onion` | ❌ | 
-| continews.click | 🟢 | 03/08/2023 06:16 | `http://continews.click` | <a href="https://images.ransomware.live/screenshots/continews-click.png" target=_blank>📸</a> | 
-| Error Response Page | 🔴 | 23/11/2022 12:36 | `http://continews.bz` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 4 ransom notes](notes/conti)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/conti.md">Crypto wallet(s) available</a>
 
 
-### Negotiation chats
+#### ** Negotiation chats**
 
 | Name | Link |
 |---|---|
@@ -1089,13 +1222,14 @@ _`livechat host contirecj4hbzmyzuydyzrvm2c65blmvhoj2cvf25zqj2dwrrqcq5oad.onion`_
 |20211205| <a href="https://chat.ransomware.live/chat/conti/20211205.html" target=_blank> 💬 </a> |
 |20211217| <a href="https://chat.ransomware.live/chat/conti/20211217.html" target=_blank> 💬 </a> |
 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-conti.png)
 
 
-### Posts
+### _Posts_
 
 > 333 victims found
 
@@ -1121,13 +1255,16 @@ _`livechat host contirecj4hbzmyzuydyzrvm2c65blmvhoj2cvf25zqj2dwrrqcq5oad.onion`_
 
 _`previous clearnet domain coomingproject.com`_
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | CoomingProject announcement | 🔴 | 04/02/2022 23:26 | `http://z6mikrtphid5fmn52nbcbg25tj57sowlm3oc25g563yvsfmygkcxqbyd.onion` | ❌ | 
 | none | 🔴 | 01/05/2021 00:00 | `http://teo7aj5mfgzxyeme.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1140,17 +1277,20 @@ _`previous clearnet domain coomingproject.com`_
 
 🔎 `ransomware.live`has an active  parser for indexing crosslock's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Cross Lock - Data leak | 🔴 | 27/07/2023 21:16 | `http://crosslock5cwfljbw4v37zuzq4talxxhyavjm2lufmjwgbpfjdsh56yd.onion` | <a href="https://images.ransomware.live/screenshots/crosslock5cwfljbw4v37zuzq4talxxhyavjm2lufmjwgbpfjdsh56yd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-crosslock.png)
 
 
-### Posts
+### _Posts_
 
 > 1 victim found
 
@@ -1164,12 +1304,15 @@ _`previous clearnet domain coomingproject.com`_
 
 > 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://d57uremugxjrafyg.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1181,12 +1324,15 @@ _`previous clearnet domain coomingproject.com`_
 
 _`not a ransomware group, also ref 7k4y[...]7eid.onion/documents.html`_
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | -*- CRYP70N1C0D3 Team -*- | 🔴 | 31/12/2022 15:21 | `http://7k4yyskpz3rxq5nyokf6ztbpywzbjtdfanweup3skctcxopmt7tq7eid.onion` | <a href="https://images.ransomware.live/screenshots/7k4yyskpz3rxq5nyokf6ztbpywzbjtdfanweup3skctcxopmt7tq7eid-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 11 victims found
 
@@ -1214,22 +1360,25 @@ _`not a ransomware group, also ref 7k4y[...]7eid.onion/documents.html`_
 
 🔎 `ransomware.live`has an active  parser for indexing cryptnet's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| CryptNet RECOVERY | 🟢 | 03/08/2023 06:17 | `http://cryptr3fmuv4di5uiczofjuypopr63x2gltlsvhur2ump4ebru2xd3yd.onion` | <a href="https://images.ransomware.live/screenshots/cryptr3fmuv4di5uiczofjuypopr63x2gltlsvhur2ump4ebru2xd3yd-onion.png" target=_blank>📸</a> | 
-| CryptNet NEWS | 🟢 | 03/08/2023 06:17 | `http://blog6zw62uijolee7e6aqqnqaszs3ckr5iphzdzsazgrpvtqtjwqryid.onion` | <a href="https://images.ransomware.live/screenshots/blog6zw62uijolee7e6aqqnqaszs3ckr5iphzdzsazgrpvtqtjwqryid-onion.png" target=_blank>📸</a> | 
+| CryptNet RECOVERY | 🟢 | 07/08/2023 11:18 | `http://cryptr3fmuv4di5uiczofjuypopr63x2gltlsvhur2ump4ebru2xd3yd.onion` | <a href="https://images.ransomware.live/screenshots/cryptr3fmuv4di5uiczofjuypopr63x2gltlsvhur2ump4ebru2xd3yd-onion.png" target=_blank>📸</a> | 
+| CryptNet NEWS | 🟢 | 07/08/2023 11:18 | `http://blog6zw62uijolee7e6aqqnqaszs3ckr5iphzdzsazgrpvtqtjwqryid.onion` | <a href="https://images.ransomware.live/screenshots/blog6zw62uijolee7e6aqqnqaszs3ckr5iphzdzsazgrpvtqtjwqryid-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/cryptnet)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-cryptnet.png)
 
 
-### Posts
+### _Posts_
 
 > 2 victims found
 
@@ -1243,7 +1392,17 @@ _`not a ransomware group, also ref 7k4y[...]7eid.onion/documents.html`_
 ## **cuba**
 
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing cuba's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://cuba4mp6ximo2zlo.onion` | ❌ | 
+| Cuba | 🟢 | 07/08/2023 11:19 | `http://cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion` | <a href="https://images.ransomware.live/screenshots/cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://www.mcafee.com/enterprise/en-us/assets/reports/rp-cuba-ransomware.pdf
 
 - https://digital.nhs.uk/cyber-alerts/2021/cc-3855
@@ -1251,28 +1410,21 @@ _`not a ransomware group, also ref 7k4y[...]7eid.onion/documents.html`_
 - https://www.ic3.gov/Media/News/2021/211203-2.pdf
 
 
-🔎 `ransomware.live`has an active  parser for indexing cuba's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://cuba4mp6ximo2zlo.onion` | ❌ | 
-| Cuba | 🟢 | 03/08/2023 06:17 | `http://cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion` | <a href="https://images.ransomware.live/screenshots/cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd-onion.png" target=_blank>📸</a> | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/cuba)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/cuba.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-cuba.png)
 
 
-### Posts
+### _Posts_
 
 > 94 victims found
 
@@ -1299,17 +1451,21 @@ _`not a ransomware group, also ref 7k4y[...]7eid.onion/documents.html`_
 
 🔎 `ransomware.live`has an active  parser for indexing cyclops's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Blog - Knight | 🟢 | 03/08/2023 06:18 | `http://nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad.onion` | <a href="https://images.ransomware.live/screenshots/nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad-onion.png" target=_blank>📸</a> | 
+| Blog - Knight | 🟢 | 07/08/2023 11:19 | `http://nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad.onion` | <a href="https://images.ransomware.live/screenshots/nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad-onion.png" target=_blank>📸</a> | 
+| Blog - Knight | 🟢 | 07/08/2023 11:21 | `http://knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd.onion` | <a href="https://images.ransomware.live/screenshots/knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-cyclops.png)
 
 
-### Posts
+### _Posts_
 
 > 7 victims found
 
@@ -1329,16 +1485,19 @@ _`not a ransomware group, also ref 7k4y[...]7eid.onion/documents.html`_
 
 > 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | The Chat | 🔴 | 10/11/2022 20:33 | `http://dgnh6p5uq234zry7qx7bh73hj5ht3jqisgfet6s7j7uyas5i46xfdkyd.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/dagonlocker)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1351,25 +1510,27 @@ _`not a ransomware group, also ref 7k4y[...]7eid.onion/documents.html`_
 
 🔎 `ransomware.live`has an active  parser for indexing daixin's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 10/11/2022 22:30 | `http://232fwh5cea3ub6qguz3pynijxfzl2uj3c73nbrayipf3gq25vtq2r4qd.onion` | ❌ | 
-| Data Leak | 🟢 | 03/08/2023 06:18 | `http://7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd.onion` | <a href="https://images.ransomware.live/screenshots/7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd-onion.png" target=_blank>📸</a> | 
+| Data Leak | 🟢 | 07/08/2023 11:21 | `http://7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd.onion` | <a href="https://images.ransomware.live/screenshots/7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-daixin.png)
 
 
-### Posts
+### _Posts_
 
 > 10 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
-| [`Columbus Regional Healthcare System (US)`]( https://crhealthcare.org/) | 09/06/2023 | Columbus Regional Healthcare System has one of the highest volume
-      and most experienced robotic surgical programs in Southeastern  North Carolina. |   |
+| [`Columbus Regional Healthcare System (US)`]( https://crhealthcare.org/) | 09/06/2023 | Columbus Regional Healthcare System has one of the highest volume and most experienced robotic surgical programs in Southeastern  North Carolina. |   |
 | [`Hit Promotional Products (US)`](https://www.hitpromo.net) | 29/03/2023 | Hit Promotional Products has been a leader in the promotional product industry. As a family-owned business with a long history, Hit Promotional want to build real relationships. |   |
 | [`B&G Foods (CA, US)`](https://bgfoods.com/) | 11/02/2023 | B&G Foods, Inc. manufactures, sells, and distributes a portfolio of shelf-stable and frozen foods, and household products in the United States, Canada, and Puerto Rico. |   |
 | [`Guardian Analytics (US)`](https://guardiananalytics.com) | 20/01/2023 | Guardian Analytics is now a part of NICE Actimize, a business of NICE (Nasdaq:NICE). Consistently ranked as number one in the space, NICE Actimize is the largest and broadest provider of financial crime, risk and compliance solutions for regional and global financial institutions, as well as government regulators. With Guardian Analytics, financial institutions build trust, increase competitiveness, improve their customer experience, and scale operations. |   |
@@ -1387,20 +1548,23 @@ _`not a ransomware group, also ref 7k4y[...]7eid.onion/documents.html`_
 
 _`accessing over HTTP returns open dir 29/5/22, 89.38.225.166`_
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Home | 🔴 | 18/07/2022 23:41 | `http://wemo2ysyeq6km2nqhcrz63dkdhez3j25yw2nvn7xba2z4h7v7gyrfgid.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/darkangels)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/darkangels.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1410,16 +1574,19 @@ _`accessing over HTTP returns open dir 29/5/22, 89.38.225.166`_
 ## **darkbit**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Error | 🔴 | 15/02/2023 10:43 | `http://iw6v2p3cruy7tqfup3yl4dgt4pfibfa3ai4zgnu5df2q3hus3lm7c7ad.onion` | <a href="https://images.ransomware.live/screenshots/iw6v2p3cruy7tqfup3yl4dgt4pfibfa3ai4zgnu5df2q3hus3lm7c7ad-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/darkbit)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1431,20 +1598,23 @@ _`accessing over HTTP returns open dir 29/5/22, 89.38.225.166`_
 
 _`marketplace - not a ransomware group, reputation questionable`_
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Dark Leak Market | 🔴 | 07/10/2021 16:14 | `http://54rdhzjzc4ids4u4wata4zr4ywfon5wpz2ml4q3avelgadpvmdal2vqd.onion` | ❌ | 
-| fresh CC Fullz CVV autoShop Buy Fullz Online – Ful | 🔴 | 03/08/2023 00:21 | `http://aby6efzmp7jzbwgidgqc6ghxi2vwpo6d7eaood5xuoxutrfofsmzcjqd.onion` | <a href="https://images.ransomware.live/screenshots/aby6efzmp7jzbwgidgqc6ghxi2vwpo6d7eaood5xuoxutrfofsmzcjqd-onion.png" target=_blank>📸</a> | 
-| fresh CC Fullz CVV autoShop Buy Fullz Online – Ful | 🟢 | 03/08/2023 06:20 | `http://darklmmmfuonklpy6s3tmvk5mrcdi7iapaw6eka45esmoryiiuug6aid.onion` | <a href="https://images.ransomware.live/screenshots/darklmmmfuonklpy6s3tmvk5mrcdi7iapaw6eka45esmoryiiuug6aid-onion.png" target=_blank>📸</a> | 
+| fresh CC Fullz CVV autoShop Buy Fullz Online – Ful | 🔴 | 03/08/2023 18:14 | `http://aby6efzmp7jzbwgidgqc6ghxi2vwpo6d7eaood5xuoxutrfofsmzcjqd.onion` | <a href="https://images.ransomware.live/screenshots/aby6efzmp7jzbwgidgqc6ghxi2vwpo6d7eaood5xuoxutrfofsmzcjqd-onion.png" target=_blank>📸</a> | 
+| Anonymous marketplace - guaranted secure escrow sy | 🟢 | 07/08/2023 11:22 | `http://darklmmmfuonklpy6s3tmvk5mrcdi7iapaw6eka45esmoryiiuug6aid.onion` | <a href="https://images.ransomware.live/screenshots/darklmmmfuonklpy6s3tmvk5mrcdi7iapaw6eka45esmoryiiuug6aid-onion.png" target=_blank>📸</a> | 
 | Dark Leak Market | 🔴 | 11/07/2023 12:25 | `http://darkleakyqmv62eweqwy4dnhaijg4m4dkburo73pzuqfdumcntqdokyd.onion` | <a href="https://images.ransomware.live/screenshots/darkleakyqmv62eweqwy4dnhaijg4m4dkburo73pzuqfdumcntqdokyd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-darkleakmarket.png)
 
 
-### Posts
+### _Posts_
 
 > 39 victims found
 
@@ -1471,21 +1641,24 @@ _`marketplace - not a ransomware group, reputation questionable`_
 
 🔎 `ransomware.live`has an active  parser for indexing darkpower's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 |  Dark Power Ransomware | 🔴 | 15/03/2023 06:44 | `http://powerj7kmpzkdhjg4szvcxxgktgk36ezpjxvtosylrpey7svpmrjyuyd.onion` | <a href="https://images.ransomware.live/screenshots/powerj7kmpzkdhjg4szvcxxgktgk36ezpjxvtosylrpey7svpmrjyuyd-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/darkpower)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-darkpower.png)
 
 
-### Posts
+### _Posts_
 
 > 10 victims found
 
@@ -1510,17 +1683,20 @@ _`marketplace - not a ransomware group, reputation questionable`_
 
 🔎 `ransomware.live`has an active  parser for indexing darkrace's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Darkrace blog | 🔴 | 20/06/2023 23:24 | `http://wkrlpub5k52rjigwxfm6m7ogid55kamgc5azxlq7zjgaopv33tgx2sqd.onion` | <a href="https://images.ransomware.live/screenshots/wkrlpub5k52rjigwxfm6m7ogid55kamgc5azxlq7zjgaopv33tgx2sqd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-darkrace.png)
 
 
-### Posts
+### _Posts_
 
 > 10 victims found
 
@@ -1543,27 +1719,29 @@ _`marketplace - not a ransomware group, reputation questionable`_
 
 > Darkside ransomware group has started its operation in August of 2020 with the model of RaaS (Ransomware-as-a-Service). They have become known for their operations of large ransoms scale. They have announced that they prefer not to attack hospitals, schools, non-profits, and governments, but rather big organizations that can be able to pay large ransoms. Darkside ransomware group became very famous following the cyberattack of the Colonial Pipeline and Toshiba unit. The FBI finally terminate the Darkside operation and Managed to pull money from their wallets back.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://darksidc3iux462n6yunevoag52ntvwp6wulaz3zirkmh4cnz6hhj7id.onion` | ❌ | 
+#### **External information**
 - https://blog.qualys.com/vulnerabilities-threat-research/2021/06/09/darkside-ransomware
 
 - https://www.varonis.com/blog/darkside-ransomware
 
 - https://github.com/advanced-threat-research/DarkSide-Config-Extract
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://darksidc3iux462n6yunevoag52ntvwp6wulaz3zirkmh4cnz6hhj7id.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/darkside)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/darkside.md">Crypto wallet(s) available</a>
 
 
-### Negotiation chats
+#### ** Negotiation chats**
 
 | Name | Link |
 |---|---|
@@ -1573,8 +1751,9 @@ _`marketplace - not a ransomware group, reputation questionable`_
 |20210413| <a href="https://chat.ransomware.live/chat/darkside/20210413.html" target=_blank> 💬 </a> |
 |20210418| <a href="https://chat.ransomware.live/chat/darkside/20210418.html" target=_blank> 💬 </a> |
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1584,21 +1763,24 @@ _`marketplace - not a ransomware group, reputation questionable`_
 ## **dataleak**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | DataLeak | 🔴 | 22/02/2023 12:58 | `http://woqjumaahi662ka26jzxyx7fznbp4kg3bsjar4b52tqkxgm2pylcjlad.onion` | <a href="https://images.ransomware.live/screenshots/woqjumaahi662ka26jzxyx7fznbp4kg3bsjar4b52tqkxgm2pylcjlad-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 2 ransom notes](notes/dataleak)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-dataleak.png)
 
 
-### Posts
+### _Posts_
 
 > 6 victims found
 
@@ -1617,16 +1799,19 @@ _`marketplace - not a ransomware group, reputation questionable`_
 
 > A ransomware with potential ties to Wizard Spider.
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Chat | 🔴 | 31/10/2022 16:33 | `http://7ypnbv3snejqmgce4kbewwvym4cm5j6lkzf2hra2hyhtsvwjaxwipkyd.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 2 ransom notes](notes/diavol)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1639,20 +1824,23 @@ _`marketplace - not a ransomware group, reputation questionable`_
 
 🔎 `ransomware.live`has an active  parser for indexing donutleaks's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | _D0#Nut::__chat | 🔴 | 21/10/2022 20:39 | `http://qkbbaxiuqqcqb5nox4np4qjcniy2q6m7yeluvj7n5i5dn7pgpcwxwfid.onion` | <a href="https://images.ransomware.live/screenshots/qkbbaxiuqqcqb5nox4np4qjcniy2q6m7yeluvj7n5i5dn7pgpcwxwfid-onion.png" target=_blank>📸</a> | 
-| D#NUT. | 🔴 | 02/08/2023 07:20 | `http://sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd.onion` | <a href="https://images.ransomware.live/screenshots/sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd-onion.png" target=_blank>📸</a> | 
+| D#NUT. | 🟢 | 07/08/2023 11:23 | `http://sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd.onion` | <a href="https://images.ransomware.live/screenshots/sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd-onion.png" target=_blank>📸</a> | 
 | _d0nut.::Files_ | 🔴 | 21/10/2022 20:39 | `http://doq32rjiuomfghm5a4lyf3lwwakt2774tkv4ppsos6ueo5mhx7662gid.onion` | ❌ | 
-| __d0nut::files | 🔴 | 02/08/2023 07:20 | `http://dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd.onion` | <a href="https://images.ransomware.live/screenshots/dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd-onion.png" target=_blank>📸</a> | 
+| __d0nut::files | 🟢 | 07/08/2023 11:24 | `http://dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd.onion` | <a href="https://images.ransomware.live/screenshots/dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-donutleaks.png)
 
 
-### Posts
+### _Posts_
 
 > 18 victims found
 
@@ -1677,21 +1865,24 @@ _`marketplace - not a ransomware group, reputation questionable`_
 
 > Doppelpaymer is a ransomware family that encrypts user data and later on it asks for a ransom in order to restore original files. It is recognizable by its trademark file extension added to encrypted files: .doppeled. It also creates a note file named: ".how2decrypt.txt".
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Start-maximized.com | 🔴 | 23/09/2021 10:08 | `http://hpoo4dosa3x4ognfxpqcrjwnsigvslm7kv6hvmhh2yqczaxy3j6qnwad.onion` | ❌ | 
+#### **External information**
 - https://aithority.com/security/doppelpaymer-ransomware-attack-sinks-a-global-motor-companys-20-million
 
 - https://www.zscaler.com/blogs/security-research/doppelpaymer-continues-cause-grief-through-rebranding
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| Start-maximized.com | 🔴 | 23/09/2021 10:08 | `http://hpoo4dosa3x4ognfxpqcrjwnsigvslm7kv6hvmhh2yqczaxy3j6qnwad.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 4 ransom notes](notes/doppelpaymer)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1703,12 +1894,15 @@ _`marketplace - not a ransomware group, reputation questionable`_
 
 _`marketplace - not a ransomware group`_
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| DDOS Protection | 🔴 | 02/08/2023 17:23 | `http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion` | <a href="https://images.ransomware.live/screenshots/dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad-onion.png" target=_blank>📸</a> | 
+| DDOS Protection | 🔴 | 06/08/2023 12:24 | `http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion` | <a href="https://images.ransomware.live/screenshots/dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1718,17 +1912,20 @@ _`marketplace - not a ransomware group`_
 ## **dunghill_leak**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| 404 Not Found | 🟢 | 03/08/2023 06:22 | `http://p66slxmtum2ox4jpayco6ai3qfehd5urgrs4oximjzklxcol264driqd.onion` | <a href="https://images.ransomware.live/screenshots/p66slxmtum2ox4jpayco6ai3qfehd5urgrs4oximjzklxcol264driqd-onion.png" target=_blank>📸</a> | 
+| 404 Not Found | 🟢 | 07/08/2023 11:24 | `http://p66slxmtum2ox4jpayco6ai3qfehd5urgrs4oximjzklxcol264driqd.onion` | <a href="https://images.ransomware.live/screenshots/p66slxmtum2ox4jpayco6ai3qfehd5urgrs4oximjzklxcol264driqd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-dunghill_leak.png)
 
 
-### Posts
+### _Posts_
 
 > 4 victims found
 
@@ -1745,21 +1942,24 @@ _`marketplace - not a ransomware group`_
 
 > The QNAPCrypt ransomware works similarly to other ransomware, including encrypting all files and delivering a ransom note. However, there are several important differences:1. The ransom note was included solely as a text file, without any message on the screen—naturally, because it is a server and not an endpoint.2. Every victim is provided with a different, unique Bitcoin wallet—this could help the attackers avoid being traced.3. Once a victim is compromised, the malware requests a wallet address and a public RSA key from the command and control server (C&C) before file encryption.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| 404 page not found | 🔴 | 07/01/2023 21:20 | `http://veqlxhq7ub5qze3qy56zx2cig2e6tzsgxdspkubwbayqije6oatma6id.onion` | <a href="https://images.ransomware.live/screenshots/veqlxhq7ub5qze3qy56zx2cig2e6tzsgxdspkubwbayqije6oatma6id-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://www.anomali.com/blog/the-ech0raix-ransomware
 
 - https://www.bleepingcomputer.com/news/security/qnap-nas-devices-hit-in-surge-of-ech0raix-ransomware-attacks/
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| 404 page not found | 🔴 | 07/01/2023 21:20 | `http://veqlxhq7ub5qze3qy56zx2cig2e6tzsgxdspkubwbayqije6oatma6id.onion` | <a href="https://images.ransomware.live/screenshots/veqlxhq7ub5qze3qy56zx2cig2e6tzsgxdspkubwbayqije6oatma6id-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/ech0raix)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1772,12 +1972,15 @@ _`marketplace - not a ransomware group`_
 
 _`captcha prevents indexing`_
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Entropy hall of fall | 🔴 | 27/02/2022 08:16 | `http://leaksv7sroztl377bbohzl42i3ddlfsxopcb6355zc7olzigedm5agad.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1787,12 +1990,15 @@ _`captcha prevents indexing`_
 ## **ep918**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://dg5fyig37abmivryrxlordrczn6d6r5wzcfe2msuo5mbbu2exnu46fid.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1803,25 +2009,29 @@ _`captcha prevents indexing`_
 
 > Everest ransom group collects and analyzes information about their victims. They specialize in customer privacy data, financial information, databases, credit card information, and more. The Everest ransom group leaks the victim's data to the darknet and they announced that any victim that will not contact them will suffer from a data leak and they will not delete hist files for future usage.
 
-### External analysis
-- https://www.reuters.com/article/us-usa-products-colonial-pipeline-ransom/more-ransomware-websites-disappear-in-aftermath-of-colonial-pipeline-hack-idUSKCN2CX0KT
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Everest Ransomware Group | 🟢 | 03/08/2023 06:22 | `http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion` | <a href="https://images.ransomware.live/screenshots/ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad-onion.png" target=_blank>📸</a> | 
+| Everest Ransomware Group | 🟢 | 07/08/2023 11:25 | `http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion` | <a href="https://images.ransomware.live/screenshots/ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad-onion.png" target=_blank>📸</a> | 
+#### **External information**
+- https://www.reuters.com/article/us-usa-products-colonial-pipeline-ransom/more-ransomware-websites-disappear-in-aftermath-of-colonial-pipeline-hack-idUSKCN2CX0KT
 
-### Total Attacks Over Time
+<!-- tabs:end -->
+
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-everest.png)
 
 
-### Posts
+### _Posts_
 
-> 121 victims found
+> 122 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Kovair Software Data Leak`](https://google.com/search?q=Kovair+Software+Data+Leak) | 05/08/2023 | The set dates are out, so we post the entire archive Part1 https://dropmefiles.com/******** &#B”a3Arcj}eOfoQ==Fh | <a href="https://images.ransomware.live/screenshots/posts/e53d680d8acf307c7046612aa38bc090.png" target=_blank>📸</a> |
 | [`Great Opportunity to monetize your corporate access`](https://google.com/search?q=Great+Opportunity+to+monetize+your+corporate+access) | 31/07/2023 | Team looking for new partners with access to corporate networks.Fast work, good share. The offer will close on August 7. First come first served jabber:everestgroup@exploit.imeverestgroup@thesecure.biz email:everestransomteam@onionmail.orgeverestblog@cock.li | <a href="https://images.ransomware.live/screenshots/posts/e69a9de0b499e2da007f54294967fcf3.png" target=_blank>📸</a> |
 | [`Kovair Software`](https://google.com/search?q=Kovair+Software) | 26/07/2023 | 200 GB of internal files (Kovair.com) were stolen from the company’s servers. The files contain:– Project Source Codes– Personal data of employees– Various internal work documents To fully restore the system and delete these files, company representatives must contact by August 3, 2023.Otherwise, all this data will be published here and other forums,in the same […] | <a href="https://images.ransomware.live/screenshots/posts/d85e524c1e77edda3c9fabb7c2602700.png" target=_blank>📸</a> |
 | [`US District Court / Law company`](https://google.com/search?q=US+District+Court+%2F+Law+company) | 26/04/2023 | On sale access to the network US District CourtEmployee access,full controlAV: NoNetwork access of a lawyer with tons various confidential documents is included in this sale. Internal correspondence,tax,banks,ssn,dl,court cases. State IL.Price 15,000$Payment: btc,xmrContact email: everestransomteam@onionmail.org or jabber: everestgroup@exploit.im,everestgroup@thesecure.biz | <a href="https://images.ransomware.live/screenshots/posts/7e9314b4d98292d8aa8be759a1601d0c.png" target=_blank>📸</a> |
@@ -1831,7 +2041,6 @@ _`captcha prevents indexing`_
 | [`US District Court`](https://google.com/search?q=US+District+Court) | 22/03/2023 |  |   |
 | [`NRG Innovations DataBase Leak`](https://google.com/search?q=NRG+Innovations+DataBase+Leak) | 15/03/2023 | Includes internal correspondence,financial documents,tax documents,accounting,SSN,DLThe owners of the company were notified of the incident in person and of the time frame.Download:https://dropmefiles.com.ua/ua/Z4aW2https://dropmefiles.com.ua/ua/******* site pwd 868274903rar pwd 8392GLDKLA82@ | <a href="https://images.ransomware.live/screenshots/posts/8ed91a332bdb7fb4d7fb12673f891ee5.png" target=_blank>📸</a> |
 | [`Aeronautics company Canada  UTC Aerospace Systems, Bombardier, NASA partners`](https://google.com/search?q=Aeronautics+company+Canada+%7C+UTC+Aerospace+Systems%2C+Bombardier%2C+NASA+partners) | 03/01/2023 |  |   |
-| [`Aeronautics company Canada / UTC Aerospace Systems, Bombardier aerospace, NASA partners`](https://google.com/search?q=Aeronautics+company+Canada+%2F+UTC+Aerospace+Systems%2C+Bombardier+aerospace%2C+NASA+partners) | 23/11/2022 |   |   |
 
 ↪️ More victims [here](/group/everest?id=posts)
 
@@ -1841,15 +2050,18 @@ _`captcha prevents indexing`_
 
 > According to PCrisk, Exorcist is a ransomware-type malicious program. Systems infected with this malware experience data encryption and users receive ransom demands for decryption. During the encryption process, all compromised files are appended with an extension consisting of a ransom string of characters.For example, a file originally named "1.jpg" could appear as something similar to "1.jpg.rnyZoV" following encryption. After this process is complete, Exorcist ransomware changes the desktop wallpaper and drops HTML applications - "[random-string]-decrypt.hta" (e.g. "rnyZoV-decrypt.hta") - into affected folders. These files contain identical ransom messages.
 
-### External analysis
-- https://medium.com/@velasco.l.n/exorcist-ransomware-from-triaging-to-deep-dive-5b7da4263d81
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://7iulpt5i6whht6zo2r52f7vptxtjxs3vfcdxxazllikrtqpupn4epnqd.onion` | ❌ | 
+#### **External information**
+- https://medium.com/@velasco.l.n/exorcist-ransomware-from-triaging-to-deep-dive-5b7da4263d81
 
-### Posts
+<!-- tabs:end -->
+
+### _Posts_
 
 > no victim found
 
@@ -1862,17 +2074,20 @@ _`captcha prevents indexing`_
 
 🔎 `ransomware.live`has an active  parser for indexing freecivilian's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Free Civilian | 🔴 | 07/01/2023 21:22 | `http://gcbejm2rcjftouqbxuhimj5oroouqcuxb2my4raxqa7efkz5bd5464id.onion` | <a href="https://images.ransomware.live/screenshots/gcbejm2rcjftouqbxuhimj5oroouqcuxb2my4raxqa7efkz5bd5464id-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-freecivilian.png)
 
 
-### Posts
+### _Posts_
 
 > 14 victims found
 
@@ -1897,12 +2112,15 @@ _`captcha prevents indexing`_
 
 > New possible leak site posted to a forum on November 20th, 2022, no victims at present. Unclear if its for a ransomware or extortion group
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Home | 🔴 | 07/01/2023 21:23 | `http://hkk62og3s2tce2gipcdxg3m27z4b62mrmml6ugctzdxs25o26q3a4mid.onion` | <a href="https://images.ransomware.live/screenshots/hkk62og3s2tce2gipcdxg3m27z4b62mrmml6ugctzdxs25o26q3a4mid-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1915,21 +2133,24 @@ _`captcha prevents indexing`_
 
 _`captcha prevents indexing`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Grief list | 🔴 | 02/05/2022 11:11 | `http://griefcameifmv4hfr3auozmovz5yi6m3h3dwbuqw7baomfxoxz4qteid.onion` | ❌ | 
+#### **External information**
 - https://heimdalsecurity.com/blog/doppelpaymer-gets-a-rebranding
 
 - https://www.bleepingcomputer.com/news/security/nra-no-comment-on-russian-ransomware-gang-attack-claims/
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| Grief list | 🔴 | 02/05/2022 11:11 | `http://griefcameifmv4hfr3auozmovz5yi6m3h3dwbuqw7baomfxoxz4qteid.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/grief)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1939,17 +2160,20 @@ _`captcha prevents indexing`_
 ## **groove**
 
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Утечки - Groove | 🔴 | 30/10/2021 10:50 | `http://ws3dh6av66sjbxxkjpw5ao3wqzmtejnkzheswm4dz5rrwvular7xvkqd.onion` | ❌ | 
+#### **External information**
 - https://intel471.com/blog/groove-gang-ransomware-babuk-revil-blackmatter
 
 - https://www.mcafee.com/blogs/enterprise/mcafee-enterprise-atr/how-groove-gang-is-shaking-up-the-ransomware-as-a-service-market-to-empower-affiliates
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| Утечки - Groove | 🔴 | 30/10/2021 10:50 | `http://ws3dh6av66sjbxxkjpw5ao3wqzmtejnkzheswm4dz5rrwvular7xvkqd.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 13 victims found
 
@@ -1974,16 +2198,19 @@ _`captcha prevents indexing`_
 
 > According to PCrisk, Hades Locker is an updated version of WildFire Locker ransomware that infiltrates systems and encrypts a variety of data types using AES encryption. Hades Locker appends the names of encrypted files with the .~HL[5_random_characters] (first 5 characters of encryption password) extension.
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://ixltdyumdlthrtgx.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/hades)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -1995,17 +2222,20 @@ _`captcha prevents indexing`_
 
 _`login page, no posts`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Clients page | 🔴 | 31/01/2022 20:17 | `http://ft4zr2jzlqoyob7yg4fcpwyt37hox3ajajqnfkdvbfrkjioyunmqnpad.onion` | ❌ | 
+#### **External information**
 - https://therecord.media/new-haron-ransomware-gang-emerges-borrowing-from-avaddon-and-thanos
 
 - https://threatpost.com/ransomware-gangs-haron-blackmatter/168212
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| Clients page | 🔴 | 31/01/2022 20:17 | `http://ft4zr2jzlqoyob7yg4fcpwyt37hox3ajajqnfkdvbfrkjioyunmqnpad.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -2018,7 +2248,13 @@ _`login page, no posts`_
 
 _`aka fivehands`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| News | 🔴 | 02/10/2021 15:17 | `http://3r6n77mpe737w4sbxxxrpc5phbluv6xhtdl5ujpnlvmck5tc7blq2rqd.onion` | ❌ | 
+#### **External information**
 - https://www.ic3.gov/Media/News/2021/211029.pdf
 
 - https://www.cisa.gov/uscert/ncas/analysis-reports/ar21-126a
@@ -2027,16 +2263,13 @@ _`aka fivehands`_
 
 - https://www.mandiant.com/resources/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| News | 🔴 | 02/10/2021 15:17 | `http://3r6n77mpe737w4sbxxxrpc5phbluv6xhtdl5ujpnlvmck5tc7blq2rqd.onion` | ❌ | 
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/hellokitty.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -2049,7 +2282,18 @@ _`aka fivehands`_
 
 _`US announces it seized Hive ransomware gang’s leak sites and decryption keys`_
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing hive's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| This domain has been seized | 🔴 | 27/01/2023 04:45 | `http://hiveleakdbtnp76ulyhi52eag6c6tyc3xw7ez7iqy6wc34gd2nekazyd.onion` | <a href="https://images.ransomware.live/screenshots/hiveleakdbtnp76ulyhi52eag6c6tyc3xw7ez7iqy6wc34gd2nekazyd-onion.png" target=_blank>📸</a> | 
+| This domain has been seized | 🔴 | 27/01/2023 06:47 | `http://hivecust6vhekztbqgdnkks64ucehqacge3dij3gyrrpdp57zoq3ooqd.onion` | <a href="https://images.ransomware.live/screenshots/hivecust6vhekztbqgdnkks64ucehqacge3dij3gyrrpdp57zoq3ooqd-onion.png" target=_blank>📸</a> | 
+| This domain has been seized | 🔴 | 27/01/2023 06:47 | `http://hiveapi4nyabjdfz2hxdsr7otrcv6zq6m4rk5i2w7j64lrtny4b7vjad.onion` | <a href="https://images.ransomware.live/screenshots/hiveapi4nyabjdfz2hxdsr7otrcv6zq6m4rk5i2w7j64lrtny4b7vjad-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://inf.news/en/tech/c28d9382ab78a5ac3d8fc802f3f0f1e0.html
 
 - https://www.healthcareitnews.com/news/fbi-issues-alert-about-hive-ransomware
@@ -2057,24 +2301,15 @@ _`US announces it seized Hive ransomware gang’s leak sites and decryption keys
 - https://blogs.blackberry.com/en/2021/07/threat-thursday-hive-ransomware
 
 
-🔎 `ransomware.live`has an active  parser for indexing hive's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| This domain has been seized | 🔴 | 27/01/2023 04:45 | `http://hiveleakdbtnp76ulyhi52eag6c6tyc3xw7ez7iqy6wc34gd2nekazyd.onion` | <a href="https://images.ransomware.live/screenshots/hiveleakdbtnp76ulyhi52eag6c6tyc3xw7ez7iqy6wc34gd2nekazyd-onion.png" target=_blank>📸</a> | 
-| This domain has been seized | 🔴 | 27/01/2023 06:47 | `http://hivecust6vhekztbqgdnkks64ucehqacge3dij3gyrrpdp57zoq3ooqd.onion` | <a href="https://images.ransomware.live/screenshots/hivecust6vhekztbqgdnkks64ucehqacge3dij3gyrrpdp57zoq3ooqd-onion.png" target=_blank>📸</a> | 
-| This domain has been seized | 🔴 | 27/01/2023 06:47 | `http://hiveapi4nyabjdfz2hxdsr7otrcv6zq6m4rk5i2w7j64lrtny4b7vjad.onion` | <a href="https://images.ransomware.live/screenshots/hiveapi4nyabjdfz2hxdsr7otrcv6zq6m4rk5i2w7j64lrtny4b7vjad-onion.png" target=_blank>📸</a> | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 2 ransom notes](notes/hive)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/hive.md">Crypto wallet(s) available</a>
 
 
-### Negotiation chats
+#### ** Negotiation chats**
 
 | Name | Link |
 |---|---|
@@ -2087,13 +2322,14 @@ _`US announces it seized Hive ransomware gang’s leak sites and decryption keys
 |20211213| <a href="https://chat.ransomware.live/chat/hive/20211213.html" target=_blank> 💬 </a> |
 |20211220| <a href="https://chat.ransomware.live/chat/hive/20211220.html" target=_blank> 💬 </a> |
 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-hive.png)
 
 
-### Posts
+### _Posts_
 
 > 206 victims found
 
@@ -2117,12 +2353,15 @@ _`US announces it seized Hive ransomware gang’s leak sites and decryption keys
 ## **holyghost**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | HolyGhost | 🔴 | 22/04/2022 17:36 | `http://matmq3z3hiovia3voe2tix2x54sghc3tszj74xgdy4tqtypoycszqzqd.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -2134,15 +2373,18 @@ _`US announces it seized Hive ransomware gang’s leak sites and decryption keys
 
 _`aka hotarus corp`_
 
-### External analysis
-- https://www.bleepingcomputer.com/news/security/ransomware-gang-hacks-ecuadors-largest-private-bank-ministry-of-finance/
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Hotarus Corp | 🔴 | 22/10/2021 04:52 | `http://r6d636w47ncnaukrpvlhmtdbvbeltc6enfcuuow3jclpmyga7cz374qd.onion` | ❌ | 
+#### **External information**
+- https://www.bleepingcomputer.com/news/security/ransomware-gang-hacks-ecuadors-largest-private-bank-ministry-of-finance/
 
-### Posts
+<!-- tabs:end -->
+
+### _Posts_
 
 > no victim found
 
@@ -2152,22 +2394,25 @@ _`aka hotarus corp`_
 ## **icefire**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Leakage List | 🔴 | 24/08/2022 13:04 | `http://kf6x3mjeqljqxjznaw65jixin7dpcunfxbbakwuitizytcpzn4iy5bad.onion` | ❌ | 
 | Leakage List | 🔴 | 13/03/2023 04:44 | `http://7kstc545azxeahkduxmefgwqkrrhq3mzohkzqvrv7aekob7z3iwkqvyd.onion` | <a href="https://images.ransomware.live/screenshots/7kstc545azxeahkduxmefgwqkrrhq3mzohkzqvrv7aekob7z3iwkqvyd-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/icefire)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-icefire.png)
 
 
-### Posts
+### _Posts_
 
 > 11 victims found
 
@@ -2191,33 +2436,36 @@ _`aka hotarus corp`_
 ## **karakurt**
 
 
-### External analysis
-- https://www.malwarebytes.com/blog/news/2022/06/karakurt-extortion-group-threat-profile
-
 
 🔎 `ransomware.live`has an active  parser for indexing karakurt's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Chat | 🟢 | 03/08/2023 06:23 | `http://omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead.onion` | <a href="https://images.ransomware.live/screenshots/omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead-onion.png" target=_blank>📸</a> | 
-| Magazine | 🟢 | 03/08/2023 06:23 | `http://3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd.onion` | <a href="https://images.ransomware.live/screenshots/3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd-onion.png" target=_blank>📸</a> | 
+| Chat | 🟢 | 07/08/2023 11:26 | `http://omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead.onion` | <a href="https://images.ransomware.live/screenshots/omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead-onion.png" target=_blank>📸</a> | 
+| Magazine | 🟢 | 07/08/2023 11:26 | `http://3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd.onion` | <a href="https://images.ransomware.live/screenshots/3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd-onion.png" target=_blank>📸</a> | 
 | none | 🔴 | 01/05/2021 00:00 | `http://karaleaks.com` | <a href="https://images.ransomware.live/screenshots/karaleaks-com.png" target=_blank>📸</a> | 
+#### **External information**
+- https://www.malwarebytes.com/blog/news/2022/06/karakurt-extortion-group-threat-profile
 
 
-### Ransom note
+
+#### **Ransom note**
 * [📝 2 ransom notes](notes/karakurt)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/karakurt.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-karakurt.png)
 
 
-### Posts
+### _Posts_
 
 > 71 victims found
 
@@ -2241,7 +2489,13 @@ _`aka hotarus corp`_
 ## **karma**
 
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Karma Leaks | 🔴 | 05/11/2021 02:09 | `http://3nvzqyo6l4wkrzumzu5aod7zbosq4ipgf7ifgj3hsvbcr5vcasordvqd.onion` | ❌ | 
+#### **External information**
 - https://www.sentinelone.com/labs/karma-ransomware-an-emerging-threat-with-a-hint-of-nemty-pedigree/
 
 - https://blogs.blackberry.com/en/2021/11/threat-thursday-karma-ransomware
@@ -2252,16 +2506,13 @@ _`aka hotarus corp`_
 
 - https://securityaffairs.co/wordpress/123568/malware/karma-ransomware-nemty-similarities.html
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| Karma Leaks | 🔴 | 05/11/2021 02:09 | `http://3nvzqyo6l4wkrzumzu5aod7zbosq4ipgf7ifgj3hsvbcr5vcasordvqd.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/karma)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 7 victims found
 
@@ -2282,20 +2533,23 @@ _`aka hotarus corp`_
 
 _`not a ransomware group`_
 
-### External analysis
-- https://twitter.com/Ksecureteamlab
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Error | 🟢 | 03/08/2023 06:24 | `http://kelvinsecteamcyber.wixsite.com` | <a href="https://images.ransomware.live/screenshots/kelvinsecteamcyber-wixsite-com.png" target=_blank>📸</a> | 
+| 403 Forbidden | 🟢 | 07/08/2023 11:27 | `http://kelvinsecteamcyber.wixsite.com` | <a href="https://images.ransomware.live/screenshots/kelvinsecteamcyber-wixsite-com.png" target=_blank>📸</a> | 
+#### **External information**
+- https://twitter.com/Ksecureteamlab
 
-### Total Attacks Over Time
+<!-- tabs:end -->
+
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-kelvinsecurity.png)
 
 
-### Posts
+### _Posts_
 
 > 26 victims found
 
@@ -2316,6 +2570,36 @@ _`not a ransomware group`_
 
  --- 
 
+## **knight**
+
+> [Cyclops](group/cyclops) rebrand
+
+
+🔎 `ransomware.live`has an active  parser for indexing knight's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Blog - Knight | 🟢 | 07/08/2023 11:27 | `http://knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd.onion` | <a href="https://images.ransomware.live/screenshots/knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
+
+### _Total Attacks Over Time_
+
+![Statistics](/graphs/stats-knight.png)
+
+
+### _Posts_
+
+> 1 victim found
+
+| post | date | Description | Screenshot | 
+|---|---|---|---|
+| [`Important Updates`](https://google.com/search?q=Important+Updates) | 26/07/2023 | Knight | <a href="https://images.ransomware.live/screenshots/posts/d8e5261ba91672d91d145f38033d68f5.png" target=_blank>📸</a> |
+
+ --- 
+
 ## **la_piovra**
 
 > ℹ️  La Piovra Ransomware is an exercise of the company Offensive Security (also known as OffSec)
@@ -2323,19 +2607,22 @@ _`not a ransomware group`_
 
 🔎 `ransomware.live`has an active  parser for indexing la_piovra's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 |  La Piovra Ransomware  | 🔴 | 14/06/2023 10:25 | `http://et22fibzuzfyzgurm35sttm52qbzvdgzy5qhzy46a3gmkrrht3lec5ad.onion` | <a href="https://images.ransomware.live/screenshots/et22fibzuzfyzgurm35sttm52qbzvdgzy5qhzy46a3gmkrrht3lec5ad-onion.png" target=_blank>📸</a> | 
 | La Piovra Ransomware – a new cartel | 🔴 | 14/06/2023 10:26 | `http://h3txev6jev7rcm6p2qkxn2vctybi4dvochr3inymzgif53n2j2oqviqd.onion` | <a href="https://images.ransomware.live/screenshots/h3txev6jev7rcm6p2qkxn2vctybi4dvochr3inymzgif53n2j2oqviqd-onion.png" target=_blank>📸</a> | 
-| La Piovra Ransomware - Members Only  | 🟢 | 03/08/2023 06:24 | `http://wx3djgl4cacl6y4x7r4e4mbqrrub24ectue7ixyix2du25nfowtvfiyd.onion` | <a href="https://images.ransomware.live/screenshots/wx3djgl4cacl6y4x7r4e4mbqrrub24ectue7ixyix2du25nfowtvfiyd-onion.png" target=_blank>📸</a> | 
+| La Piovra Ransomware - Members Only  | 🟢 | 07/08/2023 11:28 | `http://wx3djgl4cacl6y4x7r4e4mbqrrub24ectue7ixyix2du25nfowtvfiyd.onion` | <a href="https://images.ransomware.live/screenshots/wx3djgl4cacl6y4x7r4e4mbqrrub24ectue7ixyix2du25nfowtvfiyd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-la_piovra.png)
 
 
-### Posts
+### _Posts_
 
 > 1 victim found
 
@@ -2350,17 +2637,20 @@ _`not a ransomware group`_
 
 _`not a ransomware group`_
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | #LeakTheAnalyst | 🔴 | 05/08/2022 10:37 | `http://leaktheanalyst.fireeye62c3da3fnosymmmcqcty7rl7cjucpbkzaz275a4qs5fgkzhad.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-leaktheanalyst.png)
 
 
-### Posts
+### _Posts_
 
 > 20 victims found
 
@@ -2385,19 +2675,22 @@ _`not a ransomware group`_
 
 > 
 
-### External analysis
-- BAC01607F29EC417FB4106AEAB5BDF79CD948F9120C8D889E8785ADFDCE88C00F08429E092EC
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Lilith | 🔴 | 09/08/2022 14:56 | `http://yeuajcizwytgmrntijhxphs6wn5txp2prs6rpndafbsapek3zd4ubcid.onion` | ❌ | 
+#### **External information**
+- BAC01607F29EC417FB4106AEAB5BDF79CD948F9120C8D889E8785ADFDCE88C00F08429E092EC
 
 
-### Ransom note
+
+#### **Ransom note**
 * [📝 1 ransom note](notes/lilith)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -2408,20 +2701,23 @@ _`not a ransomware group`_
 
 > 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://lockbitkodidilol.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 2 ransom notes](notes/lockbit)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/lockbit.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -2433,14 +2729,9 @@ _`not a ransomware group`_
 
 _`previous clearnet fqdn lockbitapt.uz`_
 
-### External analysis
-- https://threatpost.com/lockbit-ransomware-proliferates-globally/168746
 
-- https://www.trendmicro.com/en_us/research/21/h/lockbit-resurfaces-with-version-2-0-ransomware-detections-in-chi.html
-
-- https://www.cyber.gov.au/acsc/view-all-content/advisories/2021-006-acsc-ransomware-profile-lockbit-20
-
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | LOCKFILE | 🔴 | 21/11/2021 19:05 | `http://zqaflhty5hyziovsxgqvj2mrz5e5rs6oqxzb54zolccfnvtn5w2johad.onion` | ❌ | 
@@ -2448,13 +2739,21 @@ _`previous clearnet fqdn lockbitapt.uz`_
 | LockBit BLOG | 🔴 | 17/06/2022 16:10 | `http://oyarbnujct53bizjguvolxou3rmuda2vr72osyexngbdkhqebwrzsnad.onion` | ❌ | 
 | LockBit BLOG | 🔴 | 17/06/2022 16:11 | `http://lockbitaptstzf3er2lz6ku3xuifafq2yh5lmiqj5ncur6rtlmkteiqd.onion` | ❌ | 
 | LockBit BLOG | 🔴 | 17/06/2022 16:11 | `http://lockbitaptq7ephv2oigdncfhtwhpqgwmqojnxqdyhprxxfpcllqdxad.onion` | ❌ | 
+#### **External information**
+- https://threatpost.com/lockbit-ransomware-proliferates-globally/168746
 
-### Total Attacks Over Time
+- https://www.trendmicro.com/en_us/research/21/h/lockbit-resurfaces-with-version-2-0-ransomware-detections-in-chi.html
+
+- https://www.cyber.gov.au/acsc/view-all-content/advisories/2021-006-acsc-ransomware-profile-lockbit-20
+
+<!-- tabs:end -->
+
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-lockbit2.png)
 
 
-### Posts
+### _Posts_
 
 > 1006 victims found
 
@@ -2481,30 +2780,32 @@ _`previous clearnet fqdn lockbitapt.uz`_
 
 🔎 `ransomware.live`has an active  parser for indexing lockbit3's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| LockBit BLOG | 🟢 | 03/08/2023 06:25 | `http://lockbitapt2d73krlbewgv27tquljgxr33xbwwsp6rkyieto7u4ncead.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt2d73krlbewgv27tquljgxr33xbwwsp6rkyieto7u4ncead-onion.png" target=_blank>📸</a> | 
-| LockBit BLOG | 🟢 | 03/08/2023 06:25 | `http://lockbitapt2yfbt7lchxejug47kmqvqqxvvjpqkmevv4l3azl3gy6pyd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt2yfbt7lchxejug47kmqvqqxvvjpqkmevv4l3azl3gy6pyd-onion.png" target=_blank>📸</a> | 
-| LockBit BLOG | 🟢 | 03/08/2023 06:26 | `http://lockbitapt34kvrip6xojylohhxrwsvpzdffgs5z4pbbsywnzsbdguqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt34kvrip6xojylohhxrwsvpzdffgs5z4pbbsywnzsbdguqd-onion.png" target=_blank>📸</a> | 
-| LockBit BLOG | 🟢 | 03/08/2023 06:26 | `http://lockbitapt5x4zkjbcqmz6frdhecqqgadevyiwqxukksspnlidyvd7qd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt5x4zkjbcqmz6frdhecqqgadevyiwqxukksspnlidyvd7qd-onion.png" target=_blank>📸</a> | 
-| LockBit BLOG | 🟢 | 03/08/2023 06:27 | `http://lockbitapt6vx57t3eeqjofwgcglmutr3a35nygvokja5uuccip4ykyd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt6vx57t3eeqjofwgcglmutr3a35nygvokja5uuccip4ykyd-onion.png" target=_blank>📸</a> | 
-| LockBit BLOG | 🟢 | 03/08/2023 06:27 | `http://lockbitapt72iw55njgnqpymggskg5yp75ry7rirtdg4m7i42artsbqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt72iw55njgnqpymggskg5yp75ry7rirtdg4m7i42artsbqd-onion.png" target=_blank>📸</a> | 
-| LockBit BLOG | 🟢 | 03/08/2023 06:28 | `http://lockbitaptawjl6udhpd323uehekiyatj6ftcxmkwe5sezs4fqgpjpid.onion` | <a href="https://images.ransomware.live/screenshots/lockbitaptawjl6udhpd323uehekiyatj6ftcxmkwe5sezs4fqgpjpid-onion.png" target=_blank>📸</a> | 
-| LockBit BLOG | 🔴 | 03/08/2023 05:28 | `http://lockbitaptbdiajqtplcrigzgdjprwugkkut63nbvy2d5r4w2agyekqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitaptbdiajqtplcrigzgdjprwugkkut63nbvy2d5r4w2agyekqd-onion.png" target=_blank>📸</a> | 
-| LockBit BLOG | 🟢 | 03/08/2023 06:29 | `http://lockbitaptc2iq4atewz2ise62q63wfktyrl4qtwuk5qax262kgtzjqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitaptc2iq4atewz2ise62q63wfktyrl4qtwuk5qax262kgtzjqd-onion.png" target=_blank>📸</a> | 
-| LockBit BLOG | 🔴 | 03/08/2023 05:29 | `http://lockbitapt72iw55njgnqpymggskg5yp75ry7rirtdg4m7i42artsbqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt72iw55njgnqpymggskg5yp75ry7rirtdg4m7i42artsbqd-onion.png" target=_blank>📸</a> | 
-| LockBit LOGIN | 🔴 | 02/08/2023 21:29 | `http://lockbitsupa7e3b4pkn4mgkgojrl5iqgx24clbzc4xm7i6jeetsia3qd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupa7e3b4pkn4mgkgojrl5iqgx24clbzc4xm7i6jeetsia3qd-onion.png" target=_blank>📸</a> | 
-| LockBit LOGIN | 🔴 | 02/08/2023 14:29 | `http://lockbitsupdwon76nzykzblcplixwts4n4zoecugz2bxabtapqvmzqqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupdwon76nzykzblcplixwts4n4zoecugz2bxabtapqvmzqqd-onion.png" target=_blank>📸</a> | 
-| LockBit LOGIN | 🔴 | 02/08/2023 12:29 | `http://lockbitsupn2h6be2cnqpvncyhj4rgmnwn44633hnzzmtxdvjoqlp7yd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupn2h6be2cnqpvncyhj4rgmnwn44633hnzzmtxdvjoqlp7yd-onion.png" target=_blank>📸</a> | 
-| LockBit LOGIN | 🔴 | 02/08/2023 19:28 | `http://lockbitsupo7vv5vcl3jxpsdviopwvasljqcstym6efhh6oze7c6xjad.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupo7vv5vcl3jxpsdviopwvasljqcstym6efhh6oze7c6xjad-onion.png" target=_blank>📸</a> | 
-| LockBit LOGIN | 🔴 | 02/08/2023 13:29 | `http://lockbitsupqfyacidr6upt6nhhyipujvaablubuevxj6xy3frthvr3yd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupqfyacidr6upt6nhhyipujvaablubuevxj6xy3frthvr3yd-onion.png" target=_blank>📸</a> | 
-| LockBit LOGIN | 🔴 | 02/08/2023 16:34 | `http://lockbitsupt7nr3fa6e7xyb73lk6bw6rcneqhoyblniiabj4uwvzapqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupt7nr3fa6e7xyb73lk6bw6rcneqhoyblniiabj4uwvzapqd-onion.png" target=_blank>📸</a> | 
-| LockBit LOGIN | 🔴 | 02/08/2023 19:29 | `http://lockbitsupuhswh4izvoucoxsbnotkmgq6durg7kficg6u33zfvq3oyd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupuhswh4izvoucoxsbnotkmgq6durg7kficg6u33zfvq3oyd-onion.png" target=_blank>📸</a> | 
-| LockBit LOGIN | 🔴 | 02/08/2023 14:31 | `http://lockbitsupxcjntihbmat4rrh7ktowips2qzywh6zer5r3xafhviyhqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupxcjntihbmat4rrh7ktowips2qzywh6zer5r3xafhviyhqd-onion.png" target=_blank>📸</a> | 
-| LockBit LOGIN | 🟢 | 03/08/2023 06:34 | `http://lockbitsupq3g62dni2f36snrdb4n5qzqvovbtkt5xffw3draxk6gwqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupq3g62dni2f36snrdb4n5qzqvovbtkt5xffw3draxk6gwqd-onion.png" target=_blank>📸</a> | 
+| LockBit BLOG | 🟢 | 07/08/2023 11:29 | `http://lockbitapt2d73krlbewgv27tquljgxr33xbwwsp6rkyieto7u4ncead.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt2d73krlbewgv27tquljgxr33xbwwsp6rkyieto7u4ncead-onion.png" target=_blank>📸</a> | 
+| LockBit BLOG | 🟢 | 07/08/2023 11:29 | `http://lockbitapt2yfbt7lchxejug47kmqvqqxvvjpqkmevv4l3azl3gy6pyd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt2yfbt7lchxejug47kmqvqqxvvjpqkmevv4l3azl3gy6pyd-onion.png" target=_blank>📸</a> | 
+| LockBit BLOG | 🟢 | 07/08/2023 11:29 | `http://lockbitapt34kvrip6xojylohhxrwsvpzdffgs5z4pbbsywnzsbdguqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt34kvrip6xojylohhxrwsvpzdffgs5z4pbbsywnzsbdguqd-onion.png" target=_blank>📸</a> | 
+| LockBit BLOG | 🟢 | 07/08/2023 11:30 | `http://lockbitapt5x4zkjbcqmz6frdhecqqgadevyiwqxukksspnlidyvd7qd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt5x4zkjbcqmz6frdhecqqgadevyiwqxukksspnlidyvd7qd-onion.png" target=_blank>📸</a> | 
+| LockBit BLOG | 🔴 | 07/08/2023 10:30 | `http://lockbitapt6vx57t3eeqjofwgcglmutr3a35nygvokja5uuccip4ykyd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt6vx57t3eeqjofwgcglmutr3a35nygvokja5uuccip4ykyd-onion.png" target=_blank>📸</a> | 
+| LockBit BLOG | 🟢 | 07/08/2023 11:31 | `http://lockbitapt72iw55njgnqpymggskg5yp75ry7rirtdg4m7i42artsbqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt72iw55njgnqpymggskg5yp75ry7rirtdg4m7i42artsbqd-onion.png" target=_blank>📸</a> | 
+| LockBit BLOG | 🔴 | 07/08/2023 10:31 | `http://lockbitaptawjl6udhpd323uehekiyatj6ftcxmkwe5sezs4fqgpjpid.onion` | <a href="https://images.ransomware.live/screenshots/lockbitaptawjl6udhpd323uehekiyatj6ftcxmkwe5sezs4fqgpjpid-onion.png" target=_blank>📸</a> | 
+| LockBit BLOG | 🔴 | 07/08/2023 10:32 | `http://lockbitaptbdiajqtplcrigzgdjprwugkkut63nbvy2d5r4w2agyekqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitaptbdiajqtplcrigzgdjprwugkkut63nbvy2d5r4w2agyekqd-onion.png" target=_blank>📸</a> | 
+| LockBit BLOG | 🟢 | 07/08/2023 11:36 | `http://lockbitaptc2iq4atewz2ise62q63wfktyrl4qtwuk5qax262kgtzjqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitaptc2iq4atewz2ise62q63wfktyrl4qtwuk5qax262kgtzjqd-onion.png" target=_blank>📸</a> | 
+| LockBit BLOG | 🔴 | 07/08/2023 10:33 | `http://lockbitapt72iw55njgnqpymggskg5yp75ry7rirtdg4m7i42artsbqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitapt72iw55njgnqpymggskg5yp75ry7rirtdg4m7i42artsbqd-onion.png" target=_blank>📸</a> | 
+| LockBit LOGIN | 🔴 | 06/08/2023 22:31 | `http://lockbitsupa7e3b4pkn4mgkgojrl5iqgx24clbzc4xm7i6jeetsia3qd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupa7e3b4pkn4mgkgojrl5iqgx24clbzc4xm7i6jeetsia3qd-onion.png" target=_blank>📸</a> | 
+| LockBit LOGIN | 🔴 | 07/08/2023 00:29 | `http://lockbitsupdwon76nzykzblcplixwts4n4zoecugz2bxabtapqvmzqqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupdwon76nzykzblcplixwts4n4zoecugz2bxabtapqvmzqqd-onion.png" target=_blank>📸</a> | 
+| LockBit LOGIN | 🔴 | 06/08/2023 13:31 | `http://lockbitsupn2h6be2cnqpvncyhj4rgmnwn44633hnzzmtxdvjoqlp7yd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupn2h6be2cnqpvncyhj4rgmnwn44633hnzzmtxdvjoqlp7yd-onion.png" target=_blank>📸</a> | 
+| LockBit LOGIN | 🔴 | 06/08/2023 14:31 | `http://lockbitsupo7vv5vcl3jxpsdviopwvasljqcstym6efhh6oze7c6xjad.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupo7vv5vcl3jxpsdviopwvasljqcstym6efhh6oze7c6xjad-onion.png" target=_blank>📸</a> | 
+| LockBit LOGIN | 🔴 | 06/08/2023 15:35 | `http://lockbitsupqfyacidr6upt6nhhyipujvaablubuevxj6xy3frthvr3yd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupqfyacidr6upt6nhhyipujvaablubuevxj6xy3frthvr3yd-onion.png" target=_blank>📸</a> | 
+| LockBit LOGIN | 🔴 | 06/08/2023 14:32 | `http://lockbitsupt7nr3fa6e7xyb73lk6bw6rcneqhoyblniiabj4uwvzapqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupt7nr3fa6e7xyb73lk6bw6rcneqhoyblniiabj4uwvzapqd-onion.png" target=_blank>📸</a> | 
+| LockBit LOGIN | 🔴 | 06/08/2023 14:32 | `http://lockbitsupuhswh4izvoucoxsbnotkmgq6durg7kficg6u33zfvq3oyd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupuhswh4izvoucoxsbnotkmgq6durg7kficg6u33zfvq3oyd-onion.png" target=_blank>📸</a> | 
+| LockBit LOGIN | 🔴 | 06/08/2023 15:37 | `http://lockbitsupxcjntihbmat4rrh7ktowips2qzywh6zer5r3xafhviyhqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupxcjntihbmat4rrh7ktowips2qzywh6zer5r3xafhviyhqd-onion.png" target=_blank>📸</a> | 
+| LockBit LOGIN | 🔴 | 06/08/2023 17:34 | `http://lockbitsupq3g62dni2f36snrdb4n5qzqvovbtkt5xffw3draxk6gwqd.onion` | <a href="https://images.ransomware.live/screenshots/lockbitsupq3g62dni2f36snrdb4n5qzqvovbtkt5xffw3draxk6gwqd-onion.png" target=_blank>📸</a> | 
 
-### Negotiation chats
+#### ** Negotiation chats**
 
 | Name | Link |
 |---|---|
@@ -2545,28 +2846,29 @@ _`previous clearnet fqdn lockbitapt.uz`_
 |wabteccorp.com| <a href="https://chat.ransomware.live/chat/lockbit3.0/wabteccorp_com.html" target=_blank> 💬 </a> |
 |wcinet.com| <a href="https://chat.ransomware.live/chat/lockbit3.0/wcinet_com.html" target=_blank> 💬 </a> |
 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-lockbit3.png)
 
 
-### Posts
+### _Posts_
 
-> 978 victims found
+> 988 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
-| [`bestmotel.de`](https://google.com/search?q=bestmotel.de) | 02/08/2023 | Best Motel offers everything for a convenient stay in Vilsbiburg, Landshut (less than 20 car minutes away) and surroundings. | <a href="https://images.ransomware.live/screenshots/posts/d35b48a8f1ce93d790fbd92111561667.png" target=_blank>📸</a> |
-| [`fec-corp.com`](https://google.com/search?q=fec-corp.com) | 02/08/2023 | Federal Electric Corp., Ltd., FEC, established in 1978, is an exclusive sole manufacturer of electric home appliances under the well - known SHARP brand in Thailand. | <a href="https://images.ransomware.live/screenshots/posts/6528547f3eb486b865d85931234fc3bf.png" target=_blank>📸</a> |
-| [`constructioncrd.com`](https://google.com/search?q=constructioncrd.com) | 02/08/2023 | !! some confidential info from servers this company. !!Pour les experts en construction résidentielle dans la grande région de Québec, comptez sur Construction CRD | <a href="https://images.ransomware.live/screenshots/posts/e50e877263e0a1e294b02a2441a0597b.png" target=_blank>📸</a> |
-| [`unicorpusa.com`](https://google.com/search?q=unicorpusa.com) | 02/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/2637d27baf812477898fd5036e33c413.png" target=_blank>📸</a> |
-| [`gerb.bg`](https://google.com/search?q=gerb.bg) | 01/08/2023 | GERB is headed by former Prime Minister of Bulgaria Boyko Borisov, the former mayor of Sofia, former member of the National Movement Simeon II and former personal guard of Todor Zhivkov in the 1990s. The establishment of the party followed the creati... | <a href="https://images.ransomware.live/screenshots/posts/8c6504b4a9b54bd9ec67edd306bbcb34.png" target=_blank>📸</a> |
-| [`persingerlaw.com`](https://google.com/search?q=persingerlaw.com) | 01/08/2023 | Persinger & Persinger, L.C. is a law firm in Charleston, WV with 1 attorneys selected to the Super Lawyers or Rising Stars lists. | <a href="https://images.ransomware.live/screenshots/posts/f13c92b3c21f0e28cf024b5b2a8e6cad.png" target=_blank>📸</a> |
-| [`obrelli.it`](https://google.com/search?q=obrelli.it) | 31/07/2023 | 35gb-personal data of clients-confidential infoGioielleria Obrelli is a company that operates in the Luxury Goods & Jewelry industry. It employs 6-10 people and has $1M-$5M of revenue | <a href="https://images.ransomware.live/screenshots/posts/18ca5af9c832a37614eba8c3984348c0.png" target=_blank>📸</a> |
-| [`nbcc.org`](https://google.com/search?q=nbcc.org) | 31/07/2023 | -personal data-nda220GBNational Board for Certified Counselors is dedicated to research and commentary on empirical, theoretical and innovative topics in the field of professional counseling and related areas | <a href="https://images.ransomware.live/screenshots/posts/72845941afec3753bb1c44c030cde965.png" target=_blank>📸</a> |
-| [`paretophone.com`](https://google.com/search?q=paretophone.com) | 31/07/2023 | 150 gb personal data, nda.IVE Tele-fundraising is an industry leader in creating innovative, sustainable, data-led campaigns for charity telefundraising. Every year some of their best-known and most-loved charities engage them to provide telephone... | <a href="https://images.ransomware.live/screenshots/posts/8c6027e3360b0723d8f0e6bf077c28a5.png" target=_blank>📸</a> |
-| [`llombart.de`](https://google.com/search?q=llombart.de) | 31/07/2023 | Llombart Import-Export, your complete fruit and vegetable import service, with integrated logistics, marketing and advice | <a href="https://images.ransomware.live/screenshots/posts/e0921b7367656958fafa8ab12c00d1e0.png" target=_blank>📸</a> |
+| [`varian.com`](https://google.com/search?q=varian.com) | 07/08/2023 | An American 3 billion dollar revenue Siemens Healthineers company! Varian Medical Systems, Inc. designs, manufactures, sells, and services medical devices and software products for treating cancer and other medical conditions worldwide. It operates t... | <a href="https://images.ransomware.live/screenshots/posts/f639f12c6f811637663da5e1efab5b56.png" target=_blank>📸</a> |
+| [`haynesintl.com`](https://google.com/search?q=haynesintl.com) | 05/08/2023 | haynesintl.comHaynes International, Inc., headquartered in Kokomo, Indiana, is one of the largest producers of corrosion-resistant and high-temperature alloys. In addition to Kokomo, Haynes has manufacturing facilities in Arcadia, Louisiana, and Mo... | <a href="https://images.ransomware.live/screenshots/posts/44a0dc7a1be5afc4ad6d99085f150ff7.png" target=_blank>📸</a> |
+| [`atser.com`](https://google.com/search?q=atser.com) | 04/08/2023 | In 1996, ATSER’s Team led in the development and deployment of a Material Acceptance Testing Systems (MATS). ATSER® pioneered the development of this type of software for the transportation industry and for its use in alternative delivery programs | <a href="https://images.ransomware.live/screenshots/posts/9f652e98962350ddeb7eb2e0ca9c106f.png" target=_blank>📸</a> |
+| [`scottevest.com`](https://google.com/search?q=scottevest.com) | 04/08/2023 | SCOTTeVEST is a clothing company based in Ketchum, Idaho which specializes in garments with conduit systems and specialized pockets and compartments for holding mobile phones, tablet computers and other portable electronic devices. | <a href="https://images.ransomware.live/screenshots/posts/a7d69c7f9adf6d5a1dc9e0da6e3c9b0f.png" target=_blank>📸</a> |
+| [`iqcontrols.com`](https://google.com/search?q=iqcontrols.com) | 04/08/2023 | We specialize in designing, building and installing electrical control systems, PLC programming and HMI programming. | <a href="https://images.ransomware.live/screenshots/posts/8cffabbe2e7cb09fc6623b1d0b4f5f9c.png" target=_blank>📸</a> |
+| [`armortex.com`](https://google.com/search?q=armortex.com) | 04/08/2023 | Armortex® has been manufacturing Bullet, Blast and Forced Entry Resistant products for more than thirty years. Our product line includes Armortex® brand fiberglass composite panels, glass, and containment glazing, fixed windows and transaction window... | <a href="https://images.ransomware.live/screenshots/posts/888ae1a619a1f409e116ac9619d4c4a9.png" target=_blank>📸</a> |
+| [`mipe.com`](https://google.com/search?q=mipe.com) | 04/08/2023 | Mission Petroleum Carriers, Inc is a bulk commodity transport company operating throughout Texas and surrounding states. Mission’s primary focus is the gathering and transportation of crude oil. Based in San Antonio, Texas, Mission has been providing... | <a href="https://images.ransomware.live/screenshots/posts/4d118b9b3775cd7b2cb903f1459ec365.png" target=_blank>📸</a> |
+| [`tetco.com`](https://google.com/search?q=tetco.com) | 04/08/2023 | TETCO, Inc. is a San Antonio-based company, owned and operated by the Tom E. Turner family for more than 60 years. Food service franchises, petrochemical distribution, and heavy truck and trailer repairs are the company’s primary revenue sources, wit... | <a href="https://images.ransomware.live/screenshots/posts/3778fd1eac12b745f4e46e6467bb10e3.png" target=_blank>📸</a> |
+| [`pointpleasant.k12.nj.us`](https://google.com/search?q=pointpleasant.k12.nj.us) | 03/08/2023 | Point Pleasant Borough School District | <a href="https://images.ransomware.live/screenshots/posts/2a5d013765994271a84c7cb48941e955.png" target=_blank>📸</a> |
+| [`admsc.com`](https://google.com/search?q=admsc.com) | 03/08/2023 | Al Doha Maintenance & Services Centre (ADMSC) was founded in the year 1997 by Mr. John. B. Carnelio with a vision of providing Quality Services to the fast-emerging Qatari Market.Since its establishment, ADMSC has developed a dynamic business app... | <a href="https://images.ransomware.live/screenshots/posts/d447ffb8e922c6272c43b69a5af846cb.png" target=_blank>📸</a> |
 
 ↪️ More victims [here](/group/lockbit3?id=posts)
 
@@ -2575,7 +2877,9 @@ _`previous clearnet fqdn lockbitapt.uz`_
 ## **lockbit3_fs**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | LockBit - Leaked | 🔴 | 07/01/2023 21:41 | `http://lockbit7z2jwcskxpbokpemdxmltipntwlkmidcll2qirbu7ykg46eyd.onion` | <a href="https://images.ransomware.live/screenshots/lockbit7z2jwcskxpbokpemdxmltipntwlkmidcll2qirbu7ykg46eyd-onion.png" target=_blank>📸</a> | 
@@ -2604,8 +2908,9 @@ _`previous clearnet fqdn lockbitapt.uz`_
 | LockBit - Leaked | 🔴 | 07/01/2023 21:55 | `http://lockbit7z6rzyojiye437jp744d4uwtff7aq7df7gh2jvwqtv525c4yd.onion` | <a href="https://images.ransomware.live/screenshots/lockbit7z6rzyojiye437jp744d4uwtff7aq7df7gh2jvwqtv525c4yd-onion.png" target=_blank>📸</a> | 
 | LockBit File Share | 🔴 | 07/01/2023 21:56 | `http://lockbitfile2tcudkcqqt2ve6btssyvqwlizbpv5vz337lslmhff2uad.onion` | <a href="https://images.ransomware.live/screenshots/lockbitfile2tcudkcqqt2ve6btssyvqwlizbpv5vz337lslmhff2uad-onion.png" target=_blank>📸</a> | 
 | LockBit Private Note | 🔴 | 22/12/2022 21:02 | `http://lockbitnotexk2vnf2q2zwjefsl3hjsnk4u74vq4chxrqpjclfydk4ad.onion` | <a href="https://images.ransomware.live/screenshots/lockbitnotexk2vnf2q2zwjefsl3hjsnk4u74vq4chxrqpjclfydk4ad-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -2617,17 +2922,20 @@ _`previous clearnet fqdn lockbitapt.uz`_
 
 _`marketplace - not a ransomware group`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| LockData Auction | 🔴 | 09/04/2022 16:16 | `http://wm6mbuzipviusuc42kcggzkdpbhuv45sn7olyamy6mcqqked3waslbqd.onion` | ❌ | 
+#### **External information**
 - https://www.telekom.com/en/blog/group/article/lockdata-auction-631300
 
 - https://twitter.com/darktracer_int/status/1418318232885153792
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| LockData Auction | 🔴 | 09/04/2022 16:16 | `http://wm6mbuzipviusuc42kcggzkdpbhuv45sn7olyamy6mcqqked3waslbqd.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 5 victims found
 
@@ -2644,14 +2952,17 @@ _`marketplace - not a ransomware group`_
 ## **lolnek**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 27/08/2022 08:28 | `http://mmeeiix2ejdwkmseycljetmpiwebdvgjts75c63camjofn2cjdoulzqd.onion` | ❌ | 
 | none | 🔴 | 11/05/2023 04:34 | `http://obzuqvr5424kkc4unbq2p2i67ny3zngce3tbdr37nicjqesgqcgomfqd.onion` | <a href="https://images.ransomware.live/screenshots/obzuqvr5424kkc4unbq2p2i67ny3zngce3tbdr37nicjqesgqcgomfqd-onion.png" target=_blank>📸</a> | 
 | none | 🔴 | 01/10/2022 05:15 | `http://nclen75pwlgebpxpsqhlcnxsmdvpyrr7ogz36ehhatfmkvakeyden6ad.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -2664,30 +2975,33 @@ _`marketplace - not a ransomware group`_
 
 _`rfi location woe2suafeg6ehxivgvvn4nh6ectbdhdqgc4vzph27mmyn7rjf2c52jid.onion/index.php`_
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing lorenz's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Lorenz | 🟢 | 07/08/2023 11:44 | `http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd.onion` | <a href="https://images.ransomware.live/screenshots/lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd-onion.png" target=_blank>📸</a> | 
+| Lorenz | 🟢 | 07/08/2023 11:44 | `http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd.onion` | <a href="https://images.ransomware.live/screenshots/lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://www.zdnet.com/article/lorenz-ransomware-attack-victims-can-now-retrieve-their-files-for-free-with-this-decryption-tool
 
 - https://www.cybertalk.org/the-worst-outcomes-lorenz-ransomware-a-new-double-extortion-strategy
 
 
-🔎 `ransomware.live`has an active  parser for indexing lorenz's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| Lorenz | 🟢 | 03/08/2023 06:35 | `http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd.onion` | <a href="https://images.ransomware.live/screenshots/lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd-onion.png" target=_blank>📸</a> | 
-| Lorenz | 🟢 | 03/08/2023 06:35 | `http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd.onion` | <a href="https://images.ransomware.live/screenshots/lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd-onion.png" target=_blank>📸</a> | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 2 ransom notes](notes/lorenz)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-lorenz.png)
 
 
-### Posts
+### _Posts_
 
 > 67 victims found
 
@@ -2712,27 +3026,30 @@ _`rfi location woe2suafeg6ehxivgvvn4nh6ectbdhdqgc4vzph27mmyn7rjf2c52jid.onion/in
 
 > LV ransomware group main message: "Here are companies which didn't meet consumer data protection obligations. They rejected to fix their mistakes, they rejected to protect this data in the case when they could and had to ptotect it. These companies prefered to sell their private information, their employees' and customers' personal data". Security researchers claim that the LV group is utilizing the REvil ransomware group malware. The LV group claim to have compromised the corporate network of Groupe Reorev.
 
-### External analysis
-- https://www.secureworks.com/research/lv-ransomware
 
-- https://securityaffairs.co/wordpress/119306/malware/lv-ransomware-repurposed-revil-binary.html
-
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 26/12/2022 04:52 | `http://rbvuetuneohce3ouxjlbxtimyyxokb4btncxjbo44fbgxqy7tskinwad.onion` | ❌ | 
 | Start-maximized.com | 🔴 | 02/12/2021 13:09 | `http://4qbxi3i2oqmyzxsjg4fwe4aly3xkped52gq5orp6efpkeskvchqe27id.onion` | ❌ | 
+#### **External information**
+- https://www.secureworks.com/research/lv-ransomware
+
+- https://securityaffairs.co/wordpress/119306/malware/lv-ransomware-repurposed-revil-binary.html
 
 
-### Ransom note
+
+#### **Ransom note**
 * [📝 1 ransom note](notes/lv)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-lv.png)
 
 
-### Posts
+### _Posts_
 
 > 63 victims found
 
@@ -2759,17 +3076,20 @@ _`rfi location woe2suafeg6ehxivgvvn4nh6ectbdhdqgc4vzph27mmyn7rjf2c52jid.onion/in
 
 🔎 `ransomware.live`has an active  parser for indexing malas's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Somos malas... podemos ser peores | 🟢 | 03/08/2023 06:36 | `http://malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd.onion` | <a href="https://images.ransomware.live/screenshots/malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd-onion.png" target=_blank>📸</a> | 
+| Somos malas... podemos ser peores | 🟢 | 07/08/2023 11:45 | `http://malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd.onion` | <a href="https://images.ransomware.live/screenshots/malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-malas.png)
 
 
-### Posts
+### _Posts_
 
 > 171 victims found
 
@@ -2799,21 +3119,24 @@ _`wtyafjyhwqrg[...].onion/post?get_listBlog`_
 
 🔎 `ransomware.live`has an active  parser for indexing mallox's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Mallox - Blog | 🟢 | 03/08/2023 06:36 | `http://wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad.onion` | <a href="https://images.ransomware.live/screenshots/wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad-onion.png" target=_blank>📸</a> | 
+| Mallox - Blog | 🟢 | 07/08/2023 11:45 | `http://wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad.onion` | <a href="https://images.ransomware.live/screenshots/wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/mallox)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-mallox.png)
 
 
-### Posts
+### _Posts_
 
 > 34 victims found
 
@@ -2839,7 +3162,16 @@ _`wtyafjyhwqrg[...].onion/post?get_listBlog`_
 
 _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://marketojbwagqnwx.onion` | ❌ | 
+| none | 🔴 | 01/05/2021 00:00 | `http://g5sbltooh2okkcb2.onion` | ❌ | 
+| 404 Not Found | 🔴 | 04/10/2021 08:05 | `http://fvki3hj7uxuirxpeop6chgqoczanmebutznt2mkzy6waov6w456vjuid.onion` | ❌ | 
+| 502 Bad Gateway | 🔴 | 14/03/2022 05:12 | `http://jvdamsif53dqjycuozlaye2s47p7xij4x6hzwzwhzrqmv36gkyzohhqd.onion` | ❌ | 
+#### **External information**
 - https://www.digitalshadows.com/blog-and-research/marketo-a-return-to-simple-extortion
 
 - https://securityaffairs.co/wordpress/121617/cyber-crime/puma-available-marketo.html
@@ -2848,20 +3180,14 @@ _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 
 - https://t.me/marketocloud
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://marketojbwagqnwx.onion` | ❌ | 
-| none | 🔴 | 01/05/2021 00:00 | `http://g5sbltooh2okkcb2.onion` | ❌ | 
-| 404 Not Found | 🔴 | 04/10/2021 08:05 | `http://fvki3hj7uxuirxpeop6chgqoczanmebutznt2mkzy6waov6w456vjuid.onion` | ❌ | 
-| 502 Bad Gateway | 🔴 | 14/03/2022 05:12 | `http://jvdamsif53dqjycuozlaye2s47p7xij4x6hzwzwhzrqmv36gkyzohhqd.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-marketo.png)
 
 
-### Posts
+### _Posts_
 
 > 32 victims found
 
@@ -2886,21 +3212,24 @@ _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 
 > Maze ransomware group is one of the most known ransomware gangs, they targeted organizations worldwide across many industries. Security researchers believed that Maze operates as an affiliated network model. MAZE was one of the first groups that made a 'Double Extortion Attack' involved Allied Universal, in November 2019, the group leaks their victim's data in the darknet. On November 1, 2020, MAZE announced an official press release that they are closing their operation. is malware targeting organizations worldwide across many industries. Security researchers claim that the threat actor behind the MAZE group is 'TA2101'.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://xfr3txoorcyy7tikjgj5dk3rvo3vsrpyaxnclyohkbfp3h277ap4tiad.onion` | ❌ | 
+#### **External information**
 - https://techcrunch.com/2020/11/02/maze-ransomware-group-shutting-down
 
 - https://www.fireeye.com/blog/threat-research/2020/05/tactics-techniques-procedures-associated-with-maze-ransomware-incidents.html
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://xfr3txoorcyy7tikjgj5dk3rvo3vsrpyaxnclyohkbfp3h277ap4tiad.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/maze)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -2910,15 +3239,18 @@ _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 ## **mbc**
 
 
-### External analysis
-- https://www.thenationalnews.com/business/2021/08/21/mbc-ransomware-group-claims-responsibility-for-cyber-attack-on-irans-railway-network/
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://xembshruusobgbvxg4tcjs3jpdnks6xrr6nbokfxadcnlc53yxir22ad.onion` | ❌ | 
+#### **External information**
+- https://www.thenationalnews.com/business/2021/08/21/mbc-ransomware-group-claims-responsibility-for-cyber-attack-on-irans-railway-network/
 
-### Posts
+<!-- tabs:end -->
+
+### _Posts_
 
 > no victim found
 
@@ -2931,21 +3263,24 @@ _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 
 🔎 `ransomware.live`has an active  parser for indexing medusa's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Medusa Blog | 🟢 | 03/08/2023 06:37 | `http://medusaxko7jxtrojdkxo66j7ck4q5tgktf7uqsqyfry4ebnxlcbkccyd.onion` | <a href="https://images.ransomware.live/screenshots/medusaxko7jxtrojdkxo66j7ck4q5tgktf7uqsqyfry4ebnxlcbkccyd-onion.png" target=_blank>📸</a> | 
+| Medusa Blog | 🟢 | 07/08/2023 11:46 | `http://medusaxko7jxtrojdkxo66j7ck4q5tgktf7uqsqyfry4ebnxlcbkccyd.onion` | <a href="https://images.ransomware.live/screenshots/medusaxko7jxtrojdkxo66j7ck4q5tgktf7uqsqyfry4ebnxlcbkccyd-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/medusa)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-medusa.png)
 
 
-### Posts
+### _Posts_
 
 > 80 victims found
 
@@ -2973,32 +3308,36 @@ _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 
 🔎 `ransomware.live`has an active  parser for indexing medusalocker's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://qd7pcafncosqfqu3ha6fcx4h6sr7tzwagzpcdcnytiw3b6varaeqv5yd.onion` | <a href="https://images.ransomware.live/screenshots/qd7pcafncosqfqu3ha6fcx4h6sr7tzwagzpcdcnytiw3b6varaeqv5yd-onion.png" target=_blank>📸</a> | 
-| Ransomware blog – We will not give ourselves a nam | 🟢 | 03/08/2023 06:37 | `http://z6wkgghtoawog5noty5nxulmmt2zs7c3yvwr22v4czbffdoly2kl4uad.onion` | <a href="https://images.ransomware.live/screenshots/z6wkgghtoawog5noty5nxulmmt2zs7c3yvwr22v4czbffdoly2kl4uad-onion.png" target=_blank>📸</a> | 
+| Ransomware blog – We will not give ourselves a nam | 🟢 | 07/08/2023 11:46 | `http://z6wkgghtoawog5noty5nxulmmt2zs7c3yvwr22v4czbffdoly2kl4uad.onion` | <a href="https://images.ransomware.live/screenshots/z6wkgghtoawog5noty5nxulmmt2zs7c3yvwr22v4czbffdoly2kl4uad-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/medusalocker)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/medusalocker.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-medusalocker.png)
 
 
-### Posts
+### _Posts_
 
-> 33 victims found
+> 34 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Protected: INSULCANA CONTRACTING LTD`](https://google.com/search?q=Protected%3A+INSULCANA+CONTRACTING+LTD) | 27/07/2023 | There is no excerpt because this is a protected post. | <a href="https://images.ransomware.live/screenshots/posts/8f28a261d458ace33b560c116aa9105b.png" target=_blank>📸</a> |
+| [`INSULCANA CONTRACTING LTD`](https://google.com/search?q=INSULCANA+CONTRACTING+LTD) | 27/07/2023 | Descriptionemployee information – agreement – customer email(.xls)- passport all canada and other documents Price: 35000$ | <a href="https://images.ransomware.live/screenshots/posts/8f28a261d458ace33b560c116aa9105b.png" target=_blank>📸</a> |
 | [`Protected: Hidden name`](https://google.com/search?q=Protected%3A+Hidden+name) | 17/07/2023 | There is no excerpt because this is a protected post. | <a href="https://images.ransomware.live/screenshots/posts/f2e6730a557ae6b92f7a124ea71fdeaa.png" target=_blank>📸</a> |
 | [`Hoosier Equipment company`](https://google.com/search?q=Hoosier+Equipment+company) | 04/07/2023 | DescriptionClient Case – agreement – email(.msg)- and other documents Price: 60000$ | <a href="https://images.ransomware.live/screenshots/posts/e327d9a67253efb531e2ff6acbe94174.png" target=_blank>📸</a> |
 | [`Ucamco Belgium`](https://google.com/search?q=Ucamco+Belgium) | 02/07/2023 | DescriptionClient Case – customers email-Audit information-There is also access to email for newsletters on behalf of the company PRICE-$80000 | <a href="https://images.ransomware.live/screenshots/posts/cb0a34428452c895edfa0da479c5ce79.png" target=_blank>📸</a> |
@@ -3007,7 +3346,6 @@ _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 | [`Hausamman company`](https://google.com/search?q=Hausamman+company) | 16/06/2023 | DescriptionClient Case – customers email-documents PRICE-$20000 | <a href="https://images.ransomware.live/screenshots/posts/e2d893c5a58e9e66e1ab67d974fa64e8.png" target=_blank>📸</a> |
 | [`reutlingen.ihk.de`](https://google.com/search?q=reutlingen.ihk.de) | 16/06/2023 | DescriptionClient Case – agreement – email(.msg)- contracts – and other documents PRICE-$80000 | <a href="https://images.ransomware.live/screenshots/posts/7bac500092f284ee1be91441de05b9ff.png" target=_blank>📸</a> |
 | [`arborsct.com`](https://google.com/search?q=arborsct.com) | 14/06/2023 | DescriptionClient Case – agreement – email(.msg)- and other documents Price: 60000$ One copy will be sold, confidential informationThe company did not take care of the data leak, and therefore we will sell many contracts, customer data, financial component and other documentsin one lot for $ 60,000 for verification in the darknet or bank | <a href="https://images.ransomware.live/screenshots/posts/d568d543cca81c4c3f58764f1cf185ba.png" target=_blank>📸</a> |
-| [`LETAPE JEUNES`](https://google.com/search?q=LETAPE+JEUNES) | 02/06/2023 | DescriptionClient Case – agreement – email(.msg)- contracts – and other documents(passports) PRICE-$40000 | <a href="https://images.ransomware.live/screenshots/posts/d5a88117cb439be8bcb23b748af9311c.png" target=_blank>📸</a> |
 
 ↪️ More victims [here](/group/medusalocker?id=posts)
 
@@ -3017,17 +3355,20 @@ _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 
 > This malware written in C# is a variant of the Thanos ransomware family and emerged in October 2021 and is obfuscated using SmartAssembly. In 2022, ThreatLabz analysed a report of Midas ransomware was slowly deployed over a two month period (ZScaler). This ransomware features also its own data leak site as part of its double extortion strategy.
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Info | 🔴 | 15/04/2022 00:21 | `http://midasbkic5eyfox4dhnijkzc7v7e4hpmsb2qgux7diqbpna4up4rtdad.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-midas.png)
 
 
-### Posts
+### _Posts_
 
 > 44 victims found
 
@@ -3052,17 +3393,20 @@ _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 
 > Ransomware, potential rebranding of win.sfile.
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | DataLeakBlog | 🔴 | 16/08/2022 10:33 | `http://dfpc7yvle5kxmgg6sbcp5ytggy3oeob676bjgwcwhyr2pwcrmbvoilqd.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-mindware.png)
 
 
-### Posts
+### _Posts_
 
 > 13 victims found
 
@@ -3088,27 +3432,30 @@ _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 
 _`hash : bbdac308d2b15a4724de7919bf8e9ffa713dea60ae3a482417c44c60012a654b`_
 
-### External analysis
-- https://twitter.com/Threatlabz/status/1641113991824158720
-
 
 🔎 `ransomware.live`has an active  parser for indexing moneymessage's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| none | 🟢 | 03/08/2023 06:38 | `http://blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd.onion` | <a href="https://images.ransomware.live/screenshots/blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd-onion.png" target=_blank>📸</a> | 
+| none | 🔴 | 06/08/2023 20:39 | `http://blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd.onion` | <a href="https://images.ransomware.live/screenshots/blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd-onion.png" target=_blank>📸</a> | 
+#### **External information**
+- https://twitter.com/Threatlabz/status/1641113991824158720
 
 
-### Ransom note
+
+#### **Ransom note**
 * [📝 1 ransom note](notes/moneymessage)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-moneymessage.png)
 
 
-### Posts
+### _Posts_
 
 > 10 victims found
 
@@ -3130,33 +3477,37 @@ _`hash : bbdac308d2b15a4724de7919bf8e9ffa713dea60ae3a482417c44c60012a654b`_
 ## **monti**
 
 
-### External analysis
-- https://blogs.blackberry.com/en/2022/09/the-curious-case-of-monti-ransomware-a-real-world-doppelganger
-
 
 🔎 `ransomware.live`has an active  parser for indexing monti's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | 404 Not Found | 🔴 | 10/10/2022 17:13 | `http://4s4lnfeujzo67fy2jebz2dxskez2gsqj2jeb35m75ktufxensdicqxad.onion` | ❌ | 
-| MONTI - Leaks site | 🟢 | 03/08/2023 06:38 | `http://mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid.onion` | <a href="https://images.ransomware.live/screenshots/mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid-onion.png" target=_blank>📸</a> | 
+| MONTI - Leaks site | 🔴 | 07/08/2023 05:40 | `http://mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid.onion` | <a href="https://images.ransomware.live/screenshots/mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid-onion.png" target=_blank>📸</a> | 
+#### **External information**
+- https://blogs.blackberry.com/en/2022/09/the-curious-case-of-monti-ransomware-a-real-world-doppelganger
 
 
-### Ransom note
+
+#### **Ransom note**
 * [📝 2 ransom notes](notes/monti)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-monti.png)
 
 
-### Posts
+### _Posts_
 
-> 24 victims found
+> 25 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Abatti Companies - Press Release`](https://google.com/search?q=Abatti+Companies+-+Press+Release) | 04/08/2023 | Abatti Companies is a vertically integrated group of companies that handles all facets of farm products from field to market. In 1981 Alex Abatti Jr. started as a custom harvest operator that later began farming to become one of the largest farmers in the Imperial Valley, California. | <a href="https://images.ransomware.live/screenshots/posts/ce2d8d9c82b42cee17811a7fee55bbe7.png" target=_blank>📸</a> |
 | [`Bickel & Brewer - Press Release`](https://google.com/search?q=Bickel+%26+Brewer+-+Press+Release) | 02/08/2023 | Founded in 1984, Bickel & Brewer has earned a reputation as one of the most successful law firms in the United States practicing exclusively in the field of complex commercial litigation and dispute resolution. | <a href="https://images.ransomware.live/screenshots/posts/d1636c2369c4e8652f96a8c777681db7.png" target=_blank>📸</a> |
 | [`Hungarian Investment Promotion Agency`](https://google.com/search?q=Hungarian+Investment+Promotion+Agency) | 30/07/2023 | Hungarian Investment Promotion Agency is a company that operates in the Financial Services industry. It employs 11-20 people and has $5M-$10M of revenue. | <a href="https://images.ransomware.live/screenshots/posts/1776c507db348ed0d7b0f3644b1e26a9.png" target=_blank>📸</a> |
 | [`Hungarian Investment Promotion Agency Press Release`](https://google.com/search?q=Hungarian+Investment+Promotion+Agency+Press+Release) | 22/07/2023 | Hungarian Investment Promotion Agency is a company that operates in the Financial Services industry. It employs 11-20 people and has $5M-$10M of revenue. | <a href="https://images.ransomware.live/screenshots/posts/a7b256a80b34c93232fa1647a2a25ea1.png" target=_blank>📸</a> |
@@ -3166,7 +3517,6 @@ _`hash : bbdac308d2b15a4724de7919bf8e9ffa713dea60ae3a482417c44c60012a654b`_
 | [`ASL 1 - Avezzano Sulmona L'Aquila *All data upload*`](https://google.com/search?q=ASL+1+-+Avezzano+Sulmona+L%27Aquila+%2AAll+data+upload%2A) | 15/05/2023 | asl1abruzzo.it Portale istituzionale dell'Azienda Sanitaria Locale 1 Avezzano Sulmona L'Aquila. | <a href="https://images.ransomware.live/screenshots/posts/03277680e758cfca38244af41e41d9b4.png" target=_blank>📸</a> |
 | [`ASL 1 - Avezzano Sulmona L'Aquila *UPD 05-13*`](https://google.com/search?q=ASL+1+-+Avezzano+Sulmona+L%27Aquila+%2AUPD+05-13%2A) | 13/05/2023 | asl1abruzzo.it Portale istituzionale dell'Azienda Sanitaria Locale 1 Avezzano Sulmona L'Aquila. | <a href="https://images.ransomware.live/screenshots/posts/03277680e758cfca38244af41e41d9b4.png" target=_blank>📸</a> |
 | [`CSD Network Services Ltd`](https://google.com/search?q=CSD+Network+Services+Ltd) | 11/05/2023 | Today, we are publishing a Data Breach report of an outsourcing company, and we want to announce that tomorrow we will leak the databases of the following hotels into public access. | <a href="https://images.ransomware.live/screenshots/posts/f805eca0aaf1ab36e1a0512f2fac3bae.png" target=_blank>📸</a> |
-| [`ASL 1 - Avezzano Sulmona L'Aquila *UPD 05-11*`](https://google.com/search?q=ASL+1+-+Avezzano+Sulmona+L%27Aquila+%2AUPD+05-11%2A) | 11/05/2023 | asl1abruzzo.it Portale istituzionale dell'Azienda Sanitaria Locale 1 Avezzano Sulmona L'Aquila. | <a href="https://images.ransomware.live/screenshots/posts/03277680e758cfca38244af41e41d9b4.png" target=_blank>📸</a> |
 
 ↪️ More victims [here](/group/monti?id=posts)
 
@@ -3178,7 +3528,14 @@ _`hash : bbdac308d2b15a4724de7919bf8e9ffa713dea60ae3a482417c44c60012a654b`_
 
 _`not a ransomware group`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://mosesstaffm7hptp.onion` | ❌ | 
+| Activities – Moses Staff | 🟢 | 07/08/2023 11:48 | `http://moses-staff.se` | <a href="https://images.ransomware.live/screenshots/moses-staff-se.png" target=_blank>📸</a> | 
+#### **External information**
 - https://twitter.com/moses_staff_se
 
 - https://t.me/moses_staff_links
@@ -3189,13 +3546,9 @@ _`not a ransomware group`_
 
 - https://research.checkpoint.com/2021/mosesstaff-targeting-israeli-companies/
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://mosesstaffm7hptp.onion` | ❌ | 
-| Activities – Moses Staff | 🟢 | 03/08/2023 06:39 | `http://moses-staff.se` | <a href="https://images.ransomware.live/screenshots/moses-staff-se.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 16 victims found
 
@@ -3219,24 +3572,27 @@ _`not a ransomware group`_
 ## **mount-locker**
 
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://mountnewsokhwilx.onion` | ❌ | 
+#### **External information**
 - https://www.bleepingcomputer.com/news/security/mount-locker-ransomware-joins-the-multi-million-dollar-ransom-game
 
 - https://www.securitymagazine.com/articles/94954-sophos-identifies-connection-between-mount-locker-and-astro-locker-team-ransomware
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://mountnewsokhwilx.onion` | ❌ | 
 
-### Negotiation chats
+#### ** Negotiation chats**
 
 | Name | Link |
 |---|---|
 |20201016| <a href="https://chat.ransomware.live/chat/mount-locker/20201016.html" target=_blank> 💬 </a> |
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -3246,12 +3602,15 @@ _`not a ransomware group`_
 ## **mydecryptor**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://5s4ixqul2enwxrqv.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -3262,17 +3621,20 @@ _`not a ransomware group`_
 
 > N3tw0rm ransomware group is linked to Iran by many security researchers especially for the fact that the group targeting only Israeli companies. Like other ransomware groups, N3tw0rm has a data leak site in the darknet. Due to the low ransom price the group requested and lack of response to negotiations, some security researchers believe that the N3tw0rm group's main goal is to be used for sowing chaos for Israeli interests and not for profit.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://n3twormruynhn3oetmxvasum2miix2jgg56xskdoyihra4wthvlgyeyd.onion` | ❌ | 
+#### **External information**
 - https://www.bleepingcomputer.com/news/security/n3tw0rm-ransomware-emerges-in-wave-of-cyberattacks-in-israel/
 
 - https://www.haaretz.com/israel-news/tech-news/.premium-iranian-hackers-hit-h-m-israel-amid-new-wave-of-cyberattacks-1.9766404
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://n3twormruynhn3oetmxvasum2miix2jgg56xskdoyihra4wthvlgyeyd.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -3283,21 +3645,24 @@ _`not a ransomware group`_
 
 > According to Vitali Kremez and Michael Gillespie, this ransomware shares much code with Nemty 2.5. A difference is removal of the RaaS component, which was switched to email communications for payments. Uses AES-128, which is then protected RSA2048.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://hxt254aygrsziejn.onion` | ❌ | 
+#### **External information**
 - https://www.zdnet.com/article/a-deep-dive-into-nefilim-a-double-extortion-ransomware-group
 
 - https://www.trendmicro.com/en_nz/research/21/f/nefilim-modern-ransomware-attack-story.html
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://hxt254aygrsziejn.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/nefilim)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 10 victims found
 
@@ -3320,7 +3685,13 @@ _`not a ransomware group`_
 
 > Nemty is a ransomware that was discovered in September 2019. Fortinet states that they found it being distributed through similar ways as Sodinokibi and also noted artfifacts they had seen before in Gandcrab.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://zjoxyw5mkacojk5ptn2iprkivg5clow72mjkyk5ttubzxprjjnwapkad.onion` | ❌ | 
+#### **External information**
 - https://www.mcafee.com/blogs/other-blogs/mcafee-labs/nemty-ransomware-learning-by-doing/
 
 - https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/nemty-ransomware-trik-botnet
@@ -3331,16 +3702,13 @@ _`not a ransomware group`_
 
 - https://www.infoblox.com/wp-content/uploads/threat-intelligence-report-nemty-ransomware-loves-you.pdf
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://zjoxyw5mkacojk5ptn2iprkivg5clow72mjkyk5ttubzxprjjnwapkad.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 3 ransom notes](notes/nemty)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -3351,27 +3719,30 @@ _`not a ransomware group`_
 
 > NetWalker ransomware group operates by the threat actor known as "CIRCUS SPIDER". The NetWalker ransomware was discovered in 2019. The group mainly targeting the Asia Pacific region but can attack globally. The group uses common attacking tools like Mimikatz and other legitimate tools (LOLBINS) like PSTools, AnyDesk, TeamViewer, NLBrute, and more. The group knowing by targeting the healthcare sector. Finally, in January 2021, Netwalker was takedown by the authorities, the police have confiscated hundreds of thousands of dollars in ransom payments collected by the Netwalker group, and they seized servers and disrupted the infrastructure and the darknet websites of the Netwalker ransomware group.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://rnfdsgm6wb6j6su5txkekw4u4y47kp2eatvu7d6xhyn5cs4lt4pdrqqd.onion` | ❌ | 
+#### **External information**
 - https://threatpost.com/netwalker-ransomware-suspect-charged/163405
 
 - https://www.cybereason.com/blog/cybereason-vs.-netwalker-ransomware
 
 - https://www.ncsc.org/trends/monthly-trends-articles/2020/netwalker-ransomware
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://rnfdsgm6wb6j6su5txkekw4u4y47kp2eatvu7d6xhyn5cs4lt4pdrqqd.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/netwalker)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/netwalker.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -3381,17 +3752,20 @@ _`not a ransomware group`_
 ## **nevada**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Error | 🔴 | 12/02/2023 16:12 | `http://nevbackvzwfu5yu3gszap77bg66koadds6eln37gxdhdk4jdsbkayrid.onion` | <a href="https://images.ransomware.live/screenshots/nevbackvzwfu5yu3gszap77bg66koadds6eln37gxdhdk4jdsbkayrid-onion.png" target=_blank>📸</a> | 
 | NEVADA | 🔴 | 21/04/2023 10:35 | `http://nevcorps5cvivjf6i2gm4uia7cxng5ploqny2rgrinctazjlnqr2yiyd.onion` | <a href="https://images.ransomware.live/screenshots/nevcorps5cvivjf6i2gm4uia7cxng5ploqny2rgrinctazjlnqr2yiyd-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/nevada)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -3402,22 +3776,25 @@ _`not a ransomware group`_
 
 > 
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Night Sky | 🔴 | 25/01/2022 05:22 | `http://gg5ryfgogainisskdvh4y373ap3b2mxafcibeh2lvq5x7fx76ygcosad.onion` | ❌ | 
+#### **External information**
 - https://t.me/arvin_club/5081
 
 - https://twitter.com/malwrhunterteam/status/1477381209147723788?s=20
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| Night Sky | 🔴 | 25/01/2022 05:22 | `http://gg5ryfgogainisskdvh4y373ap3b2mxafcibeh2lvq5x7fx76ygcosad.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-nightsky.png)
 
 
-### Posts
+### _Posts_
 
 > 2 victims found
 
@@ -3434,37 +3811,40 @@ _`not a ransomware group`_
 
 🔎 `ransomware.live`has an active  parser for indexing noescape's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| NoEscape | 🟢 | 03/08/2023 06:39 | `http://noescapemsqxvizdxyl7f7rmg5cdjwp33pg2wpmiaaibilb4btwzttad.onion` | <a href="https://images.ransomware.live/screenshots/noescapemsqxvizdxyl7f7rmg5cdjwp33pg2wpmiaaibilb4btwzttad-onion.png" target=_blank>📸</a> | 
-| Welcome | 🟢 | 03/08/2023 06:40 | `http://noescaperjh3gg6oy7rck57fiefyuzmj7kmvojxgvlmwd5pdzizrb7ad.onion` | <a href="https://images.ransomware.live/screenshots/noescaperjh3gg6oy7rck57fiefyuzmj7kmvojxgvlmwd5pdzizrb7ad-onion.png" target=_blank>📸</a> | 
+| NoEscape | 🔴 | 06/08/2023 22:39 | `http://noescapemsqxvizdxyl7f7rmg5cdjwp33pg2wpmiaaibilb4btwzttad.onion` | <a href="https://images.ransomware.live/screenshots/noescapemsqxvizdxyl7f7rmg5cdjwp33pg2wpmiaaibilb4btwzttad-onion.png" target=_blank>📸</a> | 
+| Welcome | 🟢 | 07/08/2023 11:49 | `http://noescaperjh3gg6oy7rck57fiefyuzmj7kmvojxgvlmwd5pdzizrb7ad.onion` | <a href="https://images.ransomware.live/screenshots/noescaperjh3gg6oy7rck57fiefyuzmj7kmvojxgvlmwd5pdzizrb7ad-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/noescape)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-noescape.png)
 
 
-### Posts
+### _Posts_
 
-> 22 victims found
+> 25 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Kreacta`](https://www.kreacta.com) | 01/08/2023 | Kreacta are specialized in technical consultancy and2D/3D mechanical design of special and automatic machines, equipment, complete production lines, and installations for industrial production in general.We provide high-... |   |
+| [`Republican Vilnius Psychiatric Hospital`](https://rvpl.lt) | 30/07/2023 | Republican Vilnius Psychiatric Hospital (RVPL) is the largest and widest range of mental health care institution in Lithuania. More than 600 employees work in the hospital, and professional assistance is provided to more... |   |
 | [`Newton IT Solutions`](https://newtonit.co.uk) | 27/07/2023 | Newton IT Solutions is a managed services provider providing innovative business technology solutions. We pride ourselves on having our advanced, wholly owned and private infrastructure in the cloud, allowing our clients... | <a href="https://images.ransomware.live/screenshots/posts/11a5634b16e5fe5daf495bea1048d309.png" target=_blank>📸</a> |
+| [`Avertronics Inc`](https://www.avertronics.com) | 27/07/2023 | Avertronics INC offers the processing of connecting elements, connecting wire modules, wireless application modules, system products, and related technology for the electronic, electrical, mechanic, photonics and health ... |   |
 | [`Grupo SCA - Business Information`](https://www.gruposca.com) | 25/07/2023 | Grupo SCA is a national consulting company specializing in solutions and consulting, operating on the market for more than twenty years. Our management team has been trained by multinational firms in the sector and our e... | <a href="https://images.ransomware.live/screenshots/posts/50ed38ef13577560d6534e3687d9ea6e.png" target=_blank>📸</a> |
 | [`Addison Electronique`](https://www.addison-electronique.com) | 24/07/2023 | Addison Electronique is a family business founded in 1961 specializing in electronic components.The company was successfully encrypted and compromised. We have data such as passports, credit cards, insurance, agreements,... | <a href="https://images.ransomware.live/screenshots/posts/407b24ce084e23fb14f2f4fd59f3255d.png" target=_blank>📸</a> |
 | [`BEIJER REF`](https://www.beijer.es) | 24/07/2023 | Beijer Ref is the European leader in distribution and production of industrial and commercial refrigeration equipment, and components and air conditioning systems. It employs 21-50 people and has $10M-$25M of revenue. Th... | <a href="https://images.ransomware.live/screenshots/posts/4a76443e1f24d3b096b9c769a65f0d45.png" target=_blank>📸</a> |
 | [`Ville de Chevilly-Larue`](https://www.ville-chevilly-larue.fr) | 24/07/2023 | Ville de Chevilly-Larue.The network has been successfully encrypted and compromised, the data we will release if the company does not enter into dialogue with us includes: banking, finance, budget, passports, contracts, ... | <a href="https://images.ransomware.live/screenshots/posts/8190ac58a1e8e060f64bf63511d55200.png" target=_blank>📸</a> |
 | [`Fushimitsu Gumi Co., Ltd`](https://fushimitsu.com) | 24/07/2023 | In May 1954, the founder founded Fushimitsu Gumi, a civil engineering business, in the peaceful city of Hiroshima. In April 1956, the company was reorganized into Fushimitsu Gumi Co., Ltd. Since then, we have worked dili... | <a href="https://images.ransomware.live/screenshots/posts/c8e8e109ed9576e6ccee1d70827e2794.png" target=_blank>📸</a> |
 | [`Garac - Business Information`](https://www.garac.com) | 24/07/2023 | GARAC prepares young people for the technological and commercial challenges of tomorrow and gives them the opportunity to earn a degree with access to jobs in the automotive, motorcycle, heavy duty vehicle and transporta... | <a href="https://images.ransomware.live/screenshots/posts/c8e8e109ed9576e6ccee1d70827e2794.png" target=_blank>📸</a> |
-| [`Corinium Carpets`](https://www.coriniumcarpets.co.uk) | 20/07/2023 | Located in Cheltenham, Gloucestershire and established in 1976, Corinium Carpets is a family run carpet company committed to providing first class customer care and high quality flooring services. We have passports, driv... | <a href="https://images.ransomware.live/screenshots/posts/c8e8e109ed9576e6ccee1d70827e2794.png" target=_blank>📸</a> |
-| [`Girardini Holding Srl`](https://www.girardini.it) | 18/07/2023 | We are an Italian company, existing since the early 1940s, specialized in the design and construction of moulds, cold stamping and powder coating of technical sheet metal components. We have over 100 GB of data stolen fr... | <a href="https://images.ransomware.live/screenshots/posts/8cdc00f12c08e5ed6518750173e3c6bf.png" target=_blank>📸</a> |
-| [`Acomen`](https://www.acomen.fr) | 18/07/2023 | Acomen is a company that operates in the Health, Wellness and Fitness industry. It employs 21-50 people and has $5M-$10M of revenue. | <a href="https://images.ransomware.live/screenshots/posts/4fb8dc47a1682ab9d78f73dcfca6c1f8.png" target=_blank>📸</a> |
 
 ↪️ More victims [here](/group/noescape?id=posts)
 
@@ -3473,35 +3853,40 @@ _`not a ransomware group`_
 ## **nokoyawa**
 
 
-### External analysis
-- https://www.trendmicro.com/en_us/research/22/c/nokoyawa-ransomware-possibly-related-to-hive-.html
-
 
 🔎 `ransomware.live`has an active  parser for indexing nokoyawa's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | NOKOYAWA Leaks | 🔴 | 11/07/2022 22:26 | `http://lirncvjfmdhv6samxvvlohfqx7jklfxoxj7xn3fh7qeabs3taemdsdqd.onion` | ❌ | 
 | NOKOYAWA Leaks | 🔴 | 25/01/2023 21:03 | `http://6yofnrq7evqrtz3tzi3dkbrdovtywd35lx3iqbc5dyh367nrdh4jgfyd.onion` | <a href="https://images.ransomware.live/screenshots/6yofnrq7evqrtz3tzi3dkbrdovtywd35lx3iqbc5dyh367nrdh4jgfyd-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 03/08/2023 06:40 | `http://noko65rmtaiqyt2cw2h4jrxe3u56t2k7ov3nd22hoji4c5vnfib2i4yd.onion` | <a href="https://images.ransomware.live/screenshots/noko65rmtaiqyt2cw2h4jrxe3u56t2k7ov3nd22hoji4c5vnfib2i4yd-onion.png" target=_blank>📸</a> | 
-| Wall of Shame | 🟢 | 03/08/2023 06:41 | `http://nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid.onion` | <a href="https://images.ransomware.live/screenshots/nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 07/08/2023 11:49 | `http://noko65rmtaiqyt2cw2h4jrxe3u56t2k7ov3nd22hoji4c5vnfib2i4yd.onion` | <a href="https://images.ransomware.live/screenshots/noko65rmtaiqyt2cw2h4jrxe3u56t2k7ov3nd22hoji4c5vnfib2i4yd-onion.png" target=_blank>📸</a> | 
+| Wall of Shame | 🟢 | 07/08/2023 11:50 | `http://nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid.onion` | <a href="https://images.ransomware.live/screenshots/nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid-onion.png" target=_blank>📸</a> | 
+#### **External information**
+- https://www.trendmicro.com/en_us/research/22/c/nokoyawa-ransomware-possibly-related-to-hive-.html
 
 
-### Ransom note
+
+#### **Ransom note**
 * [📝 2 ransom notes](notes/nokoyawa)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-nokoyawa.png)
 
 
-### Posts
+### _Posts_
 
-> 34 victims found
+> 36 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Studio Domaine LLC`](https://www.studiodomaine.com/) | 04/08/2023 | Studio Domaine is an innovative design firm dedicated to creating personalized interiors for residential and model homes. Our custom design services span broad styles and sensibilities providing our clients with their own "signature" style. What began in 1989 as Barbara's Interiors has now... | <a href="https://images.ransomware.live/screenshots/posts/b96ec10fda84f2d64533c671b8b9114a.png" target=_blank>📸</a> |
+| [`Roman Catholic Diocese of Albany`](https://www.rcda.org/) | 03/08/2023 | The Roman Catholic Diocese of Albany covers 14 counties in Eastern New York including the south west corner of a 15th county. Its Mother Church is the Cathedral of the Immaculate Conception in the city of Albany. | <a href="https://images.ransomware.live/screenshots/posts/d7e90b70c7f6ae776751c678d0a03c42.png" target=_blank>📸</a> |
 | [`Pea River Electric Cooperative`](https://www.peariver.com) | 01/08/2023 | Pea River Electric Cooperative is a service-oriented, distribution electric utility that is owned by the members it serves. Pea River Electric provides electric service to members in portions of Barbour, Dale, Henry and Coffee counties in Alabama. The headquarters office is located at 1311 W. Roy... | <a href="https://images.ransomware.live/screenshots/posts/347db0ad736ed30e4a8aa75b0c26adef.png" target=_blank>📸</a> |
 | [`One Health Solutions`](https://www.onehealthsolutions.com/) | 29/07/2023 | ONE HEALTH is a pioneering healthcare platform that is the result of a unique partnership between a group of visionaries from the healthcare and technology industry, spearheaded by professionals from around the world and built by thousands of individuals who sharethe belief that healthcare is truly... | <a href="https://images.ransomware.live/screenshots/posts/6686e20ec7d1e6291ab4417aefa64c1d.png" target=_blank>📸</a> |
 | [`Modern Eyez`](https://www.visionsource-moderneyez.com) | 29/07/2023 | Since 2003, Modern Eyez has been the leader and preferred provider of quality vision care products and personalized optometric services to our patients in Rio Rancho and the surrounding areas. Our experienced doctors and staff offer comprehensive vision examinations and specialize in the diagnosis... | <a href="https://images.ransomware.live/screenshots/posts/b1c0bfa468e74deb2df54b35bb2dd2f2.png" target=_blank>📸</a> |
@@ -3510,8 +3895,6 @@ _`not a ransomware group`_
 | [`Muncy Homes`](https://www.muncyhomes.com) | 29/07/2023 | Muncy Homes was founded in 1973 in the stable and skilled labor environment of North Central Pennsylvania. We are recognized as an industry leader of quality modular housing at competitive pricing and sales of over 500 houses annually. Our products are marketed through an independent builder... | <a href="https://images.ransomware.live/screenshots/posts/4f46e0b39b29beca6b53974561f857d0.png" target=_blank>📸</a> |
 | [`CANAROPA Inc`](https://www.canaropa.com) | 20/07/2023 | Canaropa, founded in 1954 and headquartered in Quebec, Canada, is a leading provider of quality commercial and residential door locks that are secure, functional, and aesthetic. Canaropa offers a wide variety of exit devices for narrow and wide stiles with... | <a href="https://images.ransomware.live/screenshots/posts/5f7bceba9b3d0cfbc80d37ac402cce3b.png" target=_blank>📸</a> |
 | [`Tampa General Hospital`](https://www.tgh.org/) | 20/07/2023 | Tampa General Hospital is a private not-for-profit hospital and one of the most comprehensive medical facilities in West Central Florida serving a dozen counties with a population in excess of 4 million. As one of the largest hospitals in Florida, Tampa General is licensed for 1,040... | <a href="https://images.ransomware.live/screenshots/posts/f42198cb9a625203bea6498b67713071.png" target=_blank>📸</a> |
-| [`Roadies`](https://www.roadiesinc.com/) | 29/05/2023 | Roadies, a fast-growing and innovative logistics company that provides comprehensive and outstanding transportation services. Since our inception, we have been providing cutting-edge services, so whatever your truckload need may be, we have got you... | <a href="https://images.ransomware.live/screenshots/posts/761a57a03bcc6926cbc010d1830306b5.png" target=_blank>📸</a> |
-| [`Liveaction inc.`](https://www.liveaction.com/) | 22/05/2023 | LiveAction’s Network Intelligence platform transforms complex data into actionable insights, providing organizations with a comprehensive view of their network, from network and application performance to security. Enterprise teams can rapidly take action to resolve network issues at scale... | <a href="https://images.ransomware.live/screenshots/posts/38e717d7691ee9ee2f416e9bd08ad0fe.png" target=_blank>📸</a> |
 
 ↪️ More victims [here](/group/nokoyawa?id=posts)
 
@@ -3520,17 +3903,20 @@ _`not a ransomware group`_
 ## **onepercent**
 
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://5mvifa3xq5m7sou3xzaajfz7h6eserp5fnkwotohns5pgbb5oxty3zad.onion` | ❌ | 
+#### **External information**
 - https://www.ic3.gov/Media/News/2021/210823.pdf
 
 - https://www.csoonline.com/article/3630635/onepercent-ransomware-group-hits-companies-via-iceid-banking-trojan.html
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://5mvifa3xq5m7sou3xzaajfz7h6eserp5fnkwotohns5pgbb5oxty3zad.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -3542,20 +3928,23 @@ _`not a ransomware group`_
 
 _`aka vsop`_
 
-### External analysis
-- vsop@onionmail.org
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | VSOP NEWS | 🔴 | 02/01/2023 05:00 | `http://mrdxtxy6vqeqbmb4rvbvueh2kukb3e3mhu3wdothqn7242gztxyzycid.onion` | <a href="https://images.ransomware.live/screenshots/mrdxtxy6vqeqbmb4rvbvueh2kukb3e3mhu3wdothqn7242gztxyzycid-onion.png" target=_blank>📸</a> | 
+#### **External information**
+- vsop@onionmail.org
 
-### Total Attacks Over Time
+<!-- tabs:end -->
+
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-onyx.png)
 
 
-### Posts
+### _Posts_
 
 > 28 victims found
 
@@ -3580,21 +3969,24 @@ _`aka vsop`_
 
 > Pandora ransomware was obtained by vx-underground at 2022-03-14.
 
-### External analysis
-- contact@pandoraxyz.xyz
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Pandora Data Leak | 🔴 | 03/05/2022 11:24 | `http://vbfqeh5nugm6r2u2qvghsdxm3fotf5wbxb5ltv6vw77vus5frdpuaiid.onion` | ❌ | 
 | none | 🔴 | 01/05/2021 00:00 | `http://pandoraxyz.xyz` | ❌ | 
+#### **External information**
+- contact@pandoraxyz.xyz
 
-### Total Attacks Over Time
+<!-- tabs:end -->
+
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-pandora.png)
 
 
-### Posts
+### _Posts_
 
 > 5 victims found
 
@@ -3612,7 +4004,13 @@ _`aka vsop`_
 
 > Pay2Key is ransomware that has been used by the threat actor Fox Kitten. The group seems to operate since July 2020, targetting mainly Israeli companies. Pay2Key has a darknet leak site to public stolen and sensitive information of their victims. Some of their victims: Intel - Habana Labs, IAI - Israel Aerospace Industries, Portnox - Network Security Solutions.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Pay2Key Leak Directory! | 🔴 | 15/03/2022 21:12 | `http://pay2key2zkg7arp3kv3cuugdaqwuesifnbofun4j6yjdw5ry7zw2asid.onion` | ❌ | 
+#### **External information**
 - https://research.checkpoint.com/2020/ransomware-alert-pay2key
 
 - https://www.twitter.com/p2ktwtacc
@@ -3621,12 +4019,9 @@ _`aka vsop`_
 
 - pay2key@tuta.io
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| Pay2Key Leak Directory! | 🔴 | 15/03/2022 21:12 | `http://pay2key2zkg7arp3kv3cuugdaqwuesifnbofun4j6yjdw5ry7zw2asid.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 6 victims found
 
@@ -3645,20 +4040,23 @@ _`aka vsop`_
 
 > 
 
-### External analysis
-- https://cyberintelmag.com/malware-viruses/payloadbin-ransomware-attributed-to-evil-corp
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Payload.bin | 🔴 | 28/08/2022 20:21 | `http://vbmisqjshn4yblehk2vbnil53tlqklxsdaztgphcilto3vdj4geao5qd.onion` | ❌ | 
+#### **External information**
+- https://cyberintelmag.com/malware-viruses/payloadbin-ransomware-attributed-to-evil-corp
 
-### Total Attacks Over Time
+<!-- tabs:end -->
+
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-payloadbin.png)
 
 
-### Posts
+### _Posts_
 
 > 29 victims found
 
@@ -3683,7 +4081,17 @@ _`aka vsop`_
 
 > Ransomware
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing play's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| PLAY NEWS | 🟢 | 07/08/2023 11:50 | `http://mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd.onion` | <a href="https://images.ransomware.live/screenshots/mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd-onion.png" target=_blank>📸</a> | 
+| PLAY NEWS | 🟢 | 07/08/2023 11:51 | `http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion` | <a href="https://images.ransomware.live/screenshots/k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://socradar.io/dark-web-profile-play-ransomware/
 
 - https://www.trendmicro.com/en_us/research/22/i/play-ransomware-s-attack-playbook-unmasks-it-as-another-hive-aff.html
@@ -3691,24 +4099,17 @@ _`aka vsop`_
 - https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play
 
 
-🔎 `ransomware.live`has an active  parser for indexing play's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| PLAY NEWS | 🟢 | 03/08/2023 06:41 | `http://mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd.onion` | <a href="https://images.ransomware.live/screenshots/mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd-onion.png" target=_blank>📸</a> | 
-| PLAY NEWS | 🟢 | 03/08/2023 06:42 | `http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion` | <a href="https://images.ransomware.live/screenshots/k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd-onion.png" target=_blank>📸</a> | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 2 ransom notes](notes/play)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-play.png)
 
 
-### Posts
+### _Posts_
 
 > 187 victims found
 
@@ -3735,17 +4136,20 @@ _`aka vsop`_
 
 🔎 `ransomware.live`has an active  parser for indexing projectrelic's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Project Relic. Dumps, leaks, news, announcements | 🔴 | 03/06/2023 09:39 | `http://relic5zqwemjnu4veilml6prgyedj6phs7de3udhicuq53z37klxm6qd.onion` | <a href="https://images.ransomware.live/screenshots/relic5zqwemjnu4veilml6prgyedj6phs7de3udhicuq53z37klxm6qd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-projectrelic.png)
 
 
-### Posts
+### _Posts_
 
 > 5 victims found
 
@@ -3765,7 +4169,13 @@ _`aka vsop`_
 
 _`aka pwndlocker`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://msaoyrayohnp32tcgwcanhjouetb5k54aekgnwg7dcvtgtecpumrxpqd.onion` | ❌ | 
+#### **External information**
 - https://www.zdnet.com/article/prolock-ransomware-everything-you-need-to-know/
 
 - https://news.sophos.com/en-us/2020/07/27/prolock-ransomware-gives-you-the-first-8-kilobytes-of-decryption-for-free/
@@ -3776,12 +4186,9 @@ _`aka pwndlocker`_
 
 - https://iacc.memberclicks.net/assets/docs/COVID19/FBI%20-%20FLASH%20TLP%20Green%20-%20Indicators%20of%20Compromise%20Associated%20with%20ProLock....pdf
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://msaoyrayohnp32tcgwcanhjouetb5k54aekgnwg7dcvtgtecpumrxpqd.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -3792,21 +4199,24 @@ _`aka pwndlocker`_
 
 > Ransomware written in .NET, apparently derived from the codebase of win.hakbit (Thanos) ransomware.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://promethw27cbrcot.onion` | ❌ | 
+#### **External information**
 - https://therecord.media/decryptor-released-for-prometheus-ransomware-victims
 
 - https://unit42.paloaltonetworks.com/prometheus-ransomwar
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://promethw27cbrcot.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/prometheus)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -3817,22 +4227,25 @@ _`aka pwndlocker`_
 
 > Mespinosa is a ransomware which encrypts file using an asymmetric encryption and adds .pysa as file extension. According to dissectingmalware the extension "pysa" is probably derived from the Zanzibari Coin with the same name.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Pysa's Partners | 🔴 | 22/02/2022 10:11 | `http://pysa2bitc5ldeyfak4seeruqymqs4sj5wt5qkcq7aoyg4h2acqieywad.onion` | ❌ | 
+#### **External information**
 - https://www.ic3.gov/Media/News/2021/210316.pdf
 
 - https://blog.malwarebytes.com/threat-spotlight/2021/03/pysa-the-ransomware-attacking-schools
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| Pysa's Partners | 🔴 | 22/02/2022 10:11 | `http://pysa2bitc5ldeyfak4seeruqymqs4sj5wt5qkcq7aoyg4h2acqieywad.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-pysa.png)
 
 
-### Posts
+### _Posts_
 
 > 308 victims found
 
@@ -3860,22 +4273,25 @@ _`aka pwndlocker`_
 
 🔎 `ransomware.live`has an active  parser for indexing qilin's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Qilin | 🔴 | 17/02/2023 11:10 | `http://ozsxj4hwxub7gio347ac7tyqqozvfioty37skqilzo2oqfs4cw2mgtyd.onion` | <a href="https://images.ransomware.live/screenshots/ozsxj4hwxub7gio347ac7tyqqozvfioty37skqilzo2oqfs4cw2mgtyd-onion.png" target=_blank>📸</a> | 
-| Qilin blog | 🟢 | 03/08/2023 06:42 | `http://kbsqoivihgdmwczmxkbovk7ss2dcynitwhhfu5yw725dboqo5kthfaad.onion` | <a href="https://images.ransomware.live/screenshots/kbsqoivihgdmwczmxkbovk7ss2dcynitwhhfu5yw725dboqo5kthfaad-onion.png" target=_blank>📸</a> | 
+| Qilin blog | 🟢 | 07/08/2023 11:52 | `http://kbsqoivihgdmwczmxkbovk7ss2dcynitwhhfu5yw725dboqo5kthfaad.onion` | <a href="https://images.ransomware.live/screenshots/kbsqoivihgdmwczmxkbovk7ss2dcynitwhhfu5yw725dboqo5kthfaad-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 2 ransom notes](notes/qilin)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-qilin.png)
 
 
-### Posts
+### _Posts_
 
 > 30 victims found
 
@@ -3901,27 +4317,30 @@ _`aka pwndlocker`_
 
 _`login page, no posts`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 08/11/2022 04:04 | `http://gvka2m4qt5fod2fltkjmdk4gxh5oxemhpgmnmtjptms6fkgfzdd62tad.onion` | ❌ | 
+#### **External information**
 - https://www.qnap.com/en/security-advisory/QSA-21-13
 
 - https://www.qnap.com/static/landing/2021/qlocker/response/da-dk/
 
 - https://www.bleepingcomputer.com/news/security/qlocker-ransomware-shuts-down-after-extorting-hundreds-of-qnap-users/
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 08/11/2022 04:04 | `http://gvka2m4qt5fod2fltkjmdk4gxh5oxemhpgmnmtjptms6fkgfzdd62tad.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/qlocker)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/qlocker.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -3931,22 +4350,25 @@ _`login page, no posts`_
 ## **quantum**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Quantum Blog | 🟢 | 03/08/2023 06:43 | `http://quantum445bh3gzuyilxdzs5xdepf3b7lkcupswvkryf3n7hgzpxebid.onion` | <a href="https://images.ransomware.live/screenshots/quantum445bh3gzuyilxdzs5xdepf3b7lkcupswvkryf3n7hgzpxebid-onion.png" target=_blank>📸</a> | 
+| Quantum Blog | 🟢 | 07/08/2023 11:53 | `http://quantum445bh3gzuyilxdzs5xdepf3b7lkcupswvkryf3n7hgzpxebid.onion` | <a href="https://images.ransomware.live/screenshots/quantum445bh3gzuyilxdzs5xdepf3b7lkcupswvkryf3n7hgzpxebid-onion.png" target=_blank>📸</a> | 
 | Secure Chat | 🔴 | 29/08/2022 08:32 | `http://22rnyep2aa2exx3fdm26p4onwjfmhciodb55v5l3w4iny7e5bxpg3yad.onion` | ❌ | 
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/quantum.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-quantum.png)
 
 
-### Posts
+### _Posts_
 
 > 68 victims found
 
@@ -3971,35 +4393,38 @@ _`login page, no posts`_
 
 > 
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing ragnarlocker's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://rgleak7op734elep.onion` | ❌ | 
+| Home Page of Ragnar_Locker Leaks site | 🟢 | 07/08/2023 11:53 | `http://rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd.onion` | <a href="https://images.ransomware.live/screenshots/rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd-onion.png" target=_blank>📸</a> | 
+| none | 🔴 | 01/05/2021 00:00 | `http://p6o7m73ujalhgkiv.onion` | ❌ | 
+#### **External information**
 - https://news.sophos.com/en-us/2020/05/21/ragnar-locker-ransomware-deploys-virtual-machine-to-dodge-security
 
 - https://www.bleepingcomputer.com/news/security/ransomware-gang-threatens-to-leak-data-if-victim-contacts-fbi-police
 
 
-🔎 `ransomware.live`has an active  parser for indexing ragnarlocker's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://rgleak7op734elep.onion` | ❌ | 
-| Home Page of Ragnar_Locker Leaks site | 🟢 | 03/08/2023 06:44 | `http://rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd.onion` | <a href="https://images.ransomware.live/screenshots/rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd-onion.png" target=_blank>📸</a> | 
-| none | 🔴 | 01/05/2021 00:00 | `http://p6o7m73ujalhgkiv.onion` | ❌ | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 2 ransom notes](notes/ragnarlocker)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/ragnarlocker.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-ragnarlocker.png)
 
 
-### Posts
+### _Posts_
 
 > 104 victims found
 
@@ -4026,7 +4451,14 @@ _`login page, no posts`_
 
 _`shut down & offering a decryptor`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://wobpitin77vdsdiswr43duntv6eqw4rvphedutpaxycjdie6gg3binad.onion` | ❌ | 
+| Decrypt Site | 🔴 | 27/08/2021 00:03 | `http://sushlnty2j7qdzy64qnvyb6ajkwg7resd3p6agc2widnawodtcedgjid.onion` | ❌ | 
+#### **External information**
 - https://techcrunch.com/2021/08/30/ragnarok-ransomware-gang-shuts-down-and-releases-its-decryption-key
 
 - https://www.cpomagazine.com/cyber-security/ragnarok-ransomware-gang-closes-up-shop-leaves-master-decryptor-key-behind
@@ -4035,17 +4467,13 @@ _`shut down & offering a decryptor`_
 
 - previous parser: Z3JlcCAndmFyIHBvc3RfbGlua3MgPScgc291cmNlL3JhZ25hcm9rLSouaHRtbCAtLW5vLWZpbGVuYW1lIHwgY3V0IC1kICc9JyAtZiAyIHwgc2VkICdzL14gKi8vZycgfCBzZWQgLWUgJ3MvLiQvLycgLWUgJ3MvLiQvLycgIC1lICdzLy4kLy8nIHwgIGpxIC1yICcuW10udGl0bGUn
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://wobpitin77vdsdiswr43duntv6eqw4rvphedutpaxycjdie6gg3binad.onion` | ❌ | 
-| Decrypt Site | 🔴 | 27/08/2021 00:03 | `http://sushlnty2j7qdzy64qnvyb6ajkwg7resd3p6agc2widnawodtcedgjid.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/ragnarok)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 2 victims found
 
@@ -4062,22 +4490,27 @@ _`shut down & offering a decryptor`_
 
 🔎 `ransomware.live`has an active  parser for indexing ragroup's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| RA Group | 🟢 | 03/08/2023 06:44 | `http://pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd.onion` | <a href="https://images.ransomware.live/screenshots/pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd-onion.png" target=_blank>📸</a> | 
+| RA Group | 🟢 | 07/08/2023 11:54 | `http://pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd.onion` | <a href="https://images.ransomware.live/screenshots/pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-ragroup.png)
 
 
-### Posts
+### _Posts_
 
-> 13 victims found
+> 15 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`P****X`](https://google.com/search?q=P%2A%2A%2A%2AX) | 04/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/c97f782c1fb6c9d5d1a6d6186a6c4930.png" target=_blank>📸</a> |
+| [`Z****ta`](https://google.com/search?q=Z%2A%2A%2A%2Ata) | 04/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/d82810e7435f55d255267447d88cc7b4.png" target=_blank>📸</a> |
 | [`Bluelinea`](https://google.com/search?q=Bluelinea) | 30/07/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/4e2f846783561944807425318d0cb943.png" target=_blank>📸</a> |
 | [`Decimal Point Analytics Pvt`](https://google.com/search?q=Decimal+Point+Analytics+Pvt) | 30/07/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/8ef2567cf2984e3d912a0bf2cfd7e645.png" target=_blank>📸</a> |
 | [`De****int`](https://google.com/search?q=De%2A%2A%2A%2Aint) | 25/07/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/88619154bf11953aac9bd050987350d7.png" target=_blank>📸</a> |
@@ -4086,8 +4519,6 @@ _`shut down & offering a decryptor`_
 | [`Deepnoid`](https://google.com/search?q=Deepnoid) | 21/06/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/7e2b07f71a73ace9f008dad02ac5de1c.png" target=_blank>📸</a> |
 | [`Target-9`](https://google.com/search?q=Target-9) | 21/06/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/36fe681a33b2588249e9b5be88cc2f64.png" target=_blank>📸</a> |
 | [`Target-8`](https://google.com/search?q=Target-8) | 16/06/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/11565ea94e97a27a2e7e9a332e54e344.png" target=_blank>📸</a> |
-| [`Eastern Media International Corporation`](https://google.com/search?q=Eastern+Media+International+Corporation) | 25/05/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/f83f72e4952650d58946408e75acc710.png" target=_blank>📸</a> |
-| [`EyeGene`](https://google.com/search?q=EyeGene) | 28/04/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/1e2535218ba8f06ac27816eb97abae31.png" target=_blank>📸</a> |
 
 ↪️ More victims [here](/group/ragroup?id=posts)
 
@@ -4098,21 +4529,24 @@ _`shut down & offering a decryptor`_
 
 _`Forum`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://wavbeudogz6byhnardd2lkp2jafims3j7tj6k6qnywchn2csngvtffqd.onion` | ❌ | 
+| Log in - RAMP | 🟢 | 07/08/2023 11:54 | `http://rampjcdlqvgkoz5oywutpo6ggl7g6tvddysustfl6qzhr5osr24xxqqd.onion` | <a href="https://images.ransomware.live/screenshots/rampjcdlqvgkoz5oywutpo6ggl7g6tvddysustfl6qzhr5osr24xxqqd-onion.png" target=_blank>📸</a> | 
+| none | 🔴 | 01/05/2021 00:00 | `http://ramp4u5iz4xx75vmt6nk5xfrs5mrmtokzszqxhhkjqlk7pbwykaz7zid.onion` | ❌ | 
+#### **External information**
 - https://ke-la.com/new-russian-speaking-forum-a-new-place-for-raas/
 
 - https://www.toolbox.com/tech/security/news/russian-darknet-forum-ramp-reemerges-with-chinese-speaking-hackers-at-the-wheel/
 
 - https://www.linkedin.com/pulse/am-i-new-admin-cybercrime-forum-ramp-ayesha-prakash
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://wavbeudogz6byhnardd2lkp2jafims3j7tj6k6qnywchn2csngvtffqd.onion` | ❌ | 
-| Log in - RAMP | 🟢 | 03/08/2023 06:44 | `http://rampjcdlqvgkoz5oywutpo6ggl7g6tvddysustfl6qzhr5osr24xxqqd.onion` | <a href="https://images.ransomware.live/screenshots/rampjcdlqvgkoz5oywutpo6ggl7g6tvddysustfl6qzhr5osr24xxqqd-onion.png" target=_blank>📸</a> | 
-| none | 🔴 | 01/05/2021 00:00 | `http://ramp4u5iz4xx75vmt6nk5xfrs5mrmtokzszqxhhkjqlk7pbwykaz7zid.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -4125,21 +4559,24 @@ _`Forum`_
 
 🔎 `ransomware.live`has an active  parser for indexing rancoz's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Rancoz - Blog | 🟢 | 03/08/2023 06:45 | `http://ze677xuzard4lx4iul2yzf5ks4gqqzoulgj5u4n5n4bbbsxjbfr7eayd.onion` | <a href="https://images.ransomware.live/screenshots/ze677xuzard4lx4iul2yzf5ks4gqqzoulgj5u4n5n4bbbsxjbfr7eayd-onion.png" target=_blank>📸</a> | 
+| Rancoz - Blog | 🟢 | 07/08/2023 11:55 | `http://ze677xuzard4lx4iul2yzf5ks4gqqzoulgj5u4n5n4bbbsxjbfr7eayd.onion` | <a href="https://images.ransomware.live/screenshots/ze677xuzard4lx4iul2yzf5ks4gqqzoulgj5u4n5n4bbbsxjbfr7eayd-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/rancoz)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-rancoz.png)
 
 
-### Posts
+### _Posts_
 
 > 4 victims found
 
@@ -4155,12 +4592,15 @@ _`Forum`_
 ## **ranion**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| none | 🟢 | 03/08/2023 06:45 | `http://ranionv3j2o7wrn3um6de33eccbchhg32mkgnnoi72enkpp7jc25h3ad.onion` | <a href="https://images.ransomware.live/screenshots/ranionv3j2o7wrn3um6de33eccbchhg32mkgnnoi72enkpp7jc25h3ad-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 07/08/2023 11:55 | `http://ranionv3j2o7wrn3um6de33eccbchhg32mkgnnoi72enkpp7jc25h3ad.onion` | <a href="https://images.ransomware.live/screenshots/ranionv3j2o7wrn3um6de33eccbchhg32mkgnnoi72enkpp7jc25h3ad-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -4170,19 +4610,22 @@ _`Forum`_
 ## **ransomcartel**
 
 
-### External analysis
-- https://t.me/arvin_club/5075
 
-- https://twitter.com/i/web/status/1476488238521065476
-
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Ransomware - Control Panel | 🔴 | 03/03/2022 18:21 | `http://u67aylig7i6l657wxmp274eoilaowhp3boljowa6bli63rxyzfzsbtyd.onion` | ❌ | 
 | none | 🔴 | 01/05/2021 00:00 | `http://cartelirsn5l54ehcbalyyqtfb3j7be2rpvf6ujayaf5qqmg3vlwiayd.onion` | ❌ | 
 | Ransom Cartel | 🔴 | 19/01/2023 17:17 | `http://cartelraqonekult2cxbzzz2ukiff7v6cav3w373uuhenybgqulxm5id.onion` | <a href="https://images.ransomware.live/screenshots/cartelraqonekult2cxbzzz2ukiff7v6cav3w373uuhenybgqulxm5id-onion.png" target=_blank>📸</a> | 
+#### **External information**
+- https://t.me/arvin_club/5075
 
-### Posts
+- https://twitter.com/i/web/status/1476488238521065476
+
+<!-- tabs:end -->
+
+### _Posts_
 
 > no victim found
 
@@ -4193,7 +4636,16 @@ _`Forum`_
 
 > RansomExx is a ransomware family that targeted multiple companies starting in mid-2020. It shares commonalities with Defray777.
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing ransomexx's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| ransomexx2 | 🔴 | 07/08/2023 00:44 | `http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion` | <a href="https://images.ransomware.live/screenshots/rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://www.bleepingcomputer.com/news/security/computer-hardware-giant-gigabyte-hit-by-ransomexx-ransomware
 
 - https://www.cybereason.com/blog/cybereason-vs.-ransomexx-ransomware
@@ -4201,23 +4653,17 @@ _`Forum`_
 - https://www.infosecurity-magazine.com/news/aerospace-giant-embraer-hit
 
 
-🔎 `ransomware.live`has an active  parser for indexing ransomexx's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| ransomexx2 | 🔴 | 03/08/2023 04:45 | `http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion` | <a href="https://images.ransomware.live/screenshots/rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad-onion.png" target=_blank>📸</a> | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 2 ransom notes](notes/ransomexx)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-ransomexx.png)
 
 
-### Posts
+### _Posts_
 
 > 45 victims found
 
@@ -4241,29 +4687,32 @@ _`Forum`_
 ## **ransomhouse**
 
 
-### External analysis
-- https://t.me/ransom_house
-
 
 🔎 `ransomware.live`has an active  parser for indexing ransomhouse's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | ©RansomHouse | 🔴 | 01/10/2022 13:32 | `http://xw7au5pnwtl6lozbsudkmyd32n6gnqdngitjdppybudan3x3pjgpmpid.onion` | ❌ | 
-| none | 🟢 | 03/08/2023 06:46 | `http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion` | <a href="https://images.ransomware.live/screenshots/zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 07/08/2023 11:56 | `http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion` | <a href="https://images.ransomware.live/screenshots/zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid-onion.png" target=_blank>📸</a> | 
 | Ransomhouse © | 🔴 | 14/01/2023 21:31 | `http://secxrosqawaefsio3biv2dmi2c5yunf3t7ilwf54czq3v4bi7w6mbfad.onion` | ❌ | 
+#### **External information**
+- https://t.me/ransom_house
 
 
-### Ransom note
+
+#### **Ransom note**
 * [📝 2 ransom notes](notes/ransomhouse)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-ransomhouse.png)
 
 
-### Posts
+### _Posts_
 
 > 51 victims found
 
@@ -4288,7 +4737,13 @@ _`Forum`_
 
 > Ranzy Locker, Former known as ThunderX. The group hosting a data leak site in the darknet where they posting sensitive information of victims who do not pay the ransom. ThunderX was launched at the end of August 2020. Soon after launching, weaknesses were found in the code, that allowed decrypting the files that the malware encrypted. The group has fixed the code and publish a new version, then released it under the name Ranzy Locker. The Tor onion URL used by the Ranzy Leak site is the same as the one used by Ako Ransomware. The use of the same URL could indicate that both groups merged, or they are cooperating similarly to the Maze cartel.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://37rckgo66iydpvgpwve7b2el5q2zhjw4tv4lmyewufnpx4lhkekxkoqd.onion` | ❌ | 
+#### **External information**
 - https://blog.malwarebytes.com/ransomware/2021/10/threat-profile-ranzy-locker-ransomware/
 
 - https://www.picussecurity.com/resource/blog/a-detailed-walkthrough-of-ranzy-locker-ransomware-ttps
@@ -4297,28 +4752,25 @@ _`Forum`_
 
 - https://www.ic3.gov/Media/News/2021/211026.pdf
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://37rckgo66iydpvgpwve7b2el5q2zhjw4tv4lmyewufnpx4lhkekxkoqd.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/ranzy)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/ranzy.md">Crypto wallet(s) available</a>
 
 
-### Negotiation chats
+#### ** Negotiation chats**
 
 | Name | Link |
 |---|---|
 |20201015| <a href="https://chat.ransomware.live/chat/ranzy/20201015.html" target=_blank> 💬 </a> |
 |20210223| <a href="https://chat.ransomware.live/chat/ranzy/20210223.html" target=_blank> 💬 </a> |
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -4328,25 +4780,28 @@ _`Forum`_
 ## **redalert**
 
 
-### External analysis
-- https://www.bleepingcomputer.com/news/security/new-redalert-ransomware-targets-windows-linux-vmware-esxi-servers/
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Board of shame | 🔴 | 08/12/2022 07:24 | `http://blog2hkbm6gogpv2b3uytzi3bj5d5zmc4asbybumjkhuqhas355janyd.onion` | <a href="https://images.ransomware.live/screenshots/blog2hkbm6gogpv2b3uytzi3bj5d5zmc4asbybumjkhuqhas355janyd-onion.png" target=_blank>📸</a> | 
 | Login | 🔴 | 31/12/2022 16:23 | `http://je2yizds7r4uidk6uixfxwjj5w7or2agit4aj66l4lrhdbrvr3lsymid.onion` | <a href="https://images.ransomware.live/screenshots/je2yizds7r4uidk6uixfxwjj5w7or2agit4aj66l4lrhdbrvr3lsymid-onion.png" target=_blank>📸</a> | 
+#### **External information**
+- https://www.bleepingcomputer.com/news/security/new-redalert-ransomware-targets-windows-linux-vmware-esxi-servers/
 
 
-### Ransom note
+
+#### **Ransom note**
 * [📝 1 ransom note](notes/redalert)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-redalert.png)
 
 
-### Posts
+### _Posts_
 
 > 6 victims found
 
@@ -4365,29 +4820,31 @@ _`Forum`_
 
 > Sodinokibi ransomware group also known as REvil (Ransomware Evil) operates as a ransomware-as-a-service (RaaS) model. After the group compromised his victims, they would threaten to publish the victim's sensitive data on their darknet blog named 'Happy Blog', unless the ransom is paid. The ransomware malware code used by REvil is pretty similar to the ransomware code used by DarkSide - a different threat actor. REvil group claims to steal information after a successful attack on the supplier of the tech giant Apple and stole confidential schematics of their upcoming products.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| 404 Not Found | 🔴 | 19/08/2022 12:16 | `http://dnpscnbaix6nkwvystl3yxglz7nteicqrou3t75tpcc5532cztc46qyd.onion` | ❌ | 
+| 404 Not Found | 🔴 | 19/08/2022 12:17 | `http://aplebzu47wgazapdqks6vrcv6zcnjppkbxbr6wketf56nf6aq2nmyoyd.onion` | ❌ | 
+| Blog | 🔴 | 06/01/2023 15:05 | `http://blogxxu75w63ujqarv476otld7cyjkq4yoswzt4ijadkjwvg3vrvd5yd.onion` | <a href="https://images.ransomware.live/screenshots/blogxxu75w63ujqarv476otld7cyjkq4yoswzt4ijadkjwvg3vrvd5yd-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://www.zdnet.com/article/revil-ransomware-group-resurfaces-after-brief-hiatus
 
 - https://www.macrumors.com/2021/04/26/revil-delists-stolen-apple-schematics-threat
 
 - https://www.theverge.com/2021/7/22/22589643/ransomware-kaseya-vsa-decryptor-revil
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| 404 Not Found | 🔴 | 19/08/2022 12:16 | `http://dnpscnbaix6nkwvystl3yxglz7nteicqrou3t75tpcc5532cztc46qyd.onion` | ❌ | 
-| 404 Not Found | 🔴 | 19/08/2022 12:17 | `http://aplebzu47wgazapdqks6vrcv6zcnjppkbxbr6wketf56nf6aq2nmyoyd.onion` | ❌ | 
-| Blog | 🔴 | 06/01/2023 15:05 | `http://blogxxu75w63ujqarv476otld7cyjkq4yoswzt4ijadkjwvg3vrvd5yd.onion` | <a href="https://images.ransomware.live/screenshots/blogxxu75w63ujqarv476otld7cyjkq4yoswzt4ijadkjwvg3vrvd5yd-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 3 ransom notes](notes/revil)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/revil.md">Crypto wallet(s) available</a>
 
 
-### Negotiation chats
+#### ** Negotiation chats**
 
 | Name | Link |
 |---|---|
@@ -4412,13 +4869,14 @@ _`Forum`_
 |20210708| <a href="https://chat.ransomware.live/chat/revil/20210708.html" target=_blank> 💬 </a> |
 |20210709| <a href="https://chat.ransomware.live/chat/revil/20210709.html" target=_blank> 💬 </a> |
 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-revil.png)
 
 
-### Posts
+### _Posts_
 
 > 41 victims found
 
@@ -4445,28 +4903,32 @@ _`Forum`_
 
 🔎 `ransomware.live`has an active  parser for indexing rhysida's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Rhysida | 🟢 | 03/08/2023 06:47 | `http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 03/08/2023 06:47 | `http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 03/08/2023 06:47 | `http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad-onion.png" target=_blank>📸</a> | 
+| Rhysida | 🟢 | 07/08/2023 11:56 | `http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 07/08/2023 11:57 | `http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 07/08/2023 11:57 | `http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/rhysida)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-rhysida.png)
 
 
-### Posts
+### _Posts_
 
-> 36 victims found
+> 37 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`United Tractors`](https:/www.unitedtractors.com/) | 03/08/2023 | United Tractors United Tractors is a heavy equipment distribution company headquartered in Jakarta, Indonesia. |   |
 | [`ESMOD`](https:/www.esmod.com/) | 28/07/2023 | ESMOD ESMOD, founded by master tailor Alexis Lavigne, has been one of the most prestigious fashion universities in the world since the first students crossed its threshold in 1841. |   |
 | [`ESKA Erich Schweizer`](https:/www.eska-fuses.de/) | 28/07/2023 | ESKA Erich Schweizer ESKA is a leading German manufacturer of all types of fuses and passive components. |   |
 | [`Rouzbeh Educational Complex`](https:/www.rouzbeh.info/) | 28/07/2023 | Rouzbeh Educational Complex The industry in which Rouzbeh Educational Complex operates is educational institution. The country where Rouzbeh Educational Complex is located is Iran, while the company's headquarters is in Tehran. | <a href="https://images.ransomware.live/screenshots/posts/62f0be742820300993a64d5fc9bb6ce4.png" target=_blank>📸</a> |
@@ -4476,7 +4938,6 @@ _`Forum`_
 | [`Lumberton Independent School District`](https:/www.lumbertonisd.org/) | 19/07/2023 | Lumberton Independent School District Lumberton Independent School District is a public school district based in Lumberton, Texas. In addition to Lumberton, the district serves the city of Rose Hill Acres. |   |
 | [`Stephen F. Austin State University`](https:/www.sfasu.edu/) | 17/07/2023 | Stephen F. Austin State University Stephen F. Austin State University is a public university in Nacogdoches, Texas.    More |   |
 | [`IRIS Informatique`](https:/www.iris-info.com/) | 17/07/2023 | IRIS Informatique IRIS Informatique is a team of experts with many areas of expertise: Helpdesk, IT Logistics, IT Repair and Recycling, delegation of IT resources, etc.    More |   |
-| [`ICT-College`](https:/www.ict-college.net/) | 17/07/2023 | ICT-College ICT-College's experienced staff are always available to help and answer questions.    More |   |
 
 ↪️ More victims [here](/group/rhysida?id=posts)
 
@@ -4486,19 +4947,22 @@ _`Forum`_
 
 > 
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| Today on Tumblr | 🟢 | 07/08/2023 11:58 | `http://robinhoodleaks.tumblr.com` | <a href="https://images.ransomware.live/screenshots/robinhoodleaks-tumblr-com.png" target=_blank>📸</a> | 
+#### **External information**
 - https://www.sentinelone.com/labs/robinhood-ransomware-coolmaker-functions-not-so-cool/
 
 - https://blog.malwarebytes.com/threat-spotlight/2020/02/threat-spotlight-robbinhood-ransomware-takes-the-drivers-seat/
 
 - previous parser: Z3JlcCAnPGgyIGNsYXNzPSJ0aXRsZSInIHNvdXJjZS9yb2Jpbmhvb2QtKi5odG1sIC0tbm8tZmlsZW5hbWUgfCBjdXQgLWQgJz4nIC1mIDMgfCBjdXQgLWQgJzwnIC1mIDE=
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| Today on Tumblr | 🟢 | 03/08/2023 06:48 | `http://robinhoodleaks.tumblr.com` | <a href="https://images.ransomware.live/screenshots/robinhoodleaks-tumblr-com.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 1 victim found
 
@@ -4512,26 +4976,29 @@ _`Forum`_
 
 > According to PCrisk, Rook is ransomware (an updated variant of Babuk) that prevents victims from accessing/opening files by encrypting them. It also modifies filenames and creates a text file/ransom note (HowToRestoreYourFiles.txt). Rook renames files by appending the .Rook extension. For example, it renames 1.jpg to 1.jpg.Rook, 2.jpg to 2.jpg.Rook.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| We Are Rook!!! | 🔴 | 26/01/2022 15:24 | `http://gamol6n6p2p4c3ad7gxmx3ur7wwdwlywebo2azv3vv5qlmjmole2zbyd.onion` | ❌ | 
+#### **External information**
 - https://www.sentinelone.com/labs/new-rook-ransomware-feeds-off-the-code-of-babuk/
 
 - https://www.bleepingcomputer.com/news/security/rook-ransomware-is-yet-another-spawn-of-the-leaked-babuk-code/
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| We Are Rook!!! | 🔴 | 26/01/2022 15:24 | `http://gamol6n6p2p4c3ad7gxmx3ur7wwdwlywebo2azv3vv5qlmjmole2zbyd.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/rook)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-rook.png)
 
 
-### Posts
+### _Posts_
 
 > 9 victims found
 
@@ -4556,22 +5023,25 @@ _`Forum`_
 
 🔎 `ransomware.live`has an active  parser for indexing royal's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Royal | 🟢 | 03/08/2023 06:48 | `http://royal2xthig3ou5hd7zsliqagy6yygk2cdelaxtni2fyad6dpmpxedid.onion` | <a href="https://images.ransomware.live/screenshots/royal2xthig3ou5hd7zsliqagy6yygk2cdelaxtni2fyad6dpmpxedid-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 03/08/2023 06:49 | `http://royal4ezp7xrbakkus3oofjw6gszrohpodmdnfbe5e4w3og5sm7vb3qd.onion` | <a href="https://images.ransomware.live/screenshots/royal4ezp7xrbakkus3oofjw6gszrohpodmdnfbe5e4w3og5sm7vb3qd-onion.png" target=_blank>📸</a> | 
+| Royal | 🟢 | 07/08/2023 11:58 | `http://royal2xthig3ou5hd7zsliqagy6yygk2cdelaxtni2fyad6dpmpxedid.onion` | <a href="https://images.ransomware.live/screenshots/royal2xthig3ou5hd7zsliqagy6yygk2cdelaxtni2fyad6dpmpxedid-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 07/08/2023 11:59 | `http://royal4ezp7xrbakkus3oofjw6gszrohpodmdnfbe5e4w3og5sm7vb3qd.onion` | <a href="https://images.ransomware.live/screenshots/royal4ezp7xrbakkus3oofjw6gszrohpodmdnfbe5e4w3og5sm7vb3qd-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/royal)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-royal.png)
 
 
-### Posts
+### _Posts_
 
 > 211 victims found
 
@@ -4595,12 +5065,15 @@ _`Forum`_
 ## **rransom**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 14/04/2023 05:40 | `http://t2tqvp4pctcr7vxhgz5yd5x4ino5tw7jzs3whbntxirhp32djhi7q3id.onion` | <a href="https://images.ransomware.live/screenshots/t2tqvp4pctcr7vxhgz5yd5x4ino5tw7jzs3whbntxirhp32djhi7q3id-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -4610,21 +5083,24 @@ _`Forum`_
 ## **sabbath**
 
 
-### External analysis
-- https://www.mandiant.com/resources/sabbath-ransomware-affiliate
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | BLOG | 🔴 | 13/11/2021 03:45 | `http://54bb47h5qu4k7l4d7v5ix3i6ak6elysn3net4by4ihmvrhu7cvbskoqd.onion` | ❌ | 
 | none | 🔴 | 13/04/2022 03:32 | `http://54bb47h.blog` | <a href="https://images.ransomware.live/screenshots/54bb47h-blog.png" target=_blank>📸</a> | 
+#### **External information**
+- https://www.mandiant.com/resources/sabbath-ransomware-affiliate
 
-### Total Attacks Over Time
+<!-- tabs:end -->
+
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-sabbath.png)
 
 
-### Posts
+### _Posts_
 
 > 17 victims found
 
@@ -4648,16 +5124,19 @@ _`Forum`_
 ## **shadow**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| DuckDuckGo — Privacy, simplified. | 🟢 | 03/08/2023 06:50 | `http://lc65fb3wrvox6xlyn4hklwjcojau55diqxxylqs4qsfng23ftzijnxad.onion` | <a href="https://images.ransomware.live/screenshots/lc65fb3wrvox6xlyn4hklwjcojau55diqxxylqs4qsfng23ftzijnxad-onion.png" target=_blank>📸</a> | 
+| DuckDuckGo — Privacy, simplified. | 🟢 | 07/08/2023 11:59 | `http://lc65fb3wrvox6xlyn4hklwjcojau55diqxxylqs4qsfng23ftzijnxad.onion` | <a href="https://images.ransomware.live/screenshots/lc65fb3wrvox6xlyn4hklwjcojau55diqxxylqs4qsfng23ftzijnxad-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/shadow)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -4667,17 +5146,20 @@ _`Forum`_
 ## **shaoleaks**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Shao leaks team | 🔴 | 01/11/2022 16:55 | `http://crptd5sv5bdz6hovrbkac6mnp3rt7zij62njsqwh5a6ldd3asxdd22qd.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-shaoleaks.png)
 
 
-### Posts
+### _Posts_
 
 > 4 victims found
 
@@ -4694,7 +5176,18 @@ _`Forum`_
 
 > Snatch is a ransomware which infects victims by rebooting the PC into Safe Mode. Most of the existing security protections do not run in Safe Mode so that it the malware can act without expected countermeasures and it can encrypt as many files as it finds. It uses common packers such as UPX to hide its payload.
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing snatch's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| News | 🟢 | 07/08/2023 12:00 | `http://hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad.onion` | <a href="https://images.ransomware.live/screenshots/hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad-onion.png" target=_blank>📸</a> | 
+| Access Denied | 🔴 | 29/01/2023 17:17 | `http://snatch.press` | <a href="https://images.ransomware.live/screenshots/snatch-press.png" target=_blank>📸</a> | 
+| News | 🟢 | 07/08/2023 12:00 | `http://snatchteam.top` | <a href="https://images.ransomware.live/screenshots/snatchteam-top.png" target=_blank>📸</a> | 
+#### **External information**
 - https://t.me/snatch_news
 
 - https://lifars.com/wp-content/uploads/2020/07/Snatch-Ransomware-Malware-Analysis-Case-Study.pdf
@@ -4704,25 +5197,17 @@ _`Forum`_
 - https://thedfirreport.com/2020/06/21/snatch-ransomware/
 
 
-🔎 `ransomware.live`has an active  parser for indexing snatch's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| News | 🟢 | 03/08/2023 06:50 | `http://hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad.onion` | <a href="https://images.ransomware.live/screenshots/hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad-onion.png" target=_blank>📸</a> | 
-| Access Denied | 🔴 | 29/01/2023 17:17 | `http://snatch.press` | <a href="https://images.ransomware.live/screenshots/snatch-press.png" target=_blank>📸</a> | 
-| News | 🟢 | 03/08/2023 06:51 | `http://snatchteam.top` | <a href="https://images.ransomware.live/screenshots/snatchteam-top.png" target=_blank>📸</a> | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/snatch)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-snatch.png)
 
 
-### Posts
+### _Posts_
 
 > 102 victims found
 
@@ -4747,12 +5232,15 @@ _`Forum`_
 
 > Ransomware, written in .NET.
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | SOLIDBIT LOGIN | 🔴 | 27/08/2022 10:45 | `http://solidb2jco63vbhx4sfimnqmwhtdjk4jbbgq7a24cmzzkfse4rduxgid.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -4762,20 +5250,23 @@ _`Forum`_
 ## **sparta**
 
 
-### External analysis
-- spartaprogroup@strong.pm
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Blog | 🔴 | 01/10/2022 15:29 | `http://zj2ex44e2b2xi43m2txk4uwi3l55aglsarre7repw7rkfwpj54j46iqd.onion` | ❌ | 
+#### **External information**
+- spartaprogroup@strong.pm
 
-### Total Attacks Over Time
+<!-- tabs:end -->
+
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-sparta.png)
 
 
-### Posts
+### _Posts_
 
 > 16 victims found
 
@@ -4799,12 +5290,15 @@ _`Forum`_
 ## **spook**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Spook | 🔴 | 26/10/2021 02:30 | `http://spookuhvfyxzph54ikjfwf2mwmxt572krpom7reyayrmxbkizbvkpaid.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 35 victims found
 
@@ -4828,24 +5322,27 @@ _`Forum`_
 ## **stormous**
 
 
-### External analysis
-- stormouss21@dnmx.org
-
 
 🔎 `ransomware.live`has an active  parser for indexing stormous's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Database Shop | 🔴 | 09/05/2022 22:27 | `http://3slz4povugieoi3tw7sblxoowxhbzxeju427cffsst5fo2tizepwatid.onion` | ❌ | 
 | STORMOUS blog | 🔴 | 25/07/2023 22:50 | `http://h3reihqb2y7woqdary2g3bmk3apgtxuyhx4j2ftovbhe3l5svev7bdyd.onion` | <a href="https://images.ransomware.live/screenshots/h3reihqb2y7woqdary2g3bmk3apgtxuyhx4j2ftovbhe3l5svev7bdyd-onion.png" target=_blank>📸</a> | 
+#### **External information**
+- stormouss21@dnmx.org
 
-### Total Attacks Over Time
+<!-- tabs:end -->
+
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-stormous.png)
 
 
-### Posts
+### _Posts_
 
 > 62 victims found
 
@@ -4870,23 +5367,26 @@ _`Forum`_
 
 > Ransomware, written in Delphi.
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 17/12/2022 20:37 | `http://chat5sqrnzqewampznybomgn4hf2m53tybkarxk4sfaktwt7oqpkcvyd.onion` | <a href="https://images.ransomware.live/screenshots/chat5sqrnzqewampznybomgn4hf2m53tybkarxk4sfaktwt7oqpkcvyd-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - https://tria.ge/211112-lbfz1adab7
 
 - https://medium.com/walmartglobaltech/sugar-ransomware-a-new-raas-a5d94d58d9fb
 
 - https://www.bleepingcomputer.com/news/security/a-look-at-the-new-sugar-ransomware-demanding-low-ransoms/
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 17/12/2022 20:37 | `http://chat5sqrnzqewampznybomgn4hf2m53tybkarxk4sfaktwt7oqpkcvyd.onion` | <a href="https://images.ransomware.live/screenshots/chat5sqrnzqewampznybomgn4hf2m53tybkarxk4sfaktwt7oqpkcvyd-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/sugar)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -4897,33 +5397,36 @@ _`Forum`_
 
 > 
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| News | 🔴 | 02/05/2023 09:44 | `http://x2miyuiwpib2imjr5ykyjngdu7v6vprkkhjltrk4qafymtawey4qzwid.onion` | <a href="https://images.ransomware.live/screenshots/x2miyuiwpib2imjr5ykyjngdu7v6vprkkhjltrk4qafymtawey4qzwid-onion.png" target=_blank>📸</a> | 
+| none | 🔴 | 01/05/2021 00:00 | `http://nbzzb6sa6xuura2z.onion` | ❌ | 
+#### **External information**
 - https://www.tetradefense.com/incident-response-services/cause-and-effect-suncrypt-ransomware-analysis
 
 - https://www.intezer.com/blog/malware-analysis/when-viruses-mutate-did-suncrypt-ransomware-evolve-from-qnapcrypt
 
 - https://medium.com/s2wblog/case-analysis-of-suncrypt-ransomware-negotiation-and-bitcoin-transaction-43a2194ac0bc
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| News | 🔴 | 02/05/2023 09:44 | `http://x2miyuiwpib2imjr5ykyjngdu7v6vprkkhjltrk4qafymtawey4qzwid.onion` | <a href="https://images.ransomware.live/screenshots/x2miyuiwpib2imjr5ykyjngdu7v6vprkkhjltrk4qafymtawey4qzwid-onion.png" target=_blank>📸</a> | 
-| none | 🔴 | 01/05/2021 00:00 | `http://nbzzb6sa6xuura2z.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/suncrypt)
 
-### Crypto wallets
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/suncrypt.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-suncrypt.png)
 
 
-### Posts
+### _Posts_
 
 > 30 victims found
 
@@ -4950,19 +5453,22 @@ _`Forum`_
 
 _`no longer in operation - rebrand`_
 
-### External analysis
-- https://www.zdnet.com/article/synack-ransomware-group-releases-decryption-keys-as-they-rebrand-to-el-cometa
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | end of game | 🔴 | 18/08/2021 00:02 | `http://xqkz2rmrqkeqf6sjbrb47jfwnqxcd4o2zvaxxzrpbh2piknms37rw2ad.onion` | ❌ | 
+#### **External information**
+- https://www.zdnet.com/article/synack-ransomware-group-releases-decryption-keys-as-they-rebrand-to-el-cometa
 
-### Crypto wallets
+
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/synack.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -4973,28 +5479,31 @@ _`no longer in operation - rebrand`_
 
 > According to PCrisk, Trigona is ransomware that encrypts files and appends the ._locked extension to filenames. Also, it drops the how_to_decrypt.hta file that opens a ransom note. An example of how Trigona renames files: it renames 1.jpg to 1.jpg._locked, 2.png to 2.png._locked, and so forth.It embeds the encrypted decryption key, the campaign ID, and the victim ID in the encrypted files.
 
-### External analysis
-- https://www.fortinet.com/blog/threat-research/ransomware-roundup-trigona-ransomware
-
 
 🔎 `ransomware.live`has an active  parser for indexing trigona's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Sign up | 🟢 | 03/08/2023 06:52 | `http://3x55o3u2b7cjs54eifja5m3ottxntlubhjzt6k6htp5nrocjmsxxh7ad.onion` | <a href="https://images.ransomware.live/screenshots/3x55o3u2b7cjs54eifja5m3ottxntlubhjzt6k6htp5nrocjmsxxh7ad-onion.png" target=_blank>📸</a> | 
+| Sign up | 🟢 | 07/08/2023 10:54 | `http://3x55o3u2b7cjs54eifja5m3ottxntlubhjzt6k6htp5nrocjmsxxh7ad.onion` | <a href="https://images.ransomware.live/screenshots/3x55o3u2b7cjs54eifja5m3ottxntlubhjzt6k6htp5nrocjmsxxh7ad-onion.png" target=_blank>📸</a> | 
 | Blog | 🔴 | 26/06/2023 10:51 | `http://6n5tfadusp4sarzuxntz34q4ohspiaya2mc6aw6uhlusfqfsdomavyyd.onion` | <a href="https://images.ransomware.live/screenshots/6n5tfadusp4sarzuxntz34q4ohspiaya2mc6aw6uhlusfqfsdomavyyd-onion.png" target=_blank>📸</a> | 
+#### **External information**
+- https://www.fortinet.com/blog/threat-research/ransomware-roundup-trigona-ransomware
 
 
-### Ransom note
+
+#### **Ransom note**
 * [📝 1 ransom note](notes/trigona)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-trigona.png)
 
 
-### Posts
+### _Posts_
 
 > 19 victims found
 
@@ -5018,16 +5527,19 @@ _`no longer in operation - rebrand`_
 ## **u-bomb**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | U-bomb | 🔴 | 28/05/2023 23:48 | `http://contiuevxdgdhn3zl2kubpajtfgqq4ssj2ipv6ujw7fwhggev3rk6hqd.onion` | <a href="https://images.ransomware.live/screenshots/contiuevxdgdhn3zl2kubpajtfgqq4ssj2ipv6ujw7fwhggev3rk6hqd-onion.png" target=_blank>📸</a> | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/u-bomb)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -5039,19 +5551,22 @@ _`no longer in operation - rebrand`_
 
 _`ioc - hash : 0a08d9b027457da99725968eb4566eb836a7d503219ad5690f851caecabce93d`_
 
-### External analysis
-- https://www.glimps.fr/underground-ransomware/
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| SignIn - Chat | 🟢 | 03/08/2023 06:52 | `http://undgrddapc4reaunnrdrmnagvdelqfvmgycuvilgwb5uxm25sxawaoqd.onion` | <a href="https://images.ransomware.live/screenshots/undgrddapc4reaunnrdrmnagvdelqfvmgycuvilgwb5uxm25sxawaoqd-onion.png" target=_blank>📸</a> | 
+| SignIn - Chat | 🟢 | 07/08/2023 10:54 | `http://undgrddapc4reaunnrdrmnagvdelqfvmgycuvilgwb5uxm25sxawaoqd.onion` | <a href="https://images.ransomware.live/screenshots/undgrddapc4reaunnrdrmnagvdelqfvmgycuvilgwb5uxm25sxawaoqd-onion.png" target=_blank>📸</a> | 
+#### **External information**
+- https://www.glimps.fr/underground-ransomware/
 
 
-### Ransom note
+
+#### **Ransom note**
 * [📝 1 ransom note](notes/underground)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -5063,13 +5578,16 @@ _`ioc - hash : 0a08d9b027457da99725968eb4566eb836a7d503219ad5690f851caecabce93d`
 
 _`nodes or hosts with no current attribution or identification`_
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://tdoe2fiiamwkiadhx2a4dfq56ztlqhzl2vckgwmjtoanfaya4kqvvvyd.onion` | ❌ | 
 | none | 🔴 | 01/05/2021 00:00 | `http://darktorhvabc652txfc575oendhykqcllb7bh7jhhsjduocdlyzdbmqd.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -5083,17 +5601,20 @@ _`nodes or hosts with no current attribution or identification`_
 
 🔎 `ransomware.live`has an active  parser for indexing unsafe's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Home - UnSafeBlog | 🔴 | 25/07/2023 22:52 | `http://unsafeipw6wbkzzmj7yqp7bz6j7ivzynggmwxsm6u2wwfmfqrxqrrhyd.onion` | <a href="https://images.ransomware.live/screenshots/unsafeipw6wbkzzmj7yqp7bz6j7ivzynggmwxsm6u2wwfmfqrxqrrhyd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-unsafe.png)
 
 
-### Posts
+### _Posts_
 
 > 11 victims found
 
@@ -5123,17 +5644,20 @@ _`V is Vendetta a new blog from Cuba Ransomware`_
 
 🔎 `ransomware.live`has an active  parser for indexing vendetta's victims
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Vendetta | 🟢 | 03/08/2023 06:53 | `http://test.cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion` | <a href="https://images.ransomware.live/screenshots/test-cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd-onion.png" target=_blank>📸</a> | 
+| Vendetta | 🟢 | 07/08/2023 10:55 | `http://test.cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion` | <a href="https://images.ransomware.live/screenshots/test-cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-vendetta.png)
 
 
-### Posts
+### _Posts_
 
 > 3 victims found
 
@@ -5148,13 +5672,16 @@ _`V is Vendetta a new blog from Cuba Ransomware`_
 ## **vfokx**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://vfokxcdzjbpehgit223vzdzwte47l3zcqtafj34qrr26htjo4uf3obid.onion` | ❌ | 
 | none | 🔴 | 01/05/2021 00:00 | `http://746pbrxl7acvrlhzshosye3b3udk4plurpxt2pp27pojfhkkaooqiiqd.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -5167,7 +5694,21 @@ _`V is Vendetta a new blog from Cuba Ransomware`_
 
 _`ecdmr42axxx.onion - fileserver`_
 
-### External analysis
+
+🔎 `ransomware.live`has an active  parser for indexing vicesociety's victims
+
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://4hzyuotli6maqa4u.onion` | ❌ | 
+| Vice Society - Official Site | 🟢 | 07/08/2023 10:55 | `http://vsociethok6sbprvevl4dlwbqrzyhxcxaqpvcqt5belwvsuxaxsutyad.onion` | <a href="https://images.ransomware.live/screenshots/vsociethok6sbprvevl4dlwbqrzyhxcxaqpvcqt5belwvsuxaxsutyad-onion.png" target=_blank>📸</a> | 
+| there is nothing... | 🔴 | 21/09/2022 17:27 | `http://ecdmr42a34qovoph557zotkfvth4fsz56twvwgiylstjup4r5bpc4oad.onion` | ❌ | 
+| Vice Society - Official Site | 🟢 | 07/08/2023 10:56 | `http://wmp2rvrkecyx72i3x7ejhyd3yr6fn5uqo7wfus7cz7qnwr6uzhcbrwad.onion` | <a href="https://images.ransomware.live/screenshots/wmp2rvrkecyx72i3x7ejhyd3yr6fn5uqo7wfus7cz7qnwr6uzhcbrwad-onion.png" target=_blank>📸</a> | 
+| Vice Society - Official Site | 🟢 | 07/08/2023 10:57 | `http://ssq4zimieeanazkzc5ld4v5hdibi2nzwzdibfh5n5w4pw5mcik76lzyd.onion` | <a href="https://images.ransomware.live/screenshots/ssq4zimieeanazkzc5ld4v5hdibi2nzwzdibfh5n5w4pw5mcik76lzyd-onion.png" target=_blank>📸</a> | 
+| Vice Society - Official Site | 🟢 | 07/08/2023 10:58 | `http://ml3mjpuhnmse4kjij7ggupenw34755y4uj7t742qf7jg5impt5ulhkid.onion` | <a href="https://images.ransomware.live/screenshots/ml3mjpuhnmse4kjij7ggupenw34755y4uj7t742qf7jg5impt5ulhkid-onion.png" target=_blank>📸</a> | 
+#### **External information**
 - v-society.official@onionmail.org
 
 - ViceSociety@onionmail.org
@@ -5175,28 +5716,17 @@ _`ecdmr42axxx.onion - fileserver`_
 - https://blog.talosintelligence.com/2021/08/vice-society-ransomware-printnightmare.html
 
 
-🔎 `ransomware.live`has an active  parser for indexing vicesociety's victims
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://4hzyuotli6maqa4u.onion` | ❌ | 
-| Vice Society - Official Site | 🟢 | 03/08/2023 06:53 | `http://vsociethok6sbprvevl4dlwbqrzyhxcxaqpvcqt5belwvsuxaxsutyad.onion` | <a href="https://images.ransomware.live/screenshots/vsociethok6sbprvevl4dlwbqrzyhxcxaqpvcqt5belwvsuxaxsutyad-onion.png" target=_blank>📸</a> | 
-| there is nothing... | 🔴 | 21/09/2022 17:27 | `http://ecdmr42a34qovoph557zotkfvth4fsz56twvwgiylstjup4r5bpc4oad.onion` | ❌ | 
-| Vice Society - Official Site | 🟢 | 03/08/2023 06:54 | `http://wmp2rvrkecyx72i3x7ejhyd3yr6fn5uqo7wfus7cz7qnwr6uzhcbrwad.onion` | <a href="https://images.ransomware.live/screenshots/wmp2rvrkecyx72i3x7ejhyd3yr6fn5uqo7wfus7cz7qnwr6uzhcbrwad-onion.png" target=_blank>📸</a> | 
-| Vice Society - Official Site | 🟢 | 03/08/2023 06:55 | `http://ssq4zimieeanazkzc5ld4v5hdibi2nzwzdibfh5n5w4pw5mcik76lzyd.onion` | <a href="https://images.ransomware.live/screenshots/ssq4zimieeanazkzc5ld4v5hdibi2nzwzdibfh5n5w4pw5mcik76lzyd-onion.png" target=_blank>📸</a> | 
-| Vice Society - Official Site | 🟢 | 03/08/2023 06:56 | `http://ml3mjpuhnmse4kjij7ggupenw34755y4uj7t742qf7jg5impt5ulhkid.onion` | <a href="https://images.ransomware.live/screenshots/ml3mjpuhnmse4kjij7ggupenw34755y4uj7t742qf7jg5impt5ulhkid-onion.png" target=_blank>📸</a> | 
-
-
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/vicesociety)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-vicesociety.png)
 
 
-### Posts
+### _Posts_
 
 > 187 victims found
 
@@ -5221,19 +5751,22 @@ _`ecdmr42axxx.onion - fileserver`_
 
 > WannaCry ransomware is a cyber attack that spreads by exploiting vulnerabilities in the Windows operating system. At its peak in May 2017, WannaCry became a global threat. Cybercriminals used the ransomware to hold an organization's data hostage and extort money in the form of cryptocurrency. WannaCry spreads using EternalBlue, an exploit leaked from the National Security Agency (NSA). EternalBlue enables attackers to use a zero-day vulnerability to gain access to a system. It targets Windows computers that use a legacy version of the Server Message Block (SMB) protocol.
 
-### External analysis
-- https://en.wikipedia.org/wiki/WannaCry_ransomware_attack
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://none.` | ❌ | 
+#### **External information**
+- https://en.wikipedia.org/wiki/WannaCry_ransomware_attack
 
-### Crypto wallets
+
+#### **Crypto Wallet**
 * 💰 <a href="/#/crypto/wannacry.md">Crypto wallet(s) available</a>
 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -5243,12 +5776,15 @@ _`ecdmr42axxx.onion - fileserver`_
 ## **x001xs**
 
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| BITCARDS - Prepaid cards | 🟢 | 03/08/2023 06:56 | `http://nalr2uqsave7y2r235am5jsfiklfjh5h4jc5nztu3rzvmhklwt5j6kid.onion` | <a href="https://images.ransomware.live/screenshots/nalr2uqsave7y2r235am5jsfiklfjh5h4jc5nztu3rzvmhklwt5j6kid-onion.png" target=_blank>📸</a> | 
+| BITCARDS - Prepaid cards | 🟢 | 07/08/2023 10:58 | `http://nalr2uqsave7y2r235am5jsfiklfjh5h4jc5nztu3rzvmhklwt5j6kid.onion` | <a href="https://images.ransomware.live/screenshots/nalr2uqsave7y2r235am5jsfiklfjh5h4jc5nztu3rzvmhklwt5j6kid-onion.png" target=_blank>📸</a> | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -5260,17 +5796,20 @@ _`ecdmr42axxx.onion - fileserver`_
 
 _`xing use a custom mountlocker exe`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| 星Team News | 🔴 | 24/01/2022 06:12 | `http://xingnewj6m4qytljhfwemngm7r7rogrindbq7wrfeepejgxc3bwci7qd.onion` | ❌ | 
+#### **External information**
 - https://www.izoologic.com/2021/06/19/xing-locker-team-ransomgroup-is-on-a-roll-they-recently-hit-sharafi-group-investments
 
 - https://itsecuritywire.com/quick-bytes/xinglocker-spreading-worm-using-mountlocker
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| 星Team News | 🔴 | 24/01/2022 06:12 | `http://xingnewj6m4qytljhfwemngm7r7rogrindbq7wrfeepejgxc3bwci7qd.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > 21 victims found
 
@@ -5296,17 +5835,20 @@ _`xing use a custom mountlocker exe`_
 
 _`aka fonix`_
 
-### External analysis
+
+<!-- tabs:start -->
+#### **URLs**
+| Title | Available | Last visit | fqdn | Screenshot 
+|---|---|---|---|---|
+| none | 🔴 | 01/05/2021 00:00 | `http://wj3b2wtj7u2bzup75tzhnso56bin6bnvsxcbwbfcuvzpc4vcixbywlid.onion` | ❌ | 
+#### **External information**
 - https://www.bleepingcomputer.com/news/security/fonix-ransomware-shuts-down-and-releases-master-decryption-key/
 
 - https://www.sentinelone.com/labs/the-fonix-raas-new-low-key-threat-with-unnecessary-complexities/
 
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🔴 | 01/05/2021 00:00 | `http://wj3b2wtj7u2bzup75tzhnso56bin6bnvsxcbwbfcuvzpc4vcixbywlid.onion` | ❌ | 
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
@@ -5317,21 +5859,24 @@ _`aka fonix`_
 
 > According to PCrisk, Yanluowang is ransomware that encrypts (and renames) files, ends all running processes, stops services, and creates the README.txt file containing a ransom note. It appends the .yanluowang extension to filenames. Cybercriminals behind Yanluowang are targeting enterprise entities and organizations in the financial sector.Files encrypted by Yanluowang can be decrypted with this tool (it is possible to decrypt all files if the original file is larger than 3GB. If the original file is smaller than 3GB, then only smaller files can be decrypted).
 
-### URLs
+
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Yanluowang | 🔴 | 01/11/2022 16:59 | `http://jukswsxbh3jsxuddvidrjdvwuohtsy4kxg2axbppiyclomt2qciyfoad.onion` | ❌ | 
 
 
-### Ransom note
+#### **Ransom note**
 * [📝 1 ransom note](notes/yanluowang)
+<!-- tabs:end -->
 
-### Total Attacks Over Time
+### _Total Attacks Over Time_
 
 ![Statistics](/graphs/stats-yanluowang.png)
 
 
-### Posts
+### _Posts_
 
 > 6 victims found
 
@@ -5349,62 +5894,27 @@ _`aka fonix`_
 ## **zeon**
 
 
-### External analysis
-- https://id-ransomware.blogspot.com/2022/02/zeon-ransomware.html
 
-### URLs
+<!-- tabs:start -->
+#### **URLs**
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | ZEON.Recovery - Enter the key | 🔴 | 28/02/2023 09:11 | `http://zeonrefpbompx6rwdqa5hxgtp2cxgfmoymlli3azoanisze33pp3x3yd.onion` | <a href="https://images.ransomware.live/screenshots/zeonrefpbompx6rwdqa5hxgtp2cxgfmoymlli3azoanisze33pp3x3yd-onion.png" target=_blank>📸</a> | 
+#### **External information**
+- https://id-ransomware.blogspot.com/2022/02/zeon-ransomware.html
 
 
-### Ransom note
+
+#### **Ransom note**
 * [📝 1 ransom note](notes/zeon)
+<!-- tabs:end -->
 
-### Posts
+### _Posts_
 
 > no victim found
 
 
  --- 
 
-## **cactus**
 
-
-### URLs
-| Title | Available | Last visit | fqdn | Screenshot 
-|---|---|---|---|---|
-| none | 🟢 | 03/08/2023 06:57 | `http://cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid.onion` | ❌ | 
-
-
-### Ransom note
-* [📝 4 ransom notes](notes/cactus)
-
-### Total Attacks Over Time
-
-![Statistics](/graphs/stats-cactus.png)
-
-
-### Posts
-
-> 18 victims found
-
-| post | date | Description | Screenshot | 
-|---|---|---|---|
-| [`Alberto Couto Alves`](https://google.com/search?q=Alberto+Couto+Alves) | 20/07/2023 | ACA Engenharia & Construção operates in a wide range of areas from Roads and Infrastructures, Buildings to the production of Bituminous mixtures, Concrete and Aggregates. | <a href="https://images.ransomware.live/screenshots/posts/c9346411d5cdf5b4608c70cd0d015ab1.png" target=_blank>📸</a> |
-| [`Agoravita`](https://google.com/search?q=Agoravita) | 20/07/2023 | Since 1999, Agoravita has supported companies in their infrastructure projects and IT services, digital communications, software development and training, which form the basis of their digital transition. | <a href="https://images.ransomware.live/screenshots/posts/53dc49d194917a72d42385ca06b3afb7.png" target=_blank>📸</a> |
-| [`American Meteorological Society`](https://google.com/search?q=American+Meteorological+Society) | 20/07/2023 | The American Meteorological Society, founded in 1919, is a global community committed to advancing weather, water, and climate science and service. | <a href="https://images.ransomware.live/screenshots/posts/07af8a671830108bc3aece0abb4d1ff5.png" target=_blank>📸</a> |
-| [`Biocair International`](https://google.com/search?q=Biocair+International) | 20/07/2023 | Biocair is a global GDP logistics specialist with over 35 years of experience in the pharmaceutical, biotechnology and life sciences sectors. | <a href="https://images.ransomware.live/screenshots/posts/4951bf0409f6a43e4ebb52039856b9e8.png" target=_blank>📸</a> |
-| [`Confartigianato Federimpresa FC`](https://google.com/search?q=Confartigianato+Federimpresa+FC) | 20/07/2023 | Confartigianato Federimpresa FC is a company that operates in the Financial Services industry. | <a href="https://images.ransomware.live/screenshots/posts/e5dfa88b91bfd237607c5b02f1a54987.png" target=_blank>📸</a> |
-| [`ScanSource`](https://google.com/search?q=ScanSource) | 20/07/2023 | Founded in 1992, ScanSource, Inc is an international distributor of technology products and solutions, focusing on point-of-sale (POS), payments, barcode, physical security, unified communications and collaboration, cloud and telecom services. | <a href="https://images.ransomware.live/screenshots/posts/ffabc016b43a44f0a2a0445b8778b2bb.png" target=_blank>📸</a> |
-| [`CWS`](https://google.com/search?q=CWS) | 20/07/2023 | CWS Srl is a company that operates in the Information Technology and Services industry. | <a href="https://images.ransomware.live/screenshots/posts/c358ad7e0facba5059283df4a098ac24.png" target=_blank>📸</a> |
-| [`Hawa Sliding Solutions`](https://google.com/search?q=Hawa+Sliding+Solutions) | 20/07/2023 | Hawa AG has been producing sliding solutions for creative building culture for more than 50 years. It is well-known as a premium provider of sliding fitting systems for equipment, room partitioning, shop fronts and facades. | <a href="https://images.ransomware.live/screenshots/posts/6aef8385504d22078dc0d374a4dfe7a8.png" target=_blank>📸</a> |
-| [`Imagination`](https://google.com/search?q=Imagination) | 20/07/2023 | Imagination is an independent experience company with 12 offices worldwide. We specialise in designing experiences which change how people feel, think and act. | <a href="https://images.ransomware.live/screenshots/posts/34be205b1c152860750ce61c4ffb2b23.png" target=_blank>📸</a> |
-| [`Italkraft`](https://google.com/search?q=Italkraft) | 20/07/2023 | Headquartered in Miami, Florida, we provide our customers with Italian Design kitchen, bathroom and closet cabinetry of the highest standard and style. | <a href="https://images.ransomware.live/screenshots/posts/e69fda414c6a458226576c1830d581a0.png" target=_blank>📸</a> |
-
-↪️ More victims [here](/group/cactus?id=posts)
-
- --- 
-
-
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

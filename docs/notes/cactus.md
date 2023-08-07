@@ -1,4 +1,4 @@
-# Ransom notes for group cactus
+# 💰 _Ransom notes for group_ cactus
 > 🔗 [cactus](group/cactus)
 * **[cAcTuS.readme_4.txt](https://ransomware.live/ransomware_notes/cactus/cAcTuS.readme_4.txt)**
 
@@ -64,5 +64,5 @@ Backup contact: TOX (https://tox.chat/):
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

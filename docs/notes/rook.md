@@ -1,4 +1,4 @@
-# Ransom notes for group rook
+# 💰 _Ransom notes for group_ rook
 > 🔗 [rook](group/rook)
 * **[rook.txt](https://ransomware.live/ransomware_notes/rook/rook.txt)**
 
@@ -57,5 +57,5 @@ ONE MORE TIME: Security vendors and law enforcement agencies, please be aware th
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

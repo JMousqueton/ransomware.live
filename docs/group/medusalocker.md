@@ -10,7 +10,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://qd7pcafncosqfqu3ha6fcx4h6sr7tzwagzpcdcnytiw3b6varaeqv5yd.onion` | <a href="https://images.ransomware.live/screenshots/qd7pcafncosqfqu3ha6fcx4h6sr7tzwagzpcdcnytiw3b6varaeqv5yd-onion.png" target=_blank>📸</a> | 
-| Ransomware blog – We will not give ourselves a nam | 🟢 | 03/08/2023 06:37 | `http://z6wkgghtoawog5noty5nxulmmt2zs7c3yvwr22v4czbffdoly2kl4uad.onion` | <a href="https://images.ransomware.live/screenshots/z6wkgghtoawog5noty5nxulmmt2zs7c3yvwr22v4czbffdoly2kl4uad-onion.png" target=_blank>📸</a> | 
+| Ransomware blog – We will not give ourselves a nam | 🟢 | 07/08/2023 11:46 | `http://z6wkgghtoawog5noty5nxulmmt2zs7c3yvwr22v4czbffdoly2kl4uad.onion` | <a href="https://images.ransomware.live/screenshots/z6wkgghtoawog5noty5nxulmmt2zs7c3yvwr22v4czbffdoly2kl4uad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -27,11 +27,12 @@
 
 ### Posts
 
-> 33 victims found
+> 34 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Protected: INSULCANA CONTRACTING LTD`](https://google.com/search?q=Protected%3A+INSULCANA+CONTRACTING+LTD) | 27/07/2023 | There is no excerpt because this is a protected post. | <a href="https://images.ransomware.live/screenshots/posts/8f28a261d458ace33b560c116aa9105b.png" target=_blank>📸</a> |
+| [`INSULCANA CONTRACTING LTD`](https://google.com/search?q=INSULCANA+CONTRACTING+LTD) | 27/07/2023 | Descriptionemployee information – agreement – customer email(.xls)- passport all canada and other documents Price: 35000$ | <a href="https://images.ransomware.live/screenshots/posts/8f28a261d458ace33b560c116aa9105b.png" target=_blank>📸</a> |
 | [`Protected: Hidden name`](https://google.com/search?q=Protected%3A+Hidden+name) | 17/07/2023 | There is no excerpt because this is a protected post. | <a href="https://images.ransomware.live/screenshots/posts/f2e6730a557ae6b92f7a124ea71fdeaa.png" target=_blank>📸</a> |
 | [`Hoosier Equipment company`](https://google.com/search?q=Hoosier+Equipment+company) | 04/07/2023 | DescriptionClient Case – agreement – email(.msg)- and other documents Price: 60000$ | <a href="https://images.ransomware.live/screenshots/posts/e327d9a67253efb531e2ff6acbe94174.png" target=_blank>📸</a> |
 | [`Ucamco Belgium`](https://google.com/search?q=Ucamco+Belgium) | 02/07/2023 | DescriptionClient Case – customers email-Audit information-There is also access to email for newsletters on behalf of the company PRICE-$80000 | <a href="https://images.ransomware.live/screenshots/posts/cb0a34428452c895edfa0da479c5ce79.png" target=_blank>📸</a> |
@@ -67,4 +68,4 @@
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

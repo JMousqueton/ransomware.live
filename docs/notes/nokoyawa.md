@@ -1,4 +1,4 @@
-# Ransom notes for group nokoyawa
+# 💰 _Ransom notes for group_ nokoyawa
 > 🔗 [nokoyawa](group/nokoyawa)
 * **[nokoyawa.txt](https://ransomware.live/ransomware_notes/nokoyawa/nokoyawa.txt)**
 
@@ -47,5 +47,5 @@ The faster you contact with us the faster you will get a solution.
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

@@ -13,6 +13,7 @@ from sharedutils import striptld
 from sharedutils import openjson
 from sharedutils import getsitetitle
 from sharedutils import stdlog, dbglog, errlog
+import hashlib
 
 
 def scraper(querygroup=''):
@@ -55,7 +56,11 @@ def scraper(querygroup=''):
                                 page.mouse.wheel(delta_y=2000, delta_x=0)
                                 page.wait_for_load_state('networkidle')
                                 page.wait_for_timeout(delay)
-                                filename = group['name'] + '-' + str(striptld(host['slug'])) + '.html'
+                                #filename = group['name'] + '-' + str(striptld(host['slug'])) + '.html'
+                                hash_object = hashlib.md5()
+                                hash_object.update(host['slug'].encode('utf-8'))
+                                hex_digest = hash_object.hexdigest()
+                                filename = group['name'] + '-' + hex_digest + '.html'
                                 name = os.path.join(os.getcwd(), 'source', filename)
                                 with open(name, 'w', encoding='utf-8') as sitesource:
                                     sitesource.write(page.content())

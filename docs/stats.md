@@ -1,4 +1,7 @@
-[[2023]](stats?id=_2023) [[2022]](stats?id=_2022)
+# 📊 Statistics & graphics
+---
+
+_[[2023]](stats?id=_2023) [[2022]](stats?id=_2022)_
 
 
 ## Victims by month

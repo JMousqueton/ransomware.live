@@ -1,4 +1,4 @@
-# Ransom notes for group alphv
+# 💰 _Ransom notes for group_ alphv
 > 🔗 [alphv](group/alphv)
 * **[alphv3.txt](https://ransomware.live/ransomware_notes/alphv/alphv3.txt)**
 
@@ -132,5 +132,5 @@ Follow these simple steps to get everything back to normal:
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

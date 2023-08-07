@@ -8,7 +8,7 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| RA Group | 🟢 | 03/08/2023 06:44 | `http://pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd.onion` | <a href="https://images.ransomware.live/screenshots/pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd-onion.png" target=_blank>📸</a> | 
+| RA Group | 🟢 | 07/08/2023 11:54 | `http://pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd.onion` | <a href="https://images.ransomware.live/screenshots/pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -17,10 +17,12 @@
 
 ### Posts
 
-> 13 victims found
+> 15 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`P****X`](https://google.com/search?q=P%2A%2A%2A%2AX) | 04/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/c97f782c1fb6c9d5d1a6d6186a6c4930.png" target=_blank>📸</a> |
+| [`Z****ta`](https://google.com/search?q=Z%2A%2A%2A%2Ata) | 04/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/d82810e7435f55d255267447d88cc7b4.png" target=_blank>📸</a> |
 | [`Bluelinea`](https://google.com/search?q=Bluelinea) | 30/07/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/4e2f846783561944807425318d0cb943.png" target=_blank>📸</a> |
 | [`Decimal Point Analytics Pvt`](https://google.com/search?q=Decimal+Point+Analytics+Pvt) | 30/07/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/8ef2567cf2984e3d912a0bf2cfd7e645.png" target=_blank>📸</a> |
 | [`De****int`](https://google.com/search?q=De%2A%2A%2A%2Aint) | 25/07/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/88619154bf11953aac9bd050987350d7.png" target=_blank>📸</a> |
@@ -37,4 +39,4 @@
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

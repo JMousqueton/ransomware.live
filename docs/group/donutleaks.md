@@ -9,9 +9,9 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | _D0#Nut::__chat | 🔴 | 21/10/2022 20:39 | `http://qkbbaxiuqqcqb5nox4np4qjcniy2q6m7yeluvj7n5i5dn7pgpcwxwfid.onion` | <a href="https://images.ransomware.live/screenshots/qkbbaxiuqqcqb5nox4np4qjcniy2q6m7yeluvj7n5i5dn7pgpcwxwfid-onion.png" target=_blank>📸</a> | 
-| D#NUT. | 🔴 | 02/08/2023 07:20 | `http://sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd.onion` | <a href="https://images.ransomware.live/screenshots/sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd-onion.png" target=_blank>📸</a> | 
+| D#NUT. | 🟢 | 07/08/2023 11:23 | `http://sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd.onion` | <a href="https://images.ransomware.live/screenshots/sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd-onion.png" target=_blank>📸</a> | 
 | _d0nut.::Files_ | 🔴 | 21/10/2022 20:39 | `http://doq32rjiuomfghm5a4lyf3lwwakt2774tkv4ppsos6ueo5mhx7662gid.onion` | ❌ | 
-| __d0nut::files | 🔴 | 02/08/2023 07:20 | `http://dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd.onion` | <a href="https://images.ransomware.live/screenshots/dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd-onion.png" target=_blank>📸</a> | 
+| __d0nut::files | 🟢 | 07/08/2023 11:24 | `http://dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd.onion` | <a href="https://images.ransomware.live/screenshots/dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -45,4 +45,4 @@
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

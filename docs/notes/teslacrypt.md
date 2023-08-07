@@ -1,4 +1,4 @@
-# Ransom notes for group teslacrypt
+# 💰 _Ransom notes for group_ teslacrypt
 * **[teslacrypt.txt](https://ransomware.live/ransomware_notes/teslacrypt/teslacrypt.txt)**
 
 ```
@@ -43,5 +43,5 @@ http://uiredn4njfsa4234bafb32ygjdawfvs.frascuft.com/[snip]
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

@@ -1,4 +1,4 @@
-# Ransom notes for group trigona
+# 💰 _Ransom notes for group_ trigona
 > 🔗 [trigona](group/trigona)
 * **[how_to_decrypt.hta](https://ransomware.live/ransomware_notes/trigona/how_to_decrypt.hta)**
 
@@ -173,5 +173,5 @@ authkey = document.getElementById('authkey').value;
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

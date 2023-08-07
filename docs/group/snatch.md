@@ -18,9 +18,9 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| News | 🟢 | 03/08/2023 06:50 | `http://hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad.onion` | <a href="https://images.ransomware.live/screenshots/hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad-onion.png" target=_blank>📸</a> | 
+| News | 🟢 | 07/08/2023 12:00 | `http://hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad.onion` | <a href="https://images.ransomware.live/screenshots/hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad-onion.png" target=_blank>📸</a> | 
 | Access Denied | 🔴 | 29/01/2023 17:17 | `http://snatch.press` | <a href="https://images.ransomware.live/screenshots/snatch-press.png" target=_blank>📸</a> | 
-| News | 🟢 | 03/08/2023 06:51 | `http://snatchteam.top` | <a href="https://images.ransomware.live/screenshots/snatchteam-top.png" target=_blank>📸</a> | 
+| News | 🟢 | 07/08/2023 12:00 | `http://snatchteam.top` | <a href="https://images.ransomware.live/screenshots/snatchteam-top.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -143,4 +143,4 @@ Briars is an international back office consultancy company, providing support se
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

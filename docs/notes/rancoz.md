@@ -1,4 +1,4 @@
-# Ransom notes for group rancoz
+# 💰 _Ransom notes for group_ rancoz
 > 🔗 [rancoz](group/rancoz)
 * **[HOW_TO_RECOVERY_FILES.txt](https://ransomware.live/ransomware_notes/rancoz/HOW_TO_RECOVERY_FILES.txt)**
 
@@ -76,5 +76,5 @@
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

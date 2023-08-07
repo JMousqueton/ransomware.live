@@ -1,4 +1,4 @@
-# Ransom notes for group shadow
+# 💰 _Ransom notes for group_ shadow
 > 🔗 [shadow](group/shadow)
 > 🔗 [shadow](group/shadow)
 * **[[rand].README.txt](https://ransomware.live/ransomware_notes/shadow/[rand].README.txt)**
@@ -78,5 +78,5 @@ http://lc65fb3wrvox6xlyn4hklwjcojau55diqxxylqs4qsfng23ftzijnxad.onion
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

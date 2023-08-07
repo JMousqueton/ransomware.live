@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import datetime, json
+import datetime, json, calendar
 import matplotlib.pyplot as plt
+#from datetime import datetime
 
 from sharedutils import gcount, gcountYear, gcountMonth, last_day_of_month
 from sharedutils import openjson
@@ -45,8 +46,8 @@ def plot_posts_by_group_by_year(year):
     plt.rcParams['xtick.color'] = "#42b983"
     plt.rcParams['ytick.color'] = "#42b983"
     plt.bar(groups, counts, color="#42b983")
-    plt.title('posts by group in ' + str(year))
-    plt.xlabel('group name')
+    plt.title('Vicitms by group in ' + str(year))
+    plt.xlabel('Group Name\n© Ransomware.live')
     plt.xticks(rotation=90)
     plt.ylabel('# of posts')
     plt.savefig('docs/graphs/postsbygroup'+str(year)+'.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
@@ -71,8 +72,8 @@ def plot_posts_by_group_past_7_days():
     plt.rcParams['xtick.color'] = "#42b983"
     plt.rcParams['ytick.color'] = "#42b983"
     plt.bar(groups, counts, color="#42b983")
-    plt.title('posts by group last 7 days')
-    plt.xlabel('group name')
+    plt.title('Victims by group last 7 days')
+    plt.xlabel('Group name\n© Ransomware.live')
     plt.xticks(rotation=90)
     plt.ylabel('# of posts')
     plt.savefig('docs/graphs/postsbygroup7days.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
@@ -108,8 +109,8 @@ def trend_posts_per_day():
     plt.rcParams['xtick.color'] = "#42b983"
     plt.rcParams['ytick.color'] = "#42b983"
     plt.plot(dates, counts, color="#42b983")
-    plt.title('posts per day')
-    plt.xlabel('date')
+    plt.title('Victims per day')
+    plt.xlabel('Date\n© Ransomware.live')
     plt.xticks(rotation=90)
     plt.ylabel('# of posts')
     plt.savefig('docs/graphs/postsbyday.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
@@ -146,8 +147,8 @@ def trend_posts_per_day_2022():
     plt.rcParams['xtick.color'] = "#42b983"
     plt.rcParams['ytick.color'] = "#42b983"
     plt.plot(dates, counts, color="#42b983")
-    plt.title('posts per day in 2022')
-    plt.xlabel('date')
+    plt.title('Victims per day in 2022')
+    plt.xlabel('Date\n© Ransomware.live')
     plt.xticks(rotation=90)
     plt.ylabel('# of posts')
     plt.savefig('docs/graphs/postsbyday2022.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
@@ -182,7 +183,7 @@ def trend_posts_per_day_2023():
     plt.rcParams['xtick.color'] = "#42b983"
     plt.rcParams['ytick.color'] = "#42b983"
     plt.plot(dates, counts, color="#42b983")
-    plt.title('posts per day in 2023')
+    plt.title('posts per day in 2023\n© Ransomware.live')
     plt.xlabel('date')
     plt.xticks(rotation=90)
     plt.ylabel('# of posts')
@@ -215,7 +216,7 @@ def pie_posts_by_group():
     plt.pie(topcounts, labels=topgroups, autopct='%1.1f%%', startangle=140, labeldistance=1.1, pctdistance=0.8, colors=colours)
     plt.legend(loc='lower center', bbox_to_anchor=(0.5, -0.2), ncol=3)
     plt.text(0.5, 0.5, 'total : ' + str(sum(counts)), horizontalalignment='center', verticalalignment='center', transform=plt.gcf().transFigure)
-    plt.title('posts by group')
+    plt.title('Vicitms by group')
     plt.savefig('docs/graphs/grouppie.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     plt.clf()
     plt.cla()
@@ -245,7 +246,7 @@ def pie_posts_by_group_by_year(year):
     plt.pie(topcounts, labels=topgroups, autopct='%1.1f%%', startangle=140, labeldistance=1.1, pctdistance=0.8, colors=colours)
     plt.legend(loc='lower center', bbox_to_anchor=(0.5, -0.2), ncol=3)
     plt.text(0.5, 0.5, 'total : ' + str(sum(counts)), horizontalalignment='center', verticalalignment='center', transform=plt.gcf().transFigure)
-    plt.title('posts by group in '+ str(year))
+    plt.title('Victims by group in '+ str(year))
     plt.savefig('docs/graphs/grouppie' + str(year) + '.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     plt.clf()
     plt.cla()
@@ -277,13 +278,13 @@ def pie_posts_by_group_by_month(year,month=0):
     plt.legend(loc='lower center', bbox_to_anchor=(0.5, -0.2), ncol=3)
     plt.text(0.5, 0.5, 'total : ' + str(sum(counts)), horizontalalignment='center', verticalalignment='center', transform=plt.gcf().transFigure)
     if month == 0:
-        plt.title('posts by group in '+ str(year))
+        plt.title('Victims by group in '+ str(year))
         plt.savefig('docs/graphs/grouppie' + str(year) + '.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     elif month < 10: 
-        plt.title('posts by group in 0'+ str(month) + '/' + str(year))
+        plt.title('Victims by group in 0'+ str(month) + '/' + str(year))
         plt.savefig('docs/graphs/grouppie' + str(year) + '0' + str(month) + '.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     else: 
-        plt.title('posts by group in '+ str(month) + '/' + str(year))
+        plt.title('Victims by group in '+ str(month) + '/' + str(year))
         plt.savefig('docs/graphs/grouppie' + str(year) + str(month) + '.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     plt.clf()
     plt.cla()
@@ -326,17 +327,17 @@ def trend_posts_per_day_month(year,month=0):
     plt.rcParams['xtick.color'] = "#42b983"
     plt.rcParams['ytick.color'] = "#42b983"
     plt.plot(dates, counts, color="#42b983")
-    plt.xlabel('date')
+    plt.xlabel('Date\n© Ransomware.live')
     plt.xticks(rotation=90)
-    plt.ylabel('# of posts')
+    plt.ylabel('# of Victims')
     if month == 0:
-        plt.title('posts per day in '+str(year))
+        plt.title('Victims per day in '+str(year))
         plt.savefig('docs/graphs/postsbyday'+str(year)+'.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     if month < 10:
-        plt.title('posts per day in 0'+ str(month)+'/' + str(year))
+        plt.title('Victims per day in 0'+ str(month)+'/' + str(year))
         plt.savefig('docs/graphs/postsbyday'+str(year)+'0'+str(month)+'.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     if month > 9:
-        plt.title('posts per day in '+ str(month)+'/' + str(year))
+        plt.title('Victims per day in '+ str(month)+'/' + str(year))
         plt.savefig('docs/graphs/postsbyday'+str(year)+str(month)+'.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     plt.clf()
     plt.cla()
@@ -357,17 +358,17 @@ def plot_posts_by_group_by_month(year,month=0):
     plt.rcParams['xtick.color'] = "#42b983"
     plt.rcParams['ytick.color'] = "#42b983"
     plt.bar(groups, counts, color="#42b983")
-    plt.xlabel('group name')
+    plt.xlabel('Group Name\n© Ransomware.live')
     plt.xticks(rotation=90)
-    plt.ylabel('# of posts')
+    plt.ylabel('# of Victims')
     if month == 0:
-        plt.title('posts per group in '+str(year))
+        plt.title('Victims per group in '+str(year))
         plt.savefig('docs/graphs/postsbygroup'+str(year)+'.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     if month < 10:
-        plt.title('posts per group in 0'+ str(month)+'/' + str(year))
+        plt.title('Victims per group in 0'+ str(month)+'/' + str(year))
         plt.savefig('docs/graphs/postsbygroup'+str(year)+'0'+str(month)+'.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     if month > 9:
-        plt.title('posts per group in '+ str(month)+'/' + str(year))
+        plt.title('Victims per group in '+ str(month)+'/' + str(year))
         plt.savefig('docs/graphs/postsbygroup'+str(year)+str(month)+'.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     plt.clf()
     plt.cla()
@@ -416,12 +417,15 @@ def plot_victims_by_month():
 
     # Customize the chart
     plt.title('Number of Victims by Month (2022-2023)')
-    plt.xlabel('Month\n© Ransomware.live')
+    plt.xlabel('Month')
+    text_color = '#42b983'
+    plt.text(0.5, -0.2, '© Ransomware.live', size=10, ha='center', transform=plt.gca().transAxes, color=text_color)
     plt.ylabel('Number of Victims')
     plt.legend()
 
     # Add grid
     plt.grid(True)
+    plt.tight_layout()
 
     # Save the chart as PNG
     plt.savefig('docs/graphs/victims_by_month.png')
@@ -481,15 +485,71 @@ def plot_victims_by_month_cumulative():
 
     # Customize the chart
     plt.title('Cumulative Number of Victims by Month (2022-2023)')
-    plt.xlabel('Month\n© Ransomware.live')
+    plt.xlabel('Month')
+    text_color = '#42b983'
+    plt.text(0.5, -0.2, '© Ransomware.live', size=10, ha='center', transform=plt.gca().transAxes, color=text_color)
     plt.ylabel('Cumulative Number of Victims')
     plt.legend()
 
     # Add grid
     plt.grid(True)
+    plt.tight_layout()
 
     # Save the chart as PNG
     plt.savefig('docs/graphs/victims_by_month_cumulative.png')
     plt.clf()
     plt.cla()
+
+
+def create_victims_per_day_graph(target_year,target_month):
+    # Load data from posts.json
+    posts_data = openjson('posts.json')
+
+    # Filter posts within the specified month and year
+    filtered_posts = [post for post in posts_data if datetime.datetime.strptime(post['published'], '%Y-%m-%d %H:%M:%S.%f').month == target_month and datetime.datetime.strptime(post['published'], '%Y-%m-%d %H:%M:%S.%f').year == target_year]
+
+    # Count the number of posts for each day
+    daily_post_count = {}
+    for post in filtered_posts:
+        post_date = datetime.datetime.strptime(post['published'], '%Y-%m-%d %H:%M:%S.%f').day
+        daily_post_count[post_date] = daily_post_count.get(post_date, 0) + 1
+
+    # Prepare data for plotting
+    days = list(daily_post_count.keys())
+    post_counts = list(daily_post_count.values())
+
+    # Convert target_month to the name of the month
+    target_month_name = calendar.month_name[target_month]
+
+    text_color = '#42b983'
+
+    # Create a bar graph with the specified color
+    plt.bar(days, post_counts, color='#42b983')
+    plt.xlabel(target_month_name + ' ' + str(target_year), color=text_color)
+    plt.text(0.5, -0.2, '© Ransomware.live', size=10, ha='center', transform=plt.gca().transAxes, color=text_color)
+    plt.ylabel('Number of victims',color=text_color)
+    plt.title(f'Victims per day - {target_month_name} {target_year}',color=text_color)
+
+    plt.xticks(days, color=text_color)
+    plt.yticks(color=text_color)
+
+    # Set the color of axis labels and legend
+    ax = plt.gca()
+    ax.xaxis.label.set_color(text_color)
+    ax.yaxis.label.set_color(text_color)
+    ax.tick_params(axis='x', colors=text_color)
+    ax.tick_params(axis='y', colors=text_color)
+
+    # Set the color of the spines (borders) around the graph
+    ax.spines['bottom'].set_color(text_color)
+    ax.spines['top'].set_color(text_color)
+    ax.spines['left'].set_color(text_color)
+    ax.spines['right'].set_color(text_color)
+
+    plt.tight_layout()
+
+    # Save the plot as a PNG image
+    month2 = f'{target_month:02}'
+    plt.savefig(f'docs/graphs/victims_per_day_{target_year}{month2}.png')
+    plt.close()  # Close the figure to prevent showing the plot
 

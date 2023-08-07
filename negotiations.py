@@ -67,9 +67,11 @@ def tweetmarkdown():
     with open(tweetspage, 'w', encoding='utf-8') as f:
         f.close()
     writeline(tweetspage,'')
-    writeline(tweetspage, '> Negotiating with ransomware groups by [Valéry Marchive](https://twitter.com/ValeryMarchive)')
+    writeline(tweetspage, '# 💬 Negotiating with ransomware groups')
     writeline(tweetspage,'')
-    writeline(tweetspage, '> [!TIP]')
+    writeline(tweetspage, '_by [Valéry Marchive](https://twitter.com/ValeryMarchive)_')
+    writeline(tweetspage,'')
+    writeline(tweetspage, '> [!INFO]')
     writeline(tweetspage, '> `Valéry Marchive` works in the technology industry as a journalist. He is the editor-in-chief of [LeMagIT](https://www.lemagit.fr). He also comments and analyzes ransomware attacks on [social media](https://twitter.com/valerymarchive?lang=en).')
     writeline(tweetspage, '> \nSource : [Github Casualtek/Ransomchats](https://github.com/Casualtek/Ransomchats/)')
     writeline(tweetspage,' ')

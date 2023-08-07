@@ -1,4 +1,4 @@
-# Ransom notes for group ragnarok
+# 💰 _Ransom notes for group_ ragnarok
 > 🔗 [ragnarok](group/ragnarok)
 * **[ragnarok.txt](https://ransomware.live/ransomware_notes/ragnarok/ragnarok.txt)**
 
@@ -43,5 +43,5 @@ YOUR DEVICE ID:
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

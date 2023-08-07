@@ -1,4 +1,4 @@
-# Ransom notes for group doppelpaymer
+# 💰 _Ransom notes for group_ doppelpaymer
 > 🔗 [doppelpaymer](group/doppelpaymer)
 * **[doppelpaymer4.txt](https://ransomware.live/ransomware_notes/doppelpaymer/doppelpaymer4.txt)**
 
@@ -139,5 +139,5 @@ and all the rest will remain unreachable to you.
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

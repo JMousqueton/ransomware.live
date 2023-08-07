@@ -1,4 +1,7 @@
 
+# ⚠️ Disclamer 
+---
+
 ## 🕵🏻 Privacy
 
 `Ransomware.live` strictly collects metadata and does not gather sensitive information. All the information presented on the platform is derived from publicly available data. While efforts are made to ensure accuracy, it is possible for mistakes or errors to occur. If you come across any incorrect information or violates your privacy, please inform me so that necessary updates can be made.

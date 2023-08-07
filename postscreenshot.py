@@ -21,6 +21,10 @@ def screenshot(webpage,delay=15000,output=None):
                         browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                           args=[''])
                         print('(!) exception')
+                    elif webpage.startswith("http://noescape"):
+                        browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
+                          args=[''])
+                        print('(!) exception')
                     elif webpage.startswith("http://medusa"):
                         browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                           args=[''])

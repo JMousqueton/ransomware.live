@@ -1,4 +1,4 @@
-# Ransom notes for group royal
+# 💰 _Ransom notes for group_ royal
 > 🔗 [royal](group/royal)
 * **[royal.txt](https://ransomware.live/ransomware_notes/royal/royal.txt)**
 
@@ -34,5 +34,5 @@ To put it simply, your files will be decrypted, your data restoredand kept confi
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

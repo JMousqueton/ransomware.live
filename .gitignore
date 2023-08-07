@@ -27,3 +27,6 @@ temp.py
 groups copy.json
 posts.json.OLD
 source/*.html
+frequency.py
+parsers/00.py
+docs/OCD_WorldWatch_Ransomware-ecosystem-map.pdf

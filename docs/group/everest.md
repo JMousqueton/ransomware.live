@@ -9,7 +9,7 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Everest Ransomware Group | 🟢 | 03/08/2023 06:22 | `http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion` | <a href="https://images.ransomware.live/screenshots/ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad-onion.png" target=_blank>📸</a> | 
+| Everest Ransomware Group | 🟢 | 07/08/2023 11:25 | `http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion` | <a href="https://images.ransomware.live/screenshots/ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -18,10 +18,11 @@
 
 ### Posts
 
-> 121 victims found
+> 122 victims found
 
 | post | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Kovair Software Data Leak`](https://google.com/search?q=Kovair+Software+Data+Leak) | 05/08/2023 | The set dates are out, so we post the entire archive Part1 https://dropmefiles.com/******** &#B”a3Arcj}eOfoQ==Fh | <a href="https://images.ransomware.live/screenshots/posts/e53d680d8acf307c7046612aa38bc090.png" target=_blank>📸</a> |
 | [`Great Opportunity to monetize your corporate access`](https://google.com/search?q=Great+Opportunity+to+monetize+your+corporate+access) | 31/07/2023 | Team looking for new partners with access to corporate networks.Fast work, good share. The offer will close on August 7. First come first served jabber:everestgroup@exploit.imeverestgroup@thesecure.biz email:everestransomteam@onionmail.orgeverestblog@cock.li | <a href="https://images.ransomware.live/screenshots/posts/e69a9de0b499e2da007f54294967fcf3.png" target=_blank>📸</a> |
 | [`Kovair Software`](https://google.com/search?q=Kovair+Software) | 26/07/2023 | 200 GB of internal files (Kovair.com) were stolen from the company’s servers. The files contain:– Project Source Codes– Personal data of employees– Various internal work documents To fully restore the system and delete these files, company representatives must contact by August 3, 2023.Otherwise, all this data will be published here and other forums,in the same […] | <a href="https://images.ransomware.live/screenshots/posts/d85e524c1e77edda3c9fabb7c2602700.png" target=_blank>📸</a> |
 | [`US District Court / Law company`](https://google.com/search?q=US+District+Court+%2F+Law+company) | 26/04/2023 | On sale access to the network US District CourtEmployee access,full controlAV: NoNetwork access of a lawyer with tons various confidential documents is included in this sale. Internal correspondence,tax,banks,ssn,dl,court cases. State IL.Price 15,000$Payment: btc,xmrContact email: everestransomteam@onionmail.org or jabber: everestgroup@exploit.im,everestgroup@thesecure.biz | <a href="https://images.ransomware.live/screenshots/posts/7e9314b4d98292d8aa8be759a1601d0c.png" target=_blank>📸</a> |
@@ -146,4 +147,4 @@
 
 
 
-Last update : _Thursday 03/08/2023 07.07 (UTC)_
+Last update : _Monday 07/08/2023 12.13 (UTC)_

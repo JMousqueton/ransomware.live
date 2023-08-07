@@ -1,4 +1,4 @@
-# Ransom notes for group locky
+# 💰 _Ransom notes for group_ locky
 * **[_Locky_recover_instructions.txt](https://ransomware.live/ransomware_notes/locky/_Locky_recover_instructions.txt)**
 
 ```
@@ -33,5 +33,5 @@ If all of this addresses are not available, follow these steps:
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

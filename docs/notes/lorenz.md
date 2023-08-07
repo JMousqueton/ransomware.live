@@ -1,4 +1,4 @@
-# Ransom notes for group lorenz
+# 💰 _Ransom notes for group_ lorenz
 > 🔗 [lorenz](group/lorenz)
 * **[HELP_SECURITY_EVENT.html](https://ransomware.live/ransomware_notes/lorenz/HELP_SECURITY_EVENT.html)**
 
@@ -81,5 +81,5 @@ Check our website with leaks : http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanx
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 

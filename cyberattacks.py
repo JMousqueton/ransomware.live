@@ -190,13 +190,17 @@ def recentcyberattacks():
     # delete contents of file
     with open(tweetspage, 'w', encoding='utf-8') as f:
         f.close()
-    writeline(tweetspage,'')
-    writeline(tweetspage, '> Last 100 cyberattacks reported by [Valéry Marchive](https://twitter.com/ValeryMarchive)')
-    writeline(tweetspage,'')
-    writeline(tweetspage, '> [!TIP]')
+    writeline(tweetspage,' ')
+    writeline(tweetspage, '# Last 100 cyberattacks')
+    writeline(tweetspage, ' ')
+    writeline(tweetspage, '_reported by [Valéry Marchive](https://twitter.com/ValeryMarchive)_')
+    writeline(tweetspage, ' ')
+    writeline(tweetspage, '> [!INFO]')
     writeline(tweetspage, '> `Valéry Marchive` works in the technology industry as a journalist. He is the editor-in-chief of [LeMagIT](https://www.lemagit.fr). He also comments and analyzes ransomware attacks on [social media](https://twitter.com/valerymarchive?lang=en).')
     writeline(tweetspage, '> \nSource : [Github Casualtek/Cyberwatch](https://github.com/Casualtek/Cyberwatch/)')
     writeline(tweetspage,' ')
+    writeline(tweetspage, '> [!TIP]Check [here](allcyberattacks) for 🎯 all cyberattacks')
+    writeline(tweetspage, ' ')
     writeline(tweetspage,'   ')
     writeline(tweetspage, ' ')
     writeline(tweetspage, '| Date | Country | Victim | Source | Screenshot | ')
@@ -249,14 +253,14 @@ def allcyberattacks():
     # delete contents of file
     with open(tweetspage, 'w', encoding='utf-8') as f:
         f.close()
-    writeline(tweetspage,'')
-    writeline(tweetspage, '> All cyberattacks reported by [Valéry Marchive](https://twitter.com/ValeryMarchive)')
-    writeline(tweetspage,'')
-    writeline(tweetspage, '> [!TIP]')
+    writeline(tweetspage,' ')
+    writeline(tweetspage, '# All cyberattacks')
+    writeline(tweetspage, ' ')
+    writeline(tweetspage, '_reported by [Valéry Marchive](https://twitter.com/ValeryMarchive)_')
+    writeline(tweetspage, ' ')
+    writeline(tweetspage, '> [!INFO]')
     writeline(tweetspage, '> `Valéry Marchive` works in the technology industry as a journalist. He is the editor-in-chief of [LeMagIT](https://www.lemagit.fr). He also comments and analyzes ransomware attacks on [social media](https://twitter.com/valerymarchive?lang=en).')
     writeline(tweetspage, '> \nSource : [Github Casualtek/Cyberwatch](https://github.com/Casualtek/Cyberwatch/)')
-    writeline(tweetspage,' ')
-    writeline(tweetspage,'   ')
     writeline(tweetspage, ' ')
     writeline(tweetspage, '| Date | Country | Victim | Source | Screenshot | ')
     writeline(tweetspage, '|---|---|---|---|---|')
@@ -281,13 +285,8 @@ def allcyberattacks():
 
         screenshot_file = f"./docs/screenshots/news/{news_md5}.png"
         if not os.path.exists(screenshot_file):
-            screenshot(news_url,news_md5)
-            if not os.path.exists(screenshot_file):
                 screenshot_line = '❌'
-            else:
-                screenshot_line = '[📸](https://images.ransomware.live/screenshots/news/'+news_md5+'.png)'
         else:
-            stdlog('Screenshot ' +  news_md5 + ' already exist')
             screenshot_line = '[📸](https://images.ransomware.live/screenshots/news/'+news_md5+'.png)' 
 
         #line = "| " + news_date + " | " + country2flag(news_country) + " | [`" + translate_text(news_victim.replace("La victime est ","")) + "`](https://google.com/search?q=" + news_victim.replace(" ","%20") + ") | [" +  news_source.replace("www.","") + "](" + news_url + ") |"

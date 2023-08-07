@@ -1,4 +1,4 @@
-# Ransom notes for group h0lygh0st
+# 💰 _Ransom notes for group_ h0lygh0st
 * **[h0lygh0st.html](https://ransomware.live/ransomware_notes/h0lygh0st/h0lygh0st.html)**
 
 ```
@@ -38,5 +38,5 @@ text-align:center
 
 
 
-Last update : _Monday 31/07/2023 17.10 (UTC)_
+Last update : _Monday 07/08/2023 10.49 (UTC)_
 
