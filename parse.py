@@ -130,6 +130,14 @@ def gettitlefromURL(website_url):
         description = ""
     return description
 
+def replace_http_slash(text):
+    # Use regular expression to replace http:/
+    text = re.sub(r'http:/([^/])', r'http://\1', text)
+    # Use regular expression to replace https:/
+    text = re.sub(r'https:/([^/])', r'https://\1', text)
+    return text
+
+
 def appender(post_title, group_name, description="", website="", published="", post_url=""):
     '''
     append a new post to posts.json
@@ -158,7 +166,7 @@ def appender(post_title, group_name, description="", website="", published="", p
             website = "https://" + website
         if published == "":
             published = str(datetime.today())
-        newpost = posttemplate(post_title, group_name, str(datetime.today()),description,website,published,post_url)
+        newpost = posttemplate(post_title, group_name, str(datetime.today()),description,replace_http_slash(website),published,post_url)
         stdlog('adding new post - ' + 'group:' + group_name + ' title:' + post_title)
         posts.append(newpost)
         with open('posts.json', 'w', encoding='utf-8') as outfile:
