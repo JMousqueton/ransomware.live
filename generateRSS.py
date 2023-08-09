@@ -5,6 +5,12 @@ import uuid
 from xml.etree.ElementTree import Element, SubElement, Comment, tostring
 from sharedutils import stdlog
 import html  # Import the html module
+import xml.sax.saxutils as saxutils
+
+
+def md5GUID(input_string):
+    md5_hash = hashlib.md5(input_string.encode('utf-8')).hexdigest()
+    return md5_hash
 
 print(
     '''
@@ -57,18 +63,14 @@ for i in reversed(range(len(data)-50, len(data))):
   item = data[i]
   rss_item = SubElement(channel, 'item')
   item_title = SubElement(rss_item, 'title')
-  item_title.text = "🏴‍☠️ " + str(item['group_name']) + " has just published a new victim : " + str(item['post_title'])
+  item_title.text = "🏴‍☠️ " + str(item['group_name']) + " has just published a new victim : " + str(item['post_title']).replace('&amp;','&')
   item_link = SubElement(rss_item, 'link')
   item_link.text = 'https://www.ransomware.live/#/group/{}'.format(item['group_name'])
-  item_description = SubElement(rss_item, 'description')
   
-  try:
-    description_text = html.escape(item['description'])
-    item_description.text = description_text
-    # item_description.text = '{}'.format(item['description'])
-  except:
-    item_description.text = ''
-
+  item_description = SubElement(rss_item, 'description')
+  description_text = html.escape(item['description'])
+  item_description.text = description_text
+  
   if item.get('post_url'):
     md5_hash = hashlib.md5(item['post_url'].encode()).hexdigest()
     image_url = f"https://images.ransomware.live/screenshots/posts/{md5_hash}.png"
@@ -85,7 +87,7 @@ for i in reversed(range(len(data)-50, len(data))):
   
 
   item_guid = SubElement(rss_item, 'guid')
-  item_guid.text = 'https://www.ransomware.live/#/group/' + str(item['group_name']) # + '?' +  str(uuid.uuid1(1234567890))
+  item_guid.text = 'https://www.ransomware.live/#/group/' + str(item['group_name'])  + '?' +md5GUID(item_title.text)
   
   date_iso = item['published']
   date_rfc822 = datetime.strptime(date_iso, '%Y-%m-%d %H:%M:%S.%f').strftime('%a, %d %b %Y %H:%M:%S +0000')
