@@ -37,7 +37,7 @@ def main():
                     site = find_slug_by_md5('incransom', extract_md5_from_filename(html_doc))
                     parsed_url = urlparse(site)
                     site = parsed_url.netloc
-                    appender(title, 'incransom',description.replace('\n',' '),'','http://'+formatted_date,site+url)
+                    appender(title, 'incransom',description.replace('\n',' '),'',formatted_date,'http://'+site+url)
                 file.close()
         except:
             errlog('incransom: ' + 'parsing fail')
