@@ -33,7 +33,7 @@ print(
 with open('posts.json') as f:
   data = json.load(f)
 
-data.sort(key=lambda item: datetime.strptime(item['published'], '%Y-%m-%d %H:%M:%S.%f'))
+data.sort(key=lambda item: datetime.strptime(item['discovered'], '%Y-%m-%d %H:%M:%S.%f'))
 
 # Créez l'élément rss et ajoutez-y les attributs nécessaires
 rss = Element('rss', {'version': '2.0', 'xmlns:atom': 'http://www.w3.org/2005/Atom'})
