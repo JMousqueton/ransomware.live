@@ -4,11 +4,25 @@
 > Darkside ransomware group has started its operation in August of 2020 with the model of RaaS (Ransomware-as-a-Service). They have become known for their operations of large ransoms scale. They have announced that they prefer not to attack hospitals, schools, non-profits, and governments, but rather big organizations that can be able to pay large ransoms. Darkside ransomware group became very famous following the cyberattack of the Colonial Pipeline and Toshiba unit. The FBI finally terminate the Darkside operation and Managed to pull money from their wallets back.
 
 ### External analysis
-- https://blog.qualys.com/vulnerabilities-threat-research/2021/06/09/darkside-ransomware
+- http://chuongdong.com/reverse%20engineering/2021/05/06/DarksideRansomware/
 
-- https://www.varonis.com/blog/darkside-ransomware
+- http://ti.dbappsecurity.com.cn/blog/index.php/2021/05/10/darkside/
 
-- https://github.com/advanced-threat-research/DarkSide-Config-Extract
+- https://asec.ahnlab.com/en/34549/
+
+- https://blog.360totalsecurity.com/en/darksides-targeted-ransomware-analysis-report-for-critical-u-s-infrastructure-2/
+
+- https://blog.cyble.com/2021/08/05/blackmatter-under-the-lens-an-emerging-ransomware-group-looking-for-affiliates/
+
+- https://blog.gigamon.com/2021/05/17/tracking-darkside-and-ransomware-the-network-view/
+
+- https://blog.group-ib.com/blackmatter#
+
+- https://blog.group-ib.com/blackmatter2
+
+- https://blogs.blackberry.com/en/2021/09/threat-thursday-blackmatter-ransomware-as-a-service
+
+- https://blogs.keysight.com/blogs/tech/nwvs.entry.html/2021/05/18/darkside_ransomware-QfsV.html
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -27,18 +41,18 @@
 
 | Name | Link |
 |---|---|
-|20200811| <a href="https://chat.ransomware.live/chat/darkside/20200811.html" target=_blank> 💬 </a> |
-|20201115| <a href="https://chat.ransomware.live/chat/darkside/20201115.html" target=_blank> 💬 </a> |
-|20210215| <a href="https://chat.ransomware.live/chat/darkside/20210215.html" target=_blank> 💬 </a> |
-|20210413| <a href="https://chat.ransomware.live/chat/darkside/20210413.html" target=_blank> 💬 </a> |
-|20210418| <a href="https://chat.ransomware.live/chat/darkside/20210418.html" target=_blank> 💬 </a> |
+|20200811|  <a href="/#/negotiation/darkside/20200811.html"> 💬 </a> |
+|20201115|  <a href="/#/negotiation/darkside/20201115.html"> 💬 </a> |
+|20210215|  <a href="/#/negotiation/darkside/20210215.html"> 💬 </a> |
+|20210413|  <a href="/#/negotiation/darkside/20210413.html"> 💬 </a> |
+|20210418|  <a href="/#/negotiation/darkside/20210418.html"> 💬 </a> |
 
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

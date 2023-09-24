@@ -9,20 +9,20 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 10/11/2022 22:30 | `http://232fwh5cea3ub6qguz3pynijxfzl2uj3c73nbrayipf3gq25vtq2r4qd.onion` | ❌ | 
-| Data Leak | 🟢 | 07/08/2023 11:21 | `http://7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd.onion` | <a href="https://images.ransomware.live/screenshots/7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd-onion.png" target=_blank>📸</a> | 
+| Data Leak | 🟢 | 24/09/2023 13:50 | `http://7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd.onion` | <a href="https://images.ransomware.live/screenshots/7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-daixin.png)
 
 
-### Posts
+### Victims
 
 > 10 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
-| [`Columbus Regional Healthcare System (US)`](%20https://crhealthcare.org/) | 09/06/2023 | Columbus Regional Healthcare System has one of the highest volume and most experienced robotic surgical programs in Southeastern  North Carolina. |   |
+| [`Columbus Regional Healthcare System (US)`](https://crhealthcare.org/) | 09/06/2023 | Columbus Regional Healthcare System has one of the highest volume and most experienced robotic surgical programs in Southeastern  North Carolina. |   |
 | [`Hit Promotional Products (US)`](https://www.hitpromo.net) | 29/03/2023 | Hit Promotional Products has been a leader in the promotional product industry. As a family-owned business with a long history, Hit Promotional want to build real relationships. |   |
 | [`B&G Foods (CA, US)`](https://bgfoods.com/) | 11/02/2023 | B&G Foods, Inc. manufactures, sells, and distributes a portfolio of shelf-stable and frozen foods, and household products in the United States, Canada, and Puerto Rico. |   |
 | [`Guardian Analytics (US)`](https://guardiananalytics.com) | 20/01/2023 | Guardian Analytics is now a part of NICE Actimize, a business of NICE (Nasdaq:NICE). Consistently ranked as number one in the space, NICE Actimize is the largest and broadest provider of financial crime, risk and compliance solutions for regional and global financial institutions, as well as government regulators. With Guardian Analytics, financial institutions build trust, increase competitiveness, improve their customer experience, and scale operations. |   |
@@ -35,4 +35,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -6,13 +6,21 @@
 _`shut down & offering a decryptor`_
 
 ### External analysis
-- https://techcrunch.com/2021/08/30/ragnarok-ransomware-gang-shuts-down-and-releases-its-decryption-key
+- https://docs.google.com/spreadsheets/d/1MI8Z2tBhmqQ5X8Wf_ozv3dVjz5sJOs-3
 
-- https://www.cpomagazine.com/cyber-security/ragnarok-ransomware-gang-closes-up-shop-leaves-master-decryptor-key-behind
+- https://github.com/k-vitali/Malware-Misc-RE/blob/master/2020-01-26-ragnarok-cfg-vk.notes.raw
 
-- https://www.sababasecurity.com/cheese-shortage-in-dutch-supermarkets-after-a-ransomware-attack
+- https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2021GTR.pdf
 
-- previous parser: Z3JlcCAndmFyIHBvc3RfbGlua3MgPScgc291cmNlL3JhZ25hcm9rLSouaHRtbCAtLW5vLWZpbGVuYW1lIHwgY3V0IC1kICc9JyAtZiAyIHwgc2VkICdzL14gKi8vZycgfCBzZWQgLWUgJ3MvLiQvLycgLWUgJ3MvLiQvLycgIC1lICdzLy4kLy8nIHwgIGpxIC1yICcuW10udGl0bGUn
+- https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2022/06/23093553/Common-TTPs-of-the-modern-ransomware_low-res.pdf
+
+- https://news.sophos.com/en-us/2020/05/21/asnarok2/
+
+- https://news.sophos.com/en-us/2022/03/17/the-ransomware-threat-intelligence-center/
+
+- https://www.bleepingcomputer.com/news/security/ragnarok-ransomware-releases-master-decryptor-after-shutdown/
+
+- https://www.bleepingcomputer.com/news/security/ragnarok-ransomware-targets-citrix-adc-disables-windows-defender/
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -24,15 +32,15 @@ _`shut down & offering a decryptor`_
 ### Ransom note
 * [📝 1 ransom note](notes/ragnarok)
 
-### Posts
+### Victims
 
 > 2 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`FNBNWFL Data leaked`](https://google.com/search?q=FNBNWFL+Data+leaked) | 30/12/2021 |   |   |
 | [`Decrypt`](https://google.com/search?q=Decrypt) | 09/09/2021 |   |   |
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -52,5 +52,29 @@
 		"source": "The Crypto Times",
 		"url": "https://www.cryptotimes.io/hackers-group-blackcat-target-italian-asset-manager-azimut/",
 		"title": "Hackers Group BlackCat Target Italian Asset Manager Azimut"
+	},
+	 {
+                "date": "2023-07-25",
+                "source": "Yahoo Finance",
+                "url": "https://finance.yahoo.com/news/87b-italian-asset-manager-azimut-110756755.html",
+                "title": "$87B Italian Asset Manager Azimut Hit With Ransomware Attack"
+        },
+	{
+		"date": "2023-07-25",
+		"source": "forklog",
+		"url":	"https://forklog.com/news/azimut-group-otkazalas-platit-bitkoin-vymogatelyam-blackcat",
+		"title": "Azimut Group отказалась платить биткоин-вымогателям BlackCat"
+	},
+	{
+		"date": "2023-08-17",
+		"source": "@ValeryMarchive",
+		"url": "https://x.com/valerymarchive/status/1692269743208616340?s=46&t=sfDOdzIPfsi7G7-0bML2cA",
+		"title": "Back from Holidays. Busy updating the data at ransomware.live/#/recentcyberattacks ..."
+	},
+	{	"date": "2023-08-29",
+		"source": "ValeryMarchive",
+		"url": "https://twitter.com/ValeryMarchive/status/1696442303223562590",
+		"title" : "Kendrion a été victime d'une #cyberattaque autour du 28 août 2023."
 	}
+
 ]

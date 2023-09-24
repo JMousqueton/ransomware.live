@@ -14,11 +14,11 @@ _`marketplace - not a ransomware group`_
 |---|---|---|---|---|
 | LockData Auction | 🔴 | 09/04/2022 16:16 | `http://wm6mbuzipviusuc42kcggzkdpbhuv45sn7olyamy6mcqqked3waslbqd.onion` | ❌ | 
 
-### Posts
+### Victims
 
 > 5 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`[USA] OrthoCare, 700 Lake Ave, Ste 6, Manchester, New Hampshire, 03103`](https://google.com/search?q=%5BUSA%5D+OrthoCare%2C+700+Lake+Ave%2C+Ste+6%2C+Manchester%2C+New+Hampshire%2C+03103) | 09/09/2021 |   |   |
 | [`[Saudi Arabia] Al Wefag Trading & Manufacturing`](https://google.com/search?q=%5BSaudi+Arabia%5D+Al+Wefag+Trading+%26+Manufacturing) | 09/09/2021 |   |   |
@@ -28,4 +28,4 @@ _`marketplace - not a ransomware group`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

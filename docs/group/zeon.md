@@ -14,11 +14,11 @@
 ### Ransom note
 * [📝 1 ransom note](notes/zeon)
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

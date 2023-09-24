@@ -16,7 +16,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://cuba4mp6ximo2zlo.onion` | ❌ | 
-| Cuba | 🟢 | 07/08/2023 11:19 | `http://cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion` | <a href="https://images.ransomware.live/screenshots/cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd-onion.png" target=_blank>📸</a> | 
+| Cuba | 🟢 | 24/09/2023 13:48 | `http://cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion` | <a href="https://images.ransomware.live/screenshots/cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -31,12 +31,13 @@
 ![Statistics](../graphs/stats-cuba.png)
 
 
-### Posts
+### Victims
 
-> 94 victims found
+> 95 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`goldmedalbakery`](https://google.com/search?q=goldmedalbakery) | 19/08/2023 | Gold Medal Bakery aspires to follow three core values in every aspect of its business.Integrity: Gold Medal has built its reputation on meeting the needs of our customers and the millions of consumers they serve. Thus, integrity is... | <a href="https://images.ransomware.live/screenshots/posts/be3fd3be5720e18aa43bdd225df2be18.png" target=_blank>📸</a> |
 | [`hydrex.co.uk`](https://hydrex.co.uk) | 31/07/2023 | Established in 1985, with 13 depots and one support centre nationwide, Hydrex is one of the largest suppliers of outsourced mobile plant solutions in the UK.Hydrex has a fleet totaling over 1200 machines. The company has invested in... | <a href="https://images.ransomware.live/screenshots/posts/40ac18160b679232274464a49af6b16d.png" target=_blank>📸</a> |
 | [`txmplant.co.uk`](https://txmplant.co.uk) | 31/07/2023 | At TXM Plant we know that the services we provide are critical to the success of our customers’ projects. That’s why we put the customer at the centre of everything that we do.Awarded ‘Gold’ standard in Network... | <a href="https://images.ransomware.live/screenshots/posts/867fb227c8292bdcc53e2aba4ad3bc82.png" target=_blank>📸</a> |
 | [`gis4.addison-il`](https://google.com/search?q=gis4.addison-il) | 11/07/2023 | More than 36,000 people call the Village of Addison home.  Whether you are new to our community, or have lived here for years, we want you to get acquainted with our community. We also want to make it easy for you to stay... | <a href="https://images.ransomware.live/screenshots/posts/ad05d8099336ef6890b435ca43d13e79.png" target=_blank>📸</a> |
@@ -134,4 +135,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

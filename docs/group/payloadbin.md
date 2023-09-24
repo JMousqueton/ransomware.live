@@ -4,7 +4,7 @@
 > 
 
 ### External analysis
-- https://cyberintelmag.com/malware-viruses/payloadbin-ransomware-attributed-to-evil-corp
+- https://www.bleepingcomputer.com/news/security/new-evil-corp-ransomware-mimics-payloadbin-gang-to-evade-us-sanctions/
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -16,11 +16,11 @@
 ![Statistics](../graphs/stats-payloadbin.png)
 
 
-### Posts
+### Victims
 
 > 29 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`aquila.ch`](https://google.com/search?q=aquila.ch) | 06/01/2022 |   |   |
 | [`www.paw.eu`](https://google.com/search?q=www.paw.eu) | 01/01/2022 |   |   |
@@ -54,4 +54,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -67,20 +67,24 @@ def tweetmarkdown():
     with open(tweetspage, 'w', encoding='utf-8') as f:
         f.close()
     writeline(tweetspage,'')
-    writeline(tweetspage, '# 💬 Negotiating with ransomware groups')
+    writeline(tweetspage, '# 💬 Negotiation with ransomware groups')
     writeline(tweetspage,'')
     writeline(tweetspage, '_by [Valéry Marchive](https://twitter.com/ValeryMarchive)_')
     writeline(tweetspage,'')
     writeline(tweetspage, '> [!INFO]')
     writeline(tweetspage, '> `Valéry Marchive` works in the technology industry as a journalist. He is the editor-in-chief of [LeMagIT](https://www.lemagit.fr). He also comments and analyzes ransomware attacks on [social media](https://twitter.com/valerymarchive?lang=en).')
-    writeline(tweetspage, '> \nSource : [Github Casualtek/Ransomchats](https://github.com/Casualtek/Ransomchats/)')
     writeline(tweetspage,' ')
-    writeline(tweetspage,'   ')
-    writeline(tweetspage, ' ')
-    writeline(tweetspage, '| Ransomware | Name | Desc. | # Msg | Chat | ')
-    writeline(tweetspage, '|---|---|---|---|---|')
+    writeline(tweetspage, '> [!TIP]')
+    writeline(tweetspage, '> Some amount are expressed only with cryptocurrency. The price in USD is based on the cryptocurrency market at the time of the neogitiation.')
+    writeline(tweetspage,' ')
+    #writeline(tweetspage,'   ')
+    #writeline(tweetspage, '> [!WARNING]')
+    #writeline(tweetspage, '> The analysis of the neogiciations is still in progress ...')
+    #writeline(tweetspage,' ')
+    writeline(tweetspage, '| Ransomware | Name | # Msg | Chat | Initial Ransom | Negotiated Ransom | Paid |')
+    writeline(tweetspage, '|---|---|---|---|---|---|---|')
     
-    directory_path = '/var/www/chat.ransomware.live/docs/chat'
+    directory_path = '/var/www/ransomware.live/docs/negotiation'
 
     # Get a sorted list of all directories within the main directory
     directories = sorted([name for name in os.listdir(directory_path) if os.path.isdir(os.path.join(directory_path, name))])
@@ -111,12 +115,12 @@ def tweetmarkdown():
                     dir_name = 'REvil'
                 case _:
                     dir_name = group_name.capitalize()
-            if is_file_less_than_days_old('/var/www/chat.ransomware.live/data/'+dir_name+'/'+chat_name+'.json'):
+            if is_file_less_than_days_old('/var/www/ransomware.live/data/'+dir_name+'/'+chat_name+'.json'):
                 note = '  🆕' 
             else:
                 note ='' 
 
-            with open('/var/www/chat.ransomware.live/data/'+dir_name+'/'+chat_name+'.json') as srcfile:
+            with open('/var/www/ransomware.live/data/'+dir_name+'/'+chat_name+'.json') as srcfile:
                     data = json.load(srcfile)
             chat_id = data['chat_id'].replace('\n',' ')
             count = sum(1 for message in data['messages'] if 'content' in message)
@@ -132,18 +136,36 @@ def tweetmarkdown():
                     chat_id = 'Date: ' + date_object.strftime("%Y-%m-%d") 
                 except:
                     pass
+            metafile = '/var/www/ransomware.live/data/'+dir_name+'/'+chat_name+'.meta'
+            if os.path.isfile(metafile):
+                with open(metafile, 'r') as file:
+                    content = file.read().strip()
+                values = content.split(';')  # Split the content using semicolon as the delimiter
+                paid = ''
+                try: 
+                    if values[2].lower() == 'paid':
+                        paid = '💸'
+                except:
+                    pass
+                endofline = ' ' +  values[0] + ' | '+ values[1] +' |'+ paid  + '|'
+            else:
+                endofline ='|||'
+
 
             if est_domaine(chat_name.replace('_','.')):
-                    # name = chat_name.replace('_','.') +' <a href="https://www.'+chat_name.replace('_','.')+'" rel="nofollow" target=_blank>🔗</a>' 
                     name = '[`' + chat_name.replace('_','.') + '`](https://www.'+ chat_name.replace('_','.') + ')'
             else:
                 name = chat_name.replace('_','.')
-            writeline(tweetspage,'| [' + group_name + '](group/' + link + ')  | ' +  name + ' ' + note + ' | ' + chat_id + ' | ' + str(count) + ' | <a href="https://chat.ransomware.live/chat/' + group_name + '/' + chat_name + '.html" target=_blank> 💬 </a> | ')
+            # writeline(tweetspage,'| [' + group_name + '](group/' + link + ')  | ' +  name + ' ' + note + ' | ' + chat_id + ' | ' + str(count) + ' | <a href="/#/negotiation/' + group_name + '/' + chat_name + '.html"> 💬 </a> | '+ endofline)
+            writeline(tweetspage,'| [' + group_name + '](group/' + link + ')  | ' +  name + ' ' + note  + ' | ' + str(count) + ' | <a href="/#/negotiation/' + group_name + '/' + chat_name + '.html"> 💬 </a> | '+ endofline)
+            
 
 
     
     writeline(tweetspage, '')
-    writeline(tweetspage, '📈 ' + str(compteur) + ' ransom chats')
+    writeline(tweetspage, '📈 ' + str(compteur) + ' negotiation chats')
+    writeline(tweetspage,' ')
+    writeline(tweetspage, '> \nSource : [Github Casualtek/Ransomchats](https://github.com/Casualtek/Ransomchats/)')
     writeline(tweetspage,' ')
     writeline(tweetspage, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
     stdlog('Negotiations page generated')

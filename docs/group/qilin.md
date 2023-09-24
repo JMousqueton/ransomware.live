@@ -3,6 +3,17 @@
 
 > PYSA ransomware group operates as a ransomware-as-a-service (RaaS) model. PYSA stands for “Protect Your System Amigo”, The PYSA ransomware malware is a variant of the Mespinoza ransomware. It was first seen within open-source documents in December 2019, two months after Mespinoza ransomware was spotted in the wild. PYSA affiliates can customize their malware based on options provided by the RaaS platform, and deploy it as customized. PYSA usually exfiltrates data from its victims before encrypting the files to be ransomed.
 
+### External analysis
+- https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE54L7v
+
+- https://www.sentinelone.com/labs/crimeware-trends-ransomware-developers-turn-to-intermittent-encryption-to-evade-detection/
+
+- https://www.trendmicro.com/content/dam/trendmicro/global/en/research/22/h/new-golang-ransomware-agenda-customizes-attacks/IOCs-blog-New%20Golang%20Ransomware%20Agenda%20Customizes%20Attacks.txt
+
+- https://www.trendmicro.com/en_us/research/22/h/new-golang-ransomware-agenda-customizes-attacks.html
+
+- https://www.trendmicro.com/en_us/research/22/l/agenda-ransomware-uses-rust-to-target-more-vital-industries.html
+
 
 🔎 `ransomware.live`has an active  parser for indexing qilin's victims
 
@@ -10,7 +21,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Qilin | 🔴 | 17/02/2023 11:10 | `http://ozsxj4hwxub7gio347ac7tyqqozvfioty37skqilzo2oqfs4cw2mgtyd.onion` | <a href="https://images.ransomware.live/screenshots/ozsxj4hwxub7gio347ac7tyqqozvfioty37skqilzo2oqfs4cw2mgtyd-onion.png" target=_blank>📸</a> | 
-| Qilin blog | 🟢 | 07/08/2023 11:52 | `http://kbsqoivihgdmwczmxkbovk7ss2dcynitwhhfu5yw725dboqo5kthfaad.onion` | <a href="https://images.ransomware.live/screenshots/kbsqoivihgdmwczmxkbovk7ss2dcynitwhhfu5yw725dboqo5kthfaad-onion.png" target=_blank>📸</a> | 
+| Qilin blog | 🟢 | 24/09/2023 14:17 | `http://kbsqoivihgdmwczmxkbovk7ss2dcynitwhhfu5yw725dboqo5kthfaad.onion` | <a href="https://images.ransomware.live/screenshots/kbsqoivihgdmwczmxkbovk7ss2dcynitwhhfu5yw725dboqo5kthfaad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -21,12 +32,17 @@
 ![Statistics](../graphs/stats-qilin.png)
 
 
-### Posts
+### Victims
 
-> 30 victims found
+> 35 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`CORTEL Technologies`](https://cortel.com) | 12/09/2023 | Cortel is a cloud technology vendor that partners with businesses to deploy phone systems that connect customers to businesses.  Below you can see a small part of the data which were taken from the servers of this company. |   |
+| [`PAUL-ALEXANDRE DOICESCO`](https://notairedoicesco.be) | 08/09/2023 | The company did not give a damn about the security of its customers' data, so you can download all this from the link below.  archive password: passwordbe |   |
+| [`WACOAL`](https://wacoal-america.com) | 08/09/2023 | Wacoal America is an apparel & fashion company specializing in lingerie and intimate wear.  In the near future, we will publish a large leak from the network of this company. Including all customer data. |   |
+| [`GYP New Tree SA`](https://newtree.com.ar) | 28/08/2023 | GYP NEW TREE SA is a wholesale importer operating in the market since 1998, marketing brands that are synonymous with excellence and innovation. We integrate the value chain of these brands, either with local assembly of PCs and AIOs, or with            ... | <a href="https://images.ransomware.live/screenshots/posts/59f1b7861725c36acc3352913e4a1b44.png" target=_blank>📸</a> |
+| [`Thonburi Energy Storage Systems (TESM)`](https://mercedes-benz.co.th) | 07/08/2023 | The company has decided not to contact our team in any way so we are starting a large publication of various documents  At the moment you can read the screenshots below | <a href="https://images.ransomware.live/screenshots/posts/27288660d762999a2914f7c4294ee846.png" target=_blank>📸</a> |
 | [`Better System Co.,Ltd`](https://www.bettersystem.co.th) | 12/07/2023 | Some of the data taken from the servers of this company can be found below | <a href="https://images.ransomware.live/screenshots/posts/25a3b13e5f546e8d08a4130f991c3f73.png" target=_blank>📸</a> |
 | [`MicroPort Scientific / LivaNova`](https://microport.com) | 11/07/2023 | Our team has prepared a big announcement for the public to check out some interesting files of this company. In addition to developments ( 1冠脉产品研发部 )  We will publish terabytes of various data from European and Chinese servers            ... | <a href="https://images.ransomware.live/screenshots/posts/97e0673432f4d5385a09f344e9cee6f1.png" target=_blank>📸</a> |
 | [`ASIC Soluciones`](https://asicamericas.com/) | 06/07/2023 | ASIC is an IT solutions company that provides data, analytics and artificial intelligence services.  The data dump is provided below for your review. |   |
@@ -60,4 +76,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

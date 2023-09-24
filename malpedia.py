@@ -20,13 +20,13 @@ for family in families:
     #print(family)
     #print(names)
     for group in groups:
-            if group.get('description') is None:
-                if group['name'] in names:
-                    if families[family]['description'].lower() != "ransomware.":
-                        group['description'] = re.sub(r'[\n\t\r]', '', families[family]['description'])
-                        print(group['name'] + ' --> ' + group['description'])
+        if group['name'] in names:
+            if families[family]['description'].lower() != "ransomware.":
+                group['profile'] =  families[family]['urls']
+                for url in families[family]['urls']:
+                    print(group['name'] + ' --> ' + url)
                 
-#with open('groups.json', 'w', encoding='utf-8') as groupsfile:
-#    json.dump(groups, groupsfile, ensure_ascii=False, indent=4)
-#groupsfile.close()
+with open('groups2.json', 'w', encoding='utf-8') as groupsfile:
+    json.dump(groups, groupsfile, ensure_ascii=False, indent=4)
+groupsfile.close()
        

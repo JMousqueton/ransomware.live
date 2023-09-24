@@ -16,14 +16,14 @@
 
 | Name | Link |
 |---|---|
-|20201016| <a href="https://chat.ransomware.live/chat/mount-locker/20201016.html" target=_blank> 💬 </a> |
+|20201016|  <a href="/#/negotiation/mount-locker/20201016.html"> 💬 </a> |
 
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

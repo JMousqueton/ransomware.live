@@ -6,9 +6,25 @@
 _`support host supp24maprinktc7uizgfyqhisx7lkszb6ogh6lwdzpac23w3mh4tvyd.onion`_
 
 ### External analysis
-- https://www.tripwire.com/state-of-security/featured/blackmatter-pose-new-ransomware-threat
+- http://chuongdong.com/reverse%20engineering/2021/05/06/DarksideRansomware/
 
-- https://venturebeat.com/2021/08/23/sophoslabs-research-shows-blackmatter-ransomware-is-closely-acquainted-with-darkside
+- http://ti.dbappsecurity.com.cn/blog/index.php/2021/05/10/darkside/
+
+- https://asec.ahnlab.com/en/34549/
+
+- https://blog.360totalsecurity.com/en/darksides-targeted-ransomware-analysis-report-for-critical-u-s-infrastructure-2/
+
+- https://blog.cyble.com/2021/08/05/blackmatter-under-the-lens-an-emerging-ransomware-group-looking-for-affiliates/
+
+- https://blog.gigamon.com/2021/05/17/tracking-darkside-and-ransomware-the-network-view/
+
+- https://blog.group-ib.com/blackmatter#
+
+- https://blog.group-ib.com/blackmatter2
+
+- https://blogs.blackberry.com/en/2021/09/threat-thursday-blackmatter-ransomware-as-a-service
+
+- https://blogs.keysight.com/blogs/tech/nwvs.entry.html/2021/05/18/darkside_ransomware-QfsV.html
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -27,15 +43,15 @@ _`support host supp24maprinktc7uizgfyqhisx7lkszb6ogh6lwdzpac23w3mh4tvyd.onion`_
 
 | Name | Link |
 |---|---|
-|20210829| <a href="https://chat.ransomware.live/chat/blackmatter/20210829.html" target=_blank> 💬 </a> |
-|20210907| <a href="https://chat.ransomware.live/chat/blackmatter/20210907.html" target=_blank> 💬 </a> |
+|20210829|  <a href="/#/negotiation/blackmatter/20210829.html"> 💬 </a> |
+|20210907|  <a href="/#/negotiation/blackmatter/20210907.html"> 💬 </a> |
 
 
-### Posts
+### Victims
 
 > 31 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`National Beverage`](https://google.com/search?q=National+Beverage) | 04/11/2021 |   |   |
 | [`Keycentrix`](https://google.com/search?q=Keycentrix) | 04/11/2021 |   |   |
@@ -71,4 +87,4 @@ _`support host supp24maprinktc7uizgfyqhisx7lkszb6ogh6lwdzpac23w3mh4tvyd.onion`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

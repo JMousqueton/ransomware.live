@@ -6,13 +6,25 @@
 _`aka fivehands`_
 
 ### External analysis
-- https://www.ic3.gov/Media/News/2021/211029.pdf
+- https://blog.bushidotoken.net/2022/05/gamer-cheater-hacker-spy.html
 
-- https://www.cisa.gov/uscert/ncas/analysis-reports/ar21-126a
+- https://blog.malwarebytes.com/threat-spotlight/2021/03/hellokitty-when-cyberpunk-met-cy-purr-crime/
 
-- https://research.nccgroup.com/2021/06/15/handy-guide-to-a-new-fivehands-ransomware-variant/
+- https://blogs.vmware.com/security/2022/09/threat-report-illuminating-volume-shadow-deletion.html
 
-- https://www.mandiant.com/resources/unc2447-sombrat-and-fivehands-ransomware-sophisticated-financial-threat
+- https://cocomelonc.github.io/malware/2023/01/04/malware-tricks-26.html
+
+- https://id-ransomware.blogspot.com/2020/11/hellokitty-ransomware.html
+
+- https://labs.sentinelone.com/hellokitty-ransomware-lacks-stealth-but-still-strikes-home/
+
+- https://medium.com/proferosec-osm/static-unpacker-and-decoder-for-hello-kitty-packer-91a3e8844cb7
+
+- https://twitter.com/fwosar/status/1359167108727332868
+
+- https://unit42.paloaltonetworks.com/emerging-ransomware-groups/
+
+- https://www.advintel.io/post/discontinued-the-end-of-conti-s-brand-marks-new-chapter-for-cybercrime-landscape
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -23,11 +35,11 @@ _`aka fivehands`_
 * 💰 <a href="/#/crypto/hellokitty.md">Crypto wallet(s) available</a>
 
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

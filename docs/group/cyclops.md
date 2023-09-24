@@ -8,19 +8,19 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Blog - Knight | 🟢 | 07/08/2023 11:19 | `http://nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad.onion` | <a href="https://images.ransomware.live/screenshots/nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad-onion.png" target=_blank>📸</a> | 
-| Blog - Knight | 🟢 | 07/08/2023 11:21 | `http://knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd.onion` | <a href="https://images.ransomware.live/screenshots/knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd-onion.png" target=_blank>📸</a> | 
+| Blog - Knight | 🟢 | 24/09/2023 13:48 | `http://nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad.onion` | <a href="https://images.ransomware.live/screenshots/nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad-onion.png" target=_blank>📸</a> | 
+| Blog - Knight | 🟢 | 24/09/2023 13:49 | `http://knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd.onion` | <a href="https://images.ransomware.live/screenshots/knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-cyclops.png)
 
 
-### Posts
+### Victims
 
 > 7 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`important information（Knight）`](https://google.com/search?q=important+information%EF%BC%88Knight%EF%BC%89) | 26/07/2023 | We are about to close the old panel and blog and in version 2. 0 we renamed it Knight. We are releasing the new panel and program this week.We are still recruiting new teams, but you must have enough experience. We have a major update in version 2.0 and our only contact TOX：9096AD7062A4232F5AA31C2F7C4DF0AC1EAD10B78D40A6A3328AD142A42B555E635954D8B6C5 |   |
 | [`Pechexport`](https://google.com/search?q=Pechexport) | 20/07/2023 | Infrastructure and logistics Pêchexport is located in Majunga on a surface of 8400 m². Our premises include offices, a factory, a laboratory, storage equipment and technical workshops. We have a fleet of eight freezer trawlers, two refrigerated trucks and a fleet of vehicles transporting our products upstream.Hygiene and quality We have eight EU and CIQ (The China entry-exit Inspection and Quarantine Bureau) certified refrigerated trawlers. We have a CE-approved fish processing plant, with its HACCP (Hazard Analysis Critical Control Point) approach, a treatment capacity of 5t/day and a cold store that can store up to 300 tons. We have our own bacteriological and physico-chemical analysis laboratory approved by the Institut Pasteur. All our products are systematically tested before each shipment to guarantee the best quality to our customers.Autonomous customs procedures To facilitate the export of our products, we carry out customs procedures ourselves through our transit service autonomously and efficiently.Data:======https://anonfiles.com/******/ARMEMENT_zip |   |
@@ -32,4 +32,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

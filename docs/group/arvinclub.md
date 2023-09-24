@@ -7,27 +7,28 @@
 
 - https://sosintel.co.uk/a-special-investigation-exposing-a-ransomware-groups-clear-web-ip-and-their-duplicate-identities/
 
-- D6164C90642CD93D9D3F353511B4BDBD1428309C90CDE13D3D7088AA5BE3010A52E485834E84
-
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Arvin Club – آزادی برای اتصال | 🔴 | 01/08/2022 20:10 | `http://3kp6j22pz3zkv76yutctosa6djpj4yib2icvdqxucdaxxedumhqicpad.onion` | ❌ | 
-| Blog | 🟢 | 07/08/2023 12:07 | `http://arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid.onion` | <a href="https://images.ransomware.live/screenshots/arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid-onion.png" target=_blank>📸</a> | 
+| Arvin - Blog | 🟢 | 24/09/2023 13:37 | `http://arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid.onion` | <a href="https://images.ransomware.live/screenshots/arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-arvinclub.png)
 
 
-### Posts
+### Victims
 
-> 29 victims found
+> 32 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Aban Tether & OK exchange`](https://abantether.com%20%20%20https://ok-ex.io) | 02/09/2023 |  |   |
+| [`sti company`](https://sticompany.co) | 23/08/2023 |  |   |
+| [`Sabalan Azmayesh`](https://www.sabalanmedical.ir) | 08/08/2023 |  |   |
 | [`Parsian Bitumen`](https://www.parsianbitumen.com) | 07/08/2023 |  |   |
-| [`Draje food industrial group`](https://anonfiles.com/WdN1L06cza/draje_rar) | 05/08/2023 |  |   |
+| [`Draje food industrial group`](https://draje.ir) | 05/08/2023 |  |   |
 | [`seaside-kish co`](https://google.com/search?q=seaside-kish+co) | 04/08/2023 |  |   |
 | [`Padena Factory`](https://padenacc.ir) | 29/07/2023 |  |   |
 | [`150k sib360 Database`](https://sib360.com) | 27/07/2023 |  |   |
@@ -58,4 +59,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

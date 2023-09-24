@@ -6,6 +6,7 @@ import os,hashlib
 from urllib.parse import urlparse
 import requests
 import deepl
+from sharedutils import stdlog, errlog
 # For screenshot 
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 # For watermark on screenshot 
@@ -38,6 +39,13 @@ def tweettemplate(id, date, author,texte, url):
 
 def screenshot(webpage,output,delay=15000,option=None):
     stdlog('webshot: {}'.format(webpage))
+    if webpage.endswith(".pdf"):
+        stdlog("PDF file no screenshot")
+        return
+    disabled_site = ["hk01.com", "mb.com.ph", "tass.ru", "richmond-news.com", "ncic.co.jp","guardian.co.tt","theadvocate.com","jaccs.co.jp","azimut.it","lapresse.ca","noirlab","wlox.com","cdn-api.markitdigital.com","unimedia","jamaica-gleaner"]
+    if any(website in webpage for website in disabled_site):
+        stdlog("Disabled screenshot for website : "+ webpage)
+        return  # This will exit the function
     name = 'docs/screenshots/news/' + output + '.png'
     with sync_playwright() as play:
                 try:
@@ -68,7 +76,6 @@ def screenshot(webpage,output,delay=15000,option=None):
                     stdlog('Timeout!')
                 except Exception as exception:
                     errlog(exception)
-                    errlog("error")
                 #browser.close()
 
 
@@ -93,18 +100,6 @@ def existingtweet(tweet_id):
             return True
     dbglog('tweet does not exist: ' + tweet_id)
     return False
-
-def stdlog(msg):
-    '''standard infologging'''
-    logging.info(msg)
-
-def dbglog(msg):
-    '''standard debug logging'''
-    logging.debug(msg)
-
-def errlog(msg):
-    '''standard error logging'''
-    logging.error(msg)
 
 
 
@@ -137,6 +132,7 @@ def getnews():
     create a list the last X posts (most recent)
     '''
     stdlog('finding all news')
+    recentnews=[]
     attacks = openjson('https://raw.githubusercontent.com/Casualtek/Cyberwatch/main/cyberattacks.json')
     # sort the posts by timestamp - descending
     sorted_attacks = sorted(attacks, key=lambda x: x['date'], reverse=True)
@@ -174,9 +170,11 @@ def country2flag(pays):
             flag="JM"
         case "POL":
             flag="PL"
+        case "DNK":
+            flag="DK"
         case _:
             flag=pays[:2]
-    return "![" + pays + "](https://images.ransomware.live/flags/"+flag+".svg)"
+    return "![" + pays + "](https://images.ransomware.live/flags/"+flag+".svg ':no-zoom')"
 
 def translate_text(text):
     translator = deepl.Translator(DEEPL_API_KEY)
@@ -197,7 +195,6 @@ def recentcyberattacks():
     writeline(tweetspage, ' ')
     writeline(tweetspage, '> [!INFO]')
     writeline(tweetspage, '> `Valéry Marchive` works in the technology industry as a journalist. He is the editor-in-chief of [LeMagIT](https://www.lemagit.fr). He also comments and analyzes ransomware attacks on [social media](https://twitter.com/valerymarchive?lang=en).')
-    writeline(tweetspage, '> \nSource : [Github Casualtek/Cyberwatch](https://github.com/Casualtek/Cyberwatch/)')
     writeline(tweetspage,' ')
     writeline(tweetspage, '> [!TIP]Check [here](allcyberattacks) for 🎯 all cyberattacks')
     writeline(tweetspage, ' ')
@@ -209,13 +206,16 @@ def recentcyberattacks():
     for tweet in recentnews(fetching_count):
         news_date = tweet['date']
         news_victim = tweet['victim'] 
-        news_country = tweet['country'] 
+        try: 
+            news_country = tweet['country'] 
+        except: 
+            news_country = tweet['Country']
         #try:
         #    news_title = tweet['title']
         #except:
         #    news_title = "N/A"
         #news_summary = tweet['summary'] 
-        news_url = tweet['url']  
+        news_url= tweet['url']  
         parsed_url = urlparse(news_url)
         news_source = parsed_url.netloc
 
@@ -229,16 +229,19 @@ def recentcyberattacks():
             screenshot(news_url,news_md5)
             if not os.path.exists(screenshot_file):
                 screenshot_line = '❌'
+                if news_url.endswith(".pdf"):
+                    screenshot_line = '[📄](' + news_url + ')'
+
             else:
                 screenshot_line = '[📸](https://images.ransomware.live/screenshots/news/'+news_md5+'.png)'
         else:
             stdlog('Screenshot ' +  news_md5 + ' already exist')
             screenshot_line = '[📸](https://images.ransomware.live/screenshots/news/'+news_md5+'.png)' 
 
-        #line = "| " + news_date + " | " + country2flag(news_country) + " | [`" + translate_text(news_victim.replace("La victime est ","")) + "`](https://google.com/search?q=" + news_victim.replace(" ","%20") + ") | [" +  news_source.replace("www.","") + "](" + news_url + ") |"
         line = "| " + news_date + " | " + country2flag(news_country) + " | [`" + news_victim.replace("La victime est ","") + "`](https://google.com/search?q=" + news_victim.replace(" ","%20") + ") | [" +  news_source.replace("www.","") + "](" + news_url + ") | " + screenshot_line + " | "
         writeline(tweetspage, line)
         compteur += 1
+    writeline(tweetspage, '> \nSource : [Github Casualtek/Cyberwatch](https://github.com/Casualtek/Cyberwatch/)')
     writeline(tweetspage, '')
     writeline(tweetspage, '📈 Last ' + str(compteur) + ' cyberattacks - Check [🎯 All cyberattacks](allcyberattacks)')
     writeline(tweetspage,' ')
@@ -269,11 +272,6 @@ def allcyberattacks():
         news_date = tweet['date']
         news_victim = tweet['victim'] 
         news_country = tweet['country'] 
-        #try:
-        #    news_title = tweet['title']
-        #except:
-        #    news_title = "N/A"
-        #news_summary = tweet['summary'] 
         news_url = tweet['url']  
         parsed_url = urlparse(news_url)
         news_source = parsed_url.netloc
@@ -286,6 +284,9 @@ def allcyberattacks():
         screenshot_file = f"./docs/screenshots/news/{news_md5}.png"
         if not os.path.exists(screenshot_file):
                 screenshot_line = '❌'
+                if news_url.endswith(".pdf"):
+                    screenshot_line = '[📄](' + news_url + ')'
+
         else:
             screenshot_line = '[📸](https://images.ransomware.live/screenshots/news/'+news_md5+'.png)' 
 

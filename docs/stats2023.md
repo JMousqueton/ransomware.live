@@ -49,4 +49,10 @@
 |---|---|
 | ![](graphs/grouppie202308.png) |  ![](graphs/victims_per_day_202308.png)| 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+## September
+
+| ![](graphs/postsbyday202309.png) | ![](graphs/postsbygroup202309.png) |
+|---|---|
+| ![](graphs/grouppie202309.png) |  ![](graphs/victims_per_day_202309.png)| 
+
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

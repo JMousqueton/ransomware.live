@@ -9,21 +9,23 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | _D0#Nut::__chat | 🔴 | 21/10/2022 20:39 | `http://qkbbaxiuqqcqb5nox4np4qjcniy2q6m7yeluvj7n5i5dn7pgpcwxwfid.onion` | <a href="https://images.ransomware.live/screenshots/qkbbaxiuqqcqb5nox4np4qjcniy2q6m7yeluvj7n5i5dn7pgpcwxwfid-onion.png" target=_blank>📸</a> | 
-| D#NUT. | 🟢 | 07/08/2023 11:23 | `http://sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd.onion` | <a href="https://images.ransomware.live/screenshots/sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd-onion.png" target=_blank>📸</a> | 
+| D#NUT. | 🟢 | 24/09/2023 13:53 | `http://sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd.onion` | <a href="https://images.ransomware.live/screenshots/sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd-onion.png" target=_blank>📸</a> | 
 | _d0nut.::Files_ | 🔴 | 21/10/2022 20:39 | `http://doq32rjiuomfghm5a4lyf3lwwakt2774tkv4ppsos6ueo5mhx7662gid.onion` | ❌ | 
-| __d0nut::files | 🟢 | 07/08/2023 11:24 | `http://dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd.onion` | <a href="https://images.ransomware.live/screenshots/dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd-onion.png" target=_blank>📸</a> | 
+| __d0nut::files | 🟢 | 24/09/2023 13:54 | `http://dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd.onion` | <a href="https://images.ransomware.live/screenshots/dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-donutleaks.png)
 
 
-### Posts
+### Victims
 
-> 18 victims found
+> 20 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Agilitas IT Solutions Limited`](https://google.com/search?q=Agilitas+IT+Solutions+Limited) | 19/09/2023 | We can say for sure - you seen our meassage which was placed on yours website. If u will keep silent we gonna start posting the source code and SQL databases which we exfiltrated from yours computers network.  First pack of data will contine 30Gb of source code and 450… | <a href="https://images.ransomware.live/screenshots/posts/d6baebd00a0faac166bb065ed7da1e76.png" target=_blank>📸</a> |
+| [`Gossler, Gobert & Wolters Group.`](https://google.com/search?q=Gossler%2C+Gobert+%26+Wolters+Group.) | 19/09/2023 | [ 2,6Tb data-leakage coming soon ] We have a lot of information about your clients. We extract all your SQL databases from yourcomputers network and all your important data from your file servers - the file listing of the first pack of data which will leak if you do not contact… | <a href="https://images.ransomware.live/screenshots/posts/4da6b0849e305b173ba5144924f1feed.png" target=_blank>📸</a> |
 | [`Jackson Township Police Department and Administration.`](https://google.com/search?q=Jackson+Township+Police+Department+and+Administration.) | 23/07/2023 | We are prepare some announce. The data of Police Department and FBI Supervisor will be released if you will keep acting in the same way as you did early. First data package will containe 500gb dumps which was taken by Cellebrite - there the data from phones of suspects and… | <a href="https://images.ransomware.live/screenshots/posts/efd7c1c631ad594e7a788d2e69b536a5.png" target=_blank>📸</a> |
 | [`Peroni Pompe`](https://google.com/search?q=Peroni+Pompe) | 03/07/2023 | Since the 1950s, Peroni has focused its activities on the design and production of oscillating process pumps, meeting the application needs of its customers with tailor-made solutions. The full package of yours data will be uploaded within 30 day. You must contacts us as soon as possible for preventing the… | <a href="https://images.ransomware.live/screenshots/posts/0c0ce0942a7574ea749e36ae70b301b0.png" target=_blank>📸</a> |
 | [`Jacklyn Dawson Solicitors`](https://google.com/search?q=Jacklyn+Dawson+Solicitors) | 23/05/2023 | Jacklyn Dawson Solicitors is a UK based solicitors and lawyers company which is providing legal services for business and individuals. This network has been hacked and over 400GB of sensitive data were stolen from company's file servers, including: financial data (budgets, bank accounts, taxes, etc)client's data (personal details, address,… | <a href="https://images.ransomware.live/screenshots/posts/e793d79f40d5b7095ca156dcc8080dd2.png" target=_blank>📸</a> |
@@ -45,4 +47,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

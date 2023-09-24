@@ -29,15 +29,15 @@
 
 | Name | Link |
 |---|---|
-|20201015| <a href="https://chat.ransomware.live/chat/ranzy/20201015.html" target=_blank> 💬 </a> |
-|20210223| <a href="https://chat.ransomware.live/chat/ranzy/20210223.html" target=_blank> 💬 </a> |
+|20201015|  <a href="/#/negotiation/ranzy/20201015.html"> 💬 </a> |
+|20210223|  <a href="/#/negotiation/ranzy/20210223.html"> 💬 </a> |
 
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

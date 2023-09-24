@@ -13,8 +13,8 @@
 |---|---|---|---|---|
 | NOKOYAWA Leaks | 🔴 | 11/07/2022 22:26 | `http://lirncvjfmdhv6samxvvlohfqx7jklfxoxj7xn3fh7qeabs3taemdsdqd.onion` | ❌ | 
 | NOKOYAWA Leaks | 🔴 | 25/01/2023 21:03 | `http://6yofnrq7evqrtz3tzi3dkbrdovtywd35lx3iqbc5dyh367nrdh4jgfyd.onion` | <a href="https://images.ransomware.live/screenshots/6yofnrq7evqrtz3tzi3dkbrdovtywd35lx3iqbc5dyh367nrdh4jgfyd-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 07/08/2023 11:49 | `http://noko65rmtaiqyt2cw2h4jrxe3u56t2k7ov3nd22hoji4c5vnfib2i4yd.onion` | <a href="https://images.ransomware.live/screenshots/noko65rmtaiqyt2cw2h4jrxe3u56t2k7ov3nd22hoji4c5vnfib2i4yd-onion.png" target=_blank>📸</a> | 
-| Wall of Shame | 🟢 | 07/08/2023 11:50 | `http://nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid.onion` | <a href="https://images.ransomware.live/screenshots/nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 24/09/2023 14:15 | `http://noko65rmtaiqyt2cw2h4jrxe3u56t2k7ov3nd22hoji4c5vnfib2i4yd.onion` | <a href="https://images.ransomware.live/screenshots/noko65rmtaiqyt2cw2h4jrxe3u56t2k7ov3nd22hoji4c5vnfib2i4yd-onion.png" target=_blank>📸</a> | 
+| Wall of Shame | 🟢 | 24/09/2023 14:15 | `http://nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid.onion` | <a href="https://images.ransomware.live/screenshots/nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -25,11 +25,11 @@
 ![Statistics](../graphs/stats-nokoyawa.png)
 
 
-### Posts
+### Victims
 
 > 36 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Studio Domaine LLC`](https://www.studiodomaine.com/) | 04/08/2023 | Studio Domaine is an innovative design firm dedicated to creating personalized interiors for residential and model homes. Our custom design services span broad styles and sensibilities providing our clients with their own "signature" style. What began in 1989 as Barbara's Interiors has now... | <a href="https://images.ransomware.live/screenshots/posts/b96ec10fda84f2d64533c671b8b9114a.png" target=_blank>📸</a> |
 | [`Roman Catholic Diocese of Albany`](https://www.rcda.org/) | 03/08/2023 | The Roman Catholic Diocese of Albany covers 14 counties in Eastern New York including the south west corner of a 15th county. Its Mother Church is the Cathedral of the Immaculate Conception in the city of Albany. | <a href="https://images.ransomware.live/screenshots/posts/d7e90b70c7f6ae776751c678d0a03c42.png" target=_blank>📸</a> |
@@ -70,4 +70,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

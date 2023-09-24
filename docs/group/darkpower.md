@@ -19,11 +19,11 @@
 ![Statistics](../graphs/stats-darkpower.png)
 
 
-### Posts
+### Victims
 
 > 10 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`onyx-pharma.dz`](https://google.com/search?q=onyx-pharma.dz) | 11/03/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/cdf1ff489bfe367b1778e88c095a5b3a.png" target=_blank>📸</a> |
 | [`imtenan.com`](https://google.com/search?q=imtenan.com) | 11/03/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/e11416500cb377d9caabd69102033b28.png" target=_blank>📸</a> |
@@ -38,4 +38,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -3,14 +3,21 @@
 
 > According to Trendmicro, Royal ransomware was first observed in September 2022, and the threat actors behind it are believed to be seasoned cybercriminals who used to be part of Conti Team One.
 
+### External analysis
+- https://blog.talosintelligence.com/talos-ir-q2-2023-quarterly-recap/
+
+- https://unit42.paloaltonetworks.com/royal-ransomware/
+
+- https://www.trendmicro.com/en_us/research/23/b/royal-ransomware-expands-attacks-by-targeting-linux-esxi-servers.html
+
 
 🔎 `ransomware.live`has an active  parser for indexing royal's victims
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Royal | 🟢 | 07/08/2023 11:58 | `http://royal2xthig3ou5hd7zsliqagy6yygk2cdelaxtni2fyad6dpmpxedid.onion` | <a href="https://images.ransomware.live/screenshots/royal2xthig3ou5hd7zsliqagy6yygk2cdelaxtni2fyad6dpmpxedid-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 07/08/2023 11:59 | `http://royal4ezp7xrbakkus3oofjw6gszrohpodmdnfbe5e4w3og5sm7vb3qd.onion` | <a href="https://images.ransomware.live/screenshots/royal4ezp7xrbakkus3oofjw6gszrohpodmdnfbe5e4w3og5sm7vb3qd-onion.png" target=_blank>📸</a> | 
+| Royal | 🔴 | 24/09/2023 12:51 | `http://royal2xthig3ou5hd7zsliqagy6yygk2cdelaxtni2fyad6dpmpxedid.onion` | <a href="https://images.ransomware.live/screenshots/royal2xthig3ou5hd7zsliqagy6yygk2cdelaxtni2fyad6dpmpxedid-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 24/09/2023 14:25 | `http://royal4ezp7xrbakkus3oofjw6gszrohpodmdnfbe5e4w3og5sm7vb3qd.onion` | <a href="https://images.ransomware.live/screenshots/royal4ezp7xrbakkus3oofjw6gszrohpodmdnfbe5e4w3og5sm7vb3qd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -21,11 +28,11 @@
 ![Statistics](../graphs/stats-royal.png)
 
 
-### Posts
+### Victims
 
 > 211 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Braintree Public Schools`](http://www.braintreema.gov) | 19/07/2023 | Braintree Public Schools is an independent public school district which serves the kindergarten through high school educational needs of the city of Braintree, Massachusetts and the surrounding areas.  | <a href="https://images.ransomware.live/screenshots/posts/053bc6171e423aa533b27fa413c94030.png" target=_blank>📸</a> |
 | [`Tachi-S Engineering USA`](http://www.tachi-s.com) | 11/06/2023 | Global Seat System CreatorAt Tachi-S, we help automotive manufacturers launch their cars, trucks and SUVs by designing, developing, testing and manufacturing high-quality automotive seats that are functional, safe, stylish and most importantly comfortable.Each year, Tachi-S delivers over 3 million complete automotive seats and over 4 million seat components to the global automotive market. Our success is based on being responsive, flexible and easy to work with to help assure that every automotive seating program is completed on-time, on-budget and delivered with high quality. That’s how we do business…and that’s why we have been a continuously selected company in the automotive industry. | <a href="https://images.ransomware.live/screenshots/posts/603b4bf4279cf9273074819e9837ee0a.png" target=_blank>📸</a> |
@@ -241,4 +248,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

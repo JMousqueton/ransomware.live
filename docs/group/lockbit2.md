@@ -25,11 +25,11 @@ _`previous clearnet fqdn lockbitapt.uz`_
 ![Statistics](../graphs/stats-lockbit2.png)
 
 
-### Posts
+### Victims
 
 > 1006 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`datalit.it`](https://google.com/search?q=datalit.it) | 28/06/2022 |   |   |
 | [`oak-brook.org`](https://google.com/search?q=oak-brook.org) | 26/06/2022 |   |   |
@@ -1040,4 +1040,4 @@ _`previous clearnet fqdn lockbitapt.uz`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

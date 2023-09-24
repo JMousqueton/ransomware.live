@@ -9,6 +9,8 @@ from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeo
 # For watermark on screenshot 
 from PIL import Image
 from PIL import ImageDraw
+from PIL.PngImagePlugin import PngInfo
+from datetime import datetime
 # For Notification 
 import sys
 
@@ -29,10 +31,17 @@ def screenshot(webpage,delay=15000,output=None):
                         browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                           args=[''])
                         print('(!) exception')
-                    elif webpage.startswith("http://h3reihq"):
+                    elif webpage.startswith("http://cactus"):
                         browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                           args=[''])
                         print('(!) exception')
+                    elif webpage.startswith("http://hl666"):
+                        browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
+                          args=[''])
+                        print('(!) exception')
+                    elif webpage.startswith("https://ransomed.vc/"):
+                        browser = play.firefox.launch()
+                        print('(!) not via tor')
                     else:
                         browser = play.chromium.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                             args=[''])
@@ -46,17 +55,23 @@ def screenshot(webpage,delay=15000,output=None):
                     page.wait_for_load_state('networkidle')
                     page.mouse.wheel(delta_y=2000, delta_x=0)
                     page.wait_for_load_state('networkidle')
-                    page.wait_for_timeout(6000)
+                    page.wait_for_timeout(12000)
                     page.screenshot(path=name, full_page=True)
                     image = Image.open(name)
+                    metadata = PngInfo()
+                    metadata.add_text("Source", "Ransomware.live")
+                    metadata.add_text("Copyright", "Ransomware.live")
+                    metadata.add_text("Description",webpage)
+                    metadata.add_text("Author","Julien Mousqueton")
+                    current_date = str(datetime.now().strftime('%Y:%m:%d %H:%M:%S')) 
+                    metadata.add_text("Creation Time",current_date)
                     draw = ImageDraw.Draw(image)
                     draw.text((10, 10), "https://www.ransomware.live", fill=(0, 0, 0))
-                    image.save(name)
+                    image.save(name, pnginfo=metadata)  
                 except PlaywrightTimeoutError:
                     stdlog('Timeout!')
                 except Exception as exception:
-                    errlog(exception)
-                    errlog("error")
+                    stdlog(exception)
                 #browser.close()
 
 def main():

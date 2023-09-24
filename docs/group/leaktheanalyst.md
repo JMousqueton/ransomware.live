@@ -14,11 +14,11 @@ _`not a ransomware group`_
 ![Statistics](../graphs/stats-leaktheanalyst.png)
 
 
-### Posts
+### Victims
 
 > 20 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`19 You Must Never Forget LeakTheAnalyst`](https://google.com/search?q=19+You+Must+Never+Forget+LeakTheAnalyst) | 29/03/2022 |   |   |
 | [`18 Build your own drone`](https://google.com/search?q=18+Build+your+own+drone) | 29/03/2022 |   |   |
@@ -43,4 +43,4 @@ _`not a ransomware group`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

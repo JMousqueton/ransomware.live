@@ -6,7 +6,9 @@
 _`no longer in operation - rebrand`_
 
 ### External analysis
-- https://www.zdnet.com/article/synack-ransomware-group-releases-decryption-keys-as-they-rebrand-to-el-cometa
+- https://securelist.com/synack-targeted-ransomware-uses-the-doppelganging-technique/85431/
+
+- https://therecord.media/synack-ransomware-gang-releases-decryption-keys-for-old-victims/
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -17,11 +19,11 @@ _`no longer in operation - rebrand`_
 * 💰 <a href="/#/crypto/synack.md">Crypto wallet(s) available</a>
 
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

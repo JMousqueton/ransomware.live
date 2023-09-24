@@ -7,11 +7,11 @@
 |---|---|---|---|---|
 | Spook | 🔴 | 26/10/2021 02:30 | `http://spookuhvfyxzph54ikjfwf2mwmxt572krpom7reyayrmxbkizbvkpaid.onion` | ❌ | 
 
-### Posts
+### Victims
 
 > 35 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`North Island`](https://google.com/search?q=North+Island) | 19/10/2021 |   |   |
 | [`All County Surveying Inc`](https://google.com/search?q=All+County+Surveying+Inc) | 19/10/2021 |   |   |
@@ -51,4 +51,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

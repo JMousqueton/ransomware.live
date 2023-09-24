@@ -4,11 +4,25 @@
 > Ransomware
 
 ### External analysis
-- https://socradar.io/dark-web-profile-play-ransomware/
+- https://chuongdong.com/reverse%20engineering/2022/09/03/PLAYRansomware/
 
-- https://www.trendmicro.com/en_us/research/22/i/play-ransomware-s-attack-playbook-unmasks-it-as-another-hive-aff.html
+- https://medium.com/walmartglobaltech/from-royal-with-love-88fa05ff7f65
 
-- https://www.trendmicro.com/vinfo/us/security/news/ransomware-spotlight/ransomware-spotlight-play
+- https://noticeofpleadings.com/crackedcobaltstrike/files/ComplaintAndSummons/1%20-Microsoft%20Cobalt%20Strike%20-%20Complaint(907040021.9).pdf
+
+- https://symantec-enterprise-blogs.security.com/blogs/threat-intelligence/play-ransomware-volume-shadow-copy
+
+- https://www.avertium.com/resources/threat-reports/an-in-depth-look-at-play-ransomware
+
+- https://www.bleepingcomputer.com/news/security/march-2023-broke-ransomware-attack-records-with-459-incidents/
+
+- https://www.bleepingcomputer.com/news/security/rackspace-confirms-play-ransomware-was-behind-recent-cyberattack/
+
+- https://www.fortinet.com/blog/threat-research/ransomware-roundup-play-ransomware
+
+- https://www.orangecyberdefense.com/global/blog/playing-the-game
+
+- https://www.sentinelone.com/labs/crimeware-trends-ransomware-developers-turn-to-intermittent-encryption-to-evade-detection/
 
 
 🔎 `ransomware.live`has an active  parser for indexing play's victims
@@ -16,8 +30,8 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| PLAY NEWS | 🟢 | 07/08/2023 11:50 | `http://mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd.onion` | <a href="https://images.ransomware.live/screenshots/mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd-onion.png" target=_blank>📸</a> | 
-| PLAY NEWS | 🟢 | 07/08/2023 11:51 | `http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion` | <a href="https://images.ransomware.live/screenshots/k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd-onion.png" target=_blank>📸</a> | 
+| PLAY NEWS | 🟢 | 24/09/2023 14:16 | `http://mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd.onion` | <a href="https://images.ransomware.live/screenshots/mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd-onion.png" target=_blank>📸</a> | 
+| PLAY NEWS | 🟢 | 24/09/2023 14:16 | `http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion` | <a href="https://images.ransomware.live/screenshots/k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -28,12 +42,42 @@
 ![Statistics](../graphs/stats-play.png)
 
 
-### Posts
+### Victims
 
-> 187 victims found
+> 217 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`First Line`](https://www.firstline.co.uk) | 18/09/2023 | Oxfordshire, United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/7dd514e29a5603a5bd8c7265fb485dae.png" target=_blank>📸</a> |
+| [`Rea Magnet Wire`](https://www.reawire.com) | 18/09/2023 | Indiana, United States | <a href="https://images.ransomware.live/screenshots/posts/95fa3518d24d835a3baf1487c34eb451.png" target=_blank>📸</a> |
+| [`RTA`](https://www.rtafleet.com) | 18/09/2023 | Arizona, United States | <a href="https://images.ransomware.live/screenshots/posts/0c13e51af5b90387e5a1c56b72d83f3c.png" target=_blank>📸</a> |
+| [`TSC`](https://www.t-s-c.com) | 18/09/2023 | Texas, United States | <a href="https://images.ransomware.live/screenshots/posts/17966c45885ee118694e981a02344153.png" target=_blank>📸</a> |
+| [`PASCHAL - Werk G Maier`](https://www.paschal.de) | 18/09/2023 | Germany | <a href="https://images.ransomware.live/screenshots/posts/9e5f0866bf6cd9ea15ec9ec7ad91cca1.png" target=_blank>📸</a> |
+| [`Vucke`](https://www.vucke.sk) | 18/09/2023 | Slovakia | <a href="https://images.ransomware.live/screenshots/posts/359fc2783bd95fcc3a0413c091ce275d.png" target=_blank>📸</a> |
+| [`Dpc & S`](https://www.dpconsulting.com) | 13/09/2023 | Arizona, United States | <a href="https://images.ransomware.live/screenshots/posts/72923cd73175aa535b13881139d0d007.png" target=_blank>📸</a> |
+| [`Carpet One`](https://www.stradwickscarpetonenorthbay.com) | 13/09/2023 | Ontario, Canada | <a href="https://images.ransomware.live/screenshots/posts/b2cb369aeea42740df76075f9eff7d9d.png" target=_blank>📸</a> |
+| [`Markentrainer Werbeagentur, Elwema Automotive`](https://www.micro-automation.de%20www.elwema.de) | 13/09/2023 | Baden-Wuerttemberg, Germany | <a href="https://images.ransomware.live/screenshots/posts/0e90cd2edba4bec8819b0695739376ac.png" target=_blank>📸</a> |
+| [`Precisely, Winshuttle`](https://www.precisely.com%20www.winshuttle.com) | 05/09/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/b5724084f31c5c14f1393a4a0d57847d.png" target=_blank>📸</a> |
+| [`Kikkerland Design`](https://www.kikkerland.com) | 05/09/2023 | New York, United States | <a href="https://images.ransomware.live/screenshots/posts/f7d916cf53f456da93329458dfd0fd71.png" target=_blank>📸</a> |
+| [`Markentrainer Werbeagentur`](https://www.micro-automation.de) | 05/09/2023 | Germany | <a href="https://images.ransomware.live/screenshots/posts/0b4f15fc67f19f56b15f1ba6b4a85bed.png" target=_blank>📸</a> |
+| [`Master Interiors`](https://www.masterinteriors.com) | 05/09/2023 | Delaware, United States | <a href="https://images.ransomware.live/screenshots/posts/dbb8725f60f408b3c3bee888b1aec651.png" target=_blank>📸</a> |
+| [`Bordelon Marine`](https://www.bordelonmarine.com) | 05/09/2023 | Louisiana, United States | <a href="https://images.ransomware.live/screenshots/posts/41109d2118777fc54e5aeadd30d700d7.png" target=_blank>📸</a> |
+| [`Majestic Spice`](https://www.majesticspice.com) | 05/09/2023 | California, United States | <a href="https://images.ransomware.live/screenshots/posts/093e08fd3d86d83ec27e9705218ec1a9.png" target=_blank>📸</a> |
+| [`Firmdale Hotels`](https://www.firmdalehotels.com) | 01/09/2023 | London, United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/f2eea3d953d792bb49cc4a62a48f517b.png" target=_blank>📸</a> |
+| [`F??????? ?????s`](https://www.f????????????s.com) | 01/09/2023 | London, United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/b2a7bae40370025501e0ba7fb35de4f3.png" target=_blank>📸</a> |
+| [`Alfagomma, Argus Fluidhandling Ltd`](https://www.alfagomma.com%20www.hiflex-europe.com) | 22/08/2023 | Iowa, United States | <a href="https://images.ransomware.live/screenshots/posts/442d8b7e26287ccbb2ae0a7b7125160d.png" target=_blank>📸</a> |
+| [`A???? F??????????? Ltd`](https://www.h??????e?????.com) | 22/08/2023 | United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/85ad4e69bc22367f8597456921cf0c40.png" target=_blank>📸</a> |
+| [`ABS Auto Auctions`](https://www.absautoauctions.com) | 18/08/2023 | California, United States | <a href="https://images.ransomware.live/screenshots/posts/d18d3013e3e67dbcc50a40a17c5fe821.png" target=_blank>📸</a> |
+| [`DSA Law Pty Ltd`](https://www.dsalaw.com.au) | 18/08/2023 | Victoria Australia | <a href="https://images.ransomware.live/screenshots/posts/f48cac0969ff89e33292ff101bf5e041.png" target=_blank>📸</a> |
+| [`Miami Management`](https://www.miamimanagement.com) | 18/08/2023 | Florida, United States | <a href="https://images.ransomware.live/screenshots/posts/8a2068ab159145b95a0b0ca734f4d0b8.png" target=_blank>📸</a> |
+| [`BTC Power`](https://www.btcpower.com) | 18/08/2023 | California, United States | <a href="https://images.ransomware.live/screenshots/posts/20a6f77b472bbfcd5f98e7e13613262a.png" target=_blank>📸</a> |
+| [`Stanford Transportation Inc`](https://www.driveforstanford.com) | 18/08/2023 | USA | <a href="https://images.ransomware.live/screenshots/posts/ed5877b4210c119eeea1740589d6714a.png" target=_blank>📸</a> |
+| [`Bolton Group`](https://www.boltongroup.net) | 18/08/2023 | Italy | <a href="https://images.ransomware.live/screenshots/posts/8513ef47c0efcd761980f1850f4e8120.png" target=_blank>📸</a> |
+| [`Legends Limousine`](https://www.legendslimousine.com) | 18/08/2023 | New York, United States | <a href="https://images.ransomware.live/screenshots/posts/ca97882448068820b887e4ed4c6b0166.png" target=_blank>📸</a> |
+| [`Oneonline`](https://www.oneonline.com) | 18/08/2023 | Utah, United States | <a href="https://images.ransomware.live/screenshots/posts/6615090dcbde5dcd88b5794270ab552e.png" target=_blank>📸</a> |
+| [`Top Light`](https://www.top-light.de) | 10/08/2023 | Nordrhein Westfalen, Germany | <a href="https://images.ransomware.live/screenshots/posts/f7e2b7d7010a83839e1c92a5f3e47461.png" target=_blank>📸</a> |
+| [`Algorry Zappia & Associates`](https://www.algorryzappia.com.au) | 10/08/2023 | New South Wales, Australia | <a href="https://images.ransomware.live/screenshots/posts/548d3413128b05a0ec78769a19abcefb.png" target=_blank>📸</a> |
+| [`EAI`](https://www.eaiweb.com) | 10/08/2023 | USA | <a href="https://images.ransomware.live/screenshots/posts/314be4fdee54c2a8a6558c5adde9ab8e.png" target=_blank>📸</a> |
 | [`Garage Living, The Dispenser USA`](https://www.garageliving.com,%20www.dispenser.com) | 01/08/2023 | Ontario, Canada | <a href="https://images.ransomware.live/screenshots/posts/6474c7c7970ee472d14a9e003a4933e0.png" target=_blank>📸</a> |
 | [`Aapd`](https://www.aapd.com.au) | 01/08/2023 | Australia | <a href="https://images.ransomware.live/screenshots/posts/d24e6dce624d544d2158c4c56412f114.png" target=_blank>📸</a> |
 | [`Birch, Horton, Bittner & Cherot`](https://www.birchhorton.com) | 01/08/2023 | Alaska, United States | <a href="https://images.ransomware.live/screenshots/posts/a2b6a431546a233eb75b20fb86b25587.png" target=_blank>📸</a> |
@@ -224,4 +268,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

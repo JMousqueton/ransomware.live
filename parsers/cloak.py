@@ -24,14 +24,11 @@ def main():
                     description = item.find('p', class_='main__country').get_text()
                     link_element = item.find('a', class_='main__link')
                     url = ''
-                    try:
+                    if link_element is not None:
                         link = link_element['href'] 
                         if link_element:
                             url = find_slug_by_md5('cloak', extract_md5_from_filename(html_doc))
                             url =  url + link
-                    except: 
-                       pass
-
                     appender(victim, 'cloak',description,'','',url)
                 file.close()
         except:

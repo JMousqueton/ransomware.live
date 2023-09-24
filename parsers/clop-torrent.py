@@ -2,7 +2,7 @@
 +------------------------------+------------------+----------+
 | Description | Published Date | Victim's Website | Post URL |
 +------------------------------+------------------+----------+
-|              |               |        X         |          |
+|              |               |        X         |    X     |
 +------------------------------+------------------+----------+
 Rappel : def appender(post_title, group_name, description="", website="", published="", post_url=""):
 """
@@ -19,13 +19,13 @@ def main():
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                divs = soup.find("div", class_="datagrid")
-                trs = divs.find_all("tr")
+                tbody = soup.find('tbody')
+                trs  = tbody.find_all('tr') # type: ignore
                 for tr in trs:
-                    td = tr.find("td")
-                    if td: # if there is a <td> tag, get the name and link
-                        name = td.get_text().strip() # get the text inside the <td> tag as the name
-                        appender(name, 'clop','_URL_')
+                    tds = tr.find_all('td')
+                    victim = tds[0].text.strip()
+                    #description = tds[2].text.strip()
+                    appender(victim, 'clop','_URL_')
         except:
             errlog('clop-torrent: ' + 'parsing fail')
             pass

@@ -3,6 +3,13 @@
 
 > This malware written in C# is a variant of the Thanos ransomware family and emerged in October 2021 and is obfuscated using SmartAssembly. In 2022, ThreatLabz analysed a report of Midas ransomware was slowly deployed over a two month period (ZScaler). This ransomware features also its own data leak site as part of its double extortion strategy.
 
+### External analysis
+- https://news.sophos.com/en-us/2022/01/25/windows-services-lay-the-groundwork-for-a-midas-ransomware-attack/
+
+- https://securityboulevard.com/2022/03/midas-ransomware-tracing-the-evolution-of-thanos-ransomware-variants/
+
+- https://www.zscaler.com/blogs/security-research/midas-ransomware-tracing-evolution-thanos-ransomware-variants
+
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
@@ -13,11 +20,11 @@
 ![Statistics](../graphs/stats-midas.png)
 
 
-### Posts
+### Victims
 
 > 44 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Basra Multipurposr Terminal`](https://google.com/search?q=Basra+Multipurposr+Terminal) | 14/04/2022 |   |   |
 | [`SUPREME SERVICES`](https://google.com/search?q=SUPREME+SERVICES) | 07/04/2022 |   |   |
@@ -66,4 +73,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

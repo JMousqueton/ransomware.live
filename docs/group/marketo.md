@@ -26,11 +26,11 @@ _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 ![Statistics](../graphs/stats-marketo.png)
 
 
-### Posts
+### Victims
 
 > 32 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Vehicle Service Group (VSG)`](https://google.com/search?q=Vehicle+Service+Group+%28VSG%29) | 14/02/2022 |   |   |
 | [`Millensys`](https://google.com/search?q=Millensys) | 07/12/2021 |   |   |
@@ -67,4 +67,4 @@ _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -1,4 +1,4 @@
-"""
+""" 
 +------------------------------+------------------+----------+
 | Description | Published Date | Victim's Website | Post URL |
 +------------------------------+------------------+----------+
@@ -8,23 +8,28 @@ Rappel : def appender(post_title, group_name, description="", website="", publis
 """
 import os
 from bs4 import BeautifulSoup
-from sharedutils import errlog
+from sharedutils import errlog, find_slug_by_md5, extract_md5_from_filename
 from parse import appender
+import re
 
 def main():
     for filename in os.listdir('source'):
-        try:
+        #try:
             if filename.startswith('trigona-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                divs_name=soup.find_all('div', {"class": "auction-item-info"})
+                divs_name=soup.find_all('a', class_=["_m _preview grid__item", "_l _leaked grid__item"])
                 for div in divs_name:
-                    title = div.find('a').text
-                    description = div.find("div", {"class": "auction-item-info-text__content"}).text.strip()
-                    appender(title, 'trigona', description)
+                    title = div.find('div', class_='grid-caption__title')
+                    victim = title.text.strip().replace('\n','')
+                    victim = re.split(r'  ',victim)[0]
+                    post = div.get('href')
+                    address  = find_slug_by_md5('trigona', extract_md5_from_filename(html_doc)) 
+                    url = address + post
+                    appender(victim, 'trigona', '','','',url)
                 file.close()
-        except:
-            errlog('trigona: ' + 'parsing fail')
-            pass
+        #except:
+        #    errlog('trigona: ' + 'parsing fail')
+        #    pass
 

@@ -8,6 +8,15 @@ from sharedutils import openjson
 def capitalize_first_letter(s):
     return s[:1].upper() + s[1:]
 
+def list_files_in_directory(directory):
+    file_list = []
+    
+    for root, _, files in os.walk(directory):
+        for file in files:
+            file_list.append(os.path.join(root, file))
+    
+    return file_list
+
 def generate_sitemapXML(base_url, pages, note_directories, output_file="./docs/sitemap.xml"):
     # Create the root element
     urlset = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
@@ -16,6 +25,10 @@ def generate_sitemapXML(base_url, pages, note_directories, output_file="./docs/s
     static_urls = [
         "recentvictims",
         "recentcyberattacks",
+        "allcyberattacks",
+        "cartography",
+        "recentdiscoveredvictims",
+        "lastvictimspergroup",
         "ransomnotes",
         "negotiations",
         "stats",
@@ -50,6 +63,15 @@ def generate_sitemapXML(base_url, pages, note_directories, output_file="./docs/s
         url = ET.SubElement(urlset, "url")
         loc = ET.SubElement(url, "loc")
         loc.text = f"{base_url}/#/notes/{directory}"
+        lastmod = ET.SubElement(url, "lastmod")
+        lastmod.text = datetime.date.today().isoformat()
+
+        directory_path = "./docs/negotiation/"
+    for file in list_files_in_directory(directory_path):
+        page = file.replace('./docs','')
+        url = ET.SubElement(urlset, "url")
+        loc = ET.SubElement(url, "loc")
+        loc.text = f"{base_url}/#{page}"
         lastmod = ET.SubElement(url, "lastmod")
         lastmod.text = datetime.date.today().isoformat()
 

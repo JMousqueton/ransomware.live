@@ -12,11 +12,11 @@ _`extensions .admin1 .admin2 .admin3 .1admin .2admin .3admin`_
 |---|---|---|---|---|
 | Admin Locker | 🔴 | 20/05/2022 03:49 | `http://adminavf4cikzbv6mbbp7ujpwhygnn2t3egiz2pswldj32krrml42wyd.onion` | ❌ | 
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -4,9 +4,23 @@
 > Clop is a ransomware which uses the .clop extension after having encrypted the victim's files. Another unique characteristic belonging with Clop is in the string: "Dont Worry C|0P" included into the ransom notes. It is a variant of CryptoMix ransomware, but it additionally attempts to disable Windows Defender and to remove the Microsoft Security Essentials in order to avoid user space detection.
 
 ### External analysis
-- https://blog.malwarebytes.com/malwarebytes-news/2021/02/clop-targets-execs-ransomware-tactics-get-another-new-twist
+- https://actu.fr/normandie/rouen_76540/une-rancon-apres-cyberattaque-chu-rouen-ce-reclament-pirates_29475649.html
 
-- https://unit42.paloaltonetworks.com/clop-ransomware
+- https://asec.ahnlab.com/en/19542/
+
+- https://asec.ahnlab.com/wp-content/uploads/2021/01/Analysis_ReportCLOP_Ransomware.pdf
+
+- https://blog.fox-it.com/2020/11/16/ta505-a-brief-history-of-their-time/
+
+- https://blog.sensecy.com/2020/08/20/global-ransomware-attacks-in-2020-the-top-4-vulnerabilities/
+
+- https://blog.talosintelligence.com/breaking-the-silence-recent-truebot-activity/
+
+- https://blog.talosintelligence.com/talos-ir-q2-2023-quarterly-recap/
+
+- https://cisoclub.ru/doc/otchet-kompanii-group-ib-ransomware-uncovered-2020-2021/?bp-attachment=group-ib_ransomware_uncovered_2020-2021.pdf
+
+- https://docs.google.com/spreadsheets/d/1MI8Z2tBhmqQ5X8Wf_ozv3dVjz5sJOs-3
 
 - https://fourcore.io/blogs/clop-ransomware-history-adversary-simulation
 
@@ -17,8 +31,8 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://ekbgzchl6x2ias37.onion` | ❌ | 
-| DDOS Protection | 🔴 | 07/08/2023 05:14 | `http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion` | <a href="https://images.ransomware.live/screenshots/santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 07/08/2023 11:16 | `http://toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad.onion` | <a href="https://images.ransomware.live/screenshots/toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad-onion.png" target=_blank>📸</a> | 
+| DDOS Protection | 🟢 | 24/09/2023 13:44 | `http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion` | <a href="https://images.ransomware.live/screenshots/santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad-onion.png" target=_blank>📸</a> | 
+| TORRENT - CL0P^_- LEAKS | 🟢 | 24/09/2023 13:45 | `http://toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad.onion` | <a href="https://images.ransomware.live/screenshots/toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -29,12 +43,19 @@
 ![Statistics](../graphs/stats-clop.png)
 
 
-### Posts
+### Victims
 
-> 497 victims found
+> 504 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`SMWLLC.COM`](https://www.SMWLLC.COM) | 22/09/2023 | SM&W - Acoustic, Audiovisual & Technology Design Consultants |   |
+| [`vitalitygroup.com`](https://www.vitalitygroup.com) | 31/08/2023 | Vitality: Engagement Platform That Works - Wellness Solutions |   |
+| [`infinigate.ch`](https://www.infinigate.ch) | 29/08/2023 | Infinigate - Ihr Value-Added Distributor für Cyber Security |   |
+| [`digitalinsight.no`](https://www.digitalinsight.no) | 23/08/2023 | Digital Insight AS – The Future is Digital – Insight is key! |   |
+| [`MBO-PPS.COM`](https://www.MBO-PPS.COM) | 17/08/2023 | MBO Gruppe | <a href="https://images.ransomware.live/screenshots/posts/3dc71fbb80064b829a489d99ab3d5378.png" target=_blank>📸</a> |
+| [`MBOAMERICA.COM`](https://www.MBOAMERICA.COM) | 17/08/2023 | Home - MBO America | <a href="https://images.ransomware.live/screenshots/posts/19b55547bffec6a739dbb988b84fd1c4.png" target=_blank>📸</a> |
+| [`KOMORI.COM`](https://www.KOMORI.COM) | 17/08/2023 | KOMORI Corporation | <a href="https://images.ransomware.live/screenshots/posts/147148d0e50f952ef17941706944c1fc.png" target=_blank>📸</a> |
 | [`SHERMAN.EDU`](https://www.SHERMAN.EDU) | 02/08/2023 | Chiropractic School - Sherman College of Chiropractic - Spartanburg, SC | <a href="https://images.ransomware.live/screenshots/posts/df04b6c9bb929424799f990bed81fbae.png" target=_blank>📸</a> |
 | [`MACOM.COM`](https://www.MACOM.COM) | 26/07/2023 | Home | <a href="https://images.ransomware.live/screenshots/posts/3fef8c37d74d0c24a1356f72d6085cc9.png" target=_blank>📸</a> |
 | [`KALEPW.COM`](https://www.KALEPW.COM) | 26/07/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/d02b16676ebb8cc96ae27a9d619492d6.png" target=_blank>📸</a> |
@@ -535,4 +556,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

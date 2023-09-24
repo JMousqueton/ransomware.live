@@ -2,13 +2,22 @@
 
 
 
+### External analysis
+- https://news.drweb.com/show/?i=10302&lng=en
+
+- https://web.archive.org/web/20200509171721/https://raw.githubusercontent.com/fdiskyou/threat-INTel/master/2015/GlobalThreatIntelReport.pdf
+
+- https://www.arbornetworks.com/blog/asert/medusahttp-ddos-slithers-back-spotlight/
+
+- https://zerophagemalware.com/2017/10/13/rig-ek-via-malvertising-drops-a-miner/
+
 
 🔎 `ransomware.live`has an active  parser for indexing medusa's victims
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Medusa Blog | 🟢 | 07/08/2023 11:46 | `http://medusaxko7jxtrojdkxo66j7ck4q5tgktf7uqsqyfry4ebnxlcbkccyd.onion` | <a href="https://images.ransomware.live/screenshots/medusaxko7jxtrojdkxo66j7ck4q5tgktf7uqsqyfry4ebnxlcbkccyd-onion.png" target=_blank>📸</a> | 
+| Medusa Blog | 🟢 | 24/09/2023 14:10 | `http://medusaxko7jxtrojdkxo66j7ck4q5tgktf7uqsqyfry4ebnxlcbkccyd.onion` | <a href="https://images.ransomware.live/screenshots/medusaxko7jxtrojdkxo66j7ck4q5tgktf7uqsqyfry4ebnxlcbkccyd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -19,12 +28,33 @@
 ![Statistics](../graphs/stats-medusa.png)
 
 
-### Posts
+### Victims
 
-> 80 victims found
+> 101 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Philippine Health Insurance `](https://google.com/search?q=Philippine+Health+Insurance+) | 23/09/2023 | The Philippine Health Insurance Corporation (PhilHealth) was established in 1995 to provide universal health insurance in the Philippines. It is a tax-exempt, state-owned and controlled corporation (GOGC) of the Philippines, subordinate to the Ministry of Health. Company came to the tor chat but didn't answer for the payment yet. | <a href="https://images.ransomware.live/screenshots/posts/05437676810aa24b68ce8d1054c78903.png" target=_blank>📸</a> |
+| [`Franktronics, Inc`](https://google.com/search?q=Franktronics%2C+Inc) | 23/09/2023 | Franktronics, Inc. is an information technology and services company based out of 3618 George Washington Memorial Hwy, Hayes, Virginia, 23072, United States. | <a href="https://images.ransomware.live/screenshots/posts/d9d5e3c9534c01b24c52ce8b93c23ecf.png" target=_blank>📸</a> |
+| [`Gulf American Lines`](https://google.com/search?q=Gulf+American+Lines) | 20/09/2023 | Headquartered in Berkeley Heights, New Jersey, Gulf American Line is a leader in freight forwarding, warehousing and logistics provider. The company occupies a leading position in terms of the volume of transported goods in the United States | <a href="https://images.ransomware.live/screenshots/posts/3de21f97ffa05838e201f42a0dc622ca.png" target=_blank>📸</a> |
+| [`Chait`](https://google.com/search?q=Chait) | 20/09/2023 | Chait & Company is a Los Angeles—based firm offering a wide range of architectural design, general contracting and construction management services, recognized in 1994. The company's main office is located at 14931 a Celica St Ste A, Van Nuys, California, 91411, United States | <a href="https://images.ransomware.live/screenshots/posts/4ea548e59713b2eb22bb4e8b782347d6.png" target=_blank>📸</a> |
+| [`Auckland Transport`](https://google.com/search?q=Auckland+Transport) | 18/09/2023 | Founded in 2010, Auckland Transport is a company that is responsible for the region's transport infrastructure and public transport including roads and footpaths, cycling, parking, and public transportation. Auckland Transport is located in New Zealand | <a href="https://images.ransomware.live/screenshots/posts/9db38d9c911f901b21116cdcfaa9d144.png" target=_blank>📸</a> |
+| [`Steripharma `](https://google.com/search?q=Steripharma+) | 11/09/2023 | Steripharma is a Moroccan pharmaceutical laboratory founded in 1999. Cooperates with both public and private clients in Morocco and Africa. The company's head office is located at 429 So. West St, Syracuse, New York 13202, US | <a href="https://images.ransomware.live/screenshots/posts/40bf4510b22c9ff5c995aa6daa712af0.png" target=_blank>📸</a> |
+| [`Wave Hill`](https://google.com/search?q=Wave+Hill) | 11/09/2023 | Wave Hill is a community garden and cultural center located in New York City. The company's head office is located at 675 W 252nd St, Bronx, New York, 10471, United States | <a href="https://images.ransomware.live/screenshots/posts/f4839f51c975321c2cf49e364d092c5c.png" target=_blank>📸</a> |
+| [`Jules B`](https://google.com/search?q=Jules+B) | 04/09/2023 | Jules B is a chain of designer clothing stores for men and women in England founded for over 30 years. The company's head office is located at Yellow Brick House, Newcastle upon Tyne, Tyne and Wear NE1 2TY, GB | <a href="https://images.ransomware.live/screenshots/posts/92460fd6018ca80d1655854cd9de34e4.png" target=_blank>📸</a> |
+| [`Betton France`](https://google.com/search?q=Betton+France) | 04/09/2023 | Administration of the city of Betton (France). The concrete is located in the center of the Rhine agglomeration, 7 km north of Rennes, near the Rennes-Saint-Malo axis and on the Mont Saint-Michel tourist route. Currently, the population of the city is about 11,000 people. | <a href="https://images.ransomware.live/screenshots/posts/f2cb427c772d7ec476a867a9865b79fd.png" target=_blank>📸</a> |
+| [`Skynet`](https://google.com/search?q=Skynet) | 30/08/2023 | Skynet (https://www.skynetwisp.com/) provides Internet access services, both for the private segment of the market and for public institutions. The company's main office is located at 6630 Fm 1463 Rd 255 Step 500, Katy, Texas, 77494, United States | <a href="https://images.ransomware.live/screenshots/posts/2b06b130368c77df6960304c78f9f8d7.png" target=_blank>📸</a> |
+| [`Aranui Cruises`](https://google.com/search?q=Aranui+Cruises) | 30/08/2023 | Aranui Cruises is the oldest cruise operator in French Polynesia, having been founded 35 years ago. The company has a ship made to order ship "Aranui 5" designed for VIP level cruise holidays. The American office of the company is located at 2028 El Camino Real So Te B, San Mateo, California, 94403, United States | <a href="https://images.ransomware.live/screenshots/posts/ec61ded6fadc3cf25533e90e9f1d3d58.png" target=_blank>📸</a> |
+| [`Axis Elevators `](https://google.com/search?q=Axis+Elevators+) | 25/08/2023 | Axis Elevators - is one of the largest elevator companies in the UK and Ireland, engaged in the installation, maintenance and modernization of elevators and escalators, as well as other types of lifts. The company was founded more than 100 years ago. The main office of the company is located at 1, 65 Glass Hill Street, London, Greater London, SE10, United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/f155e0191c9124674a54725569dd8f9b.png" target=_blank>📸</a> |
+| [`Durham Fasteners`](https://google.com/search?q=Durham+Fasteners) | 25/08/2023 | Durham Fasteners is a family-owned company whose roots in the business were laid in 1981. The company specializes in solutions for fasteners, packaging, as well as worldwide deliveries. The company's office is located at 757 Mckay Rd, Block 9, Pickering, Ontario, 1 3C8, Canada | <a href="https://images.ransomware.live/screenshots/posts/d1e7c915aa3049c8246659ef654bdef0.png" target=_blank>📸</a> |
+| [`LEN Italia`](https://google.com/search?q=LEN+Italia) | 25/08/2023 | LEN Italia– Learning Education Network is a cooperative company that engages in professional training by planning and providing training and consulting activities. Founded in 2005, LEN has a team of more than 70 professionals available to educational institutions, companies, public administrations, non-profit organizations and individuals for any type of training and consultation. | <a href="https://images.ransomware.live/screenshots/posts/861c8528a28ce2de18e1818e670668e1.png" target=_blank>📸</a> |
+| [`Sartrouville  France`](https://google.com/search?q=Sartrouville++France) | 19/08/2023 | Sartrouville is a commune in the Yvelines department, Île-de-France, north central France. it is located in the north-western suburbs of Paris, 17.1 km from the center of Paris.  It employs 501-1,000 people and has $100M-$250M of revenue. Is headquartered in Sartrouville, Ile-de-France, 78500, France. | <a href="https://images.ransomware.live/screenshots/posts/00975a6474fd4401da9ce0c2e815e541.png" target=_blank>📸</a> |
+| [`The International Civil Defense Organization`](https://google.com/search?q=The+International+Civil+Defense+Organization) | 19/08/2023 | The International Civil Defense Organization (ICDO) is an intergovernmental organization whose goal is to promote the development by States of structures that protect and assist the population, as well as the protection of property and the environment from natural disasters or man-made disasters. It was founded in 1931.It consists of 60 Member States, 16 observer States and 23 associate members. | <a href="https://images.ransomware.live/screenshots/posts/d02022e2d0caafed9dc748d8ef7a2d8f.png" target=_blank>📸</a> |
+| [`Novi Pazar put ad`](https://google.com/search?q=Novi+Pazar+put+ad) | 19/08/2023 | Novi Pazar put ad is a company that operates in the Civil Engineering industry. It employs 251-500 people and has $10M-$25M of revenue. The company is headquartered in Novi Pazar, 36300, Serbia | <a href="https://images.ransomware.live/screenshots/posts/124438a285601f09fa94d204b6c350f4.png" target=_blank>📸</a> |
+| [`Postel SpA`](https://google.com/search?q=Postel+SpA) | 15/08/2023 | Postel SpA offers computer software for sale. The Company provides software products and management services including document management, direct marketing, and e-procurement software and related services. Postel operates throughout Italy, the company's head office is located at 5 Via Ricerca Scientifica, Padova, Veneto, 35127, Italy | <a href="https://images.ransomware.live/screenshots/posts/fe37ff2075b7f7945cc31e86b33d9ad1.png" target=_blank>📸</a> |
+| [`Borets (Levare.com) `](https://google.com/search?q=Borets+%28Levare.com%29+) | 14/08/2023 | Borets (Levare.com) is Headquartered in Houston, Texas, with an international headquarters in Dubai, Borets is a global provider specializing in the engineering, manufacture, sales and service of Electric Submersible Pump systems.  Uploaded Data Size: 1TB | <a href="https://images.ransomware.live/screenshots/posts/294dd5c04a571efa0c5b3072ab0789c6.png" target=_blank>📸</a> |
+| [`CB Energy Australlia`](https://google.com/search?q=CB+Energy+Australlia) | 14/08/2023 | CB Group Australia provide a broad range of services across the construction industry in project management, civil, electrical and maintenance disciplines. The company was founded in 1946.  The company's central office is located at 15 Production Ave, Molendinar, Queensland, 4214, Australia | <a href="https://images.ransomware.live/screenshots/posts/9f75f0d166d98c02cfdf715090405d1c.png" target=_blank>📸</a> |
+| [`Emerson School District`](https://google.com/search?q=Emerson+School+District) | 08/08/2023 | The Emerson School District is a comprehensive community public school district that serves students in pre-kindergarten through twelfth grade from Emerson, in Bergen County, New Jersey, United States. There are currently about 1,200 students enrolled in the school district. | <a href="https://images.ransomware.live/screenshots/posts/a02a236165d5739bff270de972270ffe.png" target=_blank>📸</a> |
 | [`St Landry Parish School Board `](https://google.com/search?q=St+Landry+Parish+School+Board+) | 31/07/2023 | St Landry Parish School Board is a school district based in Opelusas, Louisiana. The area includes primary, secondary and secondary schools. At the moment, more than 14,000 students are studying in them. | <a href="https://images.ransomware.live/screenshots/posts/404eff744e5ff899bce05b22cc97f7be.png" target=_blank>📸</a> |
 | [`Ace Micromatic Group`](https://google.com/search?q=Ace+Micromatic+Group) | 31/07/2023 | Ace Micromatic Group is India's largest machine tool conglomerate with a market presence in several countries across Asia, Australia, Middle East, North & South America and Europe. | <a href="https://images.ransomware.live/screenshots/posts/5be95069bfe8780edb42e951027dba01.png" target=_blank>📸</a> |
 | [`The Sinbad Club`](https://google.com/search?q=The+Sinbad+Club) | 25/07/2023 | The Sinbad Club company, founded in 1992, offers a wide range of services for recreation on the Red Sea coast in Egypt. The main office of the company is located at 10 Elmenya Street, Cairo, Cairo, HELIOPOLIS, Egypt. | <a href="https://images.ransomware.live/screenshots/posts/cbf4bad4a283e17a8cbafebab2d4b1f7.png" target=_blank>📸</a> |
@@ -108,4 +138,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

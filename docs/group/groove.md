@@ -12,11 +12,11 @@
 |---|---|---|---|---|
 | Утечки - Groove | 🔴 | 30/10/2021 10:50 | `http://ws3dh6av66sjbxxkjpw5ao3wqzmtejnkzheswm4dz5rrwvular7xvkqd.onion` | ❌ | 
 
-### Posts
+### Victims
 
 > 13 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Я не пью виски но с ним бы выпил`](https://google.com/search?q=%D0%AF+%D0%BD%D0%B5+%D0%BF%D1%8C%D1%8E+%D0%B2%D0%B8%D1%81%D0%BA%D0%B8+%D0%BD%D0%BE+%D1%81+%D0%BD%D0%B8%D0%BC+%D0%B1%D1%8B+%D0%B2%D1%8B%D0%BF%D0%B8%D0%BB) | 30/10/2021 |   |   |
 | [`episcopalretirement.com  Возможна утечка`](https://google.com/search?q=episcopalretirement.com++%D0%92%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D0%B0+%D1%83%D1%82%D0%B5%D1%87%D0%BA%D0%B0) | 23/10/2021 |   |   |
@@ -34,4 +34,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -6,9 +6,21 @@
 _`rfi location woe2suafeg6ehxivgvvn4nh6ectbdhdqgc4vzph27mmyn7rjf2c52jid.onion/index.php`_
 
 ### External analysis
-- https://www.zdnet.com/article/lorenz-ransomware-attack-victims-can-now-retrieve-their-files-for-free-with-this-decryption-tool
+- https://arcticwolf.com/resources/blog/lorenz-ransomware-chiseling-in/
 
-- https://www.cybertalk.org/the-worst-outcomes-lorenz-ransomware-a-new-double-extortion-strategy
+- https://arcticwolf.com/resources/blog/lorenz-ransomware-getting-dumped/
+
+- https://therecord.media/free-decrypter-available-for-lorenz-ransomware/
+
+- https://twitter.com/AltShiftPrtScn/status/1423190900516302860?s=20
+
+- https://www.bleepingcomputer.com/news/security/meet-lorenz-a-new-ransomware-gang-targeting-the-enterprise/
+
+- https://www.cybereason.com/blog/cybereason-vs.-lorenz-ransomware
+
+- https://www.tesorion.nl/en/posts/lorenz-ransomware-analysis-and-a-free-decryptor/
+
+- https://www.tesorion.nl/en/posts/lorenz-ransomware-rebound-corruption-and-irrecoverable-files/
 
 
 🔎 `ransomware.live`has an active  parser for indexing lorenz's victims
@@ -16,8 +28,8 @@ _`rfi location woe2suafeg6ehxivgvvn4nh6ectbdhdqgc4vzph27mmyn7rjf2c52jid.onion/in
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Lorenz | 🟢 | 07/08/2023 11:44 | `http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd.onion` | <a href="https://images.ransomware.live/screenshots/lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd-onion.png" target=_blank>📸</a> | 
-| Lorenz | 🟢 | 07/08/2023 11:44 | `http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd.onion` | <a href="https://images.ransomware.live/screenshots/lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd-onion.png" target=_blank>📸</a> | 
+| Lorenz | 🟢 | 24/09/2023 14:09 | `http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd.onion` | <a href="https://images.ransomware.live/screenshots/lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd-onion.png" target=_blank>📸</a> | 
+| Lorenz | 🟢 | 24/09/2023 14:09 | `http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd.onion` | <a href="https://images.ransomware.live/screenshots/lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -28,12 +40,15 @@ _`rfi location woe2suafeg6ehxivgvvn4nh6ectbdhdqgc4vzph27mmyn7rjf2c52jid.onion/in
 ![Statistics](../graphs/stats-lorenz.png)
 
 
-### Posts
+### Victims
 
-> 67 victims found
+> 70 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Dee Sign`](https://www.Dee%20Sign) | 12/09/2023 |  |   |
+| [`BF&S Civil Engineers`](https://www.BF&S%20Civil%20Engineers) | 20/08/2023 |  |   |
+| [`Felling Trailers, Inc.`](https://www.Felling%20Trailers,%20Inc.) | 13/07/2023 |  |   |
 | [`Tarolli, Sundheim, Covell & Tummino LLP`](https://google.com/search?q=Tarolli%2C+Sundheim%2C+Covell+%26+Tummino+LLP) | 05/04/2023 |  |   |
 | [`Joy Cone Co, Joy Baking group, BoDeans Baking, Altesa`](https://google.com/search?q=Joy+Cone+Co%2C+Joy+Baking+group%2C+BoDeans+Baking%2C+Altesa) | 05/04/2023 |  |   |
 | [`NGS Super`](https://google.com/search?q=NGS+Super) | 05/04/2023 |  |   |
@@ -104,4 +119,4 @@ _`rfi location woe2suafeg6ehxivgvvn4nh6ectbdhdqgc4vzph27mmyn7rjf2c52jid.onion/in
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

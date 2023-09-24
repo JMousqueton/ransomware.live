@@ -4,17 +4,25 @@
 > Ransomware. Uses dropper written in JavaScript to deploy a .NET payload.
 
 ### External analysis
-- 61141FCA047691D0E47CFD84717B59D3BEDF822442B5E907BE147FD6B8A11B723A48DF7FCA47
+- https://blog.cluster25.duskrise.com/2023/05/22/back-in-black-blackbyte-nt
 
-- BlackByteSupp0rt@onionmail.org
+- https://blog.talosintelligence.com/2022/05/the-blackbyte-ransomware-group-is.html
 
-- https://www.zdnet.com/article/blackbyte-ransomware-decryptor-released/
+- https://de.darktrace.com/blog/detecting-the-unknown-revealing-uncategorised-ransomware-using-darktrace
 
-- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/blackbyte-ransomware-pt-1-in-depth-analysis/
+- https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2022/06/23093553/Common-TTPs-of-the-modern-ransomware_low-res.pdf
 
-- https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/blackbyte-ransomware-pt-2-code-obfuscation-analysis/
+- https://news.sophos.com/en-us/2022/10/04/blackbyte-ransomware-returns/
 
-- https://www.techtarget.com/searchsecurity/news/252510334/BlackByte-ransomware-attacks-exploiting-ProxyShell-flaws
+- https://redcanary.com/blog/blackbyte-ransomware/
+
+- https://research.nccgroup.com/2022/07/13/climbing-mount-everest-black-byte-bytes-back/
+
+- https://securelist.com/modern-ransomware-groups-ttps/106824/
+
+- https://therecord.media/san-francisco-49ers-confirm-ransomware-attack/
+
+- https://twitter.com/splinter_code/status/1628057204954652674
 
 
 🔎 `ransomware.live`has an active  parser for indexing blackbyte's victims
@@ -27,23 +35,30 @@
 | BlackByte BLOG | 🔴 | 28/03/2022 11:17 | `http://dlyo7r3n4qy5fzv4645nddjwarj7wjdd6wzckomcyc7akskkxp4glcad.onion` | ❌ | 
 | BlackByte BLOG | 🔴 | 24/04/2022 20:21 | `http://fl3xpz5bmgzxy4fmebhgsbycgnz24uosp3u4g33oiln627qq3gyw37ad.onion` | ❌ | 
 | BlackByte BLOG | 🔴 | 12/07/2022 20:09 | `http://ce6roic2ykdjunyzazsxmjpz5wsar4pflpoqzntyww5c2eskcp7dq4yd.onion` | ❌ | 
-| BB Auction | 🟢 | 07/08/2023 12:12 | `http://jbeg2dct2zhku6c2vwnpxtm2psnjo2xnqvvpoiiwr5hxnc6wrp3uhnad.onion` | <a href="https://images.ransomware.live/screenshots/jbeg2dct2zhku6c2vwnpxtm2psnjo2xnqvvpoiiwr5hxnc6wrp3uhnad-onion.png" target=_blank>📸</a> | 
+| BB Auction | 🟢 | 24/09/2023 13:42 | `http://jbeg2dct2zhku6c2vwnpxtm2psnjo2xnqvvpoiiwr5hxnc6wrp3uhnad.onion` | <a href="https://images.ransomware.live/screenshots/jbeg2dct2zhku6c2vwnpxtm2psnjo2xnqvvpoiiwr5hxnc6wrp3uhnad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
-* [📝 3 ransom notes](notes/blackbyte)
+* [📝 4 ransom notes](notes/blackbyte)
 
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-blackbyte.png)
 
 
-### Posts
+### Victims
 
-> 123 victims found
+> 130 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Hoteles Xcaret`](https://www.xcaret.com/) | 18/09/2023 | Hoteles Xcaret offers the best lodging experiences in Riviera Maya. Our hotels have been designed to satisfy and exceed the demands of different kinds of travelers, from parents wishing to surprise their kids with the best family vacations, to private and sustainable experiences collectors who wish for an incredible journey as a couple. |   |
+| [`Alps Alpine`](https://www.alpsalpine.com/) | 11/09/2023 | Alps Alpine, a leading manufacturer of electronic components and automotive infotainment systems, has brought the world numerous “First 1” and “Number 1” products since its founding in 1948. The Alps Alpine Group currently operates 110 bases in 26 countries and regions, supplying roughly 40,000 different products and solutions to around 2,000 companies worldwide. In January 2019, Alps Electric Co., Ltd. and Alpine Electronics, Inc. integrated their businesses to embark on a new era as Alps Alpine Co., Ltd. Serving a diverse range of markets encompassing an automotive industry currently undergoing major transformation, the mobile and consumer electronics domains, through to energy, healthcare and industry markets, Alps Alpine will combine and build on core device technology established over many years in three areas – human-machine interfaces, SENSORING™ and connectivity – along with system design and software development capabilities to innovate value that brings comfort to and enriches the lives of people everywhere. |   |
+| [`Kirby Risk`](https://www.kirbyrisk.com/) | 09/09/2023 | Since 1926, Kirby Risk has remained committed to the concept of sacrificial service by going above and beyond what it takes to provide you with the right products and services at the right time, to the right place, at the right cost—working hard every day to MAKE IT HAPPEN!Today, Kirby Risk is still known by our customers as a dependable resource dedicated to solving their problems with the more than 40 locations throughout Indiana, Illinois, Ohio and Georgia. Our skilled and experienced team members are available around the clock to meet your electrical product and service needs. We represent over 2,000 manufacturers and carry more than 90,000 top-quality products. |   |
+| [`FOCUS Business Solutions`](https://focus-solutions.net/) | 07/09/2023 | FOCUS was founded in 1998 with the simple vision of delivering great cost savings and compliance services to importers and exporters at a fair price. Clients engage us to manage their compliance and duty savings programs within their limited budgets. Being highly responsive and flexible to meet the unique business and compliance needs of each of our clients is why clients have stayed with us for 25 years. We deliver the highest quality customs management and compliance services to our clients. |   |
+| [`Chambersburg Area School District`](https://www.casdonline.org/) | 07/09/2023 | The Chambersburg Area School District covers 250 square miles in Franklin County, Pennsylvania, near the center of the Cumberland Valley. More than 61,000 people live in the district, which is composed of the Borough of Chambersburg, Greene, Hamilton, Letterkenny, and Lurgan townships, and most of Guilford Township. The Chambersburg Area School District has a rich and important history. We are fortunate to have almost 10,000 students of many different backgrounds and nations of origin. Just in the past several years, our English Language Learners have increased from approximately 500 to 1000 students or 10% of our student population. |   |
+| [`Smead`](https://www.smead.com/) | 06/09/2023 | Smead Manufacturing keeps its customers' offices organized. Accordingly, the company makes more than 5,000 paper filing products that are sold in office supply stores nationwide. Smead's product assortment includes folders (hanging, tabbed, and expandable), labels, fasteners, and binder and report covers. The firm also supplies open and secure shelving systems.The company was founded in 1906 by Charles Smead. After the founder's death, Smead Manufacturing was purchased by employee P. A. Hoffman, whose granddaughter, Sharon Hoffman Avent, is president and CEO today. |   |
+| [`Ontellus`](https://www.ontellus.com/) | 24/08/2023 | Established in 1975, and rebranded in 2017 Ontellus provides internet-based record retrieving and billing services. Their headquarters are located in Houston, Texas |   |
 | [`Avalign Technologies`](https://www.avalign.com/) | 05/07/2023 | valign designs, manufactures, and delivers the highest quality, precision-machined tools and implants for a wide variety of surgical and medical specialties around the world. From proprietary implant coatings to German-made instruments, Avalign is a leading full-service manufacturer known for consistent and sophisticated production and supply chain management. |   |
 | [`Brett Martin`](https://www.brettmartin.com/) | 03/07/2023 | Established in 1958, Brett Martin is a global player supplying specialist plastic products for the construction, fabrication, and, print and display sectors worldwide. The company’s product portfolio includes an impressive range of plastic sheets, factory engineered rooflight systems, and, plumbing and drainage systems. |   |
 | [`Kisco Senior Living`](https://www.kiscoseniorliving.com/) | 16/06/2023 | Kisco Senior Living was founded in 1990. This company provides elderly care services in the form of assisted and independent community living. |   |
@@ -170,4 +185,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

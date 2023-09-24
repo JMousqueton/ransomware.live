@@ -8,19 +8,23 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Abyss-data | 🟢 | 07/08/2023 12:04 | `http://3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd.onion` | <a href="https://images.ransomware.live/screenshots/3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd-onion.png" target=_blank>📸</a> | 
+| Abyss-data | 🟢 | 24/09/2023 13:34 | `http://3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd.onion` | <a href="https://images.ransomware.live/screenshots/3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-abyss.png)
 
 
-### Posts
+### Victims
 
-> 19 victims found
+> 23 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`njsba.com`](https://google.com/search?q=njsba.com) | 10/09/2023 | NJSBA , 529Gb uncompressed data |   |
+| [`www.northriverco.com`](https://google.com/search?q=www.northriverco.com) | 08/09/2023 | North River Co LLC, 303Gb uncompressed data |   |
+| [`www.lasaterandmartin.com`](https://google.com/search?q=www.lasaterandmartin.com) | 31/08/2023 | Lasater & Martin, P.C. Attorneys, 697Gb uncompressed data |   |
+| [`www.finitia.net`](https://google.com/search?q=www.finitia.net) | 09/08/2023 | finitia ag, 465Gb uncompressed data |   |
 | [`plbint.com`](https://google.com/search?q=plbint.com) | 21/07/2023 | PLB International, 990Gb uncompressed data |   |
 | [`www.brockhouse.co.uk`](https://google.com/search?q=www.brockhouse.co.uk) | 18/07/2023 | Brockhouse Group Ltd, 35Gb uncompressed data |   |
 | [`www.tractrad.com`](https://google.com/search?q=www.tractrad.com) | 17/07/2023 | Tractrad.com, 35Gb uncompressed data |   |
@@ -43,4 +47,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

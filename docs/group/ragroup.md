@@ -8,19 +8,33 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| RA Group | 🟢 | 07/08/2023 11:54 | `http://pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd.onion` | <a href="https://images.ransomware.live/screenshots/pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd-onion.png" target=_blank>📸</a> | 
+| RA World | 🟢 | 24/09/2023 14:19 | `http://pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd.onion` | <a href="https://images.ransomware.live/screenshots/pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-ragroup.png)
 
 
-### Posts
+### Victims
 
-> 15 victims found
+> 29 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`24/7 Express Logistics (Unpay-Start Leaking)`](https://google.com/search?q=24%2F7+Express+Logistics+%28Unpay-Start+Leaking%29) | 11/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/0b4011fc3ad5a218924b624600bf3fa1.png" target=_blank>📸</a> |
+| [`24/7 Express Logistics `](https://google.com/search?q=24%2F7+Express+Logistics+) | 07/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/0b4011fc3ad5a218924b624600bf3fa1.png" target=_blank>📸</a> |
+| [`Zurvita `](https://google.com/search?q=Zurvita+) | 04/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/883557a85043ed1693e1e32bc2ea5f86.png" target=_blank>📸</a> |
+| [`Piex Group `](https://google.com/search?q=Piex+Group+) | 04/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/c315b09529f9742bd3b21224562d9480.png" target=_blank>📸</a> |
+| [`Yuxin Automobile Co.Ltd (裕信汽車) `](https://google.com/search?q=Yuxin+Automobile+Co.Ltd+%28%E8%A3%95%E4%BF%A1%E6%B1%BD%E8%BB%8A%29+) | 04/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/c5346b5ea75f4d1d67cdb0f63a5d90df.png" target=_blank>📸</a> |
+| [`I****n `](https://google.com/search?q=I%2A%2A%2A%2An+) | 04/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/d2b4e715e48857ddacae96f63582fe63.png" target=_blank>📸</a> |
+| [`24****r `](https://google.com/search?q=24%2A%2A%2A%2Ar+) | 04/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/0b4011fc3ad5a218924b624600bf3fa1.png" target=_blank>📸</a> |
+| [`He****rk `](https://google.com/search?q=He%2A%2A%2A%2Ark+) | 04/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/f6198d4b58b774a3f588bf9f6d39ecec.png" target=_blank>📸</a> |
+| [`Piex Group`](https://google.com/search?q=Piex+Group) | 01/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/c315b09529f9742bd3b21224562d9480.png" target=_blank>📸</a> |
+| [`Yuxin Automobile Co.Ltd(裕信汽車)`](https://google.com/search?q=Yuxin+Automobile+Co.Ltd%28%E8%A3%95%E4%BF%A1%E6%B1%BD%E8%BB%8A%29) | 01/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/c5346b5ea75f4d1d67cdb0f63a5d90df.png" target=_blank>📸</a> |
+| [`Zurvita`](https://google.com/search?q=Zurvita) | 29/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/883557a85043ed1693e1e32bc2ea5f86.png" target=_blank>📸</a> |
+| [`Y****e`](https://google.com/search?q=Y%2A%2A%2A%2Ae) | 29/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/c5346b5ea75f4d1d67cdb0f63a5d90df.png" target=_blank>📸</a> |
+| [`2****r`](https://google.com/search?q=2%2A%2A%2A%2Ar) | 29/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/0b4011fc3ad5a218924b624600bf3fa1.png" target=_blank>📸</a> |
+| [`I****n`](https://google.com/search?q=I%2A%2A%2A%2An) | 29/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/d2b4e715e48857ddacae96f63582fe63.png" target=_blank>📸</a> |
 | [`P****X`](https://google.com/search?q=P%2A%2A%2A%2AX) | 04/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/c97f782c1fb6c9d5d1a6d6186a6c4930.png" target=_blank>📸</a> |
 | [`Z****ta`](https://google.com/search?q=Z%2A%2A%2A%2Ata) | 04/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/d82810e7435f55d255267447d88cc7b4.png" target=_blank>📸</a> |
 | [`Bluelinea`](https://google.com/search?q=Bluelinea) | 30/07/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/4e2f846783561944807425318d0cb943.png" target=_blank>📸</a> |
@@ -39,4 +53,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

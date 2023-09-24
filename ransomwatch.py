@@ -12,7 +12,7 @@ import argparse
 from datetime import datetime
 import importlib
 from os.path import dirname, basename, isfile, join
-
+import time
 # local imports
 
 # import parsers
@@ -32,6 +32,8 @@ from sharedutils import sockshost, socksport
 from sharedutils import stdlog, dbglog, errlog, honk
 import glob
 
+
+start_time = time.time()
 print(
     '''
        _______________                        |*\_/*|________
@@ -143,6 +145,8 @@ def scraper(force=''):
                             if group['name'] in ['blackbasta','clop']:
                                 browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                                     args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])
+                            elif group['name'] in ['ransomed']:
+                                 browser = play.firefox.launch(args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])
                             else:
                                 browser = play.chromium.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                                     args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']]) 
@@ -185,9 +189,8 @@ def scraper(force=''):
                 except PlaywrightTimeoutError:
                     stdlog('Timeout!')
                 except Exception as exception:
-                    errlog(exception)
-                    errlog("error")
-            stdlog('leaving : ' + host['slug'] + ' --------- ' + group['name'])
+                    stdlog(exception)
+                stdlog('leaving : ' + host['slug'] + ' --------- ' + group['name'])
 
 ### END 
 
@@ -263,3 +266,6 @@ if args.mode == 'parse':
 if args.mode == 'list':
     lister()
  
+end_time = time.time()
+elapsed_time = end_time - start_time
+stdlog(f"Script executed in {elapsed_time:.4f} seconds")

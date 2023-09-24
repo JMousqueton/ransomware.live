@@ -2,6 +2,7 @@ window.$docsify = {
     coverpage: false,
     subMaxLevel: 2,
     loadSidebar: true,
+    routerMode: 'hash', 
     themeColor: '#42b983',
     darklightTheme: {
       defaultTheme : 'light'

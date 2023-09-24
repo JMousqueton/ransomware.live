@@ -5,13 +5,32 @@
 
 _`wtyafjyhwqrg[...].onion/post?get_listBlog`_
 
+### External analysis
+- https://asec.ahnlab.com/en/39152/
+
+- https://blog.cyble.com/2022/12/08/mallox-ransomware-showing-signs-of-increased-activity/
+
+- https://decoded.avast.io/threatresearch/decrypted-targetcompany-ransomware/
+
+- https://id-ransomware.blogspot.com/2021/06/tohnichi-ransomware.html
+
+- https://news.sophos.com/en-us/2022/07/20/ooda-x-ops-takes-on-burgeoning-sql-server-attacks/
+
+- https://securityaffairs.co/wordpress/127761/malware/targetcompany-ransomware-decryptor.html
+
+- https://unit42.paloaltonetworks.com/mallox-ransomware/
+
+- https://www.bleepingcomputer.com/news/security/free-decryptor-released-for-targetcompany-ransomware-victims/
+
+- https://www.sangfor.com/blog/cybersecurity/new-threat-mallox-ransomware
+
 
 🔎 `ransomware.live`has an active  parser for indexing mallox's victims
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Mallox - Blog | 🟢 | 07/08/2023 11:45 | `http://wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad.onion` | <a href="https://images.ransomware.live/screenshots/wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad-onion.png" target=_blank>📸</a> | 
+| Mallox - Blog | 🟢 | 24/09/2023 14:10 | `http://wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad.onion` | <a href="https://images.ransomware.live/screenshots/wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -22,12 +41,13 @@ _`wtyafjyhwqrg[...].onion/post?get_listBlog`_
 ![Statistics](../graphs/stats-mallox.png)
 
 
-### Posts
+### Victims
 
-> 34 victims found
+> 35 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`BOZOVICH TIMBER PRODUCTS INC`](https://google.com/search?q=BOZOVICH+TIMBER+PRODUCTS+INC) | 10/09/2023 |  |   |
 | [`Kogetsu`](https://google.com/search?q=Kogetsu) | 01/08/2023 |  |   |
 | [`Contec Systems`](https://google.com/search?q=Contec+Systems) | 30/07/2023 |  |   |
 | [`West Cargo`](https://google.com/search?q=West+Cargo) | 27/07/2023 |  |   |
@@ -65,4 +85,4 @@ _`wtyafjyhwqrg[...].onion/post?get_listBlog`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

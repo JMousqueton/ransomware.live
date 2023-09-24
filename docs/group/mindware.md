@@ -3,6 +3,9 @@
 
 > Ransomware, potential rebranding of win.sfile.
 
+### External analysis
+- https://www.sentinelone.com/blog/from-the-front-lines-another-rebrand-mindware-and-sfile-ransomware-technical-breakdown/
+
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
@@ -13,11 +16,11 @@
 ![Statistics](../graphs/stats-mindware.png)
 
 
-### Posts
+### Victims
 
 > 13 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`willsent`](https://google.com/search?q=willsent) | 05/05/2022 |   |   |
 | [`welplaat`](https://google.com/search?q=welplaat) | 05/05/2022 |   |   |
@@ -35,4 +38,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

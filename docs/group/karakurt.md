@@ -11,8 +11,8 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Chat | 🟢 | 07/08/2023 11:26 | `http://omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead.onion` | <a href="https://images.ransomware.live/screenshots/omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead-onion.png" target=_blank>📸</a> | 
-| Magazine | 🟢 | 07/08/2023 11:26 | `http://3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd.onion` | <a href="https://images.ransomware.live/screenshots/3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd-onion.png" target=_blank>📸</a> | 
+| Chat | 🟢 | 24/09/2023 13:56 | `http://omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead.onion` | <a href="https://images.ransomware.live/screenshots/omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead-onion.png" target=_blank>📸</a> | 
+| Magazine | 🟢 | 24/09/2023 13:57 | `http://3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd.onion` | <a href="https://images.ransomware.live/screenshots/3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd-onion.png" target=_blank>📸</a> | 
 | none | 🔴 | 01/05/2021 00:00 | `http://karaleaks.com` | <a href="https://images.ransomware.live/screenshots/karaleaks-com.png" target=_blank>📸</a> | 
 
 
@@ -28,16 +28,19 @@
 ![Statistics](../graphs/stats-karakurt.png)
 
 
-### Posts
+### Victims
 
-> 71 victims found
+> 74 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Hospice of Huntington`](https://google.com/search?q=Hospice+of+Huntington) | 22/09/2023 | Hospice of Huntington, Inc. is the first hospice in the State of West Virginia. Founded in 1982. Karakurt has obtained 20 gb data of the hospice. Many financial and operating files. HR information, medical records, PI of volunteers, information of donations and much other.  |   |
+| [`Yakima Valley Radiology`](https://google.com/search?q=Yakima+Valley+Radiology) | 22/09/2023 | Yakima Valley Radiology PC is a company that operates in the Hospital & Health Care industry. 10 of the organization contain financial reports, client lists with contacts, list of patients for 15 years (212579 rows), a database of social security numbers (including staff, doctors) with 766000  rows. |   |
+| [`Valley Mountain Regional Center`](https://google.com/search?q=Valley+Mountain+Regional+Center) | 31/08/2023 | Valley Mountain Regional Center is a private company that serves children and adults with developmental disabilities. Data: 147GB (medical record, passports, SSNs, accounting, financial documents).Soon. | <a href="https://images.ransomware.live/screenshots/posts/a0ceece6dad9c9cb1eddf3018803300c.png" target=_blank>📸</a> |
 | [`COSI`](https://google.com/search?q=COSI) | 02/08/2023 | COSI, Columbus, Ohio's dynamic Center of Science and Industry, inspires the scientists, dreamers, and innovators of tomorrow. We've taken about 75GBs of data from this organization. You will find there their projects information, lots of accounting and financial documents, contracts (some of them are confidential), clients contacts, donations information an so on. There are also databases containing clients, partners and employee data, transactions and correspondence. Wait for the release. | <a href="https://images.ransomware.live/screenshots/posts/53e44a522d50181a073c89fc63b2bc17.png" target=_blank>📸</a> |
 | [`McAlester Regional Health Center`](https://google.com/search?q=McAlester+Regional+Health+Center) | 28/07/2023 | Founded in 1978, McAlester Regional Health Center is devoted to a continuum of care offering a variety of health care services to the citizens of Southeast Oklahoma. Another one medical center doesn't care about their patients' data. 126gb of this organization data includes medical information, personal documents, financial and accounting data and lots of HR documentation. 40gb of DNA tests of patients is  a bonus! Stay tuned. | <a href="https://images.ransomware.live/screenshots/posts/756eaa444618c022b21542bb6c067a2c.png" target=_blank>📸</a> |
 | [`Regional Family Medicine`](https://google.com/search?q=Regional+Family+Medicine) | 28/07/2023 | Regional Family Medicine is a primary care group comprised of two separate clinic locations, eight primary care physicians, four advanced practice nurses, and over fifty other nurses, technicians and support staff. There is some data on medical staff, ss numbers, medical reports, bank statements, invoices, some confidential docs, incidents. +5gb SQL. | <a href="https://images.ransomware.live/screenshots/posts/8b23d528197b61b75900cbd3fbd6f335.png" target=_blank>📸</a> |
-| [`Jefferson County Health Center`](https://google.com/search?q=Jefferson+County+Health+Center) | 03/07/2023 | Jefferson County Hospital, Waurika, Oklahoma, is a 25-bed critical access facility providing medical services to residents of Jefferson County and surrounding communities. 1.1 TB from the medical facility: medical records, test results, and personal information of employees and patients. Accounting and financial information is abundant. This data will be uploaded during upcoming summer release. |   |
+| [`Jefferson County Health Center`](https://google.com/search?q=Jefferson+County+Health+Center) | 03/07/2023 | Jefferson County Hospital, Waurika, Oklahoma, is a 25-bed critical access facility providing medical services to residents of Jefferson County and surrounding communities. 1.1 TB from the medical facility: medical records, test results, and personal information of employees and patients. Accounting and financial information is abundant. This data will be uploaded during upcoming summer release. | <a href="https://images.ransomware.live/screenshots/posts/a1732fa2bc54b60866b2ebc94eb3954a.png" target=_blank>📸</a> |
 | [`CentroMed`](https://google.com/search?q=CentroMed) | 28/06/2023 | El Centro del Barrio (CDB), which started doing business as CentroMed in 2001, was founded in 1971 and ran one counseling program for children and adolescents. They lost 25 GB of their data, which contains several thousand ssns and other medical and health information. Accounting, financial, human resources data is also represented. | <a href="https://images.ransomware.live/screenshots/posts/85a461d7575066a7cbf137d22841f0df.png" target=_blank>📸</a> |
 | [`Pan Pacific Hotels Group`](https://google.com/search?q=Pan+Pacific+Hotels+Group) | 28/06/2023 | Pan Pacific Hotels Group is a wholly-owned hotel subsidiary of Singapore-listed UOL Group Limited. Pan Pacific Melbourne has lost lots of corporate and personal documents. Contracts, ssns, passports, drivers licenses. 40+GB of data are coming.  | <a href="https://images.ransomware.live/screenshots/posts/f7854eba0d3cfb2dd8d83245609d5049.png" target=_blank>📸</a> |
 | [`Reeds Spring School District`](https://google.com/search?q=Reeds+Spring+School+District) | 26/06/2023 | Gibson Technical Center is a career and technical education school that is part of the Reeds Spring School District. 155GB have been stolen from their network. You can find there: HR, detailed finance and accounting, employee information and contracts, confidential students information including medical documents, databases with complete students information. The data will be uploaded during upcoming summer leaks. |   |
@@ -108,4 +111,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

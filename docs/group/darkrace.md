@@ -15,11 +15,11 @@
 ![Statistics](../graphs/stats-darkrace.png)
 
 
-### Posts
+### Victims
 
 > 10 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`marstrand.se`](https://google.com/search?q=marstrand.se) | 09/06/2023 | Längst ut i väster, där skärgården tar slut och havet tar vid, ligger Marstrand. Seglarstaden och badorten Marstrand är inte utan anledning en storfavorit för alla besökare. Här finns kajen med båtar av alla slag, mysiga hus vid bilfria gator, topprestauranger och caféer, sol och salta bad, musik och skådespel. På toppen av ön tronar Carlstens fästning. Efter en kort färjetur över sundet befinner du dig på själva Marstrandsön, med en levande närvaro från en svunnen tid, blandat med trendiga seglarjackor. På Marstrand finner man både krogliv och stilla lugn beroende på när man besöker ön. Med sina mysiga kvarter, små gränder och prång, sin dominerande fästning och havsutsikt vart man än vänder sig, väcker ön starka känslor. Längs bryggorna i Sveriges största gästhamn ligger båtarna tätt och med GKSS Match Cup Sweden första veckan i juli är Marstrand definitivt seglingens huvudstad i Sverige. | <a href="https://images.ransomware.live/screenshots/posts/e4268348ff38e917668800ba0900b0fb.png" target=_blank>📸</a> |
 | [`vaud-promotion`](https://google.com/search?q=vaud-promotion) | 07/06/2023 | L’Association Vaud Promotion a pour but d’accroître la notoriété, la compétitivité et l’attractivité du canton de Vaud au moyen de la marque VAUD+ dont elle promeut les valeurs. Elle entend réaliser son but en collaboration avec les acteurs économiques, régions et institutions participant à la promotion du canton de Vaud, à travers les activités, produits et services qui en font le succès, qu’ils soient économiques, académiques, touristiques, culturels, sportifs, issus du terroir vaudois et gastronomiques.A cet effet, elle anime une communauté d’acteurs multisectoriels vaudois qui incarnent et véhiculent les valeurs de la marque VAUD+. | <a href="https://images.ransomware.live/screenshots/posts/4573da0aa93abb757a449ba130b198a0.png" target=_blank>📸</a> |
@@ -34,4 +34,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

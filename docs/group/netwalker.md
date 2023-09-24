@@ -4,11 +4,25 @@
 > NetWalker ransomware group operates by the threat actor known as "CIRCUS SPIDER". The NetWalker ransomware was discovered in 2019. The group mainly targeting the Asia Pacific region but can attack globally. The group uses common attacking tools like Mimikatz and other legitimate tools (LOLBINS) like PSTools, AnyDesk, TeamViewer, NLBrute, and more. The group knowing by targeting the healthcare sector. Finally, in January 2021, Netwalker was takedown by the authorities, the police have confiscated hundreds of thousands of dollars in ransom payments collected by the Netwalker group, and they seized servers and disrupted the infrastructure and the darknet websites of the Netwalker ransomware group.
 
 ### External analysis
-- https://threatpost.com/netwalker-ransomware-suspect-charged/163405
+- https://0x00-0x7f.github.io/Netwalker-from-Powershell-reflective-loader-to-injected-Dll/
 
-- https://www.cybereason.com/blog/cybereason-vs.-netwalker-ransomware
+- https://blog.talosintelligence.com/2020/09/CTIR-quarterly-trends-Q4-2020.html
 
-- https://www.ncsc.org/trends/monthly-trends-articles/2020/netwalker-ransomware
+- https://blog.trendmicro.com/trendlabs-security-intelligence/netwalker-fileless-ransomware-injected-via-reflective-loading/
+
+- https://blogs.blackberry.com/en/2021/03/zerologon-to-ransomware
+
+- https://cert-agid.gov.it/news/netwalker-il-ransomware-che-ha-beffato-lintera-community/
+
+- https://cti-league.com/wp-content/uploads/2021/02/CTI-League-Darknet-Report-2021.pdf
+
+- https://danusminimus.github.io/Zero2Auto-Netwalker-Walkthrough/
+
+- https://docs.google.com/spreadsheets/d/1MI8Z2tBhmqQ5X8Wf_ozv3dVjz5sJOs-3
+
+- https://download.microsoft.com/download/f/8/1/f816b8b6-bee3-41e5-b6cc-e925a5688f61/Microsoft_Digital_Defense_Report_2020_September.pdf
+
+- https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2021GTR.pdf
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -23,11 +37,11 @@
 * 💰 <a href="/#/crypto/netwalker.md">Crypto wallet(s) available</a>
 
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

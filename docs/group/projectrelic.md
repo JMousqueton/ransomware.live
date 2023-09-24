@@ -15,11 +15,11 @@
 ![Statistics](../graphs/stats-projectrelic.png)
 
 
-### Posts
+### Victims
 
 > 5 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Doctors Center Hospital`](https://google.com/search?q=Doctors+Center+Hospital) | 18/12/2022 | Doctors' Center Hospital is among the leaders in the hospital network of Puerto Rico. |   |
 | [`Willis Klein`](https://google.com/search?q=Willis+Klein) | 11/11/2022 | Founded in 1960, Willis Klein has multiple divisions providing decorative plumbing, door hardware, custom bathroom cabinets and furniture, commercial hardware. |   |
@@ -29,4 +29,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

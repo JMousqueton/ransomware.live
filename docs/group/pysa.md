@@ -4,9 +4,25 @@
 > Mespinosa is a ransomware which encrypts file using an asymmetric encryption and adds .pysa as file extension. According to dissectingmalware the extension "pysa" is probably derived from the Zanzibari Coin with the same name.
 
 ### External analysis
-- https://www.ic3.gov/Media/News/2021/210316.pdf
+- http://www.secureworks.com/research/threat-profiles/gold-burlap
 
-- https://blog.malwarebytes.com/threat-spotlight/2021/03/pysa-the-ransomware-attacking-schools
+- https://blog.cyble.com/2021/11/29/pysa-ransomware-under-the-lens-a-deep-dive-analysis/
+
+- https://blogs.blackberry.com/en/2021/06/pysa-loves-chachi-a-new-golang-rat
+
+- https://dissectingmalwa.re/another-one-for-the-collection-mespinoza-pysa-ransomware.html
+
+- https://docs.google.com/spreadsheets/d/1MI8Z2tBhmqQ5X8Wf_ozv3dVjz5sJOs-3
+
+- https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2021GTR.pdf
+
+- https://id-ransomware.blogspot.com/2019/10/mespinoza-ransomware.html
+
+- https://ke-la.com/how-ransomware-gangs-find-new-monetization-schemes-and-evolve-in-marketing/
+
+- https://media.kasperskycontenthub.com/wp-content/uploads/sites/43/2022/06/23093553/Common-TTPs-of-the-modern-ransomware_low-res.pdf
+
+- https://public.intel471.com/blog/ransomware-as-a-service-2020-ryuk-maze-revil-egregor-doppelpaymer/
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -18,11 +34,11 @@
 ![Statistics](../graphs/stats-pysa.png)
 
 
-### Posts
+### Victims
 
 > 308 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Î¤ÎÎ§ÎÎÎÎÎÎÎÎ Î ÎÎÎÎ ÎÎ£Î¤ÎÎÎÎ ÎÎ¥Î Î¡ÎÎ¥`](https://google.com/search?q=%C3%8E%C2%A4%C3%8E%C2%95%C3%8E%C2%A7%C3%8E%C2%9D%C3%8E%C2%9F%C3%8E%C2%9B%C3%8E%C2%9F%C3%8E%C2%93%C3%8E%C2%99%C3%8E%C2%9A%C3%8E%C2%9F+%C3%8E%C2%A0%C3%8E%C2%91%C3%8E%C2%9D%C3%8E%C2%95%C3%8E%C2%A0%C3%8E%C2%99%C3%8E%C2%A3%C3%8E%C2%A4%C3%8E%C2%97%C3%8E%C2%9C%C3%8E%C2%99%C3%8E%C2%9F+%C3%8E%C2%9A%C3%8E%C2%A5%C3%8E%C2%A0%C3%8E%C2%A1%C3%8E%C2%9F%C3%8E%C2%A5) | 20/09/2022 |   |   |
 | [`CHR Solutions`](https://google.com/search?q=CHR+Solutions) | 06/12/2021 |   |   |
@@ -335,4 +351,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

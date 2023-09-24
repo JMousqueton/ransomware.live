@@ -10,18 +10,18 @@ _`not a ransomware group`_
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| 403 Forbidden | 🟢 | 07/08/2023 11:27 | `http://kelvinsecteamcyber.wixsite.com` | <a href="https://images.ransomware.live/screenshots/kelvinsecteamcyber-wixsite-com.png" target=_blank>📸</a> | 
+| 403 Forbidden | 🟢 | 24/09/2023 13:57 | `http://kelvinsecteamcyber.wixsite.com` | <a href="https://images.ransomware.live/screenshots/kelvinsecteamcyber-wixsite-com.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-kelvinsecurity.png)
 
 
-### Posts
+### Victims
 
 > 26 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`TRANSCONTRACT`](https://google.com/search?q=TRANSCONTRACT) | 24/05/2022 |   |   |
 | [`Mansfield Energy`](https://google.com/search?q=Mansfield+Energy) | 24/05/2022 |   |   |
@@ -52,4 +52,4 @@ _`not a ransomware group`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

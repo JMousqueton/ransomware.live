@@ -4,11 +4,25 @@
 > Sodinokibi ransomware group also known as REvil (Ransomware Evil) operates as a ransomware-as-a-service (RaaS) model. After the group compromised his victims, they would threaten to publish the victim's sensitive data on their darknet blog named 'Happy Blog', unless the ransom is paid. The ransomware malware code used by REvil is pretty similar to the ransomware code used by DarkSide - a different threat actor. REvil group claims to steal information after a successful attack on the supplier of the tech giant Apple and stole confidential schematics of their upcoming products.
 
 ### External analysis
-- https://www.zdnet.com/article/revil-ransomware-group-resurfaces-after-brief-hiatus
+- http://www.fsb.ru/fsb/press/message/single.htm%21id%3D10439388%40fsbMessage.html
 
-- https://www.macrumors.com/2021/04/26/revil-delists-stolen-apple-schematics-threat
+- http://www.secureworks.com/research/threat-profiles/gold-southfield
 
-- https://www.theverge.com/2021/7/22/22589643/ransomware-kaseya-vsa-decryptor-revil
+- https://analyst1.com/file-assets/History-of-REvil.pdf
+
+- https://areteir.com/wp-content/uploads/2020/07/Arete_Insight_Sodino-Ransomware_June-2020.pdf
+
+- https://asec.ahnlab.com/ko/19640/
+
+- https://asec.ahnlab.com/ko/19860/
+
+- https://awakesecurity.com/blog/threat-hunting-for-revil-ransomware/
+
+- https://blag.nullteilerfrei.de/2019/11/09/api-hashing-why-and-how/
+
+- https://blag.nullteilerfrei.de/2020/02/02/defeating-sodinokibi-revil-string-obfuscation-in-ghidra/
+
+- https://blog.amossys.fr/sodinokibi-malware-analysis.html
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -29,26 +43,26 @@
 
 | Name | Link |
 |---|---|
-|20201014| <a href="https://chat.ransomware.live/chat/revil/20201014.html" target=_blank> 💬 </a> |
-|20201104| <a href="https://chat.ransomware.live/chat/revil/20201104.html" target=_blank> 💬 </a> |
-|20201126| <a href="https://chat.ransomware.live/chat/revil/20201126.html" target=_blank> 💬 </a> |
-|20210320| <a href="https://chat.ransomware.live/chat/revil/20210320.html" target=_blank> 💬 </a> |
-|20210329| <a href="https://chat.ransomware.live/chat/revil/20210329.html" target=_blank> 💬 </a> |
-|20210331| <a href="https://chat.ransomware.live/chat/revil/20210331.html" target=_blank> 💬 </a> |
-|20210401| <a href="https://chat.ransomware.live/chat/revil/20210401.html" target=_blank> 💬 </a> |
-|20210407| <a href="https://chat.ransomware.live/chat/revil/20210407.html" target=_blank> 💬 </a> |
-|20210413| <a href="https://chat.ransomware.live/chat/revil/20210413.html" target=_blank> 💬 </a> |
-|20210603| <a href="https://chat.ransomware.live/chat/revil/20210603.html" target=_blank> 💬 </a> |
-|20210604| <a href="https://chat.ransomware.live/chat/revil/20210604.html" target=_blank> 💬 </a> |
-|20210609| <a href="https://chat.ransomware.live/chat/revil/20210609.html" target=_blank> 💬 </a> |
-|20210613| <a href="https://chat.ransomware.live/chat/revil/20210613.html" target=_blank> 💬 </a> |
-|20210616| <a href="https://chat.ransomware.live/chat/revil/20210616.html" target=_blank> 💬 </a> |
-|20210617| <a href="https://chat.ransomware.live/chat/revil/20210617.html" target=_blank> 💬 </a> |
-|20210622| <a href="https://chat.ransomware.live/chat/revil/20210622.html" target=_blank> 💬 </a> |
-|20210628| <a href="https://chat.ransomware.live/chat/revil/20210628.html" target=_blank> 💬 </a> |
-|20210630| <a href="https://chat.ransomware.live/chat/revil/20210630.html" target=_blank> 💬 </a> |
-|20210708| <a href="https://chat.ransomware.live/chat/revil/20210708.html" target=_blank> 💬 </a> |
-|20210709| <a href="https://chat.ransomware.live/chat/revil/20210709.html" target=_blank> 💬 </a> |
+|20201014|  <a href="/#/negotiation/revil/20201014.html"> 💬 </a> |
+|20201104|  <a href="/#/negotiation/revil/20201104.html"> 💬 </a> |
+|20201126|  <a href="/#/negotiation/revil/20201126.html"> 💬 </a> |
+|20210320|  <a href="/#/negotiation/revil/20210320.html"> 💬 </a> |
+|20210329|  <a href="/#/negotiation/revil/20210329.html"> 💬 </a> |
+|20210331|  <a href="/#/negotiation/revil/20210331.html"> 💬 </a> |
+|20210401|  <a href="/#/negotiation/revil/20210401.html"> 💬 </a> |
+|20210407|  <a href="/#/negotiation/revil/20210407.html"> 💬 </a> |
+|20210413|  <a href="/#/negotiation/revil/20210413.html"> 💬 </a> |
+|20210603|  <a href="/#/negotiation/revil/20210603.html"> 💬 </a> |
+|20210604|  <a href="/#/negotiation/revil/20210604.html"> 💬 </a> |
+|20210609|  <a href="/#/negotiation/revil/20210609.html"> 💬 </a> |
+|20210613|  <a href="/#/negotiation/revil/20210613.html"> 💬 </a> |
+|20210616|  <a href="/#/negotiation/revil/20210616.html"> 💬 </a> |
+|20210617|  <a href="/#/negotiation/revil/20210617.html"> 💬 </a> |
+|20210622|  <a href="/#/negotiation/revil/20210622.html"> 💬 </a> |
+|20210628|  <a href="/#/negotiation/revil/20210628.html"> 💬 </a> |
+|20210630|  <a href="/#/negotiation/revil/20210630.html"> 💬 </a> |
+|20210708|  <a href="/#/negotiation/revil/20210708.html"> 💬 </a> |
+|20210709|  <a href="/#/negotiation/revil/20210709.html"> 💬 </a> |
 
 
 ### Total Attacks Over Time
@@ -56,11 +70,11 @@
 ![Statistics](../graphs/stats-revil.png)
 
 
-### Posts
+### Victims
 
 > 41 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`kusd.edu`](https://google.com/search?q=kusd.edu) | 28/11/2022 |   |   |
 | [`Sunknowledge Services Inc`](https://google.com/search?q=Sunknowledge+Services+Inc) | 28/11/2022 |   |   |
@@ -106,4 +120,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -9,11 +9,11 @@ _`claim to donate 80% of earnings to charity`_
 |---|---|---|---|---|
 | 502 Bad Gateway | 🔴 | 28/12/2021 14:14 | `http://bonacifryrxr4siz6ptvokuihdzmjzpveruklxumflz5thmkgauty2qd.onion` | ❌ | 
 
-### Posts
+### Victims
 
 > 3 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Marshall Investigative Group Part 1/3 1000 Client`](https://google.com/search?q=Marshall+Investigative+Group+Part+1%2F3+1000+Client) | 06/12/2021 |   |   |
 | [`Ward Arcuri Foley & Dwyer  Law Firm`](https://google.com/search?q=Ward+Arcuri+Foley+%26+Dwyer+%7C+Law+Firm) | 04/10/2021 |   |   |
@@ -21,4 +21,4 @@ _`claim to donate 80% of earnings to charity`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

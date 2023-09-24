@@ -4,11 +4,25 @@
 > 
 
 ### External analysis
-- https://www.tetradefense.com/incident-response-services/cause-and-effect-suncrypt-ransomware-analysis
+- https://analyst1.com/blog/ransom-mafia-analysis-of-the-worlds-first-ransomware-cartel
 
-- https://www.intezer.com/blog/malware-analysis/when-viruses-mutate-did-suncrypt-ransomware-evolve-from-qnapcrypt
+- https://analyst1.com/file-assets/RANSOM-MAFIA-ANALYSIS-OF-THE-WORLD%E2%80%99S-FIRST-RANSOMWARE-CARTEL.pdf
 
-- https://medium.com/s2wblog/case-analysis-of-suncrypt-ransomware-negotiation-and-bitcoin-transaction-43a2194ac0bc
+- https://blog.chainalysis.com/reports/ransomware-connections-maze-egregor-suncrypt-doppelpaymer
+
+- https://blog.minerva-labs.com/suncrypt-ransomware-gains-new-abilities-in-2022
+
+- https://cdn.pathfactory.com/assets/10555/contents/394789/0dd521f8-aa64-4517-834e-bc852e9ab95d.pdf
+
+- https://docs.google.com/spreadsheets/d/1MI8Z2tBhmqQ5X8Wf_ozv3dVjz5sJOs-3
+
+- https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2021GTR.pdf
+
+- https://ke-la.com/to-attack-or-not-to-attack-targeting-the-healthcare-sector-in-the-underground-ecosystem/
+
+- https://medium.com/@sapphirex00/diving-into-the-sun-suncrypt-a-new-neighbour-in-the-ransomware-mafia-d89010c9df83
+
+- https://medium.com/s2wlab/case-analysis-of-suncrypt-ransomware-negotiation-and-bitcoin-transaction-43a2194ac0bc
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -29,11 +43,11 @@
 ![Statistics](../graphs/stats-suncrypt.png)
 
 
-### Posts
+### Victims
 
 > 30 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`SOCOTEC`](https://google.com/search?q=SOCOTEC) | 18/06/2022 |   |   |
 | [`Northeastern Technical College`](https://google.com/search?q=Northeastern+Technical+College) | 04/06/2022 |   |   |
@@ -68,4 +82,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

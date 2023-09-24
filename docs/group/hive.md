@@ -6,11 +6,25 @@
 _`US announces it seized Hive ransomware gang’s leak sites and decryption keys`_
 
 ### External analysis
-- https://inf.news/en/tech/c28d9382ab78a5ac3d8fc802f3f0f1e0.html
+- https://arxiv.org/pdf/2202.08477.pdf
 
-- https://www.healthcareitnews.com/news/fbi-issues-alert-about-hive-ransomware
+- https://blog.group-ib.com/hive
 
-- https://blogs.blackberry.com/en/2021/07/threat-thursday-hive-ransomware
+- https://blog.talosintelligence.com/2022/05/conti-and-hive-ransomware-operations.html
+
+- https://github.com/reecdeep/HiveV5_file_decryptor
+
+- https://github.com/rivitna/Malware/tree/main/Hive
+
+- https://krebsonsecurity.com/2023/05/russian-hacker-wazawaka-indicted-for-ransomware/
+
+- https://labs.sentinelone.com/hive-attacks-analysis-of-the-human-operated-ransomware-targeting-healthcare/
+
+- https://lifars.com/2022/02/how-to-decrypt-the-files-encrypted-by-the-hive-ransomware/
+
+- https://mandiant.widen.net/s/pkffwrbjlz/m-trends-2023
+
+- https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE54L7v
 
 
 🔎 `ransomware.live`has an active  parser for indexing hive's victims
@@ -34,14 +48,14 @@ _`US announces it seized Hive ransomware gang’s leak sites and decryption keys
 
 | Name | Link |
 |---|---|
-|20211004| <a href="https://chat.ransomware.live/chat/hive/20211004.html" target=_blank> 💬 </a> |
-|20211005| <a href="https://chat.ransomware.live/chat/hive/20211005.html" target=_blank> 💬 </a> |
-|20211026| <a href="https://chat.ransomware.live/chat/hive/20211026.html" target=_blank> 💬 </a> |
-|20211102| <a href="https://chat.ransomware.live/chat/hive/20211102.html" target=_blank> 💬 </a> |
-|20211113| <a href="https://chat.ransomware.live/chat/hive/20211113.html" target=_blank> 💬 </a> |
-|20211126| <a href="https://chat.ransomware.live/chat/hive/20211126.html" target=_blank> 💬 </a> |
-|20211213| <a href="https://chat.ransomware.live/chat/hive/20211213.html" target=_blank> 💬 </a> |
-|20211220| <a href="https://chat.ransomware.live/chat/hive/20211220.html" target=_blank> 💬 </a> |
+|20211004|  <a href="/#/negotiation/hive/20211004.html"> 💬 </a> |
+|20211005|  <a href="/#/negotiation/hive/20211005.html"> 💬 </a> |
+|20211026|  <a href="/#/negotiation/hive/20211026.html"> 💬 </a> |
+|20211102|  <a href="/#/negotiation/hive/20211102.html"> 💬 </a> |
+|20211113|  <a href="/#/negotiation/hive/20211113.html"> 💬 </a> |
+|20211126|  <a href="/#/negotiation/hive/20211126.html"> 💬 </a> |
+|20211213|  <a href="/#/negotiation/hive/20211213.html"> 💬 </a> |
+|20211220|  <a href="/#/negotiation/hive/20211220.html"> 💬 </a> |
 
 
 ### Total Attacks Over Time
@@ -49,11 +63,11 @@ _`US announces it seized Hive ransomware gang’s leak sites and decryption keys
 ![Statistics](../graphs/stats-hive.png)
 
 
-### Posts
+### Victims
 
 > 206 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`R C Stevens Construction`](https://rcstevens.com/%20) | 16/01/2023 | As commercial construction specialists in Orlando, we provide new construction and renovation services with an emphasis on design/build. R. C. Stevens is qualified to design and construct any type of commercial construction project in Orlando. We offer all of the necessary resources to meet each client’s specific project needs&nbsp;for design and construction services related to manufacturing/industrial,&nbsp;commercial,&nbsp;healthcare,&nbsp;financial,&nbsp;religious, and&nbsp;renovations.  At. R. C. Stevens, the spirit of innovation can be found in each and every Orlando commercial construction project we do.  Every team member at R.C. Stevens strives daily to uphold the founding principles of quality and integrity as having long been a company tradition since 1926. |   |
 | [`G.W. Becker`](https://gwbcrane.com) | 11/01/2023 | ***** DATA IS COMING SOON ****  G.W. Becker, Inc. is a full service, single source, provider of choice for quality overhead crane products and solutions. Family owned since 1980, we have grown from a local overhead crane parts supplier to a recognized industry leader offering a full spectrum of overhead crane related products and services throughout North America.  Proud to be an Executive Member of the Crane Manufacturer’s Association of America, we design and manufacture custom overhead cranes, hoists and components to CMAA Specifications (Class “A” through “F”) or AIST Technical Report #6. We utilize our knowledgeable in-house team of mechanical, structural and electrical engineers to offer application assistance, custom design engineering and manufacturing of overhead crane products with our customers’ needs first and foremost.  Empowered with highly trained and qualified technicians, G.W. Becker, Inc. provides self-performing installations, inspections and field service repairs for all makes and models of overhead cranes; providing compliance with local regulations and ensuring a safe and productive material handling operation.  Staying true to our mission and values, we strive to understand our customers’ needs and deliver specialized expertise and long-term planning solutions for the unique challenges of purchasing and maintaining overhead crane and hoist equipment.  |   |
@@ -264,4 +278,4 @@ _`US announces it seized Hive ransomware gang’s leak sites and decryption keys
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -39,7 +39,7 @@ def main():
                     formatted_date = datetime.strptime(published_date, "%Y-%m-%dT%H:%M:%S%z").strftime("%Y-%m-%d %H:%M:%S.%f")
 
                     appender(title, 'medusalocker', content,'',formatted_date, link)
-            file.close()
+                file.close()
         except:
             errlog('medusa locker : ' + 'parsing fail')
             pass

@@ -4,9 +4,25 @@
 > Avaddon is a ransomware malware targeting Windows systems often spread via malicious spam. The first known attack where Avaddon ransomware was distributed was in February 2020. Avaddon encrypts files using the extension .avdn and uses a TOR payment site for the ransom payment.
 
 ### External analysis
-- https://www.acronis.com/en-us/articles/avaddon-ransomware
+- https://arxiv.org/pdf/2102.04796.pdf
 
-- https://www.cyber.gov.au/sites/default/files/2021-05/2021-003%20Ongoing%20campaign%20using%20Avaddon%20Ransomware%20-%2020210508.pdf
+- https://atos.net/en/lp/securitydive/avaddon-ransomware-analysis
+
+- https://awakesecurity.com/blog/threat-hunting-for-avaddon-ransomware/
+
+- https://docs.google.com/spreadsheets/d/1MI8Z2tBhmqQ5X8Wf_ozv3dVjz5sJOs-3
+
+- https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2021GTR.pdf
+
+- https://ke-la.com/how-ransomware-gangs-find-new-monetization-schemes-and-evolve-in-marketing/
+
+- https://labs.sentinelone.com/avaddon-raas-breaks-public-decryptor-continues-on-rampage/
+
+- https://medium.com/s2wlab/quick-analysis-of-haron-ransomware-feat-avaddon-and-thanos-1ebb70f64dc4
+
+- https://medium.com/s2wlab/w4-jan-en-story-of-the-week-ransomware-on-the-darkweb-7595544363b1
+
+- https://news.sophos.com/en-us/2022/03/17/the-ransomware-threat-intelligence-center/
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -25,20 +41,20 @@
 
 | Name | Link |
 |---|---|
-|20210112| <a href="https://chat.ransomware.live/chat/avaddon/20210112.html" target=_blank> 💬 </a> |
-|20210324| <a href="https://chat.ransomware.live/chat/avaddon/20210324.html" target=_blank> 💬 </a> |
-|20210430| <a href="https://chat.ransomware.live/chat/avaddon/20210430.html" target=_blank> 💬 </a> |
-|20210512| <a href="https://chat.ransomware.live/chat/avaddon/20210512.html" target=_blank> 💬 </a> |
-|20210518| <a href="https://chat.ransomware.live/chat/avaddon/20210518.html" target=_blank> 💬 </a> |
-|20210518_2| <a href="https://chat.ransomware.live/chat/avaddon/20210518_2.html" target=_blank> 💬 </a> |
-|20210518_3| <a href="https://chat.ransomware.live/chat/avaddon/20210518_3.html" target=_blank> 💬 </a> |
+|20210112|  <a href="/#/negotiation/avaddon/20210112.html"> 💬 </a> |
+|20210324|  <a href="/#/negotiation/avaddon/20210324.html"> 💬 </a> |
+|20210430|  <a href="/#/negotiation/avaddon/20210430.html"> 💬 </a> |
+|20210512|  <a href="/#/negotiation/avaddon/20210512.html"> 💬 </a> |
+|20210518|  <a href="/#/negotiation/avaddon/20210518.html"> 💬 </a> |
+|20210518_2|  <a href="/#/negotiation/avaddon/20210518_2.html"> 💬 </a> |
+|20210518_3|  <a href="/#/negotiation/avaddon/20210518_3.html"> 💬 </a> |
 
 
-### Posts
+### Victims
 
 > 142 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`EFCO forms`](https://google.com/search?q=EFCO+forms) | 09/09/2021 |   |   |
 | [`Sky Leasing, LLC`](https://google.com/search?q=Sky+Leasing%2C+LLC) | 09/09/2021 |   |   |
@@ -185,4 +201,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

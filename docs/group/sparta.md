@@ -2,9 +2,6 @@
 
 
 
-### External analysis
-- spartaprogroup@strong.pm
-
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
@@ -15,11 +12,11 @@
 ![Statistics](../graphs/stats-sparta.png)
 
 
-### Posts
+### Victims
 
 > 16 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`GRUPO COPISA`](https://google.com/search?q=GRUPO+COPISA) | 22/09/2022 |   |   |
 | [`MR. WONDERFUL`](https://google.com/search?q=MR.+WONDERFUL) | 14/09/2022 |   |   |
@@ -40,4 +37,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

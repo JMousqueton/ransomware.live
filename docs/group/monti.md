@@ -12,7 +12,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | 404 Not Found | 🔴 | 10/10/2022 17:13 | `http://4s4lnfeujzo67fy2jebz2dxskez2gsqj2jeb35m75ktufxensdicqxad.onion` | ❌ | 
-| MONTI - Leaks site | 🔴 | 07/08/2023 05:40 | `http://mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid.onion` | <a href="https://images.ransomware.live/screenshots/mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid-onion.png" target=_blank>📸</a> | 
+| MONTI - Leaks site | 🟢 | 24/09/2023 14:13 | `http://mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid.onion` | <a href="https://images.ransomware.live/screenshots/mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -23,12 +23,16 @@
 ![Statistics](../graphs/stats-monti.png)
 
 
-### Posts
+### Victims
 
-> 25 victims found
+> 29 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Auckland University of Technology`](https://google.com/search?q=Auckland+University+of+Technology) | 22/09/2023 | Founded in 1895, Auckland University of Technology is an educational facility that offers certificates, undergraduates, and postgraduate diplomas in a variety of fields. | <a href="https://images.ransomware.live/screenshots/posts/34741174210b47df09351465c3abc22d.png" target=_blank>📸</a> |
+| [`University Obrany - Press Release`](https://google.com/search?q=University+Obrany+-+Press+Release) | 20/09/2023 | The city of Brno was chosen as the location for the new engineering-oriented military college due to its long tradition of superior quality engineering education. | <a href="https://images.ransomware.live/screenshots/posts/540ec72e6ed3294908cfd1fed9c3294b.png" target=_blank>📸</a> |
+| [`East Baking Press Release`](https://google.com/search?q=East+Baking+Press+Release) | 14/09/2023 | East Baking Company Inc. has the ability to manufacture any private label bakery program from bagels, breads, rolls, pancakes, and sweet goods to a very specific customized bakery products. | <a href="https://images.ransomware.live/screenshots/posts/be5f1900af5635a5037c8e7408d6f3aa.png" target=_blank>📸</a> |
+| [`Ja Quith Press Release`](https://google.com/search?q=Ja+Quith+Press+Release) | 14/09/2023 | Jaquith Industries three main specialties - Airport Lighting - BMF Metal Forms - Custom Contract Fabrication are manufactured here in the USA. | <a href="https://images.ransomware.live/screenshots/posts/ba437d178db81e5d56e6f783ea49a306.png" target=_blank>📸</a> |
 | [`Abatti Companies - Press Release`](https://google.com/search?q=Abatti+Companies+-+Press+Release) | 04/08/2023 | Abatti Companies is a vertically integrated group of companies that handles all facets of farm products from field to market. In 1981 Alex Abatti Jr. started as a custom harvest operator that later began farming to become one of the largest farmers in the Imperial Valley, California. | <a href="https://images.ransomware.live/screenshots/posts/ce2d8d9c82b42cee17811a7fee55bbe7.png" target=_blank>📸</a> |
 | [`Bickel & Brewer - Press Release`](https://google.com/search?q=Bickel+%26+Brewer+-+Press+Release) | 02/08/2023 | Founded in 1984, Bickel & Brewer has earned a reputation as one of the most successful law firms in the United States practicing exclusively in the field of complex commercial litigation and dispute resolution. | <a href="https://images.ransomware.live/screenshots/posts/d1636c2369c4e8652f96a8c777681db7.png" target=_blank>📸</a> |
 | [`Hungarian Investment Promotion Agency`](https://google.com/search?q=Hungarian+Investment+Promotion+Agency) | 30/07/2023 | Hungarian Investment Promotion Agency is a company that operates in the Financial Services industry. It employs 11-20 people and has $5M-$10M of revenue. | <a href="https://images.ransomware.live/screenshots/posts/1776c507db348ed0d7b0f3644b1e26a9.png" target=_blank>📸</a> |
@@ -57,4 +61,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

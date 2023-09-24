@@ -5,24 +5,27 @@
 
 _`V is Vendetta a new blog from Cuba Ransomware`_
 
+### External analysis
+- https://www.malwarebytes.com/blog/threat-intelligence/2023/03/ransomware-review-march-2023
+
 
 🔎 `ransomware.live`has an active  parser for indexing vendetta's victims
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Vendetta | 🟢 | 07/08/2023 10:55 | `http://test.cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion` | <a href="https://images.ransomware.live/screenshots/test-cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd-onion.png" target=_blank>📸</a> | 
+| Vendetta | 🟢 | 24/09/2023 14:30 | `http://test.cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion` | <a href="https://images.ransomware.live/screenshots/test-cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-vendetta.png)
 
 
-### Posts
+### Victims
 
 > 3 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Chowtaifook`](https://google.com/search?q=Chowtaifook) | 27/02/2023 | Chow Tai Fook “Lodestar” CollectionCelebrate a Lustrous Love Story2023-01-26This Valentine's Day, let the “Lodestar” Collection shine upon your journey to everlasting love, commemorated by the traceable T... |   |
 | [`Highwealth`](https://google.com/search?q=Highwealth) | 21/02/2023 | In the best location, build the best house, the best homeMore than 30 years ago, we started our business in Kaohsiung. After laying the foundation, we developed all the way north and expanded to Tainan, Taichung, Hsinchu, Taipei, New... |   |
@@ -30,4 +33,4 @@ _`V is Vendetta a new blog from Cuba Ransomware`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

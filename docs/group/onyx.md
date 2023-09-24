@@ -4,9 +4,6 @@
 
 _`aka vsop`_
 
-### External analysis
-- vsop@onionmail.org
-
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
@@ -17,11 +14,11 @@ _`aka vsop`_
 ![Statistics](../graphs/stats-onyx.png)
 
 
-### Posts
+### Victims
 
 > 28 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`www.artisticstairs.com`](https://google.com/search?q=www.artisticstairs.com) | 21/11/2022 |   |   |
 | [`www.wayan.com.mx`](https://google.com/search?q=www.wayan.com.mx) | 21/11/2022 |   |   |
@@ -54,4 +51,4 @@ _`aka vsop`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

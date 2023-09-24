@@ -4,7 +4,13 @@
 > According to PCrisk, Trigona is ransomware that encrypts files and appends the ._locked extension to filenames. Also, it drops the how_to_decrypt.hta file that opens a ransom note. An example of how Trigona renames files: it renames 1.jpg to 1.jpg._locked, 2.png to 2.png._locked, and so forth.It embeds the encrypted decryption key, the campaign ID, and the victim ID in the encrypted files.
 
 ### External analysis
+- https://asec.ahnlab.com/en/51343/
+
+- https://unit42.paloaltonetworks.com/trigona-ransomware-update/
+
 - https://www.fortinet.com/blog/threat-research/ransomware-roundup-trigona-ransomware
+
+- https://www.trendmicro.com/en_us/research/23/f/an-overview-of-the-trigona-ransomware.html
 
 
 🔎 `ransomware.live`has an active  parser for indexing trigona's victims
@@ -12,8 +18,9 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Sign up | 🟢 | 07/08/2023 10:54 | `http://3x55o3u2b7cjs54eifja5m3ottxntlubhjzt6k6htp5nrocjmsxxh7ad.onion` | <a href="https://images.ransomware.live/screenshots/3x55o3u2b7cjs54eifja5m3ottxntlubhjzt6k6htp5nrocjmsxxh7ad-onion.png" target=_blank>📸</a> | 
+| Sign up | 🟢 | 24/09/2023 14:28 | `http://3x55o3u2b7cjs54eifja5m3ottxntlubhjzt6k6htp5nrocjmsxxh7ad.onion` | <a href="https://images.ransomware.live/screenshots/3x55o3u2b7cjs54eifja5m3ottxntlubhjzt6k6htp5nrocjmsxxh7ad-onion.png" target=_blank>📸</a> | 
 | Blog | 🔴 | 26/06/2023 10:51 | `http://6n5tfadusp4sarzuxntz34q4ohspiaya2mc6aw6uhlusfqfsdomavyyd.onion` | <a href="https://images.ransomware.live/screenshots/6n5tfadusp4sarzuxntz34q4ohspiaya2mc6aw6uhlusfqfsdomavyyd-onion.png" target=_blank>📸</a> | 
+| Blog | 🟢 | 24/09/2023 14:29 | `http://trigonax2zb3fw34rbaap4cqep76zofxs53zakrdgcxzq6xzt24l5lqd.onion` | <a href="https://images.ransomware.live/screenshots/trigonax2zb3fw34rbaap4cqep76zofxs53zakrdgcxzq6xzt24l5lqd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -24,12 +31,16 @@
 ![Statistics](../graphs/stats-trigona.png)
 
 
-### Posts
+### Victims
 
-> 19 victims found
+> 23 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Steelforce`](https://google.com/search?q=Steelforce) | 15/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/ea984e4d3c4790170b61582e28aee867.png" target=_blank>📸</a> |
+| [`Cedar Holdings`](https://google.com/search?q=Cedar+Holdings) | 13/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/5486d786ce822d88404e93d5cf020916.png" target=_blank>📸</a> |
+| [`Unimed`](https://google.com/search?q=Unimed) | 05/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/448da647d24ca2010b7663160e37c52d.png" target=_blank>📸</a> |
+| [`Cyberport`](https://google.com/search?q=Cyberport) | 05/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/911cef8b27f4f54a780597ae285b24e1.png" target=_blank>📸</a> |
 | [`Public Health Management Corporation`](https://google.com/search?q=Public+Health+Management+Corporation) | 06/06/2023 | Public Health Management Corporation (PHMC) is a non-profit organisation providing public health services in Philadelphia, Pennsylvania. It was established in 1972 and has since served as a leading provider of comprehensive health and human services to individuals, families, and communities in the area. |   |
 | [`Pacific Union College`](https://google.com/search?q=Pacific+Union+College) | 30/05/2023 | Pacific Union College (PUC) is a private, Seventh-day Adventist college located in Angwin, California. It was established in 1882 and is accredited by the WASC Senior College and University Commission. |   |
 | [`Marshall Construction Ltd`](https://google.com/search?q=Marshall+Construction+Ltd) | 26/05/2023 | Marshall Construction Ltd is a construction company established in 1995. The company is committed to providing high-quality and innovative construction services to its clients. At Marshall Construction Ltd, the emphasis is on building relationships and delivering quality projects. | <a href="https://images.ransomware.live/screenshots/posts/2b6bce20f2500a8b7ac036d61d0b18af.png" target=_blank>📸</a> |
@@ -52,4 +63,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

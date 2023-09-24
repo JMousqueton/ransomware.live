@@ -5,7 +5,8 @@ import re
 import time
 import urllib.parse
 from datetime import datetime as dt
-import datetime
+#import datetime
+from datetime import datetime, timedelta
 from collections import Counter
 import json
 
@@ -31,6 +32,30 @@ from sharedutils import stdlog
 from plotting import trend_posts_per_day, plot_posts_by_group, pie_posts_by_group, plot_posts_by_group_past_7_days,trend_posts_per_day_2022, trend_posts_per_day_2023, plot_posts_by_group_by_year, pie_posts_by_group_by_year, pie_posts_by_group_by_month, trend_posts_per_day_month, plot_posts_by_group_by_month,plot_victims_by_month, plot_victims_by_month_cumulative
 from plotting import create_victims_per_day_graph
 from bs4 import BeautifulSoup
+
+
+def find_matching_victims(victim_hidden):
+    matching_pairs = ''
+    if '*' not in victim_hidden:
+        return matching_pairs
+    matching_pairs = "Not Found"
+    with open('posts.json', 'r') as json_file:
+        data = json.load(json_file)
+    victims = [entry['post_title'] for entry in data if entry['group_name'] == 'bianlian' and '*' not in entry['post_title']]
+    for victim in victims:
+            if len(victim) == len(victim_hidden):
+                match = True
+                for char1, char2 in zip(victim, victim_hidden):
+                    if char2 != '*' and char1 != char2:
+                        match = False
+                        break
+                if match:
+                    stdlog("Victim: " + victim_hidden + "\t could be: "+ victim)
+                    return(victim)
+
+    return matching_pairs
+
+
 
 def suffix(d):
     return 'th' if 11<=d<=13 else {1:'st',2:'nd',3:'rd'}.get(d%10, 'th')
@@ -160,7 +185,7 @@ def mainpage():
 
     with open('posts.json') as file:
         data = json.load(file)
-    year = str(datetime.date.today().year)
+    year = str(dt.today().year)
     # Filter the posts for the year 2023
     filtered_data = [post for post in data if post.get('published', '').startswith(year)]
     # Extract the group names from the filtered data
@@ -253,8 +278,11 @@ def statuspage():
                     screen = '<a href="https://images.ransomware.live/screenshots/' + screenshot + '" target=_blank>📸</a>'
                 line = '| [' + group['name'] + '](profiles.md?id=' + group['name'] + ') | ' + title + ' | ' + host['fqdn'] + ' | ' + screen + ' | ' 
                 writeline(index_sheet, line)
+    writeline(index_sheet, '')
+    writeline(index_sheet, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
+    writeline(index_sheet, '')
 
-def recentposts(top):
+def recentpublishedposts(top):
     '''
     create a list the last X posts (most recent)
     '''
@@ -271,10 +299,27 @@ def recentposts(top):
     stdlog('recent posts generated')
     return recentposts
 
-def recentpage():
-    '''create a markdown table for the last 200 posts based on the discovered value'''
+def recentdiscoveredposts(top):
+    '''
+    create a list the last X posts (most recent)
+    '''
+    stdlog('finding recent posts')
+    posts = openjson('posts.json')
+    # sort the posts by timestamp - descending
+    sorted_posts = sorted(posts, key=lambda x: x['discovered'], reverse=True)
+    # create a list of the last X posts
+    recentposts = []
+    for post in sorted_posts:
+        recentposts.append(post)
+        if len(recentposts) == top:
+            break
+    stdlog('recent posts generated')
+    return recentposts
+
+def recentpublishedpage():
+    '''create a markdown table for the last 200 posts based on the published value'''
     fetching_count = 200
-    stdlog('generating recent victims page')
+    stdlog('generating recent published victims page')
     recentpage = 'docs/recentvictims.md'
     # delete contents of file
     with open(recentpage, 'w', encoding='utf-8') as f:
@@ -287,7 +332,50 @@ def recentpage():
     writeline(recentpage, '')
     writeline(recentpage, '| Date | Title | Group | 📸 |')
     writeline(recentpage, '|---|---|---|---|')
-    for post in recentposts(fetching_count):
+    for post in recentpublishedposts(fetching_count):
+        # show friendly date for discovered
+        date = post['published'].split(' ')[0]
+        # replace markdown tampering characters
+        title = post['post_title'].replace('|', '-')
+        group = post['group_name'].replace('|', '-')
+        urlencodedtitle = urllib.parse.quote_plus(title)
+        grouplink = '[' + group + '](group/' + group + ')'
+        # screenpost='❌'
+        screenpost=' '
+        if post['post_url'] is not None: 
+            # Create an MD5 hash object
+            hash_object = hashlib.md5()
+            # Update the hash object with the string
+            hash_object.update(post['post_url'].encode('utf-8'))
+            # Get the hexadecimal representation of the hash
+            hex_digest = hash_object.hexdigest()
+            if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
+                screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>👀</a>'
+        line = '| ' + date + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + grouplink + ' | ' + screenpost + ' |'
+        writeline(recentpage, line)
+    writeline(recentpage, '')
+    writeline(recentpage, '> [!TIP] You can also check the 200 last victims sorted by discovered date by `Ransomware.live` [here](recentdiscoveredvictims.md).')
+    writeline(recentpage, '')
+    writeline(recentpage, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
+    stdlog('recent published victims page generated')
+
+def recentdiscoveredpage():
+    '''create a markdown table for the last 200 posts based on the published value'''
+    fetching_count = 200
+    stdlog('generating recent discovered victims page')
+    recentpage = 'docs/recentdiscoveredvictims.md'
+    # delete contents of file
+    with open(recentpage, 'w', encoding='utf-8') as f:
+        f.close()
+    writeline(recentpage,'# Recent discovered victims by Ransomware.live')
+    writeline(recentpage,'')
+    writeline(recentpage, '> [!INFO] `Ransomware.live` provides tracking of ransomware groups and their victims. Descriptions available in the [group profiles view](profiles.md)')
+    writeline(recentpage,'')
+    writeline(recentpage, '**📰 200 last victims sorted by discovered date by `Ransomware.live`**')
+    writeline(recentpage, '')
+    writeline(recentpage, '| Discovered Date | Title | Group | 📸 |')
+    writeline(recentpage, '|---|---|---|---|')
+    for post in recentdiscoveredposts(fetching_count):
         # show friendly date for discovered
         date = post['published'].split(' ')[0]
         # replace markdown tampering characters
@@ -310,7 +398,91 @@ def recentpage():
         writeline(recentpage, line)
     writeline(recentpage, '')
     writeline(recentpage, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
-    stdlog('recent posts page generated')
+    stdlog('recent published victims page generated')
+
+
+def lastvictimspergroup():
+    stdlog('generating last victims per group')
+    page = 'docs/lastvictimspergroup.md'
+    with open(page, 'w', encoding='utf-8') as f:
+        f.close()
+    # Load the data from the JSON files
+    groups = openjson('groups.json')
+    victims = openjson('posts.json')
+    # Create a dictionary to store the last post information for each group
+    last_posts_info = {}
+
+    # Calculate date thresholds
+    today = datetime.now().date()
+
+    # Process each group and find the last post title, website, and published date
+    for group in groups:
+        group_name = group['name']
+        
+        # Find the latest post for the group based on discovery timestamp
+        latest_post = None
+        for victim in victims:
+            if victim['group_name'] == group_name:
+                if latest_post is None or victim['discovered'] > latest_post['discovered']:
+                    latest_post = victim
+        
+        if latest_post:
+            website = latest_post.get('website', None)  # Get the website if available
+            
+            # Check if the website starts with http:// or https://
+            if website and not website.startswith(('http://', 'https://')):
+                website = f'http://www.{website}'
+            elif website and website.startswith('https://'):
+                website = website.replace('https://', 'http://www.')
+            elif website and website.startswith('http://'):
+                website = website.replace('http://', 'http://www.')
+            
+
+            # Parse the published date and compare with date thresholds
+            published_date = datetime.strptime(latest_post['published'], '%Y-%m-%d %H:%M:%S.%f').date()
+            days_difference = (today - published_date).days
+            date_status = "🟢"
+            if days_difference > 90:
+                date_status = "🟠"
+            if days_difference > 180:
+                date_status = "🔴"
+
+            
+            last_posts_info[group_name] = {
+                'last_post_title': latest_post['post_title'],
+                'published_date': latest_post['published'].split()[0],  # Extract only the date part
+                'website': website,
+                'date_status' : date_status
+            }
+    writeline(page, '')
+    writeline(page, '# Last victims per Ransomware Group')
+    writeline(page, '')
+    writeline(page, '')
+    writeline(page, '| Ransomware | Last Victim | Date | Status[<sup>*</sup>](lastvictimspergroup?id=-legend-) |')
+    writeline(page, '|---|---|---|---|')
+    # Print the last post title, published date, and website for each group with a last post
+    for group_name, info in last_posts_info.items():
+        if info['last_post_title'] != "No posts found": 
+            if info['website']:
+                website = info['website']
+            else:
+                search_query = urllib.parse.quote(info['last_post_title'])
+                google_search_url = f"https://www.google.com/search?q={search_query}"
+                website =  google_search_url
+            writeline(page, '| [`' + group_name + '`](group/' + group_name +') |  ['+ info['last_post_title'] + '](' + website+ ') |' + info['published_date'] + ' |' + info['date_status'] + '|')
+    writeline(page, '')
+    writeline(page, '### <u> Legend : </u>  ')
+    writeline(page, '')
+    writeline(page, '🟢  less 3 months old')
+    writeline(page, '')
+    writeline(page, '🟠  between 3 months and 6 months old')
+    writeline(page, '')
+    writeline(page, '🔴  older than 6 months')
+    writeline(page, '')
+    writeline(page, '')
+    writeline(page, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
+    stdlog('Last victim per ransomware page generated')
+
 
 def allposts():
     '''create a markdown table for all posts '''
@@ -434,7 +606,7 @@ def profilepage():
             nego='lockbit3.0'
         if group['name'] == 'ragnarlocker':
             nego='ragnar-locker'
-        directory = '/var/www/chat.ransomware.live/docs/chat/' + nego +'/'
+        directory = '/var/www/ransomware.live/docs/negotiation/' + nego +'/'
         if directory_exists(directory):
             writeline(profilepage, '')
             writeline(profilepage, '#### ** Negotiation chats**')
@@ -442,7 +614,7 @@ def profilepage():
             writeline(profilepage, '| Name | Link |')
             writeline(profilepage, '|---|---|')
             for filename in sorted(os.listdir(directory)):
-                line = '|' + os.path.splitext(filename)[0].replace('_','.') + '| <a href="https://chat.ransomware.live/chat/'+ nego + '/' + filename + '" target=_blank> 💬 </a> |'
+                line = '|' + os.path.splitext(filename)[0].replace('_','.') + '|  <a href="/#/negotiation/' + nego + '/' + filename + '"> 💬 </a> |'
                 writeline(profilepage, line)
             writeline(profilepage, '')
         writeline(profilepage, '<!-- tabs:end -->')
@@ -457,12 +629,12 @@ def profilepage():
 
         ### POSTS 
         writeline(profilepage, '')
-        writeline(profilepage, '### _Posts_')
+        writeline(profilepage, '### _Victims_')
         writeline(profilepage, '')
         writeline(profilepage, '> ' + grouppostcount(group['name']))
         writeline(profilepage, '')
         if grouppostavailable(group['name']):
-            writeline(profilepage, '| post | date | Description | Screenshot | ')
+            writeline(profilepage, '| victim | date | Description | Screenshot | ')
             writeline(profilepage, '|---|---|---|---|')
             posts = openjson('posts.json')
             sorted_posts = sorted(posts, key=lambda x: x['published'], reverse=True)
@@ -491,7 +663,7 @@ def profilepage():
                         postURL = '[`' + post['post_title'].replace('|', '') + '`](https://google.com/search?q=' + urlencodedtitle  + ')'
                     date = post['published'].split(' ')[0]
                     try:
-                        datetime.datetime.strptime(date, '%Y-%m-%d')
+                        dt.strptime(date, '%Y-%m-%d')
                     except ValueError:
                         date = post['discovered'].split(' ')[0]
                     date = date.split('-')
@@ -609,7 +781,7 @@ def profile():
             writeline(profilepage, '')
         if len(group['profile']):
             writeline(profilepage, '### External analysis')
-            for profile in group['profile']:
+            for profile in group['profile'][:10]:
                 writeline(profilepage, '- ' + profile)
                 writeline(profilepage, '')
         if group['parser']:
@@ -668,7 +840,7 @@ def profile():
             nego='lockbit3.0'
         if group['name'] == 'ragnarlocker':
             nego='ragnar-locker'
-        directory = '/var/www/chat.ransomware.live/docs/chat/' + nego +'/'
+        directory = '/var/www/ransomware.live/docs/negotiation/' + nego +'/'
         if directory_exists(directory):
             writeline(profilepage, '')
             writeline(profilepage, '### Negotiation chats')
@@ -676,7 +848,7 @@ def profile():
             writeline(profilepage, '| Name | Link |')
             writeline(profilepage, '|---|---|')
             for filename in sorted(os.listdir(directory)):
-                line = '|' + os.path.splitext(filename)[0] + '| <a href="https://chat.ransomware.live/chat/'+ nego + '/' + filename + '" target=_blank> 💬 </a> |'
+                line = '|' + os.path.splitext(filename)[0] + '|  <a href="/#/negotiation/' + nego + '/' + filename + '"> 💬 </a> |'
                 writeline(profilepage, line)
             writeline(profilepage, '')
 
@@ -690,13 +862,17 @@ def profile():
 
         ### POSTS 
         writeline(profilepage, '')
-        writeline(profilepage, '### Posts')
+        writeline(profilepage, '### Victims')
         writeline(profilepage, '')
         writeline(profilepage, '> ' + grouppostcount(group['name']))
         writeline(profilepage, '')
         if grouppostavailable(group['name']):
-            writeline(profilepage, '| post | date | Description | Screenshot | ')
-            writeline(profilepage, '|---|---|---|---|')
+            if group['name'] == 'bianlian':
+                writeline(profilepage, '| victim | date | Description | possible victim | Screenshot | ')
+                writeline(profilepage, '|---|---|---|---|---|')
+            else:
+                writeline(profilepage, '| victim | date | Description | Screenshot | ')
+                writeline(profilepage, '|---|---|---|---|')
             posts = openjson('posts.json')
             sorted_posts = sorted(posts, key=lambda x: x['published'], reverse=True)
             for post in sorted_posts:
@@ -706,6 +882,7 @@ def profile():
                         description = re.sub(r".com/file/.*", ".com/file/******", description)
                         description = re.sub(r"anonfiles.com/.*/", "anonfiles.com/******/", description)
                         description = re.sub(r"dropmefiles.com/.* ","dropmefiles.com/******** ", description)
+                        description = re.sub(r"view-files/.*", "view-files/********", description)
                     except:
                         description=' '
                     try:
@@ -722,7 +899,7 @@ def profile():
                         postURL = '[`' + post['post_title'].replace('|', '') + '`](https://google.com/search?q=' + urlencodedtitle  + ')'
                     date = post['published'].split(' ')[0]
                     try:
-                        datetime.datetime.strptime(date, '%Y-%m-%d')
+                        dt.strptime(date, '%Y-%m-%d')
                     except ValueError:
                         date = post['discovered'].split(' ')[0]
                     date = date.split('-')
@@ -737,7 +914,10 @@ def profile():
                         hex_digest = hash_object.hexdigest()
                         if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
                             screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>📸</a>'
-                    line = '| ' + postURL + ' | ' + date + ' | ' + description + ' | ' + screenpost + ' |'
+                    if group['name'] == 'bianlian': 
+                        line = '| ' + postURL + ' | ' + date + ' | ' + description + ' | ' + find_matching_victims(post['post_title']) + '|' + screenpost + ' |'
+                    else:
+                        line = '| ' + postURL + ' | ' + date + ' | ' + description + ' | ' + screenpost + ' |'
                     writeline(profilepage, line)
         writeline(profilepage, '')
         #writeline(profilepage,' --- ')
@@ -781,11 +961,13 @@ def month_digit(month_number):
 
 def main():
     stdlog('generating docs for '+str(groupcount()))
-    year=datetime.datetime.now().year
-    month=datetime.datetime.now().month 
+    year=datetime.now().year
+    month=datetime.now().month 
+    lastvictimspergroup()
     mainpage()
     statuspage()
-    recentpage()
+    recentdiscoveredpage()
+    recentpublishedpage()
     allposts()
     profilepage()
     profile()
@@ -946,7 +1128,7 @@ def profilepageOLD():
 
         ### POSTS 
         writeline(profilepage, '')
-        writeline(profilepage, '### Posts')
+        writeline(profilepage, '### Victims')
         writeline(profilepage, '')
         writeline(profilepage, '> ' + grouppostcount(group['name']))
         writeline(profilepage, '')
@@ -964,6 +1146,7 @@ def profilepageOLD():
                         description = re.sub(r".com/file/.*", ".com/file/******", description)
                         description = re.sub(r"anonfiles.com/.*/", "anonfiles.com/******/", description)
                         description = re.sub(r"dropmefiles.com/.* ","dropmefiles.com/******** ", description)
+                        description = re.sub(r"view-files/.*", "view-files/********", description)
                     except:
                         description=' '
                     try:

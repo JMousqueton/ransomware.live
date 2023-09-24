@@ -16,11 +16,11 @@
 ![Statistics](../graphs/stats-sabbath.png)
 
 
-### Posts
+### Victims
 
 > 17 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`aria-label=Google>`](https://google.com/search?q=aria-label%3DGoogle%3E) | 28/02/2022 |   |   |
 | [`JALEEL TRADERS LLC`](https://google.com/search?q=JALEEL+TRADERS+LLC) | 15/01/2022 |   |   |
@@ -42,4 +42,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -4,9 +4,25 @@
 > According to Vitali Kremez and Michael Gillespie, this ransomware shares much code with Nemty 2.5. A difference is removal of the RaaS component, which was switched to email communications for payments. Uses AES-128, which is then protected RSA2048.
 
 ### External analysis
-- https://www.zdnet.com/article/a-deep-dive-into-nefilim-a-double-extortion-ransomware-group
+- http://www.secureworks.com/research/threat-profiles/gold-mansard
 
-- https://www.trendmicro.com/en_nz/research/21/f/nefilim-modern-ransomware-attack-story.html
+- https://blog.qualys.com/vulnerabilities-research/2021/05/12/nefilim-ransomware
+
+- https://docs.google.com/spreadsheets/d/1MI8Z2tBhmqQ5X8Wf_ozv3dVjz5sJOs-3
+
+- https://documents.trendmicro.com/assets/white_papers/wp-modern-ransomwares-double-extortion-tactics.pdf
+
+- https://id-ransomware.blogspot.com/2020/03/nefilim-ransomware.html
+
+- https://intel471.com/blog/how-cybercriminals-create-turbulence-for-the-transportation-industry
+
+- https://ke-la.com/how-ransomware-gangs-find-new-monetization-schemes-and-evolve-in-marketing/
+
+- https://labs.sentinelone.com/meet-nemty-successor-nefilim-nephilim-ransomware/
+
+- https://news.sophos.com/en-us/2021/01/26/nefilim-ransomware-attack-uses-ghost-credentials/
+
+- https://news.sophos.com/en-us/2022/03/17/the-ransomware-threat-intelligence-center/
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -17,11 +33,11 @@
 ### Ransom note
 * [📝 1 ransom note](notes/nefilim)
 
-### Posts
+### Victims
 
 > 10 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Atlanta Allergy & Asthma. Part 1.`](https://google.com/search?q=Atlanta+Allergy+%26+Asthma.+Part+1.) | 09/09/2021 |   |   |
 | [`Grimmway Farms. Part 1.`](https://google.com/search?q=Grimmway+Farms.+Part+1.) | 09/09/2021 |   |   |
@@ -36,4 +52,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -16,11 +16,11 @@
 ![Statistics](../graphs/stats-unsafe.png)
 
 
-### Posts
+### Victims
 
 > 11 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`TAG Aviation`](https://tagaviation.com) | 09/06/2023 |  country: CH - revenue: 326.60M |   |
 | [`SPARTAN Light Metal Products Inc`](https://spartanlmp.com) | 17/04/2023 |  country: US - revenue: 311.00M |   |
@@ -36,4 +36,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

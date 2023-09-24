@@ -9,11 +9,11 @@ _`not a ransomware group, also ref 7k4y[...]7eid.onion/documents.html`_
 |---|---|---|---|---|
 | -*- CRYP70N1C0D3 Team -*- | 🔴 | 31/12/2022 15:21 | `http://7k4yyskpz3rxq5nyokf6ztbpywzbjtdfanweup3skctcxopmt7tq7eid.onion` | <a href="https://images.ransomware.live/screenshots/7k4yyskpz3rxq5nyokf6ztbpywzbjtdfanweup3skctcxopmt7tq7eid-onion.png" target=_blank>📸</a> | 
 
-### Posts
+### Victims
 
 > 11 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`iima.ac.in`](https://google.com/search?q=iima.ac.in) | 18/12/2021 |   |   |
 | [`hislopcollege.ac.in`](https://google.com/search?q=hislopcollege.ac.in) | 18/12/2021 |   |   |
@@ -29,4 +29,4 @@ _`not a ransomware group, also ref 7k4y[...]7eid.onion/documents.html`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

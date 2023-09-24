@@ -31,7 +31,7 @@ def scraper(querygroup=''):
                 # here 
                     try:
                         with sync_playwright() as play:
-                                if querygroup in ['blackbasta','everest']:
+                                if querygroup in ['blackbasta','everest','metaencryptor']:
                                     stdlog('exception for ' + querygroup)
                                     browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                                         args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])
@@ -79,7 +79,6 @@ def scraper(querygroup=''):
                         stdlog('Timeout!')
                     except Exception as exception:
                         errlog(exception)
-                        errlog("error")
                 stdlog('leaving : ' + host['slug'] + ' --------- ' + group['name'])
         
 

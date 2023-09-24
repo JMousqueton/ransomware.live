@@ -14,11 +14,11 @@ _`xing use a custom mountlocker exe`_
 |---|---|---|---|---|
 | 星Team News | 🔴 | 24/01/2022 06:12 | `http://xingnewj6m4qytljhfwemngm7r7rogrindbq7wrfeepejgxc3bwci7qd.onion` | ❌ | 
 
-### Posts
+### Victims
 
 > 21 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Wayne Automatic Fire Sprinklers, Inc.`](https://google.com/search?q=Wayne+Automatic+Fire+Sprinklers%2C+Inc.) | 26/10/2021 |   |   |
 | [`Tilia GmbH. TILIA GROUP`](https://google.com/search?q=Tilia+GmbH.+TILIA+GROUP) | 08/10/2021 |   |   |
@@ -44,4 +44,4 @@ _`xing use a custom mountlocker exe`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -15,11 +15,11 @@
 ![Statistics](../graphs/stats-freecivilian.png)
 
 
-### Posts
+### Victims
 
 > 14 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`mfa.gov.ua`](https://google.com/search?q=mfa.gov.ua) | 31/12/2022 |  |   |
 | [`minagro.gov.ua`](https://google.com/search?q=minagro.gov.ua) | 31/12/2022 |  |   |
@@ -38,4 +38,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

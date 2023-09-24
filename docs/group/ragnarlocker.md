@@ -4,9 +4,25 @@
 > 
 
 ### External analysis
-- https://news.sophos.com/en-us/2020/05/21/ragnar-locker-ransomware-deploys-virtual-machine-to-dodge-security
+- http://reversing.fun/posts/2021/04/15/unpacking_ragnarlocker_via_emulation.html
 
-- https://www.bleepingcomputer.com/news/security/ransomware-gang-threatens-to-leak-data-if-victim-contacts-fbi-police
+- http://reversing.fun/reversing/2021/04/15/unpacking_ragnarlocker_via_emulation.html
+
+- https://analyst1.com/blog/ransom-mafia-analysis-of-the-worlds-first-ransomware-cartel
+
+- https://analyst1.com/file-assets/RANSOM-MAFIA-ANALYSIS-OF-THE-WORLD%E2%80%99S-FIRST-RANSOMWARE-CARTEL.pdf
+
+- https://blog.blazeinfosec.com/dissecting-ragnar-locker-the-case-of-edp/
+
+- https://blog.bushidotoken.net/2022/05/gamer-cheater-hacker-spy.html
+
+- https://blog.cyble.com/2022/01/20/deep-dive-into-ragnar-locker-ransomware-gang/
+
+- https://blog.reversing.xyz/docs/posts/unpacking_ragnarlocker_via_emulation/
+
+- https://blog.reversing.xyz/reversing/2021/04/15/unpacking_ragnarlocker_via_emulation.html
+
+- https://cyware.com/news/ragnar-locker-breached-52-organizations-and-counting-fbi-warns-0588d220/
 
 
 🔎 `ransomware.live`has an active  parser for indexing ragnarlocker's victims
@@ -15,7 +31,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://rgleak7op734elep.onion` | ❌ | 
-| Home Page of Ragnar_Locker Leaks site | 🟢 | 07/08/2023 11:53 | `http://rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd.onion` | <a href="https://images.ransomware.live/screenshots/rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd-onion.png" target=_blank>📸</a> | 
+| Home Page of Ragnar_Locker Leaks site | 🟢 | 24/09/2023 14:19 | `http://rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd.onion` | <a href="https://images.ransomware.live/screenshots/rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd-onion.png" target=_blank>📸</a> | 
 | none | 🔴 | 01/05/2021 00:00 | `http://p6o7m73ujalhgkiv.onion` | ❌ | 
 
 
@@ -31,12 +47,24 @@
 ![Statistics](../graphs/stats-ragnarlocker.png)
 
 
-### Posts
+### Victims
 
-> 104 victims found
+> 116 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Announcement: COMECA Group going to be Leaked`](https://google.com/search?q=Announcement%3A+COMECA+Group+going+to+be+Leaked) | 22/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/63c5058af58f08bed1dbf549666bd3a4.png" target=_blank>📸</a> |
+| [`Announcement: Skatax Accounting company going to be leaked`](https://google.com/search?q=Announcement%3A+Skatax+Accounting+company+going+to+be+leaked) | 22/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/7edbce6836d49d7f39a78c95e70881c1.png" target=_blank>📸</a> |
+| [`Retail House - Full Leak`](https://google.com/search?q=Retail+House+-+Full+Leak) | 22/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/69c47280568741d36da590dff17f1c4e.png" target=_blank>📸</a> |
+| [`Announcement: Stratesys solutions going to b`](https://google.com/search?q=Announcement%3A+Stratesys+solutions+going+to+b) | 21/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/2180e99b2f55d99a67e0d618a6787c63.png" target=_blank>📸</a> |
+| [`Announcement: Stratesys solutions going to be leaked`](https://google.com/search?q=Announcement%3A+Stratesys+solutions+going+to+be+leaked) | 21/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/2180e99b2f55d99a67e0d618a6787c63.png" target=_blank>📸</a> |
+| [`Announcement: Groupe Fructa Partner will be leaked soon`](https://google.com/search?q=Announcement%3A+Groupe+Fructa+Partner+will+be+leaked+soon) | 19/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/3c19f13a3480cc58861959a3d969135e.png" target=_blank>📸</a> |
+| [`CITIZEN company LEAKED`](https://google.com/search?q=CITIZEN+company+LEAKED) | 17/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/f20504b94b9988b0efac3fc19ff1d4e0.png" target=_blank>📸</a> |
+| [`Announcement: Retail House going to be LEAKED`](https://google.com/search?q=Announcement%3A+Retail+House+going+to+be+LEAKED) | 17/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/485a3be672f472efd2ff932427e15489.png" target=_blank>📸</a> |
+| [`Updates: Israel "MYMC"`](https://google.com/search?q=Updates%3A+Israel+%22MYMC%22) | 15/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/ebac463fc4c34349ab5cefd15f2112b9.png" target=_blank>📸</a> |
+| [`Israel Medical Center - leaked`](https://google.com/search?q=Israel+Medical+Center+-+leaked) | 06/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/7d9d74c1393c721731828e646e8b5d11.png" target=_blank>📸</a> |
+| [`DOIT - Canadian IT company allowed leak of its own clients.`](https://google.com/search?q=DOIT+-+Canadian+IT+company+allowed+leak+of+its+own+clients.) | 02/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/055c13fc0e53f20a40d4bcbf2aaad7d4.png" target=_blank>📸</a> |
+| [`Batesville didn't react on appeal and allows Full Leak`](https://google.com/search?q=Batesville+didn%27t+react+on+appeal+and+allows+Full+Leak) | 08/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/fff2cf2caf49d4e9c7db7372c6cfed1c.png" target=_blank>📸</a> |
 | [`Announcement: Batesville Tool & Die, Inc will be leaked in 3 Days`](https://google.com/search?q=Announcement%3A+Batesville+Tool+%26+Die%2C+Inc+will+be+leaked+in+3+Days) | 31/07/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/a68024cf5f09ca7bf0096e9f94b8d1d2.png" target=_blank>📸</a> |
 | [`Belize Electricity Limited - Leaked`](https://google.com/search?q=Belize+Electricity+Limited+-+Leaked) | 10/07/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/29b72a69de8915b92ef3a72fbf83a1f5.png" target=_blank>📸</a> |
 | [`Portugal Scotturb Data Leaked`](https://google.com/search?q=Portugal+Scotturb+Data+Leaked) | 05/07/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/36c3d8130b066e346ce3ceadec318f57.png" target=_blank>📸</a> |
@@ -144,4 +172,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

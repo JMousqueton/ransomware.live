@@ -4,9 +4,21 @@
 > According to PCrisk, Rook is ransomware (an updated variant of Babuk) that prevents victims from accessing/opening files by encrypting them. It also modifies filenames and creates a text file/ransom note (HowToRestoreYourFiles.txt). Rook renames files by appending the .Rook extension. For example, it renames 1.jpg to 1.jpg.Rook, 2.jpg to 2.jpg.Rook.
 
 ### External analysis
-- https://www.sentinelone.com/labs/new-rook-ransomware-feeds-off-the-code-of-babuk/
+- https://blog.cyble.com/2022/03/15/deep-dive-analysis-pandora-ransomware/
 
-- https://www.bleepingcomputer.com/news/security/rook-ransomware-is-yet-another-spawn-of-the-leaked-babuk-code/
+- https://chuongdong.com/reverse%20engineering/2022/01/06/RookRansomware/
+
+- https://github.com/Dump-GUY/Malware-analysis-and-Reverse-engineering/blob/main/NightSky_Ransomware%E2%80%93just_a_Rook_RW_fork_in_VMProtect_suit/NightSky_Ransomware%E2%80%93just_a_Rook_RW_fork_in_VMProtect_suit.md
+
+- https://seguranca-informatica.pt/rook-ransomware-analysis/
+
+- https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself
+
+- https://www.microsoft.com/security/blog/2022/05/09/ransomware-as-a-service-understanding-the-cybercrime-gig-economy-and-how-to-protect-yourself/
+
+- https://www.secureworks.com/research/bronze-starlight-ransomware-operations-use-hui-loader
+
+- https://www.sentinelone.com/labs/new-rook-ransomware-feeds-off-the-code-of-babuk/
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -22,11 +34,11 @@
 ![Statistics](../graphs/stats-rook.png)
 
 
-### Posts
+### Victims
 
 > 9 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Abdi ibrahim`](https://google.com/search?q=Abdi+ibrahim) | 08/01/2022 |   |   |
 | [`Evalueserve`](https://google.com/search?q=Evalueserve) | 28/12/2021 |   |   |
@@ -40,4 +52,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

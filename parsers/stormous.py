@@ -9,7 +9,7 @@ Rappel : def appender(post_title, group_name, description="", website="", publis
 """
 import os,re
 from bs4 import BeautifulSoup
-from sharedutils import errlog
+from sharedutils import errlog, find_slug_by_md5, extract_md5_from_filename,stdlog
 from parse import appender
 
 def main():
@@ -19,19 +19,16 @@ def main():
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup = BeautifulSoup(file, 'html.parser')
-                items = soup.find_all('div', class_='item')
-                for item in items:
-                    title = item.find('h3').text.strip()
-                    description = item.find('p').text.strip()
-                    # link = 'http://h3reihqb2y7woqdary2g3bmk3apgtxuyhx4j2ftovbhe3l5svev7bdyd.onion/' + item.find('a', href=re.compile('.html')).get('href')
-                    link = ''
-                    button_tag = item.find('button', text='DETAILS')
-                    if button_tag:
-                        parent_a_tag = button_tag.find_parent('a')
-                        if parent_a_tag and 'href' in parent_a_tag.attrs:
-                            link =  'http://h3reihqb2y7woqdary2g3bmk3apgtxuyhx4j2ftovbhe3l5svev7bdyd.onion/' + parent_a_tag['href']
-
-                    appender(title, 'stormous', description,'','',link)
+                tables = soup.find_all('table')
+                for table in tables:
+                    # Find the image source and description
+                    img_src = table.find('img')['src']
+                    victim = img_src.replace('images/companyimage/','').replace('.jpg','').replace('.png','')
+                    victim_name = victim.capitalize()
+                    description = table.find('p', class_='description').text.strip()
+                    url = find_slug_by_md5('stormous', extract_md5_from_filename(html_doc))
+                    post_url = url.replace('stm.html','') + '/' + victim + '.html'
+                    appender(victim_name,'stormous',description,'','',post_url)
                 file.close()
         #except:
         #    errlog('stormous: ' + 'parsing fail')

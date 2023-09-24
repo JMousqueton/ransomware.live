@@ -4,11 +4,25 @@
 > RansomExx is a ransomware family that targeted multiple companies starting in mid-2020. It shares commonalities with Defray777.
 
 ### External analysis
-- https://www.bleepingcomputer.com/news/security/computer-hardware-giant-gigabyte-hit-by-ransomexx-ransomware
+- https://blog.talosintelligence.com/2020/12/quarterly-ir-report-fall-2020-q4.html
 
-- https://www.cybereason.com/blog/cybereason-vs.-ransomexx-ransomware
+- https://cisoclub.ru/doc/otchet-kompanii-group-ib-ransomware-uncovered-2020-2021/?bp-attachment=group-ib_ransomware_uncovered_2020-2021.pdf
 
-- https://www.infosecurity-magazine.com/news/aerospace-giant-embraer-hit
+- https://docs.google.com/spreadsheets/d/1MI8Z2tBhmqQ5X8Wf_ozv3dVjz5sJOs-3
+
+- https://github.com/Bleeping/Ransom.exx
+
+- https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2021GTR.pdf
+
+- https://id-ransomware.blogspot.com/2020/06/ransomexx-ransomware.html
+
+- https://krebsonsecurity.com/2021/08/ransomware-gangs-and-the-name-game-distraction/
+
+- https://medium.com/proferosec-osm/ransomexx-fixing-corrupted-ransom-8e379bcaf701
+
+- https://securelist.com/ransomexx-trojan-attacks-linux-systems/99279/
+
+- https://unit42.paloaltonetworks.com/vatet-pyxie-defray777/
 
 
 🔎 `ransomware.live`has an active  parser for indexing ransomexx's victims
@@ -16,7 +30,7 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| ransomexx2 | 🔴 | 07/08/2023 00:44 | `http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion` | <a href="https://images.ransomware.live/screenshots/rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad-onion.png" target=_blank>📸</a> | 
+| ransomexx2 | 🟢 | 24/09/2023 14:21 | `http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion` | <a href="https://images.ransomware.live/screenshots/rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -27,11 +41,11 @@
 ![Statistics](../graphs/stats-ransomexx.png)
 
 
-### Posts
+### Victims
 
 > 45 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`DVA - DVision Architecture`](https://google.com/search?q=DVA+-+DVision+Architecture) | 01/07/2023 | Dalla digitalizzazione del progetto alla realizzazione di prototipi costruttivi: l’attività di DVA spazia dal concept di un intervento, all’organizzazione logistica di cantiere. Un approccio declinato secondo il connubio tra digitalizzazione e sostenibilità, orientamento cardine di tutte le scelte della società e rintracciabile in ognuna delle commesse prese in carico. | <a href="https://images.ransomware.live/screenshots/posts/58f19c8bc5471713cbb057fa6b72ceff.png" target=_blank>📸</a> |
 | [`Jacobs Farm`](https://google.com/search?q=Jacobs+Farm) | 24/06/2023 | Jacobs Farm was founded in 1980 as a small organic family farm dedicated to growing fresh, high quality, delicious food without damaging the environment. | <a href="https://images.ransomware.live/screenshots/posts/5f012d4b8bb9277533e8fb6a721425cb.png" target=_blank>📸</a> |
@@ -81,4 +95,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

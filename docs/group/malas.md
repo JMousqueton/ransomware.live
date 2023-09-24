@@ -8,18 +8,18 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Somos malas... podemos ser peores | 🟢 | 07/08/2023 11:45 | `http://malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd.onion` | <a href="https://images.ransomware.live/screenshots/malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd-onion.png" target=_blank>📸</a> | 
+| Somos malas... podemos ser peores | 🟢 | 24/09/2023 14:09 | `http://malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd.onion` | <a href="https://images.ransomware.live/screenshots/malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-malas.png)
 
 
-### Posts
+### Victims
 
 > 171 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Banco Azzoaglio`](https://google.com/search?q=Banco+Azzoaglio) | 09/04/2023 | using Zimbra vulnerability | <a href="https://images.ransomware.live/screenshots/posts/863238c49a91c1c18ddf1de4908d87eb.png" target=_blank>📸</a> |
 | [`Ларина`](https://google.com/search?q=%D0%9B%D0%B0%D1%80%D0%B8%D0%BD%D0%B0) | 09/04/2023 | using Zimbra vulnerability | <a href="https://images.ransomware.live/screenshots/posts/863238c49a91c1c18ddf1de4908d87eb.png" target=_blank>📸</a> |
@@ -195,4 +195,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

@@ -2,6 +2,9 @@
 
 
 
+### External analysis
+- https://twitter.com/1ZRR4H/status/1648232869809078273
+
 
 🔎 `ransomware.live`has an active  parser for indexing crosslock's victims
 
@@ -15,14 +18,14 @@
 ![Statistics](../graphs/stats-crosslock.png)
 
 
-### Posts
+### Victims
 
 > 1 victim found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`validcertificadora.com.br`](https://google.com/search?q=validcertificadora.com.br) | 17/04/2023 | VALID Certificadora Digital Ltda is a company that operates in the Farming industry. It employs 501-1,000 people and has $100M-$250M of revenue. The company is headquartered in São Paulo, Sp, Braz... | <a href="https://images.ransomware.live/screenshots/posts/06bcbdd07e365a2f1108be72bc10a348.png" target=_blank>📸</a> |
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

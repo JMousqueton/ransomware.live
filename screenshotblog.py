@@ -11,6 +11,8 @@ from sharedutils import openjson
 import sys      
 from PIL import Image
 from PIL import ImageDraw
+from PIL.PngImagePlugin import PngInfo
+from datetime import datetime
 
 def screenshot(webpage,fqdn,group=None):
     stdlog('webshot: {}'.format(webpage))
@@ -20,6 +22,8 @@ def screenshot(webpage,fqdn,group=None):
                     stdlog('(!) Exception for blackbasta')
                     browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                           args=[''])
+            elif group in ['ransomed']:
+                    browser = play.firefox.launch()  
             else:
                     browser = play.chromium.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                           args=[''])
@@ -38,16 +42,25 @@ def screenshot(webpage,fqdn,group=None):
             name = 'docs/screenshots/' + fqdn.replace('.', '-') + '.png'
             page.screenshot(path=name, full_page=True)
             image = Image.open(name)
+            metadata = PngInfo()
+            metadata.add_text("Source", "Ransomware.live")
+            metadata.add_text("Copyright", "Ransomware.live")
+            Description = group + " : " + webpage
+            metadata.add_text("Description",Description)
+            metadata.add_text("Author","Julien Mousqueton")
+            current_date = str(datetime.now().strftime('%Y:%m:%d %H:%M:%S'))
+            metadata.add_text("Creation Time",current_date)
+            # image.save(name, pnginfo=metadata)
             stdlog(' Image : ' + fqdn + ' has been written')
             draw = ImageDraw.Draw(image)
             draw.text((10, 10), "https://www.ransomware.live", fill=(0, 0, 0))
-            image.save(name)
+            # image.save(name)
+            image.save(name, pnginfo=metadata)
             stdlog(' Image : ' + fqdn + ' has been tag')
         except PlaywrightTimeoutError:
             stdlog('Timeout!')
         except Exception as exception:
-            errlog(exception)
-            errlog("error")
+            stdlog(exception)
         browser.close()
 
 

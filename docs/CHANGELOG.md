@@ -1,14 +1,63 @@
-# 📰 Changelog 
+# 🎚️ Changelog 
 ---
+
+## 2023-09-15 🤩
+
+- Thanks to Erez Dasa for [sponsoring `Ransomware.live`](https://www.buymeacoffee.com/ransomwarelive/) with [buy me a coffee](https://www.buymeacoffee.com/ransomwarelive/).
+
+## 2023-09-14
+
+- [New] Add [ThreeAM](group/threeam.md) ransomware group with associated parser.
+- [New] Add [CiphBit](group/ciphbit.md) ransomware group with associated parser.
+- [New] Add a new site for [Akira](group/akira.md) and [Rhysida](group/rhysida.md).
+
+## 2023-09-05
+
+- [Fix] Add a new url for [Trigona](group/trigona) and rewrite the parser. 
+
+## 2023-08-27
+
+- [New] Add intial ransom, negociated ransom and if the victim paid the ransom when information are available on [negotiations](negotiations) page (still in progress).
+
+## 2023-08-26
+
+- [Change] Integrate the [negotiations](negotiations) into `ransomware.live`.
+- [Change] `chat.ransomware.live` redirects now to [negotiations](negotiations).
+
+## 2023-08-24
+
+- [New] Add [Cloak](group/cloak.md) ransomware group with associated parser. 
+
+## 2023-08-23 
+
+- [Fix] Rewrite [Stormous](group/stormous) parser. 
+
+## 2023-08-16
+- [New] Add [Metaencryptor](group/metaencryptor.md) ransomware group with associated parser. 
+
+## 2023-08-12
+- [New] Add a "possible victim" field for **redacted** victims from [Bainlan](group/bianlian.md) Ransomware group. 
+
+
+## 2023-08-10
+
+- [New] Add parsing of post url (for screenshot) and added date in [Play](group/play) parser. 
+- [New] Add a parser for [Clop](group/clop) Torrent website. 
+- Thanks for [sponsoring `Ransomware.live`](https://www.buymeacoffee.com/ransomwarelive/) with [buy me a coffee](https://www.buymeacoffee.com/ransomwarelive/).
+
+## 2023-08-09
+
+- [New] Add [Inc Ransom](group/incransom) group and associated parser. Thanks to [ErezDasa](https://github.com/ErezDasa). 
 
 ## 2023-08-03
 
 - Add a [graph](stats2023) for every month with the number of victims per day. 
-- Add a zoom on every pictures 🔎
-- Publish automaticaly monthly statistics on my 🐘 Mastodon account : [JMousqueton](https://infosec.exchange/@JMousqueton) (2 messages on 2th and 6th of each month) 
-- Add [Ransomware groups cartography](cartography) from [CERT Orange Cyberdefense](https://www.orangecyberdefense.com/)
-- [New] Add [Knight](group/knight) : A [Cyclops](group/cyclops) rebrand
-- [Fix] Rewrite the [Arvin Club](group/arvinclub) parser 
+- Add a zoom on every pictures 🔎.
+- Publish automaticaly monthly statistics on my 🐘 Mastodon account : [JMousqueton](https://infosec.exchange/@JMousqueton) (2 messages on 2th and 6th of each month).
+- Add [Ransomware groups cartography](cartography) from [CERT Orange Cyberdefense](https://www.orangecyberdefense.com/).
+- [New] Add [Knight](group/knight) : A [Cyclops](group/cyclops) rebrand.
+- [Fix] Rewrite the [Arvin Club](group/arvinclub) parser.
+- [Bug] Temporary remove decrypt tools page since [No More Ransom](https://www.nomoreransom.org/) is performing maintenance.
 
 ## 2023-08-02 😇
 

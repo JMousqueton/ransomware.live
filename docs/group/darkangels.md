@@ -17,11 +17,11 @@ _`accessing over HTTP returns open dir 29/5/22, 89.38.225.166`_
 * 💰 <a href="/#/crypto/darkangels.md">Crypto wallet(s) available</a>
 
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

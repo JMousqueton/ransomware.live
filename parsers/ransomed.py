@@ -1,3 +1,4 @@
+
 """
 +------------------------------+------------------+----------+
 | Description | Published Date | Victim's Website | Post URL |
@@ -18,13 +19,19 @@ def main():
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                div = soup.find('div',{"class":"di"})
-                divs_name=div.find_all('a')
-                for a in divs_name:
-                    victim = a.text.strip().replace('{','').replace('}','')
-                    url = a['href']
-                    post_url = find_slug_by_md5('ransomed', extract_md5_from_filename(html_doc)) + url
-                    appender(victim, 'ransomed','','','',post_url)
+                card_elements = soup.find_all('div', class_='card')
+                for card in card_elements:
+                    victim_element = card.find('b', recursive=False)
+                    if victim_element:
+                        victim = victim_element.get_text(strip=True)
+                        if victim in ['FAQ', 'Contact Us']:
+                            continue
+                        ul_element = card.find('ul', recursive=False)
+                        if ul_element:
+                            description = ' '.join([li.get_text(strip=True) for li in ul_element.find_all('li')])
+                        else:
+                            description = ''
+                        appender(victim, 'ransomed',description,'','','')
                 file.close()
         except:
             errlog('ransomed: ' + 'parsing fail')

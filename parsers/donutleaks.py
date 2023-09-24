@@ -15,7 +15,7 @@ import re
 
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('donutleaks-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -44,6 +44,6 @@ def main():
 
                     appender(title, 'donutleaks', description.replace('|','-'),'',date_formatted,'http://sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd.onion'+url)
                 file.close()
-        #except:
-        #    errlog('donutleaks: ' + 'parsing fail')
-        #    pass    
+        except:
+            errlog('donutleaks: ' + 'parsing fail')
+            pass    

@@ -12,11 +12,11 @@
 ![Statistics](../graphs/stats-shaoleaks.png)
 
 
-### Posts
+### Victims
 
 > 4 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Welcome to new customers!`](https://google.com/search?q=Welcome+to+new+customers%21) | 01/11/2022 |   |   |
 | [`Some of our customers was not payed to us for data decryption. So we publish some of his d`](https://google.com/search?q=Some+of+our+customers+was+not+payed+to+us+for+data+decryption.+So+we+publish+some+of+his+d) | 01/11/2022 |   |   |
@@ -25,4 +25,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

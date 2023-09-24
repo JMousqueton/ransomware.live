@@ -4,9 +4,25 @@
 > Ransomware written in .NET, apparently derived from the codebase of win.hakbit (Thanos) ransomware.
 
 ### External analysis
-- https://therecord.media/decryptor-released-for-prometheus-ransomware-victims
+- https://id-ransomware.blogspot.com/2021/05/prometheus-ransomware.html
 
-- https://unit42.paloaltonetworks.com/prometheus-ransomwar
+- https://medium.com/cycraft/prometheus-decryptor-6933e7bac1ea
+
+- https://medium.com/cycraft/the-road-to-ransomware-resilience-c1ca37036efd
+
+- https://medium.com/s2wlab/prometheus-x-spook-prometheus-ransomware-rebranded-spook-ransomware-6f93bd8ab5dd
+
+- https://securityintelligence.com/posts/ransomware-encryption-goes-wrong/
+
+- https://therecord.media/decryptor-released-for-prometheus-ransomware-victims/
+
+- https://twitter.com/inversecos/status/1441252744258461699?s=20
+
+- https://unit42.paloaltonetworks.com/prometheus-ransomware/
+
+- https://www.cybereason.com/blog/cybereason-vs.-prometheus-ransomware
+
+- https://www.sentinelone.com/labs/spook-ransomware-prometheus-derivative-names-those-that-pay-shames-those-that-dont/
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -17,11 +33,11 @@
 ### Ransom note
 * [📝 1 ransom note](notes/prometheus)
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

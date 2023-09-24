@@ -15,19 +15,21 @@ from datetime import datetime
 
 def main():
     for filename in os.listdir('source'):
-        try:
+        #try:
             if filename.startswith('dunghill_leak-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                title = soup.find('div', {"class": "block-heading pt-4 mt-5"}).text.strip() # type: ignore
-                date_string = soup.find("div", {"class": "block__details-count cur_date_block"}).text.strip() # type: ignore
-                date_object = datetime.strptime(date_string.replace('p.m.','pm'), "%B %d, %Y, %I:%M %p")
-                output_format = "%Y-%m-%d %H:%M:%S.%f"
-                date = date_object.strftime(output_format)
-                description = soup.find("div", {"class": ""}).text.strip() # type: ignore
-                appender(title, 'dunghill_leak', description,'',str(date))
+                divs = soup.find_all('div',{"class": "custom-container"})
+                for div in divs:
+                    title = div.find('div', {"class": "ibody_title"}).text.strip()
+                    description = div.find("div", {"class": "ibody_body"}).find_all('p')
+                    description = description[2].text.strip()
+                    link = div.find('div', {"class": "ibody_ft_right"}).a['href']
+                
+
+                    appender(title, 'dunghill_leak', description,'','',link)
                 file.close()
-        except:
-            errlog('dunghill_leak: ' + 'parsing fail')
-            pass    
+        #except:
+        #    errlog('dunghill_leak: ' + 'parsing fail')
+        #    pass    

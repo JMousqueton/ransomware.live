@@ -15,14 +15,14 @@
 
 | Name | Link |
 |---|---|
-|20210903| <a href="https://chat.ransomware.live/chat/avos/20210903.html" target=_blank> 💬 </a> |
+|20210903|  <a href="/#/negotiation/avos/20210903.html"> 💬 </a> |
 
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

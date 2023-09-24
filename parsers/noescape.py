@@ -21,12 +21,12 @@ def main():
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                divs_name=soup.find_all('div', {"class": "col-lg-4 my-3 d-flex flex-column justify-content-between"})
+                divs_name=soup.find_all('div', {"class": "d-flex flex-column justify-content-between flex-fill"})
                 for div in divs_name:
                     # <h2 data-v-8bca7b29="" class="fw-bold fs-5 mb-1"
-                    title = div.find('h2', {"class": "fw-bold fs-5 mb-1"}).text.strip()
+                    title = div.find('h2', {"title": "Company name"}).text.strip()
                     # <div class="mb-2 text-justify" 
-                    description = div.find('div',{"class" : "mb-2 text-justify"}).text.strip()
+                    description = div.find('small',{"class" : "text-justify"}).text.strip()
                     # <div data-v-8bca7b29="" class="d-flex align-items-center mb-1"
                     website = 'https://'+ div.find('div',{"title" : "Company site"}).text.strip()
 
@@ -40,15 +40,12 @@ def main():
 
                     url_site = "noescapemsqxvizdxyl7f7rmg5cdjwp33pg2wpmiaaibilb4btwzttad"
                     #post_url = 'http://' + url_site + '.onion/' +  url
-
-                    link_element = soup.find('a', class_="btn btn-sm btn-primary h2 mb-0 fs-6")
+                    link_element = soup.find('a', class_="btn btn-sm btn-primary h2 mb-0")
                     if link_element:
                         link = link_element['href']
                         post_url = 'http://' + url_site + '.onion' +  link
                     else:
                         post_url = ''
-
-
                     appender(title, 'noescape', description.replace('\n',' '),website,published,post_url)
 
                 file.close()

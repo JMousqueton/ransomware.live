@@ -2,29 +2,87 @@
 
 
 
+### External analysis
+- https://arcticwolf.com/resources/blog/conti-and-akira-chained-together/
+
+- https://decoded.avast.io/threatresearch/decrypted-akira-ransomware/
+
+- https://news.sophos.com/en-us/2023/05/09/akira-ransomware-is-bringin-88-back/
+
+- https://twitter.com/MalGamy12/status/1651972583615602694
+
 
 🔎 `ransomware.live`has an active  parser for indexing akira's victims
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| none | 🟢 | 07/08/2023 12:04 | `http://akiral2iz6a7qgd3ayp3l6yub7xx2uep76idk3u2kollpj5z3z636bad.onion` | <a href="https://images.ransomware.live/screenshots/akiral2iz6a7qgd3ayp3l6yub7xx2uep76idk3u2kollpj5z3z636bad-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 24/09/2023 13:35 | `http://akiral2iz6a7qgd3ayp3l6yub7xx2uep76idk3u2kollpj5z3z636bad.onion` | <a href="https://images.ransomware.live/screenshots/akiral2iz6a7qgd3ayp3l6yub7xx2uep76idk3u2kollpj5z3z636bad-onion.png" target=_blank>📸</a> | 
+| none | 🔴 | 01/05/2021 00:00 | `http://akiralkzxzq2dsrzsrvbr2xgbbu2wgsmxryd4csgfameg52n7efvr2id.onion` | ❌ | 
 
 
 ### Ransom note
 * [📝 1 ransom note](notes/akira)
+
+### Crypto wallets
+* 💰 <a href="/#/crypto/akira.md">Crypto wallet(s) available</a>
+
+
+### Negotiation chats
+
+| Name | Link |
+|---|---|
+|20230529|  <a href="/#/negotiation/akira/20230529.html"> 💬 </a> |
+|20230606|  <a href="/#/negotiation/akira/20230606.html"> 💬 </a> |
+|20230616|  <a href="/#/negotiation/akira/20230616.html"> 💬 </a> |
+|20230628|  <a href="/#/negotiation/akira/20230628.html"> 💬 </a> |
+|20230707|  <a href="/#/negotiation/akira/20230707.html"> 💬 </a> |
+|20230719|  <a href="/#/negotiation/akira/20230719.html"> 💬 </a> |
+|20230722|  <a href="/#/negotiation/akira/20230722.html"> 💬 </a> |
+|20230727|  <a href="/#/negotiation/akira/20230727.html"> 💬 </a> |
+|20230728|  <a href="/#/negotiation/akira/20230728.html"> 💬 </a> |
+|20230815|  <a href="/#/negotiation/akira/20230815.html"> 💬 </a> |
+
 
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-akira.png)
 
 
-### Posts
+### Victims
 
-> 84 victims found
+> 113 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`CLX Logistics`](https://google.com/search?q=CLX+Logistics) | 22/09/2023 | CLX Logistics, LLC is a global 3PL provider of transportation management systems, managed services, supply chain consulting and intermodal transportation services for a broad base of industry verticals. We almost finished their data transportation and will upload 26GB of their data soon. Tons of business information: clients, personal information, a few confidential docs. We will update. |   |
+| [`Glovis America`](https://google.com/search?q=Glovis+America) | 18/09/2023 | The company offers technical jobs, human resources support roles,safety supervisors and managers, or strategic management and leadership positions. 10 GB of data will be available for downloading here soon. Some projects info, personal employee documents, financial and accounting papers.  |   |
+| [`Fuji Seal International (US branch)`](https://google.com/search?q=Fuji+Seal+International+%28US+branch%29) | 18/09/2023 | Fuji Seal Group provides shrink sleeve labels, self-adhesive labels, spouted pouches and label-application systems. The US branch of the company has been recently breached and the management refuses to negotiate. So we are informing you about the upcoming uploading of 30GB size data here. There are numerous confidential docs, contracts, agreements etc.  |   |
+| [`American Steel & Aluminum`](https://google.com/search?q=American+Steel+%26+Aluminum) | 14/09/2023 | American Steel & Aluminum Co., Inc. was founded in 1967 with 3 employees, a small fabrication shop, and some big dreams for the future. Today they have 70 employees and 70Gb of data that will be uploaded here. There is much project information and financial docs. Employee information is also will be available.  |   |
+| [`Accuride`](https://google.com/search?q=Accuride) | 12/09/2023 | Accuride, founded in 1986 and headquartered in Evansville, Indiana, manufactures and supplies vehicle components. Almost terabyte of files will be available for you. Of course there will be many interesting ones. For instance, engineering drawings and photo for TESLA, Mirelli and other sound names. Besides that many confidential documents, personal information of employees with private photo and docs, medical information etc. And finally there is muchinfo about clients and their orders and projects with detailed description (drawings, 3D models). Should I note tons of financialand accounting information? Wait for the release. |   |
+| [`Energy One`](https://google.com/search?q=Energy+One) | 06/09/2023 | Energy One Limited provides various software products and services to wholesale energy, environmental, and carbon trading markets in the Asia-Pacific, the United Kingdom, and Europe. The company will provide you all with its 77GB data where you will find information on their projects with big business names, financial documents, contracts, and HR information as well. |   |
+| [`New York & Company`](https://google.com/search?q=New+York+%26+Company) | 31/08/2023 | New York & Company is a leading specialty manufacturer and retailer of women's fashion apparel and accessories providing women with modern, wear to work solutions that are multi-functional at affordable prices. The company's website has a list of its best deals, with more to be added soon. But I wouldn't say it will be one of the best deals for them. They have broken off the dialog, and at this point we have no choice but to post their corporate fileshere for everyone to see. Stand by for the release.  |   |
+| [`Children's Home of Wyoming Conference`](https://google.com/search?q=Children%27s+Home+of+Wyoming+Conference) | 31/08/2023 | The Children's Home is a family-centered agency with 16 programs,nearly 300 employees and more than 8 locations. CHWC offer six areas of assistance:Behavioral & Emotional Health, Therapeutic Intervention & Clinical Treatment, Leadership & Development, Physical Health & Wellness, Community Outreach & Civic Engagement, Academic Success & Career Readiness.More than 70Gb personal and company documentation data. |   |
+| [`Rivers Casino`](https://google.com/search?q=Rivers+Casino) | 31/08/2023 | Rivers Casino is a casino and hotel, that in addition to gambling, offers promotions, dining and entertainment. This is our new client that seems to be offering soon its internal secrets. We willlet you know soon about the breach more detailed. There will be uploaded about 140Gb. |   |
+| [`O'Brien Steel Service`](https://google.com/search?q=O%27Brien+Steel+Service) | 30/08/2023 | O’Brien Steel Service is stocked and equipped to service customers of all sizes, ranging from small job shops to the largest OEMs in the USA. More than 70 GB of data will be published soon, including:- Financial documents and reports for 22-23 years;- HR;- Projects;- Employment contracts and documents;- IT documents;- Administrative documents.And also: -Contacts.csv - 5069 lines Clietns data;-Customers.csv - 3596 lines of the Companies data; -Competitors.csv - 3470 lines Suppliers data.Wait for the release. |   |
+| [`Renton School District`](https://google.com/search?q=Renton+School+District) | 30/08/2023 | Renton School District is a public school district serving Renton, Washington. 200Gb of Renton schools will be shared here soon. Business docs, projects information and personal information (e.g.medical staff). Wait for the release. |   |
+| [`Jasper High School`](https://google.com/search?q=Jasper+High+School) | 28/08/2023 | Another one school that doesn't care about its students documents. More than 60Gb of data will be released here soon. Many confidential documents of students and employees and even some confidential files. Wait for the release. |   |
+| [`Intertek`](https://google.com/search?q=Intertek) | 28/08/2023 | Intertek is an international provider of quality and safety services to a wide range of global and local industries. In the pack of more than 300Gb of data you can find all set of information: personal documents, business partners info, confidential agreementsand reports. There is also information about their US affiliate Professional Service Industries. |   |
+| [`Penny Publications`](https://google.com/search?q=Penny+Publications) | 28/08/2023 | Penny Publications is recognized as North America’s leading puzzle magazine company and is dedicated to providing family-friendly puzzle entertainment of unsurpassed quality. We will make Penny Publications a bit more recognizable for people and upload the data we've taken from this company. 100 Gb will be available for downloading soon. Employee information, confidential documents and financial files can be found in the data as always. |   |
+| [`Voss Enterprises, Divvies`](https://google.com/search?q=Voss+Enterprises%2C+Divvies) | 28/08/2023 | Voss Enterprises (real estate) and Divvies (retail) are two more companies with no hint of a desire to keep their company data safe. We'll post the files of both companies this week. |   |
+| [`Cutler-Smith`](https://google.com/search?q=Cutler-Smith) | 28/08/2023 | Cutler-Smith, P.C. is a uniquely positioned to deliver big law firm results with the attention, service and efficiencies that onlya boutique law firm can provide. They've lost 50Gb of their clients' data that will be provided here in our blog within this week. |   |
+| [`Edmonds School District`](https://google.com/search?q=Edmonds+School+District) | 24/08/2023 | Edmonds School District's 35 schools cover approximately 36 square miles within the communities of Brier, Edmonds, Lynnwood, Mountlake Terrace, Woodway and portions of unincorporated Snohomish County. Edmonds School District's data covers approximately 10GB ( sql file) on our server and seems not to be very interested in saving it. So we are ready to share it with everyone interested. I think you can imagine what data will be released: personal students documents, employees info, financials, accounting and much other. We are working on the release. |   |
+| [`RIMSS`](https://google.com/search?q=RIMSS) | 17/08/2023 | RIMSS provides dealer support services to agricultural, truck, construction, and bus dealerships throughout the U.S. RIMSS is one of that companies who doesn't care when their corporate information is open to public. Why shouldn't we share it with people who are interested in such data? Wait for upload. |   |
+| [`Camino Nuevo CharterAcademy`](https://google.com/search?q=Camino+Nuevo+CharterAcademy) | 17/08/2023 | Camino Nuevo Charter Academy educates students in a college preparatory program. We will be uploading their 75GB data shortly. Youwill find some personal information there: ssns, passports, and other business documents. Please expect it soon. |   |
+| [`The Clifton Public Schools`](https://google.com/search?q=The+Clifton+Public+Schools) | 17/08/2023 | The Clifton Public Schools is a comprehensive community public school district that serves students in pre-kindergarten through twelfth grade. The leadership of this district has priced their school information too cheaply, which is the reason their internal information is here. As always, 60 GB of school documents with detailed personal information will be posted here.  |   |
+| [`Cequint`](https://google.com/search?q=Cequint) | 16/08/2023 | Cequint Inc. provides caller identification (ID) solutions for mobile devices. 880 GB of data is what we got from their network. Alarge number of different documents. The most interesting in this case are the source codes and information about the company's projects. In addition, as you realize, there are a lot of personaland financial documents. Please wait for the release. |   |
+| [`Tally Energy Services`](https://google.com/search?q=Tally+Energy+Services) | 16/08/2023 | Tally Energy Services is an integrated oilfield services company committed to helping our customers “make better wells.” We wantedto help these folks make their cyber defenses a little better, but we failed. Soon you're going to see 130GB of their data here. As always, there's a bunch of personal employee records with medical information and emergency contacts. Financial and incident reports are also prominently displayed. |   |
+| [`Rite Technology`](https://google.com/search?q=Rite+Technology) | 11/08/2023 | Rite Technology company offers products including copiers, printers, HP products and Sharp Aquos white boards. We will share a zipwith their data of about 15 GB containing good HR data with passport and ssns information of employees. There are also interesting accidents information and business documentation. |   |
+| [`The Belt Railway Company of Chicago`](https://google.com/search?q=The+Belt+Railway+Company+of+Chicago) | 10/08/2023 | The Belt Railway Company of Chicago has a strong safety foundation and history, and employees continuously strive for zero incidents. But there was an incident that caused 85 GB of their data appearing on our server. BRC management decided to stay silent with us so we will upload all their documents soon. |   |
+| [`Optimum Technology`](https://google.com/search?q=Optimum+Technology) | 10/08/2023 | Optimum Technology is dedicated to developing solutions that helpkeep law enforcement and communities safe. They haven't developed any solutions for cyber security yet so we will share 77Gb of their data soon. SQLs, personal docs, and other business information.  |   |
+| [`Boson`](https://google.com/search?q=Boson) | 10/08/2023 | Boson offers IT learning software to individuals, businesses, academic institutions and government entities around the world. We gained access to their network found some files there. We will upload the soon. |   |
+| [`TIMECO`](https://google.com/search?q=TIMECO) | 09/08/2023 | Thousands of business owners use TIMECO to maximize their billable hours, eliminate time theft, decrease operating costs, and process payroll in minutes. As we've managed to penetrate to the network of this company, some of that businesses are at risk now. Currently, we working on gaining accesses to them. |   |
+| [`Räddningstjänsten Västra Blekinge`](https://google.com/search?q=R%C3%A4ddningstj%C3%A4nsten+V%C3%A4stra+Blekinge) | 07/08/2023 | Räddningstjänsten Västra Blekinge is a sweden municipal association with three member municipalities: Karlshamn, Olofström and Sölvesborg. As these associations are not interested in saving theircitizens data, we will upload the everything we have on this company here soon. Please wait for an update. |   |
 | [`Papel Prensa SA`](https://google.com/search?q=Papel+Prensa+SA) | 07/08/2023 | Papel Prensa SA is an Argentina-based company engaged in the manufacture of newsprint paper. Confidential contracts, agreements, personal employee information and other business docs. About 120GB. Please wait for the release. |   |
 | [`Koury Engineering`](https://google.com/search?q=Koury+Engineering) | 04/08/2023 | Koury Engineering provides geotechnical engineering, material testing, and inspection services for residential and commercial construction projects throughout Southern California. More that 80GB of confidential contracts, agreements and NDAs, complete employeedata, projects information and much other documents will be uploaded later. All questions to messages section please. |   |
 | [`Venture General Agency`](https://google.com/search?q=Venture+General+Agency) | 03/08/2023 | Venture General Agency, LLC (VGA) is a family run Texas based Managing General Agency. These guys are not very talkative. All the data we have from this company will be released here next week. Personal docs and customer information, contracts and payments details - everything will be shared. If you are interested in something specific, let us know in messages section. |   |
@@ -45,6 +103,7 @@
 | [`Gerber ChildrenswearLLC`](https://google.com/search?q=Gerber+ChildrenswearLLC) | 13/07/2023 | Gerber Childrenswear LLC is a leading marketer of infant and toddler apparel and related products in the marketplace. Almost 0.5TBof data will be uploaded to our blog soon. So detailed business information is there: patents, trademarks, contracts with other business giants. Much to look through. |   |
 | [`Schmidt Salzman & Moran, Ltd`](https://google.com/search?q=Schmidt+Salzman+%26+Moran%2C+Ltd) | 12/07/2023 | With 35 years of practice in real estate taxation, Schmidt Salzman & Moran, Ltd. aggressively pursues the lowest possible real estate taxes for its clients’ commercial, industrial and multi-unit residential properties. This company has not given us even the lowest price for their customers' personal information. If they don't need it, we are sure there are many of you who are interested.More that 70GB will be uploaded soon. |   |
 | [`A123 Systems`](https://google.com/search?q=A123+Systems) | 11/07/2023 | A123 Systems, Inc. (Nasdaq:AONE) develops and manufactures advanced lithium ion batteries and battery systems for the transportation, electric grid services and commercial markets. We have more than 350GB of data from this company and will upload everything soon. You will find tons of confidential business information thereas well as detailed info of staff. Another stocks falling is coming. |   |
+| [`Green Diamond Resource`](https://google.com/search?q=Green+Diamond+Resource) | 10/07/2023 | Green Diamond is a fifth-generation, family-owned forest productscompany that owns and manages working forests in nine states throughout the western and southern U.S. Working the forest for so long seems to have taken away the management of this company of their ability to communicate with people. They didn't utter a word for about two weeks after the hack.We found some interesting data on their network and are posting over 30GB of their business information, including personal information, here.  |   |
 | [`Green Diamond`](https://google.com/search?q=Green+Diamond) | 10/07/2023 | Green Diamond is a fifth-generation, family-owned forest productscompany that owns and manages working forests in nine states throughout the western and southern U.S. Working the forest for so long seems to have taken away the management of this company of their ability to communicate with people. They didn't utter a word for about two weeks after the hack.We found some interesting data on their network and are posting over 30GB of their business information, including personal information, here.  |   |
 | [`Hamre Schumann Mueller & Larson HSML`](https://google.com/search?q=Hamre+Schumann+Mueller+%26+Larson+HSML) | 10/07/2023 | HSML serves the intellectual property needs of a wide range of businesses and individuals from around the world. Their file base includes confidential documents, contracts, clients' personal information, and anything else you might need. 102 GB of their documents will soon be uploaded. |   |
 | [`Pinnergy`](https://google.com/search?q=Pinnergy) | 06/07/2023 | Pinnergy is a diversified energy services company with a broad and comprehensive service offering for customers throughout Texas, Louisiana and New Mexico. We're almost ready to share the 55 GB of data we've taken from their network with them. Contracts, projects, employee personal information, and confidential documents will be posted shortly. |   |
@@ -112,4 +171,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

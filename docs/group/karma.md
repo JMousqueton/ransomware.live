@@ -22,11 +22,11 @@
 ### Ransom note
 * [📝 1 ransom note](notes/karma)
 
-### Posts
+### Victims
 
 > 7 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Our first post`](https://google.com/search?q=Our+first+post) | 04/10/2021 |   |   |
 | [`Saurer. Part 1.`](https://google.com/search?q=Saurer.+Part+1.) | 04/10/2021 |   |   |
@@ -38,4 +38,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

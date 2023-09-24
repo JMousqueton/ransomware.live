@@ -4,13 +4,25 @@
 > Snatch is a ransomware which infects victims by rebooting the PC into Safe Mode. Most of the existing security protections do not run in Safe Mode so that it the malware can act without expected countermeasures and it can encrypt as many files as it finds. It uses common packers such as UPX to hide its payload.
 
 ### External analysis
-- https://t.me/snatch_news
+- https://blog.intel471.com/2020/05/21/a-brief-history-of-ta505/
 
-- https://lifars.com/wp-content/uploads/2020/07/Snatch-Ransomware-Malware-Analysis-Case-Study.pdf
+- https://github.com/albertzsigovits/malware-notes/blob/master/Snatch.md
+
+- https://intel471.com/blog/a-brief-history-of-ta505
 
 - https://news.sophos.com/en-us/2019/12/09/snatch-ransomware-reboots-pcs-into-safe-mode-to-bypass-protection/
 
+- https://news.sophos.com/en-us/2022/03/17/the-ransomware-threat-intelligence-center/
+
 - https://thedfirreport.com/2020/06/21/snatch-ransomware/
+
+- https://ti.qianxin.com/uploads/2020/02/13/cb78386a082f465f259b37dae5df4884.pdf
+
+- https://twitter.com/VK_Intel/status/1191414501297528832
+
+- https://www.bleepingcomputer.com/news/security/snatch-ransomware-reboots-to-windows-safe-mode-to-bypass-av-tools/
+
+- https://www.crowdstrike.com/blog/financial-motivation-drives-golang-malware-adoption/
 
 
 🔎 `ransomware.live`has an active  parser for indexing snatch's victims
@@ -18,9 +30,9 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| News | 🟢 | 07/08/2023 12:00 | `http://hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad.onion` | <a href="https://images.ransomware.live/screenshots/hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad-onion.png" target=_blank>📸</a> | 
+| News | 🟢 | 24/09/2023 14:26 | `http://hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad.onion` | <a href="https://images.ransomware.live/screenshots/hl66646wtlp2naoqnhattngigjp5palgqmbwixepcjyq5i534acgqyad-onion.png" target=_blank>📸</a> | 
 | Access Denied | 🔴 | 29/01/2023 17:17 | `http://snatch.press` | <a href="https://images.ransomware.live/screenshots/snatch-press.png" target=_blank>📸</a> | 
-| News | 🟢 | 07/08/2023 12:00 | `http://snatchteam.top` | <a href="https://images.ransomware.live/screenshots/snatchteam-top.png" target=_blank>📸</a> | 
+| News | 🔴 | 13/09/2023 02:27 | `http://snatchteam.top` | <a href="https://images.ransomware.live/screenshots/snatchteam-top.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -31,12 +43,19 @@
 ![Statistics](../graphs/stats-snatch.png)
 
 
-### Posts
+### Victims
 
-> 102 victims found
+> 109 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Florida Department of Veterans' Affairs`](https://google.com/search?q=Florida+Department+of+Veterans%27+Affairs) | 19/09/2023 | Watching over and advocating for our state’s veterans and their families are the more than 1,100 men and women of the Florida Department of Veterans’ Affairs.Florida has earned a reputation as the most veteran-friendly state in the nation. Our state’s veterans bring more than $18.4 | <a href="https://images.ransomware.live/screenshots/posts/93a3ddf973887ffb23b47d744f7e87de.png" target=_blank>📸</a> |
+| [`ZILLI`](https://google.com/search?q=ZILLI) | 19/09/2023 | ZILLI works with ultra-fine calfskin suede and glazed lambskin, but also with exotic animal skins such as peccary, python, crocodile, ostrich and kangaroo, all requiring specific expertise. Jackets are made entirely by hand and decorative stitching and finishing touches are also completed by hand. In | <a href="https://images.ransomware.live/screenshots/posts/89c60947a03c041f761ddf4bc1b845e6.png" target=_blank>📸</a> |
+| [`CEFCO`](https://google.com/search?q=CEFCO) | 19/09/2023 | We have been in the fuel business a long time – since 1952, in fact. During that time, we have learned more than a thing or two about gasoline and diesel fuel. Most importantly, we have learned the importance of delivering quality fuel at a | <a href="https://images.ransomware.live/screenshots/posts/63bcc6c29fe4376fac864e8c264ef891.png" target=_blank>📸</a> |
+| [`Knight Barry Title`](https://google.com/search?q=Knight+Barry+Title) | 04/09/2023 | We are produly present over 10TB ofcommercial data (customer data, finance) for Knight Barry Title Insurance company represeting 10y data. It has over 500 employees in 5 states and executes over 120K service orders annualy which makes over 1M of unique customer data available. Ready | <a href="https://images.ransomware.live/screenshots/posts/0674b6bd7b0e4b7d44c36390db13a3d1.png" target=_blank>📸</a> |
+| [`Fullerton India (SMFG India Credit)`](https://google.com/search?q=Fullerton+India+%28SMFG+India+Credit%29) | 27/08/2023 | More information in our telegram channel https://t.me/snatch_info Persons responsible for data leakage:Pankaj Malik:Executivepankaj.malik@fullertonindia.com;Nitin Nimbalkar:Executivenitin.nimbalkar@fullertonindia.com;Manvinder Singh:VPmanvinder.singh@fullertonindia.com;Tarun Raina:VPtarun.raina@fullertonindia.com;Maithreyi Srikanth:VPmaithreyi.srikanth@fullertonindia.com;Shailesh Chandak:Manager, VPshailesh.chandak@fullertonindia.com;Kasturi Chodankar:Manager, VPkasturi.chodankar@fullertonindia.com;Pratik Thakkar:VPpratik.thakkar@tatacapital.compratik.thakkar@fullertonindia.com;Sukanta Dawn:VPsukanta.dawn@fullertonindia.com;Kartik Bhati:VPkartik.bhati@fullertonindia.com;Stephen Williams:VPstephen.williams@fullertonindia.com;Pankaj Jain:VPpankaj.jain@fullertonindia.com;Abhijeet Shintre:Manager, VPabhijeet.shintre@fullertonindia.com;Amol Bhalerao:VPamol.bhalerao@fullertonindia.com;Sunderraman Subramanian:Director, VPsunderraman.subramanian@fullertonindia.com;Sonal Satyendra:Non-Management, VPsonal.satyendra@fullertonindia.com;Abhijit Dey:VPabhijit.dey@fullertonindia.com;Suman Deb:Manager, Directorsuman.deb@fullertonindia.com;Sagar Sankhe:Non-Management, Managersagar.sankhe@fullertonindia.com;Nikhil Makwana:Non-Management, Managernikhil.makwana@bajajfinserv.innikhil.makwana@fullertonindia.com;Kapil Mishra:Managerkapil.mishra@fullertonindia.com;Bhushan Manapure:Non-Management, Managerbhushan.manapure@religarefinvest.combhushan.manapure@fullertonindia.com;Anshul | <a href="https://images.ransomware.live/screenshots/posts/2265f08173337cf13ffd9a4fbb0e60d3.png" target=_blank>📸</a> |
+| [`Department of Defence South African (DARPA)`](https://google.com/search?q=Department+of+Defence+South+African+%28DARPA%29) | 21/08/2023 | Military contracts, internal call signs and personal data | <a href="https://images.ransomware.live/screenshots/posts/5fb9f423d336a5ee69affab8e22b475c.png" target=_blank>📸</a> |
+| [`Department of Defence South African`](https://google.com/search?q=Department+of+Defence+South+African) | 21/08/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/5fb9f423d336a5ee69affab8e22b475c.png" target=_blank>📸</a> |
 | [`Alinabal`](https://google.com/search?q=Alinabal) | 29/07/2023 | Alinabal is a broadly diversified manufacturer with history reaching as far back as 1913 when it supplied laminated materials for the Model T Ford. Today, through its four distinct business units, Alinabal is a leading manufacturer of a diverse span of products from precision stampings and | <a href="https://images.ransomware.live/screenshots/posts/315d2dc7eaa489de02c43a6372a8a78f.png" target=_blank>📸</a> |
 | [`Tampa general hospital`](https://google.com/search?q=Tampa+general+hospital) | 18/07/2023 | Tampa General Hospital is a private not-for-profit hospital and one of the most comprehensive medical facilities in West Central Florida serving a dozen counties with a population in excess of 4 million. As one of the largest hospitals in Florida, Tampa General is licensed for | <a href="https://images.ransomware.live/screenshots/posts/58e8b467fc37d0113e7dc06c56ec5526.png" target=_blank>📸</a> |
 | [`Wasserstrom`](https://google.com/search?q=Wasserstrom) | 18/07/2023 | The Wasserstrom Company, which began as a local, family-run business, has steadily grown to become one of the largest restaurant suppliers and distributors of foodservice products. With more than a century of experience and a team of over 1200 dedicated associates, Wasserstrom remains a family-owned | <a href="https://images.ransomware.live/screenshots/posts/0408560977fd636415b9cbd205508802.png" target=_blank>📸</a> |
@@ -53,8 +72,7 @@
 | [`Fullerton India`](https://google.com/search?q=Fullerton+India) | 13/06/2023 | Fullerton India offers a range of calculators to help you make an informed decision regarding the best possible solution to serve your financials needs. Access these free of cost, to get a quick estimates of loan amount you are eligible for. You can also access | <a href="https://images.ransomware.live/screenshots/posts/2265f08173337cf13ffd9a4fbb0e60d3.png" target=_blank>📸</a> |
 | [`Global Remote Services`](https://google.com/search?q=Global+Remote+Services) | 12/06/2023 | GRS provides personalized management services for its clients across a broad range of business sectors, whilst also offering support in an impressive number of European languages. | <a href="https://images.ransomware.live/screenshots/posts/16d65741998996b13c982c09701d4131.png" target=_blank>📸</a> |
 | [`Avant Grup`](https://google.com/search?q=Avant+Grup) | 05/06/2023 | Avant Grup, has a wide network of operational bases distributed in different cities in order to cover the demand in mobility services that be generated. This extensive offer of service coverage provides our clients with a global solution throughout the national territory. Our centralized reservation | <a href="https://images.ransomware.live/screenshots/posts/82b0e24040bb3bf8e9c20ce1d2262eee.png" target=_blank>📸</a> |
-| [`The Briars Group`](https://google.com/search?q=The+Briars+Group) | 05/06/2023 | We help ambitious businesses land and expand in record time without huge set up costs, compliance headaches or unnecessary business risk.
-Briars is an international back office consultancy company, providing support services for the full lifecycle of your business, no matter the location, for over 30 | <a href="https://images.ransomware.live/screenshots/posts/80c02526041e456c11de94cc5e27e878.png" target=_blank>📸</a> |
+| [`The Briars Group`](https://google.com/search?q=The+Briars+Group) | 05/06/2023 | We help ambitious businesses land and expand in record time without huge set up costs, compliance headaches or unnecessary business risk. Briars is an international back office consultancy company, providing support services for the full lifecycle of your business, no matter the location, for over 30 | <a href="https://images.ransomware.live/screenshots/posts/80c02526041e456c11de94cc5e27e878.png" target=_blank>📸</a> |
 | [`Mount Desert Island Hospital`](https://google.com/search?q=Mount+Desert+Island+Hospital) | 05/06/2023 | Mount Desert Island Hospital serves a close-knit island and surrounding communities through a 25-bed critical access facility in Bar Harbor and a network of area health centers—all designed to provide comprehensive healthcare for residents and visitors. | <a href="https://images.ransomware.live/screenshots/posts/1b41852d99d97e4eb9fb92e779900742.png" target=_blank>📸</a> |
 | [`ELITechGroup`](https://google.com/search?q=ELITechGroup) | 05/06/2023 | ELITech Group is an integrated in-vitro diagnostics company that serves hospitals and diagnostic laboratories in more than 100 countries through a direct sales organization and through third party distribution partners. The company develops, manufactures and markets a wide range of diagnostic products and solutions – | <a href="https://images.ransomware.live/screenshots/posts/6b5e21508458aba61d7bea4418c02546.png" target=_blank>📸</a> |
 | [`SsangYong Motor`](https://google.com/search?q=SsangYong+Motor) | 03/06/2023 | The company was named SsangYong Motor Company in 1988, following its acquisition by the chaebol SsangYong Group in 1986. SsangYong Motor was then acquired by Daewoo Motors, SAIC Motor, and then Mahindra & Mahindra. In 2022, the company was acquired by the KG Group and | <a href="https://images.ransomware.live/screenshots/posts/ded19993434d96d46a0d6e9afccb4157.png" target=_blank>📸</a> |
@@ -143,4 +161,4 @@ Briars is an international back office consultancy company, providing support se
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

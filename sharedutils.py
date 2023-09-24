@@ -7,6 +7,7 @@ import os
 import sys
 import json
 import socket
+import re
 # import codecs
 import random
 import calendar
@@ -41,14 +42,36 @@ def dbglog(msg):
     '''standard debug logging'''
     logging.debug(msg)
 
-def errlog(msg):
+def errlog2(msg):
     '''standard error logging'''
     logging.error(msg)
+
+def errlog(msg):
+    logging.error(msg)
+    stdlog('Send push notification')
+    load_dotenv()
+    USER_KEY=os.getenv('PUSH_USER')
+    API_KEY= os.getenv('PUSH_API')
+    MESSAGE = "❌ " +  str(msg)
+    conn = http.client.HTTPSConnection("api.pushover.net:443")
+    conn.request("POST", "/1/messages.json",
+    urllib.parse.urlencode({
+              "token": API_KEY,
+              "user": USER_KEY,
+              "message": MESSAGE,
+              "html": 1
+            }), { "Content-type": "application/x-www-form-urlencoded" })
+    conn.getresponse()
+
 
 def honk(msg):
     '''critical error logging with termination'''
     logging.critical(msg)
     sys.exit()
+
+def remove_multiple_spaces(input_string):
+    # Use regular expression to replace multiple spaces with a single space
+    return re.sub(r'\s+', ' ', input_string)
 
 def currentmonthstr():
     '''

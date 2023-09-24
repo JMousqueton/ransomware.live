@@ -4,11 +4,11 @@
 > Ransomware, written in Delphi.
 
 ### External analysis
-- https://tria.ge/211112-lbfz1adab7
+- https://cyware.com/news/newly-found-sugar-ransomware-is-now-being-offered-as-raas-641cfa69
+
+- https://medium.com/s2wblog/tracking-sugarlocker-ransomware-3a3492353c49
 
 - https://medium.com/walmartglobaltech/sugar-ransomware-a-new-raas-a5d94d58d9fb
-
-- https://www.bleepingcomputer.com/news/security/a-look-at-the-new-sugar-ransomware-demanding-low-ransoms/
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -19,11 +19,11 @@
 ### Ransom note
 * [📝 1 ransom note](notes/sugar)
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

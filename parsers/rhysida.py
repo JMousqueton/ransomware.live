@@ -9,14 +9,14 @@ Rappel : def appender(post_title, group_name, description="", website="", publis
 """
 import os
 from bs4 import BeautifulSoup
-from sharedutils import errlog
+from sharedutils import errlog, find_slug_by_md5, extract_md5_from_filename,stdlog
 from parse import appender
 import re
 from datetime import datetime
 
 def main():
     for filename in os.listdir('source'):
-        try:
+        #try:
             if filename.startswith('rhysida-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -26,18 +26,20 @@ def main():
                     title_div = div.find('div', class_='m-2 h4')
                     title = title_div.text.strip() if title_div else ''
                     try:
-                        url = title_div.find('a')['href'] 
+                        url = '?company=' + div.find('button')['data-company']
+                        onion = find_slug_by_md5('rhysida', extract_md5_from_filename(html_doc))
+                        url =  onion + url
+                        url = url.replace('auction?','')
                     except: 
                         url = ''
-
                     description_div = div.find('div', class_='m-2')
                     description = description_div.text.strip().replace('\n',' ') if description_div else ''
                     post_url = div.find('p').find('a')['href'] if div.find('p') and div.find('p').find('a') else ''
 
-
-                    appender(title, 'rhysida', description,url,"",post_url)
+                    if len(title) != 0: 
+                        appender(title, 'rhysida', description,url,"",post_url)
 
                 file.close()
-        except:
-            errlog('rhysida : ' + 'parsing fail')
-            pass
+        #except:
+        #    errlog('rhysida : ' + 'parsing fail')
+        #    pass

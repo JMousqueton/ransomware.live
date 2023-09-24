@@ -21,7 +21,7 @@ def main():
            if filename.startswith('moneymessage-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
-                soup = BeautifulSoup(content, "html.parser")
+                soup = BeautifulSoup(file, "html.parser")
 
                 # Find all <a> elements with the specified class
                 a_elements = soup.find_all("a", class_="MuiTypography-root MuiTypography-inherit MuiLink-root MuiLink-underlineNone css-j1mjqc")

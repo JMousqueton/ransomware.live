@@ -4,9 +4,25 @@
 > Doppelpaymer is a ransomware family that encrypts user data and later on it asks for a ransom in order to restore original files. It is recognizable by its trademark file extension added to encrypted files: .doppeled. It also creates a note file named: ".how2decrypt.txt".
 
 ### External analysis
-- https://aithority.com/security/doppelpaymer-ransomware-attack-sinks-a-global-motor-companys-20-million
+- http://www.secureworks.com/research/threat-profiles/gold-drake
 
-- https://www.zscaler.com/blogs/security-research/doppelpaymer-continues-cause-grief-through-rebranding
+- https://assets.sentinelone.com/sentinellabs/sentinellabs_EvilCorp
+
+- https://blog.trendmicro.com/trendlabs-security-intelligence/account-with-admin-privileges-abused-to-install-bitpaymer-ransomware-via-psexec
+
+- https://blog.trendmicro.com/trendlabs-security-intelligence/ursnif-emotet-dridex-and-bitpaymer-gangs-linked-by-a-similar-loader/
+
+- https://go.crowdstrike.com/rs/281-OBQ-266/images/Report2020CrowdStrikeGlobalThreatReport.pdf
+
+- https://jsac.jpcert.or.jp/archive/2020/pdf/JSAC2020_1_tamada-yamazaki-nakatsuru_en.pdf
+
+- https://killingthebear.jorgetesta.tech/actors/evil-corp
+
+- https://krebsonsecurity.com/2021/08/ransomware-gangs-and-the-name-game-distraction/
+
+- https://lka.polizei.nrw/presse/schlag-gegen-international-agierendes-netzwerk-von-cyber-kriminellen
+
+- https://nakedsecurity.sophos.com/2018/09/11/the-rise-of-targeted-ransomware/
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
@@ -17,11 +33,11 @@
 ### Ransom note
 * [📝 4 ransom notes](notes/doppelpaymer)
 
-### Posts
+### Victims
 
 > no victim found
 
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

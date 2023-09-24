@@ -3,13 +3,18 @@
 
 > According to Trend Micro, this ransomware has significant code overlap with Royal Ransomware.
 
+### External analysis
+- https://blog.cyble.com/2023/05/12/blacksuit-ransomware-strikes-windows-and-linux-users/
+
+- https://www.trendmicro.com/en_us/research/23/e/investigating-blacksuit-ransomwares-similarities-to-royal.html
+
 
 🔎 `ransomware.live`has an active  parser for indexing blacksuit's victims
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Black Suit | 🔴 | 07/08/2023 09:13 | `http://weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd.onion` | <a href="https://images.ransomware.live/screenshots/weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd-onion.png" target=_blank>📸</a> | 
+| Black Suit | 🟢 | 24/09/2023 13:42 | `http://weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd.onion` | <a href="https://images.ransomware.live/screenshots/weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -20,12 +25,13 @@
 ![Statistics](../graphs/stats-blacksuit.png)
 
 
-### Posts
+### Victims
 
-> 5 victims found
+> 6 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Financial Services Commission`](http://fscjamaica.org) | 13/09/2023 | The mandate of the Financial Services Commission (FSC) is to supervise and regulate the securities, insurance and private pensions industries. As such the FSC may be described as an integrated financial services regulator. | <a href="https://images.ransomware.live/screenshots/posts/27ad26b28530cd22158cf4c0789d4c45.png" target=_blank>📸</a> |
 | [`IT Luggage`](https://www.zoominfo.com/c/it-luggage-ltd/356677571) | 24/07/2023 | IT luggage was established in London in 1985 as Landor Ltd., designing quality luggage suitable for business and leisure needs. We were the first U.K. luggage company to begin importing from China, enabling us to offer affordable, quality luggage without compromisi | <a href="https://images.ransomware.live/screenshots/posts/79e2ef63262e684220cf22bd2c9d9e6b.png" target=_blank>📸</a> |
 | [`ZooTampa at Lowry Park`](http://zootampa.org) | 05/07/2023 | Voted Tampa’s Best Family Attraction and 11-time winner of TripAdvisor Travelers’ Choice Award, ZooTampa offers unforgettable adventures for all ages. Enjoy an amazing, lush tropical setting with naturalistic habitats that provide up-close connections with animals from around the world. | <a href="https://images.ransomware.live/screenshots/posts/f090d9baf5a35d54e51fa131fe4c437c.png" target=_blank>📸</a> |
 | [`Venture Logistics`](http://venturelogistics.com) | 14/06/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/908d3249d10cd2ab9e8eb7a62e86e51d.png" target=_blank>📸</a> |
@@ -34,4 +40,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

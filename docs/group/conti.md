@@ -6,15 +6,31 @@
 _`livechat host contirecj4hbzmyzuydyzrvm2c65blmvhoj2cvf25zqj2dwrrqcq5oad.onion`_
 
 ### External analysis
-- https://threatpost.com/affiliate-leaks-conti-ransomware-playbook/168442
+- http://chuongdong.com/reverse%20engineering/2020/12/15/ContiRansomware/
 
-- https://unit42.paloaltonetworks.com/conti-ransomware-gang
+- https://0xthreatintel.medium.com/reversing-conti-ransomware-bfce15019e74
+
+- https://analyst1.com/blog/ransom-mafia-analysis-of-the-worlds-first-ransomware-cartel
+
+- https://analyst1.com/file-assets/RANSOM-MAFIA-ANALYSIS-OF-THE-WORLD%E2%80%99S-FIRST-RANSOMWARE-CARTEL.pdf
+
+- https://arcticwolf.com/resources/blog/conti-and-akira-chained-together/
+
+- https://arcticwolf.com/resources/blog/conti-ransomware-leak-analyzed
+
+- https://arcticwolf.com/resources/blog/karakurt-web
+
+- https://areteir.com/wp-content/uploads/2020/08/Arete_Insight_Is-Conti-the-new-Ryuk_August2020.pdf
+
+- https://assets.sentinelone.com/ransomware-enterprise/conti-ransomware-unpacked
+
+- https://attackiq.com/2022/06/15/attack-graph-emulating-the-conti-ransomware-teams-behaviors/
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | CONTI.News | 🔴 | 22/06/2022 06:25 | `http://continewsnv5otx5kaoje7krkto2qbu3gtqef22mnr7eaxw3y6ncz3ad.onion` | ❌ | 
-| continews.click | 🔴 | 07/08/2023 10:18 | `http://continews.click` | <a href="https://images.ransomware.live/screenshots/continews-click.png" target=_blank>📸</a> | 
+| continews.click | 🟢 | 24/09/2023 13:46 | `http://continews.click` | <a href="https://images.ransomware.live/screenshots/continews-click.png" target=_blank>📸</a> | 
 | Error Response Page | 🔴 | 23/11/2022 12:36 | `http://continews.bz` | ❌ | 
 
 
@@ -29,38 +45,38 @@ _`livechat host contirecj4hbzmyzuydyzrvm2c65blmvhoj2cvf25zqj2dwrrqcq5oad.onion`_
 
 | Name | Link |
 |---|---|
-|20201017| <a href="https://chat.ransomware.live/chat/conti/20201017.html" target=_blank> 💬 </a> |
-|20201019| <a href="https://chat.ransomware.live/chat/conti/20201019.html" target=_blank> 💬 </a> |
-|20201109| <a href="https://chat.ransomware.live/chat/conti/20201109.html" target=_blank> 💬 </a> |
-|20201121| <a href="https://chat.ransomware.live/chat/conti/20201121.html" target=_blank> 💬 </a> |
-|20201230| <a href="https://chat.ransomware.live/chat/conti/20201230.html" target=_blank> 💬 </a> |
-|20210107| <a href="https://chat.ransomware.live/chat/conti/20210107.html" target=_blank> 💬 </a> |
-|20210126| <a href="https://chat.ransomware.live/chat/conti/20210126.html" target=_blank> 💬 </a> |
-|20210219| <a href="https://chat.ransomware.live/chat/conti/20210219.html" target=_blank> 💬 </a> |
-|20210305| <a href="https://chat.ransomware.live/chat/conti/20210305.html" target=_blank> 💬 </a> |
-|20210315| <a href="https://chat.ransomware.live/chat/conti/20210315.html" target=_blank> 💬 </a> |
-|20210316| <a href="https://chat.ransomware.live/chat/conti/20210316.html" target=_blank> 💬 </a> |
-|20210426| <a href="https://chat.ransomware.live/chat/conti/20210426.html" target=_blank> 💬 </a> |
-|20210428| <a href="https://chat.ransomware.live/chat/conti/20210428.html" target=_blank> 💬 </a> |
-|20210513| <a href="https://chat.ransomware.live/chat/conti/20210513.html" target=_blank> 💬 </a> |
-|20210517| <a href="https://chat.ransomware.live/chat/conti/20210517.html" target=_blank> 💬 </a> |
-|20210517_b| <a href="https://chat.ransomware.live/chat/conti/20210517_b.html" target=_blank> 💬 </a> |
-|20210520| <a href="https://chat.ransomware.live/chat/conti/20210520.html" target=_blank> 💬 </a> |
-|20210602| <a href="https://chat.ransomware.live/chat/conti/20210602.html" target=_blank> 💬 </a> |
-|20210611| <a href="https://chat.ransomware.live/chat/conti/20210611.html" target=_blank> 💬 </a> |
-|20210628| <a href="https://chat.ransomware.live/chat/conti/20210628.html" target=_blank> 💬 </a> |
-|20210708| <a href="https://chat.ransomware.live/chat/conti/20210708.html" target=_blank> 💬 </a> |
-|20210715| <a href="https://chat.ransomware.live/chat/conti/20210715.html" target=_blank> 💬 </a> |
-|20210805| <a href="https://chat.ransomware.live/chat/conti/20210805.html" target=_blank> 💬 </a> |
-|20210812| <a href="https://chat.ransomware.live/chat/conti/20210812.html" target=_blank> 💬 </a> |
-|20210820| <a href="https://chat.ransomware.live/chat/conti/20210820.html" target=_blank> 💬 </a> |
-|20210902| <a href="https://chat.ransomware.live/chat/conti/20210902.html" target=_blank> 💬 </a> |
-|20210904| <a href="https://chat.ransomware.live/chat/conti/20210904.html" target=_blank> 💬 </a> |
-|20210923| <a href="https://chat.ransomware.live/chat/conti/20210923.html" target=_blank> 💬 </a> |
-|20211108| <a href="https://chat.ransomware.live/chat/conti/20211108.html" target=_blank> 💬 </a> |
-|20211112| <a href="https://chat.ransomware.live/chat/conti/20211112.html" target=_blank> 💬 </a> |
-|20211205| <a href="https://chat.ransomware.live/chat/conti/20211205.html" target=_blank> 💬 </a> |
-|20211217| <a href="https://chat.ransomware.live/chat/conti/20211217.html" target=_blank> 💬 </a> |
+|20201017|  <a href="/#/negotiation/conti/20201017.html"> 💬 </a> |
+|20201019|  <a href="/#/negotiation/conti/20201019.html"> 💬 </a> |
+|20201109|  <a href="/#/negotiation/conti/20201109.html"> 💬 </a> |
+|20201121|  <a href="/#/negotiation/conti/20201121.html"> 💬 </a> |
+|20201230|  <a href="/#/negotiation/conti/20201230.html"> 💬 </a> |
+|20210107|  <a href="/#/negotiation/conti/20210107.html"> 💬 </a> |
+|20210126|  <a href="/#/negotiation/conti/20210126.html"> 💬 </a> |
+|20210219|  <a href="/#/negotiation/conti/20210219.html"> 💬 </a> |
+|20210305|  <a href="/#/negotiation/conti/20210305.html"> 💬 </a> |
+|20210315|  <a href="/#/negotiation/conti/20210315.html"> 💬 </a> |
+|20210316|  <a href="/#/negotiation/conti/20210316.html"> 💬 </a> |
+|20210426|  <a href="/#/negotiation/conti/20210426.html"> 💬 </a> |
+|20210428|  <a href="/#/negotiation/conti/20210428.html"> 💬 </a> |
+|20210513|  <a href="/#/negotiation/conti/20210513.html"> 💬 </a> |
+|20210517|  <a href="/#/negotiation/conti/20210517.html"> 💬 </a> |
+|20210517_b|  <a href="/#/negotiation/conti/20210517_b.html"> 💬 </a> |
+|20210520|  <a href="/#/negotiation/conti/20210520.html"> 💬 </a> |
+|20210602|  <a href="/#/negotiation/conti/20210602.html"> 💬 </a> |
+|20210611|  <a href="/#/negotiation/conti/20210611.html"> 💬 </a> |
+|20210628|  <a href="/#/negotiation/conti/20210628.html"> 💬 </a> |
+|20210708|  <a href="/#/negotiation/conti/20210708.html"> 💬 </a> |
+|20210715|  <a href="/#/negotiation/conti/20210715.html"> 💬 </a> |
+|20210805|  <a href="/#/negotiation/conti/20210805.html"> 💬 </a> |
+|20210812|  <a href="/#/negotiation/conti/20210812.html"> 💬 </a> |
+|20210820|  <a href="/#/negotiation/conti/20210820.html"> 💬 </a> |
+|20210902|  <a href="/#/negotiation/conti/20210902.html"> 💬 </a> |
+|20210904|  <a href="/#/negotiation/conti/20210904.html"> 💬 </a> |
+|20210923|  <a href="/#/negotiation/conti/20210923.html"> 💬 </a> |
+|20211108|  <a href="/#/negotiation/conti/20211108.html"> 💬 </a> |
+|20211112|  <a href="/#/negotiation/conti/20211112.html"> 💬 </a> |
+|20211205|  <a href="/#/negotiation/conti/20211205.html"> 💬 </a> |
+|20211217|  <a href="/#/negotiation/conti/20211217.html"> 💬 </a> |
 
 
 ### Total Attacks Over Time
@@ -68,11 +84,11 @@ _`livechat host contirecj4hbzmyzuydyzrvm2c65blmvhoj2cvf25zqj2dwrrqcq5oad.onion`_
 ![Statistics](../graphs/stats-conti.png)
 
 
-### Posts
+### Victims
 
 > 333 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`Alliance Steel`](https://google.com/search?q=Alliance+Steel) | 07/06/2022 |   |   |
 | [`LCRD`](https://google.com/search?q=LCRD) | 25/05/2022 |   |   |
@@ -410,4 +426,4 @@ _`livechat host contirecj4hbzmyzuydyzrvm2c65blmvhoj2cvf25zqj2dwrrqcq5oad.onion`_
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_

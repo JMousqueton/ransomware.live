@@ -4,30 +4,44 @@
 > Babuk Ransomware is a sophisticated ransomware compiled for several platforms. Windows and ARM for Linux are the most used compiled versions, but ESX and a 32bit old PE executable were observed over time. as well It uses an Elliptic Curve Algorithm (Montgomery Algorithm) to build the encryption keys.
 
 ### External analysis
-- https://www.bleepingcomputer.com/news/security/leaked-babuk-locker-ransomware-builder-used-in-new-attacks
+- http://chuongdong.com/reverse%20engineering/2021/01/03/BabukRansomware/
 
-- https://www.bleepingcomputer.com/news/security/babuk-ransomwares-full-source-code-leaked-on-hacker-forum
+- https://blog.cyble.com/2022/05/06/rebranded-babuk-ransomware-in-action-darkangels-ransomware-performs-targeted-attack/
 
-- https://blog.cyberint.com/babuk-locker
+- https://blog.morphisec.com/babuk-ransomware-variant-major-attack
+
+- https://blog.talosintelligence.com/2021/11/babuk-exploits-exchange.html
+
+- https://chuongdong.com/reverse%20engineering/2021/01/16/BabukRansomware-v3/
+
+- https://docs.google.com/spreadsheets/d/1MI8Z2tBhmqQ5X8Wf_ozv3dVjz5sJOs-3
+
+- https://github.com/EmissarySpider/ransomware-descendants
+
+- https://ke-la.com/new-russian-speaking-forum-a-new-place-for-raas/
+
+- https://killingthebear.jorgetesta.tech/actors/evil-corp
+
+- https://krebsonsecurity.com/2021/08/ransomware-gangs-and-the-name-game-distraction/
 
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Babuk - Leaks site | 🟢 | 07/08/2023 12:08 | `http://nq4zyac4ukl4tykmidbzgdlvaboqeqsemkp4t35bzvjeve6zm2lqcjid.onion` | <a href="https://images.ransomware.live/screenshots/nq4zyac4ukl4tykmidbzgdlvaboqeqsemkp4t35bzvjeve6zm2lqcjid-onion.png" target=_blank>📸</a> | 
+| Babuk - Leaks site | 🟢 | 24/09/2023 13:38 | `http://nq4zyac4ukl4tykmidbzgdlvaboqeqsemkp4t35bzvjeve6zm2lqcjid.onion` | <a href="https://images.ransomware.live/screenshots/nq4zyac4ukl4tykmidbzgdlvaboqeqsemkp4t35bzvjeve6zm2lqcjid-onion.png" target=_blank>📸</a> | 
 
 ### Negotiation chats
 
 | Name | Link |
 |---|---|
-|20210203| <a href="https://chat.ransomware.live/chat/babuk/20210203.html" target=_blank> 💬 </a> |
-|20210428| <a href="https://chat.ransomware.live/chat/babuk/20210428.html" target=_blank> 💬 </a> |
+|20210203|  <a href="/#/negotiation/babuk/20210203.html"> 💬 </a> |
+|20210428|  <a href="/#/negotiation/babuk/20210428.html"> 💬 </a> |
 
 
-### Posts
+### Victims
 
 > 6 victims found
 
-| post | date | Description | Screenshot | 
+| victim | date | Description | Screenshot | 
 |---|---|---|---|
 | [`BridgeMill Athletic Club`](https://google.com/search?q=BridgeMill+Athletic+Club) | 27/07/2021 | https://www.bridgemillathleticclub.com/ | <a href="https://images.ransomware.live/screenshots/posts/64dc8c8d288ea2e60f2a271e12b143e5.png" target=_blank>📸</a> |
 | [`spsr-law.com`](https://google.com/search?q=spsr-law.com) | 07/07/2021 | The Babuk v2.0 new | <a href="https://images.ransomware.live/screenshots/posts/f17dbf3ca9d5500b0891d53847a57909.png" target=_blank>📸</a> |
@@ -38,4 +52,4 @@
 
 
 
-Last update : _Monday 07/08/2023 12.13 (UTC)_
+Last update : _Sunday 24/09/2023 14.39 (UTC)_
