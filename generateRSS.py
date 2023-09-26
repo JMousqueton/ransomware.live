@@ -45,7 +45,7 @@ title.text = 'Ransomware.live RSS Feed'
 link = SubElement(channel, 'link')
 link.text = 'https://www.ransomware.live/rss.xml'
 description = SubElement(channel, 'description')
-description.text = 'Last 50 entries monitoring by Ransomware.live'
+description.text = 'Last 100 entries monitoring by Ransomware.live'
 
 image = SubElement(channel, 'image')
 image_url = SubElement(image, 'url')
@@ -59,7 +59,7 @@ image_link.text = 'https://www.ransomware.live/rss.xml'
 atom_link = SubElement(channel, 'atom:link', href='https://www.ransomware.live/rss.xml', rel='self', type='application/rss+xml')
 
 # Parcourez les données du fichier JSON et ajoutez un élément item pour chaque enregistrement
-for i in reversed(range(len(data)-50, len(data))):
+for i in reversed(range(len(data)-100, len(data))):
   item = data[i]
   rss_item = SubElement(channel, 'item')
   item_title = SubElement(rss_item, 'title')
@@ -75,17 +75,29 @@ for i in reversed(range(len(data)-50, len(data))):
     md5_hash = hashlib.md5(item['post_url'].encode()).hexdigest()
     image_url = f"https://images.ransomware.live/screenshots/posts/{md5_hash}.png"
     image_path = f"./docs/screenshots/posts/{md5_hash}.png"  # Path to the image file
-
     if os.path.exists(image_path):
             image_size = os.path.getsize(image_path)  # Get file size in bytes
-
             enclosure = SubElement(rss_item, 'enclosure')
             enclosure.set('url', image_url)
             enclosure.set('type', 'image/png')
             enclosure.set('length', str(image_size))  # Set the image length attribute
-
+    else:
+      image_url = f"https://www.ransomware.live/ransomwarelive.png"
+      image_path = f"./docs/ransomwarelive.png"  # Path to the image file
+      image_size = os.path.getsize(image_path)  # Get file size in bytes
+      enclosure = SubElement(rss_item, 'enclosure')
+      enclosure.set('url', image_url)
+      enclosure.set('type', 'image/png')
+      enclosure.set('length', str(image_size))  # Set the image length attribute
+  else:
+      image_url = f"https://www.ransomware.live/ransomwarelive.png"
+      image_path = f"./docs/ransomwarelive.png"  # Path to the image file
+      image_size = os.path.getsize(image_path)  # Get file size in bytes
+      enclosure = SubElement(rss_item, 'enclosure')
+      enclosure.set('url', image_url)
+      enclosure.set('type', 'image/png')
+      enclosure.set('length', str(image_size))  # Set the image length attribute
   
-
   item_guid = SubElement(rss_item, 'guid')
   item_guid.text = 'https://www.ransomware.live/#/group/' + str(item['group_name'])  + '?' +md5GUID(item_title.text)
   
