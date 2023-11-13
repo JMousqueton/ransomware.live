@@ -1,6 +1,6 @@
 lxml==4.9.3
 kaleido==0.2.1.post1
-tldextract==3.6.0
+tldextract==5.1.0
 matplotlib==3.8.0
 BeautifulSoup4==4.12.2
 requests[socks]==2.31.0
