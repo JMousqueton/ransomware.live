@@ -13,7 +13,7 @@ from parse import appender
 
 def main():
     for filename in os.listdir('source'):
-        try:
+        #try:
            if filename.startswith('knight-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -27,7 +27,19 @@ def main():
                     url =  url + post
                     description = div.find("p").text.strip()
                     appender(title, 'knight',description.replace('\n',' '),'','',url)
+                divs_name=soup.find_all('div', {"class": "card-body"})
+                for div in divs_name:
+                    try:
+                        h2 = div.find('h2',{"class":"card-title"})
+                        title = h2.text.strip()
+                        description = div.find("p").text.strip()
+                        post = h2.a['href']
+                        url = find_slug_by_md5('knight', extract_md5_from_filename(html_doc))
+                        url =  url + post
+                        appender(title, 'knight', description.replace('\n',''),'','',url)
+                    except:
+                        pass
                 file.close()
-        except:
-            errlog('knight: ' + 'parsing fail')
-            pass
+        #except:
+        #    errlog('knight: ' + 'parsing fail')
+        #    pass

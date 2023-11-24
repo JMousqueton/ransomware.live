@@ -16,12 +16,17 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Royal | 🔴 | 24/09/2023 12:51 | `http://royal2xthig3ou5hd7zsliqagy6yygk2cdelaxtni2fyad6dpmpxedid.onion` | <a href="https://images.ransomware.live/screenshots/royal2xthig3ou5hd7zsliqagy6yygk2cdelaxtni2fyad6dpmpxedid-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 24/09/2023 14:25 | `http://royal4ezp7xrbakkus3oofjw6gszrohpodmdnfbe5e4w3og5sm7vb3qd.onion` | <a href="https://images.ransomware.live/screenshots/royal4ezp7xrbakkus3oofjw6gszrohpodmdnfbe5e4w3og5sm7vb3qd-onion.png" target=_blank>📸</a> | 
+| Royal | 🔴 | 16/10/2023 12:57 | `http://royal2xthig3ou5hd7zsliqagy6yygk2cdelaxtni2fyad6dpmpxedid.onion` | <a href="https://images.ransomware.live/screenshots/royal2xthig3ou5hd7zsliqagy6yygk2cdelaxtni2fyad6dpmpxedid-onion.png" target=_blank>📸</a> | 
+| none | 🔴 | 16/10/2023 14:20 | `http://royal4ezp7xrbakkus3oofjw6gszrohpodmdnfbe5e4w3og5sm7vb3qd.onion` | <a href="https://images.ransomware.live/screenshots/royal4ezp7xrbakkus3oofjw6gszrohpodmdnfbe5e4w3og5sm7vb3qd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
 * [📝 1 ransom note](notes/royal)
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/software/221e24cb-910f-5988-9473-578ef350870c-Royal) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -248,4 +253,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

@@ -43,6 +43,11 @@ _`captcha prevents indexing`_
 * 💰 <a href="/#/crypto/avoslocker.md">Crypto wallet(s) available</a>
 
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/software/e792dc8d-b0f4-5916-8850-a61ff53125d0-AvosLocker) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-avoslocker.png)
@@ -128,4 +133,4 @@ _`captcha prevents indexing`_
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

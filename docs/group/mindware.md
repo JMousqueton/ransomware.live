@@ -11,6 +11,11 @@
 |---|---|---|---|---|
 | DataLeakBlog | 🔴 | 16/08/2022 10:33 | `http://dfpc7yvle5kxmgg6sbcp5ytggy3oeob676bjgwcwhyr2pwcrmbvoilqd.onion` | ❌ | 
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/77a8d121-a6f1-4021-992f-8bd62c9f8229) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-mindware.png)
@@ -38,4 +43,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

@@ -65,6 +65,11 @@
 |20210709|  <a href="/#/negotiation/revil/20210709.html"> 💬 </a> |
 
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/software/9314531e-bf46-4cba-9c19-198279ccf9cd-Revil) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-revil.png)
@@ -120,4 +125,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

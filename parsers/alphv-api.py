@@ -26,7 +26,7 @@ def existingpost(post_title, group_name):
 
 def fetch_json_from_onion_url(onion_url):
     try:
-        response = requests.get(onion_url, proxies=proxies)
+        response = requests.get(onion_url, proxies=proxies,verify=False)
         response.raise_for_status()  # Check for any HTTP errors
     except requests.exceptions.RequestException as e:
         print("Error:", e)

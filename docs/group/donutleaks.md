@@ -9,9 +9,14 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | _D0#Nut::__chat | 🔴 | 21/10/2022 20:39 | `http://qkbbaxiuqqcqb5nox4np4qjcniy2q6m7yeluvj7n5i5dn7pgpcwxwfid.onion` | <a href="https://images.ransomware.live/screenshots/qkbbaxiuqqcqb5nox4np4qjcniy2q6m7yeluvj7n5i5dn7pgpcwxwfid-onion.png" target=_blank>📸</a> | 
-| D#NUT. | 🟢 | 24/09/2023 13:53 | `http://sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd.onion` | <a href="https://images.ransomware.live/screenshots/sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd-onion.png" target=_blank>📸</a> | 
+| D#NUT. | 🟢 | 24/11/2023 12:17 | `http://sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd.onion` | <a href="https://images.ransomware.live/screenshots/sbc2zv2qnz5vubwtx3aobfpkeao6l4igjegm3xx7tk5suqhjkp5jxtqd-onion.png" target=_blank>📸</a> | 
 | _d0nut.::Files_ | 🔴 | 21/10/2022 20:39 | `http://doq32rjiuomfghm5a4lyf3lwwakt2774tkv4ppsos6ueo5mhx7662gid.onion` | ❌ | 
-| __d0nut::files | 🟢 | 24/09/2023 13:54 | `http://dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd.onion` | <a href="https://images.ransomware.live/screenshots/dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd-onion.png" target=_blank>📸</a> | 
+| HelloXD | 🟢 | 24/11/2023 12:19 | `http://dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd.onion` | <a href="https://images.ransomware.live/screenshots/dk4mkfzqai6ure62oukzgtypedmwlfq57yj2fube7j5wsoi6tuia7nyd-onion.png" target=_blank>📸</a> | 
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/8398e5bb-1b95-419f-9b27-d075357a575e) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -20,12 +25,18 @@
 
 ### Victims
 
-> 20 victims found
+> 26 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Sidockgroup.`](https://google.com/search?q=Sidockgroup.) | 21/10/2023 | Established in 1974, we are a full-service firm with offices  throughout Michigan and have completed projects in most market sectors (website: sidockgroup.com) First sample of the data which will be posted.. There a lot of credit card information, bills and SSNs, carders will be very happy to use it.… | <a href="https://images.ransomware.live/screenshots/posts/214b1798c91127e34e4acf4045967f15.png" target=_blank>📸</a> |
+| [`Sidockgroup. Published`](https://google.com/search?q=Sidockgroup.+Published) | 21/10/2023 | Established in 1974, we are a full-service firm with offices  throughout Michigan and have completed projects in most market sectors (website: sidockgroup.com) First sample of the data which will be posted.. There a lot of credit card information, bills and SSNs, carders will be very happy to use it.… | <a href="https://images.ransomware.live/screenshots/posts/214b1798c91127e34e4acf4045967f15.png" target=_blank>📸</a> |
+| [`RAT.`](https://google.com/search?q=RAT.) | 02/10/2023 | The contacts of fucker which thought - he can steal from us:  ToxID:  0421BD35FA5A5849FB9BEB1595DBBE239DDE19B46B0B8BD73EDD1107C245B46C Possible nickname: hulk  That son of the bitch, stealed target and fucked up the operation. If someone with contacts like mentioned above will contact you - know that useless peace of shit, which acting as a… | <a href="https://images.ransomware.live/screenshots/posts/55a1ccdff196ef7db6e45225b661c25a.png" target=_blank>📸</a> |
+| [`INC RANSOMWARE...`](https://google.com/search?q=INC+RANSOMWARE...) | 30/09/2023 | ...and other...  Appeal to the blog owners: if you work honestly and do not want to stain yourself with dirt and theft, do not post anything that the thief and scammer known as hulk, boss, MoonPrism asks you to post. All the data was stolen from us, and one of… | <a href="https://images.ransomware.live/screenshots/posts/8c038720f33394a67b6846cc4fa0925b.png" target=_blank>📸</a> |
+| [`UPDATED: INC RANSOMWARE...`](https://google.com/search?q=UPDATED%3A+INC+RANSOMWARE...) | 30/09/2023 | ...and other...  Appeal to the blog owners: if you work honestly and do not want to stain yourself with dirt and theft, do not post anything that the thief and scammer known as hulk, boss, MoonPrism asks you to post. His tox id: 0421BD35FA5A5849FB9BEB1595DBBE239DDE19B46B0B8BD73EDD1107C245B46C. All the data was stolen from… | <a href="https://images.ransomware.live/screenshots/posts/8c038720f33394a67b6846cc4fa0925b.png" target=_blank>📸</a> |
 | [`Agilitas IT Solutions Limited`](https://google.com/search?q=Agilitas+IT+Solutions+Limited) | 19/09/2023 | We can say for sure - you seen our meassage which was placed on yours website. If u will keep silent we gonna start posting the source code and SQL databases which we exfiltrated from yours computers network.  First pack of data will contine 30Gb of source code and 450… | <a href="https://images.ransomware.live/screenshots/posts/d6baebd00a0faac166bb065ed7da1e76.png" target=_blank>📸</a> |
 | [`Gossler, Gobert & Wolters Group.`](https://google.com/search?q=Gossler%2C+Gobert+%26+Wolters+Group.) | 19/09/2023 | [ 2,6Tb data-leakage coming soon ] We have a lot of information about your clients. We extract all your SQL databases from yourcomputers network and all your important data from your file servers - the file listing of the first pack of data which will leak if you do not contact… | <a href="https://images.ransomware.live/screenshots/posts/4da6b0849e305b173ba5144924f1feed.png" target=_blank>📸</a> |
+| [`Who Is MONTY? ;)`](https://google.com/search?q=Who+Is+MONTY%3F+%3B%29) | 01/09/2023 | https://www.databreaches.net/monti-ransomware-gang-leaks-donut-leaksHello. Today we received news that a little-known (or rather unknown) group with the telling name MONTI published a post saying that we owe them 100K USD. MONTI also allegedly posted "login details" for the admin panel(of course, for some unknown reason, either our site… | <a href="https://images.ransomware.live/screenshots/posts/f970a09665f5cf507bca5ad36d0b8dfa.png" target=_blank>📸</a> |
 | [`Jackson Township Police Department and Administration.`](https://google.com/search?q=Jackson+Township+Police+Department+and+Administration.) | 23/07/2023 | We are prepare some announce. The data of Police Department and FBI Supervisor will be released if you will keep acting in the same way as you did early. First data package will containe 500gb dumps which was taken by Cellebrite - there the data from phones of suspects and… | <a href="https://images.ransomware.live/screenshots/posts/efd7c1c631ad594e7a788d2e69b536a5.png" target=_blank>📸</a> |
 | [`Peroni Pompe`](https://google.com/search?q=Peroni+Pompe) | 03/07/2023 | Since the 1950s, Peroni has focused its activities on the design and production of oscillating process pumps, meeting the application needs of its customers with tailor-made solutions. The full package of yours data will be uploaded within 30 day. You must contacts us as soon as possible for preventing the… | <a href="https://images.ransomware.live/screenshots/posts/0c0ce0942a7574ea749e36ae70b301b0.png" target=_blank>📸</a> |
 | [`Jacklyn Dawson Solicitors`](https://google.com/search?q=Jacklyn+Dawson+Solicitors) | 23/05/2023 | Jacklyn Dawson Solicitors is a UK based solicitors and lawyers company which is providing legal services for business and individuals. This network has been hacked and over 400GB of sensitive data were stolen from company's file servers, including: financial data (budgets, bank accounts, taxes, etc)client's data (personal details, address,… | <a href="https://images.ransomware.live/screenshots/posts/e793d79f40d5b7095ca156dcc8080dd2.png" target=_blank>📸</a> |
@@ -47,4 +58,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

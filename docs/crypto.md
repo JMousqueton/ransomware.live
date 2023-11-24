@@ -14,5 +14,5 @@
 | [revil](crypto/revil.md)| [suncrypt](crypto/suncrypt.md)| [synack](crypto/synack.md)| [wannacry](crypto/wannacry.md)|            |
 
 
-Last update : _Sunday 24/09/2023 13.11 (UTC)_
+Last update : _Friday 24/11/2023 13.22 (UTC)_
 

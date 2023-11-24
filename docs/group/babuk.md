@@ -27,7 +27,7 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Babuk - Leaks site | 🟢 | 24/09/2023 13:38 | `http://nq4zyac4ukl4tykmidbzgdlvaboqeqsemkp4t35bzvjeve6zm2lqcjid.onion` | <a href="https://images.ransomware.live/screenshots/nq4zyac4ukl4tykmidbzgdlvaboqeqsemkp4t35bzvjeve6zm2lqcjid-onion.png" target=_blank>📸</a> | 
+| Babuk - Leaks site | 🟢 | 24/11/2023 12:06 | `http://nq4zyac4ukl4tykmidbzgdlvaboqeqsemkp4t35bzvjeve6zm2lqcjid.onion` | <a href="https://images.ransomware.live/screenshots/nq4zyac4ukl4tykmidbzgdlvaboqeqsemkp4t35bzvjeve6zm2lqcjid-onion.png" target=_blank>📸</a> | 
 
 ### Negotiation chats
 
@@ -35,6 +35,11 @@
 |---|---|
 |20210203|  <a href="/#/negotiation/babuk/20210203.html"> 💬 </a> |
 |20210428|  <a href="/#/negotiation/babuk/20210428.html"> 💬 </a> |
+
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/software/0dc07eb9-66df-4116-b1bc-7020ca6395a1-Babuk) from [Tidal Cyber](https://www.tidalcyber.com/)
 
 
 ### Victims
@@ -52,4 +57,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

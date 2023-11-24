@@ -33,6 +33,11 @@
 ### Ransom note
 * [📝 1 ransom note](notes/nefilim)
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/d91c481e-c004-46a5-8dcd-d519d8c85328) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Victims
 
 > 10 victims found
@@ -52,4 +57,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

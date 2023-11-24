@@ -20,7 +20,7 @@ _`not a ransomware group`_
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://mosesstaffm7hptp.onion` | ❌ | 
-| Activities – Moses Staff | 🟢 | 24/09/2023 14:13 | `http://moses-staff.se` | <a href="https://images.ransomware.live/screenshots/moses-staff-se.png" target=_blank>📸</a> | 
+| 404 Not Found | 🟢 | 24/11/2023 12:43 | `http://moses-staff.se` | <a href="https://images.ransomware.live/screenshots/moses-staff-se.png" target=_blank>📸</a> | 
 
 ### Victims
 
@@ -47,4 +47,4 @@ _`not a ransomware group`_
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

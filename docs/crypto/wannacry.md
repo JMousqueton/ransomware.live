@@ -8,5 +8,5 @@
 | [1QAc9S5EmycqjzzWDc1yiWzr9jJLC8sLiY](https://www.blockchain.com/explorer/addresses/btc/1QAc9S5EmycqjzzWDc1yiWzr9jJLC8sLiY) | bitcoin | $ 3898 |
 | [15zGqZCTcys6eCjDkE3DypCjXi6QWRV6V1](https://www.blockchain.com/explorer/addresses/btc/15zGqZCTcys6eCjDkE3DypCjXi6QWRV6V1) | bitcoin | $ 4526 |
 
-Last update : _Sunday 24/09/2023 13.11 (UTC)_
+Last update : _Friday 24/11/2023 13.22 (UTC)_
 

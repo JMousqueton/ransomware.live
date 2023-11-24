@@ -1,4 +1,4 @@
-_September 24th, 2023_
+_November 24th, 2023_
 
 _Tracking ransomware's victims since April 2022_
 
@@ -20,9 +20,9 @@ _Tracking ransomware's victims since April 2022_
     "numbers": true
   },
   "data": [
-      { "label": "📡 Relays & mirrors", "value": 305},
-      { "label": "🏴‍☠️  Groups", "value": 168},
-      { "label": "🟢 Online", "value": 98 }
+      { "label": "📡 Relays & mirrors", "value": 312},
+      { "label": "🏴‍☠️  Groups", "value": 172},
+      { "label": "🟢 Online", "value": 80 }
   ]
 }
 ```
@@ -37,21 +37,21 @@ _Tracking ransomware's victims since April 2022_
     "numbers": true
   },
   "data": [
-      { "label": "Last 24 hours", "value": 2},
-      { "label": "Last 7 days", "value": 90},
-      { "label": "Last 30 days", "value": 453},
-      { "label": "In 2023", "value": 3503},
-      { "label": "In 2022", "value": 3082}
+      { "label": "Last 24 hours", "value": 5},
+      { "label": "Last 7 days", "value": 80},
+      { "label": "Last 30 days", "value": 457},
+      { "label": "In 2023", "value": 4438},
+      { "label": "In 2022", "value": 3083}
   ]
 }
 ```
-📸 There are `173` ransomware group host screenshots and `2880` post screenshots
+📸 There are `180` ransomware group host screenshots and `3589` post screenshots
 
-📝 There are `158` ransomware notes and `117` negotiation chats
+📝 There are `167` ransomware notes and `117` negotiation chats
 
-⚙️ Ransomware.live has `51` active parsers for indexing victims
+⚙️ Ransomware.live has `53` active parsers for indexing victims
 
-So far, Ransomware.live has indexed `8332` victims
+So far, Ransomware.live has indexed `9268` victims
 ```charty
 {
   "title":   "🏆 Top 10 Ranwomware groups for 2023",
@@ -63,22 +63,22 @@ So far, Ransomware.live has indexed `8332` victims
     "numbers": true
   },
   "data": [
-{ "label": "lockbit3", "value": 774},
+{ "label": "lockbit3", "value": 948},
+{ "label": "alphv", "value": 402},
 { "label": "clop", "value": 382},
-{ "label": "alphv", "value": 305},
-{ "label": "bianlian", "value": 210},
-{ "label": "play", "value": 181},
+{ "label": "play", "value": 265},
+{ "label": "bianlian", "value": 243},
+{ "label": "8base", "value": 199},
 { "label": "malas", "value": 171},
-{ "label": "8base", "value": 144},
-{ "label": "royal", "value": 123},
-{ "label": "akira", "value": 113},
-{ "label": "medusa", "value": 101},
-{ "label": "Others", "value": 999}
+{ "label": "blackbasta", "value": 157},
+{ "label": "akira", "value": 142},
+{ "label": "medusa", "value": 134},
+{ "label": "Others", "value": 1395}
    ]
 }
 ```
  
 <a href="https://www.buymeacoffee.com/ransomwarelive" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_
 

@@ -18,6 +18,11 @@
 ### Ransom note
 * [📝 1 ransom note](notes/lv)
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/0c9cb37a-61de-43e0-a6d4-bab952be530b) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-lv.png)
@@ -95,4 +100,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

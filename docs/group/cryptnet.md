@@ -12,8 +12,8 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| CryptNet RECOVERY | 🟢 | 24/09/2023 13:47 | `http://cryptr3fmuv4di5uiczofjuypopr63x2gltlsvhur2ump4ebru2xd3yd.onion` | <a href="https://images.ransomware.live/screenshots/cryptr3fmuv4di5uiczofjuypopr63x2gltlsvhur2ump4ebru2xd3yd-onion.png" target=_blank>📸</a> | 
-| CryptNet NEWS | 🟢 | 24/09/2023 13:47 | `http://blog6zw62uijolee7e6aqqnqaszs3ckr5iphzdzsazgrpvtqtjwqryid.onion` | <a href="https://images.ransomware.live/screenshots/blog6zw62uijolee7e6aqqnqaszs3ckr5iphzdzsazgrpvtqtjwqryid-onion.png" target=_blank>📸</a> | 
+| CryptNet RECOVERY | 🔴 | 17/10/2023 19:48 | `http://cryptr3fmuv4di5uiczofjuypopr63x2gltlsvhur2ump4ebru2xd3yd.onion` | <a href="https://images.ransomware.live/screenshots/cryptr3fmuv4di5uiczofjuypopr63x2gltlsvhur2ump4ebru2xd3yd-onion.png" target=_blank>📸</a> | 
+| CryptNet NEWS | 🔴 | 17/10/2023 19:49 | `http://blog6zw62uijolee7e6aqqnqaszs3ckr5iphzdzsazgrpvtqtjwqryid.onion` | <a href="https://images.ransomware.live/screenshots/blog6zw62uijolee7e6aqqnqaszs3ckr5iphzdzsazgrpvtqtjwqryid-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -35,4 +35,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

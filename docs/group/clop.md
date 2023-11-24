@@ -31,12 +31,17 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://ekbgzchl6x2ias37.onion` | ❌ | 
-| DDOS Protection | 🟢 | 24/09/2023 13:44 | `http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion` | <a href="https://images.ransomware.live/screenshots/santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad-onion.png" target=_blank>📸</a> | 
-| TORRENT - CL0P^_- LEAKS | 🟢 | 24/09/2023 13:45 | `http://toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad.onion` | <a href="https://images.ransomware.live/screenshots/toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad-onion.png" target=_blank>📸</a> | 
+| DDOS Protection | 🟢 | 24/11/2023 12:12 | `http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion` | <a href="https://images.ransomware.live/screenshots/santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad-onion.png" target=_blank>📸</a> | 
+| TORRENT - CL0P^_- LEAKS | 🟢 | 24/11/2023 12:14 | `http://toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad.onion` | <a href="https://images.ransomware.live/screenshots/toznnag5o3ambca56s2yacteu7q7x2avrfherzmz4nmujrjuib4iusad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
 * [📝 2 ransom notes](notes/clop)
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/software/5321aa75-924c-47ae-b97a-b36f023abf2a-Clop) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -556,4 +561,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

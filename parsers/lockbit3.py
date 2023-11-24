@@ -10,7 +10,7 @@ Codé par @JMousqueton pour Ransomware.live
 
 import os
 from bs4 import BeautifulSoup
-from sharedutils import errlog
+from sharedutils import errlog,stdlog
 import parse
 from datetime import datetime
 
@@ -19,6 +19,7 @@ def main():
         try:
             if filename.startswith('lockbit3-'):
                 html_doc='source/'+filename
+                #stdlog('processing ' + filename)
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
                 divs_name=soup.find_all('div', {"class": "post-block bad"})

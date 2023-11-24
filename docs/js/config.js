@@ -10,7 +10,7 @@ window.$docsify = {
     noEmoji: false,
     auto2top: true,
     autoHeader: false,
-    name: '🏴‍☠️💰 Ransomware.live',
+    name: ' Ransomware.live',
     logo: 'ransomwarelive.png',
     externalLinkTarget: '_blank',
     loadNavbar : false, // IMPORTANT
@@ -31,6 +31,10 @@ window.$docsify = {
     search : [
     '/profiles'            // => /profiles.md
     ],
+    search: {
+      maxAge: 86400000, // Expiration time, the default one day
+      placeholder: 'Search a Ransomware group'
+    },
     scrollToTop: {
       auto: true,
       text: '⬆',
@@ -58,5 +62,5 @@ window.$docsify = {
         position: "top",
         color: "var(--theme-color,#42b983)",
         height: "5px",
-    }
+    },
   };

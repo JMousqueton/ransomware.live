@@ -8,7 +8,7 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Somos malas... podemos ser peores | 🟢 | 24/09/2023 14:09 | `http://malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd.onion` | <a href="https://images.ransomware.live/screenshots/malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd-onion.png" target=_blank>📸</a> | 
+| Somos malas... podemos ser peores | 🟢 | 24/11/2023 12:37 | `http://malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd.onion` | <a href="https://images.ransomware.live/screenshots/malas2urovbyyavjzaezkt5ohljvyd5lt7vv7mnsgbf2y4bwlh72doqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -195,4 +195,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

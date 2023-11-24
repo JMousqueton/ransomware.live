@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
 __author__ = "Julien Mousqueton"
 __copyright__ = "Copyright 2023, RansomwarE.live Project"
 __version__ = "1.0.1"
@@ -10,7 +11,6 @@ import shutil
 import datetime
 import difflib
 import logging
-## No need anymore 
 #from pprint import pprint
 
 # Backup destination
@@ -21,6 +21,7 @@ log_file = "/var/log/backup.log"  # Specify the path to your log file
 use_gzip = True  # Set to True to enable gzip compression
 # List of files to back up
 files = ["posts.json", "groups.json"]
+
 
 # Configure logging
 logging.basicConfig(

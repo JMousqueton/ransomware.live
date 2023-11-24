@@ -12,12 +12,17 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | ©RansomHouse | 🔴 | 01/10/2022 13:32 | `http://xw7au5pnwtl6lozbsudkmyd32n6gnqdngitjdppybudan3x3pjgpmpid.onion` | ❌ | 
-| none | 🟢 | 24/09/2023 14:22 | `http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion` | <a href="https://images.ransomware.live/screenshots/zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 24/11/2023 12:51 | `http://zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid.onion` | <a href="https://images.ransomware.live/screenshots/zohlm7ahjwegcedoz7lrdrti7bvpofymcayotp744qhx6gjmxbuo2yid-onion.png" target=_blank>📸</a> | 
 | Ransomhouse © | 🔴 | 14/01/2023 21:31 | `http://secxrosqawaefsio3biv2dmi2c5yunf3t7ilwf54czq3v4bi7w6mbfad.onion` | ❌ | 
 
 
 ### Ransom note
 * [📝 2 ransom notes](notes/ransomhouse)
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/3a84876e-95cf-4c33-a178-247983e26ee5) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -26,10 +31,13 @@
 
 ### Victims
 
-> 55 victims found
+> 58 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Van Oirschot`](https://www.vanoirschot.be/) | 30/09/2023 | Van Oirschot NV is a company that operates in the Wholesale industry. | <a href="https://images.ransomware.live/screenshots/posts/34d11580957ef1c28b695f6e4f93ee38.png" target=_blank>📸</a> |
+| [`Foursquare Healthcare`](https://www.foursquarehealthcare.com/) | 26/09/2023 | We Are The Leaders In Compassionate Care. Our supported facilities combine the industry’s latest treatment techniques and equipment in a highly personalized interdisciplinary approach to care. This patient-centered treatment enables our rehabilitation guests to return home as quickly as possible. We will provide our long-term residents with an enhanced well being and quality of life with the home town hospitality that you will learn to know and trust | <a href="https://images.ransomware.live/screenshots/posts/47e2c174e79a98f02ed817615049ca3f.png" target=_blank>📸</a> |
+| [`Warren General Hospital`](https://www.wgh.org/) | 23/09/2023 | Founded in 1900, Warren General is an 87-bed community hospital that offers a wide range of clinical services, from primary and emergency care to cancer care, orthopedic, general surgery, renal care, comprehensive rehabilitation services, psychiatric and detoxifica. | <a href="https://images.ransomware.live/screenshots/posts/8db67efcf86c54e5ad9ac802bad7a16e.png" target=_blank>📸</a> |
 | [`Hawkins Delafield Wood`](https://www.hawkins.com/) | 03/09/2023 | Hawkins offers governmental agencies, non-profit corporations and financial institutions exceptional legal service and sophisticated counsel in finance and infrastructure transactions.  Founded in 1854 and with 90 lawyers in ten offices across the country, the firm is consistently recognized by clients and peers for sustained excellence.  Our professionals practice with the distinctive collegiality and mutual respect intrinsic to traditional law firm partnerships. | <a href="https://images.ransomware.live/screenshots/posts/d2f7f999620c3e136dc576b669c3ed4e.png" target=_blank>📸</a> |
 | [`Radley and Co`](https://www.radleylondon.com/) | 29/08/2023 | Headquartered in London, United Kingdom, Radley is a London-based, British accessories brand which designs and manufactures handbags, purses and other women's accessories for UK and international markets | <a href="https://images.ransomware.live/screenshots/posts/131220c8ace90127192cf78b223572d7.png" target=_blank>📸</a> |
 | [`Low Keng Huat`](https://www.lkhs.com.sg/) | 02/07/2023 | Low Keng Huat (Singapore) Limited (LKHS) is a builder established since 1969. Today, its business has grown to encompass property development, hotels and investments. In addition, LKHS owns and operates deluxe hotel in Perth (Australia) under the in-house brand Duxton Hotel. Its other hospitality related business is food and beverage business under our brand name of Carnivore in Singapore. Among its investment portfolio are investment properties in Singapore, Malaysia and China. | <a href="https://images.ransomware.live/screenshots/posts/e4939586c7d20ffdfae849a51c1b4396.png" target=_blank>📸</a> |
@@ -88,4 +96,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

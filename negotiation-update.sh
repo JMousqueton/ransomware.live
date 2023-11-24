@@ -23,10 +23,7 @@ else
   --form-string "message=New Ransoms chats has been added" \
   https://api.pushover.net/1/messages.json > /dev/null
     python3 create-negotiation.py 
-    #python3 generateindex.py > ./docs/index.html
-    #cd ../ransomware.live
     python3 negotiations.py
-    #python3 ransomwatch.py markdown
   else
     echo "Erreur lors de la mise à jour du référentiel."
   fi

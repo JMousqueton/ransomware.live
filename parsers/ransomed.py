@@ -19,19 +19,13 @@ def main():
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                card_elements = soup.find_all('div', class_='card')
-                for card in card_elements:
-                    victim_element = card.find('b', recursive=False)
-                    if victim_element:
-                        victim = victim_element.get_text(strip=True)
-                        if victim in ['FAQ', 'Contact Us']:
-                            continue
-                        ul_element = card.find('ul', recursive=False)
-                        if ul_element:
-                            description = ' '.join([li.get_text(strip=True) for li in ul_element.find_all('li')])
-                        else:
-                            description = ''
-                        appender(victim, 'ransomed',description,'','','')
+                divs_name  = soup.find_all('li',{"class":"wp-block-post"})
+                for div in divs_name:
+                    meta = div.find('a')
+                    title = meta.text.strip()
+                    description = div.find('div',{"class":"wp-block-post-excerpt"}).text.strip()
+                    link = meta["href"]
+                    appender(title, 'ransomed',description,'','',link)
                 file.close()
         except:
             errlog('ransomed: ' + 'parsing fail')

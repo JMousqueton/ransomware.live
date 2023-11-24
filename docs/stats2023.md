@@ -55,4 +55,16 @@
 |---|---|
 | ![](graphs/grouppie202309.png) |  ![](graphs/victims_per_day_202309.png)| 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+## October
+
+| ![](graphs/postsbyday202310.png) | ![](graphs/postsbygroup202310.png) |
+|---|---|
+| ![](graphs/grouppie202310.png) |  ![](graphs/victims_per_day_202310.png)| 
+
+## November
+
+| ![](graphs/postsbyday202311.png) | ![](graphs/postsbygroup202311.png) |
+|---|---|
+| ![](graphs/grouppie202311.png) |  ![](graphs/victims_per_day_202311.png)| 
+
+Last update : _Friday 24/11/2023 13.15 (UTC)_

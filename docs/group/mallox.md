@@ -30,7 +30,7 @@ _`wtyafjyhwqrg[...].onion/post?get_listBlog`_
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Mallox - Blog | 🟢 | 24/09/2023 14:10 | `http://wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad.onion` | <a href="https://images.ransomware.live/screenshots/wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad-onion.png" target=_blank>📸</a> | 
+|  Mallox - Data Leaks | 🟢 | 24/11/2023 12:38 | `http://wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad.onion` | <a href="https://images.ransomware.live/screenshots/wtyafjyhwqrgo4a45wdvvwhen3cx4euie73qvlhkhvlrexljoyuklaad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -43,10 +43,14 @@ _`wtyafjyhwqrg[...].onion/post?get_listBlog`_
 
 ### Victims
 
-> 35 victims found
+> 39 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Versatile Card Technology Private Limited`](https://google.com/search?q=Versatile+Card+Technology+Private+Limited) | 26/10/2023 |  |   |
+| [`DUHOCAAU`](https://google.com/search?q=DUHOCAAU) | 14/10/2023 |  |   |
+| [`Measuresoft`](https://google.com/search?q=Measuresoft) | 03/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/c6b7053657249995722833dc5d9fa20b.png" target=_blank>📸</a> |
+| [`Kirkholm Maskiningeniører`](https://google.com/search?q=Kirkholm+Maskiningeni%C3%B8rer) | 02/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/69b0247a3595d57fd50900b0f0a9d898.png" target=_blank>📸</a> |
 | [`BOZOVICH TIMBER PRODUCTS INC`](https://google.com/search?q=BOZOVICH+TIMBER+PRODUCTS+INC) | 10/09/2023 |  |   |
 | [`Kogetsu`](https://google.com/search?q=Kogetsu) | 01/08/2023 |  |   |
 | [`Contec Systems`](https://google.com/search?q=Contec+Systems) | 30/07/2023 |  |   |
@@ -85,4 +89,4 @@ _`wtyafjyhwqrg[...].onion/post?get_listBlog`_
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

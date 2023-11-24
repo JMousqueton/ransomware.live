@@ -31,6 +31,11 @@
 ### Ransom note
 * [📝 1 ransom note](notes/yanluowang)
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/888f9e2a-bd3e-42c5-8ada-0391bd5b1ea4) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-yanluowang.png)
@@ -51,4 +56,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

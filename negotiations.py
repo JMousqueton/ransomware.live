@@ -75,7 +75,7 @@ def tweetmarkdown():
     writeline(tweetspage, '> `Valéry Marchive` works in the technology industry as a journalist. He is the editor-in-chief of [LeMagIT](https://www.lemagit.fr). He also comments and analyzes ransomware attacks on [social media](https://twitter.com/valerymarchive?lang=en).')
     writeline(tweetspage,' ')
     writeline(tweetspage, '> [!TIP]')
-    writeline(tweetspage, '> Some amount are expressed only with cryptocurrency. The price in USD is based on the cryptocurrency market at the time of the neogitiation.')
+    writeline(tweetspage, '> Some amount are expressed only with cryptocurrency. The price in USD is based on the cryptocurrency market at the time of the negotiation.')
     writeline(tweetspage,' ')
     #writeline(tweetspage,'   ')
     #writeline(tweetspage, '> [!WARNING]')
@@ -113,6 +113,8 @@ def tweetmarkdown():
                     dir_name = 'BlackMatter'
                 case 'revil':
                     dir_name = 'REvil'
+                case 'blackbasta':
+                    dir_name = 'BlackBasta'
                 case _:
                     dir_name = group_name.capitalize()
             if is_file_less_than_days_old('/var/www/ransomware.live/data/'+dir_name+'/'+chat_name+'.json'):

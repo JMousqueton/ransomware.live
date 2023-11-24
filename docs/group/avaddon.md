@@ -50,6 +50,11 @@
 |20210518_3|  <a href="/#/negotiation/avaddon/20210518_3.html"> 💬 </a> |
 
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/software/bad92974-35f6-4183-8024-b629140c6ee6-Avaddon) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Victims
 
 > 142 victims found
@@ -201,4 +206,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

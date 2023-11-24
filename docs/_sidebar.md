@@ -1,4 +1,4 @@
-- [🏡 Home](/ "🏴‍☠️💰 Ransomware.live")
+- [🏡 Home](/ " Ransomware.live")
 - [📅 Recent victims](recentvictims.md "📅 Recent Ransomware's Victims")
 - [🎯 Recent cyberattacks](recentcyberattacks.md "🎯 Recent Cyberattacks")
 - [📄 All victims](allvictims.md)

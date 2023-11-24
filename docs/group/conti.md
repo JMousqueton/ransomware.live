@@ -30,7 +30,7 @@ _`livechat host contirecj4hbzmyzuydyzrvm2c65blmvhoj2cvf25zqj2dwrrqcq5oad.onion`_
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | CONTI.News | 🔴 | 22/06/2022 06:25 | `http://continewsnv5otx5kaoje7krkto2qbu3gtqef22mnr7eaxw3y6ncz3ad.onion` | ❌ | 
-| continews.click | 🟢 | 24/09/2023 13:46 | `http://continews.click` | <a href="https://images.ransomware.live/screenshots/continews-click.png" target=_blank>📸</a> | 
+| continews.click | 🔴 | 25/10/2023 22:48 | `http://continews.click` | <a href="https://images.ransomware.live/screenshots/continews-click.png" target=_blank>📸</a> | 
 | Error Response Page | 🔴 | 23/11/2022 12:36 | `http://continews.bz` | ❌ | 
 
 
@@ -77,6 +77,11 @@ _`livechat host contirecj4hbzmyzuydyzrvm2c65blmvhoj2cvf25zqj2dwrrqcq5oad.onion`_
 |20211112|  <a href="/#/negotiation/conti/20211112.html"> 💬 </a> |
 |20211205|  <a href="/#/negotiation/conti/20211205.html"> 💬 </a> |
 |20211217|  <a href="/#/negotiation/conti/20211217.html"> 💬 </a> |
+
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/software/8e995c29-2759-4aeb-9a0f-bb7cd97b06e5-Conti) from [Tidal Cyber](https://www.tidalcyber.com/)
 
 
 ### Total Attacks Over Time
@@ -426,4 +431,4 @@ _`livechat host contirecj4hbzmyzuydyzrvm2c65blmvhoj2cvf25zqj2dwrrqcq5oad.onion`_
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

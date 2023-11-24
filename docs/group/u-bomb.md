@@ -5,7 +5,7 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| U-bomb | 🟢 | 24/09/2023 14:29 | `http://contiuevxdgdhn3zl2kubpajtfgqq4ssj2ipv6ujw7fwhggev3rk6hqd.onion` | <a href="https://images.ransomware.live/screenshots/contiuevxdgdhn3zl2kubpajtfgqq4ssj2ipv6ujw7fwhggev3rk6hqd-onion.png" target=_blank>📸</a> | 
+| U-bomb | 🟢 | 24/11/2023 12:56 | `http://contiuevxdgdhn3zl2kubpajtfgqq4ssj2ipv6ujw7fwhggev3rk6hqd.onion` | <a href="https://images.ransomware.live/screenshots/contiuevxdgdhn3zl2kubpajtfgqq4ssj2ipv6ujw7fwhggev3rk6hqd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -18,4 +18,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

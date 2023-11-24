@@ -31,7 +31,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://rgleak7op734elep.onion` | ❌ | 
-| Home Page of Ragnar_Locker Leaks site | 🟢 | 24/09/2023 14:19 | `http://rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd.onion` | <a href="https://images.ransomware.live/screenshots/rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd-onion.png" target=_blank>📸</a> | 
+| none | 🔴 | 22/10/2023 08:18 | `http://rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd.onion` | <a href="https://images.ransomware.live/screenshots/rgleaktxuey67yrgspmhvtnrqtgogur35lwdrup4d3igtbm3pupc4lyd-onion.png" target=_blank>📸</a> | 
 | none | 🔴 | 01/05/2021 00:00 | `http://p6o7m73ujalhgkiv.onion` | ❌ | 
 
 
@@ -42,6 +42,11 @@
 * 💰 <a href="/#/crypto/ragnarlocker.md">Crypto wallet(s) available</a>
 
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/software/d25f7acd-a995-4b8b-8ffe-ccc9703cdf5f-Ragnar%20Locker) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-ragnarlocker.png)
@@ -49,10 +54,18 @@
 
 ### Victims
 
-> 116 victims found
+> 124 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Eicon Controle Inteligentes`](https://google.com/search?q=Eicon+Controle+Inteligentes) | 11/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/31fa67124ed5447b9b45e4f4c7a6338a.png" target=_blank>📸</a> |
+| [`Scotbeef Ltd. - Leaks`](https://google.com/search?q=Scotbeef+Ltd.+-+Leaks) | 11/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/31fa67124ed5447b9b45e4f4c7a6338a.png" target=_blank>📸</a> |
+| [`International Presence Ltd - Leaked`](https://google.com/search?q=International+Presence+Ltd+-+Leaked) | 06/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/77da0fe01134efa83876ef57c7997343.png" target=_blank>📸</a> |
+| [`Learning Partnership West - Leaked`](https://google.com/search?q=Learning+Partnership+West+-+Leaked) | 05/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/37f072d389adf9648cd45b0216793b49.png" target=_blank>📸</a> |
+| [`Groupe Fructa Partner - Leaked`](https://google.com/search?q=Groupe+Fructa+Partner+-+Leaked) | 03/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/dc5895c33b7ef698bc7bad6ebd96b27e.png" target=_blank>📸</a> |
+| [`Astre - Leaked`](https://google.com/search?q=Astre+-+Leaked) | 30/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/44c70ba1cd2ddbeebac9b4a4d7de13f5.png" target=_blank>📸</a> |
+| [`Network Pacific Real Estate - Leak`](https://google.com/search?q=Network+Pacific+Real+Estate+-+Leak) | 30/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/2575f8629a36bf3130d68fcb31bfe517.png" target=_blank>📸</a> |
+| [`Stratesys Full data leak`](https://google.com/search?q=Stratesys+Full+data+leak) | 25/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/f255d85cf28db165ae61ff838e186bb9.png" target=_blank>📸</a> |
 | [`Announcement: COMECA Group going to be Leaked`](https://google.com/search?q=Announcement%3A+COMECA+Group+going+to+be+Leaked) | 22/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/63c5058af58f08bed1dbf549666bd3a4.png" target=_blank>📸</a> |
 | [`Announcement: Skatax Accounting company going to be leaked`](https://google.com/search?q=Announcement%3A+Skatax+Accounting+company+going+to+be+leaked) | 22/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/7edbce6836d49d7f39a78c95e70881c1.png" target=_blank>📸</a> |
 | [`Retail House - Full Leak`](https://google.com/search?q=Retail+House+-+Full+Leak) | 22/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/69c47280568741d36da590dff17f1c4e.png" target=_blank>📸</a> |
@@ -172,4 +185,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

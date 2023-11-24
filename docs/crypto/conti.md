@@ -106,5 +106,5 @@
 | [bc1q8ylqa3w37hsuel983yygn02qr3crsw75mg9fjd](https://www.blockchain.com/explorer/addresses/btc/bc1q8ylqa3w37hsuel983yygn02qr3crsw75mg9fjd) | bitcoin | $ 855890 |
 | [3JDzTo87HrpQSVhqUejwv2DrxiL9vcaDXN](https://www.blockchain.com/explorer/addresses/btc/3JDzTo87HrpQSVhqUejwv2DrxiL9vcaDXN) | bitcoin | $ 307394 |
 
-Last update : _Sunday 24/09/2023 13.11 (UTC)_
+Last update : _Friday 24/11/2023 13.22 (UTC)_
 

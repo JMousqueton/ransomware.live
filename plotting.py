@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 #from datetime import datetime
 
 from sharedutils import gcount, gcountYear, gcountMonth, last_day_of_month
+from parse import add_watermark
 from sharedutils import openjson
 
 def plot_posts_by_group():
@@ -183,7 +184,7 @@ def trend_posts_per_day_2023():
     plt.rcParams['xtick.color'] = "#42b983"
     plt.rcParams['ytick.color'] = "#42b983"
     plt.plot(dates, counts, color="#42b983")
-    plt.title('posts per day in 2023\n© Ransomware.live')
+    plt.title('Victims per day in 2023\n© Ransomware.live')
     plt.xlabel('date')
     plt.xticks(rotation=90)
     plt.ylabel('# of posts')
@@ -431,6 +432,7 @@ def plot_victims_by_month():
     plt.savefig('docs/graphs/victims_by_month.png')
     plt.clf()
     plt.cla()
+    add_watermark('docs/graphs/victims_by_month.png')
 
 
 
@@ -499,6 +501,7 @@ def plot_victims_by_month_cumulative():
     plt.savefig('docs/graphs/victims_by_month_cumulative.png')
     plt.clf()
     plt.cla()
+    add_watermark('docs/graphs/victims_by_month_cumulative.png')
 
 
 def create_victims_per_day_graph(target_year,target_month):

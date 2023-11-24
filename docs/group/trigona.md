@@ -18,13 +18,18 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Sign up | 🟢 | 24/09/2023 14:28 | `http://3x55o3u2b7cjs54eifja5m3ottxntlubhjzt6k6htp5nrocjmsxxh7ad.onion` | <a href="https://images.ransomware.live/screenshots/3x55o3u2b7cjs54eifja5m3ottxntlubhjzt6k6htp5nrocjmsxxh7ad-onion.png" target=_blank>📸</a> | 
+| Trigona is Gone | 🔴 | 18/10/2023 06:56 | `http://3x55o3u2b7cjs54eifja5m3ottxntlubhjzt6k6htp5nrocjmsxxh7ad.onion` | <a href="https://images.ransomware.live/screenshots/3x55o3u2b7cjs54eifja5m3ottxntlubhjzt6k6htp5nrocjmsxxh7ad-onion.png" target=_blank>📸</a> | 
 | Blog | 🔴 | 26/06/2023 10:51 | `http://6n5tfadusp4sarzuxntz34q4ohspiaya2mc6aw6uhlusfqfsdomavyyd.onion` | <a href="https://images.ransomware.live/screenshots/6n5tfadusp4sarzuxntz34q4ohspiaya2mc6aw6uhlusfqfsdomavyyd-onion.png" target=_blank>📸</a> | 
-| Blog | 🟢 | 24/09/2023 14:29 | `http://trigonax2zb3fw34rbaap4cqep76zofxs53zakrdgcxzq6xzt24l5lqd.onion` | <a href="https://images.ransomware.live/screenshots/trigonax2zb3fw34rbaap4cqep76zofxs53zakrdgcxzq6xzt24l5lqd-onion.png" target=_blank>📸</a> | 
+| Trigona is Gone | 🔴 | 18/10/2023 06:57 | `http://trigonax2zb3fw34rbaap4cqep76zofxs53zakrdgcxzq6xzt24l5lqd.onion` | <a href="https://images.ransomware.live/screenshots/trigonax2zb3fw34rbaap4cqep76zofxs53zakrdgcxzq6xzt24l5lqd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
 * [📝 1 ransom note](notes/trigona)
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/46adb11c-89b4-47e8-aa08-7d5bbb8dc909) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -33,10 +38,17 @@
 
 ### Victims
 
-> 23 victims found
+> 30 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Alconex Specialty Products`](https://google.com/search?q=Alconex+Specialty+Products) | 13/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/5f545441bd798c56bdfcdc3a4a09e48e.png" target=_blank>📸</a> |
+| [`FPZ`](https://google.com/search?q=FPZ) | 12/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/8d78442c00a978b9c395ac717c08095c.png" target=_blank>📸</a> |
+| [`Flamingo Holland`](https://google.com/search?q=Flamingo+Holland) | 01/10/2023 | Flamingo Holland is a Dutch-based flower company that specializes in growing, exporting, and wholesaling high-quality cut flowers, specifically, roses, peonies, tulips, and other seasonal flowers globally. The company was founded in 1985 and has since then become one of the leading flower companies in the Netherlands. | <a href="https://images.ransomware.live/screenshots/posts/769a32a2869399f50f2f162a161dd11a.png" target=_blank>📸</a> |
+| [`Aria Care Partners`](https://google.com/search?q=Aria+Care+Partners) | 01/10/2023 | Aria Care Partners is a healthcare provider that offers post-acute care services to patients in Kansas. It was founded in 2016 and is headquartered in Overland Park, KS. Company specializes in post-acute care services such as transitional care, home health, and hospice care. It aims to provide customized care plans to help patients recover, regain independence, and improve their quality of life. | <a href="https://images.ransomware.live/screenshots/posts/98caf06aca3c86b1a51a446119818014.png" target=_blank>📸</a> |
+| [`Portesa`](https://google.com/search?q=Portesa) | 01/10/2023 | Portesa is a forward-thinking livestock company with a strong commitment to innovation, sustainability, and the circular economy. Company is dedicated to transforming raw materials into high-quality products directly at the source. The company operates in collaboration with Cartesa and Aire Sano, forming an integrated production process that sets the industry benchmark for product traceability throughout Europe. | <a href="https://images.ransomware.live/screenshots/posts/cace0abf7412256feb750bb264dc480b.png" target=_blank>📸</a> |
+| [`Grupo Boreal`](https://google.com/search?q=Grupo+Boreal) | 01/10/2023 | Grupo Boreal plays a pivotal role in the healthcare industry, extending medical care to over 250,000 beneficiaries across thirteen provinces in the nation. Company is entrusted with the healthcare needs of over 11,000 residents in San Juan. It offers comprehensive coverage at competitive rates. | <a href="https://images.ransomware.live/screenshots/posts/d83efe2038ca8a3144e4214128f1f45a.png" target=_blank>📸</a> |
+| [`Quest International`](https://google.com/search?q=Quest+International) | 01/10/2023 | Quest International is a leading global post-sales service support partner for original equipment manufacturers (OEMs) across various industries, founded in 1982. Company offers services supporting OEM customers through depot repairs, field services, supply-chain logistics, and other professional services.  | <a href="https://images.ransomware.live/screenshots/posts/5d15fcb350ca4caee8fc206d2f67e0df.png" target=_blank>📸</a> |
 | [`Steelforce`](https://google.com/search?q=Steelforce) | 15/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/ea984e4d3c4790170b61582e28aee867.png" target=_blank>📸</a> |
 | [`Cedar Holdings`](https://google.com/search?q=Cedar+Holdings) | 13/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/5486d786ce822d88404e93d5cf020916.png" target=_blank>📸</a> |
 | [`Unimed`](https://google.com/search?q=Unimed) | 05/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/448da647d24ca2010b7663160e37c52d.png" target=_blank>📸</a> |
@@ -63,4 +75,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

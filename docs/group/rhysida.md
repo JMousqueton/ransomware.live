@@ -21,14 +21,19 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Rhysida | 🟢 | 24/09/2023 14:22 | `http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 24/09/2023 14:23 | `http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 24/09/2023 14:23 | `http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad-onion.png" target=_blank>📸</a> | 
-| Rhysida | 🟢 | 24/09/2023 14:23 | `http://rhysidafc6lm7qa2mkiukbezh7zuth3i4wof4mh2audkymscjm6yegad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafc6lm7qa2mkiukbezh7zuth3i4wof4mh2audkymscjm6yegad-onion.png" target=_blank>📸</a> | 
+| Rhysida | 🟢 | 24/11/2023 12:52 | `http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 24/11/2023 12:52 | `http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad-onion.png" target=_blank>📸</a> | 
+| none | 🟢 | 24/11/2023 12:53 | `http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad-onion.png" target=_blank>📸</a> | 
+| Rhysida | 🟢 | 24/11/2023 12:53 | `http://rhysidafc6lm7qa2mkiukbezh7zuth3i4wof4mh2audkymscjm6yegad.onion` | <a href="https://images.ransomware.live/screenshots/rhysidafc6lm7qa2mkiukbezh7zuth3i4wof4mh2audkymscjm6yegad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
 * [📝 1 ransom note](notes/rhysida)
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/b53e1952-b3c9-4eb4-9110-fdd2424abf2c) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -37,10 +42,25 @@
 
 ### Victims
 
-> 49 victims found
+> 64 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`St Edmund's College & Prep School`](https://google.com/search?q=St+Edmund%27s+College+%26+Prep+School) | 21/11/2023 | St Edmund's College & Prep School Located in 400 acres of beautiful Hertfordshire countryside, St Edmund's College and Prep School is a safe, stimulating environment for students aged 3-18, with boarding available from age 11. |   |
+| [`British Library`](https://google.com/search?q=British+Library) | 20/11/2023 | British Library The British Library is a research library in London that is the national library of the United Kingdom. It is one of the largest libraries in the worl. |   |
+| [`MHM Health`](https://google.com/search?q=MHM+Health) | 11/11/2023 | MHM Health MHM Health is dedicated to help our partner Independent Physician Associations remain independent as the healthcare industry transitions to value-based care. |   |
+| [`Azienda Ospedaliera Universitaria Integrata di Verona`](https://google.com/search?q=Azienda+Ospedaliera+Universitaria+Integrata+di+Verona) | 10/11/2023 | Azienda Ospedaliera Universitaria Integrata di Verona The Verona Integrated University Hospital Company is a hospital facility that is part of the Veneto Health Service, based in the city of Verona and is one of the largest hospitals in Italy. |   |
+| [`Indah Water Konsortium`](https://google.com/search?q=Indah+Water+Konsortium) | 07/11/2023 | Indah Water Konsortium Indah Water Konsortium, a company owned by Minister of Finance Incorporated, is Malaysia's national sewerage company which has been entrusted with the tasks of developing and maintaining a modern and efficient sewerage system for all Malaysians. | <a href="https://images.ransomware.live/screenshots/posts/51354d74fbc4a708ee70d46d70dbefa1.png" target=_blank>📸</a> |
+| [`Mount St. Mary's Seminary`](https://google.com/search?q=Mount+St.+Mary%27s+Seminary) | 06/11/2023 | Mount St. Mary's Seminary Mount St. Mary's Seminary is the oldest division of the Athenaeum. The seminary has as its mission the preparation of candidates for the Catholic priesthood�a gift of God and the fruit of an integrated approach to formation. |   |
+| [`SMH Group`](https://google.com/search?q=SMH+Group) | 05/11/2023 | SMH Group In 2022, the SMH Group was born, with all the individual offices having their original names prefixed with 'SMH'. |   |
+| [`GO! Handelsschool Aalst`](https://google.com/search?q=GO%21+Handelsschool+Aalst) | 02/11/2023 | GO! Handelsschool Aalst GO! Handelsschool Aalst is een milieubewuste school in het centrum van Aalst en streeft naar hoogstaand onderwijs op maat in een open sfeer. | <a href="https://images.ransomware.live/screenshots/posts/93c65116e528978541dfb5226ddcfe2c.png" target=_blank>📸</a> |
+| [`Northwest Eye Care Professionals`](https://google.com/search?q=Northwest+Eye+Care+Professionals) | 14/10/2023 | Northwest Eye Care Professionals Serving Clackamas and the surrounding communities in Vancouver and Beaverton, we offer comprehensive eye health services for all members of your family as well as specialty services. |   |
+| [`Southern Arkansas University`](http://rhysidafohrhyy2aszi7bm32tnjat5xri65fopcxkdfxhi4tidsg7cad.onion/archive.php?company=52) | 09/10/2023 | Southern Arkansas University Southern Arkansas University offers personalized tour visits, faculty and staff who invest in student success, and a caring campus community.    More |   |
+| [`Camara Municipal de Gondomar`](https://google.com/search?q=Camara+Municipal+de+Gondomar) | 06/10/2023 | Camara Municipal de Gondomar Discover Gondomar, a land of historical echoes, where the long history of generations attests to the identity of this Municipality. |   |
+| [`General Directorate of Migration of the Dominican Republic`](https://google.com/search?q=General+Directorate+of+Migration+of+the+Dominican+Republic) | 04/10/2023 | General Directorate of Migration of the Dominican Republic |   |
+| [`Federal University of Mato Grosso do Sul`](https://google.com/search?q=Federal+University+of+Mato+Grosso+do+Sul) | 02/10/2023 | Federal University of Mato Grosso do Sul The Federal University of Mato Grosso do Sul, is a public university located in the state of Mato Grosso do Sul in Brazil. |   |
+| [`Istituto Prosperius`](https://www.prosperius.it/) | 26/09/2023 | Istituto Prosperius Villa Cherubini reopens with a new facility within the Prosperius Institute health complex, established founded by Prof. Mario Bigazzi back in 1973. |   |
+| [`Ministry Of Finance (Kuwait)`](https://google.com/search?q=Ministry+Of+Finance+%28Kuwait%29) | 25/09/2023 | Ministry Of Finance (Kuwait) Ministry of Finance is one of the governmental bodies of Kuwait and part of the cabinet. |   |
 | [`Ort Harmelin College of Engineering`](https://google.com/search?q=Ort+Harmelin+College+of+Engineering) | 23/09/2023 | Ort Harmelin College of Engineering Ort Harmelin College of Engineering is an innovative technological college located in the heart of the hi-tech area, Sapir in Netanya. |   |
 | [`Holon Institute of Technology`](https://google.com/search?q=Holon+Institute+of+Technology) | 22/09/2023 | Holon Institute of Technology HIT Holon Institute of Technology, is a well-established unique and multidisciplinary academic institution, which manages to maintain its young spirit as well as its dynamic and contemporary nature. |   |
 | [`Singing River Health System`](https://www.singingriverhealthsystem.com/) | 10/09/2023 | Singing River Health System Singing River Health System is both a mission-driven provider of health services and one of the largest employers on the Mississippi Gulf Coast. | <a href="https://images.ransomware.live/screenshots/posts/1b9457b13b9714e81e67d9783a98a939.png" target=_blank>📸</a> |
@@ -93,4 +113,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

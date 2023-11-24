@@ -21,7 +21,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Qilin | 🔴 | 17/02/2023 11:10 | `http://ozsxj4hwxub7gio347ac7tyqqozvfioty37skqilzo2oqfs4cw2mgtyd.onion` | <a href="https://images.ransomware.live/screenshots/ozsxj4hwxub7gio347ac7tyqqozvfioty37skqilzo2oqfs4cw2mgtyd-onion.png" target=_blank>📸</a> | 
-| Qilin blog | 🟢 | 24/09/2023 14:17 | `http://kbsqoivihgdmwczmxkbovk7ss2dcynitwhhfu5yw725dboqo5kthfaad.onion` | <a href="https://images.ransomware.live/screenshots/kbsqoivihgdmwczmxkbovk7ss2dcynitwhhfu5yw725dboqo5kthfaad-onion.png" target=_blank>📸</a> | 
+| Qilin blog | 🟢 | 24/11/2023 12:47 | `http://kbsqoivihgdmwczmxkbovk7ss2dcynitwhhfu5yw725dboqo5kthfaad.onion` | <a href="https://images.ransomware.live/screenshots/kbsqoivihgdmwczmxkbovk7ss2dcynitwhhfu5yw725dboqo5kthfaad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -34,10 +34,20 @@
 
 ### Victims
 
-> 35 victims found
+> 45 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`HAESUNG DS CO Ltd`](https://haesungds.com) | 17/11/2023 | We will publish data on next week |   |
+| [`Epstein Law`](https://epsteinlawcorp.com) | 17/11/2023 | Established in 1958, Epstein Law serves clients throughout the Greater Vancouver Area. Led by Mark Epstein, we have a reputation for providing quality and professional legal services  Soon you will be able to download all the data taken fro            ... |   |
+| [`Assurius.be`](https://Assurius.be) | 05/11/2023 | Coming soon... |   |
+| [`unique-relations.at`](https://unique-relations.at) | 05/11/2023 | We will publish data on next week |   |
+| [`SG World`](https://sgworld.com) | 26/10/2023 | Company data will be made available for download below |   |
+| [`Paul-Alexandre Doïcesco, Notaires Associés`](https://notairedoicesco.be) | 25/10/2023 | The company has chosen to ignore us means its data will be open and available for download below. | <a href="https://images.ransomware.live/screenshots/posts/b9c6e6db927c3f73443a4910abdb2443.png" target=_blank>📸</a> |
+| [`Cardiovascular Consultants Ltd`](https://cvcheart.com) | 25/10/2023 | You can download all personal data of clients and employees of this company below | <a href="https://images.ransomware.live/screenshots/posts/a99fa27eca33fc2d8e371b049668318d.png" target=_blank>📸</a> |
+| [`WT PARTNERSHIP`](https://wtpartnership.asia) | 09/10/2023 | WT Partnership Asia provides project management, cost management & specialist consultancy advisory services for the property & construction industries.  "Our risk and value focused approach supports our clients by delivering financially rob            ... |   |
+| [`DiTRONICS Financial Services`](https://ditronics.com) | 04/10/2023 | "DiTRONICS continues to define the future of funds access with a fully integrated suite of products and services that includes ATMs, Ticket Redemption Kiosks, Check Guarantee Software, Cash Advance Software, and now offers a Title 31 complian            ... |   |
+| [`Siamese Asset`](https://siameseasset.co.th) | 26/09/2023 | In the near future we will be publishing more data related to very interesting money laundering schemes. The state should be interested in what these guys are doing :) |   |
 | [`CORTEL Technologies`](https://cortel.com) | 12/09/2023 | Cortel is a cloud technology vendor that partners with businesses to deploy phone systems that connect customers to businesses.  Below you can see a small part of the data which were taken from the servers of this company. |   |
 | [`PAUL-ALEXANDRE DOICESCO`](https://notairedoicesco.be) | 08/09/2023 | The company did not give a damn about the security of its customers' data, so you can download all this from the link below.  archive password: passwordbe |   |
 | [`WACOAL`](https://wacoal-america.com) | 08/09/2023 | Wacoal America is an apparel & fashion company specializing in lingerie and intimate wear.  In the near future, we will publish a large leak from the network of this company. Including all customer data. |   |
@@ -76,4 +86,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

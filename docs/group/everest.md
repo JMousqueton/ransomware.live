@@ -9,7 +9,12 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Everest Ransomware Group | 🟢 | 24/09/2023 13:55 | `http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion` | <a href="https://images.ransomware.live/screenshots/ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad-onion.png" target=_blank>📸</a> | 
+| Everest Ransomware Group | 🟢 | 24/11/2023 12:20 | `http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion` | <a href="https://images.ransomware.live/screenshots/ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad-onion.png" target=_blank>📸</a> | 
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/0c6bfa7e-43e1-47b3-b090-da643a8e5069) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -18,10 +23,12 @@
 
 ### Victims
 
-> 131 victims found
+> 133 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Access to the large database of a US Medical organization`](https://google.com/search?q=Access+to+the+large+database+of+a+US+Medical+organization) | 07/11/2023 | Available actions with patient data in the panelSearch, Edit, Print, DownloadThe base is replenished from different clinics, both public and privatehttps://www.srmcfl.comhttps://www.adventhealth.comhttps://www.advimg.comAnd many others Name DOB Gender SSN Address Home Phone Work PhoneSite MPI MRN Dept Num Patient Class Admitted Discharged Site Location Hospital Svc Point of CareFacility Building Room Bed Attending Referring Consulting Admitting Visit […] | <a href="https://images.ransomware.live/screenshots/posts/33bb59ed54ce8c7527285c6b7885bcf6.png" target=_blank>📸</a> |
+| [`We monetize your corporate access`](https://google.com/search?q=We+monetize+your+corporate+access) | 11/10/2023 | Team looking for corporate accesses (shell,vnc, hvnc, rdp + vpn, teamviewer, anydesk etc.)Us Countries,Ca and Europe. A good percentage for partners, full transparency of work and confidentiality jabber:everestgroup@exploit.imeverestgroup@thesecure.biz email:everestransomteam@onionmail.orgeverestblog@cock.li | <a href="https://images.ransomware.live/screenshots/posts/3d68aeac18712ba40a29addd9309b323.png" target=_blank>📸</a> |
 | [`Agriloja.pt Full Leak`](https://google.com/search?q=Agriloja.pt+Full+Leak) | 18/09/2023 | https://cloud.mail.ru/public/oAe6/ZfPMzZPwehttps://cloud.mail.ru/public/bLE1/ER3UPBi9Uhttps://cloud.mail.ru/public/xm59/WBf27NeNKhttps://cloud.mail.ru/public/AKZg/E5tw3gxhDhttps://cloud.mail.ru/public/CacU/12VBNB24Khttps://cloud.mail.ru/public/MpLj/K5kE7VJZchttps://cloud.mail.ru/public/yF12/XGd6tGSBehttps://cloud.mail.ru/public/GSyK/J6SVDyZxAhttps://cloud.mail.ru/public/1Ew9/m9PUuzTZmhttps://cloud.mail.ru/public/Zgk6/1FGxwV6tPhttps://cloud.mail.ru/public/BUDf/J7udioXHWhttps://cloud.mail.ru/public/7iFf/CnyaBkCmshttps://cloud.mail.ru/public/RUPe/Ubx1DENRQhttps://cloud.mail.ru/public/iN91/pLuzjttZfhttps://cloud.mail.ru/public/7wGE/qhkjwEmw7https://cloud.mail.ru/public/hiYo/jJFAdfV7Jhttps://cloud.mail.ru/public/D5e1/UCjQn5ebNhttps://cloud.mail.ru/public/TQch/zGrk6AHhuhttps://cloud.mail.ru/public/Hw6v/W61TLWzK7https://cloud.mail.ru/public/HC5v/ywcCXabXZhttps://cloud.mail.ru/public/aaDb/vBue6KzoPhttps://cloud.mail.ru/public/zada/pYKKsenJyhttps://cloud.mail.ru/public/Ju7z/ia79hAjdN | <a href="https://images.ransomware.live/screenshots/posts/9a6c068c8afc0e73ea626b19b9849e84.png" target=_blank>📸</a> |
 | [`Cmranallolaw.com`](https://google.com/search?q=Cmranallolaw.com) | 11/09/2023 | -Confidential data of a law firm-Tax forms, dl, ssn etc.-Contracts-Personal data of clients-Financial documents-Internal correspondence and emails To fully delete these files, company representatives must contact by September 15, 2023.Otherwise, all this data will be published here and other forums,in the same way, the company’s customers will be notified and receive copies of their files | <a href="https://images.ransomware.live/screenshots/posts/28fcdda205c0ec911513fd9954d19d34.png" target=_blank>📸</a> |
 | [`SKF.com`](https://google.com/search?q=SKF.com) | 02/09/2023 | SKF’s network was compromised(by collaboration with Ransomed group) a few days ago. The company continues to be silent about the problem.A representative of the company should contact us immediately and get full picture of what happened, instructions have all been sended in the emails.Otherwise, we will start communicating with your competitors. Revenue : $8.1 Billions […] | <a href="https://images.ransomware.live/screenshots/posts/66d19cc147ec938679e9d3fbab6b63f4.png" target=_blank>📸</a> |
@@ -156,4 +163,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

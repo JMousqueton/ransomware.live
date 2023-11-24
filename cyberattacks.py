@@ -42,7 +42,7 @@ def screenshot(webpage,output,delay=15000,option=None):
     if webpage.endswith(".pdf"):
         stdlog("PDF file no screenshot")
         return
-    disabled_site = ["hk01.com", "mb.com.ph", "tass.ru", "richmond-news.com", "ncic.co.jp","guardian.co.tt","theadvocate.com","jaccs.co.jp","azimut.it","lapresse.ca","noirlab","wlox.com","cdn-api.markitdigital.com","unimedia","jamaica-gleaner"]
+    disabled_site = ["hk01.com", "mb.com.ph", "tass.ru", "richmond-news.com", "ncic.co.jp","guardian.co.tt","theadvocate.com","jaccs.co.jp","azimut.it","lapresse.ca","noirlab","wlox.com","cdn-api.markitdigital.com","unimedia","jamaica-gleaner","myrgv.com", "nypost.com", "www.cbc.ca", "star-", "timesnews", "focus-wtv", "itatiaia"]
     if any(website in webpage for website in disabled_site):
         stdlog("Disabled screenshot for website : "+ webpage)
         return  # This will exit the function
@@ -172,6 +172,8 @@ def country2flag(pays):
             flag="PL"
         case "DNK":
             flag="DK"
+        case "CPV":
+            flag="CV"
         case _:
             flag=pays[:2]
     return "![" + pays + "](https://images.ransomware.live/flags/"+flag+".svg ':no-zoom')"
@@ -243,7 +245,7 @@ def recentcyberattacks():
         compteur += 1
     writeline(tweetspage, '> \nSource : [Github Casualtek/Cyberwatch](https://github.com/Casualtek/Cyberwatch/)')
     writeline(tweetspage, '')
-    writeline(tweetspage, '📈 Last ' + str(compteur) + ' cyberattacks - Check [🎯 All cyberattacks](allcyberattacks)')
+    writeline(tweetspage, 'Check [🎯 All cyberattacks](allcyberattacks)')
     writeline(tweetspage,' ')
     writeline(tweetspage, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
     stdlog('recent news page generated')

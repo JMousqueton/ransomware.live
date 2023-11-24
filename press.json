@@ -67,7 +67,7 @@
 	},
 	{
 		"date": "2023-08-17",
-		"source": "@ValeryMarchive",
+		"source": "ValeryMarchive",
 		"url": "https://x.com/valerymarchive/status/1692269743208616340?s=46&t=sfDOdzIPfsi7G7-0bML2cA",
 		"title": "Back from Holidays. Busy updating the data at ransomware.live/#/recentcyberattacks ..."
 	},
@@ -75,6 +75,22 @@
 		"source": "ValeryMarchive",
 		"url": "https://twitter.com/ValeryMarchive/status/1696442303223562590",
 		"title" : "Kendrion a été victime d'une #cyberattaque autour du 28 août 2023."
+	},
+	{	"date": "2023-10-17",
+		"source": "Floriant Roth (@cyb3ops)",
+		"url": "https://twitter.com/cyb3rops/status/1714204895476068689",
+		"title" : "Ransomware Tracker" 
+	},
+	{
+		"date": "2023-10-18",
+		"source": "Telegram : Proxy Bar",
+		"url": "https://t.me/proxy_bar/1784",
+		"title": "Спасибо  Julien Mousqueton за отличную подборку, сам то понял какой инструмент создал ? )))"
+	},
+	{
+		"date": "2023-11-1",
+		"source": "Frank Plummer on LinkedIN",
+		"url": "https://www.linkedin.com/posts/frankplummer_negotiations-with-ransomware-groups-make-activity-7125464724254650369-C-tm",
+		"title": "Negotiations with ransomware groups make a really chilling read"
 	}
-
 ]

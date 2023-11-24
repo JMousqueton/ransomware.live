@@ -12,13 +12,14 @@ from bs4 import BeautifulSoup # type: ignore
 from sharedutils import openjson
 from sharedutils import runshellcmd
 # from sharedutils import todiscord, totwitter, toteams
-from sharedutils import toMastodon, toPushover
+from sharedutils import toMastodon, toPushover, tobluesky
 from sharedutils import stdlog, dbglog, errlog   # , honk
 # For screenshot 
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 # For watermark on screenshot 
 from PIL import Image
 from PIL import ImageDraw
+from PIL import ImageEnhance
 from PIL.PngImagePlugin import PngInfo
 # For Notification 
 import http.client, urllib
@@ -31,7 +32,47 @@ else:
     fancygrep = 'grep -oP'
 
 
-def posttemplate(victim, group_name, timestamp,description,website,published,post_url):
+def add_watermark(image_path, watermark_image_path='./docs/ransomwarelive.png'):
+    """
+    Adds a watermark image (with 50% transparency) to the center of the input image and overwrites it.
+    
+    :param image_path: Path to the image to be watermarked.
+    :param watermark_image_path: Path to the watermark image.
+    :return: None
+    """
+    Image.MAX_IMAGE_PIXELS = None
+    # Open the image to be watermarked
+    stdlog('open image ' + image_path)
+    original = Image.open(image_path)
+    if original.mode != 'RGBA':
+        original = original.convert('RGBA')
+    
+    # Open the watermark image
+    watermark = Image.open(watermark_image_path)
+    if watermark.mode != 'RGBA':
+        watermark = watermark.convert('RGBA')
+
+    # Adjust opacity of watermark
+    transparent = Image.new('RGBA', watermark.size, (255, 255, 255, 0))
+    for x in range(watermark.width):
+        for y in range(watermark.height):
+            r, g, b, a = watermark.getpixel((x, y))
+            transparent.putpixel((x, y), (r, g, b, int(a * 0.1)))
+
+    watermark = transparent
+
+    # Position watermark in the center
+    x = (original.width - watermark.width) // 2
+    y = (original.height - watermark.height) // 2
+
+    # Overlay the watermark onto the screenshot
+    original.paste(watermark, (x, y), watermark)
+    
+    # Overwrite the original screenshot
+    stdlog('save watermaked image ' + image_path)
+    original.save(image_path, 'PNG')
+
+def posttemplate(victim, group_name, timestamp,description,website,published,post_url,country):
     '''
     assuming we have a new post - form the template we will use for the new entry in posts.json
     '''
@@ -42,7 +83,8 @@ def posttemplate(victim, group_name, timestamp,description,website,published,pos
         'description': description,
         'website': website,
         'published' : published,
-        'post_url' : post_url
+        'post_url' : post_url,
+        'country'   : country
     }
     dbglog(schema)
     return schema
@@ -59,23 +101,8 @@ def screenshot(webpage,fqdn,delay=15000,output=None):
     #try:
         with sync_playwright() as play:
                 try:
-                    if webpage.startswith("http://stniiomy"):
-                        browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
-                          args=[''])
-                        stdlog('(!) exception')
-                    elif webpage.startswith("http://noescape"):
-                        browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
-                          args=[''])
-                        stdlog('(!) exception')
-                    elif webpage.startswith("http://medusa"):
-                        browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
-                          args=[''])
-                        stdlog('(!) exception')
-                    elif webpage.startswith("http://h3reihq"):
-                        browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
-                          args=[''])
-                        stdlog('(!) exception')
-                    elif webpage.startswith("http://lockbi"):
+                    tor_prefixes = ["http://stniiomy", "http://noescape", "http://medusa", "http://cactus", "http://hl666"]
+                    if any(webpage.startswith(prefix) for prefix in tor_prefixes):
                         browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                           args=[''])
                         stdlog('(!) exception')
@@ -107,7 +134,8 @@ def screenshot(webpage,fqdn,delay=15000,output=None):
                     metadata.add_text("Creation Time",current_date)
                     draw = ImageDraw.Draw(image)
                     draw.text((10, 10), "https://www.ransomware.live", fill=(0, 0, 0))
-                    image.save(name, pnginfo=metadata)  
+                    image.save(name, pnginfo=metadata)
+                    add_watermark(name)
                 except PlaywrightTimeoutError:
                     stdlog('Timeout!')
                 except Exception as exception:
@@ -184,6 +212,7 @@ def appender(post_title, group_name, description="", website="", published="", p
             # errlog('(!) '+ post_title + ' is in exceptions')
             return
     # limit length of post_title to 90 chars
+    country=''
     if len(post_title) > 90:
         post_title = post_title[:90]
     post_title=html.unescape(post_title)
@@ -197,7 +226,7 @@ def appender(post_title, group_name, description="", website="", published="", p
             website = "https://" + website
         if published == "":
             published = str(datetime.today())
-        newpost = posttemplate(post_title, group_name, str(datetime.today()),description,replace_http_slash(website),published,post_url)
+        newpost = posttemplate(post_title, group_name, str(datetime.today()),description,replace_http_slash(website),published,post_url,country)
         stdlog('adding new post - ' + 'group:' + group_name + ' title:' + post_title)
         posts.append(newpost)
         with open('posts.json', 'w', encoding='utf-8') as outfile:
@@ -225,6 +254,9 @@ def appender(post_title, group_name, description="", website="", published="", p
         # Pushover notification 
         if os.environ.get('PUSH_API') is not None:
             toPushover(post_title, group_name)
+        
+        if os.environ.get('BLUESKY_APP_PASSWORD') is not None:
+            tobluesky(post_title, group_name)
         
         ### Post screenshot
         if post_url !="":

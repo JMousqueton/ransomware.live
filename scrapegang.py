@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 
 # local imports
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
+from playwright_stealth import stealth_sync
 
 from sharedutils import striptld
 from sharedutils import openjson
@@ -27,6 +28,9 @@ def scraper(querygroup=''):
             # iterate each location/mirror/relay
             for host in group['locations']:
                 stdlog('ransomwatch: ' + 'scraping ' + host['slug']) 
+                if host['enabled'] is False:
+                    stdlog('ransomwatch: ' + 'skipping, this host has been flagged as disabled')
+                    continue
                 if host['version'] == 3 or host['version'] == 0:
                 # here 
                     try:
@@ -40,6 +44,7 @@ def scraper(querygroup=''):
                                         args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])    
                                 context = browser.new_context(ignore_https_errors= True )
                                 page = context.new_page()
+                                #stealth_sync(page)
                                 if 'timeout' in host and host['timeout'] is not None:
                                    page.goto(host['slug'], wait_until='load', timeout = host['timeout']*1000)
                                 else:

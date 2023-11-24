@@ -8,7 +8,7 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| RA World | 🟢 | 24/09/2023 14:19 | `http://pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd.onion` | <a href="https://images.ransomware.live/screenshots/pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd-onion.png" target=_blank>📸</a> | 
+| RA World | 🟢 | 24/11/2023 12:48 | `http://pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd.onion` | <a href="https://images.ransomware.live/screenshots/pa32ymaeu62yo5th5mraikgw5fcvznnsiiwti42carjliarodltmqcqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -17,10 +17,17 @@
 
 ### Victims
 
-> 29 victims found
+> 36 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Al****ia `](https://google.com/search?q=Al%2A%2A%2A%2Aia+) | 19/11/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/9b32edbaf37f25ab6a16f9d4c3292353.png" target=_blank>📸</a> |
+| [`Aceromex `](https://google.com/search?q=Aceromex+) | 17/11/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/612c9a9f06392330a9dbc469e8bde020.png" target=_blank>📸</a> |
+| [`Chung Hwa Chemical Industrial Works `](https://google.com/search?q=Chung+Hwa+Chemical+Industrial+Works+) | 17/11/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/d99a5e8fefc96acdb14101a01e8b035d.png" target=_blank>📸</a> |
+| [`SUMMIT VETERINARY PHARMACEUTICALS LIMITED `](https://google.com/search?q=SUMMIT+VETERINARY+PHARMACEUTICALS+LIMITED+) | 17/11/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/f32631caf4f3224f2ca572ef07780f12.png" target=_blank>📸</a> |
+| [`Informist Media `](https://google.com/search?q=Informist+Media+) | 17/11/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/e58a132ea331655d6c731ec0dce8f141.png" target=_blank>📸</a> |
+| [`Yuxin Automobile Co.Ltd `](https://google.com/search?q=Yuxin+Automobile+Co.Ltd+) | 07/11/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/c5346b5ea75f4d1d67cdb0f63a5d90df.png" target=_blank>📸</a> |
+| [`Aceromex (Unpay-Start Leaking)`](https://google.com/search?q=Aceromex+%28Unpay-Start+Leaking%29) | 07/11/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/612c9a9f06392330a9dbc469e8bde020.png" target=_blank>📸</a> |
 | [`24/7 Express Logistics (Unpay-Start Leaking)`](https://google.com/search?q=24%2F7+Express+Logistics+%28Unpay-Start+Leaking%29) | 11/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/0b4011fc3ad5a218924b624600bf3fa1.png" target=_blank>📸</a> |
 | [`24/7 Express Logistics `](https://google.com/search?q=24%2F7+Express+Logistics+) | 07/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/0b4011fc3ad5a218924b624600bf3fa1.png" target=_blank>📸</a> |
 | [`Zurvita `](https://google.com/search?q=Zurvita+) | 04/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/883557a85043ed1693e1e32bc2ea5f86.png" target=_blank>📸</a> |
@@ -53,4 +60,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

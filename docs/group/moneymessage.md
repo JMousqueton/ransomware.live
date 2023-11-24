@@ -13,7 +13,7 @@ _`hash : bbdac308d2b15a4724de7919bf8e9ffa713dea60ae3a482417c44c60012a654b`_
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| News | 🟢 | 24/09/2023 14:12 | `http://blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd.onion` | <a href="https://images.ransomware.live/screenshots/blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd-onion.png" target=_blank>📸</a> | 
+| News | 🟢 | 24/11/2023 12:42 | `http://blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd.onion` | <a href="https://images.ransomware.live/screenshots/blogvl7tjyjvsfthobttze52w36wwiz34hrfcmorgvdzb6hikucb7aqd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -26,10 +26,14 @@ _`hash : bbdac308d2b15a4724de7919bf8e9ffa713dea60ae3a482417c44c60012a654b`_
 
 ### Victims
 
-> 14 victims found
+> 18 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Tri-Way Manufacturing Technologies`](https://google.com/search?q=Tri-Way+Manufacturing+Technologies) | 12/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/4a3bee41e75c432dacd07bb978c8f3cb.png" target=_blank>📸</a> |
+| [`Toscana Promozione`](https://google.com/search?q=Toscana+Promozione) | 03/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/83f0337aec80152263a7edfb00da372e.png" target=_blank>📸</a> |
+| [`MD LOGISTICS`](https://google.com/search?q=MD+LOGISTICS) | 03/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/43b8dfa689bb622b42203b0b7f4ca065.png" target=_blank>📸</a> |
+| [`Maxco Supply`](https://google.com/search?q=Maxco+Supply) | 03/10/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/4a3bee41e75c432dacd07bb978c8f3cb.png" target=_blank>📸</a> |
 | [`Riverside Logistics`](https://google.com/search?q=Riverside+Logistics) | 03/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/83f0337aec80152263a7edfb00da372e.png" target=_blank>📸</a> |
 | [`Estes Design & Manufacturing`](https://google.com/search?q=Estes+Design+%26+Manufacturing) | 03/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/43b8dfa689bb622b42203b0b7f4ca065.png" target=_blank>📸</a> |
 | [`Aiphone`](https://google.com/search?q=Aiphone) | 03/09/2023 |  | <a href="https://images.ransomware.live/screenshots/posts/4a3bee41e75c432dacd07bb978c8f3cb.png" target=_blank>📸</a> |
@@ -47,4 +51,4 @@ _`hash : bbdac308d2b15a4724de7919bf8e9ffa713dea60ae3a482417c44c60012a654b`_
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

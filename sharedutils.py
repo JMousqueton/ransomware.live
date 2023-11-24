@@ -15,6 +15,7 @@ import tweepy
 import logging
 from datetime import datetime
 from datetime import timedelta
+from datetime import timezone
 import subprocess
 import tldextract
 import lxml.html
@@ -24,6 +25,7 @@ from dotenv import load_dotenv
 import http.client, urllib
 from mastodon import Mastodon
 import hashlib
+from bs4 import BeautifulSoup
 
 sockshost = '127.0.0.1'
 socksport = 9050
@@ -524,7 +526,52 @@ def countpostsyeartodate():
             count_posts_last_year += 1
     return count_posts_last_year
 
+def tobluesky(post_title,group):
+    try:
+        url = os.environ.get('BLUESKY_URL')
+        handle = os.environ.get('BLUESKY_HANDLE')
+        password = os.environ.get('BLUESKY_APP_PASSWORD')
+        resp = requests.post(url,
+                    json={"identifier": handle, "password": password},
+                )
+        resp.raise_for_status()
+        session = resp.json()
+        now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+        text= "A new post from #Ransomware group #" + group + " : " + post_title + " was detected by "
+        startoffset = len(text)
+        print('--> ', startoffset)
+        #uri = "https://www.ransomware.live/#/group/" + group
+        uri = "https://ransomware.live"
+        text+= uri
+        endoffset = len(text)
+        print('--> ', endoffset)
+            # Required fields that each post must include
+        post = {
+                "$type": "app.bsky.feed.post",
+                "text": text,
+                "createdAt": now,
+                "facets": [{
+                    "index": {
+                    "byteStart": startoffset,
+                    "byteEnd": endoffset,
+                    },
+                "features": [{
+                    "$type": "app.bsky.richtext.facet#link",
+                    "uri": uri,
+                    }],
+                }],
 
+            }
+        resp = requests.post("https://bsky.social/xrpc/com.atproto.repo.createRecord",
+                    headers={"Authorization": "Bearer " + session["accessJwt"]},
+                    json={
+                        "repo": session["did"],
+                        "collection": "app.bsky.feed.post",
+                        "record": post,
+                    },
+            )
+    except:
+        errlog('Error posting on bluesky')
 
 def totwitter(post_title, group):
     dbglog('sharedutils: ' + 'posting to twitter')

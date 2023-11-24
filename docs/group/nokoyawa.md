@@ -13,8 +13,8 @@
 |---|---|---|---|---|
 | NOKOYAWA Leaks | 🔴 | 11/07/2022 22:26 | `http://lirncvjfmdhv6samxvvlohfqx7jklfxoxj7xn3fh7qeabs3taemdsdqd.onion` | ❌ | 
 | NOKOYAWA Leaks | 🔴 | 25/01/2023 21:03 | `http://6yofnrq7evqrtz3tzi3dkbrdovtywd35lx3iqbc5dyh367nrdh4jgfyd.onion` | <a href="https://images.ransomware.live/screenshots/6yofnrq7evqrtz3tzi3dkbrdovtywd35lx3iqbc5dyh367nrdh4jgfyd-onion.png" target=_blank>📸</a> | 
-| none | 🟢 | 24/09/2023 14:15 | `http://noko65rmtaiqyt2cw2h4jrxe3u56t2k7ov3nd22hoji4c5vnfib2i4yd.onion` | <a href="https://images.ransomware.live/screenshots/noko65rmtaiqyt2cw2h4jrxe3u56t2k7ov3nd22hoji4c5vnfib2i4yd-onion.png" target=_blank>📸</a> | 
-| Wall of Shame | 🟢 | 24/09/2023 14:15 | `http://nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid.onion` | <a href="https://images.ransomware.live/screenshots/nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid-onion.png" target=_blank>📸</a> | 
+| none | 🔴 | 08/10/2023 08:17 | `http://noko65rmtaiqyt2cw2h4jrxe3u56t2k7ov3nd22hoji4c5vnfib2i4yd.onion` | <a href="https://images.ransomware.live/screenshots/noko65rmtaiqyt2cw2h4jrxe3u56t2k7ov3nd22hoji4c5vnfib2i4yd-onion.png" target=_blank>📸</a> | 
+| Wall of Shame | 🔴 | 08/10/2023 08:17 | `http://nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid.onion` | <a href="https://images.ransomware.live/screenshots/nokoleakb76znymx443veg4n6fytx6spck6pc7nkr4dvfuygpub6jsid-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -70,4 +70,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

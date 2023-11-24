@@ -12,7 +12,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | 404 Not Found | 🔴 | 10/10/2022 17:13 | `http://4s4lnfeujzo67fy2jebz2dxskez2gsqj2jeb35m75ktufxensdicqxad.onion` | ❌ | 
-| MONTI - Leaks site | 🟢 | 24/09/2023 14:13 | `http://mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid.onion` | <a href="https://images.ransomware.live/screenshots/mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid-onion.png" target=_blank>📸</a> | 
+| MONTI - Leaks site | 🟢 | 24/11/2023 12:43 | `http://mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid.onion` | <a href="https://images.ransomware.live/screenshots/mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -25,10 +25,21 @@
 
 ### Victims
 
-> 29 victims found
+> 39 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Magsaysay Maritime - Press Release`](https://google.com/search?q=Magsaysay+Maritime+-+Press+Release) | 09/11/2023 | Magsaysay People Resources is one of the world's leading human resource companies. Through its subsidiaries Magsaysay Global Services for land-based placement and Magsaysay Maritime Corporation for sea-based placement | <a href="https://images.ransomware.live/screenshots/posts/8c535f2c7dc6b966b1f6895ccf4e0a11.png" target=_blank>📸</a> |
+| [`Rudolf Venture Chemical Inc - Press Release`](https://google.com/search?q=Rudolf+Venture+Chemical+Inc+-+Press+Release) | 09/11/2023 | We are RUDOLF, a global innovation leader for the textile, construction, coatings and car care industries. We support our customers with personal service and outstanding know-how. Our products maximize performance while minimizing environmental impact. | <a href="https://images.ransomware.live/screenshots/posts/bc1e229725cad798de3262cab1deb7ec.png" target=_blank>📸</a> |
+| [`University of Defence - Full Leak`](https://google.com/search?q=University+of+Defence+-+Full+Leak) | 23/10/2023 | The city of Brno was chosen as the location for the new engineering-oriented military college due to its long tradition of superior quality engineering education. | <a href="https://images.ransomware.live/screenshots/posts/72a21419d7d4d2eb86a63fc734e49da0.png" target=_blank>📸</a> |
+| [`Superline - Full Leak`](https://google.com/search?q=Superline+-+Full+Leak) | 19/10/2023 | Our utmost priorities are to bring the latest trends to our customers while providing each and every one with the quality care and service that they deserve. | <a href="https://images.ransomware.live/screenshots/posts/bb862f3d024afa349e7e278050f114ee.png" target=_blank>📸</a> |
+| [`Superline - Press Release`](https://google.com/search?q=Superline+-+Press+Release) | 09/10/2023 | Our utmost priorities are to bring the latest trends to our customers while providing each and every one with the quality care and service that they deserve. | <a href="https://images.ransomware.live/screenshots/posts/e3b5ac00c740b5ddba69dbf39ef67d62.png" target=_blank>📸</a> |
+| [`University Obrany - Part 2 (Tiny Leak)`](https://google.com/search?q=University+Obrany+-+Part+2+%28Tiny+Leak%29) | 07/10/2023 | story about scam negotiator and
+stupid top level of unob | <a href="https://images.ransomware.live/screenshots/posts/80cda618af72e228861f26ec2bdc0899.png" target=_blank>📸</a> |
+| [`For UNOB`](https://google.com/search?q=For+UNOB) | 06/10/2023 | story about scams | <a href="https://images.ransomware.live/screenshots/posts/a7816b9c0c16e33a7f435afbbcf4f186.png" target=_blank>📸</a> |
+| [`University of Defence - Part 1`](https://google.com/search?q=University+of+Defence+-+Part+1) | 03/10/2023 | The city of Brno was chosen as the location for the new engineering-oriented military college due to its long tradition of superior quality engineering education. | <a href="https://images.ransomware.live/screenshots/posts/8dcfd703039b5628d4f9d7f75e53336d.png" target=_blank>📸</a> |
+| [`Rainbow Travel Service - Press Release`](https://google.com/search?q=Rainbow+Travel+Service+-+Press+Release) | 01/10/2023 | Rainbow Travel is a full service agency specializing in upscale leisure, special interest travel, and cruises. | <a href="https://images.ransomware.live/screenshots/posts/d7a4625c74f40e0ae075ce3a3588f255.png" target=_blank>📸</a> |
+| [`Cascade Family Dental - Press Release`](https://google.com/search?q=Cascade+Family+Dental+-+Press+Release) | 01/10/2023 | Cascade Family Dental offers dental services for families in the Payson and Springville, Utah area. | <a href="https://images.ransomware.live/screenshots/posts/f71f6601be72c8ad4b65711e71417963.png" target=_blank>📸</a> |
 | [`Auckland University of Technology`](https://google.com/search?q=Auckland+University+of+Technology) | 22/09/2023 | Founded in 1895, Auckland University of Technology is an educational facility that offers certificates, undergraduates, and postgraduate diplomas in a variety of fields. | <a href="https://images.ransomware.live/screenshots/posts/34741174210b47df09351465c3abc22d.png" target=_blank>📸</a> |
 | [`University Obrany - Press Release`](https://google.com/search?q=University+Obrany+-+Press+Release) | 20/09/2023 | The city of Brno was chosen as the location for the new engineering-oriented military college due to its long tradition of superior quality engineering education. | <a href="https://images.ransomware.live/screenshots/posts/540ec72e6ed3294908cfd1fed9c3294b.png" target=_blank>📸</a> |
 | [`East Baking Press Release`](https://google.com/search?q=East+Baking+Press+Release) | 14/09/2023 | East Baking Company Inc. has the ability to manufacture any private label bakery program from bagels, breads, rolls, pancakes, and sweet goods to a very specific customized bakery products. | <a href="https://images.ransomware.live/screenshots/posts/be5f1900af5635a5037c8e7408d6f3aa.png" target=_blank>📸</a> |
@@ -61,4 +72,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

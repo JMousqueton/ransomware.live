@@ -5,11 +5,16 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| none | 🟢 | 24/09/2023 13:43 | `http://cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid.onion` | ❌ | 
+| none | 🟢 | 24/11/2023 12:10 | `http://cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid.onion` | <a href="https://images.ransomware.live/screenshots/cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
-* [📝 4 ransom notes](notes/cactus)
+* [📝 5 ransom notes](notes/cactus)
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/1424de5e-dd13-48c7-b0ab-becd5fbc5865) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -18,10 +23,26 @@
 
 ### Victims
 
-> 47 victims found
+> 62 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Verhelst`](https://google.com/search?q=Verhelst) | 21/11/2023 | From shell construction to recycling of construction waste. From asphalt production to sand mining. From asbestos removal to soil remediation. Verhelst Group is a total partner for professional construction projects. A construction group with a unique approach and extensive construction expertise. |   |
+| [`Petersen Health Care`](https://google.com/search?q=Petersen+Health+Care) | 21/11/2023 | It is the mission of each Petersen Health Care facility to be great community partners. All Petersen Health Care homes are encouraged to host community activities and participate in fundraisers for the good of the community and local organizations. Petersen Health Care is recognized as a leader in the industry for community participation. |   |
+| [`Paul Stuart`](https://google.com/search?q=Paul+Stuart) | 21/11/2023 | Paul Stuart has lasted the test of time being one of the only remaining haberdashers on Madison Avenue. We credit our continued success to the desire to stay true to our roots while innovating with the times. Renowned for expert craftsmanship, thoughtful design using materials and fabrics sourced from the finest mills around the world, Paul Stuart combines Savile Row, Old Hollywood and classic New York to create timeless American classics with contemporary sophistication. |   |
+| [`GEOCOM`](https://google.com/search?q=GEOCOM) | 06/11/2023 | GEOCOM Uruguay SA provides global solutions, with certified quality, applying state of the art IT technologies that are best suited to the demands and needs of its customers with the ongoing goal of exceeding their expectations. |   |
+| [`MultiMasters`](https://google.com/search?q=MultiMasters) | 06/11/2023 | The Multi Masters Group is a renowned and versatile company offering multiple services in a number of locations in Belgium. The Multi Masters Group is an evolution of the public com pany Cleaning Masters, which was founded in 1988 as a family cleaning business. Within a short period of time it grew into one of Belgium’s top 5 business support companies. In 2004, Cleaning Masters joined the Samsic Group, a European leader in the field of services. Since we are also part of AAFM, the leading European cooperation platform for business support services, we can provide customised solutions for our clients at a European level. |   |
+| [`UTI Group`](https://google.com/search?q=UTI+Group) | 06/11/2023 | For 26 years, UTI, one of the most important and innovative companies in Romania, has stood for excellence, technology, trust and a strong commitment to quality. Over the last years, UTI has created a domestic reputation of approaching projects that have a decisive contribution to increasing the quality and safety of life. The company’s vision to become a vital part of the people’s life is grounded on the extensive solutions portfolio. |   |
+| [`SCS SpA`](https://google.com/search?q=SCS+SpA) | 16/10/2023 | Today the Canavesana Servizi company manages hygiene services in 57 municipalities, dealing in particular with waste collection, separate waste collection and soil hygiene.
+The expansion of the user base has brought significant advantages in the rationalization of the service, encouraging greater collaboration between the participating municipalities. |   |
+| [`OmniVision Technologies`](https://google.com/search?q=OmniVision+Technologies) | 16/10/2023 | Since being founded in 1995 OMNIVISION has been at the leading-edge of technology, developing and delivering advanced digital imaging, analog, and touch & display solutions for multiple applications across several industries. As a global fabless semiconductor organization, our award-winning innovative technologies have enabled smoother human/machine interfacing solutions within the automotive, medical, security & surveillance, computing, mobile phone, and emerging technology spaces. |   |
+| [`The Hurley Group`](https://google.com/search?q=The+Hurley+Group) | 07/10/2023 | Based in New Haven, Connecticut, The Hurley Group is a real estate development and property management firm that specializes in properties throughout New Haven and Fairfield counties. |   |
+| [`Cornerstone Projects Group`](https://google.com/search?q=Cornerstone+Projects+Group) | 05/10/2023 | Cornerstone Projects Group offers commercial clients an unrivaled service and a commitment founded on the simple principle of stewardship: lead in the development, architecture and construction of real estate investments by serving the individual needs of each client. |   |
+| [`RICOR Global Limited`](https://google.com/search?q=RICOR+Global+Limited) | 05/10/2023 | Ricor Global Limited continues to evolve as a major international player in the automotive industry and beyond. Supplying a wide range of both OEM and Tier one customers, our expertise is in the supply of metal stampings, tube manipulation and assemblies throughout the vehicle structure. With seven facilities in the UK, Poland and Slovakia and an office and tooling facilities in China and supplying products globally, Ricor has an established international footprint which is well situated to support its customers on a worldwide basis. |   |
+| [`UTC Overseas`](https://google.com/search?q=UTC+Overseas) | 27/09/2023 | Utc Overseas Inc. provides freight forwarding services. The Company offers a variety of services including ocean and air freight, project logistics, trucking, cargo insurance, customs brokerage, and warehousing. | <a href="https://images.ransomware.live/screenshots/posts/2f16e1f3d81b5bb16a36c5b064c6a0f7.png" target=_blank>📸</a> |
+| [`Unitex Textile Rental Services`](https://google.com/search?q=Unitex+Textile+Rental+Services) | 27/09/2023 | For more than 100 years, our family-run business has been leading the way in the medical uniform and linen rental industry. Today, we’re the largest family-owned healthcare service provider in the country. Because our family is involved in every inch of the business, our unflagging attention to detail results in a clear advantage for you and your business. Now in our 4th generation, we continue to provide our clients the kind of quality, cleanliness and service that has become the unrivaled standard. We don’t make idle promises; we don’t cut corners; we always strive to exceed expectations. That is, simply, the way this family business has always been run. And because we closely watch and refine and improve every inch of our business every day, when it comes to laundry, linen and uniforms, Unitex Healthcare Laundry Services gives you a competitive advantage. | <a href="https://images.ransomware.live/screenshots/posts/ca8288f4dfe594615ace3b473be3b1d6.png" target=_blank>📸</a> |
+| [`Orthum Bau`](https://google.com/search?q=Orthum+Bau) | 26/09/2023 | Our vision is to be not just a construction company, but a dynamic, powerful and innovative force in the construction industry, built on a solid foundation for your success. Our construction projects are much more than just buildings – they are living, breathing creations that are brought to life with the highest construction quality, flexibility and timeliness. Every day we guarantee smooth construction progress and strive to make each project better than the last. | <a href="https://images.ransomware.live/screenshots/posts/64e41a22fabf67bbe7131eb51933d740.png" target=_blank>📸</a> |
+| [`Astro Lighting`](https://google.com/search?q=Astro+Lighting) | 26/09/2023 | Astro specialises predominantly in wall and ceiling lighting, and has achieved a wide reputation as the leading supplier of bathroom lighting in the UK. | <a href="https://images.ransomware.live/screenshots/posts/c0790a4e993812eaac5174dc57986456.png" target=_blank>📸</a> |
 | [`DM Civil`](https://google.com/search?q=DM+Civil) | 21/09/2023 | DM Civil provides tailored, sustainable civil contracting solutions to many of Australia’s leading companies. A privately owned company established in 1976 by Reg Toohey, Tony Spanjers and his late brother Eric Spanjers. Since then, we have grown to be one of Western Australia’s most trusted and respected civil contractors. We offer a diverse range of civil construction capabilities: • Water Infrastructure • Pipelines • Land Development • Trenchless technology • Mining Infrastructure • Trencher Hire & Services We consistently align ourselves with industry best practice and guarantee the delivery of client focussed construction solutions. |   |
 | [`Bacon Universal`](https://google.com/search?q=Bacon+Universal) | 20/09/2023 | Bacon Universal Company, Inc. has proudly served Hawaii's Construction Industry for more than 60 years. | <a href="https://images.ransomware.live/screenshots/posts/608238e5d2c551a99806d873b8922b03.png" target=_blank>📸</a> |
 | [`Spuncast`](https://google.com/search?q=Spuncast) | 20/09/2023 | Spuncast, Inc was founded in 1976 and is headquartered in Watertown, Wisconsin. The company provides centrifugal castings and offers stainless steel tubing products, such as hydraulic cylinders. | <a href="https://images.ransomware.live/screenshots/posts/b96db0c497ee5ce65b98784d2e5032e9.png" target=_blank>📸</a> |
@@ -72,4 +93,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

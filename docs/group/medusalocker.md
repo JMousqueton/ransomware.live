@@ -31,7 +31,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://qd7pcafncosqfqu3ha6fcx4h6sr7tzwagzpcdcnytiw3b6varaeqv5yd.onion` | <a href="https://images.ransomware.live/screenshots/qd7pcafncosqfqu3ha6fcx4h6sr7tzwagzpcdcnytiw3b6varaeqv5yd-onion.png" target=_blank>📸</a> | 
-| Ransomware blog – We will not give ourselves a nam | 🟢 | 24/09/2023 14:11 | `http://z6wkgghtoawog5noty5nxulmmt2zs7c3yvwr22v4czbffdoly2kl4uad.onion` | <a href="https://images.ransomware.live/screenshots/z6wkgghtoawog5noty5nxulmmt2zs7c3yvwr22v4czbffdoly2kl4uad-onion.png" target=_blank>📸</a> | 
+| Ransomware blog – We will not give ourselves a nam | 🔴 | 21/11/2023 08:10 | `http://z6wkgghtoawog5noty5nxulmmt2zs7c3yvwr22v4czbffdoly2kl4uad.onion` | <a href="https://images.ransomware.live/screenshots/z6wkgghtoawog5noty5nxulmmt2zs7c3yvwr22v4czbffdoly2kl4uad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -48,10 +48,13 @@
 
 ### Victims
 
-> 34 victims found
+> 37 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`wellons.org`](https://google.com/search?q=wellons.org) | 23/10/2023 | Descriptionemployee information – agreement – customer email(.xls)- pst files 15+GB all outlook message 2006-2023 year Price: 55000$ | <a href="https://images.ransomware.live/screenshots/posts/b4ede9c7eb715fa1f48b33cc7129aa8c.png" target=_blank>📸</a> |
+| [`Ada-Borup-West School`](https://google.com/search?q=Ada-Borup-West+School) | 23/10/2023 | Descriptionemployee information – student information – all contracts Price: 35000$ | <a href="https://images.ransomware.live/screenshots/posts/79a7991c6ba8c89bbc0a677fc8ca8865.png" target=_blank>📸</a> |
+| [`Confidential files`](https://google.com/search?q=Confidential+files) | 02/10/2023 | A large number of documents of large companies are available for sale Revenue-$10-$70kk Financial documents, client cases, passports, tax evasion and many other documents are in closed sale, please contact qtox to coordinate the sale | <a href="https://images.ransomware.live/screenshots/posts/53f3096e9fdfa8540faa4974dcb0c02d.png" target=_blank>📸</a> |
 | [`Protected: INSULCANA CONTRACTING LTD`](https://google.com/search?q=Protected%3A+INSULCANA+CONTRACTING+LTD) | 27/07/2023 | There is no excerpt because this is a protected post. | <a href="https://images.ransomware.live/screenshots/posts/8f28a261d458ace33b560c116aa9105b.png" target=_blank>📸</a> |
 | [`INSULCANA CONTRACTING LTD`](https://google.com/search?q=INSULCANA+CONTRACTING+LTD) | 27/07/2023 | Descriptionemployee information – agreement – customer email(.xls)- passport all canada and other documents Price: 35000$ | <a href="https://images.ransomware.live/screenshots/posts/8f28a261d458ace33b560c116aa9105b.png" target=_blank>📸</a> |
 | [`Protected: Hidden name`](https://google.com/search?q=Protected%3A+Hidden+name) | 17/07/2023 | There is no excerpt because this is a protected post. | <a href="https://images.ransomware.live/screenshots/posts/f2e6730a557ae6b92f7a124ea71fdeaa.png" target=_blank>📸</a> |
@@ -89,4 +92,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

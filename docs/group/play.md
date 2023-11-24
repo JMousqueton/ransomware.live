@@ -30,12 +30,17 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| PLAY NEWS | 🟢 | 24/09/2023 14:16 | `http://mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd.onion` | <a href="https://images.ransomware.live/screenshots/mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd-onion.png" target=_blank>📸</a> | 
-| PLAY NEWS | 🟢 | 24/09/2023 14:16 | `http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion` | <a href="https://images.ransomware.live/screenshots/k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd-onion.png" target=_blank>📸</a> | 
+| PLAY NEWS | 🟢 | 24/11/2023 12:45 | `http://mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd.onion` | <a href="https://images.ransomware.live/screenshots/mbrlkbtq5jonaqkurjwmxftytyn2ethqvbxfu4rgjbkkknndqwae6byd-onion.png" target=_blank>📸</a> | 
+| PLAY NEWS | 🟢 | 24/11/2023 12:46 | `http://k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd.onion` | <a href="https://images.ransomware.live/screenshots/k7kg3jqxang3wh7hnmaiokchk7qoebupfgoik6rha6mjpzwupwtj25yd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
 * [📝 2 ransom notes](notes/play)
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/467ddc55-3706-4bcc-ab33-04a1298631d5) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -44,10 +49,94 @@
 
 ### Victims
 
-> 217 victims found
+> 301 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`McHale Landscape Design`](https://www.mchalelandscape.com) | 22/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/55d48f9b0acc2109da76d20a5ee4035e.png" target=_blank>📸</a> |
+| [`The DMC`](https://www.dmc.com) | 18/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/7aad87adecc5fbd5cebb4f37680860b9.png" target=_blank>📸</a> |
+| [`PIKE Technologies`](https://www.piketech.com) | 14/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/1791718226b28356e6fd801a74863099.png" target=_blank>📸</a> |
+| [`Proforma Albrecht`](https://www.albrechtco.com) | 14/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/edb240fe24dfc96643b15ad5fb993857.png" target=_blank>📸</a> |
+| [`Fgs`](https://www.fgs.com.au) | 14/11/2023 | Australia | <a href="https://images.ransomware.live/screenshots/posts/64e34e51d4c02a4e7aeb1ad0c4888873.png" target=_blank>📸</a> |
+| [`Trademark Property`](https://www.trademarkproperty.com) | 14/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/66b14d00ec71a5f75fb211ef882f2ecb.png" target=_blank>📸</a> |
+| [`Nomot`](https://www.nomot.nl) | 14/11/2023 | Netherlands | <a href="https://images.ransomware.live/screenshots/posts/779ba49e412b31ab4746c056dd0432d1.png" target=_blank>📸</a> |
+| [`Global Technologies Racing Ltd`](https://www.gtrcomposites.com) | 14/11/2023 | United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/433ba23c206479b22d30ec4f4236be07.png" target=_blank>📸</a> |
+| [`Thompson Candy`](https://www.thompsonchocolate.com) | 14/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/7c93d344b128552a6203876c800878d8.png" target=_blank>📸</a> |
+| [`Road Scholar Transport`](https://www.roadscholar.com) | 14/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/1e90503065c4e8d80304e8474da2ac98.png" target=_blank>📸</a> |
+| [`KaDeWe`](https://www.kadewe.de) | 14/11/2023 | Germany | <a href="https://images.ransomware.live/screenshots/posts/bbab3a0c2b7419808896800baef29c39.png" target=_blank>📸</a> |
+| [`Wyatt Detention Center`](https://www.wyattdetention.com) | 14/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/2666d511ce3681aad1ff02607a1dd8aa.png" target=_blank>📸</a> |
+| [`Guntert & Zimmerman`](https://www.guntert.com) | 14/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/5e9169bea352da7f1ecb10793625019e.png" target=_blank>📸</a> |
+| [`ConSpare`](https://www.conspare.com) | 14/11/2023 | United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/699dd0f0746e820a81561576bd890f1d.png" target=_blank>📸</a> |
+| [`Identification Products`](https://www.idproducts.com) | 08/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/7f50a1b227964e9c617255e357be569e.png" target=_blank>📸</a> |
+| [`M.R. Williams`](https://www.mrwilliams.com) | 08/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/db0c60a4a6def4cbcf52c9bdd09d7111.png" target=_blank>📸</a> |
+| [`DESIGNA Verkehrsleittechnik`](https://www.designa.com) | 08/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/de6619dea16d8a7eb09aba1640f3fef0.png" target=_blank>📸</a> |
+| [`The Supply Room Companies & Citron WorkSpaces`](https://www.thesupplyroom.com%20www.sourceot.com) | 08/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/45b00355c70abe668c1f13ea1d8acb24.png" target=_blank>📸</a> |
+| [`Ackerman-Estvold`](https://www.ackerman-estvold.com) | 08/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/8ca549c23ea7329aa1d020fae76c8834.png" target=_blank>📸</a> |
+| [`Meindl`](https://www.meindl.de) | 08/11/2023 | Germany | <a href="https://images.ransomware.live/screenshots/posts/dbd7fe847266254d418f061ef7750eb1.png" target=_blank>📸</a> |
+| [`Conditioned Air`](https://www.conditionedair.com) | 08/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/a6a2fee6282ee0150f8bf5f23e93a9f4.png" target=_blank>📸</a> |
+| [`Inclinator`](https://www.inclinator.com) | 08/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/c387a93d3831abf399f47ee636dd57d1.png" target=_blank>📸</a> |
+| [`Crown Supply Co`](https://www.crownsupply.com) | 08/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/9eb432e515b98ece6b244b36c004df86.png" target=_blank>📸</a> |
+| [`JS Hovnanian & Sons`](https://www.hovhomes.com) | 08/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/b8910ef2a58adc9ac5117a518807e025.png" target=_blank>📸</a> |
+| [`GeoPoint Surveying`](https://www.geopointsurvey.com) | 03/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/be28115ba0579ffd8ff7a6852ace7779.png" target=_blank>📸</a> |
+| [`JDRM Engineering`](https://www.jdrm.com) | 02/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/a564f2e72146f042367ba9c154d60be9.png" target=_blank>📸</a> |
+| [`Craft-Maid`](https://www.craft-maid.com) | 02/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/ba5d068e9143f10f1b17f06ab55cdc6f.png" target=_blank>📸</a> |
+| [`Hilyard's`](https://www.hilyards.com) | 02/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/ec3dd99442bf1964c911a2a29ec7a54c.png" target=_blank>📸</a> |
+| [`North Dakota Grain Inspection Services`](https://www.graininspection.com) | 02/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/9f3f5f27793b8a5e6f7638abc659e912.png" target=_blank>📸</a> |
+| [`Gsp Components`](https://www.gspcomponents.com) | 02/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/ed89705395c9dc33e1bed1adbe89a3fa.png" target=_blank>📸</a> |
+| [`Ricardo`](https://www.ricardo.com) | 02/11/2023 | United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/3c21fb0631f60bb69d25205d87b98588.png" target=_blank>📸</a> |
+| [`Bry-Air`](https://www.bry-air.com) | 01/11/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/7761080d247aa12b7d6131149ae5853b.png" target=_blank>📸</a> |
+| [`G??P???? S????y???`](https://www.g??p????s?????.com) | 31/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/be28115ba0579ffd8ff7a6852ace7779.png" target=_blank>📸</a> |
+| [`Brodart`](https://www.brodart.com) | 30/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/26428a5e303f04852c5ea9068d7b5fad.png" target=_blank>📸</a> |
+| [`Dallas County`](https://www.dallascounty.org) | 28/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/054b44036f170c0a37ba57c7e17fd5e6.png" target=_blank>📸</a> |
+| [`Alpha Mortgage`](https://www.alphamortgage.com) | 28/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/2e87b674771ca00a299ba50ff1431ada.png" target=_blank>📸</a> |
+| [`Encompass Elements`](https://www.encompasselements.com) | 28/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/89f33c15131ffe082cd2639a27ed6455.png" target=_blank>📸</a> |
+| [`CK Associates`](https://www.c-ka.com) | 28/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/9b6e970debe32b7e4017441f14741814.png" target=_blank>📸</a> |
+| [`Yingling Aviation`](https://www.yinglingaviation.com) | 28/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/295dbb83672ccbeddd731e34c531e917.png" target=_blank>📸</a> |
+| [`Sam Tell Companies`](https://www.samtell.com) | 28/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/6a6f086792f13b31ca7354a8c2cb8cdc.png" target=_blank>📸</a> |
+| [`Waterstone Faucets`](https://www.waterstoneco.com) | 28/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/f890d0d4f4a8677154c512032b0da27f.png" target=_blank>📸</a> |
+| [`Bush Refrigeration`](https://www.bushrefrigeration.com) | 28/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/a7e1cc1e2ec304b22a79ce8c3faf8cc4.png" target=_blank>📸</a> |
+| [`Drug Emporium`](https://www.drugemporiuminc.com) | 28/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/abd016f89ee4fb2b5c9ef10c437e80ea.png" target=_blank>📸</a> |
+| [`Online Development`](https://www.oldi.com) | 28/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/111cf672c657574a865bba36f05d178f.png" target=_blank>📸</a> |
+| [`KDI Office Technology`](https://www.kdi-inc.com) | 28/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/8ef6d878ebe5d8dbd6330a7b2a30faf7.png" target=_blank>📸</a> |
+| [`Het Veer`](https://www.het-veer.be) | 28/10/2023 | Belgium | <a href="https://images.ransomware.live/screenshots/posts/c95ee5038f86836246ea65b512f95c25.png" target=_blank>📸</a> |
+| [`Williamson Foodservice`](https://www.williamsonfoodservice.co.uk) | 20/10/2023 | United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/3eb07303133a5be07f2b2db03f2617ef.png" target=_blank>📸</a> |
+| [`Epaccsys`](https://www.epaccsys.com) | 20/10/2023 | United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/c5ec55042475207f64142222c668f6cc.png" target=_blank>📸</a> |
+| [`Tru-val Electric`](https://www.tru-val.com) | 20/10/2023 | New Jersey, United States | <a href="https://images.ransomware.live/screenshots/posts/3f12d307ca9de78a35c26a2fabb0d3de.png" target=_blank>📸</a> |
+| [`Bridgeport Fittings`](https://www.bptfittings.com) | 20/10/2023 | Connecticut, United States | <a href="https://images.ransomware.live/screenshots/posts/91203354110d98a0fbc365987ce77c77.png" target=_blank>📸</a> |
+| [`Kobi Karp Architecture and Interior Design`](https://www.kobikarp.com) | 20/10/2023 | Florida, United States | <a href="https://images.ransomware.live/screenshots/posts/f75c27ab34d6cdae41bf8b405f37a083.png" target=_blank>📸</a> |
+| [`RADISE`](https://www.radise.com) | 20/10/2023 | Florida, United States | <a href="https://images.ransomware.live/screenshots/posts/3c365deec4192081663977b3230f861a.png" target=_blank>📸</a> |
+| [`Polar Tech Industries`](https://www.polar-tech.com) | 20/10/2023 | Illinois, United States | <a href="https://images.ransomware.live/screenshots/posts/27b5425cf84f5b6ff18765f9c7ce3f00.png" target=_blank>📸</a> |
+| [`Ipswich Bay Glass`](https://www.ibglass.com) | 20/10/2023 | Massachusetts, United States | <a href="https://images.ransomware.live/screenshots/posts/122d235e3f673560177d45a8aa3256d9.png" target=_blank>📸</a> |
+| [`Hygieneering`](https://www.hygieneering.com) | 20/10/2023 | Illinois, United States | <a href="https://images.ransomware.live/screenshots/posts/a839f47dd80be219d834c0bf65c9e302.png" target=_blank>📸</a> |
+| [`The Fountain Group`](https://www.thefountaingroup.com) | 20/10/2023 | Florida, United State | <a href="https://images.ransomware.live/screenshots/posts/49602030aa273efd29e1b148bf8878d3.png" target=_blank>📸</a> |
+| [`Venture Plastics`](https://www.ventureplastics.com) | 20/10/2023 | Ohio, United States | <a href="https://images.ransomware.live/screenshots/posts/cb4336591c5ce6d7297f52573174b29e.png" target=_blank>📸</a> |
+| [`Milk Source`](https://www.milksource.com) | 20/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/dab361c8a0500b7071449bb40ef597df.png" target=_blank>📸</a> |
+| [`Laiho Group`](https://www.laihogroup.fi) | 20/10/2023 | Finland | <a href="https://images.ransomware.live/screenshots/posts/6664862d728f79267465de36560cee21.png" target=_blank>📸</a> |
+| [`Associated Wholesale Grocers`](https://www.awginc.com) | 19/10/2023 | United States | <a href="https://images.ransomware.live/screenshots/posts/0f2b667ed9d4e7beaa9101c800d8cf80.png" target=_blank>📸</a> |
+| [`Hughes Gill Cochrane Tinetti`](https://www.hughes-gill.com) | 10/10/2023 | California, United States | <a href="https://images.ransomware.live/screenshots/posts/7d41db07ee9a48c65b436e938a930f6d.png" target=_blank>📸</a> |
+| [`Saltire Energy`](https://www.saltire-energy.com) | 09/10/2023 | Singapore | <a href="https://images.ransomware.live/screenshots/posts/de8be7967db3c5811df7c34ba42920b9.png" target=_blank>📸</a> |
+| [`Starr Finley`](https://www.starrfinley.com) | 09/10/2023 | California, United States | <a href="https://images.ransomware.live/screenshots/posts/a2a9439952bf2f39f2655bfcf8ddabd8.png" target=_blank>📸</a> |
+| [`WCM Europe`](https://www.wcm.com) | 09/10/2023 | Essex, United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/57406fe2d97ff2e64bec812d6577edee.png" target=_blank>📸</a> |
+| [`NachtExpress Austria GmbH`](https://www.nox-nachtexpress.at) | 09/10/2023 | Lower Austria, Austria | <a href="https://images.ransomware.live/screenshots/posts/db50d48488bddeaa4a1e891c963bb02f.png" target=_blank>📸</a> |
+| [`Centek industries`](https://www.centekindustries.com) | 09/10/2023 | Georgia, United States | <a href="https://images.ransomware.live/screenshots/posts/516094ed7dca040faf9b70505f053a31.png" target=_blank>📸</a> |
+| [`M??? T??????`](https://www.m??????????s.org) | 09/10/2023 | Missouri, United States | <a href="https://images.ransomware.live/screenshots/posts/52af0144476d2790a3e3e920033f46b2.png" target=_blank>📸</a> |
+| [`Metro Transit`](https://www.metrostlouis.org) | 09/10/2023 | Missouri, United States | <a href="https://images.ransomware.live/screenshots/posts/52af0144476d2790a3e3e920033f46b2.png" target=_blank>📸</a> |
+| [`Roof Management`](https://www.roof-management.com) | 04/10/2023 | Ohio, United States | <a href="https://images.ransomware.live/screenshots/posts/74002c78079bc32c75b564e6d00f2075.png" target=_blank>📸</a> |
+| [`Security Instrument`](https://www.securityinstrument.com) | 04/10/2023 | Delaware, United States | <a href="https://images.ransomware.live/screenshots/posts/5d9e295f7be2b608e0a83773330c7428.png" target=_blank>📸</a> |
+| [`Filtration Control`](https://www.filtrationcontrol.com) | 04/10/2023 | United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/3b04c1e956344e56e7d09fcf7a95eb39.png" target=_blank>📸</a> |
+| [`Cinepolis USA`](https://www.cinepolisusa.com) | 04/10/2023 | Texas, United States | <a href="https://images.ransomware.live/screenshots/posts/82d32164f0157d36de5ccdce72a2eced.png" target=_blank>📸</a> |
+| [`CHARMANT Group`](https://www.charmant.com) | 04/10/2023 | New Jersey, 07950, United States | <a href="https://images.ransomware.live/screenshots/posts/8c2085666076e20b46ca7f9ac4ae183d.png" target=_blank>📸</a> |
+| [`Stavanger Municipality`](https://stavanger.kommune.no) | 04/10/2023 | Norway | <a href="https://images.ransomware.live/screenshots/posts/c3f2bef547dbb1a5126c48ef4beff5ef.png" target=_blank>📸</a> |
+| [`Jacobson`](https://www.jacobsoncompany.com) | 28/09/2023 | New Jersey, United States | <a href="https://images.ransomware.live/screenshots/posts/e95fdf89aa6565530adfd8ac9068b4f3.png" target=_blank>📸</a> |
+| [`Robuck Homes`](https://www.robuckhomes.com) | 28/09/2023 | North Carolina, United States | <a href="https://images.ransomware.live/screenshots/posts/a6520810dd29ec6148ad6ecf8181b7f9.png" target=_blank>📸</a> |
+| [`Webb Landscape`](https://www.webbland.com) | 28/09/2023 | Idaho, United States | <a href="https://images.ransomware.live/screenshots/posts/a9f545e7ba979e3ebcfa6f2179e001c1.png" target=_blank>📸</a> |
+| [`Amanzi Marble & Granite`](https://www.amanzigranite.com) | 28/09/2023 | North Carolina, United States | <a href="https://images.ransomware.live/screenshots/posts/472f1556619b60acfa99c20ba702443b.png" target=_blank>📸</a> |
+| [`BAMO`](https://www.bamo.com) | 28/09/2023 | California, United States | <a href="https://images.ransomware.live/screenshots/posts/38adda6bfba4ec3ca9af2a4c61a08c8d.png" target=_blank>📸</a> |
+| [`Van Eck Transport`](https://www.vanecktransport.nl) | 28/09/2023 | Utrecht, Netherlands | <a href="https://images.ransomware.live/screenshots/posts/a827e2b27103f38e433d0ded77383ee7.png" target=_blank>📸</a> |
+| [`Terralogic`](https://www.terralogic.com) | 28/09/2023 | Virginia, United States | <a href="https://images.ransomware.live/screenshots/posts/4d6975f1f4e7124cdd4dc34b58bcce68.png" target=_blank>📸</a> |
+| [`Kessler Collins`](https://www.kesslercollins.com) | 28/09/2023 | Texas, United States | <a href="https://images.ransomware.live/screenshots/posts/91106a7c549a350c9eb7f9e77c4c921e.png" target=_blank>📸</a> |
+| [`Plumbase`](https://www.plumbase.co.uk) | 28/09/2023 | United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/bdd940c65722ec58cb92412d08113361.png" target=_blank>📸</a> |
+| [`Wexas`](https://www.wexas.com) | 28/09/2023 | United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/79f89e40a96634c19461504b8946c4b5.png" target=_blank>📸</a> |
 | [`First Line`](https://www.firstline.co.uk) | 18/09/2023 | Oxfordshire, United Kingdom | <a href="https://images.ransomware.live/screenshots/posts/7dd514e29a5603a5bd8c7265fb485dae.png" target=_blank>📸</a> |
 | [`Rea Magnet Wire`](https://www.reawire.com) | 18/09/2023 | Indiana, United States | <a href="https://images.ransomware.live/screenshots/posts/95fa3518d24d835a3baf1487c34eb451.png" target=_blank>📸</a> |
 | [`RTA`](https://www.rtafleet.com) | 18/09/2023 | Arizona, United States | <a href="https://images.ransomware.live/screenshots/posts/0c13e51af5b90387e5a1c56b72d83f3c.png" target=_blank>📸</a> |
@@ -268,4 +357,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

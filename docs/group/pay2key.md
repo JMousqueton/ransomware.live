@@ -23,6 +23,11 @@
 |---|---|---|---|---|
 | Pay2Key Leak Directory! | 🔴 | 15/03/2022 21:12 | `http://pay2key2zkg7arp3kv3cuugdaqwuesifnbofun4j6yjdw5ry7zw2asid.onion` | ❌ | 
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/software/9aa21e50-726e-4002-8b7b-75697a03eb2b-Pay2Key) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Victims
 
 > 6 victims found
@@ -38,4 +43,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

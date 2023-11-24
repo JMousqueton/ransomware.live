@@ -9,7 +9,11 @@ source .env
 ## Scrape all ransomware group website 
 python3 ransomwatch.py scrape 
 ## Delete file less than 1k 
-find ./source/  -maxdepth 1 -type f -size -1024c -exec rm {} \;
+#find ./source/  -maxdepth 1 -type f -size -1024c -exec rm {} \;
+## bypass error on ransomed
+service tor reload
+#python3 scrapegang.py ransomed 
+## Reload service tor 
 service tor reload
 ## Parse HTML file to find new victim
 python3 ransomwatch.py parse 
@@ -53,3 +57,4 @@ python3 addcrypto.py
 python3 ransom_crypto.py
 # Update negotiation chat
 negotiation-update.sh
+python3 generateNegoRSS.py  

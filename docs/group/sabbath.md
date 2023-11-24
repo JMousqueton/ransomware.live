@@ -11,6 +11,11 @@
 | BLOG | 🔴 | 13/11/2021 03:45 | `http://54bb47h5qu4k7l4d7v5ix3i6ak6elysn3net4by4ihmvrhu7cvbskoqd.onion` | ❌ | 
 | none | 🔴 | 13/04/2022 03:32 | `http://54bb47h.blog` | <a href="https://images.ransomware.live/screenshots/54bb47h-blog.png" target=_blank>📸</a> | 
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/2744f0b1-6d94-4db8-88f1-86788a0d7827) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-sabbath.png)
@@ -42,4 +47,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

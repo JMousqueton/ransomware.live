@@ -1,6 +1,47 @@
 # 🎚️ Changelog 
 ---
 
+## 2023-11-24 🐈 
+
+- [New] Add [Meow](group/meow.md) ransomware group with associated parser.
+- [New] Add [Madcat](group/madcat.md) ransomware group (Thanks to Valéry for the link)
+- [New] Add a new [feed](https://www.ransomware.live/negotiations.xml) for negociations 
+
+## 2023-11-20
+
+- [New] Add country field for victims. This field will be filled from the description by ChatGPT. 
+
+## 2023-11-15
+
+- [New] Add new url for [8base](group/8base.md) ransomware group
+
+
+## 2023-11-02 🤩
+
+- Huge thanks again to Erez Dasa for [sponsoring `Ransomware.live`](https://www.buymeacoffee.com/ransomwarelive/) with [buy me a coffee](https://www.buymeacoffee.com/ransomwarelive/).
+
+
+## 2023-10-20
+
+- [New] Add [Hunters](group/hunters.md) ransomware group with associated parser.
+
+## 2023-10-18
+
+- [New] For each Ransomware group, when available, there is a link to TTPs (Tactics, Techniques, and Procedures) provided by [Tidal Cyber](https://www.tidalcyber.com/)
+
+## 2023-10-01
+
+- [FIX] Correct a bug in [Trigona](group/trigona.md) parser.
+
+## 2023-09-29
+
+- [New] Add [LostTrust](group/losttrust.md) ransomware group with associated parser.
+
+## 2023-09-24 
+
+- [Fix] Correct a typo in [CiphBit](group/ciphbit.md) ransomware group and its associated parser.
+- [New] Make a new logo for `Ransomware.live`. 
+
 ## 2023-09-15 🤩
 
 - Thanks to Erez Dasa for [sponsoring `Ransomware.live`](https://www.buymeacoffee.com/ransomwarelive/) with [buy me a coffee](https://www.buymeacoffee.com/ransomwarelive/).

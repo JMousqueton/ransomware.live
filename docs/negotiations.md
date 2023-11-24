@@ -7,7 +7,7 @@ _by [Valéry Marchive](https://twitter.com/ValeryMarchive)_
 > `Valéry Marchive` works in the technology industry as a journalist. He is the editor-in-chief of [LeMagIT](https://www.lemagit.fr). He also comments and analyzes ransomware attacks on [social media](https://twitter.com/valerymarchive?lang=en).
  
 > [!TIP]
-> Some amount are expressed only with cryptocurrency. The price in USD is based on the cryptocurrency market at the time of the neogitiation.
+> Some amount are expressed only with cryptocurrency. The price in USD is based on the cryptocurrency market at the time of the negotiation.
  
 | Ransomware | Name | # Msg | Chat | Initial Ransom | Negotiated Ransom | Paid |
 |---|---|---|---|---|---|---|
@@ -31,6 +31,9 @@ _by [Valéry Marchive](https://twitter.com/ValeryMarchive)_
 | [avos](group/avos)  | 20210903  | 86 | <a href="/#/negotiation/avos/20210903.html"> 💬 </a> |  $150,000 | $85,000 ||
 | [babuk](group/babuk)  | 20210203  | 106 | <a href="/#/negotiation/babuk/20210203.html"> 💬 </a> |  $400,000 | $85,000 ||
 | [babuk](group/babuk)  | 20210428  | 44 | <a href="/#/negotiation/babuk/20210428.html"> 💬 </a> |  $1,000,000 | $500,000 ||
+| [blackbasta](group/blackbasta)  | 20221011  | 50 | <a href="/#/negotiation/blackbasta/20221011.html"> 💬 </a> |  $500,000 | $300,000 |💸|
+| [blackbasta](group/blackbasta)  | 20221229  | 50 | <a href="/#/negotiation/blackbasta/20221229.html"> 💬 </a> |  $700,000 | $500,000 |💸|
+| [blackbasta](group/blackbasta)  | 20230410  | 57 | <a href="/#/negotiation/blackbasta/20230410.html"> 💬 </a> |  $400,000 | $150,000 |💸|
 | [blackmatter](group/blackmatter)  | 20210829  | 44 | <a href="/#/negotiation/blackmatter/20210829.html"> 💬 </a> |  $5,000,000 | $1,5000,000 ||
 | [blackmatter](group/blackmatter)  | 20210907  | 77 | <a href="/#/negotiation/blackmatter/20210907.html"> 💬 </a> |  $15,000,000 | $13,500,000 ||
 | [conti](group/conti)  | 20201017  | 78 | <a href="/#/negotiation/conti/20201017.html"> 💬 </a> |  $867,874.20 | $244,589.10 ||
@@ -92,6 +95,7 @@ _by [Valéry Marchive](https://twitter.com/ValeryMarchive)_
 | [lockbit3.0](group/lockbit3)  | [`genusplc.com`](https://www.genusplc.com)  | 34 | <a href="/#/negotiation/lockbit3.0/genusplc_com.html"> 💬 </a> |  $5,000,000 | $3,300,000 ||
 | [lockbit3.0](group/lockbit3)  | [`gocontec.com`](https://www.gocontec.com)  | 52 | <a href="/#/negotiation/lockbit3.0/gocontec_com.html"> 💬 </a> |  $4,000,000 | $3,600,000 ||
 | [lockbit3.0](group/lockbit3)  | [`guardiananalytics.com`](https://www.guardiananalytics.com)  | 27 | <a href="/#/negotiation/lockbit3.0/guardiananalytics_com.html"> 💬 </a> |  $500,000 | N/A ||
+| [lockbit3.0](group/lockbit3)  | [`hgc.com.hk`](https://www.hgc.com.hk)  | 8 | <a href="/#/negotiation/lockbit3.0/hgc_com_hk.html"> 💬 </a> |  $19,000,000 | N/A ||
 | [lockbit3.0](group/lockbit3)  | [`kaycan.com`](https://www.kaycan.com)  | 94 | <a href="/#/negotiation/lockbit3.0/kaycan_com.html"> 💬 </a> |  $8,000,000 | $7,200,000 ||
 | [lockbit3.0](group/lockbit3)  | [`lapostemobile.fr`](https://www.lapostemobile.fr)  | 93 | <a href="/#/negotiation/lockbit3.0/lapostemobile_fr.html"> 💬 </a> |  $1,400,000 | $300,000 ||
 | [lockbit3.0](group/lockbit3)  | [`millennia.pro`](https://www.millennia.pro)  | 43 | <a href="/#/negotiation/lockbit3.0/millennia_pro.html"> 💬 </a> |  $300,000 | N/A ||
@@ -108,6 +112,7 @@ _by [Valéry Marchive](https://twitter.com/ValeryMarchive)_
 | [lockbit3.0](group/lockbit3)  | [`royalmailgroup.com`](https://www.royalmailgroup.com)  | 103 | <a href="/#/negotiation/lockbit3.0/royalmailgroup_com.html"> 💬 </a> |  $80,000,000 | N/A ||
 | [lockbit3.0](group/lockbit3)  | [`samyang.com`](https://www.samyang.com)  | 237 | <a href="/#/negotiation/lockbit3.0/samyang_com.html"> 💬 </a> |  $8,000,000 | $18,000,000 ||
 | [lockbit3.0](group/lockbit3)  | [`scohil.com`](https://www.scohil.com)  | 29 | <a href="/#/negotiation/lockbit3.0/scohil_com.html"> 💬 </a> |  $120,000 | N/A ||
+| [lockbit3.0](group/lockbit3)  | [`sirva.com`](https://www.sirva.com)  | 78 | <a href="/#/negotiation/lockbit3.0/sirva_com.html"> 💬 </a> |  $15,000,000 | N/A ||
 | [lockbit3.0](group/lockbit3)  | [`software-line.it`](https://www.software-line.it)  | 30 | <a href="/#/negotiation/lockbit3.0/software-line_it.html"> 💬 </a> |  $100,000 | N/A ||
 | [lockbit3.0](group/lockbit3)  | [`tapcocu.org`](https://www.tapcocu.org)  | 215 | <a href="/#/negotiation/lockbit3.0/tapcocu_org.html"> 💬 </a> |  $6,000,000 | $1,000,000 ||
 | [lockbit3.0](group/lockbit3)  | [`vitalityhp.net`](https://www.vitalityhp.net)  | 73 | <a href="/#/negotiation/lockbit3.0/vitalityhp_net.html"> 💬 </a> |  $1,000,000 | N/A ||
@@ -138,9 +143,9 @@ _by [Valéry Marchive](https://twitter.com/ValeryMarchive)_
 | [revil](group/revil)  | 20210708  | 28 | <a href="/#/negotiation/revil/20210708.html"> 💬 </a> |  $3.000,000 | $300,000 ||
 | [revil](group/revil)  | 20210709  | 1 | <a href="/#/negotiation/revil/20210709.html"> 💬 </a> |  $5,000,000 | N/A ||
 
-📈 126 negotiation chats
+📈 131 negotiation chats
  
 > 
 Source : [Github Casualtek/Ransomchats](https://github.com/Casualtek/Ransomchats/)
  
-Last update : _Sunday 24/09/2023 13.11 (UTC)_
+Last update : _Friday 24/11/2023 13.20 (UTC)_

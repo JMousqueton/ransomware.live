@@ -1,4 +1,3 @@
-
 """
 +------------------------------+------------------+----------+
 | Description | Published Date | Victim's Website | Post URL |
@@ -18,7 +17,6 @@ def remove_period_if_first_char(input_string):
     else:
         return input_string
 
-
 def main():
     for filename in os.listdir('source'):
         try:
@@ -36,8 +34,10 @@ def main():
                         title = title.replace('(Unpay-Full public)','')
                         title = title.replace('(Unpay)','')
                         title = title.replace('(Unpay-Partially public)','')
+                        title = title.replace('(Unpay-Start Leaking)','')
                         title = title.replace('\t','')
                         if len(title) > 0: 
+                            print('--->' +  title)
                             appender(title, 'ragroup', '','','',post_url)
                 file.close()
         except:

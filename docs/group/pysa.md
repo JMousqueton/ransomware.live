@@ -29,6 +29,11 @@
 |---|---|---|---|---|
 | Pysa's Partners | 🔴 | 22/02/2022 10:11 | `http://pysa2bitc5ldeyfak4seeruqymqs4sj5wt5qkcq7aoyg4h2acqieywad.onion` | ❌ | 
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/software/e0d5ecce-eca0-4f01-afcc-0c8e92323016-Pysa) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-pysa.png)
@@ -351,4 +356,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

@@ -16,7 +16,7 @@ from parse import appender
 
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('8base-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -34,6 +34,6 @@ def main():
                     description = div.find('div', class_='small opacity-50').text.strip()
                     appender(name, '8base', description.replace('\n',' '),"",published,link)
                 file.close()
-        #except:
-        #   errlog('8base : ' + 'parsing fail')
-        #   pass    
+        except:
+           errlog('8base : ' + 'parsing fail')
+           pass    

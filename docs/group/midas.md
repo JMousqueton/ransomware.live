@@ -15,6 +15,11 @@
 |---|---|---|---|---|
 | Info | 🔴 | 15/04/2022 00:21 | `http://midasbkic5eyfox4dhnijkzc7v7e4hpmsb2qgux7diqbpna4up4rtdad.onion` | ❌ | 
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/75cb6ebd-d45d-463c-a5b8-7997d0fa8691) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-midas.png)
@@ -73,4 +78,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

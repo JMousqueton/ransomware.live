@@ -11,8 +11,8 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Chat | 🟢 | 24/09/2023 13:56 | `http://omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead.onion` | <a href="https://images.ransomware.live/screenshots/omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead-onion.png" target=_blank>📸</a> | 
-| Magazine | 🟢 | 24/09/2023 13:57 | `http://3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd.onion` | <a href="https://images.ransomware.live/screenshots/3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd-onion.png" target=_blank>📸</a> | 
+| Chat | 🟢 | 24/11/2023 12:22 | `http://omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead.onion` | <a href="https://images.ransomware.live/screenshots/omx5iqrdbsoitf3q4xexrqw5r5tfw7vp3vl3li3lfo7saabxazshnead-onion.png" target=_blank>📸</a> | 
+| Magazine | 🟢 | 24/11/2023 12:23 | `http://3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd.onion` | <a href="https://images.ransomware.live/screenshots/3f7nxkjway3d223j27lyad7v5cgmyaifesycvmwq7i7cbs23lb6llryd-onion.png" target=_blank>📸</a> | 
 | none | 🔴 | 01/05/2021 00:00 | `http://karaleaks.com` | <a href="https://images.ransomware.live/screenshots/karaleaks-com.png" target=_blank>📸</a> | 
 
 
@@ -21,6 +21,11 @@
 
 ### Crypto wallets
 * 💰 <a href="/#/crypto/karakurt.md">Crypto wallet(s) available</a>
+
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/9743fafc-f8e4-4d9b-8382-2e68305e74ce) from [Tidal Cyber](https://www.tidalcyber.com/)
 
 
 ### Total Attacks Over Time
@@ -111,4 +116,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

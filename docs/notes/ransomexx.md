@@ -31,6 +31,21 @@ To get details about this accident download TOR browser and visit:
 http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/[snip]
 
 ```
+* **[!_WHY_FILES_ARE_ENCRYPTED_!.txt](https://ransomware.live/ransomware_notes/ransomexx/!_WHY_FILES_ARE_ENCRYPTED_!.txt)**
+
+```
+Hello!
+
+Your data was encrypted.
+Please donât try to modify or rename any of encrypted files, because it can result in serious data loss and decryption failure.
+
+Note that we've downloaded a lot of your files from [snip] and we are ready to publish it.
+Contact us ASAP to prevent it.
+
+Your personal link with full information regarding this accident (use Tor browser):
+http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/[snip]/
+
+```
 
 
 > [!TIP]> Ransomware notes are provided by [Zscaler ThreatLabz](https://github.com/threatlabz/ransomware_notes) under MIT License
@@ -39,5 +54,5 @@ http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion/[snip]
 
 
 
-Last update : _Thursday 14/09/2023 23.49 (UTC)_
+Last update : _Monday 20/11/2023 16.14 (UTC)_
 

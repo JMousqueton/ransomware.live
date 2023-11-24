@@ -8,8 +8,8 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Blog - Knight | 🟢 | 24/09/2023 13:48 | `http://nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad.onion` | <a href="https://images.ransomware.live/screenshots/nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad-onion.png" target=_blank>📸</a> | 
-| Blog - Knight | 🟢 | 24/09/2023 13:49 | `http://knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd.onion` | <a href="https://images.ransomware.live/screenshots/knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd-onion.png" target=_blank>📸</a> | 
+| Blog - Knight | 🔴 | 13/10/2023 15:19 | `http://nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad.onion` | <a href="https://images.ransomware.live/screenshots/nt3rrzq5hcyznvdkpslvqbbc2jqecqrinhi5jtwoae2x7psqtcb6dcad-onion.png" target=_blank>📸</a> | 
+| Please wait... | 🟢 | 24/11/2023 12:15 | `http://knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd.onion` | <a href="https://images.ransomware.live/screenshots/knight3xppu263m7g4ag3xlit2qxpryjwueobh7vjdc3zrscqlfu3pqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -32,4 +32,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

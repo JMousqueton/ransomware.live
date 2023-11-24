@@ -9,7 +9,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Database Shop | 🔴 | 09/05/2022 22:27 | `http://3slz4povugieoi3tw7sblxoowxhbzxeju427cffsst5fo2tizepwatid.onion` | ❌ | 
-| Stormous - Official Site | 🔴 | 24/09/2023 12:53 | `http://h3reihqb2y7woqdary2g3bmk3apgtxuyhx4j2ftovbhe3l5svev7bdyd.onion` | <a href="https://images.ransomware.live/screenshots/h3reihqb2y7woqdary2g3bmk3apgtxuyhx4j2ftovbhe3l5svev7bdyd-onion.png" target=_blank>📸</a> | 
+| Stormous _ official Site | 🔴 | 30/09/2023 21:58 | `http://h3reihqb2y7woqdary2g3bmk3apgtxuyhx4j2ftovbhe3l5svev7bdyd.onion` | <a href="https://images.ransomware.live/screenshots/h3reihqb2y7woqdary2g3bmk3apgtxuyhx4j2ftovbhe3l5svev7bdyd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -58,7 +58,7 @@
 | [`matrixtelecoms`](https://google.com/search?q=matrixtelecoms) | 30/03/2023 |  |   |
 | [`ieseco`](https://google.com/search?q=ieseco) | 30/03/2023 |  |   |
 | [`MELCO`](https://google.com/search?q=MELCO) | 30/03/2023 |  |   |
-| [`LINX`](https://www.linx.com.br) | 27/03/2023 | A company of the Stone Co group, Linx is a specialist in retail technology and leader in the management software market, with a 45.6% retail market share, as attested by the IDC. All of our expertise is focused on retailing for and for people, connecting the individual to the ease, intelligence and desired experience from the online to the offline world.  |   |
+| [`LINX`](https://www.linx.com.br) | 27/03/2023 | A company of the Stone Co group, Linx is a specialist in retail technology and leader in the management software market, with a 45.6% retail market share, as attested by the IDC. All of our expertise is focused on retailing for and for people, connecting the individual to the ease, intelligence and desired experience from the online to the offline world.  | <a href="https://images.ransomware.live/screenshots/posts/aee0e1280515aa92e7b269ad7b8a49f9.png" target=_blank>📸</a> |
 | [`IRCO`](https://www.irco.com/) | 27/03/2023 | Ingersoll Rand is a global market leader with a broad range of innovative and mission-critical air, fluid, energy and medical technologies, providing services and solutions to increase industrial productivity and efficiency. Since merging with Gardner Denver in early 2020, we have more than 300 years of combined experience and innovative expertise  | <a href="https://images.ransomware.live/screenshots/posts/cafc8497115784bd736a5d030cec0cd0.png" target=_blank>📸</a> |
 | [`ARROWAL`](https://arrowall.com) | 27/03/2023 | Arrowall Co. is curtainwall designer, manufacturer, and installer with over 30 years experience in the central Texas market. The company is selective about the amount and type of work it pursues and focuses on â€œGetting It Right in every step of the process from estimating to installation in as safe of a manner as possible. | <a href="https://images.ransomware.live/screenshots/posts/2553a4016ab4728639b14c2ee3003e76.png" target=_blank>📸</a> |
 | [`OKSGROUP`](https://www.oksgroup.com/) | 27/03/2023 | Delivering business and legal process outsourcing solutions to some of the worlds largest and most demanding organizations  | <a href="https://images.ransomware.live/screenshots/posts/a3d43ee3ac0bb9c91b0f54d7b77d8a45.png" target=_blank>📸</a> |
@@ -96,4 +96,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

@@ -8,7 +8,7 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Abyss-data | 🟢 | 24/09/2023 13:34 | `http://3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd.onion` | <a href="https://images.ransomware.live/screenshots/3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd-onion.png" target=_blank>📸</a> | 
+| Abyss-data | 🟢 | 24/11/2023 12:03 | `http://3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd.onion` | <a href="https://images.ransomware.live/screenshots/3ev4metjirohtdpshsqlkrqcmxq6zu3d7obrdhglpy5jpbr7whmlfgqd-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -17,10 +17,14 @@
 
 ### Victims
 
-> 23 victims found
+> 27 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`shawneemilling.com`](https://google.com/search?q=shawneemilling.com) | 11/11/2023 | Shawnee Mills 805Gb uncompressed data |   |
+| [`motordepot.co.uk`](https://google.com/search?q=motordepot.co.uk) | 11/11/2023 | Motor Depot 636Gb uncompressed data |   |
+| [`lathamcenters.org`](https://google.com/search?q=lathamcenters.org) | 05/11/2023 | lathamcenters.org 75Gb uncompressed data |   |
+| [`apexga.bank`](https://google.com/search?q=apexga.bank) | 26/10/2023 | apexga.bank 5 VMware  VM  from Production Servers |   |
 | [`njsba.com`](https://google.com/search?q=njsba.com) | 10/09/2023 | NJSBA , 529Gb uncompressed data |   |
 | [`www.northriverco.com`](https://google.com/search?q=www.northriverco.com) | 08/09/2023 | North River Co LLC, 303Gb uncompressed data |   |
 | [`www.lasaterandmartin.com`](https://google.com/search?q=www.lasaterandmartin.com) | 31/08/2023 | Lasater & Martin, P.C. Attorneys, 697Gb uncompressed data |   |
@@ -47,4 +51,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

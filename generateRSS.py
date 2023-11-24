@@ -112,3 +112,5 @@ rss_str = tostring(rss, encoding='unicode')
 with open('./docs/rss.xml', 'w') as f:
   f.write(rss_str)
 stdlog('RSS Feed : ' + 'generated')
+
+

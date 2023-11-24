@@ -40,6 +40,6 @@ for post in data:
 percentage_increase = ((count_2023 - count_2022) / count_2022) * 100
 
 # Print the counts and the percentage increase
-print("Number of post titles from January to \033[1m"+ current_month_name + "\033[0m " + str(previous_year)+":", count_2022)
-print("Number of post titles from January to \033[1m"+ current_month_name + "\033[0m " + str(current_year)+":", count_2023)
+print("Number of victims from January to \033[1m"+ current_month_name + "\033[0m " + str(previous_year)+":", count_2022)
+print("Number of victims from January to \033[1m"+ current_month_name + "\033[0m " + str(current_year)+":", count_2023)
 print("Percentage between 2022 and 2023: \033[1m{:.2f}%\033[0m".format(percentage_increase))

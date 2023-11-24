@@ -20,7 +20,11 @@ def main():
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
+                
+                # Find all div elements with class "card" (assuming there may be more companies)
                 companies = soup.find_all('div', class_='card')
+
+                # Iterate through each company
                 for company in companies:
                     try: 
                         victim = company.find('div', class_='card-header').text.strip()

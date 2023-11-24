@@ -11,7 +11,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | Arvin Club – آزادی برای اتصال | 🔴 | 01/08/2022 20:10 | `http://3kp6j22pz3zkv76yutctosa6djpj4yib2icvdqxucdaxxedumhqicpad.onion` | ❌ | 
-| Arvin - Blog | 🟢 | 24/09/2023 13:37 | `http://arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid.onion` | <a href="https://images.ransomware.live/screenshots/arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid-onion.png" target=_blank>📸</a> | 
+| Arvin - Blog | 🔴 | 06/11/2023 03:07 | `http://arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid.onion` | <a href="https://images.ransomware.live/screenshots/arvinc7prj6ln5wpd6yydfqulsyepoc7aowngpznbn3lrap2aib6teid-onion.png" target=_blank>📸</a> | 
 
 ### Total Attacks Over Time
 
@@ -20,10 +20,16 @@
 
 ### Victims
 
-> 32 victims found
+> 38 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Islamic Azad University Electronic Campus`](https://ec.iau.ir) | 15/10/2023 |  |   |
+| [`Jahesh Innovation`](https://jahesh.co) | 14/10/2023 |  |   |
+| [`Kimia Tadbir Kiyan`](https://ktkco.ir) | 13/10/2023 |  |   |
+| [`Islamic Azad University of Shiraz`](https://shiraz.iau.ir) | 08/10/2023 |  |   |
+| [`Pasouk biological company`](https://pasouk.ir) | 02/10/2023 |  |   |
+| [`Shirin Travel Agency`](http://anonissfireenterfdks2u53jqevumbu6hjm35ioorsa7eq5bsjlucad.onion/do.php?filename=bd413d1583d4b7dc9901121.rar) | 01/10/2023 |  |   |
 | [`Aban Tether & OK exchange`](https://abantether.com%20%20%20https://ok-ex.io) | 02/09/2023 |  |   |
 | [`sti company`](https://sticompany.co) | 23/08/2023 |  |   |
 | [`Sabalan Azmayesh`](https://www.sabalanmedical.ir) | 08/08/2023 |  |   |
@@ -59,4 +65,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

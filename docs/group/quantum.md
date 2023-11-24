@@ -5,11 +5,16 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Quantum Blog | 🟢 | 24/09/2023 14:18 | `http://quantum445bh3gzuyilxdzs5xdepf3b7lkcupswvkryf3n7hgzpxebid.onion` | <a href="https://images.ransomware.live/screenshots/quantum445bh3gzuyilxdzs5xdepf3b7lkcupswvkryf3n7hgzpxebid-onion.png" target=_blank>📸</a> | 
+| Quantum Blog | 🟢 | 24/11/2023 12:48 | `http://quantum445bh3gzuyilxdzs5xdepf3b7lkcupswvkryf3n7hgzpxebid.onion` | <a href="https://images.ransomware.live/screenshots/quantum445bh3gzuyilxdzs5xdepf3b7lkcupswvkryf3n7hgzpxebid-onion.png" target=_blank>📸</a> | 
 | Secure Chat | 🔴 | 29/08/2022 08:32 | `http://22rnyep2aa2exx3fdm26p4onwjfmhciodb55v5l3w4iny7e5bxpg3yad.onion` | ❌ | 
 
 ### Crypto wallets
 * 💰 <a href="/#/crypto/quantum.md">Crypto wallet(s) available</a>
+
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/64ccd83a-cc44-45b5-b3f8-cf66d5e248b9) from [Tidal Cyber](https://www.tidalcyber.com/)
 
 
 ### Total Attacks Over Time
@@ -94,4 +99,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

@@ -67,4 +67,4 @@ _`marketplace - not a ransomware group, previous clearnet marketo.cloud`_
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

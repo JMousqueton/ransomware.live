@@ -35,11 +35,16 @@
 | BlackByte BLOG | 🔴 | 28/03/2022 11:17 | `http://dlyo7r3n4qy5fzv4645nddjwarj7wjdd6wzckomcyc7akskkxp4glcad.onion` | ❌ | 
 | BlackByte BLOG | 🔴 | 24/04/2022 20:21 | `http://fl3xpz5bmgzxy4fmebhgsbycgnz24uosp3u4g33oiln627qq3gyw37ad.onion` | ❌ | 
 | BlackByte BLOG | 🔴 | 12/07/2022 20:09 | `http://ce6roic2ykdjunyzazsxmjpz5wsar4pflpoqzntyww5c2eskcp7dq4yd.onion` | ❌ | 
-| BB Auction | 🟢 | 24/09/2023 13:42 | `http://jbeg2dct2zhku6c2vwnpxtm2psnjo2xnqvvpoiiwr5hxnc6wrp3uhnad.onion` | <a href="https://images.ransomware.live/screenshots/jbeg2dct2zhku6c2vwnpxtm2psnjo2xnqvvpoiiwr5hxnc6wrp3uhnad-onion.png" target=_blank>📸</a> | 
+| BB Auction | 🔴 | 20/10/2023 21:14 | `http://jbeg2dct2zhku6c2vwnpxtm2psnjo2xnqvvpoiiwr5hxnc6wrp3uhnad.onion` | <a href="https://images.ransomware.live/screenshots/jbeg2dct2zhku6c2vwnpxtm2psnjo2xnqvvpoiiwr5hxnc6wrp3uhnad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
 * [📝 4 ransom notes](notes/blackbyte)
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/42cdd9d2-be61-49b5-8f7c-15fa8af77ff4) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -48,10 +53,11 @@
 
 ### Victims
 
-> 130 victims found
+> 131 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Meridian Cooperative`](https://www.meridian.coop/) | 04/10/2023 | Meridian Cooperative is the only enterprise solution that delivers flexible leading-edge software, services, and technology to utility providers across the country. With solutions ranging from consumer billing and finance to IT, GIS, advanced analytics, cybersecurity, and operations, our enterprise suite provides the tools utilities need to manage business from the office to the field efficiently and securely. |   |
 | [`Hoteles Xcaret`](https://www.xcaret.com/) | 18/09/2023 | Hoteles Xcaret offers the best lodging experiences in Riviera Maya. Our hotels have been designed to satisfy and exceed the demands of different kinds of travelers, from parents wishing to surprise their kids with the best family vacations, to private and sustainable experiences collectors who wish for an incredible journey as a couple. |   |
 | [`Alps Alpine`](https://www.alpsalpine.com/) | 11/09/2023 | Alps Alpine, a leading manufacturer of electronic components and automotive infotainment systems, has brought the world numerous “First 1” and “Number 1” products since its founding in 1948. The Alps Alpine Group currently operates 110 bases in 26 countries and regions, supplying roughly 40,000 different products and solutions to around 2,000 companies worldwide. In January 2019, Alps Electric Co., Ltd. and Alpine Electronics, Inc. integrated their businesses to embark on a new era as Alps Alpine Co., Ltd. Serving a diverse range of markets encompassing an automotive industry currently undergoing major transformation, the mobile and consumer electronics domains, through to energy, healthcare and industry markets, Alps Alpine will combine and build on core device technology established over many years in three areas – human-machine interfaces, SENSORING™ and connectivity – along with system design and software development capabilities to innovate value that brings comfort to and enriches the lives of people everywhere. |   |
 | [`Kirby Risk`](https://www.kirbyrisk.com/) | 09/09/2023 | Since 1926, Kirby Risk has remained committed to the concept of sacrificial service by going above and beyond what it takes to provide you with the right products and services at the right time, to the right place, at the right cost—working hard every day to MAKE IT HAPPEN!Today, Kirby Risk is still known by our customers as a dependable resource dedicated to solving their problems with the more than 40 locations throughout Indiana, Illinois, Ohio and Georgia. Our skilled and experienced team members are available around the clock to meet your electrical product and service needs. We represent over 2,000 manufacturers and carry more than 90,000 top-quality products. |   |
@@ -185,4 +191,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

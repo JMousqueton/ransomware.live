@@ -17,11 +17,12 @@ You can find all ransomware's victims in **json** format [here](https://data.ran
 
 ### External
 
-- [ransomwhe.re](https://ransomwhe.re/) for the crypto wallet information 
+- [ransomwhe.re](https://ransomwhe.re/) for the crypto wallet information. 
 - [Zscaler ThreatLabz](https://github.com/threatlabz/ransomware_notes) for the [ransomware notes](ransomnotes)
-- [Valéry Rieß-Marchive](https://twitter.com/ValeryMarchive) for the information about [cyberattacks](https://github.com/Casualtek/Cyberwatch/) and the [negotiation chats](https://github.com/Casualtek/Ransomchats)
-- [Malpedia](https://malpedia.caad.fkie.fraunhofer.de/) for the Ransomware description
-- [CERT Orange Cyberdefense](https://www.orangecyberdefense.com/) for the [Ransomware map](cartography)
+- [Valéry Rieß-Marchive](https://twitter.com/ValeryMarchive) for the information about [cyberattacks](https://github.com/Casualtek/Cyberwatch/) and the [negotiation chats](https://github.com/Casualtek/Ransomchats).
+- [Malpedia](https://malpedia.caad.fkie.fraunhofer.de/) for the Ransomware description.
+- [CERT Orange Cyberdefense](https://www.orangecyberdefense.com/) for the [Ransomware map](cartography).
+- [Tidal Cyber](https://www.tidalcyber.com/) for the TTPs.
 
 
 ## 👨🏼‍💼 About me 
@@ -47,6 +48,8 @@ You can contact me using the [following form](https://static.ransomware.live/con
 - [Josh Highet](https://github.com/joshhighet) for the original [ransomwatch](https://github.com/joshhighet/ransomwatch) project. 
 - [Ransomlook](https://github.com/RansomLook/Ransomlook) for ideas of new features included in [Ransomware.live](https://www.ransomware.live).
 - [Valéry Rieß-Marchive](https://twitter.com/ValeryMarchive) for ideas and his involvement in the cyber community.
+- [Scott Small](https://www.linkedin.com/in/scott-small-20ba0164/) from [Tidal Cyber](https://twitter.com/IntelScott) for giving me their TTPs for Ransomware. 
+- [Marine Pichon](https://fr.linkedin.com/in/marine-pichon-298904193) from [Orange Cyberdefense](https://www.orangecyberdefense.com) for the [Ransomware cartography](cartography). 
 
 ## ⚙️ API
 
@@ -67,6 +70,8 @@ Find [articles](press.md) about `ransomware.live`
 ## 👓 Feed RSS 
 
 You can follow `ransomware.live` from its [RSS Feed](https://ransomware.live/rss.xml)
+
+A newly added feed for [negotiations](https://www.ransomware.live/#/negotiations) is available here : [Negotiations feed](https://www.ransomware.live/negotiations.xml)
 
 ## 📜 License
 

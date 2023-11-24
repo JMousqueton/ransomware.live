@@ -16,7 +16,7 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 01/05/2021 00:00 | `http://cuba4mp6ximo2zlo.onion` | ❌ | 
-| Cuba | 🟢 | 24/09/2023 13:48 | `http://cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion` | <a href="https://images.ransomware.live/screenshots/cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd-onion.png" target=_blank>📸</a> | 
+| Cuba | 🟢 | 24/11/2023 12:15 | `http://cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion` | <a href="https://images.ransomware.live/screenshots/cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -26,6 +26,11 @@
 * 💰 <a href="/#/crypto/cuba.md">Crypto wallet(s) available</a>
 
 
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/software/095064c6-144e-4935-b878-f82151bc08e4-Cuba) from [Tidal Cyber](https://www.tidalcyber.com/)
+
+
 ### Total Attacks Over Time
 
 ![Statistics](../graphs/stats-cuba.png)
@@ -33,10 +38,17 @@
 
 ### Victims
 
-> 95 victims found
+> 102 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`diagnostechs`](https://google.com/search?q=diagnostechs) | 14/11/2023 | HistoryEstablished in 1987, DiagnosTechs was the first laboratory to introduce saliva hormone testing into routine clinical practice. In 1995, DiagnosTechs added saliva and stool-based gastrointestinal and food sensitivity testing,... |   |
+| [`portadelaidefc`](https://google.com/search?q=portadelaidefc) | 13/11/2023 | PORT ADELAIDE is renowned for setting the bar high and expecting success, and the club’s latest strategic vision embraces that expectation.Unveiled at the club’s Annual General Meeting on Friday night, Chasing Greatness is... |   |
+| [`panaya`](https://google.com/search?q=panaya) | 07/11/2023 | About PANAYAPanaya’s Change Intelligence solutions reduce the time, cost, and risk involved in change to business applications like SAP®, Oracle® EBS, and Salesforce.com. Date the files were received:  02... |   |
+| [`prime-art`](https://google.com/search?q=prime-art) | 07/11/2023 | For PAJ, your success is our success.Jewelry making is an art and a science. We are constantly improving and optimizing our skills while integrating cutting-edge technology.By always delivering a troy grain more than anticipated, we... |   |
+| [`Newconcepttech`](https://google.com/search?q=Newconcepttech) | 23/10/2023 | FROM A SINGLE START-UP TO A MULTI-MILLION DOLLAR COMPANYOur prosperity is due to three interlocking factors: the first, being our customers, who have always come first.The second, our employees, who are passionate about serving our... |   |
+| [`mountstmarys`](https://google.com/search?q=mountstmarys) | 10/10/2023 | Mount St Mary’s is rightly proud of its extensive heritage dating back over 160 years. The original vision to educate all young people in the local area remains at the core of our work. Our mission is to ensure individual... |   |
+| [`co.rock.wi.us`](https://google.com/search?q=co.rock.wi.us) | 03/10/2023 | Rock County Public Health DepartmentThe Rock County Public Health Department (RCPHD) is a level III health department in Rock County, Wisconsin. Our staff serves over 160,000 people in more than 25 cities, villages, and towns. As a... |   |
 | [`goldmedalbakery`](https://google.com/search?q=goldmedalbakery) | 19/08/2023 | Gold Medal Bakery aspires to follow three core values in every aspect of its business.Integrity: Gold Medal has built its reputation on meeting the needs of our customers and the millions of consumers they serve. Thus, integrity is... | <a href="https://images.ransomware.live/screenshots/posts/be3fd3be5720e18aa43bdd225df2be18.png" target=_blank>📸</a> |
 | [`hydrex.co.uk`](https://hydrex.co.uk) | 31/07/2023 | Established in 1985, with 13 depots and one support centre nationwide, Hydrex is one of the largest suppliers of outsourced mobile plant solutions in the UK.Hydrex has a fleet totaling over 1200 machines. The company has invested in... | <a href="https://images.ransomware.live/screenshots/posts/40ac18160b679232274464a49af6b16d.png" target=_blank>📸</a> |
 | [`txmplant.co.uk`](https://txmplant.co.uk) | 31/07/2023 | At TXM Plant we know that the services we provide are critical to the success of our customers’ projects. That’s why we put the customer at the centre of everything that we do.Awarded ‘Gold’ standard in Network... | <a href="https://images.ransomware.live/screenshots/posts/867fb227c8292bdcc53e2aba4ad3bc82.png" target=_blank>📸</a> |
@@ -135,4 +147,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

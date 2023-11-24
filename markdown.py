@@ -276,7 +276,7 @@ def statuspage():
                 screen=''
                 if os.path.exists('docs/screenshots/'+screenshot):
                     screen = '<a href="https://images.ransomware.live/screenshots/' + screenshot + '" target=_blank>📸</a>'
-                line = '| [' + group['name'] + '](profiles.md?id=' + group['name'] + ') | ' + title + ' | ' + host['fqdn'] + ' | ' + screen + ' | ' 
+                line = '| [' + group['name'] + '](group/' + group['name'] + ') | ' + title + ' | ' + host['fqdn'] + ' | ' + screen + ' | ' 
                 writeline(index_sheet, line)
     writeline(index_sheet, '')
     writeline(index_sheet, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
@@ -330,8 +330,8 @@ def recentpublishedpage():
     writeline(recentpage,'')
     writeline(recentpage, '**📰 200 last victims sorted by published date**')
     writeline(recentpage, '')
-    writeline(recentpage, '| Date | Title | Group | 📸 |')
-    writeline(recentpage, '|---|---|---|---|')
+    writeline(recentpage, '| Date | Title | Country | Group | 📸 |')
+    writeline(recentpage, '|---|---|---|---|---|')
     for post in recentpublishedposts(fetching_count):
         # show friendly date for discovered
         date = post['published'].split(' ')[0]
@@ -351,7 +351,16 @@ def recentpublishedpage():
             hex_digest = hash_object.hexdigest()
             if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
                 screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>👀</a>'
-        line = '| ' + date + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + grouplink + ' | ' + screenpost + ' |'
+        if len(post['country']) > 1:
+            match post['country']:
+                case 'UK':
+                    flag = 'GB'
+                case _:
+                    flag = post['country']
+            country="!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':no-zoom')"
+        else:
+            country=''
+        line = '| ' + date + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + country + ' | ' + grouplink + ' | ' + screenpost + ' |'
         writeline(recentpage, line)
     writeline(recentpage, '')
     writeline(recentpage, '> [!TIP] You can also check the 200 last victims sorted by discovered date by `Ransomware.live` [here](recentdiscoveredvictims.md).')
@@ -851,6 +860,25 @@ def profile():
                 line = '|' + os.path.splitext(filename)[0] + '|  <a href="/#/negotiation/' + nego + '/' + filename + '"> 💬 </a> |'
                 writeline(profilepage, line)
             writeline(profilepage, '')
+
+        
+        with open('tidalcyber-ttps.json', 'r') as file:
+            data = json.load(file)
+
+            # Define the specific ransomwatch_threat you want to find
+            target_threat = group['name']
+
+
+            # Search for the threat and retrieve its ttps value
+            ttps_value = None
+            for entry in data:
+                if entry['ransomwatch_threat'] == target_threat:
+                    ttps_value = entry['ttps']
+                    writeline(profilepage,'')
+                    writeline(profilepage,'### Technique Set')
+                    writeline(profilepage,'')
+                    writeline(profilepage,'* 🛠️ A technique set is [available](' + ttps_value + ') from [Tidal Cyber](https://www.tidalcyber.com/)')
+                    writeline(profilepage,'')
 
         ### GRAPH
         if os.path.exists('docs/graphs/stats-'+group['name']+'.png'):

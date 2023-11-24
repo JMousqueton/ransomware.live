@@ -30,11 +30,11 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| ransomexx2 | 🟢 | 24/09/2023 14:21 | `http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion` | <a href="https://images.ransomware.live/screenshots/rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad-onion.png" target=_blank>📸</a> | 
+| ransomexx2 | 🟢 | 24/11/2023 12:50 | `http://rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad.onion` | <a href="https://images.ransomware.live/screenshots/rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
-* [📝 2 ransom notes](notes/ransomexx)
+* [📝 3 ransom notes](notes/ransomexx)
 
 ### Total Attacks Over Time
 
@@ -43,10 +43,12 @@
 
 ### Victims
 
-> 45 victims found
+> 47 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Admilla ELAP`](https://google.com/search?q=Admilla+ELAP) | 17/11/2023 | Elap (formerly Admilia) offers its expertise and support throughout the implementation of your budget and accounting solution. Huge clients, financial documents, contracts, personal data and a lot of confidential things belongs to their customers. If you wanna be one someday your data will be here. | <a href="https://images.ransomware.live/screenshots/posts/1258e42947d39e908d7260c0fad07468.png" target=_blank>📸</a> |
+| [`Telecommunications Services of Trinidad and Tobago (tstt.co.tt)`](https://google.com/search?q=Telecommunications+Services+of+Trinidad+and+Tobago+%28tstt.co.tt%29) | 27/10/2023 | tstt.co.tt and bmobile.co.tt. 4293368 customer's lines, ID scans, gitlab projects, db dumps. | <a href="https://images.ransomware.live/screenshots/posts/abe4c53c5bac9a59fd2fbe4be0eca386.png" target=_blank>📸</a> |
 | [`DVA - DVision Architecture`](https://google.com/search?q=DVA+-+DVision+Architecture) | 01/07/2023 | Dalla digitalizzazione del progetto alla realizzazione di prototipi costruttivi: l’attività di DVA spazia dal concept di un intervento, all’organizzazione logistica di cantiere. Un approccio declinato secondo il connubio tra digitalizzazione e sostenibilità, orientamento cardine di tutte le scelte della società e rintracciabile in ognuna delle commesse prese in carico. | <a href="https://images.ransomware.live/screenshots/posts/58f19c8bc5471713cbb057fa6b72ceff.png" target=_blank>📸</a> |
 | [`Jacobs Farm`](https://google.com/search?q=Jacobs+Farm) | 24/06/2023 | Jacobs Farm was founded in 1980 as a small organic family farm dedicated to growing fresh, high quality, delicious food without damaging the environment. | <a href="https://images.ransomware.live/screenshots/posts/5f012d4b8bb9277533e8fb6a721425cb.png" target=_blank>📸</a> |
 | [`Bettuzzi And Partners`](https://google.com/search?q=Bettuzzi+And+Partners) | 02/03/2023 | Lo Studio BETTUZZI & PARTNERS - Dottori Commercialisti è stato fondato dal dott. Alvaro Bettuzzi, nell'anno 2005, dopo aver maturato significative esperienze nello svolgimento della professione di dottore commercialista. Oltre al contributo del fondatore, lo Studio si avvale della collaborazione di altri dottori commercialisti, di esperti professionisti in altre discipline, di docenti universitari e di specialisti in varie aree della consulenza, soprattutto in materia legale e fiscale, in ambito sia nazionale che internazionale. | <a href="https://images.ransomware.live/screenshots/posts/1c0cb8624685acdbee6d3b8a03404682.png" target=_blank>📸</a> |
@@ -95,4 +97,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

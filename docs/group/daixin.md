@@ -9,7 +9,12 @@
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
 | none | 🔴 | 10/11/2022 22:30 | `http://232fwh5cea3ub6qguz3pynijxfzl2uj3c73nbrayipf3gq25vtq2r4qd.onion` | ❌ | 
-| Data Leak | 🟢 | 24/09/2023 13:50 | `http://7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd.onion` | <a href="https://images.ransomware.live/screenshots/7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd-onion.png" target=_blank>📸</a> | 
+| Data Leak | 🟢 | 24/11/2023 12:16 | `http://7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd.onion` | <a href="https://images.ransomware.live/screenshots/7ukmkdtyxdkdivtjad57klqnd3kdsmq6tp45rrsxqnu76zzv3jvitlqd-onion.png" target=_blank>📸</a> | 
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/1674036e-bd8a-4118-ba57-5e76002bd7ec) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -18,10 +23,12 @@
 
 ### Victims
 
-> 10 victims found
+> 11 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`Bluewater Health (CA) and others`](https://bluewaterhealth.ca) | 02/11/2023 | Bluewater Health is a hospital in Sarnia, Ontario.
+       The  hospital now encompasses about 600,000 square feet (56,000 m2). It employs almost 1,800 staff and physicians, along with over 700 volunteers, and is Sarnia—Lambton's largest public sector employer. |   |
 | [`Columbus Regional Healthcare System (US)`](https://crhealthcare.org/) | 09/06/2023 | Columbus Regional Healthcare System has one of the highest volume and most experienced robotic surgical programs in Southeastern  North Carolina. |   |
 | [`Hit Promotional Products (US)`](https://www.hitpromo.net) | 29/03/2023 | Hit Promotional Products has been a leader in the promotional product industry. As a family-owned business with a long history, Hit Promotional want to build real relationships. |   |
 | [`B&G Foods (CA, US)`](https://bgfoods.com/) | 11/02/2023 | B&G Foods, Inc. manufactures, sells, and distributes a portfolio of shelf-stable and frozen foods, and household products in the United States, Canada, and Puerto Rico. |   |
@@ -35,4 +42,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

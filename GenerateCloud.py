@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 from collections import Counter
 from sharedutils import stdlog, errlog, openjson
+from parse import add_watermark
 
 
 print(
@@ -58,5 +59,6 @@ try:
     output_path = "docs/ransomwarecloud.png"
     wordcloud.to_file(output_path)
     stdlog("Ransomware Cloud : image saved successfully!")
+    add_watermark(output_path)
 except:
     errlog("Ransomware Cloud : Error while saving image")

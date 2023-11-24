@@ -132,7 +132,7 @@ def parse_group(group_name):
         except:
             pass
 
-        if data['chat_id'] is '':
+        if data['chat_id'] == '':
            try:
                 date_object = dt.strptime(name[:8], "%Y%m%d")
                 chat_id = 'Date: ' + date_object.strftime("%Y-%m-%d")

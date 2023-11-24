@@ -19,6 +19,7 @@ import time
 from markdown import main as markdown
 
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
+from playwright_stealth import stealth_sync
 
 from sharedutils import striptld
 from sharedutils import openjson
@@ -152,6 +153,7 @@ def scraper(force=''):
                                     args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']]) 
                             context = browser.new_context(ignore_https_errors= True )
                             page = context.new_page()
+                            stealth_sync(page)
                             if 'timeout' in host and host['timeout'] is not None:
                                page.goto(host['slug'], wait_until='load', timeout = host['timeout']*1000)
                             else:

@@ -5,11 +5,16 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| 403 Forbidden | 🟢 | 24/09/2023 13:43 | `http://cloak7jpvcb73rtx2ff7kaw2kholu7bdiivxpzbhlny4ybz75dpxckqd.onion` | <a href="https://images.ransomware.live/screenshots/cloak7jpvcb73rtx2ff7kaw2kholu7bdiivxpzbhlny4ybz75dpxckqd-onion.png" target=_blank>📸</a> | 
+| 403 Forbidden | 🟢 | 24/11/2023 12:12 | `http://cloak7jpvcb73rtx2ff7kaw2kholu7bdiivxpzbhlny4ybz75dpxckqd.onion` | <a href="https://images.ransomware.live/screenshots/cloak7jpvcb73rtx2ff7kaw2kholu7bdiivxpzbhlny4ybz75dpxckqd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
 * [📝 1 ransom note](notes/cloak)
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/0848f2b1-01c7-4322-b60c-57699d5dabae) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -49,4 +54,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

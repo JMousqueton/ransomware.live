@@ -8,7 +8,7 @@
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Rancoz - Blog | 🟢 | 24/09/2023 14:20 | `http://ze677xuzard4lx4iul2yzf5ks4gqqzoulgj5u4n5n4bbbsxjbfr7eayd.onion` | <a href="https://images.ransomware.live/screenshots/ze677xuzard4lx4iul2yzf5ks4gqqzoulgj5u4n5n4bbbsxjbfr7eayd-onion.png" target=_blank>📸</a> | 
+| Rancoz - Blog | 🔴 | 17/10/2023 08:23 | `http://ze677xuzard4lx4iul2yzf5ks4gqqzoulgj5u4n5n4bbbsxjbfr7eayd.onion` | <a href="https://images.ransomware.live/screenshots/ze677xuzard4lx4iul2yzf5ks4gqqzoulgj5u4n5n4bbbsxjbfr7eayd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
@@ -34,4 +34,4 @@
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_

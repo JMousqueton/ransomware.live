@@ -28,12 +28,17 @@ _`rfi location woe2suafeg6ehxivgvvn4nh6ectbdhdqgc4vzph27mmyn7rjf2c52jid.onion/in
 ### URLs
 | Title | Available | Last visit | fqdn | Screenshot 
 |---|---|---|---|---|
-| Lorenz | 🟢 | 24/09/2023 14:09 | `http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd.onion` | <a href="https://images.ransomware.live/screenshots/lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd-onion.png" target=_blank>📸</a> | 
-| Lorenz | 🟢 | 24/09/2023 14:09 | `http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd.onion` | <a href="https://images.ransomware.live/screenshots/lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd-onion.png" target=_blank>📸</a> | 
+| Lorenz | 🟢 | 24/11/2023 12:35 | `http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd.onion` | <a href="https://images.ransomware.live/screenshots/lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd-onion.png" target=_blank>📸</a> | 
+| Lorenz | 🟢 | 24/11/2023 12:36 | `http://lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd.onion` | <a href="https://images.ransomware.live/screenshots/lorenzmlwpzgxq736jzseuterytjueszsvznuibanxomlpkyxk6ksoyd-onion.png" target=_blank>📸</a> | 
 
 
 ### Ransom note
 * [📝 2 ransom notes](notes/lorenz)
+
+### Technique Set
+
+* 🛠️ A technique set is [available](https://app.tidalcyber.com/share/techniqueset/4d2bb7c7-f97b-4fe6-b518-1453a1a20a2b) from [Tidal Cyber](https://www.tidalcyber.com/)
+
 
 ### Total Attacks Over Time
 
@@ -42,10 +47,16 @@ _`rfi location woe2suafeg6ehxivgvvn4nh6ectbdhdqgc4vzph27mmyn7rjf2c52jid.onion/in
 
 ### Victims
 
-> 70 victims found
+> 76 victims found
 
 | victim | date | Description | Screenshot | 
 |---|---|---|---|
+| [`EOS`](https://www.EOS) | 15/11/2023 |  |   |
+| [`Cogdell Memorial Hospital`](https://www.Cogdell%20Memorial%20Hospital) | 09/11/2023 |  |   |
+| [`Koh Brothers`](https://www.Koh%20Brothers) | 02/11/2023 |  |   |
+| [`Truck Bodies & Equipment International`](https://www.Truck%20Bodies%20&%20Equipment%20International) | 27/10/2023 |  |   |
+| [`Broad River Retail/Ashley Store`](https://www.Broad%20River%20Retail/Ashley%20Store) | 15/10/2023 |  |   |
+| [`AllCare Pharmacy`](https://www.AllCare%20Pharmacy) | 02/10/2023 |  |   |
 | [`Dee Sign`](https://www.Dee%20Sign) | 12/09/2023 |  |   |
 | [`BF&S Civil Engineers`](https://www.BF&S%20Civil%20Engineers) | 20/08/2023 |  |   |
 | [`Felling Trailers, Inc.`](https://www.Felling%20Trailers,%20Inc.) | 13/07/2023 |  |   |
@@ -119,4 +130,4 @@ _`rfi location woe2suafeg6ehxivgvvn4nh6ectbdhdqgc4vzph27mmyn7rjf2c52jid.onion/in
 
 
 
-Last update : _Sunday 24/09/2023 14.39 (UTC)_
+Last update : _Friday 24/11/2023 13.15 (UTC)_
