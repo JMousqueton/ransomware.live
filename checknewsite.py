@@ -1,3 +1,16 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+##
+# A script to detect new ransomware blog from fastfire/deepdarkCTI repository 
+# Send an email with a screenshot 
+##
+
+__author__ = "Julien Mousqueton"
+__copyright__ = "Copyright 2023, Ransomware.live Project"
+__version__ = "1.0.0"
+
+# Import necessary modules
 import requests
 import re
 import json
@@ -5,7 +18,7 @@ from urllib.parse import urlparse
 # For screenshot 
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 import os, hashlib
-from sharedutils import stdlog, dbglog, errlog   # , honk
+from sharedutils import stdlog, dbglog, errlog
 
 # mail 
 import smtplib
@@ -22,10 +35,6 @@ def generate_random_string(length=8):
     letters = string.ascii_letters
     random_string = ''.join(secrets.choice(letters) for _ in range(length))
     return random_string
-
-# Example usage:
-#random_string = generate_random_string()
-#print(random_string)
 
 def send_email(subject, body, to_email, attachment_path=None):
     # Set up the SMTP server
@@ -64,19 +73,10 @@ def send_email(subject, body, to_email, attachment_path=None):
 
     # Quit the server
     server.quit()
-
-# Example usage:
-#subject = 'Test Email with Attachment'
-#body = 'This is a test email with an attachment.'
-#to_email = 'recipient@example.com'
-#attachment_path = 'path/to/your/image.jpg'  # Replace with the actual path to your image
-#
-#send_email(subject, body, to_email, attachment_path)
-
-
+    stdlog('Notification by Mail sent')
 
 def screenshot(webpage,delay=15000,output=None):
-    stdlog('webshot: {}'.format(webpage))
+    stdlog('screenshot : {}'.format(webpage))
     name = '/tmp/' + output + '.png'
     with sync_playwright() as play:
                 try:
@@ -97,9 +97,7 @@ def screenshot(webpage,delay=15000,output=None):
                     stdlog('Timeout!')
                 except Exception as exception:
                     stdlog(exception)
-                #browser.close()
-
-
+                browser.close()
 
 
 # Function to extract .onion URLs from Markdown content
@@ -116,52 +114,66 @@ def check_url(url, group_data, tor_proxy, exclusions_file):
     # Check if the URL is in the exclusions file
     with open(exclusions_file, 'r') as exclusions:
         if onion_url_no_protocol in exclusions.read():
-            # print(f"{url} is excluded according to {exclusions_file}")
             return
 
     # Check if the URL is in groups.json
     for group_entry in group_data:
         for location in group_entry.get("locations", []):
             if domain == location["fqdn"]:
-                #print(f"{url} is present in groups.json for group: {group_entry['name']}")
                 return
 
     # Check if the URL is online via Tor proxy
     try:
-    #    response = requests.get(url, timeout=5, proxies={'http': tor_proxy, 'https': tor_proxy})
-    #    if response.status_code == 200:
-            print(f"{url} is online")
+            stdlog('New Ransomware Site found : ' +  url)
             random_string = generate_random_string()
             screenshot(url,delay=15000,output=random_string)
             body="A new ransomware site has been detected : \n\n"+url 
             file="/tmp/"+random_string+".png" 
             send_email("New Ransomware site detected",body, "julien@mousqueton.io",file)
-    #    else:
-    #        print(f"{url} is not online (HTTP Status Code: {response.status_code})")
     except requests.ConnectionError:
         print(f"{url} is not online (Connection Error)")
 
-# URL of the Markdown file
-md_url = "https://raw.githubusercontent.com/fastfire/deepdarkCTI/main/ransomware_gang.md"
 
-# Fetching content of the Markdown file
-response = requests.get(md_url)
-md_content = response.text
 
-# Load groups.json data
-with open('groups.json') as json_file:
-    group_data = json.load(json_file)
+if __name__ == "__main__":
+    print(
+    '''
+       _______________                        |*\_/*|________
+      |  ___________  |                      ||_/-\_|______  |
+      | |           | |                      | |           | |
+      | |   0   0   | |                      | |   0   0   | |
+      | |     -     | |                      | |     -     | |
+      | |   \___/   | |                      | |   \___/   | |
+      | |___     ___| |                      | |___________| |
+      |_____|\_/|_____|                      |_______________|
+        _|__|/ \|_|_.............💔.............._|________|_
+       / ********** \                          / ********** \ 
+     /  ************  \   ransomware.live     /  ************  \ 
+    --------------------                    --------------------
+    '''
+    )
+    stdlog('Analyze deepdarkCTI repository')
+    # URL of the Markdown file
+    md_url = "https://raw.githubusercontent.com/fastfire/deepdarkCTI/main/ransomware_gang.md"
 
-# Set up Tor proxy
-tor_proxy = 'socks5h://127.0.0.1:9050'  # Make sure Tor is running on port 9050
+    # Fetching content of the Markdown file
+    response = requests.get(md_url)
+    md_content = response.text
 
-# Exclusions file
-exclusions_file = './assets/sources.exclusions'
+    # Load groups.json data
+    with open('groups.json') as json_file:
+        group_data = json.load(json_file)
 
-# Extract .onion URLs from Markdown content
-onion_urls = extract_onion_urls(md_content)
+    # Set up Tor proxy
+    tor_proxy = 'socks5h://127.0.0.1:9050'  # Make sure Tor is running on port 9050
 
-# Check each .onion URL
-for onion_url in onion_urls:
-    check_url(onion_url, group_data, tor_proxy, exclusions_file)
+    # Exclusions file
+    exclusions_file = './assets/sources.exclusions'
 
+    # Extract .onion URLs from Markdown content
+    onion_urls = extract_onion_urls(md_content)
+
+    # Check each .onion URL
+    for onion_url in onion_urls:
+        check_url(onion_url, group_data, tor_proxy, exclusions_file)
+    stdlog('Analyze finished')
