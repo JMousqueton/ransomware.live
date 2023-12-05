@@ -1,4 +1,4 @@
-FROM python:3.12.0rc2-slim-bullseye
+FROM python:3.13.0a2-slim-bullseye
 
 LABEL org.opencontainers.image.source https://github.com/jmousqueton/ransomwatch
 
