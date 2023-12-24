@@ -35,10 +35,13 @@ def scraper(querygroup=''):
                 # here 
                     try:
                         with sync_playwright() as play:
-                                if querygroup in ['blackbasta','everest','metaencryptor']:
+                                if querygroup in ['blackbasta','everest','metaencryptor', 'bianlian']:
                                     stdlog('exception for ' + querygroup)
                                     browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
-                                        args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])
+                                        args=['--unsafely-treat-insecure-origin-as-secure='+host['slug'], "--headless=new"]) 
+                                elif querygroup in ['toufan','werewolves']:
+                                    stdlog('exception not tor for ' + querygroup)
+                                    browser = play.firefox.launch(args=["--headless=new"])
                                 else:
                                     browser = play.chromium.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                                         args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])    

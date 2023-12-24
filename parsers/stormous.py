@@ -19,16 +19,17 @@ def main():
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup = BeautifulSoup(file, 'html.parser')
-                tables = soup.find_all('table')
-                for table in tables:
-                    # Find the image source and description
-                    img_src = table.find('img')['src']
-                    victim = img_src.replace('images/companyimage/','').replace('.jpg','').replace('.png','')
-                    victim_name = victim.capitalize()
-                    description = table.find('p', class_='description').text.strip()
+                items = soup.find_all('div', class_='item')
+                for item in items:
+                    victim = item.find('h3').text.strip()
+                    description = item.find('p').text.strip()
+                    link = item.find('a')['href']
+                    # button_link = item.find('a', href=True).get('href')
+                    button_link = item.find('a', href=lambda href: href and 'DataPage' in href)['href']
                     url = find_slug_by_md5('stormous', extract_md5_from_filename(html_doc))
-                    post_url = url.replace('stm.html','') + '/' + victim + '.html'
-                    appender(victim_name,'stormous',description,'','',post_url)
+                    post_url = url.replace('stm.html','') + button_link
+            
+                    appender(victim,'stormous',description,'','',post_url)
                 file.close()
         #except:
         #    errlog('stormous: ' + 'parsing fail')

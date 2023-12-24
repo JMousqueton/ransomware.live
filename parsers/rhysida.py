@@ -16,7 +16,7 @@ from datetime import datetime
 
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('rhysida-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -26,10 +26,13 @@ def main():
                     title_div = div.find('div', class_='m-2 h4')
                     title = title_div.text.strip() if title_div else ''
                     try:
-                        url = '?company=' + div.find('button')['data-company']
-                        onion = find_slug_by_md5('rhysida', extract_md5_from_filename(html_doc))
-                        url =  onion + url
-                        url = url.replace('auction?','')
+                        #url = '?company=' + div.find('button')['data-company']
+                        input_tag = soup.find('input', {'name': 'auction_company'})
+                        if input_tag:
+                            url = '?company=' +input_tag.get('value')
+                            onion = find_slug_by_md5('rhysida', extract_md5_from_filename(html_doc))
+                            url =  onion + url
+                            url = url.replace('auction?','')
                     except: 
                         url = ''
                     description_div = div.find('div', class_='m-2')
@@ -40,6 +43,6 @@ def main():
                         appender(title, 'rhysida', description,url,"",post_url)
 
                 file.close()
-        #except:
-        #    errlog('rhysida : ' + 'parsing fail')
-        #    pass
+        except:
+            errlog('rhysida : ' + 'parsing fail')
+            pass

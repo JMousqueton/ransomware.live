@@ -92,5 +92,35 @@
 		"source": "Frank Plummer on LinkedIN",
 		"url": "https://www.linkedin.com/posts/frankplummer_negotiations-with-ransomware-groups-make-activity-7125464724254650369-C-tm",
 		"title": "Negotiations with ransomware groups make a really chilling read"
+	},
+	{
+		"date": "2023-10-16",
+		"source": "sosransomware",
+		"url": "https://sosransomware.com/groupes-de-ransomware/clop-ransomware-une-menace-en-pleine-expansion/",
+		"title":"Clop ransomware : une menace en pleine expansion"
+	},
+	{
+		"date": "2023-12-07",
+		"source": "Noë F. (Linkedin)",
+		"url": "https://www.linkedin.com/feed/update/urn:li:activity:7138211092375183360/",
+		"title": "𝗿𝗮𝗻𝘀𝗼𝗺𝘄𝗮𝗿𝗲.𝗹𝗶𝘃𝗲 - Un outil de surveillance des groupes de ransomware"
+	},
+	{
+		"date": "2023-12-16",
+		"source" : "Fabien Devijver (Linkedin)",
+		"url": "https://www.linkedin.com/feed/update/urn:li:activity:7141745656691388416/",
+		"title": "un lien particulièrement intéressant"
+	},
+	{
+		"date": "2023-12-16",
+		"source": "Pascal Vrammont (Linkedin)",
+		"url": "https://www.linkedin.com/feed/update/urn:li:activity:7141724415506972673/",
+		"title" :"la plate-forme CyberSurveillance de Julien Mousqueton, un outil qui a l’avantage d’offrir une multitude d'informations pour nous permettre de rester constamment informé du risque en cours. "
+	},
+	{
+		"date": "2023-12-07",
+		"source": "Sylvain Cortes (Linkedin)",
+		"url": "https://www.linkedin.com/posts/sylvaincortes_infosec-ransomware-cyberwatch-activity-7138294481816035328-l3lg/",
+		"title": "Bravo à Julien Mousqueton pour ce magnifique outil de veille !"
 	}
 ]

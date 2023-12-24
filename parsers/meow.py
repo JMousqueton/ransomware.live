@@ -16,7 +16,7 @@ from datetime import datetime
 
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('meow-'):
                 html_doc='source/'+filename
                 #stdlog('processing ' + filename)
@@ -41,6 +41,6 @@ def main():
 
                     appender(title, "meow", leak_status, "", formatted_date, card_link)
                 file.close()
-        #except:
-        #    errlog('meow: ' + 'parsing fail')
-        #    pass    
+        except:
+            errlog('meow: ' + 'parsing fail')
+            pass    

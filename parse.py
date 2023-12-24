@@ -104,14 +104,23 @@ def screenshot(webpage,fqdn,delay=15000,output=None):
                     tor_prefixes = ["http://stniiomy", "http://noescape", "http://medusa", "http://cactus", "http://hl666"]
                     if any(webpage.startswith(prefix) for prefix in tor_prefixes):
                         browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
-                          args=[''])
+                            args=[''])
+                            #args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])
                         stdlog('(!) exception')
                     elif webpage.startswith("https://ransomed.vc/"):
                         browser = play.firefox.launch()
                         stdlog('(!) not via tor')
+                    elif webpage.startswith("https://t.me/"):
+                        browser = play.firefox.launch()
+                        stdlog('(!) not via tor')
+                    elif webpage.startswith("http://knight"):
+                        browser = play.chromium.launch(proxy={"server": "socks5://127.0.0.1:9050"},
+                            args=["--headless=new"])
+                        stdlog('(!) exception')
                     else:
                         browser = play.chromium.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                             args=[''])
+                            #args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])
                     context = browser.new_context(ignore_https_errors= True )
                     Image.MAX_IMAGE_PIXELS = None
                     page = context.new_page()
@@ -209,7 +218,7 @@ def appender(post_title, group_name, description="", website="", published="", p
     # Read the contents of the file
         exceptions = f.read()
         if post_title in exceptions:
-            # errlog('(!) '+ post_title + ' is in exceptions')
+            stdlog('(!) '+ post_title + ' is in exceptions')
             return
     # limit length of post_title to 90 chars
     country=''
@@ -217,6 +226,7 @@ def appender(post_title, group_name, description="", website="", published="", p
         post_title = post_title[:90]
     post_title=html.unescape(post_title)
     if existingpost(post_title, group_name) is False:
+        print('==> ' + post_title)
         posts = openjson('posts.json')
         if description == "_URL_":
             description = gettitlefromURL(post_title)
@@ -272,4 +282,5 @@ def appender(post_title, group_name, description="", website="", published="", p
         #            delay = webpage['delay']*1000 if ( 'delay' in webpage and webpage['delay'] is not None ) \
         #                else 15000
         #            screenshot('http://'+webpage['fqdn'],webpage['fqdn'],delay)
-
+    #else:
+    #    stdlog(post_title + ' already exists')

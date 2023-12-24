@@ -1,3 +1,4 @@
+# Pre version to analyse ransom negotiation with chat GPT 
 import json
 import openai
 import argparse
@@ -9,12 +10,10 @@ load_dotenv()
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
 def read_json_file(filename):
-    """Read a JSON file and return its contents."""
     with open(filename, 'r') as file:
         return json.load(file)
 
 def ask_openai(question, content):
-    """Ask a question to ChatGPT using the OpenAI API."""
     response = openai.Completion.create(
         engine="text-davinci-002",
         prompt=f"{content}\n\n{question}",
@@ -23,7 +22,6 @@ def ask_openai(question, content):
     return response.choices[0].text.strip()
 
 def extract_details_from_json(json_content):
-    """Ask ChatGPT about details in the JSON content."""
     # Extract ransom demand
     ransom_demand_question = "How much was the ransom demand, answer only the figure of the amount?"
     ransom_demand = ask_openai(ransom_demand_question, json_content)
@@ -40,7 +38,7 @@ def extract_details_from_json(json_content):
     print(f"Paid Ransom: {paid_ransom}")
 
 def main():
-    parser = argparse.ArgumentParser(description='Ask questions about a provided JSON file using ChatGPT.')
+    parser = argparse.ArgumentParser(description='Analyse negotiation json file file using ChatGPT.')
     parser.add_argument('filename', help='Path to the JSON file.')
 
     args = parser.parse_args()

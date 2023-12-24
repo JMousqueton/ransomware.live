@@ -21,21 +21,16 @@ def main():
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
                 
-                # Find all table rows (excluding the header row)
                 rows = soup.find_all('tr')[1:]  # Exclude the first row (header)
 
                 for row in rows:
                     columns = row.find_all('td')
-                    
                     victim = columns[0].get_text()
                     description = columns[2].get_text()
                     last_updated = columns[4].get_text()
-
                     last_updated_datetime = datetime.strptime(last_updated, "%Y-%m-%d")
                     published = last_updated_datetime.strftime("%Y-%m-%d %H:%M:%S.%f")
-
                     link = find_slug_by_md5('siegedsec', extract_md5_from_filename(html_doc)) + "/" + columns[5].find('a')['href']
-                    print('--> ' + link )
                     appender(victim, 'siegedsec', description.replace('\n',' '),"",published,link)
                 file.close()
         except:

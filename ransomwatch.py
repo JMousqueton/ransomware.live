@@ -143,14 +143,17 @@ def scraper(force=''):
                 # here 
                 try:
                     with sync_playwright() as play:
-                            if group['name'] in ['blackbasta','clop']:
+                            if group['name'] in ['blackbasta', 'clop', 'metaencryptor','bianlian']:
                                 browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
-                                    args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])
+                                    args=['--unsafely-treat-insecure-origin-as-secure='+host['slug'], "--headless=new"])
                             elif group['name'] in ['ransomed']:
                                  browser = play.firefox.launch(args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])
+                            elif group['name'] in ['knight','lockbit3']:
+                                browser = play.chromium.launch(proxy={"server": "socks5://127.0.0.1:9050"},
+                                    args=['--unsafely-treat-insecure-origin-as-secure='+host['slug'], "--headless=new"])
                             else:
                                 browser = play.chromium.launch(proxy={"server": "socks5://127.0.0.1:9050"},
-                                    args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']]) 
+                                    args=['--unsafely-treat-insecure-origin-as-secure='+host['slug'], "--headless=new"])
                             context = browser.new_context(ignore_https_errors= True )
                             page = context.new_page()
                             stealth_sync(page)

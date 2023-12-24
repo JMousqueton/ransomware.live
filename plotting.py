@@ -400,9 +400,11 @@ def plot_victims_by_month():
 
     # Prepare the data for plotting
     months = ['{:02d}'.format(i) for i in range(1, 13)]
-    years = ['2022', '2023']
+    #years = ['2022', '2023']
+    #years = ['2022', '2023', '2024']
     data_2022 = [year_data['2022'].get(month, 0) for month in months]
     data_2023 = [year_data['2023'].get(month, 0) for month in months]
+    #data_2024 = [year_data['2024'].get(month, 0) for month in months]
 
     # Set the figure size
     plt.figure(figsize=(12, 6))
@@ -415,9 +417,11 @@ def plot_victims_by_month():
     # Plotting the line chart
     plt.plot(months, data_2022, label='2022')
     plt.plot(months, data_2023, label='2023')
+    #plt.plot(months, data_2024, label='2024')
 
     # Customize the chart
     plt.title('Number of Victims by Month (2022-2023)')
+    #plt.title('Number of Victims by Month (2022-2024)')
     plt.xlabel('Month')
     text_color = '#42b983'
     plt.text(0.5, -0.2, '© Ransomware.live', size=10, ha='center', transform=plt.gca().transAxes, color=text_color)

@@ -41,7 +41,6 @@ def main():
                         posted_date = datetime.today()
                         formatted_date = datetime.combine(posted_date, datetime.min.time()).strftime('%Y-%m-%d %H:%M:%S.%f')
 
-
                     appender(title, 'lorenz','_URL_',website_link,formatted_date)
 
                 

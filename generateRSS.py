@@ -49,7 +49,8 @@ description.text = 'Last 100 entries monitoring by Ransomware.live'
 
 image = SubElement(channel, 'image')
 image_url = SubElement(image, 'url')
-image_url.text = 'https://www.ransomware.live/ransomwarelive.png'
+#image_url.text = 'https://www.ransomware.live/ransomwarelive.png'
+image_url.text = "https://www.ransomware.live/Christmas.png"
 image_title = SubElement(image, 'title')
 image_title.text = 'Ransomware.live RSS Feed'
 image_link = SubElement(image, 'link')
@@ -63,14 +64,18 @@ for i in reversed(range(len(data)-100, len(data))):
   item = data[i]
   rss_item = SubElement(channel, 'item')
   item_title = SubElement(rss_item, 'title')
-  item_title.text = "🏴‍☠️ " + str(item['group_name']).capitalize() + " has just published a new victim : " + str(item['post_title']).replace('&amp;','&')
+  #if item.get('country'):
+  #  tail = '  ['+ item['country'] +']'
+  #else:
+  #  tail = ''
+  item_title.text = "🏴‍☠️ " + str(item['group_name']).capitalize() + " has just published a new victim : " + str(item['post_title']).replace('&amp;','&') #+ tail
   item_link = SubElement(rss_item, 'link')
   item_link.text = 'https://www.ransomware.live/#/group/{}'.format(item['group_name'])
   
   item_description = SubElement(rss_item, 'description')
   description_text = html.escape(item['description'])
-  item_description.text = description_text
-  
+
+  item_description.text = description_text 
   if item.get('post_url'):
     md5_hash = hashlib.md5(item['post_url'].encode()).hexdigest()
     image_url = f"https://images.ransomware.live/screenshots/posts/{md5_hash}.png"
@@ -82,16 +87,20 @@ for i in reversed(range(len(data)-100, len(data))):
             enclosure.set('type', 'image/png')
             enclosure.set('length', str(image_size))  # Set the image length attribute
     else:
-      image_url = f"https://www.ransomware.live/ransomwarelive.png"
-      image_path = f"./docs/ransomwarelive.png"  # Path to the image file
+      #image_url = f"https://www.ransomware.live/ransomwarelive.png"
+      image_url = f"https://www.ransomware.live/Christmas.png"
+      #image_path = f"./docs/ransomwarelive.png"  # Path to the image file
+      image_path = f"./docs/Christmas.png"  # Path to the image file
       image_size = os.path.getsize(image_path)  # Get file size in bytes
       enclosure = SubElement(rss_item, 'enclosure')
       enclosure.set('url', image_url)
       enclosure.set('type', 'image/png')
       enclosure.set('length', str(image_size))  # Set the image length attribute
   else:
-      image_url = f"https://www.ransomware.live/ransomwarelive.png"
-      image_path = f"./docs/ransomwarelive.png"  # Path to the image file
+      #image_url = f"https://www.ransomware.live/ransomwarelive.png"
+      image_url = f"https://www.ransomware.live/Christmas.png"
+      #image_path = f"./docs/ransomwarelive.png"  # Path to the image file
+      image_path = f"./docs/Christmas.png"  # Path to the image file
       image_size = os.path.getsize(image_path)  # Get file size in bytes
       enclosure = SubElement(rss_item, 'enclosure')
       enclosure.set('url', image_url)

@@ -44,6 +44,29 @@ def main():
                     date_obj = datetime.strptime(published.replace('Updated: ',''), "%d %b, %Y,\xa0\xa0 %H:%M %Z")
                     published = date_obj.strftime("%Y-%m-%d %H:%M:%S.%f")
                     parse.appender(title, 'lockbit3', description.replace('\n',''),"",published,post)
+                divs_name=soup.find_all('a', {"class": "post-block bad"})
+                for div in divs_name:
+                    title = div.find('div',{"class": "post-title"}).text.strip()
+                    description = div.find('div',{"class" : "post-block-text"}).text.strip()
+                    published = div.find('div',{"class" : "updated-post-date"}).text.strip()
+                    link = div['href']
+                    url = "lockbitapt2d73krlbewgv27tquljgxr33xbwwsp6rkyieto7u4ncead"
+                    post = 'http://' + url + '.onion' + link
+                    published = div.find('div',{"class" : "updated-post-date"}).text.strip()
+                    date_obj = datetime.strptime(published.replace('Updated: ',''), "%d %b, %Y,\xa0\xa0 %H:%M %Z")
+                    published = date_obj.strftime("%Y-%m-%d %H:%M:%S.%f")
+                    parse.appender(title, 'lockbit3', description.replace('\n',''),"",published,post)
+                divs_name=soup.find_all('a', {"class": "post-block good"})
+                for div in divs_name:
+                    title = div.find('div',{"class": "post-title"}).text.strip()
+                    description = div.find('div',{"class" : "post-block-text"}).text.strip()
+                    link = div['href']
+                    url = "lockbitapt2d73krlbewgv27tquljgxr33xbwwsp6rkyieto7u4ncead"
+                    post = 'http://' + url + '.onion' + link
+                    published = div.find('div',{"class" : "updated-post-date"}).text.strip()
+                    date_obj = datetime.strptime(published.replace('Updated: ',''), "%d %b, %Y,\xa0\xa0 %H:%M %Z")
+                    published = date_obj.strftime("%Y-%m-%d %H:%M:%S.%f")
+                    parse.appender(title, 'lockbit3', description.replace('\n',''),"",published,post)
                 file.close()
         except:
             errlog('lockbit3: ' + 'parsing fail')

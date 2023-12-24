@@ -62,11 +62,20 @@ def screenshot(webpage,delay=30000,output=None):
     name = 'docs/screenshots/posts/' + output + '.png'
     with sync_playwright() as play:
                 try:
-                    tor_prefixes = ["http://stniiomy", "http://noescape", "http://medusa", "http://cactus", "http://hl666", "http://incblog"]
+                    tor_prefixes = ["http://stniiomy", "http://noescape", "http://medusa", "http://cactus", "http://hl666", "http://incblog","http://rhysida"]
                     if any(webpage.startswith(prefix) for prefix in tor_prefixes):
                         browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"}, args=[''])
                         print('(!) exception')
                     elif webpage.startswith("https://ransomed.vc/"):
+                        browser = play.firefox.launch()
+                        print('(!) not via tor')
+                    elif webpage.startswith("https://t.me"):
+                        browser = play.firefox.launch()
+                        print('(!) not via tor')
+                    elif webpage.startswith('https://werewolves'):
+                        browser = play.firefox.launch()
+                        print('(!) not via tor')
+                    elif webpage.startswith('https://weerwolven'):
                         browser = play.firefox.launch()
                         print('(!) not via tor')
                     else:

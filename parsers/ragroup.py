@@ -37,7 +37,6 @@ def main():
                         title = title.replace('(Unpay-Start Leaking)','')
                         title = title.replace('\t','')
                         if len(title) > 0: 
-                            print('--->' +  title)
                             appender(title, 'ragroup', '','','',post_url)
                 file.close()
         except:

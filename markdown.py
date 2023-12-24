@@ -20,6 +20,7 @@ from sharedutils import parsercount
 from sharedutils import onlinecount
 from sharedutils import postslast24h
 from sharedutils import poststhisyear
+from sharedutils import postslastyears
 from sharedutils import postslastyear
 from sharedutils import currentmonthstr
 from sharedutils import monthlypostcount
@@ -168,8 +169,15 @@ def mainpage():
     writeline(uptime_sheet, '      { "label": "Last 24 hours", "value": ' + str(postslast24h()) + '},')
     writeline(uptime_sheet, '      { "label": "Last 7 days", "value": ' + str(postssince(7)) + '},')
     writeline(uptime_sheet, '      { "label": "Last 30 days", "value": ' + str(postssince(30)) + '},')
-    writeline(uptime_sheet, '      { "label": "In 2023", "value": ' + str(poststhisyear()) + '},')
-    writeline(uptime_sheet, '      { "label": "In 2022", "value": ' + str(postslastyear()) + '}')
+    current_year = datetime.now().year
+    if current_year == 2024:
+        writeline(uptime_sheet, '      { "label": "In 2024", "value": ' + str(poststhisyear()) + '},')
+        writeline(uptime_sheet, '      { "label": "In 2023", "value": ' + str(postslastyears(1)) + '},')
+        writeline(uptime_sheet, '      { "label": "In 2022", "value": ' + str(postslastyears(2)) + '}')
+    else:
+        writeline(uptime_sheet, '      { "label": "In 2023", "value": ' + str(poststhisyear()) + '},')
+        writeline(uptime_sheet, '      { "label": "In 2022", "value": ' + str(postslastyears(1)) + '}')
+    ####writeline(uptime_sheet, '      { "label": "In 2022", "value": ' + str(postslastyear()) + '}')
     # add coma to previous line 
     #writeline(uptime_sheet, '      { "label": "In 2022 (Year to date)", "value": ' + str(countpostsyeartodate()) + '}')
     writeline(uptime_sheet, '  ]')
@@ -357,7 +365,7 @@ def recentpublishedpage():
                     flag = 'GB'
                 case _:
                     flag = post['country']
-            country="!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':no-zoom')"
+            country="!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':size=32x24 :no-zoom')"
         else:
             country=''
         line = '| ' + date + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + country + ' | ' + grouplink + ' | ' + screenpost + ' |'
@@ -382,8 +390,8 @@ def recentdiscoveredpage():
     writeline(recentpage,'')
     writeline(recentpage, '**📰 200 last victims sorted by discovered date by `Ransomware.live`**')
     writeline(recentpage, '')
-    writeline(recentpage, '| Discovered Date | Title | Group | 📸 |')
-    writeline(recentpage, '|---|---|---|---|')
+    writeline(recentpage, '| Discovered Date | Title | Country | Group | 📸 |')
+    writeline(recentpage, '|---|---|---|---|---|')
     for post in recentdiscoveredposts(fetching_count):
         # show friendly date for discovered
         date = post['published'].split(' ')[0]
@@ -403,7 +411,17 @@ def recentdiscoveredpage():
             hex_digest = hash_object.hexdigest()
             if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
                 screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>👀</a>'
-        line = '| ' + date + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + grouplink + ' | ' + screenpost + ' |'
+            if len(post['country']) > 1:
+                match post['country']:
+                    case 'UK':
+                        flag = 'GB'
+                    case _:
+                        flag = post['country']
+                country="!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':size=32x24 :no-zoom')"
+            else:
+                country=''
+        #line = '| ' + date + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + grouplink + ' | ' + screenpost + ' |'
+        line = '| ' + date + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + country + ' | ' + grouplink + ' | ' + screenpost + ' |'
         writeline(recentpage, line)
     writeline(recentpage, '')
     writeline(recentpage, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
@@ -776,7 +794,7 @@ def profile():
         # delete contents of file
         with open(profilepage, 'w', encoding='utf-8') as f:
             f.close()
-        writeline(profilepage, '# Profiles for ransomware group : **' + group['name']+'**')
+        writeline(profilepage, '# Profile for ransomware group : **' + group['name']+'**')
         writeline(profilepage, '')
         try: 
             writeline(profilepage,'')

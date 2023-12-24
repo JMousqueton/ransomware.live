@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# Backup posts, groups and press json files 
 
 __author__ = "Julien Mousqueton"
 __copyright__ = "Copyright 2023, RansomwarE.live Project"
@@ -20,7 +21,7 @@ log_file = "/var/log/backup.log"  # Specify the path to your log file
 # Enable or disable gzip compression for .diff files
 use_gzip = True  # Set to True to enable gzip compression
 # List of files to back up
-files = ["posts.json", "groups.json"]
+files = ["posts.json", "groups.json", "press.json"]
 
 
 # Configure logging

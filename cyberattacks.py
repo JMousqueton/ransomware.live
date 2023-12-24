@@ -42,7 +42,7 @@ def screenshot(webpage,output,delay=15000,option=None):
     if webpage.endswith(".pdf"):
         stdlog("PDF file no screenshot")
         return
-    disabled_site = ["hk01.com", "mb.com.ph", "tass.ru", "richmond-news.com", "ncic.co.jp","guardian.co.tt","theadvocate.com","jaccs.co.jp","azimut.it","lapresse.ca","noirlab","wlox.com","cdn-api.markitdigital.com","unimedia","jamaica-gleaner","myrgv.com", "nypost.com", "www.cbc.ca", "star-", "timesnews", "focus-wtv", "itatiaia"]
+    disabled_site = ["hk01.com", "mb.com.ph", "tass.ru", "richmond-news.com", "ncic.co.jp","guardian.co.tt","theadvocate.com","jaccs.co.jp","azimut.it","lapresse.ca","noirlab","wlox.com","cdn-api.markitdigital.com","unimedia","jamaica-gleaner","myrgv.com", "nypost.com", "www.cbc.ca", "star-", "timesnews", "focus-wtv", "itatiaia", "telegraph.co.uk", "nj1015", "illawarramercury", "radio-canada"]
     if any(website in webpage for website in disabled_site):
         stdlog("Disabled screenshot for website : "+ webpage)
         return  # This will exit the function
@@ -52,10 +52,11 @@ def screenshot(webpage,output,delay=15000,option=None):
                     if option in ['exception']:
                         #browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                         browser = play.firefox.launch(
-                          args=[''])
+                          args=["--headless=new"])
                         print('(!) exception')
                     else:
-                        browser = play.chromium.launch()
+                        browser = play.chromium.launch(
+                            args=["--headless=new"])
                     context = browser.new_context(ignore_https_errors= True )
                     Image.MAX_IMAGE_PIXELS = None
                     page = context.new_page()
@@ -125,6 +126,7 @@ def recentnews(top):
             break
     stdlog('recent news generated')
     return recentnews
+    
 
 
 def getnews():
@@ -176,7 +178,7 @@ def country2flag(pays):
             flag="CV"
         case _:
             flag=pays[:2]
-    return "![" + pays + "](https://images.ransomware.live/flags/"+flag+".svg ':no-zoom')"
+    return "![" + pays + "](https://images.ransomware.live/flags/"+flag+".svg  ':size=32x24 :no-zoom')"
 
 def translate_text(text):
     translator = deepl.Translator(DEEPL_API_KEY)

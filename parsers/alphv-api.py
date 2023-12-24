@@ -44,7 +44,7 @@ def convert_date(timestamp):
     return formatted_date
 
 def main():
-    onion_url= 'http://alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad.onion/api/blog/brief/0/10'
+    onion_url= 'http://alphvuzxyxv6ylumd2ngp46xzq3pw6zflomrghvxeuks6kklberrbmyd.onion/api/blog/brief/0/10'
 
     json_data = fetch_json_from_onion_url(onion_url)
     if json_data is not None:
@@ -53,7 +53,7 @@ def main():
             id = item['id']
             post_title = item['title'].strip().rstrip('.')
             if existingpost(post_title, 'alphv') is False:
-                desc_url = 'http://alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad.onion/api/blog/' + id
+                desc_url = 'http://alphvuzxyxv6ylumd2ngp46xzq3pw6zflomrghvxeuks6kklberrbmyd.onion/api/blog/' + id
                 json_data_item = fetch_json_from_onion_url(desc_url)
                 if json_data_item is not None:
                         created_dt = json_data_item.get('createdDt')
@@ -74,4 +74,4 @@ def main():
                         +------------------------------+------------------+----------+
                         Rappel : def appender(post_title, group_name, description="", website="", published="", post_url=""):
                         """
-                        appender(title.rstrip('.'), 'alphv', description.replace('\n',' '),url,convert_date(created_dt)+'.123456','http://alphvmmm27o3abo3r2mlmjrpdmzle3rykajqc5xsj7j7ejksbpsa36ad.onion/' + id)
+                        appender(title.rstrip('.'), 'alphv', description.replace('\n',' '),url,convert_date(created_dt)+'.123456','http://alphvuzxyxv6ylumd2ngp46xzq3pw6zflomrghvxeuks6kklberrbmyd.onion/' + id)

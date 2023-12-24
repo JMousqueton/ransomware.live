@@ -487,6 +487,21 @@ def postslastyear():
             post_count += 1
     return post_count
 
+def postslastyears(year):
+    '''
+    returns the number of posts last year
+    '''
+    post_count = 0
+    before = 365 * int(year)
+    posts = openjson('posts.json')
+    previous_year = datetime.now() - timedelta(days=before)
+    previous_year = previous_year.year 
+    for post in posts:
+        datetime_object = datetime.strptime(post['published'], '%Y-%m-%d %H:%M:%S.%f')
+        if datetime_object.year == previous_year:
+            post_count += 1
+    return post_count
+
 def postslast24h():
     '''returns the number of posts within the last 24 hours'''
     post_count = 0
