@@ -1,6 +1,13 @@
 # 🎚️ Changelog 
 ---
 
+## 2023-12-25 🎅🏻🎄(Christmas Edition)
+
+- [New] Add [Malekteam](group/malekteam.md) ransomware group with thenassociated parser.
+- [New] Add [Toufan](group/toufan.md) ransomware group with the associated parser.
+- [Fix] Add a column to [last victims](#/recentdiscoveredvictims) page sorted by discovering date.
+- [New] Add [Werewolves](group/werewolves.md) ransomware group (2 URLs) with the associated parser.
+
 ## 2023-11-24 🐈 
 
 - [New] Add [Meow](group/meow.md) ransomware group with associated parser.

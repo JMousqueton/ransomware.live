@@ -390,11 +390,14 @@ def recentdiscoveredpage():
     writeline(recentpage,'')
     writeline(recentpage, '**📰 200 last victims sorted by discovered date by `Ransomware.live`**')
     writeline(recentpage, '')
-    writeline(recentpage, '| Discovered Date | Title | Country | Group | 📸 |')
-    writeline(recentpage, '|---|---|---|---|---|')
+    writeline(recentpage, '| Discovery Date | Attack Date | Victim | Country | Group | 📸 |')
+    writeline(recentpage, '|---|---|---|---|---|---|')
     for post in recentdiscoveredposts(fetching_count):
         # show friendly date for discovered
-        date = post['published'].split(' ')[0]
+        date = post['discovered'].split(' ')[0]
+        attack = post['published'].split(' ')[0]
+        if (attack == date):
+            attack =''
         # replace markdown tampering characters
         title = post['post_title'].replace('|', '-')
         group = post['group_name'].replace('|', '-')
@@ -421,7 +424,7 @@ def recentdiscoveredpage():
             else:
                 country=''
         #line = '| ' + date + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + grouplink + ' | ' + screenpost + ' |'
-        line = '| ' + date + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + country + ' | ' + grouplink + ' | ' + screenpost + ' |'
+        line = '| ' + date + ' | ' + attack + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + country + ' | ' + grouplink + ' | ' + screenpost + ' |'
         writeline(recentpage, line)
     writeline(recentpage, '')
     writeline(recentpage, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
