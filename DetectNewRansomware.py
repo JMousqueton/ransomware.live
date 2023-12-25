@@ -8,17 +8,23 @@
 
 __author__ = "Julien Mousqueton"
 __copyright__ = "Copyright 2023, Ransomware.live Project"
-__version__ = "1.0.0"
+__version__ = "1.1.0"
 
 # Import necessary modules
 import requests
 import re
 import json
 from urllib.parse import urlparse
+import requests
+from bs4 import BeautifulSoup
+import os
+
+
 # For screenshot 
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 import os, hashlib
 from sharedutils import stdlog, dbglog, errlog
+
 
 # mail 
 import smtplib
@@ -145,7 +151,10 @@ def check_url(url, group_data, tor_proxy, exclusions_file):
             screenshot(url,delay=15000,output=random_string)
             body="A new ransomware site has been detected : \n\n"+url 
             file="/tmp/"+random_string+".png" 
-            send_email("New Ransomware site detected",body, "julien@mousqueton.io",file)
+            if os.path.exists(file):
+                send_email("New Ransomware site detected",body, "julien@mousqueton.io",file)
+            else:
+                send_email("New Ransomware site detected",body, "julien@mousqueton.io")
     #    else:
     #        print(f"{url} is not online (HTTP Status Code: {response.status_code})")
     except requests.ConnectionError:
@@ -195,4 +204,32 @@ if __name__ == "__main__":
     for onion_url in onion_urls:
         check_url(onion_url, group_data, tor_proxy, exclusions_file)
     stdlog('Analyze finished')
+    
+    stdlog('Analyze CTI.FYI repository')
+    # URL to fetch HTML content from
+    url = "https://cti.fyi/"
 
+    # Fetch the HTML content
+    response = requests.get(url)
+    html_content = response.text
+
+    # Parse the HTML content
+    soup = BeautifulSoup(html_content, 'html.parser')
+
+    # Find all rows in the table body
+    rows = soup.select('table.style-table tbody tr')
+
+    # Extract URLs where the next <td> is &#x1F7E2;
+    urls = []
+    for row in rows:
+        cols = row.find_all('td')
+        if len(cols) > 1 and '🟢' in cols[1].get_text():
+            code_tag = row.find('code')
+            if code_tag:
+                url = code_tag.get_text()
+                ## [PATCH] Need to be corrected !!! but do the job for now ;) 
+                if url != "http://bl@ckt0r:bl@ckt0r@bl4cktorpms2gybrcyt52aakcxt6yn37byb65uama5cimhifcscnqkid.onion/0x00/data-breach.html":
+                    check_url(url, group_data, tor_proxy, exclusions_file)
+                
+    stdlog('Analyze finished')
+                
