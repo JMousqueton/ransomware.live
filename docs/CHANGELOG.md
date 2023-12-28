@@ -1,18 +1,38 @@
 # 🎚️ Changelog 
 ---
 
+## 2023-12-27
+
+- [Update] Replace the google search by the domain for [Cyberattacks](https://www.ransomware.live/#/recentcyberattacks.md). Thanks again to [Valéry Rieß-Marchive](https://twitter.com/ValeryMarchive)
+
+## 2023-12-26 
+
+- [Update] [Tidal Cyber](https://www.tidalcyber.com/) have updated their TTPs (Tactics, Techniques, and Procedures). The link is update for all Ransomware Groups : 4 changed ([Daixin](group/daixin.md), [Play](group/play.md), [Rhysida](group/rhysida.md) and [vicesociety](group/vicesociety.md)) and 1 new ([IncRansom](group/incransom.md))
+
 ## 2023-12-25 🎅🏻🎄(Christmas Edition)
 
 - [New] Add [Malekteam](group/malekteam.md) ransomware group with thenassociated parser.
-- [New] Add [Toufan](group/toufan.md) ransomware group with the associated parser.
 - [Fix] Add a column to [last victims](#/recentdiscoveredvictims) page sorted by discovering date.
 - [New] Add [Werewolves](group/werewolves.md) ransomware group (2 URLs) with the associated parser.
+
+## 2023-12-17 
+
+- [New] Add [Toufan](group/toufan.md) with the associate parser 
+
+## 2023-12-08
+
+- [New] Add [SiegedSec](group/siegedsec.md) and the associate parser (it's not really a ransomware group but I've decided to add it)
+- [New] Add a [RSS feed](https://www.ransomware.live/grouprss/) by group. 
+
+## 2023-11-29 
+
+- [New] Add a new [feed](https://www.ransomware.live/cyberattacks.xml) for the last 100 cyberattacks monitoring 
 
 ## 2023-11-24 🐈 
 
 - [New] Add [Meow](group/meow.md) ransomware group with associated parser.
 - [New] Add [Madcat](group/madcat.md) ransomware group (Thanks to Valéry for the link)
-- [New] Add a new [feed](https://www.ransomware.live/negotiations.xml) for negociations 
+- [New] Add a new [feed](https://www.ransomware.live/negotiations.xml) for negotiations 
 
 ## 2023-11-20
 
