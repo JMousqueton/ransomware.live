@@ -56,7 +56,9 @@ def main():
                     #victim =  post['attributes']['slug']
                     content = strip_html_tags(post['attributes']['content'])
                     content = cut_content_before_link(content).replace('6wuivqgrv2g7brcwhjw5co3vligiqowpumzkcyebku7i2busrvlxnzid','***************')
-                    appender(victim,'cactus',content,website,postdate)
+                    post_url = post['attributes']['slug']  # Replace 'link_field' with actual field name
+                    post_url = "https://cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid.onion/posts/" + post_url
+                    appender(victim,'cactus',content,website,postdate,post_url)
         except:
             errlog('cactus : ' + 'parsing fail')
             pass
