@@ -1,4 +1,4 @@
-lxml==5.0.1
+lxml==5.1.0
 kaleido==0.2.1.post1
 tldextract==5.1.1
 matplotlib==3.8.2
