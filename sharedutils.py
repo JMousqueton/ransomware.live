@@ -215,7 +215,7 @@ def getsitetitle(html) -> str:
         if len(titletext) > 50:
             titletext = titletext[:50]
         stdlog('sharedutils: ' + 'site title - ' + str(titletext))
-        return titletext
+        return titletext.replace('\t', '').replace('\b', '').replace('\n', '')
     stdlog('sharedutils: ' + 'could not find site title from source - ' + str(html))
     return None
 
