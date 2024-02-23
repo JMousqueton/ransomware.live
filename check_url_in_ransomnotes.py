@@ -64,7 +64,7 @@ def check_onion_urls_online(onion_urls, exception_urls):
             response = session.get(f'http://{url}', timeout=10)
             if response.status_code == 200:
                 online_urls.append(url)
-                print(f'Online: {url}')
+                print({url})
             else:
                 pass
                 # print(f'Offline or Error: {url} - Status Code: {response.status_code}')
