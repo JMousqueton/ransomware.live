@@ -84,18 +84,21 @@ def main():
     stdlog(onion_url+" Fetched")
     if json_data is not None:
         for item in json_data:
+          try:
             id = item['id']
             title = item['title'].strip()
             country = get_country(item['country'])
-            website = item['website']
+            website = item.get('website','')
             exfiltration = item['exfiltrated_data']
             encryption = item['encrypted_data']
-            published = item['updated_at']
+            published = item.get('updated_at','')
             description = "Country : " +  country + " - Exfiltraded data : " + convert_text(exfiltration) +  " - Encrypted data : " + convert_text(encryption)
             post_url = "https://hunters55rdxciehoqzwv7vgyv6nt37tbwax2reroyzxhou7my5ejyid.onion/companies/" + id 
-            #print('-- ' + title + ' --> ' + post_url)
-           
+            if not website:
+                website=''
             """
                 def appender(post_title, group_name, description="", website="", published="", post_url=""):
             """
             appender(title, 'hunters', description,website, convert_date(published),post_url)
+          except:
+              stdlog('Hunters API error : ' + title)
