@@ -9,6 +9,8 @@ with open('posts.json', 'r') as file:
 
 # Filter posts discovered in 2024
 posts_2024 = [post['post_title'] for post in posts if (post['discovered'].startswith('2024') and not post['country'])]
+# Remove entries containing "**" from posts_2024
+posts_2024 = [post for post in posts_2024 if "**" not in post]
 
 if posts_2024: 
     # Email configurations
