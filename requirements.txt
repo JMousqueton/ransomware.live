@@ -4,7 +4,7 @@ tldextract==5.1.2
 matplotlib==3.8.4
 BeautifulSoup4==4.12.3
 requests[socks]==2.31.0
-playwright==1.42.0
+playwright==1.43.0
 pandas==2.2.1
 pillow==10.3.0
 #dotenv
