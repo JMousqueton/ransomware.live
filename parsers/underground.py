@@ -45,4 +45,3 @@ def main():
         except:
             errlog('Underground: ' + 'parsing fail')
             pass    
-    exit()
