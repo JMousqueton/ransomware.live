@@ -2,11 +2,6 @@
 
 # There is also a function defined to calculate previous month and year based on the "current date" when the script is executed and that can be used to get data for tha specific month and year instead of all Recent victims. use the url specified on line 85 for this fucntion
 
-##############################################################
-# You might need to verify the value of the class specified on line 54. in case it's different update that value and the code should work as intended. this should be a one time change if at all required
-# Since there are multiple class values when inspecting the data stored in the 'soup' variable, we want the value where in the url of the google search results associated with the company name is stored
-##############################################################
-
 import requests
 import tldextract
 import json
@@ -44,22 +39,40 @@ def get_domain_post_title(url):
         return domain
 
 # Google search the company name to extract the associated domain name
-def google_search(query):
+def google_search(query: str) -> str:
+    """
+     Searches Google for the given query and returns the first result's URL.
+
+    Args:
+         query (str): The query to be searched
+
+     Returns:
+         first_link (str): The first result's URL
+    """
     try:
-        
+
         url = f"https://www.google.com/search?q={'+'.join(query.split())}"
         response = requests.get(url)
         response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
-        search_results = soup.find_all('div', class_='egMi0 kCrYT')
-        
+        anchor_tags = soup.find_all('a')
+        # Extract the URLs from the anchor tags
+        urls = []
+        for tag in anchor_tags:
+            url = tag.get('href')
+            if url and url.startswith('/url?q=https://'):
+                if "google.com" in url:
+                    pass
+                else:
+                    urls.append(url)
+        search_results = urls[0]
+
         if search_results:
-            first_link = (search_results[0].find('a'))['href']
-            return first_link     
-        else: 
+            first_link = search_results
+        else:
             print("No results found")
             first_link = "N/A"
-            return first_link
+        return first_link
         
     except HTTPError as e:
         if e.response.status_code == 429:
