@@ -59,7 +59,7 @@ for idx, row in country_counts.iterrows():
             folium.CircleMarker(
                 location=[lat, lon],
                 radius=scale_factor * row['count']**0.5,  # Scale radius based on square root of count
-                popup=f"<a href='https://www.ransomware.live/#/country/{row['country'].lower()}' target='_parent'>{get_country_name(row['country'])}</a>: {row['count']} victims",
+                popup=f"<a href='https://www.ransomware.live/#/country/{row['country'].lower()}' target='_parent'>{get_country_name(row['country'])}</a>: {row['count']} victim(s)",
                 color='red',
                 fill=True,
                 fill_opacity=0.7
