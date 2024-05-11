@@ -67,6 +67,27 @@ def errlog(msg):
     conn.getresponse()
 
 
+def redactedlink(text):
+    pattern = r"(https://mega\.nz/folder/)[^#]+"
+    redacted_text = re.sub(pattern, r"\1[REDACTED]", text)
+
+    pattern = r"(https://anonfiles\.com/)[^/]+"
+    redacted_text = re.sub(pattern, r"\1[REDACTED]", redacted_text)
+
+    pattern = r"(https://dropmefiles\.com/)[^ ]+"
+    redacted_text = re.sub(pattern, r"\1[REDACTED]", redacted_text)
+    
+    pattern = r"(https://www\.sendbig\.com/view-files/\?Id=)[^&]+"
+    redacted_text = re.sub(pattern, r"\1[REDACTED]", redacted_text)
+
+    pattern = r"(https://www\.sendspace\.com/file/)\S+"
+    redacted_text = re.sub(pattern, r"\1[REDACTED]", redacted_text)
+
+    pattern = r"(https://gofile\.io/d/)\S+"
+    redacted_text = re.sub(pattern, r"\1[REDACTED]", redacted_text)
+    
+    return redacted_text
+
 def honk(msg):
     '''critical error logging with termination'''
     logging.critical(msg)
@@ -597,7 +618,7 @@ def tobluesky(post_title,group):
         errlog('Error posting on bluesky')
 
 def tomattermost(post_title,group):
-    webhook="https://teams.mousqueton.io/hooks/isikys4fgfft3ydsg35ner4har"
+    webhook=os.environ.get('MATTERMOST_WEBHOOK')
     # Prepare the payload
     message = "⚠️ **" + group + "** ransomware group has added **" + post_title + "** to its victims. "
     payload = {'text': message,
