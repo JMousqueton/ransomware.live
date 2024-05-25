@@ -66,7 +66,16 @@ def generate_sitemapXML(base_url, pages, note_directories, output_file="./docs/s
         lastmod = ET.SubElement(url, "lastmod")
         lastmod.text = datetime.date.today().isoformat()
 
-        directory_path = "./docs/negotiation/"
+    directory_path = "./docs/negotiation/"
+    for file in list_files_in_directory(directory_path):
+        page = file.replace('./docs','')
+        url = ET.SubElement(urlset, "url")
+        loc = ET.SubElement(url, "loc")
+        loc.text = f"{base_url}/#{page}"
+        lastmod = ET.SubElement(url, "lastmod")
+        lastmod.text = datetime.date.today().isoformat()
+
+    directory_path = "./docs/country/"
     for file in list_files_in_directory(directory_path):
         page = file.replace('./docs','')
         url = ET.SubElement(urlset, "url")
@@ -102,6 +111,9 @@ def generate_sitemapHTML(base_url, pages, note_directories, output_file="./docs/
             ("Stats Victims by month cumulative", "stats?id=victims-by-month-cumulative"),
             ("Stats for 2023", "stats?id=_2023"),
             ("Stats for 2022", "stats?id=_2022"),
+            ("Stats for 2024", "stats?id=_2024"),
+            ("Ransomware attacks by country", "country"),
+            ("Ransomware discovered victims", "recentdiscoveredvictims"),
             ("About Ransomware.live", "about"),
             ("Changelog", "CHANGELOG")
         ]

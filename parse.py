@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup # type: ignore
 from sharedutils import openjson
 from sharedutils import runshellcmd
 # from sharedutils import todiscord, totwitter, toteams
-from sharedutils import toMastodon, toPushover, tobluesky
+from sharedutils import toMastodon, toPushover, tobluesky, tomattermost
 from sharedutils import stdlog, dbglog, errlog   # , honk
 # For screenshot 
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
@@ -21,6 +21,7 @@ from PIL import Image
 from PIL import ImageDraw
 from PIL import ImageEnhance
 from PIL.PngImagePlugin import PngInfo
+from datetime import datetime
 # For Notification 
 import http.client, urllib
 from dotenv import load_dotenv
@@ -139,10 +140,19 @@ def screenshot(webpage,fqdn,delay=15000,output=None):
                     metadata.add_text("Copyright", "Ransomware.live")
                     metadata.add_text("Description",webpage)
                     metadata.add_text("Author","Julien Mousqueton")
-                    current_date = str(datetime.now().strftime('%Y:%m:%d %H:%M:%S')) 
+                    
+                    # Get current date and time
+                    current_datetime = datetime.now()
+                    # Format it in ISO format
+                    iso_formatted = current_datetime.isoformat()
+                    current_date = current_datetime.strftime('%Y:%m:%d %H:%M:%S')
+                    
                     metadata.add_text("Creation Time",current_date)
+                    
                     draw = ImageDraw.Draw(image)
-                    draw.text((10, 10), "https://www.ransomware.live", fill=(0, 0, 0))
+                    draw.text((10, 10), iso_formatted, fill=(0, 0, 0))
+                    #draw.text((10, 10), "https://www.ransomware.live", fill=(0, 0, 0))
+                    
                     image.save(name, pnginfo=metadata)
                     add_watermark(name)
                 except PlaywrightTimeoutError:
@@ -206,12 +216,12 @@ def replace_http_slash(text):
     return text
 
 
-def appender(post_title, group_name, description="", website="", published="", post_url=""):
+def appender(post_title, group_name, description="", website="", published="", post_url="", country=""):
     '''
     append a new post to posts.json
     '''
     if len(post_title) == 0:
-        errlog('post_title is empty')
+        stdlog('post_title is empty')
         return
     # Check exclusion 
     with open('exceptions.txt', 'r') as f:
@@ -221,7 +231,7 @@ def appender(post_title, group_name, description="", website="", published="", p
             stdlog('(!) '+ post_title + ' is in exceptions')
             return
     # limit length of post_title to 90 chars
-    country=''
+    #country=''
     if len(post_title) > 90:
         post_title = post_title[:90]
     post_title=html.unescape(post_title)
@@ -267,6 +277,7 @@ def appender(post_title, group_name, description="", website="", published="", p
         
         if os.environ.get('BLUESKY_APP_PASSWORD') is not None:
             tobluesky(post_title, group_name)
+            tomattermost(post_title, group_name)
         
         ### Post screenshot
         if post_url !="":

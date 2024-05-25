@@ -1,5 +1,5 @@
 #!/bin/bash
-source ../ransomware.live/.env
+source .env
 # Se placer dans le répertoire du référentiel Git
 cd ./data
 

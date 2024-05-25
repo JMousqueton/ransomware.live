@@ -1,6 +1,0 @@
-# robots.txt
-User-agent: *
-Disallow: 
-Disallow: /cgi-bin/
-Disallow: /screenshots/
-Sitemap: https://www.ransomware.live/sitemap.xml

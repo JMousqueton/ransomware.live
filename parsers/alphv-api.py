@@ -29,7 +29,7 @@ def fetch_json_from_onion_url(onion_url):
         response = requests.get(onion_url, proxies=proxies,verify=False)
         response.raise_for_status()  # Check for any HTTP errors
     except requests.exceptions.RequestException as e:
-        print("Error:", e)
+        stdlog("Error:", e)
         return None
 
     # Assuming the response contains JSON data, parse it
@@ -45,8 +45,10 @@ def convert_date(timestamp):
 
 def main():
     onion_url= 'http://alphvuzxyxv6ylumd2ngp46xzq3pw6zflomrghvxeuks6kklberrbmyd.onion/api/blog/brief/0/10'
-
-    json_data = fetch_json_from_onion_url(onion_url)
+    try:
+        json_data = fetch_json_from_onion_url(onion_url)
+    except:
+        json_data = None
     if json_data is not None:
         i=0
         for item in json_data['items']:

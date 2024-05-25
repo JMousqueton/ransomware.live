@@ -71,7 +71,7 @@ if response.status_code == 200:
     for item in sorted_data:
         rss_item = ET.SubElement(channel, 'item')
         ET.SubElement(rss_item, 'title').text = item['title'] + ' ('+ item['country'] + ')'
-        ET.SubElement(rss_item, 'description').text = item['summary']
+        ET.SubElement(rss_item, 'description').text = '(' + item['domain'] + ') ' + item['summary']
         ET.SubElement(rss_item, 'link').text = 'https://www.ransomware.live/redirect.html?url=' + item['url']
 
         # Convert date to RFC-822 format with GMT timezone

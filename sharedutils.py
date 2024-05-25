@@ -8,6 +8,7 @@ import sys
 import json
 import socket
 import re
+import fnmatch
 # import codecs
 import random
 import calendar
@@ -65,6 +66,27 @@ def errlog(msg):
             }), { "Content-type": "application/x-www-form-urlencoded" })
     conn.getresponse()
 
+
+def redactedlink(text):
+    pattern = r"(https://mega\.nz/folder/)[^#]+"
+    redacted_text = re.sub(pattern, r"\1[REDACTED]", text)
+
+    pattern = r"(https://anonfiles\.com/)[^/]+"
+    redacted_text = re.sub(pattern, r"\1[REDACTED]", redacted_text)
+
+    pattern = r"(https://dropmefiles\.com/)[^ ]+"
+    redacted_text = re.sub(pattern, r"\1[REDACTED]", redacted_text)
+    
+    pattern = r"(https://www\.sendbig\.com/view-files/\?Id=)[^&]+"
+    redacted_text = re.sub(pattern, r"\1[REDACTED]", redacted_text)
+
+    pattern = r"(https://www\.sendspace\.com/file/)\S+"
+    redacted_text = re.sub(pattern, r"\1[REDACTED]", redacted_text)
+
+    pattern = r"(https://gofile\.io/d/)\S+"
+    redacted_text = re.sub(pattern, r"\1[REDACTED]", redacted_text)
+    
+    return redacted_text
 
 def honk(msg):
     '''critical error logging with termination'''
@@ -214,7 +236,7 @@ def getsitetitle(html) -> str:
         if len(titletext) > 50:
             titletext = titletext[:50]
         stdlog('sharedutils: ' + 'site title - ' + str(titletext))
-        return titletext
+        return titletext.replace('\t', '').replace('\b', '').replace('\n', '')
     stdlog('sharedutils: ' + 'could not find site title from source - ' + str(html))
     return None
 
@@ -387,13 +409,20 @@ def groupcount():
     groups = openjson('groups.json')
     return len(groups)
 
+#def parsercount():
+#    groups = openjson('groups.json')
+#    parse_count = 1
+#    for group in groups:
+#        if group['parser'] is True:
+#            parse_count += 1
+#    return parse_count
 def parsercount():
-    groups = openjson('groups.json')
-    parse_count = 1
-    for group in groups:
-        if group['parser'] is True:
-            parse_count += 1
-    return parse_count
+    directory = './parsers/'
+    pattern = '*.py'
+    exclude_pattern = '__init__.py'
+    py_files = [file for file in os.listdir(directory) if fnmatch.fnmatch(file, pattern)]
+    py_files = [file for file in py_files if file != exclude_pattern]
+    return len(py_files)
 
 def hostcount():
     groups = openjson('groups.json')
@@ -552,14 +581,14 @@ def tobluesky(post_title,group):
         resp.raise_for_status()
         session = resp.json()
         now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
-        text= "A new post from #Ransomware group #" + group + " : " + post_title + " was detected by "
-        startoffset = len(text)
-        print('--> ', startoffset)
+        text= "According to https://ransomware.live, " + group + " ransomware group has added " + post_title + " to its victims. "
+        #startoffset = len(text)
+        startoffset = 13
         #uri = "https://www.ransomware.live/#/group/" + group
         uri = "https://ransomware.live"
-        text+= uri
-        endoffset = len(text)
-        print('--> ', endoffset)
+        #text+= uri
+        #endoffset = len(text)
+        endoffset = 36
             # Required fields that each post must include
         post = {
                 "$type": "app.bsky.feed.post",
@@ -587,6 +616,27 @@ def tobluesky(post_title,group):
             )
     except:
         errlog('Error posting on bluesky')
+
+def tomattermost(post_title,group):
+    webhook=os.environ.get('MATTERMOST_WEBHOOK')
+    # Prepare the payload
+    message = "⚠️ **" + group + "** ransomware group has added **" + post_title + "** to its victims. "
+    payload = {'text': message,
+            'username': 'Ransomware.live',
+            'icon_url': "https://ransomware.live/ransomwarelive.png"
+            }
+
+    # Headers for the HTTP request
+    headers = {'Content-Type': 'application/json'}
+
+    # Perform the POST request to the Mattermost webhook
+    response = requests.post(webhook, data=json.dumps(payload), headers=headers)
+
+    # Check for successful transmission
+    if not response.status_code == 200:
+        stdlog("Error: " + response.status_code)
+
+
 
 def totwitter(post_title, group):
     dbglog('sharedutils: ' + 'posting to twitter')

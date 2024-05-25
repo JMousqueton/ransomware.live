@@ -35,7 +35,7 @@ def main():
                     victim = remove_html_tags(match[1])
                     #print(f"Website: {website}")
                     #print(f"Victim: {victim}\n")                        
-                    appender(victim, 'toufan', '',website)
+                    appender(victim, 'toufan', '',website,'','','IL')
                 file.close()
         except:
            errlog('toufan : ' + 'parsing fail')

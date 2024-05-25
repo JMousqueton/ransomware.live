@@ -22,8 +22,8 @@ end_date_2022 = str(previous_year)+'-' + str(next_month_digits) + '-01'
 
 # Define the start and end dates for 2023 (January to May)
 start_date_2023 = str(current_year)+'-01-01'
-end_date_2023 = str(current_year)+'-' + str(next_month_digits) + '01'
-
+#end_date_2023 = str(current_year)+'-' + str(next_month_digits) + '01'
+end_date_2023 = '2023-12-31'
 # Initialize counters
 count_2022 = 0
 count_2023 = 0

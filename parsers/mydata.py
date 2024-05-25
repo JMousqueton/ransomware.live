@@ -5,6 +5,7 @@
 +------------------------------+------------------+----------+
 |      X      |                |                  |     X    |
 +------------------------------+------------------+----------+
+Rappel : def appender(post_title, group_name, description="", website="", published="", post_url=""):
 """
 
 import os
@@ -16,23 +17,21 @@ from parse import appender
 def main():
     for filename in os.listdir('source'):
         try:
-            if filename.startswith('bianlian-'):
+            if filename.startswith('mydata-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                divs_name=soup.find_all('section', {"class": "list-item"})
+                divs_name=soup.find_all('div', class_='b_block')
                 for div in divs_name:
-                    title = div.h1.text.strip()
-                    post = div.find('a', {'class': 'readmore'})
-                    post = post.get('href')
+                    header = div.find('a', class_="a_title")
+                    title = header.text.strip()
+                    url = header.get('href') or header['href'] 
+                    description = div.find('div', style='line-height:20px; padding-top:5px; margin-bottom:30px;').text.strip()
                     try:
-                        url = find_slug_by_md5('bianlian', extract_md5_from_filename(html_doc)) + str(post)
+                        url = find_slug_by_md5('mydata', extract_md5_from_filename(html_doc)) + "/" + str(url)
                     except:
-                        #url = ''
-                        url = "bianlianlbc5an4kgnay3opdemgcryg2kpfcbgczopmm3dnbz3uaunad.onion" + str(post)
-                    description = div.div.text.strip()
-                    description = description.replace('%20',' ')
-                    appender(title, 'bianlian', description,"","",url)
+                        url = 'http://mydatae2d63il5oaxxangwnid5loq2qmtsol2ozr6vtb7yfm5ypzo6id.onion' +  "/" + str(url)
+                    appender(title, 'mydata', description,"","",url)
                 file.close()
         except:
             errlog("Failed during : " + filename)

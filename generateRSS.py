@@ -64,10 +64,7 @@ for i in reversed(range(len(data)-100, len(data))):
   item = data[i]
   rss_item = SubElement(channel, 'item')
   item_title = SubElement(rss_item, 'title')
-  #if item.get('country'):
-  #  tail = '  ['+ item['country'] +']'
-  #else:
-  #  tail = ''
+
   item_title.text = "🏴‍☠️ " + str(item['group_name']).capitalize() + " has just published a new victim : " + str(item['post_title']).replace('&amp;','&') #+ tail
   item_link = SubElement(rss_item, 'link')
   item_link.text = 'https://www.ransomware.live/#/group/{}'.format(item['group_name'])
@@ -109,6 +106,15 @@ for i in reversed(range(len(data)-100, len(data))):
   
   item_guid = SubElement(rss_item, 'guid')
   item_guid.text = 'https://www.ransomware.live/#/group/' + str(item['group_name'])  + '?' +md5GUID(item_title.text)
+  
+  country = item.get('country', 'N/A')  # Default to 'Unknown' if 'country' is missing
+  #country_element = SubElement(rss_item, 'country')
+  #country_element.text = country
+  # Add the 'country' field as a custom element using a namespace
+  category_element = SubElement(rss_item, 'category')
+  if not country:
+      country = 'N/A'
+  category_element.text = country
   
   date_iso = item['published']
   date_rfc822 = datetime.strptime(date_iso, '%Y-%m-%d %H:%M:%S.%f').strftime('%a, %d %b %Y %H:%M:%S +0000')

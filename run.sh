@@ -11,14 +11,18 @@ python3 ransomwatch.py scrape
 ## Delete file less than 1k 
 #find ./source/  -maxdepth 1 -type f -size -1024c -exec rm {} \;
 ## bypass error on ransomed
-service tor reload
-#python3 scrapegang.py ransomed 
+###service tor reload
+###python3 scrapegang.py ransomed 
 ## Reload service tor 
 service tor reload
 ## Parse HTML file to find new victim
 python3 ransomwatch.py parse 
 ## Generate the RSS feed 
 python3 generateRSS.py 
+## Generate a RSS feed by ransomware group
+python3 grouprss.py
+## Define Country from title, website, or description
+python3 get-country.py 
 ## Generate the website in markdown
 python3 ransomwatch.py markdown
 ## Generate sitemap.xml
@@ -47,7 +51,9 @@ cd /var/www/ransomware.live/
 python3 negotiations.py 
 ## Generate recent attacks page 
 python3 cyberattacks.py
+python3 generateCyberAttacksRSS.py
 ## Search for new ransomware group
+python3 DetectNewRansomware.py
 ./assets/sources.zsh
 ## Generate ransomware Cloud 
 python3 generateCloud.py
@@ -58,3 +64,7 @@ python3 ransom_crypto.py
 # Update negotiation chat
 negotiation-update.sh
 python3 generateNegoRSS.py  
+## Generate Countries
+python3 countries.py 
+## Generate graph top10 Countries 
+python3 graph-country-year.py

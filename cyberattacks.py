@@ -24,25 +24,13 @@ logging.basicConfig(
 
 NowTime=dt.now()
 
-def tweettemplate(id, date, author,texte, url):
-    '''
-    assuming we have a new post - form the template we will use for the new entry in posts.json
-    '''
-    schema = {
-        'tweet_id': id,
-        'tweet_date': date,
-        'tweet_author' : author, 
-        'tweet_texte': texte,
-        'tweet_url' : url
-    }
-    return schema
 
 def screenshot(webpage,output,delay=15000,option=None):
     stdlog('webshot: {}'.format(webpage))
     if webpage.endswith(".pdf"):
         stdlog("PDF file no screenshot")
         return
-    disabled_site = ["hk01.com", "mb.com.ph", "tass.ru", "richmond-news.com", "ncic.co.jp","guardian.co.tt","theadvocate.com","jaccs.co.jp","azimut.it","lapresse.ca","noirlab","wlox.com","cdn-api.markitdigital.com","unimedia","jamaica-gleaner","myrgv.com", "nypost.com", "www.cbc.ca", "star-", "timesnews", "focus-wtv", "itatiaia", "telegraph.co.uk", "nj1015", "illawarramercury", "radio-canada"]
+    disabled_site = ["hk01.com", "mb.com.ph", "tass.ru", "richmond-news.com", "ncic.co.jp","guardian.co.tt","theadvocate.com","jaccs.co.jp","azimut.it","lapresse.ca","noirlab","wlox.com","cdn-api.markitdigital.com","unimedia","jamaica-gleaner","myrgv.com", "nypost.com", "www.cbc.ca", "star-", "timesnews", "focus-wtv", "itatiaia", "telegraph.co.uk", "nj1015", "illawarramercury", "radio-canada","eet-china","majorcadailybulletin"]
     if any(website in webpage for website in disabled_site):
         stdlog("Disabled screenshot for website : "+ webpage)
         return  # This will exit the function
@@ -89,18 +77,6 @@ def openjson(url):
     response = requests.get(url)
     data = json.loads(response.text)
     return data
-
-def existingtweet(tweet_id):
-    '''
-    check if a post already exists in posts.json
-    '''
-    ids = openjson('tweetfr.json')
-    for id in ids:
-        if id['tweet_id'] == tweet_id :
-            dbglog('Tweet already exists: ' + tweet_id)
-            return True
-    dbglog('tweet does not exist: ' + tweet_id)
-    return False
 
 
 
@@ -242,7 +218,8 @@ def recentcyberattacks():
             stdlog('Screenshot ' +  news_md5 + ' already exist')
             screenshot_line = '[📸](https://images.ransomware.live/screenshots/news/'+news_md5+'.png)' 
 
-        line = "| " + news_date + " | " + country2flag(news_country) + " | [`" + news_victim.replace("La victime est ","") + "`](https://google.com/search?q=" + news_victim.replace(" ","%20") + ") | [" +  news_source.replace("www.","") + "](" + news_url + ") | " + screenshot_line + " | "
+        #line = "| " + news_date + " | " + country2flag(news_country) + " | [`" + news_victim.replace("La victime est ","") + "`](https://google.com/search?q=" + news_victim.replace(" ","%20") + ") | [" +  news_source.replace("www.","") + "](" + news_url + ") | " + screenshot_line + " | "
+        line = "| " + news_date + " | " + country2flag(news_country) + " | [`" + news_victim.replace("La victime est ","") + "`](https://" + tweet['domain'] + ") | [" +  news_source.replace("www.","") + "](" + news_url + ") | " + screenshot_line + " | "
         writeline(tweetspage, line)
         compteur += 1
     writeline(tweetspage, '> \nSource : [Github Casualtek/Cyberwatch](https://github.com/Casualtek/Cyberwatch/)')
@@ -295,7 +272,8 @@ def allcyberattacks():
             screenshot_line = '[📸](https://images.ransomware.live/screenshots/news/'+news_md5+'.png)' 
 
         #line = "| " + news_date + " | " + country2flag(news_country) + " | [`" + translate_text(news_victim.replace("La victime est ","")) + "`](https://google.com/search?q=" + news_victim.replace(" ","%20") + ") | [" +  news_source.replace("www.","") + "](" + news_url + ") |"
-        line = "| " + news_date + " | " + country2flag(news_country) + " | [`" + news_victim.replace("La victime est ","") + "`](https://google.com/search?q=" + news_victim.replace(" ","%20") + ") | [" +  news_source.replace("www.","") + "](" + news_url + ") | " + screenshot_line + " | "
+        #line = "| " + news_date + " | " + country2flag(news_country) + " | [`" + news_victim.replace("La victime est ","") + "`](https://google.com/search?q=" + news_victim.replace(" ","%20") + ") | [" +  news_source.replace("www.","") + "](" + news_url + ") | " + screenshot_line + " | "
+        line = "| " + news_date + " | " + country2flag(news_country) + " | [`" + news_victim.replace("La victime est ","") + "`](https://" + tweet['domain'] + ") | [" +  news_source.replace("www.","") + "](" + news_url + ") | " + screenshot_line + " | "
         writeline(tweetspage, line)
         compteur += 1
     writeline(tweetspage, '')

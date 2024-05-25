@@ -15,7 +15,7 @@ import re
 def main():
     for filename in os.listdir('source'):
         try:
-            if filename.startswith('trigona-5'):
+            if filename.startswith('trigona-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')

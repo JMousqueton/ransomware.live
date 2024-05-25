@@ -25,23 +25,15 @@ def main():
                 for div in div_containers:
                     title_div = div.find('div', class_='m-2 h4')
                     title = title_div.text.strip() if title_div else ''
-                    try:
-                        #url = '?company=' + div.find('button')['data-company']
-                        input_tag = soup.find('input', {'name': 'auction_company'})
-                        if input_tag:
-                            url = '?company=' +input_tag.get('value')
-                            onion = find_slug_by_md5('rhysida', extract_md5_from_filename(html_doc))
-                            url =  onion + url
-                            url = url.replace('auction?','')
-                    except: 
-                        url = ''
                     description_div = div.find('div', class_='m-2')
                     description = description_div.text.strip().replace('\n',' ') if description_div else ''
-                    post_url = div.find('p').find('a')['href'] if div.find('p') and div.find('p').find('a') else ''
-
+                    post_url=''
+                    try:
+                        post_url = 'archive.php?company=' + div.find('button')['data-company']
+                    except:
+                        pass
                     if len(title) != 0: 
-                        appender(title, 'rhysida', description,url,"",post_url)
-
+                        appender(title, 'rhysida', description,"","",post_url)
                 file.close()
         except:
             errlog('rhysida : ' + 'parsing fail')

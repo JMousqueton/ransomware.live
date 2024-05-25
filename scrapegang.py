@@ -35,7 +35,7 @@ def scraper(querygroup=''):
                 # here 
                     try:
                         with sync_playwright() as play:
-                                if querygroup in ['blackbasta','everest','metaencryptor', 'bianlian']:
+                                if querygroup in ['blackbasta','everest','metaencryptor', 'bianlian','knight','mydata']:
                                     stdlog('exception for ' + querygroup)
                                     browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                                         args=['--unsafely-treat-insecure-origin-as-secure='+host['slug'], "--headless=new"]) 
@@ -55,10 +55,12 @@ def scraper(querygroup=''):
                                 page.bring_to_front()
                                 delay = host['delay']*1000 if ( 'delay' in host and host['delay'] is not None ) \
                                     else 15000
+                                if querygroup == "knight":
+                                    delay = 60000
                                 if delay != 15000:
                                     stdlog('New delay : ' + str(delay) + 'ms')
-                                page.wait_for_timeout(5000)
-                                #page.wait_for_timeout(delay)
+                                #page.wait_for_timeout(5000)
+                                page.wait_for_timeout(delay)
                                 page.mouse.move(x=500, y=400)
                                 page.wait_for_load_state('networkidle')
                                 page.mouse.wheel(delta_y=2000, delta_x=0)

@@ -192,6 +192,42 @@ def trend_posts_per_day_2023():
     plt.clf()
     plt.cla()
 
+def trend_posts_per_day_2024():
+    '''
+    plot the trend of the number of posts per day
+    '''
+    posts = openjson('posts.json')
+    dates = []
+    for post in posts:
+        dates.append(post['published'][0:10])
+    # list of duplicate dates should be marged to show a count of posts per day
+    # i.e ['2021-12-07', '2021-12-07', '2021-12-07', '2021-12-07', '2021-12-07']
+    # becomes [{'2021-12-07',4}] etc
+    datecount = {}
+    for date in dates:
+        if date in datecount:
+            datecount[date] += 1
+        else:
+            datecount[date] = 1
+    # remove '2021-09-09' - generic date of import along w/ anything before 2021-08
+    datecount = {k: v for k, v in datecount.items() if k >= '2024-01-01' and k <='2024-12-31'}
+    datecount = list(datecount.items())
+    datecount.sort(key=lambda x: x[0])
+    dates = [datetime.datetime.strptime(x[0], '%Y-%m-%d').date() for x in datecount]
+    counts = [x[1] for x in datecount]
+    plt.rcParams['text.color'] = "#42b983"
+    plt.rcParams['axes.labelcolor'] = "#42b983"
+    plt.rcParams['xtick.color'] = "#42b983"
+    plt.rcParams['ytick.color'] = "#42b983"
+    plt.plot(dates, counts, color="#42b983")
+    plt.title('Victims per day in 2024\n© Ransomware.live')
+    plt.xlabel('date')
+    plt.xticks(rotation=90)
+    plt.ylabel('# of posts')
+    plt.savefig('docs/graphs/postsbyday2024.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
+    plt.clf()
+    plt.cla()
+
 def pie_posts_by_group():
     '''
     plot the number of posts by group in a pie
@@ -387,7 +423,7 @@ def plot_victims_by_month():
         
         year = date[:4]  # Extract the year from the date
         
-        if year in ['2022', '2023']:
+        if year in ['2022', '2023','2024']:
             if year not in year_data:
                 year_data[year] = {}
             
@@ -400,11 +436,10 @@ def plot_victims_by_month():
 
     # Prepare the data for plotting
     months = ['{:02d}'.format(i) for i in range(1, 13)]
-    #years = ['2022', '2023']
-    #years = ['2022', '2023', '2024']
+    years = ['2022', '2023', '2024']
     data_2022 = [year_data['2022'].get(month, 0) for month in months]
     data_2023 = [year_data['2023'].get(month, 0) for month in months]
-    #data_2024 = [year_data['2024'].get(month, 0) for month in months]
+    data_2024 = [year_data['2024'].get(month, 0) for month in months]
 
     # Set the figure size
     plt.figure(figsize=(12, 6))
@@ -417,11 +452,11 @@ def plot_victims_by_month():
     # Plotting the line chart
     plt.plot(months, data_2022, label='2022')
     plt.plot(months, data_2023, label='2023')
-    #plt.plot(months, data_2024, label='2024')
+    plt.plot(months, data_2024, label='2024')
 
     # Customize the chart
-    plt.title('Number of Victims by Month (2022-2023)')
-    #plt.title('Number of Victims by Month (2022-2024)')
+    #plt.title('Number of Victims by Month (2022-2023)')
+    plt.title('Number of Victims by Month (2022-2024)')
     plt.xlabel('Month')
     text_color = '#42b983'
     plt.text(0.5, -0.2, '© Ransomware.live', size=10, ha='center', transform=plt.gca().transAxes, color=text_color)
@@ -453,7 +488,7 @@ def plot_victims_by_month_cumulative():
 
         year = date[:4]  # Extract the year from the date
 
-        if year in ['2022', '2023']:
+        if year in ['2022', '2023','2024']:
             if year not in year_data:
                 year_data[year] = {}
 
@@ -466,7 +501,7 @@ def plot_victims_by_month_cumulative():
 
     # Prepare the data for plotting
     months = ['{:02d}'.format(i) for i in range(1, 13)]
-    years = ['2022', '2023']
+    years = ['2022', '2023', '2024']
 
     # Calculate cumulative victims for each year
     cumulative_data = {}
@@ -488,9 +523,10 @@ def plot_victims_by_month_cumulative():
     # Plotting the line chart
     plt.plot(months, cumulative_data['2022'], label='2022')
     plt.plot(months, cumulative_data['2023'], label='2023')
+    plt.plot(months, cumulative_data['2024'], label='2024')
 
     # Customize the chart
-    plt.title('Cumulative Number of Victims by Month (2022-2023)')
+    plt.title('Cumulative Number of Victims by Month (2022-2024)')
     plt.xlabel('Month')
     text_color = '#42b983'
     plt.text(0.5, -0.2, '© Ransomware.live', size=10, ha='center', transform=plt.gca().transAxes, color=text_color)

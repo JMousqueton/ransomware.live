@@ -75,9 +75,6 @@ def screenshot(webpage,delay=30000,output=None):
                     elif webpage.startswith('https://werewolves'):
                         browser = play.firefox.launch()
                         print('(!) not via tor')
-                    elif webpage.startswith('https://weerwolven'):
-                        browser = play.firefox.launch()
-                        print('(!) not via tor')
                     else:
                         browser = play.chromium.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                             args=[''])
@@ -99,10 +96,13 @@ def screenshot(webpage,delay=30000,output=None):
                     metadata.add_text("Copyright", "Ransomware.live")
                     metadata.add_text("Description",webpage)
                     metadata.add_text("Author","Julien Mousqueton")
-                    current_date = str(datetime.now().strftime('%Y:%m:%d %H:%M:%S')) 
+                    current_date = datetime.now().strftime('%Y:%m:%d %H:%M:%S') 
                     metadata.add_text("Creation Time",current_date)
                     draw = ImageDraw.Draw(image)
-                    draw.text((10, 10), "https://www.ransomware.live", fill=(0, 0, 0))
+                    current_datetime = datetime.now()
+                    iso_formatted = current_datetime.isoformat()
+                    draw.text((10, 10), iso_formatted, fill=(0, 0, 0))
+                    #draw.text((10, 10), "https://www.ransomware.live", fill=(0, 0, 0))
                     image.save(name, pnginfo=metadata)  
                     add_watermark(name)
                 except PlaywrightTimeoutError:

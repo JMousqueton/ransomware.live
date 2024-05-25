@@ -15,6 +15,7 @@ from datetime import datetime
 from parse import appender
 import re
 
+
 # Assuming Tor is running on default port 9050.
 proxies = {
     'http': 'socks5h://localhost:9050',
@@ -44,6 +45,7 @@ def convert_date_or_current(date_str):
     except ValueError:
         # Return the current date-time if the original format is invalid
         date_obj = datetime.now()
+    
     # Reformat to the desired format
     return date_obj.strftime("%Y-%m-%d %H:%M:%S.%f")
 
@@ -54,6 +56,7 @@ def main():
     if data is not None:
         # Extracting the 'data' field
         leaks_data = data.get('data', {}).get('leaks', [])
+
         # Iterating through the leaks and printing details
         for leak in leaks_data:
             title = leak.get('title')

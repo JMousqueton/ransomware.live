@@ -259,9 +259,12 @@ if args.mode == 'markdown':
 if args.mode == 'parse':
     modules = sorted(glob.glob(join(dirname('parsers/'), "*.py")))
     __all__ = [ basename(f)[:-3] for f in modules if isfile(f) and not f.endswith('__init__.py')]
+    counter = 0
+    num_modules = len(__all__)
     for parser in __all__:
+        counter += 1
         module = importlib.import_module(f'parsers.{parser}')
-        stdlog('Parser : '+ parser)
+        stdlog('Parser : [' + str(counter) + '/' + str(num_modules) + '] '+ parser)
         module.main()
 
     stdlog('ransomwatch: ' + 'parse run complete')

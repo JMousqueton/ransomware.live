@@ -19,7 +19,7 @@ def main():
         try:
             if filename.startswith('lockbit3-'):
                 html_doc='source/'+filename
-                #stdlog('processing ' + filename)
+                stdlog('Processing ' + filename)
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
                 divs_name=soup.find_all('div', {"class": "post-block bad"})

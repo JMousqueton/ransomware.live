@@ -25,7 +25,8 @@ def main():
                     tds = tr.find_all('td')
                     victim = tds[0].text.strip()
                     #description = tds[2].text.strip()
-                    appender(victim, 'clop','_URL_')
+                    #appender(victim, 'clop','_URL_')
+                    print(victim)
         except:
             errlog('clop-torrent: ' + 'parsing fail')
             pass

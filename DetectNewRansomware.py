@@ -8,7 +8,7 @@
 
 __author__ = "Julien Mousqueton"
 __copyright__ = "Copyright 2023, Ransomware.live Project"
-__version__ = "1.1.0"
+__version__ = "1.0.0"
 
 # Import necessary modules
 import requests
@@ -227,7 +227,6 @@ if __name__ == "__main__":
             code_tag = row.find('code')
             if code_tag:
                 url = code_tag.get_text()
-                ## [PATCH] Need to be corrected !!! but do the job for now ;) 
                 if url != "http://bl@ckt0r:bl@ckt0r@bl4cktorpms2gybrcyt52aakcxt6yn37byb65uama5cimhifcscnqkid.onion/0x00/data-breach.html":
                     check_url(url, group_data, tor_proxy, exclusions_file)
                 

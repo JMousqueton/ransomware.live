@@ -39,7 +39,7 @@ def main():
                             post = h2.a['href']
                             url = find_slug_by_md5('knight', extract_md5_from_filename(html_doc))
                             url =  url + post
-                            appender(title, 'knight', description.replace('\n',''),'','',url)
+                            appender(title.replace('(leaking)',''), 'knight', description.replace('\n',''),'','',url)
                     #except:
                     #    pass
                 file.close()
