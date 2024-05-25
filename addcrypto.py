@@ -4,6 +4,23 @@ from datetime import datetime as dt
 from sharedutils import stdlog, errlog
 import os
 
+print(
+    '''
+       _______________                        |*\_/*|________
+      |  ___________  |                      ||_/-\_|______  |
+      | |           | |                      | |           | |
+      | |   0   0   | |                      | |   0   0   | |
+      | |     -     | |                      | |     -     | |
+      | |   \___/   | |                      | |   \___/   | |
+      | |___     ___| |                      | |___________| |
+      |_____|\_/|_____|                      |_______________|
+        _|__|/ \|_|_.............💔.............._|________|_
+       / ********** \                          / ********** \ 
+     /  ************  \     ransomwhat?      /  ************  \ 
+    --------------------                    --------------------
+    '''
+)
+
 def writeline(file, line):
     '''write line to file'''
     with open(file, 'a', encoding='utf-8') as f:
@@ -38,7 +55,14 @@ for group in groups:
 
     # Iterate through the sorted result list
     for address_info in result["result"]:
-        family = address_info.get("family", "").split(" ", 1)[0].lower()
+        fam = address_info.get("family", "")
+        family_mapping = {
+            "Avos Locker": "avoslocker",
+            "Black Basta": "blackbasta",
+            "BlackCat": "alphv",
+            "Bitpaymer / DoppelPaymer": "doppelpaymer"
+        }
+        family = family_mapping.get(fam, fam.split(" ", 1)[0].lower())
         if family == group["name"]:
             keep = True 
             url = address_info['address']
