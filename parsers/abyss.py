@@ -24,7 +24,7 @@ def main():
                 for div in divs_name:
                     title = div.find('h5',{"class": "card-title"}).text.strip()
                     description = div.find('p',{"class" : "card-text"}).text.strip()
-                    appender(title, 'abyss', description.replace('\n',''))
+                    appender(title, 'abyss', description.replace('\n',' '))
                 file.close()
         except:
             errlog('blackbasta: ' + 'parsing fail')

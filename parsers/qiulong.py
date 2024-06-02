@@ -15,6 +15,15 @@ import re
 
 
 def anonymize_mega_urls_in_text(text):
+    """
+    Finds and anonymizes all MEGA.nz folder URLs in a given text string.
+
+    Args:
+    text (str): The text containing one or more MEGA.nz URLs.
+
+    Returns:
+    str: The text with anonymized MEGA.nz folder URLs.
+    """
     # Regular expression pattern to match MEGA.nz folder URLs
     pattern = r"(https://mega\.nz/folder/[a-zA-Z0-9]+)(#\w+)"
     
@@ -36,6 +45,8 @@ def main():
                 for article in soup.find_all('article'):
                     title = article.find('h1', class_='entry-title')
                     published_date = article.find('time', class_='entry-date published')
+                    if not published_date:
+                        published_date = article.find('time', class_='entry-date published updated')
                     if title and published_date:
                         link = title.find('a')
                         date_str = published_date['datetime']

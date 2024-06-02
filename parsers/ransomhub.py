@@ -22,19 +22,18 @@ def main():
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
                 posts = soup.find_all('div', class_='timeline-item')
-                for post in posts:
-                    title_element = post.find('h5', class_='card-title').find('a')
-                    match = re.match(r"^(.*?)<([^>]*)>", title_element.text)
-                    title = match.group(1).strip()  # Group 1: String before '<'
-                    website = match.group(2).strip()  # Group 2: String between '<' and '>'
-                    post_url = find_slug_by_md5('ransomhub', extract_md5_from_filename(html_doc)) + title_element['href']
-
-                    # date_element = post.find('div', class_='countdown-date')
-                    # description = date_element.text
-
-                    appender(title, 'ransomhub', '',website,'',post_url)
-
+                for div in posts:
+                    tmp = div.find('a')
+                    s = tmp.text.strip()
+                    parts = s.split('<')
+                    title = parts[0]
+                    if '<' in s:
+                        website = parts[1].split('>')[0]
+                    else:
+                        website = ''
+                    description = div.find('p',{"class" : "card-text"}).text.strip().replace('Data',' Data').replace('Published',' Published')
+                    post_url = find_slug_by_md5('ransomhub', extract_md5_from_filename(html_doc)) + tmp['href']
+                    appender(title, 'ransomhub',description,website,'',post_url)
                 file.close()
-        except:
-            errlog('ransomhub : ' + 'parsing fail')
-            pass
+        except Exception as e:
+            errlog('ransomhub - parsing fail with error: ' + str(e))

@@ -1,3 +1,4 @@
+
 """
 +------------------------------+------------------+----------+
 | Description | Published Date | Victim's Website | Post URL |
@@ -10,6 +11,7 @@ import os
 from bs4 import BeautifulSoup
 from sharedutils import errlog, find_slug_by_md5, extract_md5_from_filename
 from parse import appender
+
 
 def main():
     for filename in os.listdir('source'):

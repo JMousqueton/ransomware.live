@@ -20,7 +20,7 @@ else
     curl -s \
   --form-string "token=${PUSH_API}" \
   --form-string "user=${PUSH_USER}" \
-  --form-string "message=New Ransoms chats has been added" \
+  --form-string "message=New Ransoms chats have been added" \
   https://api.pushover.net/1/messages.json > /dev/null
     python3 create-negotiation.py 
     python3 negotiations.py

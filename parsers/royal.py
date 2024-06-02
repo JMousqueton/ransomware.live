@@ -34,7 +34,7 @@ def main():
                     date_str = entry['time']
                     dt_object = datetime.datetime.strptime(date_str, "%Y-%B-%d").replace(hour=1, minute=2, second=3, microsecond=456789)
                     published = dt_object.strftime("%Y-%m-%d %H:%M:%S.%f")
-                    appender(title, 'royal', description.replace('\n',''),website,published,post_url)
+                    appender(title, 'royal', description.replace('\n',' '),website,published,post_url)
                 file.close()
         except:
             errlog('royal: ' + 'parsing fail')

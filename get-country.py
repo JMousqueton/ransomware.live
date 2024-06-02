@@ -89,10 +89,10 @@ tld_country_mapping = {
     'com': '',  # Generic TLD (no specific country)
     'org': '',  # Generic TLD (no specific country)
     'net': '',  # Generic TLD (no specific country)
-    'gov': '',  # Generic TLD (no specific country)
-    'edu': '',  # Generic TLD (no specific country)
+    'gov': 'US',  # Generic TLD (no specific country)
+    'edu': 'US',  # Generic TLD (no specific country)
     'int': '',  # Generic TLD (no specific country)
-    'mil': '',  # Generic TLD (no specific country)
+    'mil': 'US',  # Generic TLD (no specific country)
     'biz': '',  # Generic TLD (no specific country)
     'info': '',  # Generic TLD (no specific country)
     'name': '',  # Generic TLD (no specific country)
@@ -100,7 +100,7 @@ tld_country_mapping = {
 
     # Country-specific TLDs
     'us': 'US',  # United States
-    'uk': 'UK',  # United Kingdom
+    'uk': 'GB',  # United Kingdom
     'ca': 'CA',  # Canada
     'au': 'AU',  # Australia
     'de': 'DE',  # Germany

@@ -21,7 +21,7 @@ log_file = "/var/log/backup.log"  # Specify the path to your log file
 # Enable or disable gzip compression for .diff files
 use_gzip = True  # Set to True to enable gzip compression
 # List of files to back up
-files = ["posts.json", "groups.json", "press.json"]
+files = ["posts.json", "groups.json", "press.json", "hudsonrock.json", "/etc/nginx/sites-enabled/ransomware.conf"]
 
 
 # Configure logging

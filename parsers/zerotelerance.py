@@ -36,7 +36,7 @@ def main():
                     link = card.parent['href'].strip() if card.parent.name == 'a' else ""
                     link = find_slug_by_md5('zerotolerance', extract_md5_from_filename(html_doc)) + str(link)
                     description = " ".join([p.text.strip() for p in card.find_all('p', {'class': 'card-text'})])
-                    description = re.sub(r'https://gofile.io/d/\S+', 'https://gofile.io/d/[REDACTED]', description)
+                    #description = re.sub(r'https://gofile.io/d/\S+', 'https://gofile.io/d/[REDACTED]', description)
                     description = description.replace('\n',' ')
                     appender(name,'zerotolerance',description,'',date,link)
                 file.close()

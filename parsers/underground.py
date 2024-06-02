@@ -25,7 +25,7 @@ def main():
                 for package in soup.find_all('div', class_='block__package'):
                     link_tag = package.find('a')  
                     if link_tag and 'href' in link_tag.attrs:
-                        link =  url + link_tag['href']  
+                        link =  url + link_tag['href'].replace('package','packages')  
                     else:
                         link = ''
                     name = package.find(lambda tag: tag.name == 'span' and tag.text.strip() == 'Name:').find_next('p').text.strip() if package.find(lambda tag: tag.name == 'span' and tag.text.strip() == 'Name:') else 'Not found'

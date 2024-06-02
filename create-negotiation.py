@@ -87,7 +87,7 @@ def parse_group(group_name):
    <meta property="twitter:description" content="Ransomware.live : Ransomware Groups {group_name} Negotiations">
    <meta property="twitter:image" content="https://chat.ransomware.live/ransomware.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="canonical" href="https://chat.ransomware.live">
+    <link rel="canonical" href="https://www.ransomware.live">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
      <link rel="stylesheet" href="https://static.ransomware.live/negotiation.css"></head><body><div class="container">
@@ -114,6 +114,23 @@ def parse_group(group_name):
     }
 
     #Copyright a:visited {
+        color: #808080;
+    }
+    #Copyright2 {
+         font-size: 15px;
+        font-weight: bold;
+        /* font-family: 'Comic Sans MS', cursive; $/ 
+        color: #808080; /* Darker text color */
+        margin-top: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    #Copyright2 a {
+        text-decoration: none;
+    }
+
+    #Copyright2 a:visited {
         color: #808080;
     }
   </style>
@@ -149,7 +166,7 @@ def parse_group(group_name):
             content = message['content']
             timestamp = message['timestamp']
 
-            if party == 'Victim':
+            if party == 'Victim' or party.replace(' ','') == 'Client':
                 codeHTML +=  '<p class="from-victim">' + content + '<br></br><i>' + timestamp + '</i></p>'
             else : 
                 codeHTML += '<p class="from-gang">'  + content + '<br></br><i>' + timestamp + '</i></p>'
@@ -157,6 +174,7 @@ def parse_group(group_name):
         codeHTML += '''
             </div></div><footer>
               <p id="Copyright">Source : <a href="https://github.com/Casualtek/Ransomchats" target=_blank>Valéry Marchive</a></p> 
+              <p id="Copyright2"><a href="https://www.ransomware.live" target=_self>&copy 2024 Ransomware.live</a></p> 
             </footer></body></html>
     '''
 

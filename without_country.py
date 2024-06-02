@@ -1,7 +1,17 @@
+import os
 import json
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from dotenv import load_dotenv
+
+load_dotenv()  # This loads the varia
+
+# Load environment variables
+SMTP_SERVER = os.getenv('SMTP_SERVER', 'localhost')
+SMTP_PORT = int(os.getenv('SMTP_PORT', 25))  # Default to port 25 if not specified
+EMAIL_FROM = os.getenv('EMAIL_FROM', 'default_sender@example.com')
+EMAIL_TO = os.getenv('EMAIL_TO', 'default_receiver@example.com')
 
 # Read the posts from posts.json
 with open('posts.json', 'r') as file:
@@ -14,8 +24,8 @@ posts_2024 = [post for post in posts_2024 if "**" not in post]
 
 if posts_2024: 
     # Email configurations
-    sender_email = 'notify@ransomware.live'  # Replace with your email
-    receiver_email = 'julien@mousqueton.io'  # Replace with recipient's email
+    sender_email = EMAIL_FROM
+    receiver_email = EMAIL_TO
     subject = '[Action required] New post(s) without country'
 
     # Compose email
@@ -30,7 +40,7 @@ if posts_2024:
 
     # Connect to local SMTP server and send email
     try:
-        server = smtplib.SMTP('localhost', 25)
+        server = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
         server.sendmail(sender_email, receiver_email, message.as_string())
     except Exception as e:
         print("Email could not be sent:", str(e))

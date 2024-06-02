@@ -51,17 +51,29 @@ def convert_date_or_current(date_str):
 
 
 def main():
-    url= 'http://krsbhaxbki6jr4zvwblvkaqzjkircj7cxf46qt3na5o5sj2hpikbupqd.onion/api'
-    data = fetch_json_from_onion_url(url)
+    # url= 'http://krsbhaxbki6jr4zvwblvkaqzjkircj7cxf46qt3na5o5sj2hpikbupqd.onion/api'
+    url = 'http://krsbhaxbki6jr4zvwblvkaqzjkircj7cxf46qt3na5o5sj2hpikbupqd.onion/api?page=1'
+    data = ''
+    try:
+        data = fetch_json_from_onion_url(url)
+    except:
+        pass
     if data is not None:
+        
         # Extracting the 'data' field
-        leaks_data = data.get('data', {}).get('leaks', [])
-
-        # Iterating through the leaks and printing details
+        leaks_data = ''
+        try:
+            leaks_data = data.get('data', {}).get('leaks', [])
+        except:
+            pass
+            # Iterating through the leaks and printing details
         for leak in leaks_data:
-            title = leak.get('title')
-            description = remove_html_tags(leak.get('short_descryption', ''))
-            website = leak.get('external_link','')
-            pubdate = convert_date_or_current(leak.get('created_at'))
-            link = url.replace('api','') + 'leak/' +  str(leak['rndid'])
-            appender(title, 'trigona', description.replace('\n',' '),website, pubdate, link)
+            try:
+                title = leak.get('title')
+                description = remove_html_tags(leak.get('short_descryption', ''))
+                website = leak.get('external_link','')
+                pubdate = convert_date_or_current(leak.get('created_at'))
+                link = url.replace('api','') + 'leak/' +  str(leak['rndid'])
+                appender(title, 'trigona', description.replace('\n',' '),website, pubdate, link)
+            except:
+                pass

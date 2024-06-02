@@ -479,6 +479,10 @@ def plot_victims_by_month_cumulative():
     # Read the JSON file and load the data
     data = openjson('posts.json')
 
+    # Get current year and month
+    current_year = datetime.datetime.now().year
+    current_month = datetime.datetime.now().month
+
     # Count the number of post titles (victims) by month for the years 2022 and 2023
     year_data = {}
     for post in data:

@@ -148,6 +148,8 @@ def scraper(force=''):
                                     args=['--unsafely-treat-insecure-origin-as-secure='+host['slug'], "--headless=new"])
                             elif group['name'] in ['ransomed']:
                                  browser = play.firefox.launch(args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])
+                            elif group['name'] in ['handala']:
+                                 browser = play.firefox.launch(args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])
                             elif group['name'] in ['knight','lockbit3']:
                                 browser = play.chromium.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                                     args=['--unsafely-treat-insecure-origin-as-secure='+host['slug'], "--headless=new"])

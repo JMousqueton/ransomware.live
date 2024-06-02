@@ -25,7 +25,7 @@ def main():
                 for article in divs:
                     # Extract the title
                     title = article.find('div', class_='title').text.strip()
-
+                    title = title.replace('amp;','')
                     # Extract the URL
                     url_site = find_slug_by_md5('blacksuit', extract_md5_from_filename(html_doc))
                     #url_site = "weg7sdx54bevnvulapqu6bpzwztryeflq3s23tegbmnhkbpqz637f2yd"

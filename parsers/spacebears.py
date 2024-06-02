@@ -29,6 +29,7 @@ def main():
                     description_tag = block.find('div', class_='text') #.find('p')
                     description = description_tag.text.strip() if description_tag else 'No description available'
                     description = description.replace('\n',' ')
+                    
                     if image_block:
                         current_date = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
                         published_tag = image_block.find('p')

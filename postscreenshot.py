@@ -66,13 +66,19 @@ def screenshot(webpage,delay=30000,output=None):
                     if any(webpage.startswith(prefix) for prefix in tor_prefixes):
                         browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"}, args=[''])
                         print('(!) exception')
-                    elif webpage.startswith("https://ransomed.vc/"):
+                    elif webpage.startswith("https://handala"):
                         browser = play.firefox.launch()
                         print('(!) not via tor')
                     elif webpage.startswith("https://t.me"):
                         browser = play.firefox.launch()
                         print('(!) not via tor')
+                    elif webpage.startswith("http://incapt.su"):
+                        browser = play.firefox.launch()
+                        print('(!) not via tor')
                     elif webpage.startswith('https://werewolves'):
+                        browser = play.firefox.launch()
+                        print('(!) not via tor')
+                    elif  webpage.startswith('https://dispossessor'):
                         browser = play.firefox.launch()
                         print('(!) not via tor')
                     else:

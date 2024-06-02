@@ -11,9 +11,10 @@ from bs4 import BeautifulSoup
 from sharedutils import errlog, find_slug_by_md5, extract_md5_from_filename
 from parse import appender
 
+
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('metaencryptor-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -29,12 +30,11 @@ def main():
                     
                     post_link = card.find_next('a', class_='btn btn-primary btn-sm')
                     if post_link:
+                        # post_url = "https://metacrptmytukkj7ajwjovdpjqzd7esg5v3sg344uzhigagpezcqlpyd.onion" + post_link['href']
                         post_url = find_slug_by_md5('metaencryptor', extract_md5_from_filename(html_doc)) +  post_link['href']
                     else:
                         post_url =  None
                     appender(victim, 'metaencryptor', description, website, '', post_url)
                 file.close()
-        #except:
-        #    errlog('metaencryptor: ' + 'parsing fail')
-        #    pass
-
+        except Exception as e:
+            errlog('metaencryptor - parsing fail with error: ' + str(e))

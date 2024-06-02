@@ -16,7 +16,7 @@ from datetime import datetime
 def main():
     for filename in os.listdir('source'):
         try:
-            if filename.startswith('dunghill_leak-'):
+            if filename.startswith('dunghill-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')

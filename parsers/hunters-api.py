@@ -79,12 +79,12 @@ def convert_text(txt):
         return "no"
 
 def main():
-    stdlog('Fetching :'+onion_url) 
+    #stdlog('Fetching :'+onion_url) 
     json_data = fetch_json_from_onion_url(onion_url)
-    stdlog(onion_url+" Fetched")
+    #stdlog(onion_url+" Fetched")
     if json_data is not None:
         for item in json_data:
-          try:
+          #try:
             id = item['id']
             title = item['title'].strip()
             country = get_country(item['country'])
@@ -96,9 +96,10 @@ def main():
             post_url = "https://hunters55rdxciehoqzwv7vgyv6nt37tbwax2reroyzxhou7my5ejyid.onion/companies/" + id 
             if not website:
                 website=''
+           
             """
                 def appender(post_title, group_name, description="", website="", published="", post_url=""):
             """
             appender(title, 'hunters', description,website, convert_date(published),post_url)
-          except:
-              stdlog('Hunters API error : ' + title)
+          #except:
+          #    stdlog('Hunters API error : ' + title)

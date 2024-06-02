@@ -30,7 +30,6 @@ def main():
                     date = datetime.strptime(date_str, '%b %d, %Y')
                     formatted_date = date.strftime('%Y-%m-%d %H:%M:%S.000000')
                     description = card.find('p', class_='card-text text-muted').text.strip() #[&]
-                    print(description)
                     link = card.find('a', class_='btn btn-primary')['href']
                     if link: 
                         link=find_slug_by_md5('dAn0n', extract_md5_from_filename(html_doc)) +  link

@@ -6,6 +6,7 @@ import os, hashlib
 from countryinfo import CountryInfo
 import requests
 from bs4 import BeautifulSoup
+from urllib.parse import urlparse
 
 def format_date(date_string):
     try:
@@ -22,6 +23,14 @@ def count_post_titles_by_country(country_code):
         if post.get('country') == country_code:
             count += 1
     return count
+
+def extract_domain(url):
+    if '://' not in url:
+        url = 'http://' + url  # Assumption to handle URLs without a scheme
+    parsed_url = urlparse(url)
+    if parsed_url.netloc:
+        return parsed_url.netloc.replace('www.','')
+    return ''
 
 
 print(
@@ -154,7 +163,7 @@ def create_country_victims_file(country_code, victims_data,html_content):
         country_name = country.name
         file_path = f"./docs/country/{country_code.lower()}.md"
         with open(file_path, 'w') as country_file:
-            country_file.write(f"# Ransomware's victimss in {country_name} ![{country_code.upper()}](https://images.ransomware.live/flags/{country_code.upper()}.svg)\n\n")
+            country_file.write(f"# Ransomware's victims in {country_name} ![{country_code.upper()}](https://images.ransomware.live/flags/{country_code.upper()}.svg)\n\n")
             try:
                 country = CountryInfo(country_code)
                 try: 
@@ -181,7 +190,7 @@ def create_country_victims_file(country_code, victims_data,html_content):
                 country_code == 'GB'
             certs_for_country = get_cert_info_by_country(country_code.lower())
             if certs_for_country:
-                certlist = '| CERT name | Website | Email |\n'
+                certlist = '| CSIRT name | Website | Email |\n'
                 certlist += '|---|---|---|\n'
                 for cert in certs_for_country:
                     #certlist += '|' +  cert['team_name'] + '|' + cert['website'] + '|' + cert['email'].replace('@','🌀')+'\n'
@@ -189,7 +198,7 @@ def create_country_victims_file(country_code, victims_data,html_content):
             else:
                 certs = get_teams_info_by_country(country_code, html_content)
                 if certs:
-                    certlist = '| CERT name | Link |\n'
+                    certlist = '| CSIRT name | Link |\n'
                     certlist += '|---|---|\n'
 
                     # Displaying the extracted information
@@ -209,7 +218,7 @@ def create_country_victims_file(country_code, victims_data,html_content):
             country_file.write(area+"\n")
             country_file.write('#### **Time Zones**\n') 
             country_file.write(timezones+"\n")
-            country_file.write('#### **CERTs**\n') 
+            country_file.write('#### **CSIRT**\n') 
             country_file.write(certlist+"\n")
             country_file.write('<!-- tabs:end -->\n') 
 
@@ -221,8 +230,8 @@ def create_country_victims_file(country_code, victims_data,html_content):
             country_file.write(f"> If you want to notify me about any mistake, you can either [open an issue](https://github.com/JMousqueton/ransomware.live/issues) on the github repository of Ransomware.live or [contact me](https://static.ransomware.live/contact.html).\n\n")
 
             counter = 0 
-            country_file.write(f"\n| Discovered date | Attack date | Victim | Ransomware Group | 📸 |\n")
-            country_file.write(f"|---|---|---|---|---|\n")
+            country_file.write(f"\n| Discovered date | Attack date | Victim | Ransomware Group | 📸 | 🕵🏻‍♂️ | \n")
+            country_file.write(f"|---|---|---|---|---|---|\n")
             for victim in victims_data:
                 if victim['discovered_date'] == victim['published_date']:
                     victim['published_date'] = ' '
@@ -237,7 +246,27 @@ def create_country_victims_file(country_code, victims_data,html_content):
                     hex_digest = hash_object.hexdigest()
                     if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
                         screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>👀</a>'
-                country_file.write(f"|{victim['discovered_date']}|{victim['published_date']}|[{victim['name']}](https://google.com/search?q={victim['name'].replace(' ','+')})|[{victim['group_name']}](group/{victim['group_name']})| {screenpost}|\n")
+
+
+                    hash_object = hashlib.md5()
+                    # Update the hash object with the string
+                    hash_object.update(victim['name'].lower().encode('utf-8'))
+                    # Get the hexadecimal representation of the hash
+                    hex_digest = hash_object.hexdigest()
+                    if os.path.exists('docs/domain/'+hex_digest+'.md'):
+                        infostealer=' [🔎](domain/'+hex_digest+') '
+                    elif victim['website']:
+                        domain = extract_domain(victim['website'].lower()) #.replace('http://','').replace('https://','').replace('www.','')
+                        hash_object = hashlib.md5()
+                        hash_object.update(domain.encode('utf-8'))
+                        hex_digest = hash_object.hexdigest()
+                        if  os.path.exists('docs/domain/'+hex_digest+'.md'):
+                            infostealer=' [🔎](domain/'+hex_digest+') '
+                        else:
+                            infostealer = ''
+                    else:
+                        infostealer = ''
+                country_file.write(f"|{victim['discovered_date']}|{victim['published_date']}|[{victim['name'].replace('|','-')}](https://google.com/search?q={victim['name'].replace('|','-').replace(' ','+')})|[{victim['group_name']}](group/{victim['group_name']})| {screenpost}| {infostealer} |\n")
                 counter += 1 
             country_file.write(f"\n\n{counter} victims found\n\n")
             country_file.write('Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
@@ -256,6 +285,7 @@ for post in posts_data:
     published_date = format_date(post.get('published'))
     post_url = post.get('post_url', '')
     group_name = post.get('group_name')
+    website = post.get('website')
     discovered_date = format_date(post.get('discovered'))
 
     if country_code and victim_name and published_date and discovered_date and group_name:
@@ -266,7 +296,8 @@ for post in posts_data:
             'published_date': published_date,
             'discovered_date': discovered_date,
             'post_url': post_url, 
-            'group_name': group_name
+            'group_name': group_name,
+            'website': website
         })
 
 

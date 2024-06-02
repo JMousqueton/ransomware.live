@@ -9,7 +9,7 @@ Rappel : def appender(post_title, group_name, description="", website="", publis
 """
 import os
 from bs4 import BeautifulSoup
-from sharedutils import errlog
+from sharedutils import errlog, stdlog
 from parse import appender
 
 def main():
@@ -23,12 +23,16 @@ def main():
                 for div in divs_name:
                     link = div.get('data-id')
                     url = "medusaxko7jxtrojdkxo66j7ck4q5tgktf7uqsqyfry4ebnxlcbkccyd"
-                    post_url = 'http://' + url + '.onion/detail?id=' + link
+                    try:
+                       post_url = 'http://' + url + '.onion/detail?id=' + link
+                    except:
+                        post_url = ''
                     title = div.find('h3', {"class":"card-title"}).text
+                    title = title.lstrip()
                     description = div.find("div", {"class": "card-body"}).text.strip()
                     published = div.find("div", {"class": "date-updated"}).text.strip() + '.12345'
                     appender(title, 'medusa', description.replace('\n',' '),'',published,post_url)
                 file.close()
-        except:
-            errlog('medusa: ' + 'parsing fail')
+        except Exception as e:
+            stdlog('Medusa - parsing fail with error: ' + str(e))
             pass

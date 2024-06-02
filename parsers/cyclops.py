@@ -38,9 +38,7 @@ def main():
                     formatted_date = date.strftime('%Y-%m-%d %H:%M:%S.%f')
 
                     # Extract the description
-                    description = div.find("strong").text.strip().replace('\t', '').replace('\n', '')
-                    #descriptions = re.findall(r'<strong>(.*?)</strong>', str(div), re.DOTALL)
-                    #description = BeautifulSoup(descriptions[0], "html.parser").get_text().replace('\t', '').replace('\n', '')
+                    description = div.find("strong").text.strip().replace('\t', ' ').replace('\n', ' ')
 
                     appender(title, 'cyclops',description,'',formatted_date)
                 file.close()

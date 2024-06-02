@@ -23,9 +23,9 @@ Dependencies:
     requests, python-dotenv, smtplib, email.mime
 
 Example:
-    python check_PR_DarkFeedCTI.py --Debug
-    python check_PR_DarkFeedCTI.py --last
-    python check_PR_DarkFeedCTI.py --reset
+    python checkDarkFeed.py --Debug
+    python checkDarkFeed.py --last
+    python checkDarkFeed.py --reset
 
 """
 
@@ -170,5 +170,6 @@ if args.last:
     last_high_number = read_last_high_number()
     stdlog(f"The last PR checked is : {last_high_number}")
     sys.exit(0)
+
 
 get_pull_requests()

@@ -1,6 +1,6 @@
 import os
 from bs4 import BeautifulSoup
-from sharedutils import errlog
+from sharedutils import errlog,stdlog
 from parse import appender
 
 
@@ -19,4 +19,4 @@ def main():
                     appender(title, 'daixin', description, website)
                 file.close()
         except:
-            errlog("Failed during : " + filename)
+            stdlog("Failed during : " + filename)

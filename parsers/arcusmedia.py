@@ -1,4 +1,3 @@
-
 """
 +------------------------------+------------------+----------+
 | Description | Published Date | Victim's Website | Post URL |
@@ -43,4 +42,3 @@ def main():
                 file.close()
         except:
             errlog("Failed during : " + filename)
-    exit()

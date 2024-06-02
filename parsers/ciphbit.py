@@ -47,7 +47,7 @@ def main():
                         published = ''
                     p_elements = h2.find_parent().find_all('p')
                     description = ' '.join(p.get_text() for p in p_elements)
-                    description = description.replace('\n','')
+                    description = description.replace('\n',' ')
                     appender(remove_multiple_spaces(victim), 'ciphbit', remove_multiple_spaces(description),website,published)
                 file.close()
         except:

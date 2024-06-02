@@ -14,31 +14,37 @@ from sharedutils import errlog, find_slug_by_md5, extract_md5_from_filename,stdl
 from parse import appender 
 
 def main():
+    script_path = os.path.abspath(__file__)
+    if os.path.islink(script_path):
+        original_path = os.readlink(script_path)
+        if not os.path.isabs(original_path):
+            original_path = os.path.join(os.path.dirname(script_path), original_path)
+        original_path = os.path.abspath(original_path)
+        original_name = os.path.basename(original_path)
+        
+        group_name = original_name.replace('.py','')
+    else:
+        script_name = os.path.basename(script_path)
+        group_name = script_name.replace('.py','')
+
     for filename in os.listdir('source'):
-        #try:
-            if filename.startswith('monti-'):
+        try:
+            if filename.startswith(group_name+'-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                # divs_name=soup.find_all('a', {"class": "leak-card p-3"})
                 divs_name = soup.find_all('div', {"class": "col-lg-4 col-sm-6 mb-4"})
                 for div in divs_name:
                     title = div.find('h5').text.strip()
                     post = div.find('a')
                     post = post.get('href')
-                    #parts = filename.split('-')
-                    #url = 'mblogci3rudehaagbryjznltdp33ojwzkq6hn2pckvjq33rycmzczpid'
-                    #try:
                     url = find_slug_by_md5('monti', extract_md5_from_filename(html_doc))
                     url =  url + post
-                    #except:
-                    #    url = ''
                     description =  div.find('p').text.strip()
                     published = div.find('div', {'class': 'col-auto published'}).text.strip()
                     date_obj =  datetime.datetime.strptime(published, '%Y-%m-%d %H:%M:%S')
                     published = date_obj.strftime("%Y-%m-%d %H:%M:%S.%f")
-                    appender(title, 'monti', description,"",published,url )
-        #except:
-        #    errlog('monti: ' + 'parsing fail')
-        #    pass 
+                    appender(title, group_name, description,"",published,url )
+        except:
+            errlog(group_name+': ' + 'parsing fail')
                 

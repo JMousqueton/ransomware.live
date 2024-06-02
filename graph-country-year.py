@@ -16,6 +16,8 @@ Path='./docs/graphs/'
 def get_country_name(code):
     try:
         country = pycountry.countries.get(alpha_2=code)
+        if code == 'UK':
+            return 'United Kingdom'
         return country.name if country else 'Unknown'
     except AttributeError:
         return 'Unknown'

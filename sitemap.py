@@ -83,6 +83,15 @@ def generate_sitemapXML(base_url, pages, note_directories, output_file="./docs/s
         loc.text = f"{base_url}/#{page}"
         lastmod = ET.SubElement(url, "lastmod")
         lastmod.text = datetime.date.today().isoformat()
+    
+    directory_path = "./docs/domain/"
+    for file in list_files_in_directory(directory_path):
+        page = file.replace('./docs','').replace('.md','')
+        url = ET.SubElement(urlset, "url")
+        loc = ET.SubElement(url, "loc")
+        loc.text = f"{base_url}/#{page}"
+        lastmod = ET.SubElement(url, "lastmod")
+        lastmod.text = datetime.date.today().isoformat()
 
 
     # Create an ElementTree object and write it to a file
@@ -136,6 +145,7 @@ def generate_sitemapHTML(base_url, pages, note_directories, output_file="./docs/
             directory = directory[:-3]
             file.write(f'<li><a href="{base_url}/#/notes/{directory}">Ransom Note for {capitalize_first_letter(directory)}</a></li>\n')
         file.write("</ul>\n")
+
 
         file.write("</body>\n")
         file.write("</html>\n")

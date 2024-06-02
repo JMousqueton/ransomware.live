@@ -1,15 +1,17 @@
+
 """
 +------------------------------+------------------+----------+
 | Description | Published Date | Victim's Website | Post URL |
 +------------------------------+------------------+----------+
-|      X      |                |          X       |     X    |
+|      X      |      X         |                 |     x    |
 +------------------------------+------------------+----------+
 Rappel : def appender(post_title, group_name, description="", website="", published="", post_url=""):
 """
 import os
 from bs4 import BeautifulSoup
-from sharedutils import errlog
+from sharedutils import errlog, find_slug_by_md5, extract_md5_from_filename
 from parse import appender
+from datetime import datetime
 
 def main():
     for filename in os.listdir('source'):
@@ -18,16 +20,19 @@ def main():
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                divs_name=soup.find_all('div', {"class": "card-body"})
-                for div in divs_name:
-                    title = div.find('h5').text.strip()
-                    description = div.find_all('p', {"class", "card-text"})[1].text.strip()
-                    link = div.find('a', {"class", "btn btn-outline-primary"})
-                    link = link.get('href')
-                    url = "rnsm777cdsjrsdlbs4v5qoeppu3px6sb2igmh53jzrx7ipcrbjz5b2ad"
-                    post_url = 'http://' + url + '.onion' + link
-                    appender(title, 'ransomexx', description,"","",post_url)
-                file.close()
+                # Find all div tags with class 'entry-summary' and itemprop 'text'
+                # Find all articles which seems to contain the information needed
+                articles = soup.find_all('article')
+                # Iterate over each article and extract the required information
+                for article in articles:
+                    title = article.find('h2', class_='entry-title').text.strip()
+                    date = article.find('time', class_='entry-date').get('datetime')
+                    date = datetime.fromisoformat(date)  # Assuming the date is in ISO format
+                    formatted_date = date.strftime("%Y-%m-%d %H:%M:%S.%f")
+                    link = article.find('h2', class_='entry-title').find('a').get('href')
+                    description = article.find('div', class_='entry-summary').text.strip().replace('\n',' ')
+                    link = find_slug_by_md5('ransomexx', extract_md5_from_filename(html_doc)) +  link
+                    appender(title,'ransomexx',description,'',formatted_date, link)
         except:
             errlog('ransomexx: ' + 'parsing fail')
             pass

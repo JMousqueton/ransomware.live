@@ -26,6 +26,18 @@ from datetime import datetime
 import http.client, urllib
 from dotenv import load_dotenv
 
+## Detect ID 
+import cv2
+# Load the pre-trained Haar Cascade classifier for face detection (as an illustrative example)
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+# mail 
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+from email.mime.image import MIMEImage
+from email.mime.base import MIMEBase
+from email import encoders
+
 # on macOS we use 'grep -oE' over 'grep -oP'
 if platform == 'darwin':
     fancygrep = 'ggrep -oP'
@@ -90,6 +102,68 @@ def posttemplate(victim, group_name, timestamp,description,website,published,pos
     dbglog(schema)
     return schema
 
+def send_email(subject, body, to_email, attachment_path=None):
+    # Set up the SMTP server
+    smtp_server = 'localhost'
+    smtp_port = 25
+    smtp_tls =  False
+    smtp_username = ''
+    smtp_password = ''
+
+    # Create the MIME object
+    msg = MIMEMultipart()
+    msg['From'] = "noreply@ransomware.live"
+    msg['To'] = to_email
+    msg['Subject'] = subject
+
+    # Attach the body text
+    msg.attach(MIMEText(body, 'plain'))
+
+    # Attach the image if specified
+    if attachment_path:
+        attachment = open(attachment_path, 'rb')
+        part = MIMEBase('application', 'octet-stream')
+        part.set_payload((attachment).read())
+        encoders.encode_base64(part)
+        part.add_header('Content-Disposition', "attachment; filename= %s" % attachment_path)
+        msg.attach(part)
+
+    # Connect to the SMTP server
+    server = smtplib.SMTP(smtp_server, smtp_port)
+    if smtp_tls:
+        server.starttls()
+        server.login(smtp_username, smtp_password)
+
+    # Send the email
+    server.sendmail(smtp_username, to_email, msg.as_string())
+
+    # Quit the server
+    server.quit()
+    stdlog('Mail sent')
+
+
+# Function to check a single image for an ID-like object
+def check_image_for_id(image_path):
+    # Attempt to load the image
+    image = cv2.imread(image_path)
+
+    # Check if the image was loaded successfully
+    if image is None:
+        print(f"Error loading image {image_path}. Check if the file exists and is a valid image.")
+        return False  # Indicate that the image could not be processed
+
+    # Convert the image to grayscale
+    gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    # Detect objects in the image (using face detection as an example)
+    objects = face_cascade.detectMultiScale(gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+    
+    # Check if any objects were detected
+    if len(objects) > 0:
+        return True  # Indicate that an ID-like object was detected
+    else:
+        return False  # Indicate that no ID-like objects were detected
+
 def screenshot(webpage,fqdn,delay=15000,output=None):
     stdlog('webshot: {}'.format(webpage))
     if output is None:
@@ -111,7 +185,13 @@ def screenshot(webpage,fqdn,delay=15000,output=None):
                     elif webpage.startswith("https://ransomed.vc/"):
                         browser = play.firefox.launch()
                         stdlog('(!) not via tor')
+                    elif webpage.startswith("https://handala"):
+                        browser = play.firefox.launch()
+                        stdlog('(!) not via tor')
                     elif webpage.startswith("https://t.me/"):
+                        browser = play.firefox.launch()
+                        stdlog('(!) not via tor')
+                    elif webpage.startswith("https://dispossessor"):
                         browser = play.firefox.launch()
                         stdlog('(!) not via tor')
                     elif webpage.startswith("http://knight"):
@@ -154,6 +234,9 @@ def screenshot(webpage,fqdn,delay=15000,output=None):
                     #draw.text((10, 10), "https://www.ransomware.live", fill=(0, 0, 0))
                     
                     image.save(name, pnginfo=metadata)
+                    if check_image_for_id(name):
+                        body="A new screenshot must be analysed : \n\n https://www.ransomware.live/screenshots/posts/"+os.path.basename(name)
+                        send_email("[Action Required] Check this screenshot for any ID",body, "julien@mousqueton.io",name)
                     add_watermark(name)
                 except PlaywrightTimeoutError:
                     stdlog('Timeout!')
@@ -236,7 +319,7 @@ def appender(post_title, group_name, description="", website="", published="", p
         post_title = post_title[:90]
     post_title=html.unescape(post_title)
     if existingpost(post_title, group_name) is False:
-        print('==> ' + post_title)
+        #print('==> ' + post_title)
         posts = openjson('posts.json')
         if description == "_URL_":
             description = gettitlefromURL(post_title)
@@ -268,17 +351,19 @@ def appender(post_title, group_name, description="", website="", published="", p
         #    toteams(newpost['post_title'], newpost['group_name'])
         # Mastodon notification 
         if os.environ.get('MASTODON_TOKEN') is not None:
- #           toMastodon(post_title,group_name)
+            toMastodon(post_title,group_name)
             print("")
 
         # Pushover notification 
         if os.environ.get('PUSH_API') is not None:
             toPushover(post_title, group_name)
-        
+            pass
         if os.environ.get('BLUESKY_APP_PASSWORD') is not None:
             tobluesky(post_title, group_name)
-            tomattermost(post_title, group_name)
         
+        if os.environ.get('MATTERMOST_WEBHOOK') is not None:
+            tomattermost(post_title, group_name)
+            
         ### Post screenshot
         if post_url !="":
             hash_object = hashlib.md5()

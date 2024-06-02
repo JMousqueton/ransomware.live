@@ -25,6 +25,7 @@ def main():
                 for div in divs_name:
                     tmp = div.find('h2', {"class": "entry-title heading-size-1"})
                     title = tmp.a.string
+                    title = title.replace(' Data Leak','')
                     a_tag = tmp.find('a')
                     url = a_tag['href']
                     description = div.find('div', {"class": "entry-content"}).p.text.strip()

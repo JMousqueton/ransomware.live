@@ -51,3 +51,4 @@ def main():
             creation_date = datetime.fromtimestamp(announcement['createdAt'] / 1000).strftime('%Y-%m-%d %H:%M:%S.%f')
             post_url=site_onion_url+'/'+company_id
             appender(company_name,'incransom',description,'',creation_date,post_url)
+    

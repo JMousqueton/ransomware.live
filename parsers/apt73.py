@@ -15,7 +15,7 @@ from datetime import datetime
 def main():
     for filename in os.listdir('source'):
         try:
-            if filename.startswith('eraleig-'):
+            if filename.startswith('apt73-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup = BeautifulSoup(file, 'html.parser')
@@ -29,7 +29,10 @@ def main():
                     date_text = date_info.replace('UTC +0', '').strip()
                     date_obj = datetime.strptime(date_text, '%Y/%m/%d %H:%M:%S')
                     date = date_obj.strftime('%Y-%m-%d %H:%M:%S.%f')
-                    appender(victim,'eraleig',description,'',date,post_url)
+                    current_datetime = datetime.now()
+                    if date_obj > current_datetime:
+                        date = ''
+                    appender(victim,'apt73',description,'',date,post_url)
         except:
-            errlog('Eraleig: ' + 'parsing fail')
+            errlog('apt73: ' + 'parsing fail')
             pass

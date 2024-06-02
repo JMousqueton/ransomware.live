@@ -35,23 +35,23 @@ def scraper(querygroup=''):
                 # here 
                     try:
                         with sync_playwright() as play:
-                                if querygroup in ['blackbasta','everest','metaencryptor', 'bianlian','knight','mydata']:
+                                if querygroup in ['blackbyte','blackbasta','everest','metaencryptor', 'bianlian','knight','mydata','eraleig']:
                                     stdlog('exception for ' + querygroup)
                                     browser = play.firefox.launch(proxy={"server": "socks5://127.0.0.1:9050"},
                                         args=['--unsafely-treat-insecure-origin-as-secure='+host['slug'], "--headless=new"]) 
-                                elif querygroup in ['toufan','werewolves']:
+                                elif querygroup in ['toufan','werewolves','handala']:
                                     stdlog('exception not tor for ' + querygroup)
                                     browser = play.firefox.launch(args=["--headless=new"])
                                 else:
                                     browser = play.chromium.launch(proxy={"server": "socks5://127.0.0.1:9050"},
-                                        args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])    
+                                        args=['--unsafely-treat-insecure-origin-as-secure='+host['slug']])
                                 context = browser.new_context(ignore_https_errors= True )
                                 page = context.new_page()
                                 #stealth_sync(page)
                                 if 'timeout' in host and host['timeout'] is not None:
                                    page.goto(host['slug'], wait_until='load', timeout = host['timeout']*1000)
                                 else:
-                                    page.goto(host['slug'], wait_until='load', timeout = 120000)
+                                   page.goto(host['slug'], wait_until='load', timeout = 120000)
                                 page.bring_to_front()
                                 delay = host['delay']*1000 if ( 'delay' in host and host['delay'] is not None ) \
                                     else 15000

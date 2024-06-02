@@ -27,7 +27,7 @@ def main():
                     except:
                         pass
                     #    errlog('karakurt: ' + 'parsing fail')
-                    appender(title, 'karakurt', description.replace('\nexpand',''))
+                    appender(title, 'karakurt', description.replace('\nexpand',' '))
                 file.close()
         except:
             errlog('karakurt: ' + 'parsing fail')

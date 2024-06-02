@@ -4,7 +4,7 @@
     +------------------------------+------------------+----------+
     | Description | Published Date | Victim's Website | Post URL |
     +------------------------------+------------------+----------+
-    |      X      |        X       |         X        |     X    |
+    |      X      |        X       |                  |     X    |
     +------------------------------+------------------+----------+
     Rappel : def appender(post_title, group_name, description="", website="", published="", post_url="")
 """
@@ -77,7 +77,7 @@ def main():
                     else:
                         post_url = ""
                     
-                    # Append the extracted data 
+                    # Append the extracted data to the lists
                     appender(victim_name, group_name, description,url,formatted_date,post_url)
         except Exception as e:
             errlog(group_name + ' - parsing fail with error: ' + str(e) + 'in file:' + filename)

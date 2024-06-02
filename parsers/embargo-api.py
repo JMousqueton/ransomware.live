@@ -17,6 +17,8 @@ import requests
 from parse import appender
 import urllib3
 
+
+
 # Disable the warning about certificate verification
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -26,16 +28,25 @@ proxies = {
     'https': 'socks5h://localhost:9050'
 }
 def get_fqdns_from_json(filename, group_name):
+    # Load the JSON data from the file
     with open(filename, 'r') as file:
         data = json.load(file)
+
+    # Initialize a list to hold the FQDNs
     fqdns = []
+
+    # Loop through each item in the JSON data (assuming top level is a list)
     for item in data:
+        # Check if the group name matches
         if item.get("name") == group_name:
+            # Loop through each location in the locations list
             for location in item.get("locations", []):
+                # Append the FQDN to the list
                 fqdns.append(location["fqdn"])
             break
 
     return fqdns
+
 
 def fetch_json_from_onion_url(onion_url):
     try:
@@ -50,8 +61,12 @@ def fetch_json_from_onion_url(onion_url):
     return json_data
 
 def convert_datetime(iso_datetime):
+    # Parse the ISO 8601 formatted string to a datetime object
     dt_obj = datetime.fromisoformat(iso_datetime)
+    
+    # Format the datetime object to the desired string format
     formatted_datetime = dt_obj.strftime("%Y-%m-%d %H:%M:%S.%f")
+    
     return formatted_datetime
 
 def main():
@@ -61,9 +76,9 @@ def main():
     for fqdn in fqdns:
         #onion_url= 'http://embargobe3n5okxyzqphpmk3moinoap2snz5k6765mvtkk7hhi544jid.onion/api/blog/get'
         onion_url = 'http://' + fqdn + '/api/blog/get'
-        stdlog('Fetching :'+onion_url) 
+        #stdlog('Fetching :'+onion_url) 
         json_data = fetch_json_from_onion_url(onion_url)
-        stdlog(onion_url+" Fetched")
+        #stdlog(onion_url+" Fetched")
         if json_data is not None:
             for item in json_data:
                 id = item['_id']
