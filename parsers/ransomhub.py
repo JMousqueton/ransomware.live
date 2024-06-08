@@ -14,6 +14,12 @@ from parse import appender
 import re
 from datetime import datetime
 
+def convert_date(date_str):
+    try:
+        return datetime.strptime(date_str, '%Y-%m-%d %H:%M:%S').strftime('%Y-%m-%d %H:%M:%S.%f')
+    except ValueError:
+        return date_str
+
 def main():
     for filename in os.listdir('source'):
         try:
@@ -21,19 +27,15 @@ def main():
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                posts = soup.find_all('div', class_='timeline-item')
-                for div in posts:
-                    tmp = div.find('a')
-                    s = tmp.text.strip()
-                    parts = s.split('<')
-                    title = parts[0]
-                    if '<' in s:
-                        website = parts[1].split('>')[0]
-                    else:
-                        website = ''
-                    description = div.find('p',{"class" : "card-text"}).text.strip().replace('Data',' Data').replace('Published',' Published')
-                    post_url = find_slug_by_md5('ransomhub', extract_md5_from_filename(html_doc)) + tmp['href']
-                    appender(title, 'ransomhub',description,website,'',post_url)
+                cards = soup.find_all('div', class_='card')
+                for card in cards:
+                    title_tag = card.find('div', class_='card-title').strong
+                    title = title_tag.get_text(strip=True).replace('(SOLD)','').replace('<SOLD>','')
+                    url = find_slug_by_md5('ransomhub', extract_md5_from_filename(html_doc))
+                    link = card.find_parent('a')['href']
+                    post_date = convert_date(card.find('div', class_='card-footer').get_text(strip=True))
+                    post_url= url + '/' + link
+                    appender(title, 'ransomhub',"","",post_date,post_url)
                 file.close()
         except Exception as e:
             errlog('ransomhub - parsing fail with error: ' + str(e))
