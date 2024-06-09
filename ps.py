@@ -62,7 +62,7 @@ def find_scraped_group(process_id,elapsed_minutes):
         with open('groups.json', 'r') as f:
             group_data = json.load(f)
         ps_output = subprocess.check_output(['ps', '-ef']).decode('utf-8')
-        print(f"The \033[1mscrape\033[0m process is running (PID: {process_id}) since {elapsed_minutes} minutes")
+        print(f"The \033[1mscrape\033[0m process is running (PID: \033[3m{process_id}\033[0m) since \033[1m{elapsed_minutes}\033[0m minutes")
         for line in ps_output.split('\n'):
             if 'ms-playwright' in line:
                 pattern = r"http://[a-z2-7]{56}\.onion"
@@ -77,9 +77,23 @@ def find_scraped_group(process_id,elapsed_minutes):
                                 break
                         if group_name != 'Unknown group':
                             break
-                    print(f"  Processing gang: \033[1m{group_name}\033[0m")
+                    print(f"  Processing gang: \033[1m{group_name}\033[0m (\033[3m{onion_address}\033[0m)")
                 else:
-                    print("No group name found.")
+                    pattern = r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
+                    match  = re.search(pattern, line)
+                    if match:
+                        web_address = re.sub(r'^http[s]?:///', r'http://', url)
+                        group_name = 'Unknown group'
+                        for group in group_data:
+                            for location in group.get('locations', []):
+                                if location.get('fqdn') in onion_address:
+                                    group_name = group['name']
+                                    break
+                            if group_name != 'Unknown group':
+                                break
+                            print(f"  Processing gang: \033[1m{group_name}\033[0m (\033[3m{onion_address}\033[0m)")
+                    else:
+                        print("No group name found.")
                 break
     except Exception as e:
         print(f"Error occurred while finding scraped group: {e}")
