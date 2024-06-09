@@ -61,14 +61,14 @@ def find_scraped_group(process_id,elapsed_minutes):
         # Load the group.json file
         with open('groups.json', 'r') as f:
             group_data = json.load(f)
-        
         ps_output = subprocess.check_output(['ps', '-ef']).decode('utf-8')
+        print(f"The \033[1mscrape\033[0m process is running (PID: {process_id}) since {elapsed_minutes} minutes")
         for line in ps_output.split('\n'):
-            if '/root/.cache/ms-playwright/chromium-1033/chrome-linux/chrome' in line:
-                #match = re.search(r'(http[s]?://\S+\.onion)', line)
-                match = re.search(r'(http[s]?://\S+)', line)
+            if 'ms-playwright' in line:
+                pattern = r"http://[a-z2-7]{56}\.onion"
+                match = re.search(pattern, line)
                 if match:
-                    onion_address = match.group(1)
+                    onion_address = match.group()
                     group_name = 'Unknown group'
                     for group in group_data:
                         for location in group.get('locations', []):
@@ -77,10 +77,8 @@ def find_scraped_group(process_id,elapsed_minutes):
                                 break
                         if group_name != 'Unknown group':
                             break
-                    print(f"The \033[1mscrape\033[0m process is running (PID: {process_id}) since {elapsed_minutes} minutes")
                     print(f"  Processing gang: \033[1m{group_name}\033[0m")
                 else:
-                    print(f"The \033[1mscrape\033[0m process is running since {elapsed_minutes} minutes")
                     print("No group name found.")
                 break
     except Exception as e:
