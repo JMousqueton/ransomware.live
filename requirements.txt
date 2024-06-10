@@ -5,7 +5,7 @@ matplotlib==3.9.0
 BeautifulSoup4==4.12.2
 requests[socks]==2.32.3
 playwright==1.44.0
-pandas==2.0.3
+pandas==2.2.2
 pillow==10.3.0
 #dotenv
 python-dotenv
