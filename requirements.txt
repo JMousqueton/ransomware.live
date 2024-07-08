@@ -6,7 +6,7 @@ BeautifulSoup4==4.12.3
 requests[socks]==2.32.3
 playwright==1.44.0
 pandas==2.2.2
-pillow==10.3.0
+pillow==10.4.0
 #dotenv
 python-dotenv
 Mastodon.py
