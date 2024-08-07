@@ -106,5 +106,3 @@ if (( MINUTES > 120 )); then
   --form-string "message=WARNING: execution script longer than expected : ${MINUTES} minutes !!!" \
   https://api.pushover.net/1/messages.json > /dev/null
 fi
-python3 admin_exec_time.py
-python3 generate_admin.py
