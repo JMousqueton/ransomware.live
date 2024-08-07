@@ -16,5 +16,5 @@ Requests==2.32.3
 SocksiPy_branch==1.01
 Telethon==1.35.0
 tldextract==3.4.4
-urllib3==1.26.5
+urllib3==1.26.19
 wordcloud==1.9.2
