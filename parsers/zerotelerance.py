@@ -1,0 +1,48 @@
+"""
+    From Template v3 - 20240807
+    +----------------------------------------------+
+    | Description | Website | published | post URL |
+    +-----------------------+-----------+----------+
+    |       X     |         |           |     X    |
+    +-----------------------+-----------+----------+
+    Rappel : def appender(post_title, group_name, description="", website="", published="", post_url="")
+"""
+
+import os,datetime,sys,re
+from bs4 import BeautifulSoup
+from datetime import datetime
+
+## Import Ransomware.live libs 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs')))
+from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_by_md5, appender
+
+# Function to parse and format the date
+def parse_and_format_date(date_str):
+    # Parsing the date assuming the format is like 'May 5th 2024, 5:53:55 am'
+    date_str = date_str.split(',')[0] + date_str.split(',')[1]  # Remove the "th", if present
+    date_str = date_str.replace('th', '').replace('st', '').replace('nd', '').replace('rd', '')
+    date_obj = datetime.datetime.strptime(date_str, "%B %d %Y %I:%M:%S %p")
+    return date_obj.strftime("%Y-%m-%d %H:%M:%S.%f")
+
+def main():
+    for filename in os.listdir('source'):
+        try:
+            if filename.startswith('zerotolerance-'):
+                html_doc='source/'+filename
+                file=open(html_doc,'r')
+                soup=BeautifulSoup(file,'html.parser')
+                cards = soup.find_all('div', class_='card')
+                for card in cards:
+                    name = card.find('h5').text.strip() if card.find('h5') else "No Title"
+                    date_text = card.find('p', {'class': 'text-center card-text'}).text.strip() if card.find('p', {'class': 'text-center card-text'}) else "No Date"
+                    date = parse_and_format_date(date_text) if date_text != "No Date" else "No Date"
+                    link = card.parent['href'].strip() if card.parent.name == 'a' else ""
+                    link = find_slug_by_md5('zerotolerance', extract_md5_from_filename(html_doc)) + str(link)
+                    description = " ".join([p.text.strip() for p in card.find_all('p', {'class': 'card-text'})])
+                    #description = re.sub(r'https://gofile.io/d/\S+', 'https://gofile.io/d/[REDACTED]', description)
+                    description = description.replace('\n',' ')
+                    appender(name,'zerotolerance',description,'',date,link)
+                file.close()
+        except:
+            errlog('Zero Tolerance: ' + 'parsing fail')
+            pass    
