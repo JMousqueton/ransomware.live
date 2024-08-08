@@ -253,9 +253,9 @@ def clean_string(s):
     for char in chars_to_remove:
         s = s.replace(char, ' ')
     s = s.replace('[DISCLOSED]', '')  # Remove [DISCLOSED]
-    s = s.replace('Data Leak', '')  # Remove [DISCLOSED]
-    s = s.strip()   
     s = re.sub(' +', ' ', s)  # Replace multiple spaces with a single space
+    s = s.replace('Data Leak', '')
+    s = s.strip() 
     return s
 
 def add_metadata(output):
@@ -471,8 +471,8 @@ def appender(post_title, group_name, description="", website="", published="", p
             filename = os.path.join(POST_SCREENSHOT_DIR, f'{hex_digest}.png')
             asyncio.run(screenshot(post_url,filename))
         ## Post Infostealer information 
-        if is_fqdn(post_title) and website is None:
-            website = post_title 
+        if is_fqdn(post_title) and len(website) == 0:
+            website = post_title
         if website:
             stdlog('Query Hudsonrock with ' + extract_fqdn(website))
             hudsonrock.query_hudsonrock(extract_fqdn(website))
