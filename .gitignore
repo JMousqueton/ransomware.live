@@ -170,6 +170,7 @@ session_name.session
 data/victims.json
 data/groups.json
 data/removerequests.json
+data/tidalcyber-ttps.json
 !docs/index.html
 !docs/js/* 
 !doc/_* 
