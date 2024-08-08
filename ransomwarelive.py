@@ -280,6 +280,8 @@ if __name__ == '__main__':
         DATA_DIR = os.getenv('DATA_DIR')
         VICTIMS_FILE = os.getenv('VICTIMS_FILE')
         VICTIMS_FILE = DATA_DIR + VICTIMS_FILE
+        GROUPS_FILE = os.getenv('GROUPS_FILE')
+        GROUPS_FILE = DATA_DIR + GROUPS_FILE
         if os.path.getmtime(VICTIMS_FILE) > (time.time() - 2700):
             ransomwarelive.stdlog('Victims database has been modified within the last 45 mins, assuming new posts discovered and generating full site')
             hudsonrockfile = DATA_DIR + 'hudsonrock.json'  
@@ -328,11 +330,25 @@ if __name__ == '__main__':
             NowTime=datetime.now()
             writeline(currentgraph, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
             ransomwarelive.stdlog('stats for ' +  str(year) + ' generated')    
+            graph.wordcloud()
+            groups_data = ransomwarelive.openjson(GROUPS_FILE)
+            group_names = [group['name'] for group in groups_data]
+            ransomwarelive.stdlog("Generate group's victims graph")
+            print('[',end="")
+            sys.stdout.flush()
+            for group_name in group_names:
+                try:
+                    graph.statsgroup(group_name)
+                    print('*',end="")
+                except:  
+                    print('-',end="")
+                sys.stdout.flush()
+            print(']')
+            # Run the function
+            graph.generate_ransomware_map()
         else:
-            ransomwarelive.stdlog('posts.json has not been modified within the last 45 mins, assuming no new posts discovered')
+            ransomwarelive.stdlog('posts.json has not been modified within the last 45 mins, assuming no new posts discovered')    
         base_url = "https://www.ransomware.live"
-        GROUPS_FILE = os.getenv('GROUPS_FILE')
-        GROUPS_FILE = DATA_DIR + GROUPS_FILE
         pages = ransomwarelive.openjson(GROUPS_FILE)
         note_directories = [directory for directory in os.listdir("./docs/notes/") if directory.lower() != ".git.md"]
         generatesite.generate_sitemapXML(base_url, pages, note_directories, output_file="./docs/sitemap.xml")
@@ -346,7 +362,6 @@ if __name__ == '__main__':
                 negotiations.parse_group(gang)
         negotiations.generatenegotiationindex()
         ransomwarelive.stdlog('Ransomware Negotiation generated')
-        graph.wordcloud()
         end_time = time.time()
         execution_time = end_time - start_time
         ransomwarelive.stdlog(f'Generating execution time {execution_time:.2f} secondes')

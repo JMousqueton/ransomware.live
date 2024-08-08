@@ -996,6 +996,7 @@ def profilepage():
                         hex_digest = hash_object.hexdigest()
                         if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
                             screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>📸</a>'
+                    description = clean_string(description)
                     line = '| ' + postURL + ' | ' + date + ' | ' + description + ' | ' + screenpost + ' |'
                     result = get_removal(post['post_title'], post['group_name'])
                     if result:  
@@ -1211,7 +1212,7 @@ def groupprofilepage():
                             infostealer = ''
                     else:
                         infostealer = ''
-                    description = description.replace('\n',' ').replace('\r','')
+                    description = clean_string(description)
                     if group['name'] == 'bianlian' or group['name'] == 'cloak':
                         line = '| ' + postURL + ' | ' + date + ' | ' + description + ' | ' + find_matching_victims(post['post_title'],group['name']) + '|' + screenpost + ' | ' + infostealer + ' |'
                     else:

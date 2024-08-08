@@ -7,6 +7,10 @@ from dotenv import load_dotenv
 from datetime import datetime, timedelta
 from wordcloud import WordCloud
 from collections import Counter
+import pandas as pd
+import folium
+
+from mypycountries import get_coordinates, get_country_name # https://github.com/JMousqueton/MyPyCountries 
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs')))
 from ransomwarelive import add_watermark, openjson, errlog, stdlog
@@ -704,4 +708,138 @@ def wordcloud():
         add_watermark(output_path)
     except:
         errlog("WordCloud : Error while saving image")
+
+def statsgroup(specific_group_name):
+    # Reset variables
+    victim_counts = {}
+    dates = []
+    counts = []
+
+    # Read posts.json and filter posts for the specific group name and start date
+    with open('./data/victims.json', 'r') as posts_file:
+        posts_data = json.load(posts_file)
+        filtered_posts = [
+            post for post in posts_data
+            if post['group_name'] == specific_group_name
+            and datetime.strptime(post['published'], '%Y-%m-%d %H:%M:%S.%f') >= datetime(2022, 1, 1)
+        ]
+
+    # Count the number of victims per day
+    for post in filtered_posts:
+        date = datetime.strptime(post['published'], '%Y-%m-%d %H:%M:%S.%f').date()
+        victim_counts[date] = victim_counts.get(date, 0) + 1 
+
+    # Sort the victim counts by date
+    sorted_counts = sorted(victim_counts.items())
+
+    # Extract the dates and counts for plotting
+    dates, counts = zip(*sorted_counts)
+
+    start_date = datetime(2022, 1, 1).date()
+
+    # Plot the graph
+    plt.clf()
+    # Create a new figure and axes for each group with a larger figure size
+    fig,ax = plt.subplots(figsize=(10, 3))  # Adjust the width (10) and height (6) as desired
+
+    # plt.plot(dates, counts)
+    ax.bar(dates, counts, color = '#42b983')
+    ax.set_xlabel('Date\nRansomware.live', color = '#42b983')
+    ax.set_ylabel('Number of Victims', color = '#42b983')
+    ax.set_title('Number of Victims for Group: ' + specific_group_name, color = '#42b983')
+    ax.tick_params(axis='x', rotation=45)
+    # Set the x-axis limits
+    ax.set_xlim(start_date, datetime.now().date())
+    # Format y-axis ticks as whole numbers without a comma separator
+    
+    plt.tight_layout()
+
+    # Save the graph as an image file
+    plt.savefig('docs/graphs/stats-' + specific_group_name + '.png')
+    plt.close(fig)
+
+
+
+
+
+
+def generate_ransomware_map():
+    json_path = './data/victims.json'
+    html_path = 'docs/map.html'
+    md_path = 'docs/map.md'
+    current_year = datetime.now().year
+
+    # Load JSON data from file
+    stdlog('Reading posts.json ...')
+    with open(json_path, 'r') as file:
+        data = json.load(file)
+
+    # Convert data into a DataFrame
+    df = pd.DataFrame(data)
+
+    # Convert 'date' column to datetime, assuming the format is 'YYYY-MM-DD HH:MM:SS.ssssss'
+    df['discovered'] = pd.to_datetime(df['discovered'], errors='coerce')
+
+    stdlog('Filtering victims')
+    # Filter for rows where the year is current_year
+    df_currentyear = df[df['discovered'].dt.year == current_year]
+
+    # Filter rows where 'country' is not None or empty
+    filtered_df = df_currentyear[df_currentyear['country'].notna() & (df_currentyear['country'] != '')].copy()
+
+    # Aggregate data by country code, counting entries per country code
+    country_counts = filtered_df['country'].value_counts().reset_index()
+    country_counts.columns = ['country', 'count']
+
+    stdlog('Getting geocoding ...')
+    # Apply geocoding
+    country_counts['coords'] = country_counts['country'].apply(get_coordinates)
+
+    title_html = '''
+                 <h3 align="center" style="font-size:16px"><b>© {} <a href="https://www.ransomware.live/">Ransomware.live</a></b></h3>
+                 '''.format(current_year) 
+
+    stdlog('Initialize Map')
+    # Create a map
+    map = folium.Map(location=[20, 0], zoom_start=2)
+
+    map.get_root().html.add_child(folium.Element(title_html))
+
+    # Scaling factor for the radius
+    scale_factor = 1
+
+    stdlog('Adding point on map ...')
+    # Add points to the map
+    for idx, row in country_counts.iterrows():
+        if row['coords'] is not None:  # Ensure the coordinates are not None
+            lat, lon = row['coords']
+            if lat is not None and lon is not None:  # Ensure both latitude and longitude are available
+                folium.CircleMarker(
+                    location=[lat, lon],
+                    radius=scale_factor * row['count']**0.5,  # Scale radius based on square root of count
+                    popup=f"<a href='https://www.ransomware.live/#/country/{row['country'].lower()}' target='_parent'>{get_country_name(row['country'])}</a>: {row['count']} victim(s)",
+                    color='red',
+                    fill=True,
+                    fill_opacity=0.7
+                ).add_to(map)
+            else:
+                errlog("2) Skipping " + row['country'] + " due to missing coordinates.")
+        else:
+            stdlog("2) Skipping " + row['country'] + " due to missing coordinates.")
+
+    # Save or show the map
+    stdlog('Writing Map ...')
+    map.save(html_path)
+    stdlog('Writing markdown file ...')
+    current_datetime = datetime.now().isoformat()
+    content = f"""
+    ### 🗺️ Worldmap for ransomware's attacks in {current_year}
+
+    [filename](map.html ':include')
+
+    _Last update: {current_datetime}_
+    """
+    with open(md_path, 'w') as file:
+        file.write(content)
+
 

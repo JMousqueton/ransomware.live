@@ -579,15 +579,15 @@ async def scrape(force=False):
             filename = f"source/{group['name']}-{md5_hash(host['slug'])}.html"
             async with async_playwright() as p:
                 try: 
-                    if group['name'] in FF_PROXY_GROUPS:
-                        stdlog(f"Using Firefox with TOR proxy for {group['name']}")
-                        browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
-                    elif ".onion" in host["slug"]:
+                    if group['name'] in CHROMIUM_PROXY_GROUPS:
                         stdlog(f"Using Chromium with TOR proxy for {group['name']}")
                         browser = await p.chromium.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
+                    elif ".onion" in host["slug"]:
+                        stdlog(f"Using Firefox with TOR proxy for {group['name']}")
+                        browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
                     else:
                         stdlog(f"Clearweb connexion for {group['name']}")
-                        browser = play.firefox.launch(args=browser_args)
+                        browser = await p.firefox.launch(args=['--ignore-certificate-errors'])
                     context = await browser.new_context(ignore_https_errors=True)
                     page = await context.new_page()
                     await page.goto(host["slug"])
@@ -609,7 +609,7 @@ async def scrape(force=False):
                             'updated': str(datetime.today())
                         })
                     updated = True
-                stdlog(f'Finished scraping {host["slug"]} for {group["name"]}')
+                    stdlog(f'Finished scraping {host["slug"]} for {group["name"]}')
             if updated:
                 with open(GROUPS_FILE, 'w', encoding='utf-8') as groupsfile:
                     json.dump(groups, groupsfile, ensure_ascii=False, indent=4)
