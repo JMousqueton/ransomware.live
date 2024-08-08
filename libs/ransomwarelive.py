@@ -251,8 +251,9 @@ def md5_file(file_path, chunk_size=8192):
 def clean_string(s):
     chars_to_remove='|\t\b\n'
     for char in chars_to_remove:
-        s = s.replace(char, '')
+        s = s.replace(char, ' ')
     s = s.replace('[DISCLOSED]', '')  # Remove [DISCLOSED]
+    s = s.replace('Data Leak', '')  # Remove [DISCLOSED]
     s = s.strip()   
     s = re.sub(' +', ' ', s)  # Replace multiple spaces with a single space
     return s

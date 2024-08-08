@@ -33,7 +33,7 @@ def main():
                     url = header.get('href') or header['href'] 
                     description = div.find('div', style='line-height:20px; padding-top:5px; margin-bottom:30px;').text.strip()
                     try:
-                        url = find_slug_by_md5('alphalocker', extract_md5_from_filename(html_doc)) + "/" + str(url)
+                        url = find_slug_by_md5('alphalocker', extract_md5_from_filename(html_doc)).replace('_1','') + "/" + str(url)
                     except:
                         url = 'http://mydatae2d63il5oaxxangwnid5loq2qmtsol2ozr6vtb7yfm5ypzo6id.onion' +  "/" + str(url)
                     appender(title, 'alphalocker', description,"","",url)

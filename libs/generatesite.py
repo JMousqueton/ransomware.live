@@ -4,12 +4,12 @@ from datetime import datetime, timedelta, date
 from dotenv import load_dotenv 
 import logging
 import fnmatch
-from collections import Counter
+from collections import Counter, defaultdict
 import urllib.parse
 from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 #import datetime
-
+import pandas as pd
 from ransomwarelive import stdlog, errlog, openjson
 
 
@@ -158,6 +158,24 @@ def recentdiscoveredposts(top):
             break
     stdlog('recent posts generated')
     return recentposts
+
+def recentattackedposts(top):
+    '''
+    create a list the last X posts (most recent)
+    '''
+    stdlog('Finding recent posts')
+    posts = openjson(VICTIMS_FILE)
+    # sort the posts by timestamp - descending
+    sorted_posts = sorted(posts, key=lambda x: x['published'], reverse=True)
+    # create a list of the last X posts
+    recentposts = []
+    for post in sorted_posts:
+        recentposts.append(post)
+        if len(recentposts) == top:
+            break
+    stdlog('recent posts generated')
+    return recentposts
+
 
 def extract_domain(url):
     if '://' not in url:
@@ -416,6 +434,10 @@ def generate_sitemapXML(base_url, pages, note_directories, output_file="./docs/s
     # Create an ElementTree object and write it to a file
     tree = ET.ElementTree(urlset)
     tree.write(output_file, encoding="UTF-8", xml_declaration=True)
+
+def json2cvs():
+    df = pd.read_json (r'./data/victims.json')
+    df.to_csv (r'docs/victims.csv', index = None) 
 
 
 def generate_sitemapHTML(base_url, pages, note_directories, output_file="./docs/sitemap.xml"):
@@ -1030,10 +1052,10 @@ def allposts():
     writeline(allpage, '_All `' + str(postcount()) + '` posts_')
     writeline(allpage, '')
     writeline(allpage, '') 
-    writeline(allpage, '💾 [Download](https://data.ransomware.live/posts.json) full list in **json** format')
+    writeline(allpage, '💾 [Download](https://data.ransomware.live/victims.json) full list in **json** format')
     writeline(allpage, '')
-    #writeline(allpage, '💾 [Download](https://www.ransomware.live/posts.csv) full list in **csv** format')
-    #writeline(allpage, '')
+    writeline(allpage, '💾 [Download](https://www.ransomware.live/victims.csv) full list in **csv** format')
+    writeline(allpage, '')
     writeline(allpage, '')
     writeline(allpage, '| Discovery Date | Attack Date | Victim | [Country](country) | Group | 📸 | 🕵🏻‍♂️ | ')
     writeline(allpage, '|---|---|---|---|---|---|---|')
@@ -1340,3 +1362,131 @@ def summaryjson():
     writeline(uptime_sheet, '"overallposts": "' + str(postcount())   + '"')
     writeline(uptime_sheet, '}')
     writeline(uptime_sheet, ']')
+
+
+
+def generate_admin_page(directory, output_file):
+    # Ensure the directory exists
+    if not os.path.exists(directory):
+        print("Directory does not exist.")
+        return
+
+    # Get the list of files in the directory
+    files = os.listdir(directory)
+    
+    # Filter image files (assuming common image file extensions)
+    image_extensions = ('.png', '.jpg', '.jpeg', '.gif', '.bmp', '.tiff')
+    image_files = [file for file in files if file.endswith(image_extensions)]
+
+    # Create a dictionary to hold lists of files by topic
+    images_by_topic = defaultdict(list)
+
+    for file in image_files:
+        # Split the file name to get the topic
+        topic = file.split('-')[0]
+        images_by_topic[topic].append(file)
+
+    # Sort topics alphabetically
+    sorted_topics = sorted(images_by_topic.keys())
+
+    # Create the Markdown structure
+    markdown_content = "# Administration\n"
+    markdown_content += "> Restricted area \n"
+
+    for topic in sorted_topics:
+        images = images_by_topic[topic]
+        topic_name = topic.replace("_", " ").capitalize().replace('.png','')
+        markdown_content += "## {}\n".format(topic_name)
+        markdown_content += "<table>\n"
+        for i in range(0, len(images), 2):
+            markdown_content += "  <tr>\n"
+            markdown_content += "    <td><img src=\"/admin/{}\" alt=\"{}\" style=\"width:100%\"></td>\n".format(images[i], images[i])
+            if i + 1 < len(images):
+                markdown_content += "    <td><img src=\"/admin/{}\" alt=\"{}\" style=\"width:100%\"></td>\n".format(images[i + 1], images[i + 1])
+            else:
+                markdown_content += "    <td></td>\n"
+            markdown_content += "  </tr>\n"
+        markdown_content += "</table>\n"
+        markdown_content += "\n"
+    markdown_content += "## Statistics\n"
+    markdown_content += "<a href='/admin/apistats.html' target=_blank>API</a> | <a href='/admin/webstats.html' target=_blank>web</a>\n" 
+
+
+    # Write the Markdown content to a file
+    with open(output_file, "w") as md_file:
+        md_file.write(markdown_content)
+
+def recentpublishedposts(top):
+    '''
+    create a list the last X posts (most recent)
+    '''
+    stdlog('finding recent posts')
+    posts = openjson('./data/victims.json')
+    # sort the posts by timestamp - descending
+    sorted_posts = sorted(posts, key=lambda x: x['published'], reverse=True)
+    # create a list of the last X posts
+    recentposts = []
+    for post in sorted_posts:
+        recentposts.append(post)
+        if len(recentposts) == top:
+            break
+    stdlog('recent posts generated')
+    return recentposts
+
+def recentpublishedpage():
+    '''create a markdown table for the last 200 posts based on the published value'''
+    fetching_count = 200
+    stdlog('generating recent published victims page')
+    recentpage = 'docs/recentvictims.md'
+    # delete contents of file
+    with open(recentpage, 'w', encoding='utf-8') as f:
+        f.close()
+    writeline(recentpage,'# Recent victims')
+    writeline(recentpage,'')
+    writeline(recentpage, '> [!INFO] `Ransomware.live` provides tracking of ransomware groups and their victims. Descriptions available in the [group profiles view](profiles.md)')
+    writeline(recentpage,'')
+    writeline(recentpage, '**📰 200 last victims sorted by published date**')
+    writeline(recentpage, '')
+    writeline(recentpage, '| Attack Date | Victim | [Country](country) | Ransomware Group | 📸 |')
+    writeline(recentpage, '|---|---|---|---|---|')
+    for post in recentpublishedposts(fetching_count):
+        # show friendly date for discovered
+        date = post['published'].split(' ')[0]
+        attacked_date = post.get('attacked_date', None)
+        if attacked_date:
+            date = attacked_date.split(' ')[0]
+        # replace markdown tampering characters
+        title = post['post_title'].replace('|', '-').replace('&amp;','&').replace('amp;','')
+        group = post['group_name'].replace('|', '-')
+        urlencodedtitle = urllib.parse.quote_plus(title)
+        grouplink = '[' + group + '](group/' + group + ')'
+        # screenpost='❌'
+        screenpost=' '
+        if post['post_url'] is not None: 
+            # Create an MD5 hash object
+            hash_object = hashlib.md5()
+            # Update the hash object with the string
+            hash_object.update(post['post_url'].encode('utf-8'))
+            # Get the hexadecimal representation of the hash
+            hex_digest = hash_object.hexdigest()
+            if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
+                screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>👀</a>'
+        if len(post['country']) > 1:
+            match post['country']:
+                case 'UK':
+                    flag = 'GB'
+                case _:
+                    flag = post['country']
+            country="[!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':size=32x24 :no-zoom')](country/"+flag.lower()+")"
+        else:
+            country=''
+        line = '| ' + date + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + country + ' | ' + grouplink + ' | ' + screenpost + ' |'
+        result = get_removal(title, group)
+        if result:  
+             line = '| ' + date + ' |  *' + result + '* | ' + country + ' | ' + grouplink + ' |   |   |'
+        writeline(recentpage, line)
+    writeline(recentpage, '')
+    writeline(recentpage, '> [!TIP] You can also check the 200 last victims sorted by discovered date by `Ransomware.live` [here](recentdiscoveredvictims.md).')
+    writeline(recentpage, '')
+    writeline(recentpage, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
+    stdlog('recent published victims page generated')

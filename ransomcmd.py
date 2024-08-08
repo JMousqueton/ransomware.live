@@ -11,24 +11,7 @@ Description:
     existing tools and libraries.
 
 Usage:
-    python3 ransomwarelive.py <command> [options]
-
-Commands:
-    scrape       Scrape ransomware DLS sites
-    parse        Parse ransomware DLS sites
-    generate     Generate Ransomware.live site
-    screenshot   Generate screenshots for ransomware sites
-    search       Search victim in the database
-    rss          Generate RSS feed
-    infostealer  Search for Hudsonrock database
-    tools        Tools for Ransomware.live (subcommands: duplicate, order)
-
-Options:
-    -F, --force                 Force the execution of the command (e.g., force scraping)
-    -g, --group <group_name>    Specify a specific group
-    -u, --url <url>             Specify a specific URL for screenshots
-    -v, --victim <victim_name>  Specify a victim name
-    -d, --domain <domain_name>  Specify a domain name
+    python3 ransomcmd.py <command> [options]
 
 Dependencies:
     - Python 3.x
@@ -71,6 +54,7 @@ import rss
 import ransomnotes 
 import hudsonrock
 import negotiations
+import mystripe
 
 SOURCE='./source'
 
@@ -275,9 +259,9 @@ if __name__ == '__main__':
         LOCK_FILE_PATH = os.path.join(tempfile.gettempdir(), LOCK_FILE_NAME)
         create_lock_file(LOCK_FILE_PATH)  
         start_time = time.time()
-        generatesite.mainpage()
-        generatesite.statuspage()
-        generatesite.summaryjson()
+        #generatesite.mainpage()
+        #generatesite.statuspage()
+        #generatesite.summaryjson()
         load_dotenv()
         DATA_DIR = os.getenv('DATA_DIR')
         VICTIMS_FILE = os.getenv('VICTIMS_FILE')
@@ -365,6 +349,14 @@ if __name__ == '__main__':
                 negotiations.parse_group(gang)
         negotiations.generatenegotiationindex()
         ransomwarelive.stdlog('Ransomware Negotiation generated')
+        generatesite.json2cvs()
+        ### BEGIN : ADMIN ###
+        mystripe.generatestripe()
+        graph.generate_execution_time_graphs()
+        directory_path = "./docs/admin"
+        markdown_file = os.path.join(directory_path, "README.md")
+        generatesite.generate_admin_page(directory_path, markdown_file)
+        ### END : ADMIN ###
         end_time = time.time()
         execution_time = end_time - start_time
         ransomwarelive.stdlog(f'Generating execution time {execution_time:.2f} secondes')

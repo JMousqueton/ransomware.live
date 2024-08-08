@@ -7,7 +7,7 @@
     +-----------------------+-----------+----------+
     Rappel : def appender(post_title, group_name, description="", website="", published="", post_url="")
 """
-
+ 
 import os,datetime,sys,re
 from bs4 import BeautifulSoup
 from datetime import datetime
@@ -19,7 +19,7 @@ from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_
 
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('blacksuit-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -46,6 +46,6 @@ def main():
                     appender(title, 'blacksuit', description,website,'',post_url)
 
                 file.close()
-        #except:
-        #    errlog('blacksuit : ' + 'parsing fail')
-        #    pass
+        except:
+            errlog('blacksuit : ' + 'parsing fail')
+            pass
