@@ -32,7 +32,6 @@ def main():
             if filename.startswith('cactus-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r') 
-
                 soup = BeautifulSoup(file, 'html.parser')
 
                 # Find the script tag containing JSON data
@@ -60,6 +59,5 @@ def main():
                     post_url = post['attributes']['slug']  # Replace 'link_field' with actual field name
                     post_url = "https://cactusbloguuodvqjmnzlwetjlpj6aggc6iocwhuupb47laukux7ckid.onion/posts/" + post_url
                     appender(victim,'cactus',content,website,postdate,post_url)
-        except:
-            stdlog('cactus : ' + 'parsing fail')
-            pass
+        except Exception as e:
+            errlog('cactus - parsing fail with error: ' + str(e) + 'in file:' + filename)

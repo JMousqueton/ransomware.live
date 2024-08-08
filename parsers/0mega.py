@@ -34,6 +34,5 @@ def main():
                     link = url = find_slug_by_md5('0mega', extract_md5_from_filename(html_doc)) +str(link)
                     appender(title, '0mega', description,"",pubdate,link)
                 file.close()
-        except:
-            errlog('0mega: ' + 'parsing fail')
-            pass
+        except Exception as e:
+            errlog('0mega - parsing fail with error: ' + str(e) + 'in file:' + filename) 

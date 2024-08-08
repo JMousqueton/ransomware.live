@@ -7,7 +7,31 @@
 
 ### Internal 
 
-You can find all ransomware victims in **json** format [here](https://data.ransomware.live/posts.json) or in **CSV** format [here](https://www.ransomware.live/posts.csv).
+You can find all ransomware victims in **json** format [here](https://data.ransomware.live/posts.json).
+
+### Usage  
+
+```
+./ransomwarelive.py --help
+    
+usage: ransomwarelive.py [-h] {scrape,parse,generate,screenshot,status,search,rss,infostealer,tools} ...
+
+positional arguments:
+  {scrape,parse,generate,screenshot,status,search,rss,infostealer,tools}
+    scrape              Scrape ransomware DLS sites (use -h/--help for available options)
+    parse               Parse ransomware DLS sites (use -h/--help for available options)
+    generate            Generate Ransomware.live site
+    screenshot          Generate screenshot for ransomware sites (use -h/--help for available options)
+    status              Show the status of ransomware.live
+    search              Search victim in database (use -h/--help for available options)
+    rss                 Generate RSS feeds
+    infostealer         Query Hudsonrock database (need -d/--domain <domain>)
+    tools               Tools for Ransomware.live (use -h/--help for available options)
+
+options:
+  -h, --help            show this help message and exit
+```
+
 
 ### External
 

@@ -162,8 +162,13 @@ cython_debug/
 #.idea/
 #
 data/hudsonrock.json
+data/groups.json
+data/victims.json
+data/eucert.json
+data/removerequests.json
+data/tidalcyber-ttps.json
+data/
 docs/*
-data/*.json 
 import/*
 source/*
 session_name.session

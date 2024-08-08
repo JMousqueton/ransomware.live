@@ -27,11 +27,18 @@ import ia_detection
 
 ## Hudsonrock 
 import tldextract
-from hudsonrock import query_hudsonrock 
+import hudsonrock 
 
 # Country 
 import pycountry
 import tldextract
+
+## EXCEPTION 
+
+CHROMIUM_PROXY_GROUPS = [
+    "cactus"
+]
+
 
 
 ## TODO :
@@ -185,6 +192,7 @@ def get_country(victim,description='',website=''):
                     result = country_code.upper() 
                     #stdlog('Methode 2 : ' + website + ' --> ' + result)
     return result
+
 
 def extract_fqdn(url):
     # Extract components using tldextract
@@ -452,9 +460,68 @@ def appender(post_title, group_name, description="", website="", published="", p
             website = post_title 
         if website:
             stdlog('Query Hudsonrock with ' + extract_fqdn(website))
-            query_hudsonrock(extract_fqdn(website))
+            hudsonrock.query_hudsonrock(extract_fqdn(website))
 
 
+def checkexisting(provider):
+    '''
+    check if group already exists within groups.json
+    '''
+    groups = openjson(GROUPS_FILE)
+    for group in groups:
+        if group['name'] == provider:
+            return True
+    return False
+
+def creategroup(name, location):
+    '''
+    create a new group for a new provider - added to groups.json
+    '''
+    location = siteschema(location)
+    insertdata = {
+        'name': name,
+        'captcha': bool(),
+        'parser': bool(),
+        'javascript_render': bool(),
+        'meta': None,
+        'description': None,
+        'locations': [
+            location
+        ],
+        'profile': list()
+    }
+    return insertdata
+
+def siteschema(location):
+    '''
+    returns a dict with the site schema
+    '''
+    if not location.startswith('http'):
+        dbglog('Ransomware.live: ' + 'assuming we have been given an fqdn and appending protocol')
+        location = 'http://' + location
+    schema = {
+        'fqdn': getapex(location),
+        'title': None,
+        'version': 3,
+        'slug': location,
+        'available': False,
+        'delay': None,
+        'updated': None,
+        'lastscrape': '2021-01-01 00:00:00.000000',
+        'enabled': True
+    }
+    dbglog('Ransomware.live: ' + 'schema - ' + str(schema))
+    return schema
+
+def getapex(slug):
+    '''
+    returns the domain for a given webpage/url slug
+    '''
+    stripurl = tldextract.extract(slug)
+    print(stripurl)
+    if stripurl.subdomain:
+        return stripurl.subdomain + '.' + stripurl.domain + '.' + stripurl.suffix
+    return stripurl.domain + '.' + stripurl.suffix
 
 ############################
 #
@@ -512,8 +579,16 @@ async def scrape(force=False):
             filename = f"source/{group['name']}-{md5_hash(host['slug'])}.html"
             async with async_playwright() as p:
                 try: 
-                    browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"})
-                    context = await browser.new_context()
+                    if group['name'] in FF_PROXY_GROUPS:
+                        stdlog(f"Using Firefox with TOR proxy for {group['name']}")
+                        browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
+                    elif ".onion" in host["slug"]:
+                        stdlog(f"Using Chromium with TOR proxy for {group['name']}")
+                        browser = await p.chromium.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
+                    else:
+                        stdlog(f"Clearweb connexion for {group['name']}")
+                        browser = play.firefox.launch(args=browser_args)
+                    context = await browser.new_context(ignore_https_errors=True)
                     page = await context.new_page()
                     await page.goto(host["slug"])
                     await page.wait_for_timeout(10000)  # Wait for the page to fully load and execute JavaScript
@@ -541,7 +616,6 @@ async def scrape(force=False):
             stdlog(f'Group {group["name"]} metadata updated')
 
 
-
 async def scrapegang(groupname,force=False):
     groups = openjson(GROUPS_FILE)
     for group in groups:
@@ -555,7 +629,17 @@ async def scrapegang(groupname,force=False):
                 filename = f"source/{group['name']}-{md5_hash(host['slug'])}.html"
                 async with async_playwright() as p:
                     try: 
-                        browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"})
+                        #browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"})
+                        #browser = await p.chromium.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
+                        if group['name'] in CHROMIUM_PROXY_GROUPS:
+                            stdlog(f"Using Chromium with TOR proxy for {group['name']}")
+                            browser = await p.chromium.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
+                        elif ".onion" in host["slug"]:
+                            stdlog(f"Using Firefox with TOR proxy for {group['name']}")
+                            browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
+                        else:
+                            stdlog(f"Clearweb connexion for {group['name']}")
+                            browser = play.firefox.launch(args=browser_args)
                         context = await browser.new_context()
                         page = await context.new_page()
                         await page.goto(host["slug"])
@@ -573,8 +657,21 @@ async def scrapegang(groupname,force=False):
 
 async def screenshot(url,filename):
     async with async_playwright() as p:
-        try: 
-            browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"})
+        try:
+            fqdn = extract_fqdn(url)
+            group = get_group_from_url(fqdn)
+            if group == None:
+                group = url 
+            if group in CHROMIUM_PROXY_GROUPS:
+                stdlog(f"Using Chromium with TOR proxy for {group}")
+                browser = await p.chromium.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
+            elif ".onion" in host["slug"]:
+                stdlog(f"Using Firefox with TOR proxy for {group}")
+                browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
+            else:
+                stdlog(f"Clearweb connexion for {group}")
+                browser = play.firefox.launch(args=browser_args)
+            # browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"})
             context = await browser.new_context()
             page = await context.new_page()
             await page.goto(url,timeout=60000)
@@ -603,8 +700,17 @@ async def screenshotgangs():
             filename = clean_slug(host["fqdn"]).replace(".", "-")
             filename = f'{SCREENSHOT_DIR}/{filename}.png'
             async with async_playwright() as p:
-                try: 
-                    browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"})
+                try:
+                    #browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"})
+                    if group['name'] in CHROMIUM_PROXY_GROUPS:
+                        stdlog(f"Using Chromium with TOR proxy for {group['name']}")
+                        browser = await p.chromium.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
+                    elif ".onion" in host["slug"]:
+                        stdlog(f"Using Firefox with TOR proxy for {group['name']}")
+                        browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
+                    else:
+                        stdlog(f"Clearweb connexion for {group['name']}")
+                        browser = play.firefox.launch(args=browser_args)
                     context = await browser.new_context()
                     page = await context.new_page()
                     await page.goto(host["slug"])
@@ -644,3 +750,36 @@ def searchvictim(name, search_website=False):
             print("\033[1mCountry:\033[0m ", post.get('country', '\033[3mN/A\033[0m'))
             print("\033[1mActivity:\033[0m ", post.get('activity', '\033[3mN/A\033[0m'))
             print( "-"*50)
+
+def siteadder(name, location):
+    '''
+    handles the addition of new providers to groups.json
+    '''
+    if checkexisting(name):
+        stdlog('Ransomware.live: ' + 'records for ' + name + ' already exist, appending to avoid duplication')
+        siteappender(args.name, args.location)
+    else:
+        groups = openjson(GROUPS_FILE)
+        newrec = creategroup(name, location)
+        groups.append(dict(newrec))
+        with open(GROUPS_FILE, 'w', encoding='utf-8') as groupsfile:
+            json.dump(groups, groupsfile, ensure_ascii=False, indent=4)
+        stdlog('Ransomware.live : ' + 'record for ' + name + ' added to Group Database')
+
+
+def siteappender(name, location):
+    '''
+    handles the addition of new mirrors and relays for the same site
+    to an existing group within groups.json
+    '''
+    groups = openjson(GROUPS_FILE)
+    success = bool()
+    for group in groups:
+        if group['name'] == name:
+            group['locations'].append(siteschema(location))
+            success = True
+    if success:
+        with open(GROUPS_FILE, 'w', encoding='utf-8') as groupsfile:
+            json.dump(groups, groupsfile, ensure_ascii=False, indent=4)
+    else:
+        errlog('Ransomware.live : Cannot append to non-existing provider')

@@ -5,9 +5,11 @@ import matplotlib.pyplot as plt
 import sys,os
 from dotenv import load_dotenv 
 from datetime import datetime, timedelta
+from wordcloud import WordCloud
+from collections import Counter
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs')))
-from ransomwarelive import add_watermark, openjson
+from ransomwarelive import add_watermark, openjson, errlog, stdlog
 
 env_path = os.path.join(os.path.dirname(__file__), '../.env')
 load_dotenv(dotenv_path=env_path)
@@ -667,4 +669,39 @@ def create_victims_per_day_graph(target_year,target_month):
     month2 = f'{target_month:02}'
     plt.savefig(f'docs/graphs/victims_per_day_{target_year}{month2}.png')
     plt.close()  # Close the figure to prevent showing the plot
+
+def wordcloud():
+    try:
+    # Read the JSON data from posts.json
+        data = openjson(VICTIMS_FILE)
+    except:
+        errlog(f'WordCloud: Error reading {VICTIMS_FILE}')
+
+    # Filter the posts for the year 2024
+    data = [post for post in data if 'discovered' in post and post['discovered'].startswith('2024')]
+
+    # Extract the group_name values from each post
+    group_names = [post.get('group_name', '') for post in data]
+
+    # Preprocess the group_names list to replace 'lockbit3' and 'lockbit2' with 'lockbit'
+    group_names = [name.replace('lockbit3', 'lockbit').replace('lockbit2', 'lockbit') for name in group_names]
+
+    # Count the occurrences of each word in the preprocessed group_names list
+    word_counts = Counter(group_names)
+
+    # Set the custom color map (you can choose any available colormap)
+    # could be 'viridis', 'plasma', 'magma', 'inferno', 'cividis
+    custom_color_map = 'viridis'
+
+    # Generate the word cloud with word frequencies and customized color 
+    wordcloud = WordCloud(width=1200, height=400, background_color="white", colormap=custom_color_map).generate_from_frequencies(word_counts)
+
+    try:
+        # Save the word cloud image to docs/ransomwarecloud.png
+        output_path = "docs/ransomwarecloud.png"
+        wordcloud.to_file(output_path)
+        stdlog("WordCloud generated")
+        add_watermark(output_path)
+    except:
+        errlog("WordCloud : Error while saving image")
 

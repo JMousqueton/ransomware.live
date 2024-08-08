@@ -107,4 +107,4 @@ def query_hudsonrock(domain_name):
         with client:
             client.loop.run_until_complete(main(domain_name))
     else:
-        stdlog(f"{domain_name} is already present in {json_file_path}.")
+        stdlog(f"{domain_name} is already present in the database.")
