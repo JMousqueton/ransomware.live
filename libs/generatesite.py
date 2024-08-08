@@ -1194,7 +1194,7 @@ def groupprofilepage():
                             screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>📸</a>'
                     hash_object = hashlib.md5()
                     # Update the hash object with the string
-                    hash_object.update(title.replace('www.','').lower().encode('utf-8'))
+                    hash_object.update(post['post_title'].replace('www.','').lower().encode('utf-8'))
                     # Get the hexadecimal representation of the hash
                     hex_digest = hash_object.hexdigest()
                     website = post.get('website', '')

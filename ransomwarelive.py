@@ -260,6 +260,7 @@ if __name__ == '__main__':
         VICTIMS_FILE = os.getenv('VICTIMS_FILE')
         VICTIMS_FILE = DATA_DIR + VICTIMS_FILE
         if os.path.getmtime(VICTIMS_FILE) > (time.time() - 2700):
+            ransomwarelive.stdlog('Victims database has been modified within the last 45 mins, assuming new posts discovered and generating full site')
             hudsonrockfile = DATA_DIR + 'hudsonrock.json'  
             data = ransomwarelive.openjson(hudsonrockfile)
             # Iterate through the entries and apply the conditions
@@ -272,7 +273,6 @@ if __name__ == '__main__':
             generatesite.groupprofilepage()
             year=datetime.now().year
             month=datetime.now().month
-            ransomwarelive.stdlog('Victims database has been modified within the last 45 mins, assuming new posts discovered and recreating graphs')
             graph.trend_posts_per_day()
             graph.plot_posts_by_group() 
             graph.pie_posts_by_group()
