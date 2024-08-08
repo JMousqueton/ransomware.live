@@ -296,6 +296,7 @@ if __name__ == '__main__':
             generatesite.lastvictimspergroup()
             generatesite.profilepage()
             generatesite.groupprofilepage()
+            generatesite.allposts()
             year=datetime.now().year
             month=datetime.now().month
             graph.trend_posts_per_day()
@@ -427,3 +428,4 @@ if __name__ == '__main__':
             ransomwarelive.blur_image(renamed_input_path, args.file)
     else:
         parser.print_help()
+        

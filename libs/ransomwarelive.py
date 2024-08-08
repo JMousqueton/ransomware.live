@@ -249,7 +249,11 @@ def md5_file(file_path, chunk_size=8192):
     return hash_md5.hexdigest()
 
 def clean_string(s):
-    s = s.replace('|', '').replace('\t', '').replace('\b', '').replace('\n', '').strip()
+    chars_to_remove='|\t\b\n'
+    for char in chars_to_remove:
+        s = s.replace(char, '')
+    s = s.replace('[DISCLOSED]', '')  # Remove [DISCLOSED]
+    s = s.strip()   
     s = re.sub(' +', ' ', s)  # Replace multiple spaces with a single space
     return s
 
@@ -421,8 +425,8 @@ def appender(post_title, group_name, description="", website="", published="", p
     # limit length of post_title to 90 chars
     if len(post_title) > 90:
         post_title = post_title[:90]
-    post_title=html.unescape(post_title)
-
+    post_title = html.unescape(post_title)
+    post_title = clean_string(post_title)
     if existingpost(post_title, group_name) is False:
         posts = openjson(VICTIMS_FILE)
         if published:
@@ -466,7 +470,7 @@ def appender(post_title, group_name, description="", website="", published="", p
             filename = os.path.join(POST_SCREENSHOT_DIR, f'{hex_digest}.png')
             asyncio.run(screenshot(post_url,filename))
         ## Post Infostealer information 
-        if is_fqdn(post_title):
+        if is_fqdn(post_title) and website is None:
             website = post_title 
         if website:
             stdlog('Query Hudsonrock with ' + extract_fqdn(website))
@@ -709,7 +713,7 @@ async def scrapegang(groupname,force=False):
 
 async def screenshot(url,filename):
     async with async_playwright() as p:
-        #try:
+        try:
             fqdn = extract_fqdn(url)
             group = get_group_from_url(fqdn)
             if group == None:
@@ -736,8 +740,8 @@ async def screenshot(url,filename):
                         send_email("[Action Required] Check this screenshot for any ID",body, "julien@mousqueton.io",name)
             add_metadata(filename)
             add_watermark(filename)
-        #except Exception as e:
-        #    errlog(f"Screenshot of {url} has failled with error: {e}")
+        except Exception as e:
+            errlog(f"Screenshot of {url} has failled with error: {e}")
 
 
 async def screenshotgangs():

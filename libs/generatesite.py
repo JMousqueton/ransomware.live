@@ -1016,6 +1016,94 @@ def profilepage():
 
 
 
+
+def allposts():
+    '''create a markdown table for all posts '''
+    stdlog('generating allvictims page')
+    allpage = 'docs/allvictims.md'
+    # delete contents of file
+    with open(allpage, 'w', encoding='utf-8') as f:
+        f.close()
+    writeline(allpage, '')
+    writeline(allpage, '# All victims')
+    writeline(allpage, '')
+    writeline(allpage, '_All `' + str(postcount()) + '` posts_')
+    writeline(allpage, '')
+    writeline(allpage, '') 
+    writeline(allpage, '💾 [Download](https://data.ransomware.live/posts.json) full list in **json** format')
+    writeline(allpage, '')
+    #writeline(allpage, '💾 [Download](https://www.ransomware.live/posts.csv) full list in **csv** format')
+    #writeline(allpage, '')
+    writeline(allpage, '')
+    writeline(allpage, '| Discovery Date | Attack Date | Victim | [Country](country) | Group | 📸 | 🕵🏻‍♂️ | ')
+    writeline(allpage, '|---|---|---|---|---|---|---|')
+    posts = openjson(VICTIMS_FILE)
+    sorted_posts = sorted(posts, key=lambda x: x['published'], reverse=True)
+    for post in sorted_posts:
+       # show friendly date for discovered
+        date = post['discovered'].split(' ')[0]
+        attack = post['published'].split(' ')[0]
+        if (attack == date):
+            attack =''
+        # replace markdown tampering characters
+        title = post['post_title'].replace('|', '-')
+        group = post['group_name'].replace('|', '-')
+        urlencodedtitle = urllib.parse.quote_plus(title)
+        grouplink = '[' + group + '](group/' + group + ')'
+        # screenpost='❌'
+        screenpost=' '
+        if post['post_url'] is not None: 
+            # Create an MD5 hash object
+            hash_object = hashlib.md5()
+            # Update the hash object with the string
+            hash_object.update(post['post_url'].encode('utf-8'))
+            # Get the hexadecimal representation of the hash
+            hex_digest = hash_object.hexdigest()
+            if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
+                screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>👀</a>'
+            if len(post['country']) > 1:
+                match post['country']:
+                    case 'UK':
+                        flag = 'GB'
+                    case _:
+                        flag = post['country']
+                country="[!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':size=32x24 :no-zoom')](country/"+flag.lower()+")"
+            else:
+                country=''
+            hash_object = hashlib.md5()
+            # Update the hash object with the string
+            hash_object.update(title.replace('www.','').lower().encode('utf-8'))
+            # Get the hexadecimal representation of the hash
+            hex_digest = hash_object.hexdigest()
+            try:
+                if os.path.exists('docs/domain/'+hex_digest+'.md'):
+                    infostealer=' [🔎](domain/'+hex_digest+') '
+                elif post['website']:
+                    domain = extract_domain(post['website'].lower()) #.replace('http://','').replace('https://','').replace('www.','')
+                    hash_object = hashlib.md5()
+                    hash_object.update(domain.encode('utf-8'))
+                    hex_digest = hash_object.hexdigest()
+                    if  os.path.exists('docs/domain/'+hex_digest+'.md'):
+                        infostealer=' [🔎](domain/'+hex_digest+') '
+                    else:
+                        infostealer = ''
+                else:
+                    infostealer = ''
+            except:
+                infostealer = '' 
+        line = '| ' + date + ' | ' + attack + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + country + ' | ' + grouplink + ' | ' + screenpost + ' | ' + infostealer + ' |'
+        result = get_removal(title, group)
+        if result:  
+             line = '| ' + date + ' | ' + attack + ' | *' + result + '* | ' + country + ' | ' + grouplink + ' |   |   |'
+        writeline(allpage, line)
+    writeline(allpage, '')
+    writeline(allpage, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
+    stdlog('all posts page generated')
+
+
+
+
+
 #######################################
 ### CREATE A PROFILE PAGE PER GROUP ###
 #######################################

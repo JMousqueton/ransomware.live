@@ -6,9 +6,40 @@ from datetime import datetime
 from dotenv import load_dotenv
 from telethon import TelegramClient, events
 from urllib.parse import urlparse
+import logging 
+
+
+logging.basicConfig(
+    format='%(asctime)s,%(msecs)d %(levelname)-8s %(message)s',
+    datefmt='%Y-%m-%d:%H:%M:%S',
+    level=logging.INFO
+    )
+
+def stdlog(msg):
+    '''standard infologging'''
+    logging.info(msg)
+
+def dbglog(msg):
+    '''standard debug logging'''
+    logging.debug(msg)
+
+def errlog(msg,pushover=False):
+    logging.error(msg)
+    load_dotenv()
+    if PUSH_USER_KEY != None and PUSH_API_KEY!=None and pushover == True:
+        stdlog('Send push notification')
+        MESSAGE = "❌ " +  str(msg)
+        conn = http.client.HTTPSConnection("api.pushover.net:443")
+        conn.request("POST", "/1/messages.json",
+        urllib.parse.urlencode({
+                "token": PUSH_API_KEY,
+                "user": PUSH_USER_KEY,
+                "message": MESSAGE,
+                "html": 1
+                }), { "Content-type": "application/x-www-form-urlencoded" })
+        conn.getresponse()
 
 def query_hudsonrock(domain_name):
-    from ransomwarelive import stdlog
     # Load environment variables from .env file
     env_path = os.path.join(os.path.dirname(__file__), '../.env')
     load_dotenv(dotenv_path=env_path)
