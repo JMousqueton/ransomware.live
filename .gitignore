@@ -169,7 +169,7 @@ session_name.session
 !docs/ransomware_notes
 data/victims.json
 data/groups.json
-data/removerequest.json
+data/removerequests.json
 !docs/index.html
 !docs/js/* 
 !doc/_* 
