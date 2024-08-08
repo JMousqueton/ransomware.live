@@ -167,3 +167,5 @@ import/*
 source/*
 session_name.session
 !docs/ransomware_notes
+data/victims.json
+data/groups.json

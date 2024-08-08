@@ -226,7 +226,9 @@ if __name__ == '__main__':
             remove_lock_file(LOCK_FILE_PATH)
     elif args.command == 'parse':
         if args.group:
-            print('TBC')
+            ransomwarelive.stdlog('Parser : '+ args.group)
+            module = importlib.import_module(f'parsers.{args.group}')
+            module.main()
         else:
             LOCK_FILE_NAME = "parse.lock"
             LOCK_FILE_PATH = os.path.join(tempfile.gettempdir(), LOCK_FILE_NAME)
