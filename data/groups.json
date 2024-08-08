@@ -8636,7 +8636,7 @@
                 "version": 3,
                 "slug": "http://unsafeipw6wbkzzmj7yqp7bz6j7ivzynggmwxsm6u2wwfmfqrxqrrhyd.onion",
                 "available": false,
-                "updated": "2024-08-07 22:32:28.383615",
+                "updated": "2024-08-08 07:39:03.574465",
                 "lastscrape": "2024-04-11 16:28:02.384198",
                 "enabled": true
             }
@@ -8659,7 +8659,7 @@
                 "slug": "http://6xdpj3sb5kekvq5ulym5qqmzsv6ektjgvpmajns3qrafgxtyxrhokfqd.onion",
                 "available": false,
                 "delay": null,
-                "updated": "2024-08-07 22:32:34.551701",
+                "updated": "2024-08-08 07:39:11.130341",
                 "lastscrape": "2024-08-07 21:13:25.894361",
                 "enabled": true
             },
@@ -8670,7 +8670,7 @@
                 "slug": "http://6xdpj3sb5kekvq5ulym5qqmzsv6ektjgvpmajns3qrafgxtyxrhokfqd.onion",
                 "available": false,
                 "delay": null,
-                "updated": "2024-08-07 22:32:37.632250",
+                "updated": "2024-08-08 07:39:16.597567",
                 "lastscrape": "2024-08-07 21:13:44.797450",
                 "enabled": true
             },
@@ -8681,7 +8681,7 @@
                 "slug": "http://6xdpj3sb5kekvq5ulym5qqmzsv6ektjgvpmajns3qrafgxtyxrhokfqd.onion/assets/index-6d8af759.js",
                 "available": false,
                 "delay": null,
-                "updated": "2024-08-07 22:32:41.231057",
+                "updated": "2024-08-08 07:39:49.218359",
                 "lastscrape": "2024-08-07 21:14:01.630517",
                 "enabled": true
             }
@@ -8703,7 +8703,7 @@
                 "slug": "http://test.cuba4ikm4jakjgmkezytyawtdgr2xymvy6nvzgw5cglswg3si76icnqd.onion",
                 "available": false,
                 "delay": null,
-                "updated": "2024-08-07 22:32:48.176343",
+                "updated": "2024-08-08 07:40:08.686281",
                 "lastscrape": "2024-02-08 10:18:07.114330",
                 "enabled": true
             }
@@ -8890,8 +8890,8 @@
                 "slug": "https://werewolves.pro",
                 "available": true,
                 "delay": null,
-                "updated": "2024-08-07 22:33:04.120646",
-                "lastscrape": "2024-08-07 22:33:04.120628",
+                "updated": "2024-08-08 07:40:24.006117",
+                "lastscrape": "2024-08-08 07:40:24.006097",
                 "enabled": true
             },
             {
@@ -8901,8 +8901,8 @@
                 "slug": "https://weerwolven.biz",
                 "available": true,
                 "delay": null,
-                "updated": "2024-08-07 22:33:17.636506",
-                "lastscrape": "2024-08-07 22:33:17.636482",
+                "updated": "2024-08-08 07:40:39.132132",
+                "lastscrape": "2024-08-08 07:40:39.132118",
                 "enabled": true
             }
         ],
@@ -8920,9 +8920,9 @@
                 "title": "BITCARDS - Prepaid cards",
                 "version": 3,
                 "slug": "http://nalr2uqsave7y2r235am5jsfiklfjh5h4jc5nztu3rzvmhklwt5j6kid.onion",
-                "available": false,
-                "updated": "2024-08-07 22:33:24.612600",
-                "lastscrape": "2024-08-07 19:45:33.382792",
+                "available": true,
+                "updated": "2024-08-08 07:40:59.529622",
+                "lastscrape": "2024-08-08 07:40:59.529603",
                 "enabled": true
             }
         ],
@@ -9042,7 +9042,7 @@
                 "slug": "http://zhuobnfsddn2myfxxdqtpxk367dqnntjf3kq7mrzdgienfxjyllq4rqd.onion",
                 "available": false,
                 "delay": null,
-                "updated": "2024-08-07 22:33:31.358650",
+                "updated": "2024-08-08 07:41:05.032355",
                 "lastscrape": "2024-05-20 07:23:23.781478",
                 "enabled": true
             }
