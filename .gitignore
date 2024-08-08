@@ -163,15 +163,12 @@ cython_debug/
 #
 data/hudsonrock.json
 docs/*
+data/* 
 import/*
 source/*
 session_name.session
 !docs/ransomware_notes
-data/victims.json
-data/groups.json
-data/removerequests.json
-data/tidalcyber-ttps.json
 !docs/index.html
-!docs/js/* 
-!doc/_* 
+!docs/js/*.js 
+!docs/_*.md 
 
