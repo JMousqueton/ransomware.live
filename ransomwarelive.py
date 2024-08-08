@@ -193,6 +193,8 @@ if __name__ == '__main__':
     # Create sub-parser for 'tools duplicate'
     parser_tools_duplicate = tools_subparsers.add_parser('duplicate', help='Remove duplicate source files')
     parser_tools_order = tools_subparsers.add_parser('order', help='Order groups by alphabetic order')
+    parser_tools_blur = tools_subparsers.add_parser('blur', help='Blur a picture (need -f/--file option')
+    parser_tools_blur.add_argument('-f', '--file', type=str, help='full path of the image to blur')
 
 
     parser_add = subparsers.add_parser('add', help='Add a new ransomware group (need -n/--name and -l/--location options)')
@@ -419,6 +421,9 @@ if __name__ == '__main__':
         ransomwarelive.remove_duplicate_files(SOURCE)
     elif args.command == 'tools' and args.tool_command == 'order':
         ransomwarelive.order_group()
-    
+    elif args.command == 'tools' and args.tool_command == 'blur' and args.file is not None: 
+        renamed_input_path = ransomwarelive.rename_original_image(args.file)
+        if renamed_input_path:
+            ransomwarelive.blur_image(renamed_input_path, args.file)
     else:
         parser.print_help()

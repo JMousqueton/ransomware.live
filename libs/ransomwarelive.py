@@ -7,7 +7,7 @@ from playwright.async_api import async_playwright
 from dotenv import load_dotenv
 import logging 
 import lxml.html # Gettitle 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFilter
 from PIL.PngImagePlugin import PngInfo
 from datetime import datetime
 import http.client, urllib
@@ -394,20 +394,30 @@ def posttemplate(victim, group_name, timestamp,description,website,published,pos
     }
     return schema
 
+def isexception(victim, group):
+    try:
+        with open('exceptions.lst', 'r') as file:
+            for line in file:
+                # Split the line by comma and strip any surrounding whitespace
+                line_victim, line_group = line.strip().split(';')
+                if line_victim == victim and line_group == group:
+                    return True
+        return False
+    except FileNotFoundError:
+        errlog("The file 'exceptions.lst' was not found.")
+        return False
+
 def appender(post_title, group_name, description="", website="", published="", post_url="", country=""):
     '''
-    append a new post to posts.json
+    append a new post to database
     '''
     if len(post_title) == 0:
         stdlog('post_title is empty')
         return
     # Check exclusion 
-    with open('exceptions.txt', 'r') as f:
-    # Read the contents of the file
-        exceptions = f.read()
-        if post_title in exceptions:
-            stdlog(post_title + ' is in exceptions')
-            return
+    if isexception(post_title, group_name):
+        stdlog('Exception found for ' + post_title)
+        return
     # limit length of post_title to 90 chars
     if len(post_title) > 90:
         post_title = post_title[:90]
@@ -556,9 +566,51 @@ def order_group():
         # Save the sorted data back to the same JSON file
         with open(GROUPS_FILE, 'w') as f:
             json.dump(sorted_data, f, indent=4)
-        stdlog(f"Groups.json has been sorted")
+        stdlog(f"Groups Database has been sorted")
     except Exception as e:
         errlog(f"An error occurred: {e}")
+
+
+def blur_image(input_path, output_path, blur_radius=5):
+    try:
+        # Open the input image
+        img = Image.open(input_path)
+        
+        # Apply Gaussian blur with the specified radius
+        blurred_img = img.filter(ImageFilter.GaussianBlur(blur_radius))
+        
+        # Get the directory and filename from the input path
+        directory, filename = os.path.split(output_path)
+        
+        # Generate the new path for the blurred image
+        output_path = os.path.join(directory,filename)
+        
+        # Save the blurred image to the output path
+        blurred_img.save(output_path)
+        
+        stdlog(f"Image blurred successfully")
+    except Exception as e:
+        errlog(f"An error occurred: {e}")
+
+def rename_original_image(input_path):
+    try:
+        # Get the directory and filename from the input path
+        directory, filename = os.path.split(input_path)
+        
+        # Generate the new name for the original image
+        new_name = os.path.splitext(filename)[0] + "-ORIG.png"
+        
+        # Create the new path for the renamed original image
+        new_path = os.path.join(directory, new_name)
+        
+        # Rename the original image
+        os.rename(input_path, new_path)
+        
+        dbglog(f"Original image renamed to {new_name}")
+        return new_path
+    except Exception as e:
+        errlog(f"An error occurred while renaming the original image: {e}")
+        return None
 
 ############################
 #
@@ -639,7 +691,7 @@ async def scrapegang(groupname,force=False):
                             browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
                         else:
                             stdlog(f"Clearweb connexion for {group['name']}")
-                            browser = play.firefox.launch(args=browser_args)
+                            browser = await p.firefox.launch(args=['--ignore-certificate-errors'])
                         context = await browser.new_context()
                         page = await context.new_page()
                         await page.goto(host["slug"])
@@ -657,7 +709,7 @@ async def scrapegang(groupname,force=False):
 
 async def screenshot(url,filename):
     async with async_playwright() as p:
-        try:
+        #try:
             fqdn = extract_fqdn(url)
             group = get_group_from_url(fqdn)
             if group == None:
@@ -665,12 +717,12 @@ async def screenshot(url,filename):
             if group in CHROMIUM_PROXY_GROUPS:
                 stdlog(f"Using Chromium with TOR proxy for {group}")
                 browser = await p.chromium.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
-            elif ".onion" in host["slug"]:
+            elif ".onion" in url:
                 stdlog(f"Using Firefox with TOR proxy for {group}")
                 browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
             else:
                 stdlog(f"Clearweb connexion for {group}")
-                browser = play.firefox.launch(args=browser_args)
+                browser = await p.firefox.launch(args=['--ignore-certificate-errors'])
             # browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"})
             context = await browser.new_context()
             page = await context.new_page()
@@ -684,8 +736,8 @@ async def screenshot(url,filename):
                         send_email("[Action Required] Check this screenshot for any ID",body, "julien@mousqueton.io",name)
             add_metadata(filename)
             add_watermark(filename)
-        except Exception as e:
-            errlog(f"Screenshot of {url} has failled with error: {e}")
+        #except Exception as e:
+        #    errlog(f"Screenshot of {url} has failled with error: {e}")
 
 
 async def screenshotgangs():
@@ -710,7 +762,7 @@ async def screenshotgangs():
                         browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
                     else:
                         stdlog(f"Clearweb connexion for {group['name']}")
-                        browser = play.firefox.launch(args=browser_args)
+                        browser = await p.firefox.launch(args=['--ignore-certificate-errors'])
                     context = await browser.new_context()
                     page = await context.new_page()
                     await page.goto(host["slug"])

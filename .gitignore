@@ -176,4 +176,4 @@ session_name.session
 !docs/index.html
 !docs/js/config.js 
 !docs/_*.md 
-update_country.ps
+update_country.py
