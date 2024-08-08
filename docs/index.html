@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+<!--
+██████╗  █████╗ ███╗   ██╗███████╗ ██████╗ ███╗   ███╗██╗    ██╗ █████╗ ██████╗ ███████╗   ██╗     ██╗██╗   ██╗███████╗
+██╔══██╗██╔══██╗████╗  ██║██╔════╝██╔═══██╗████╗ ████║██║    ██║██╔══██╗██╔══██╗██╔════╝   ██║     ██║██║   ██║██╔════╝
+██████╔╝███████║██╔██╗ ██║███████╗██║   ██║██╔████╔██║██║ █╗ ██║███████║██████╔╝█████╗     ██║     ██║██║   ██║█████╗  
+██╔══██╗██╔══██║██║╚██╗██║╚════██║██║   ██║██║╚██╔╝██║██║███╗██║██╔══██║██╔══██╗██╔══╝     ██║     ██║╚██╗ ██╔╝██╔══╝  
+██║  ██║██║  ██║██║ ╚████║███████║╚██████╔╝██║ ╚═╝ ██║╚███╔███╔╝██║  ██║██║  ██║███████╗██╗███████╗██║ ╚████╔╝ ███████╗
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝     ╚═╝ ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚═╝╚══════╝╚═╝  ╚═══╝  ╚══════╝
+version 2024-08 (Olympic Games version)
+by Julien Mousqueton 
+  Contact : @JMousqueton
+  Blog :https://julien.io 
+-->
+
+  <title>Ransomware.live 👀  - Ransomware Groups' Victims Tracking & Monitoring </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Ransomware.live tracks & monitors ransomware groups' victims and their activity. It was created by Julien Mousqueton, a security researcher. The website provides information on Ransomware groups, victims, negotiations, and payment demands. It also includes the latest cyberattacks.">
+  <meta name="keywords" content="ransomware, API, RSS, breach, leak, post, gang, data, tracking, tracker, Monitoring, monitor, victim, group, ransom, ransomwatch, julien, mousqueton, julien mousqueton, CyberSoc, CTI, negotiations, note, soc">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ransomware.live">
+  <meta property="og:title" content="Ransomware.live 👀">
+  <meta property="og:description" content="Ransomware.live tracks ransomware groups and their activity. It was created by Julien Mousqueton, a security researcher. The website provides information on the groups' infrastructure, victims, and payment demands. It also includes a live map that shows the latest ransomware attacks.">
+  <meta property="og:image" content="https://www.ransomware.live/ransomware.png">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://www.ransomware.live/">
+  <meta property="twitter:title" content="Ransomware.live 👀">
+  <meta property="twitter:description" content="Ransomware.live tracks & monitors ransomware groups' victims and their activity. It was created by Julien Mousqueton, a security researcher. The website provides information on Ransomware groups, victims, negotiations, and payment demands. It also includes the latest cyberattacks.">
+  <meta property="twitter:image" content="https://www.ransomware.live/ransomware.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+  <!-- Docsify default theme -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"> 
+  
+  <link rel="canonical" href="https://www.ransomware.live">
+  <!-- RSS link-->
+  <link rel="alternate" type="application/rss+xml" title="Recent victims Feed" href="https://ransomware.live/rss.xml">
+  <link rel="alternate" type="application/rss+xml" title="Last 100 cyberattacks feed" href="https://ransomware.live/cyberattacks.xml">
+  <link rel="alternate" type="application/rss+xml" title="Last negotiation chats feed" href="https://ransomware.live/negotiations.xml">
+  <link rel="alternate" type="application/rss+xml" title="Recent victims Feed by group" href="https://ransomware.live/grouprss/index.xml">
+  <!-- still for contact -->
+   <style>
+    .cover-main h1 a span {
+        color: #ffffff;
+        font-weight: bold;
+    }
+    .cover-main blockquote {
+        color: #5e5e5e;
+    }
+  </style>
+  <!-- icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Mastodon -->
+  <link href="https://infosec.exchange/@JMousqueton" rel="me">
+  <!-- Dark/light theme style -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css" title="docsify-darklight-theme" type="text/css">
+  <!-- Google verif -->
+  <meta name="google-site-verification" content="OoSDY8je1T30faCwMkM2jL18Q1tLlfylSM1xdJ5UQp0">
+</head>
+<body>
+  <nav>
+    <a href="#/recent">🔎 <strong>Recent victims</strong></a>
+    <!--  <a href="#/decryption">🔓 Decryption tools</a> --> 
+    <a href="https://www.buymeacoffee.com/ransomwarelive/">❤️ Support</a> 
+    <a href="about">💁🏻‍♂️ About</a>
+    <a href="https://static.ransomware.live/contact.html">📨 Contact</a>
+  </nav>
+  <div id="app"><img src="/images/loading.gif" alt="&#9881; Decrypting Ransomware.live! Please wait ..."></div>
+  <!-- config docsify -->
+  <script src="/js/config.js"></script>
+  <!-- load docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- Plug-ins : -->
+    <!--footer -->
+    <script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>
+    <!-- search -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+    <!-- Stats : Matomo -->
+    <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/matomo.min.js"></script>
+    <!-- Scrool to top -->
+    <script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
+    <!-- dark/ligh theme -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+    <!-- Charty -->
+    <script src="//cdn.jsdelivr.net/npm/@markbattistella/docsify-charty@latest"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@markbattistella/docsify-charty@latest/dist/docsify-charty.min.css">
+    <!-- zoom image -->
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <!-- Alert box https://github.com/fzankl/docsify-plugin-flexible-alerts -->
+    <script src="//unpkg.com/docsify-plugin-flexible-alerts"></script>
+    <!-- docsify-tabs -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+    <!-- Progress bar -->
+    <script src="//cdn.jsdelivr.net/npm/docsify-progress@latest/dist/progress.min.js"></script>
+    <!-- pdf embed plugin -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js"></script> 
+    <script src="//unpkg.com/docsify-pdf-embed-plugin/src/docsify-pdf-embed.js"></script>
+
+</html>

@@ -4415,9 +4415,9 @@
                 "title": "Humanity check",
                 "version": 3,
                 "slug": "http://lockbit23xxhej7swdop24cru7ks2w66pw7zgdkydqo6f7wfyfqo7oqd.onion",
-                "available": true,
+                "available": false,
                 "delay": null,
-                "updated": "2024-08-07 22:09:51.913975",
+                "updated": "2024-08-08 07:14:43.028044",
                 "lastscrape": "2024-08-07 22:09:51.913957",
                 "enabled": true
             },
@@ -4426,9 +4426,9 @@
                 "title": "Humanity check",
                 "version": 3,
                 "slug": "http://lockbit7ixelt7gn3ynrs3dgqtsom6x6sd2ope4di7bu6e6exyhazeyd.onion",
-                "available": true,
+                "available": false,
                 "delay": null,
-                "updated": "2024-08-07 22:10:14.091190",
+                "updated": "2024-08-08 07:15:17.892794",
                 "lastscrape": "2024-08-07 22:10:14.091164",
                 "enabled": true
             },
@@ -4439,8 +4439,8 @@
                 "slug": "http://lockbitck6escin3p33v3f5uef3mr5fx335oyqon2uqoyxuraieuhiqd.onion",
                 "available": true,
                 "delay": null,
-                "updated": "2024-08-07 22:10:29.109224",
-                "lastscrape": "2024-08-07 22:10:29.109198",
+                "updated": "2024-08-08 07:15:37.558134",
+                "lastscrape": "2024-08-08 07:15:37.558109",
                 "enabled": true
             },
             {
@@ -4450,8 +4450,8 @@
                 "slug": "http://lockbitfhzimjqx2v7p2vfu57fpdm5zh2vsbfk5jkjod3k5pszbek7ad.onion",
                 "available": true,
                 "delay": null,
-                "updated": "2024-08-07 22:10:43.820156",
-                "lastscrape": "2024-08-07 22:10:43.820138",
+                "updated": "2024-08-08 07:16:11.227619",
+                "lastscrape": "2024-08-08 07:16:11.227605",
                 "enabled": true
             },
             {
@@ -4461,8 +4461,8 @@
                 "slug": "http://lockbiti7ss2wzyizvyr2x46krnezl4xjeianvupnvazhbqtz32auqqd.onion",
                 "available": true,
                 "delay": null,
-                "updated": "2024-08-07 22:11:01.365643",
-                "lastscrape": "2024-08-07 22:11:01.365627",
+                "updated": "2024-08-08 07:16:29.590286",
+                "lastscrape": "2024-08-08 07:16:29.590266",
                 "enabled": true
             },
             {
@@ -4472,8 +4472,8 @@
                 "slug": "http://lockbitkwkmhfb2zr3ngduaa6sd6munslzkbtqhn5ifmwqml4sl7znad.onion",
                 "available": true,
                 "delay": null,
-                "updated": "2024-08-07 22:11:19.308594",
-                "lastscrape": "2024-08-07 22:11:19.308575",
+                "updated": "2024-08-08 07:16:59.857361",
+                "lastscrape": "2024-08-08 07:16:59.857348",
                 "enabled": true
             },
             {
@@ -4483,8 +4483,8 @@
                 "slug": "http://lockbitqfj7mmhrfa7lznj47ogknqanskj7hyk2vistn2ju5ufrhbpyd.onion",
                 "available": true,
                 "delay": null,
-                "updated": "2024-08-07 22:11:33.459709",
-                "lastscrape": "2024-08-07 22:11:33.459689",
+                "updated": "2024-08-08 07:17:18.562704",
+                "lastscrape": "2024-08-08 07:17:18.562688",
                 "enabled": true
             }
         ],
