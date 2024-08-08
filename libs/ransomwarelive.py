@@ -840,3 +840,12 @@ def siteappender(name, location):
             json.dump(groups, groupsfile, ensure_ascii=False, indent=4)
     else:
         errlog('Ransomware.live : Cannot append to non-existing provider')
+
+
+def search_domain_for_infostealer(domain):
+    hr_file = DATA_DIR + 'hudsonrock.json'
+    data = openjson(hr_file)
+    if domain in data:
+        print(f"Infostealer Information about \033[1m{domain}\033[0m: {data[domain]}")
+    else:
+        print(f"Not infostealer information found for \033[1m{domain}\033[0m in the database.")

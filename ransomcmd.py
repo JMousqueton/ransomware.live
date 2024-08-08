@@ -168,7 +168,7 @@ if __name__ == '__main__':
     
     parser_rss = subparsers.add_parser('rss', help='Generate RSS feeds')
 
-    parser_infostealer = subparsers.add_parser('infostealer', help='Query Hudsonrock database (need -d/--domain <domain>)')
+    parser_infostealer = subparsers.add_parser('infostealer', help='Add infostealer information from  Hudsonrock database (need -d/--domain <domain>)')
     parser_infostealer.add_argument('-d', '--domain', type=str, help='Specify a victim domain')
 
     # Create sub-parser for 'tools'
@@ -364,7 +364,6 @@ if __name__ == '__main__':
 
     elif args.command == 'screenshot':
         if args.group:
-            print('TBC')
             load_dotenv()
             SCREENSHOT_DIR = os.getenv('SCREENSHOT_DIR')
             DATA_DIR = os.getenv('DATA_DIR')
@@ -397,6 +396,7 @@ if __name__ == '__main__':
             ransomwarelive.searchvictim(args.victim)
         elif args.domain:
             ransomwarelive.searchvictim(args.domain,True)
+            ransomwarelive.search_domain_for_infostealer(args.domain)
         else:
             parser.print_help()
     
