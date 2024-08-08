@@ -28,9 +28,9 @@ Teh ransomcmd.py is a comprehensive command-line tool designed to manage and mon
 
 ## Usage
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py <command> [options]
-\`\`\`
+```
 
 ## Dependencies
 
@@ -51,9 +51,9 @@ Julien Mousqueton
 
 Scrape ransomware DLS sites.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py scrape [options]
-\`\`\`
+```
 
 Options:
 
@@ -64,9 +64,9 @@ Options:
 
 Parse ransomware DLS sites.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py parse [options]
-\`\`\`
+```
 
 Options:
 
@@ -76,17 +76,17 @@ Options:
 
 Generate Ransomware.live site.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py generate
-\`\`\`
+```
 
 ### screenshot
 
 Generate screenshot for ransomware sites.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py screenshot [options]
-\`\`\`
+```
 
 Options:
 
@@ -97,17 +97,17 @@ Options:
 
 Show the status of ransomware.live.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py status
-\`\`\`
+```
 
 ### search
 
 Search victim in the database.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py search [options]
-\`\`\`
+```
 
 Options:
 
@@ -118,17 +118,17 @@ Options:
 
 Generate RSS feeds.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py rss
-\`\`\`
+```
 
 ### infostealer
 
 Query Hudsonrock database.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py infostealer [options]
-\`\`\`
+```
 
 Options:
 
@@ -138,33 +138,33 @@ Options:
 
 Tools for Ransomware.live.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py tools <tool_command> [options]
-\`\`\`
+```
 
 #### duplicate
 
 Remove duplicate source files.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py tools duplicate
-\`\`\`
+```
 
 #### order
 
 Order groups by alphabetic order.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py tools order
-\`\`\`
+```
 
 #### blur
 
 Blur a picture.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py tools blur [options]
-\`\`\`
+```
 
 Options:
 
@@ -174,9 +174,9 @@ Options:
 
 Add a new ransomware group.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py add [options]
-\`\`\`
+```
 
 Options:
 
@@ -187,9 +187,9 @@ Options:
 
 Add a new ransomware site to an existing group.
 
-\`\`\`bash
+```bash
 python3 ransomcmd.py append [options]
-\`\`\`
+```
 
 Options:
 
