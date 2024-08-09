@@ -259,9 +259,9 @@ if __name__ == '__main__':
         LOCK_FILE_PATH = os.path.join(tempfile.gettempdir(), LOCK_FILE_NAME)
         create_lock_file(LOCK_FILE_PATH)  
         start_time = time.time()
-        #generatesite.mainpage()
-        #generatesite.statuspage()
-        #generatesite.summaryjson()
+        generatesite.mainpage()
+        generatesite.statuspage()
+        generatesite.summaryjson()
         load_dotenv()
         DATA_DIR = os.getenv('DATA_DIR')
         VICTIMS_FILE = os.getenv('VICTIMS_FILE')
@@ -354,7 +354,7 @@ if __name__ == '__main__':
         mystripe.generatestripe()
         graph.generate_execution_time_graphs()
         directory_path = "./docs/admin"
-        markdown_file = os.path.join(directory_path, "README.md")
+        markdown_file = os.path.join('./docs', "admin.md")
         generatesite.generate_admin_page(directory_path, markdown_file)
         ### END : ADMIN ###
         end_time = time.time()

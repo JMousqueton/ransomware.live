@@ -755,7 +755,7 @@ def recentdiscoveredpage():
             if os.path.exists('docs/domain/'+hex_digest+'.md'):
                 infostealer=' [🔎](domain/'+hex_digest+') '
             elif post['website']:
-                domain = extract_domain(post['website'].lower()) #.replace('http://','').replace('https://','').replace('www.','')
+                domain = extract_domain(post['website'].lower()).strip()  #.replace('http://','').replace('https://','').replace('www.','')
                 hash_object = hashlib.md5()
                 hash_object.update(domain.encode('utf-8'))
                 hex_digest = hash_object.hexdigest()

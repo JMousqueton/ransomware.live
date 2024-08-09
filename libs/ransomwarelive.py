@@ -275,6 +275,15 @@ def add_metadata(output):
     stdlog(f'Add metadata to {output}')
     image.save(output, pnginfo=metadata)
 
+def get_metadata(image_path):
+    image = Image.open(image_path)
+    if isinstance(image.info, dict):
+        print(f"Metadata for {image_path}:")
+        for key, value in image.info.items():
+            print(f"{key}: {value}")
+    else:
+        print(f"No metadata found for {image_path}")
+
 def add_watermark(image_path, watermark_image_path=WATERMARK_IMAGE_PATH):
     """Adds a watermark image to the center of the input image."""
     original = Image.open(image_path).convert('RGBA')
