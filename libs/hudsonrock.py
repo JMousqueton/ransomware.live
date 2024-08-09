@@ -48,7 +48,7 @@ def query_hudsonrock(domain_name):
     api_hash = os.getenv('T_API_HASH')
     phone_number = os.getenv('T_PHONE_NUMBER')
     json_file_path = os.getenv('DATA_DIR') + 'hudsonrock.json'
-    timer = 300  # Global timer variable in seconds
+    timer = 120  # Global timer variable in seconds
 
     # Create the client and connect
     client = TelegramClient('session_name', api_id, api_hash)

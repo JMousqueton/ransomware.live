@@ -1,6 +1,10 @@
 import http.client, urllib
 from dotenv import load_dotenv
-import os
+import os, json
+import requests
+from datetime import datetime, timezone
+from mastodon import Mastodon
+import tweepy
 
 def tobluesky(post_title,group):
     try:
@@ -43,8 +47,8 @@ def tobluesky(post_title,group):
                         "record": post,
                     },
             )
-    except:
-        errlog('Error posting on bluesky')
+    except Exception as e:
+        errlog(f'Error posting on bluesky : {e}')
 
 def tomattermost(post_title,group):
     from ransomwarelive import stdlog, errlog
@@ -106,8 +110,7 @@ def todiscord(post_title, group):
         'Accept': 'application/json'
     }
     try:
-        hook_uri = webhook
-        hookpost = requests.post(hook_uri, json=discord_json, headers=dscheaders)
+        hookpost = requests.post(webhook, json=discord_json, headers=dscheaders)
     except requests.exceptions.RequestException as e:
         errlog('Error sending to discord webhook: ' + str(e))
     if hookpost.status_code == 204:

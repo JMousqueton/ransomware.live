@@ -427,6 +427,9 @@ def appender(post_title, group_name, description="", website="", published="", p
         post_title = post_title[:90]
     post_title = html.unescape(post_title)
     post_title = clean_string(post_title)
+    #print('***')
+    #notif.tobluesky('Sumter County Sheriff','Rhysida')
+    #exit()
     if existingpost(post_title, group_name) is False:
         ## Post Infostealer information 
         if is_fqdn(post_title) and len(website) == 0:
