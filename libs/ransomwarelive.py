@@ -39,8 +39,6 @@ CHROMIUM_PROXY_GROUPS = [
     "cactus"
 ]
 
-
-
 ## TODO :
 # STMPmail : make a variable for to:  
 
@@ -255,6 +253,7 @@ def clean_string(s):
     s = s.replace('[DISCLOSED]', '')  # Remove [DISCLOSED]
     s = re.sub(' +', ' ', s)  # Replace multiple spaces with a single space
     s = s.replace('Data Leak', '')
+    s = re.sub(' +', ' ', s)  # Replace multiple spaces with a single space
     s = s.strip() 
     return s
 
@@ -429,6 +428,12 @@ def appender(post_title, group_name, description="", website="", published="", p
     post_title = html.unescape(post_title)
     post_title = clean_string(post_title)
     if existingpost(post_title, group_name) is False:
+        ## Post Infostealer information 
+        if is_fqdn(post_title) and len(website) == 0:
+            website = post_title
+        if website:
+            stdlog('Query Hudsonrock with ' + extract_fqdn(website))
+            hudsonrock.query_hudsonrock(extract_fqdn(website))
         posts = openjson(VICTIMS_FILE)
         if published:
             try:
@@ -471,11 +476,11 @@ def appender(post_title, group_name, description="", website="", published="", p
             filename = os.path.join(POST_SCREENSHOT_DIR, f'{hex_digest}.png')
             asyncio.run(screenshot(post_url,filename))
         ## Post Infostealer information 
-        if is_fqdn(post_title) and len(website) == 0:
-            website = post_title
-        if website:
-            stdlog('Query Hudsonrock with ' + extract_fqdn(website))
-            hudsonrock.query_hudsonrock(extract_fqdn(website))
+        #if is_fqdn(post_title) and len(website) == 0:
+        #    website = post_title
+        #if website:
+        #    stdlog('Query Hudsonrock with ' + extract_fqdn(website))
+        #    hudsonrock.query_hudsonrock(extract_fqdn(website))
 
 
 def checkexisting(provider):

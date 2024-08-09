@@ -81,7 +81,7 @@ def get_process_info():
     try:
         ps_output = subprocess.check_output(['ps', '-ef']).decode('utf-8')
         for line in ps_output.split('\n'):
-            if 'python3 ransomwarelive.py' in line and any(proc in line for proc in ['scrape', 'parse', 'generate']):
+            if 'python3 ransomcmd.py' in line and any(proc in line for proc in ['scrape', 'parse', 'generate']):
                 parts = line.split()
                 process_name = parts[-1]
                 process_id = parts[1]
