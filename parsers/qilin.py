@@ -82,4 +82,5 @@ def main():
                     # Append the extracted data to the lists
                     appender(victim_name, group_name, description.replace('\n',' '),url,formatted_date,post_url)
         except Exception as e:
-            errlog(group_name + ' - parsing fail with error: ' + str(e) + 'in file:' + filename)
+            errlog(group_name + ' - parsing fail with error: ' + str(e) + ' in file:' + filename)
+

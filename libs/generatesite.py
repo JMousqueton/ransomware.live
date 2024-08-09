@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 #import datetime
 import pandas as pd
-from ransomwarelive import stdlog, errlog, openjson
+from ransomwarelive import stdlog, errlog, openjson, clean_markdown
 
 
 env_path = os.path.join(os.path.dirname(__file__), '../.env')
@@ -879,7 +879,7 @@ def profilepage():
         writeline(profilepage, '## **' + group['name']+'**')
         try: 
             writeline(profilepage,'')
-            writeline(profilepage,'> ' + group['description'].replace('\n',''))
+            writeline(profilepage,'> ' + clean_markdown(group['description']))
             writeline(profilepage, '')
         except:
             writeline(profilepage, '')
@@ -989,6 +989,7 @@ def profilepage():
                         description = redactedlink(post['description'])
                     else:
                         description = ' '
+                    description = clean_markdown(description)
                     try:
                         if post['website'] == "": 
                             urlencodedtitle = urllib.parse.quote_plus(post['post_title'])
@@ -1018,7 +1019,6 @@ def profilepage():
                         hex_digest = hash_object.hexdigest()
                         if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
                             screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>📸</a>'
-                    description = clean_string(description)
                     line = '| ' + postURL + ' | ' + date + ' | ' + description + ' | ' + screenpost + ' |'
                     result = get_removal(post['post_title'], post['group_name'])
                     if result:  
@@ -1274,6 +1274,7 @@ def groupprofilepage():
                         description = redactedlink(post['description'])
                     else:
                         description = ' '
+                    description = clean_markdown(description)
                     try:
                         if post['website'] == "": 
                             urlencodedtitle = urllib.parse.quote_plus(post['post_title'])

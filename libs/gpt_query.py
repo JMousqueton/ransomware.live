@@ -1,5 +1,5 @@
 import openai
-import os
+import os,re
 from dotenv import load_dotenv
 
 class GPTQuery:
@@ -86,7 +86,8 @@ class GPTQuery:
             ]
             if any(keyword in sector.lower() for keyword in keywords):
                 sector = "Not found"
-                stdlog('-->', sector)
+            pattern = r"\b\w\s-\s"
+            sector = re.sub(pattern, "", sector)
             return sector
         except Exception as e:
             errlog("API GPT : An error occurred: " + e)

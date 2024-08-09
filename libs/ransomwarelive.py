@@ -247,14 +247,19 @@ def md5_file(file_path, chunk_size=8192):
     return hash_md5.hexdigest()
 
 def clean_string(s):
-    chars_to_remove='|\t\b\n'
-    for char in chars_to_remove:
-        s = s.replace(char, ' ')
+    s = clean_markdown(s)
     s = s.replace('[DISCLOSED]', '')  # Remove [DISCLOSED]
     s = re.sub(' +', ' ', s)  # Replace multiple spaces with a single space
     s = s.replace('Data Leak', '')
+    s = s.replace('pt.2', '')
     s = re.sub(' +', ' ', s)  # Replace multiple spaces with a single space
     s = s.strip() 
+    return s
+
+def clean_markdown(s):
+    chars_to_remove='|\t\b\n\r'
+    for char in chars_to_remove:
+        s = s.replace(char, ' ')
     return s
 
 def add_metadata(output):
@@ -807,16 +812,27 @@ def searchvictim(name, search_website=False):
         
         # Print matching posts with counter
         for idx, post in enumerate(matching_posts, start=1):
+            if post.get('post_url',None) is not None:
+                hash_object = hashlib.md5()
+                # Update the hash object with the string
+                hash_object.update(post['post_url'].encode('utf-8'))
+                # Get the hexadecimal representation of the hash
+                hex_digest = hash_object.hexdigest()
+                if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
+                    screenshot = "\033[1m Screenshot:\033[0m https://images.ransomware.live/screenshots/posts/" + hex_digest+'.png\n'
+                else:
+                    screenshot = ''
             print(f"[{idx}/{total_matches}]")
-            print("\033[1mPost Title:\033[0m ", post.get('post_title', '\033[3mN/A\033[0m'))
-            print("\033[1mGroup Name:\033[0m ", post.get('group_name', '\033[3mN/A\033[0m'))
-            print("\033[1mDiscovered:\033[0m ", post.get('discovered', '\033[3mN/A\033[0m'))
-            print("\033[1mDescription:\033[0m ", post.get('description', '\033[3mN/A\033[0m'))
-            print("\033[1mWebsite:\033[0m ", post.get('website', '\033[3mN/A\033[0m'))
-            print("\033[1mPublished:\033[0m ", post.get('published', '\033[3mN/A\033[0m'))
-            print("\033[1mPost URL:\033[0m ", post.get('post_url', '\033[3mN/A\033[0m'))
-            print("\033[1mCountry:\033[0m ", post.get('country', '\033[3mN/A\033[0m'))
-            print("\033[1mActivity:\033[0m ", post.get('activity', '\033[3mN/A\033[0m'))
+            print("\033[1m Post Title:\033[0m ", post.get('post_title', '\033[3mN/A\033[0m'))
+            print("\033[1m Group Name:\033[0m ", post.get('group_name', '\033[3mN/A\033[0m'))
+            print("\033[1m Discovered:\033[0m ", post.get('discovered', '\033[3mN/A\033[0m'))
+            print("\033[1m Description:\033[0m ", post.get('description', '\033[3mN/A\033[0m'))
+            print("\033[1m Website:\033[0m ", post.get('website', '\033[3mN/A\033[0m'))
+            print("\033[1m Published:\033[0m ", post.get('published', '\033[3mN/A\033[0m'))
+            print("\033[1m Post URL:\033[0m ", post.get('post_url', '\033[3mN/A\033[0m'))
+            print(screenshot,end=" ")
+            print("\033[1mCountry:\033[0m " +  post.get('country', '\033[3mN/A\033[0m'))
+            print("\033[1m Activity:\033[0m ", post.get('activity', '\033[3mN/A\033[0m'))
             print( "-"*50)
 
 def siteadder(name, location):
