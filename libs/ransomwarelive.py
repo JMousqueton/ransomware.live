@@ -427,9 +427,6 @@ def appender(post_title, group_name, description="", website="", published="", p
         post_title = post_title[:90]
     post_title = html.unescape(post_title)
     post_title = clean_string(post_title)
-    #print('***')
-    #notif.tobluesky('Sumter County Sheriff','Rhysida')
-    #exit()
     if existingpost(post_title, group_name) is False:
         ## Post Infostealer information 
         if is_fqdn(post_title) and len(website) == 0:
@@ -736,17 +733,21 @@ async def screenshot(url,filename):
             else:
                 stdlog(f"Clearweb connexion for {group}")
                 browser = await p.firefox.launch(args=['--ignore-certificate-errors'])
-            # browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"})
             context = await browser.new_context()
             page = await context.new_page()
             await page.goto(url,timeout=60000)
+            await page.mouse.move(x=500, y=400)
+            await page.mouse.wheel(delta_y=2000, delta_x=0)
             await page.wait_for_timeout(50000)  # Wait for the page to fully load and execute JavaScript
-            await page.screenshot(path=filename)
+            await page.screenshot(path=filename,full_page=True)
             stdlog(f"Screenshot of {url} has been saved to {filename}")
             await browser.close()
-            if ia_detection.check_image_for_face(filename):
-                        body="A new screenshot must be analysed : \n\n https://www.ransomware.live/screenshots/posts/"+os.path.basename(name)
-                        send_email("[Action Required] Check this screenshot for any ID",body, "julien@mousqueton.io",name)
+            facedetectionexception = [
+                'incransom'
+            ]
+            if ia_detection.check_image_for_face(filename) and group not in facedetectionexception:
+                        body="A new screenshot must be analysed : \n\n https://www.ransomware.live/screenshots/posts/"+os.path.basename(filename)
+                        send_email("[Action Required] Check this screenshot for any ID",body, "julien@mousqueton.io",filename)
             add_metadata(filename)
             add_watermark(filename)
         except Exception as e:
@@ -778,9 +779,11 @@ async def screenshotgangs():
                         browser = await p.firefox.launch(args=['--ignore-certificate-errors'])
                     context = await browser.new_context()
                     page = await context.new_page()
-                    await page.goto(host["slug"])
+                    await page.goto(host["slug"],timeout=60000)
+                    await page.mouse.move(x=500, y=400)
+                    await page.mouse.wheel(delta_y=2000, delta_x=0)
                     await page.wait_for_timeout(50000)  # Wait for the page to fully load and execute JavaScript
-                    await page.screenshot(path=filename)
+                    await page.screenshot(path=filename,full_page=True)
                     stdlog(f'Screenshot of {host["slug"]} has been saved to {filename}')
                     await browser.close()
                     add_metadata(filename)

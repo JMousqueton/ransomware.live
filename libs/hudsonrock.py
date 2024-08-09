@@ -128,7 +128,7 @@ def query_hudsonrock(domain_name):
         # Start the client
         await client.start(phone_number)
         await query_telegram(domain)
-        stdlog(f'Waiting for {timer}ms to avoid being blacklisted')
+        stdlog(f'Waiting for {timer} seconds to avoid being blacklisted')
         await asyncio.sleep(timer)  # Sleep for the specified timer duration
         await client.disconnect()
 
