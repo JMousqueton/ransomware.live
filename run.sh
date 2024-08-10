@@ -74,11 +74,7 @@ PARSE_EXECUTION_TIME=$((PARSE_END_TIME - PARSE_BEGIN_TIME))
 MARKDOWN_BEGIN_TIME=$(date +%s)
 python3 ransomcmd.py generate
 # TODO: Need to be include in ransomwarelive library
-python3 generateworldmap.py
-# TODO: Need to be include in ransomwarelive library
 python3 generatecyberattacks.py
-# TODO: Need to be include in ransomwarelive library
-python3 generatecountries.py
 python3 ransomcmd.py rss
 MARKDOWN_END_TIME=$(date +%s)
 MARKDOWN_EXECUTION_TIME=$((MARKDOWN_END_TIME - MARKDOWN_BEGIN_TIME))

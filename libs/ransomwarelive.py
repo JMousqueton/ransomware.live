@@ -880,8 +880,10 @@ def siteappender(name, location):
 
 def search_domain_for_infostealer(domain):
     hr_file = DATA_DIR + 'hudsonrock.json'
+    extracted = tldextract.extract(domain)
+    fqdn = f"{extracted.domain}.{extracted.suffix}"
     data = openjson(hr_file)
-    if domain in data:
-        print(f"Infostealer Information about \033[1m{domain}\033[0m: {data[domain]}")
+    if fqdn in data:
+        print(f"Infostealer Information about \033[1m{fqdn}\033[0m: {data[fqdn]}")
     else:
-        print(f"Not infostealer information found for \033[1m{domain}\033[0m in the database.")
+        print(f"Not infostealer information found for \033[1m{fqdn}\033[0m in the database.")

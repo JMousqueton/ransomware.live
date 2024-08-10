@@ -759,10 +759,6 @@ def statsgroup(specific_group_name):
     plt.close(fig)
 
 
-
-
-
-
 def generate_ransomware_map():
     json_path = './data/victims.json'
     html_path = 'docs/map.html'

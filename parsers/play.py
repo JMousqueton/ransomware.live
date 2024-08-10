@@ -33,7 +33,7 @@ def main():
                     div_text = div.find_next('div', {'style': 'line-height: 1.70;'}).get_text()
                     if 'added:' in div_text:
                         added_date = div_text.split('added:')[1].split('publication date:')[0].strip()
-                        now = datetime.datetime.now()
+                        now = datetime.now()
                         added_date = f"{added_date} {now.strftime('%H:%M:%S.%f')}"
                     appender(title, 'play', description, website,added_date,post_url)
                 file.close()

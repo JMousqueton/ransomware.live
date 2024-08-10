@@ -10,7 +10,7 @@
 
 import os,datetime,sys
 from bs4 import BeautifulSoup
-from datetime import datetime
+import datetime
 
 ## Import Ransomware.live libs 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs')))

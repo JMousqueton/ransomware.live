@@ -333,6 +333,7 @@ if __name__ == '__main__':
             print(']')
             # Run the function
             graph.generate_ransomware_map()
+            generatesite.generate_country_reports()
         else:
             ransomwarelive.stdlog('posts.json has not been modified within the last 45 mins, assuming no new posts discovered')    
         base_url = "https://www.ransomware.live"
