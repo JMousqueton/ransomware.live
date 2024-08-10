@@ -20,6 +20,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs
 from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_by_md5, appender, openjson
 
 
+
 onion_url= 'http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=1'
 
 # Disable the warning about certificate verification
@@ -54,26 +55,13 @@ def fetch_json_from_onion_url(onion_url):
 
 def main():
     try:
-#        json_data = fetch_json_from_onion_url(onion_url)
+        json_data = fetch_json_from_onion_url(onion_url)
 
-        json_data = openjson('/tmp/test.json')
         if json_data is not None:
             for item in json_data:
                 if 'data' in json_data and 'publications' in json_data['data'] and json_data['data']['publications']:
                     publications = json_data['data']['publications']
                     for publication in publications:
-                        #print(f"UUID: {publication['uuid']}")
-                        #print(f"Created At: {publication['created_at']}")
-                        #print(f"Name: {publication['name']}")
-                        #print(f"Site: {publication['site']}")
-                        #print(f"Address: {publication['address']}")
-                        #print(f"Description: {publication['description']}")
-                        #print(f"Weight: {publication['weight']}")
-                        #print(f"Timer Publication: {publication['timer_publication']}")
-                        #print(f"Timer Until Hidden: {publication['timer_until_hidden']}")
-                        #print(f"Logo UUID: {publication.get('logo_uuid', 'N/A')}")  # Using .get() for optional fields
-                        #print(f"Files: {publication.get('files', 'N/A')}")  # Using .get() for optional fields
-                        #print("-" * 50)
                         publication_date = convert_date_format(publication['created_at'])
                         victim = publication['name']
                         website = publication['site']
