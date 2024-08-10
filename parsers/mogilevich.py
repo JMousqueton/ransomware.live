@@ -19,7 +19,7 @@ from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_
 
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('mogilevich-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -40,5 +40,5 @@ def main():
                     description = re.sub(r'\s+', ' ',description) 
                     appender(victim, 'mogilevich', description,website,formatted_date,'')
                     file.close()
-        #except:
-        #    errlog("Failed during : " + filename)
+        except:
+            errlog("Failed during : " + filename)

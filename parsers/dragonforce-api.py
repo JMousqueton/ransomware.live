@@ -17,7 +17,7 @@ import json
 import urllib3
 ## Import Ransomware.live libs 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs')))
-from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_by_md5, appender
+from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_by_md5, appender, openjson
 
 
 onion_url= 'http://z3wqggtxft7id3ibr7srivv5gjof5fwg76slewnzwwakjuf3nlhukdid.onion/api/guest/blog/posts?page=1'
@@ -54,7 +54,9 @@ def fetch_json_from_onion_url(onion_url):
 
 def main():
     try:
-        json_data = fetch_json_from_onion_url(onion_url)
+#        json_data = fetch_json_from_onion_url(onion_url)
+
+        json_data = openjson('/tmp/test.json')
         if json_data is not None:
             for item in json_data:
                 if 'data' in json_data and 'publications' in json_data['data'] and json_data['data']['publications']:

@@ -21,13 +21,13 @@ def is_file_less_than_days_old(file_path):
     file_date = get_file_date(file_path)
     current_date = dt.now()
     time_difference = current_date - file_date
-    return time_difference.days < 3
+    return time_difference.days < 2
 
 def parse_group(group_name):
 
     # Specify the directory path
     directory_path = group_name
-    #stdlog('Processing Group : ' + group_name )
+    stdlog('Processing Group : ' + group_name )
     group_name = os.path.basename(os.path.normpath(directory_path))
     create_directory('./docs/negotiation/' + group_name.lower())
     # Use glob to get all files with .json extension
@@ -38,7 +38,6 @@ def parse_group(group_name):
     for file_path in json_files:
         # Extract the file name without extension
         file_name = os.path.splitext(os.path.basename(file_path))[0]
-
         # Replace underscores with dots
         name = file_name.replace('_', '.')
 
@@ -158,8 +157,7 @@ def parse_group(group_name):
             party = message['party']
             content = message['content']
             timestamp = message['timestamp']
-
-            if party == 'Victim' or party.replace(' ','') == 'Client':
+            if party.lower() == 'victim' or party.replace(' ','').lower() == 'client':
                 codeHTML +=  '<p class="from-victim">' + content + '<br></br><i>' + timestamp + '</i></p>'
             else : 
                 codeHTML += '<p class="from-gang">'  + content + '<br></br><i>' + timestamp + '</i></p>'
@@ -195,7 +193,7 @@ def create_directory(directory_path):
         os.makedirs(directory_path.lower())
 
 def generatenegotiationindex():
-    #stdlog('Generating negotiations markdown')
+    stdlog('Generating negotiations markdown')
     negopage = './docs/negotiations.md'
     compteur = 0
     # delete contents of file

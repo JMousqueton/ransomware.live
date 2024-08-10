@@ -48,6 +48,6 @@ def main():
                     date_obj =  datetime.datetime.strptime(published, '%Y-%m-%d %H:%M:%S')
                     published = date_obj.strftime("%Y-%m-%d %H:%M:%S.%f")
                     appender(title, group_name, description,"",published,url )
-        except:
-            errlog(group_name+': ' + 'parsing fail')
+        except Exception as e:
+            errlog(f'{group_name}: parsing fail with error: {str(e)} on file {filename}')
                 
