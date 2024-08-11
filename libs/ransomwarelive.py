@@ -448,7 +448,7 @@ def appender(post_title, group_name, description="", website="", published="", p
             website = post_title
         if website:
             stdlog('Query Hudsonrock with ' + extract_fqdn(website))
-            hudsonrock.query_hudsonrock(extract_fqdn(website))
+            asyncio.run(hudsonrock.run_query(extract_fqdn(website)))
         posts = openjson(VICTIMS_FILE)
         if published:
             try:
