@@ -69,4 +69,4 @@ def main():
                         appender(victim, 'dragonforce',description,website,publication_date,'')
 
     except Exception as e:
-        errlog(group_name + ' - parsing fail with error: ' + str(e))
+        errlog('dragonforce' + ' - parsing fail with error: ' + str(e))

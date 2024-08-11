@@ -6,14 +6,13 @@ from datetime import datetime
 from dotenv import load_dotenv
 from telethon import TelegramClient, events
 from urllib.parse import urlparse
-import logging 
-
+import logging
 
 logging.basicConfig(
     format='%(asctime)s,%(msecs)d %(levelname)-8s %(message)s',
     datefmt='%Y-%m-%d:%H:%M:%S',
     level=logging.INFO
-    )
+)
 
 def stdlog(msg):
     '''standard infologging'''
@@ -23,21 +22,21 @@ def dbglog(msg):
     '''standard debug logging'''
     logging.debug(msg)
 
-def errlog(msg,pushover=False):
+def errlog(msg, pushover=False):
     logging.error(msg)
     load_dotenv()
-    if PUSH_USER_KEY != None and PUSH_API_KEY!=None and pushover == True:
-        stdlog('Send push notification')
-        MESSAGE = "❌ " +  str(msg)
-        conn = http.client.HTTPSConnection("api.pushover.net:443")
-        conn.request("POST", "/1/messages.json",
-        urllib.parse.urlencode({
-                "token": PUSH_API_KEY,
-                "user": PUSH_USER_KEY,
-                "message": MESSAGE,
-                "html": 1
-                }), { "Content-type": "application/x-www-form-urlencoded" })
-        conn.getresponse()
+    # Add your push notification logic here if needed
+
+def load_json_file(filepath):
+    try:
+        with open(filepath, 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        return {}
+
+def save_json_file(data, filepath):
+    with open(filepath, 'w') as file:
+        json.dump(data, file, indent=4)
 
 def query_hudsonrock(domain_name):
     # Load environment variables from .env file
@@ -50,9 +49,22 @@ def query_hudsonrock(domain_name):
     json_file_path = os.getenv('DATA_DIR') + 'hudsonrock.json'
     timer = 120  # Global timer variable in seconds
 
-    # Create the client and connect
-    client = TelegramClient('session_name', api_id, api_hash)
+    data = load_json_file(json_file_path)
 
+    if domain_name in data:
+        stdlog(f"{domain_name} is already present in the database.")
+        return None
+
+    return {
+        "api_id": api_id,
+        "api_hash": api_hash,
+        "phone_number": phone_number,
+        "json_file_path": json_file_path,
+        "timer": timer,
+        "domain_name": domain_name
+    }
+
+async def query_telegram(client, domain_name, json_file_path, timer):
     def extract_figures(message):
         figures = {
             'Compromised Employees': 0,
@@ -79,63 +91,45 @@ def query_hudsonrock(domain_name):
 
         return figures
 
-    def load_json_file(filepath):
-        try:
-            with open(filepath, 'r') as file:
-                return json.load(file)
-        except FileNotFoundError:
-            return {}
-
-    def save_json_file(data, filepath):
-        with open(filepath, 'w') as file:
-            json.dump(data, file, indent=4)
-
     def update_json_file(domain, figures):
         data = load_json_file(json_file_path)
 
-        
         now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         data[domain] = {
-                "update": now,
-                "employees": figures['Compromised Employees'],
-                "users": figures['Compromised Users'],
-                "thirdparties_domain": figures['Third Party Domains'],
-                "employees_url": figures['Employee URLs'],
-                "users_url": figures['User URLs'],
-                "thirdparties": figures['Compromised Third Party Employees']
-            }
+            "update": now,
+            "employees": figures['Compromised Employees'],
+            "users": figures['Compromised Users'],
+            "thirdparties_domain": figures['Third Party Domains'],
+            "employees_url": figures['Employee URLs'],
+            "users_url": figures['User URLs'],
+            "thirdparties": figures['Compromised Third Party Employees']
+        }
         save_json_file(data, json_file_path)
-        
-            
 
-    async def query_telegram(domain):
-        await client.send_message('@HudsonRockBot', domain)
+    @client.on(events.NewMessage(chats='@HudsonRockBot'))
+    async def handler(event):
+        message_text = event.message.message
+        figures = extract_figures(message_text)
+        stdlog("Extracted figures:")
+        for key, value in figures.items():
+            stdlog(f"{key}: {value}")
 
-        @client.on(events.NewMessage(chats='@HudsonRockBot'))
-        async def handler(event):
-            message_text = event.message.message
-            # print(f"Received message: {message_text}")
+        # Update the JSON file
+        update_json_file(domain_name, figures)
 
-            figures = extract_figures(message_text)
-            stdlog("Extracted figures:")
-            for key, value in figures.items():
-                stdlog(f"{key}: {value}")
+    await client.start()
+    await client.send_message('@HudsonRockBot', domain_name)
+    stdlog(f'Waiting for {timer} seconds to avoid being blacklisted')
+    await asyncio.sleep(timer)  # Sleep for the specified timer duration
+    await client.disconnect()
 
-            # Update the JSON file
-            update_json_file(domain, figures)
+async def main():
+    domain_name = "example.com"  # Replace with the actual domain name you want to query
+    config = query_hudsonrock(domain_name)
+    
+    if config:
+        client = TelegramClient('session_name', config['api_id'], config['api_hash'])
+        await query_telegram(client, config['domain_name'], config['json_file_path'], config['timer'])
 
-    async def main(domain):
-        # Start the client
-        await client.start(phone_number)
-        await query_telegram(domain)
-        stdlog(f'Waiting for {timer} seconds to avoid being blacklisted')
-        await asyncio.sleep(timer)  # Sleep for the specified timer duration
-        await client.disconnect()
-
-    # Start the main function
-    data = load_json_file(json_file_path)
-    if domain_name not in data:
-        with client:
-            client.loop.run_until_complete(main(domain_name))
-    else:
-        stdlog(f"{domain_name} is already present in the database.")
+if __name__ == "__main__":
+    asyncio.run(main())

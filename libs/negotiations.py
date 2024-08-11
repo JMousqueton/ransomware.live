@@ -164,7 +164,7 @@ def parse_group(group_name):
     
         codeHTML += '''
             </div></div><footer>
-              <p id="Copyright">Source : <a href="https://github.com/Casualtek/Ransomchats" target=_blank>Valéry Marchive</a></p> 
+              <p id="Copyright">Source : <a href="https://github.com/Casualtek/Ransomchats" target=_blank>Valéry Marchive</a> and Ransomware.live</p> 
               <p id="Copyright2"><a href="https://www.ransomware.live" target=_self>&copy 2024 Ransomware.live</a></p> 
             </footer></body></html>
     '''

@@ -35,7 +35,7 @@ def main():
                         published = div.find('div',{"class" : "updated-post-date"}).text.strip()
                         date_obj = datetime.strptime(published.replace('Updated: ',''), "%d %b, %Y,\xa0\xa0 %H:%M %Z")
                         published = date_obj.strftime("%Y-%m-%d %H:%M:%S.%f")
-                        parse.appender(title, 'lockbit3', description.replace('\n',' '),"",published,post)
+                        appender(title, 'lockbit3', description.replace('\n',' '),"",published,post)
                     except Exception as e:
                         errlog('lockbit3a - parsing fail with error: ' + str(e))
                 divs_name=soup.find_all('div', {"class": "post-block good"})
@@ -49,7 +49,7 @@ def main():
                         published = div.find('div',{"class" : "updated-post-date"}).text.strip()
                         date_obj = datetime.strptime(published.replace('Updated: ',''), "%d %b, %Y,\xa0\xa0 %H:%M %Z")
                         published = date_obj.strftime("%Y-%m-%d %H:%M:%S.%f")
-                        parse.appender(title, 'lockbit3', description.replace('\n',' '),"",published,post)
+                        appender(title, 'lockbit3', description.replace('\n',' '),"",published,post)
                     except Exception as e:
                         errlog('lockbit3b - parsing fail with error: ' + str(e))
                 divs_name=soup.find_all('a', {"class": "post-block bad"})
@@ -65,7 +65,7 @@ def main():
                         published = div.find('div',{"class" : "updated-post-date"}).text.strip()
                         date_obj = datetime.strptime(published.replace('Updated: ',''), "%d %b, %Y,\xa0\xa0 %H:%M %Z")
                         published = date_obj.strftime("%Y-%m-%d %H:%M:%S.%f")
-                        parse.appender(title, 'lockbit3', description.replace('\n',' '),"",published,post)
+                        appender(title, 'lockbit3', description.replace('\n',' '),"",published,post)
                     except Exception as e:
                         errlog('lockbit3c - parsing fail with error: ' + str(e))
                 divs_name=soup.find_all('a', {"class": "post-block good"})
@@ -80,7 +80,7 @@ def main():
                         published = div.find('div',{"class" : "updated-post-date"}).text.strip()
                         date_obj = datetime.strptime(published.replace('Updated: ',''), "%d %b, %Y,\xa0\xa0 %H:%M %Z")
                         published = date_obj.strftime("%Y-%m-%d %H:%M:%S.%f")
-                        parse.appender(title, 'lockbit3', description.replace('\n',' '),"",published,post)
+                        appender(title, 'lockbit3', description.replace('\n',' '),"",published,post)
                     except Exception as e:
                         errlog('lockbit3d - parsing fail with error: ' + str(e) + ' for victim: '+ title)
                 file.close()

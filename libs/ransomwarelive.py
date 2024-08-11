@@ -36,7 +36,8 @@ import tldextract
 ## EXCEPTION 
 
 CHROMIUM_PROXY_GROUPS = [
-    "cactus"
+    "cactus",
+    "hunters"
 ]
 
 ## TODO :
@@ -448,6 +449,7 @@ def appender(post_title, group_name, description="", website="", published="", p
         if website:
             stdlog('Query Hudsonrock with ' + extract_fqdn(website))
             hudsonrock.query_hudsonrock(extract_fqdn(website))
+            #await asyncio.run(hudsonrock.query_hudsonrock(extract_fqdn(website)))
         posts = openjson(VICTIMS_FILE)
         if published:
             try:

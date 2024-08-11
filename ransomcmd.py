@@ -420,9 +420,5 @@ if __name__ == '__main__':
         if renamed_input_path:
             ransomwarelive.blur_image(renamed_input_path, args.file)
     else:
-        for gang in negotiations.get_gangs('./import'):
-            if gang not in ['./import/parsers', './import/.git']:
-                negotiations.parse_group(gang)
-        negotiations.generatenegotiationindex()
         parser.print_help()
         
