@@ -240,6 +240,14 @@ def redactedlink(text):
 
     pattern = r"(https://gofile\.io/d/)\S+"
     redacted_text = re.sub(pattern, r"\1[REDACTED]", redacted_text)
+
+    # Regular expression pattern to match valid email addresses
+    email_pattern = r'(?<!\S)[\w\.-]+@[\w\.-]+\.\w+(?!\S)'
+    # Function to replace '@' with '_AT_'
+    def replace_at(match):
+        return match.group().replace('@', '_AT_')
+    # Replace all occurrences of the pattern with the modified email
+    redacted_text = re.sub(email_pattern, replace_at, redacted_text)    
     
     return redacted_text
 
