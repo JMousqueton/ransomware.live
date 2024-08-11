@@ -59,9 +59,54 @@ find ./source/ -maxdepth 1 -type f -mtime +1 -exec rm {} \;
 ## Load all env. variable 
 source .env
 
-./update_carto.sh
-./update_negotiation.sh
-./update_ransomnote.sh
+### Go 
+## Update ransom_notes
+cd ${RL_HOME_DIR}/docs/ransomware_notes
+git fetch
+# Check for any ransomware notes update
+if git diff --quiet HEAD origin/main; then
+  echo "No update."
+else
+    if [ -z "$PUSH_USER" ]; then
+        echo "PUSH_USER is not set. Cannot send notification. Exiting."
+    else 
+        echo "Update available. Execute git pull..."
+        git pull
+        curl -s \
+            --form-string "token=${PUSH_API}" \
+            --form-string "user=${PUSH_USER}" \
+            --form-string "message=New Ransom notes has been added" \
+            https://api.pushover.net/1/messages.json > /dev/null
+    fi
+fi
+cd ${RL_HOME_DIR}
+
+## Download carto pdf 
+curl https://raw.githubusercontent.com/cert-orangecyberdefense/ransomware_map/main/OCD_WorldWatch_Ransomware-ecosystem-map.pdf -o ${RL_HOME_DIR}/docs/OCD_WorldWatch_Ransomware-ecosystem-map.pdf
+
+cd ./import
+git fetch
+# Vérifier s'il y a des mises à jour
+if git diff --quiet HEAD origin/main; then
+    echo "Aucune mise à jour disponible."
+else
+    echo "Mise à jour détectée. Exécution de git pull..."
+    git pull
+    # Exécuter le script Python s'il y a eu une mise à jour
+    if [ $? -eq 0 ]; then
+        echo "Exécution de la mise à jour ..."
+        cd ..
+        if [ -z "$PUSH_USER" ]; then
+            curl -s \
+            --form-string "token=${PUSH_API}" \
+            --form-string "user=${PUSH_USER}" \
+            --form-string "message=New Ransoms chats have been added" \
+            https://api.pushover.net/1/messages.json > /dev/null
+        fi
+    else
+        echo "Erreur lors de la mise à jour du référentiel."
+    fi
+fi
 
 
 SCRAPE_BEGIN_TIME=$(date +%s)
