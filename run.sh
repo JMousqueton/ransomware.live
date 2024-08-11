@@ -22,16 +22,21 @@ if [ -e "$LOCKFILE" ]; then
     # Calculate the time difference in seconds
     TIME_DIFF=$((CURRENT_TIME - FILE_CREATION_TIME))
     
-    # Convert 3 hours to seconds (3 * 60 * 60)
-    THREE_HOURS_IN_SECONDS=10800
+    # Convert 2 hours to seconds (2 * 60 * 60)
+    THREE_HOURS_IN_SECONDS=7200
     
     # Check if the time difference is greater than 3 hours
     if [ "$TIME_DIFF" -gt "$THREE_HOURS_IN_SECONDS" ]; then
-        echo "Lock file is older than 3 hours. Please investigate."
+        echo "Lock file is older than 2 hours. Please investigate."
+        # Check if PUSH_USER is set
+        if [ -z "$PUSH_USER" ]; then
+            echo "PUSH_USER is not set. Cannot send notification. Exiting."
+            exit 1
+        fi
         curl -s \
   --form-string "token=${PUSH_API}" \
   --form-string "user=${PUSH_USER}" \
-  --form-string "message=ERROR: lock file older than 3 hours !!!" \
+  --form-string "message=ERROR: lock file older than 2 hours !!!" \
   https://api.pushover.net/1/messages.json > /dev/null
         exit 1
     else  
@@ -96,8 +101,12 @@ SECONDS=$((EXECUTION_TIME % 60))
 echo "Execution time: $MINUTES minutes and $SECONDS seconds"
 
 # Check if the execution time exceeds 90 minutes
-if (( MINUTES > 120 )); then
-  curl -s \
+if (( MINUTES > 90 )); then
+    if [ -z "$PUSH_USER" ]; then
+        echo "PUSH_USER is not set. Cannot send notification."
+        exit 1
+    fi
+    curl -s \
   --form-string "token=${PUSH_API}" \
   --form-string "user=${PUSH_USER}" \
   --form-string "message=WARNING: execution script longer than expected : ${MINUTES} minutes !!!" \
