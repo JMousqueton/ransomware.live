@@ -108,7 +108,7 @@ else
     fi
 fi
 
-
+cd ${RL_HOME_DIR}
 SCRAPE_BEGIN_TIME=$(date +%s)
 python3 ransomcmd.py scrape
 SCRAPE_END_TIME=$(date +%s)

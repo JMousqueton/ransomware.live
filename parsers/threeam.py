@@ -19,7 +19,7 @@ from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_
 
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('threeam-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -36,5 +36,5 @@ def main():
                         post = url +  onclick_attr.split("'")[1]
                     appender(victim, 'threeam', description,victim,'',post)
                 file.close()
-        #except:
-        #    errlog("Failed during : " + filename)
+        except:
+            errlog("Failed during : " + filename)

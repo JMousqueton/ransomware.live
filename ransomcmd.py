@@ -399,16 +399,15 @@ if __name__ == '__main__':
         if args.victim:
             ransomwarelive.searchvictim(args.victim)
             if ransomwarelive.is_fqdn(args.victim):
-                ransomwarelive.search_domain_for_infostealer(args.victim)
+                ransomwarelive.search_domain_for_infostealer(args.victim.lower())
         elif args.domain:
             ransomwarelive.searchvictim(args.domain,True)
-            ransomwarelive.search_domain_for_infostealer(args.domain)
+            ransomwarelive.search_domain_for_infostealer(args.domain.lower())
         else:
             parser.print_help()
     
     elif args.command == "infostealer":
         if args.domain:
-            #hudsonrock.query(args.domain)
             asyncio.run(hudsonrock.run_query(args.domain))
         else:
             parser.print_help()  

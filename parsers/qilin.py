@@ -64,7 +64,9 @@ def main():
                     # Extract the URL
                     url_tag = box.find("a", class_="item_box-info__link")
                     url = url_tag['href'].strip() if url_tag else ""
-                    
+                    # Remove the protocols
+                    website = re.sub(r'^http[s]?://', '', url)
+  
                     # Extract the description
                     description_tag = box.find("div", class_="item_box_text")
                     description = description_tag.text.strip() if description_tag else "N/A"
@@ -79,8 +81,7 @@ def main():
                     else:
                         post_url = ""
                     
-                    # Append the extracted data to the lists
-                    appender(victim_name, group_name, description.replace('\n',' '),url,formatted_date,post_url)
+                    appender(victim_name, group_name, description,website,formatted_date,post_url)
         except Exception as e:
             errlog(group_name + ' - parsing fail with error: ' + str(e) + ' in file:' + filename)
 

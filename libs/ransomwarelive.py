@@ -443,6 +443,7 @@ def appender(post_title, group_name, description="", website="", published="", p
     post_title = html.unescape(post_title)
     post_title = clean_string(post_title)
     if existingpost(post_title, group_name) is False:
+        stdlog(f'adding new post - group: {group_name}  title: {post_title}   website: {website}')
         ## Post Infostealer information 
         if is_fqdn(post_title) and len(website) == 0:
             website = post_title
@@ -475,7 +476,6 @@ def appender(post_title, group_name, description="", website="", published="", p
             if country:
                 stdlog(f'Found : {country}')
         newpost = posttemplate(post_title, group_name, str(datetime.today()),description,clean_slug(website),published,post_url,country,activity)
-        stdlog('adding new post - ' + 'group:' + group_name + ' title:' + post_title)
         posts.append(newpost)
         with open(VICTIMS_FILE, 'w', encoding='utf-8') as outfile:
             json.dump(posts, outfile, indent=4, ensure_ascii=False)

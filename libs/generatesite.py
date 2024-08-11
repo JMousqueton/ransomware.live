@@ -791,7 +791,7 @@ def recentdiscoveredpage():
 ### LAST VICTIM PER GROUP ###
 #############################
 def lastvictimspergroup():
-    stdlog('generating last victims per group')
+    stdlog('generating last victim per group')
     page = 'docs/lastvictimspergroup.md'
     with open(page, 'w', encoding='utf-8') as f:
         f.close()
@@ -844,7 +844,7 @@ def lastvictimspergroup():
                 'date_status' : date_status
             }
     writeline(page, '')
-    writeline(page, '# Last victims per Ransomware Group')
+    writeline(page, '# Last victim per Ransomware Group')
     writeline(page, '')
     writeline(page, '')
     writeline(page, '| Ransomware | Last Victim | Date | Status[<sup>*</sup>](lastvictimspergroup?id=-legend-) |')
@@ -884,6 +884,10 @@ def profilepage():
     # delete contents of file
     with open(profilepage, 'w', encoding='utf-8') as f:
         f.close()
+    writeline(profilepage, '')
+    writeline(profilepage, '# All Groups')
+    writeline(profilepage, '')
+    writeline(profilepage, '> [Last victim per Ransomware group](lastvictimspergroup.md)')
     writeline(profilepage, '')
     groups = openjson(GROUPS_FILE)
     groupcpt=0
