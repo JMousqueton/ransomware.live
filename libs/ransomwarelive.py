@@ -816,9 +816,19 @@ def searchvictim(name, search_website=False):
         if not isinstance(data, list):
             data = [data]
         
-        # Search for posts where post_title or website contains the specified name
-        field = 'website' if search_website else 'post_title'
-        matching_posts = [post for post in data if name.lower() in post.get(field, '').lower()]
+        # Search logic
+        if search_website:
+            matching_posts = [
+                post for post in data if (
+                    name.lower() in post.get('website', '').lower() or 
+                    name.lower() in post.get('post_title', '').lower()
+                )
+            ]
+        else:
+            matching_posts = [
+                post for post in data if name.lower() in post.get('post_title', '').lower()
+            ]
+        
         total_matches = len(matching_posts)
         
         # Print matching posts with counter
@@ -838,7 +848,10 @@ def searchvictim(name, search_website=False):
             print("\033[1m Group Name:\033[0m ", post.get('group_name', '\033[3mN/A\033[0m'))
             print("\033[1m Discovered:\033[0m ", post.get('discovered', '\033[3mN/A\033[0m'))
             print("\033[1m Description:\033[0m ", post.get('description', '\033[3mN/A\033[0m'))
-            print("\033[1m Website:\033[0m ", post.get('website', '\033[3mN/A\033[0m'))
+            if is_fqdn(post.get('post_title')):
+                print("\033[1m Domain:\033[0m ", post.get('post_title', '\033[3mN/A\033[0m'))
+            else:
+                print("\033[1m Website:\033[0m ", post.get('website', '\033[3mN/A\033[0m'))
             print("\033[1m Published:\033[0m ", post.get('published', '\033[3mN/A\033[0m'))
             print("\033[1m Post URL:\033[0m ", post.get('post_url', '\033[3mN/A\033[0m'))
             print(screenshot,end=" ")

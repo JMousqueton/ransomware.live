@@ -234,6 +234,9 @@ if __name__ == '__main__':
         if args.group:
             ransomwarelive.stdlog('Parser : '+ args.group)
             module = importlib.import_module(f'parsers.{args.group}')
+            if os.path.isfile(f"./parsers/{args.group}-api.py"):
+                ransomwarelive.stdlog(f'A specific API call is available for {args.group}')
+                module = importlib.import_module(f'parsers.{args.group}-api')
             module.main()
         else:
             LOCK_FILE_NAME = "parse.lock"
@@ -395,6 +398,8 @@ if __name__ == '__main__':
     elif args.command =="search":
         if args.victim:
             ransomwarelive.searchvictim(args.victim)
+            if ransomwarelive.is_fqdn(args.victim):
+                ransomwarelive.search_domain_for_infostealer(args.victim)
         elif args.domain:
             ransomwarelive.searchvictim(args.domain,True)
             ransomwarelive.search_domain_for_infostealer(args.domain)
@@ -403,7 +408,8 @@ if __name__ == '__main__':
     
     elif args.command == "infostealer":
         if args.domain:
-            hudsonrock.query_hudsonrock(args.domain)
+            #hudsonrock.query(args.domain)
+            asyncio.run(hudsonrock.run_query(args.domain))
         else:
             parser.print_help()  
     

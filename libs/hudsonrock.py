@@ -5,7 +5,6 @@ import asyncio
 from datetime import datetime
 from dotenv import load_dotenv
 from telethon import TelegramClient, events
-from urllib.parse import urlparse
 import logging
 
 logging.basicConfig(
@@ -15,17 +14,14 @@ logging.basicConfig(
 )
 
 def stdlog(msg):
-    '''standard infologging'''
     logging.info(msg)
 
 def dbglog(msg):
-    '''standard debug logging'''
     logging.debug(msg)
 
 def errlog(msg, pushover=False):
     logging.error(msg)
     load_dotenv()
-    # Add your push notification logic here if needed
 
 def load_json_file(filepath):
     try:
@@ -39,7 +35,6 @@ def save_json_file(data, filepath):
         json.dump(data, file, indent=4)
 
 def query_hudsonrock(domain_name):
-    # Load environment variables from .env file
     env_path = os.path.join(os.path.dirname(__file__), '../.env')
     load_dotenv(dotenv_path=env_path)
 
@@ -47,7 +42,7 @@ def query_hudsonrock(domain_name):
     api_hash = os.getenv('T_API_HASH')
     phone_number = os.getenv('T_PHONE_NUMBER')
     json_file_path = os.getenv('DATA_DIR') + 'hudsonrock.json'
-    timer = 120  # Global timer variable in seconds
+    timer = 120
 
     data = load_json_file(json_file_path)
 
@@ -114,22 +109,17 @@ async def query_telegram(client, domain_name, json_file_path, timer):
         for key, value in figures.items():
             stdlog(f"{key}: {value}")
 
-        # Update the JSON file
         update_json_file(domain_name, figures)
 
     await client.start()
     await client.send_message('@HudsonRockBot', domain_name)
     stdlog(f'Waiting for {timer} seconds to avoid being blacklisted')
-    await asyncio.sleep(timer)  # Sleep for the specified timer duration
+    await asyncio.sleep(timer)
     await client.disconnect()
 
-async def main():
-    domain_name = "example.com"  # Replace with the actual domain name you want to query
+async def run_query(domain_name):
     config = query_hudsonrock(domain_name)
     
     if config:
         client = TelegramClient('session_name', config['api_id'], config['api_hash'])
         await query_telegram(client, config['domain_name'], config['json_file_path'], config['timer'])
-
-if __name__ == "__main__":
-    asyncio.run(main())
