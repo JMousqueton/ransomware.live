@@ -449,7 +449,6 @@ def appender(post_title, group_name, description="", website="", published="", p
         if website:
             stdlog('Query Hudsonrock with ' + extract_fqdn(website))
             hudsonrock.query_hudsonrock(extract_fqdn(website))
-            #await asyncio.run(hudsonrock.query_hudsonrock(extract_fqdn(website)))
         posts = openjson(VICTIMS_FILE)
         if published:
             try:
@@ -468,6 +467,13 @@ def appender(post_title, group_name, description="", website="", published="", p
         else:
             activity = '' 
         country = get_country(post_title,description,website)
+        if GPT and len(country) < 2 :
+            stdlog(f'Query GPT for "{post_title}" country')
+            gpt_query = GPTQuery()
+            prompt = f"I would like the 2 letters code of the country, and only the 2 letters not extra text, where the headquarter of this company is located {post_title}"
+            country = gpt_query.query(prompt)
+            if country:
+                stdlog(f'Found : {country}')
         newpost = posttemplate(post_title, group_name, str(datetime.today()),description,clean_slug(website),published,post_url,country,activity)
         stdlog('adding new post - ' + 'group:' + group_name + ' title:' + post_title)
         posts.append(newpost)
@@ -491,12 +497,6 @@ def appender(post_title, group_name, description="", website="", published="", p
             hex_digest = hash_object.hexdigest()
             filename = os.path.join(POST_SCREENSHOT_DIR, f'{hex_digest}.png')
             asyncio.run(screenshot(post_url,filename))
-        ## Post Infostealer information 
-        #if is_fqdn(post_title) and len(website) == 0:
-        #    website = post_title
-        #if website:
-        #    stdlog('Query Hudsonrock with ' + extract_fqdn(website))
-        #    hudsonrock.query_hudsonrock(extract_fqdn(website))
 
 
 def checkexisting(provider):
