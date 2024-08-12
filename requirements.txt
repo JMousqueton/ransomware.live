@@ -14,7 +14,7 @@ python-dotenv==1.0.1
 pytz==2022.1
 Requests==2.32.3
 SocksiPy_branch==1.01
-Telethon==1.35.0
+Telethon==1.36.0
 tldextract==3.4.4
 urllib3==2.2.2
 wordcloud==1.9.2
