@@ -301,7 +301,7 @@ if __name__ == '__main__':
             ransomwarelive.stdlog('generating stats page for ' +  str(year))
             currentgraph = 'docs/stats'+str(year)+'.md'
             # Example usage:
-            plot_group_activity(year)
+            graph.plot_group_activity(year)
             with open(currentgraph, 'w', encoding='utf-8') as f:
                     f.close()
             writeline(currentgraph, '# Year '+ str(year) + ' in detail')
@@ -422,4 +422,3 @@ if __name__ == '__main__':
             ransomwarelive.blur_image(renamed_input_path, args.file)
     else:
         parser.print_help()
-        

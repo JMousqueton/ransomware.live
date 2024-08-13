@@ -680,17 +680,17 @@ async def scrape(force=False):
                         })
                     updated = True
                     await browser.close()
-                except:
+                except Exception as e:
                     host.update({
                             'available': False,
                             'updated': str(datetime.today())
                         })
                     updated = True
-                    stdlog(f'Finished scraping {host["slug"]} for {group["name"]}')
+                    errlog(f'Scrapping failled for {host["slug"]} with error : {e}')
             if updated:
                 with open(GROUPS_FILE, 'w', encoding='utf-8') as groupsfile:
                     json.dump(groups, groupsfile, ensure_ascii=False, indent=4)
-            stdlog(f'Group {group["name"]} metadata updated')
+                stdlog(f'Group {group["name"]} metadata updated')
 
 
 async def scrapegang(groupname,force=False):
@@ -722,11 +722,26 @@ async def scrapegang(groupname,force=False):
                         html = await page.content()
                         with open(filename, 'w', encoding='utf-8') as file:
                             file.write(html)
-                    
+                        host.update({
+                            'available': True,
+                            'title': getsitetitle(filename),
+                            'lastscrape': str(datetime.today()),
+                            'updated': str(datetime.today())
+                        })
+                        updated = True
                         await browser.close()
                     except Exception as e:
+                        host.update({
+                            'available': False,
+                            'updated': str(datetime.today())
+                        })
+                        updated = True
                         errlog(f'Scrapping failled for {host["slug"]} with error : {e}')
-                    stdlog(f'Finished scraping {host["slug"]} for {group["name"]}')
+                    if updated:
+                        with open(GROUPS_FILE, 'w', encoding='utf-8') as groupsfile:
+                            json.dump(groups, groupsfile, ensure_ascii=False, indent=4)
+                        stdlog(f'Group {group["name"]} metadata updated')
+                    
 
 async def screenshot(url,filename):
     async with async_playwright() as p:
