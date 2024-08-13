@@ -170,7 +170,8 @@ def recentattackedposts(top):
     stdlog('Finding recent posts')
     posts = openjson(VICTIMS_FILE)
     # sort the posts by timestamp - descending
-    sorted_posts = sorted(posts, key=lambda x: x['published'], reverse=True)
+    #sorted_posts = sorted(posts, key=lambda x: x['published'], reverse=True)
+    sorted_posts = sorted(posts, key=lambda x: x['published'] if x.get('published') else x['discovered'], reverse=True)
     # create a list of the last X posts
     recentposts = []
     for post in sorted_posts:
@@ -704,6 +705,95 @@ def statuspage():
 ###########################
 ### RECENT VICTIMS PAGE ###
 ###########################
+def recentattackedpage():
+    '''create a markdown table for the last 200 posts based on the published value'''
+    fetching_count = 200
+    stdlog('Generating recent discovered victims page')
+    recentpage = 'docs/recentattackedvictims.md'
+    with open(recentpage, 'w', encoding='utf-8') as f:
+        f.close()
+    writeline(recentpage,'# Recent discovered victims by Ransomware.live')
+    writeline(recentpage,'')
+    writeline(recentpage, '> [!INFO] `Ransomware.live` provides tracking of ransomware groups and their victims. Descriptions available in the [group profiles view](profiles.md)')
+    writeline(recentpage, '> ')
+    writeline(recentpage, '> *Legend:*')
+    writeline(recentpage, '> ')
+    writeline(recentpage, '>    📸  *Screenshot of the ransomware victim\'s post*')
+    writeline(recentpage, '> ')
+    writeline(recentpage, '>    🕵🏻‍♂️  *Information about infostealer for the victim. Provided by [HudsonRock](https://www.hudsonrock.com)* ')
+    writeline(recentpage,'')
+    writeline(recentpage, '**📰 200 last victims sorted by discovered date by `Ransomware.live`**')
+    writeline(recentpage, '')
+    writeline(recentpage, '| Attacked Date | [Discovered Date](recent.md) | Victim | [Country](country) | Group | 📸 | 🕵🏻‍♂️ | ')
+    writeline(recentpage, '|---|---|---|---|---|---|---|')
+    for post in recentattackedposts(fetching_count):
+        # show friendly date for discovered
+        date = post['discovered'].split(' ')[0]
+        attack = post['published'].split(' ')[0]
+        attacked_date = post.get('attacked_date', None)
+        if attacked_date:
+            attack = attacked_date.split(' ')[0]
+        elif (attack == date):
+            attack =''
+        # replace markdown tampering characters
+        title = post['post_title'].replace('|', '-').replace('&amp;','&').replace('amp;','')
+        group = post['group_name'].replace('|', '-')
+        urlencodedtitle = urllib.parse.quote_plus(title)
+        grouplink = '[' + group + '](group/' + group + ')'
+        # screenpost='❌'
+        screenpost=' '
+        if post['post_url'] is not None: 
+            # Create an MD5 hash object
+            hash_object = hashlib.md5()
+            # Update the hash object with the string
+            hash_object.update(post['post_url'].encode('utf-8'))
+            # Get the hexadecimal representation of the hash
+            hex_digest = hash_object.hexdigest()
+            if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
+                screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>👀</a>'
+            if len(post['country']) > 1:
+                match post['country']:
+                    case 'UK':
+                        flag = 'GB'
+                    case _:
+                        flag = post['country']
+                #country="!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':size=32x24 :no-zoom')"
+                country="[!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':size=32x24 :no-zoom')](country/"+flag.lower()+")"
+            else:
+                country=''
+            hash_object = hashlib.md5()
+            # Update the hash object with the string
+            hash_object.update(title.lower().encode('utf-8'))
+            # Get the hexadecimal representation of the hash
+            hex_digest = hash_object.hexdigest()
+            if os.path.exists('docs/domain/'+hex_digest+'.md'):
+                infostealer=' [🔎](domain/'+hex_digest+') '
+            elif post['website']:
+                domain = extract_domain(post['website'].lower()) #.replace('http://','').replace('https://','').replace('www.','')
+                hash_object = hashlib.md5()
+                hash_object.update(domain.encode('utf-8'))
+                hex_digest = hash_object.hexdigest()
+                if  os.path.exists('docs/domain/'+hex_digest+'.md'):
+                    infostealer=' [🔎](domain/'+hex_digest+') '
+                else:
+                    infostealer = ''
+            else:
+                infostealer = ''
+        if attack == '':
+            attack=date 
+        if attack == date:
+            date = ''
+        #line = '| ' + date + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + grouplink + ' | ' + screenpost + ' |'
+        line = '| ' + attack + ' | ' + date + ' | [`' + title + '`](https://google.com/search?q=' + urlencodedtitle + ') | ' + country + ' | ' + grouplink + ' | ' + screenpost + ' | ' + infostealer + ' |'
+        result = get_removal(title, group)
+        if result:  
+             line = '| ' + date + ' | ' + attack + ' | *' + result + '* | ' + country + ' | ' + grouplink + ' |   |   |'
+        writeline(recentpage, line)
+    writeline(recentpage, '')
+    writeline(recentpage, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
+    stdlog('recent published victims page generated')
+
+
 def recentdiscoveredpage():
     '''create a markdown table for the last 200 posts based on the published value'''
     fetching_count = 200
@@ -723,7 +813,7 @@ def recentdiscoveredpage():
     writeline(recentpage,'')
     writeline(recentpage, '**📰 200 last victims sorted by discovered date by `Ransomware.live`**')
     writeline(recentpage, '')
-    writeline(recentpage, '| Discovery Date | [Attack Date](recentvictims.md) | Victim | [Country](country) | Group | 📸 | 🕵🏻‍♂️ | ')
+    writeline(recentpage, '| Discovery Date | [Attack Date](recentattackedvictims.md) | Victim | [Country](country) | Group | 📸 | 🕵🏻‍♂️ | ')
     writeline(recentpage, '|---|---|---|---|---|---|---|')
     for post in recentdiscoveredposts(fetching_count):
         # show friendly date for discovered

@@ -47,6 +47,7 @@ import re
 ## Import Ransomware.live libs 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs')))
 import ransomwarelive 
+import notif
 from generatesite import writeline, month_name,month_digit
 import generatesite 
 import graph
@@ -163,8 +164,7 @@ if __name__ == '__main__':
     parser_status = subparsers.add_parser('status', help='Show the status of ransomware.live')
 
     parser_search = subparsers.add_parser('search', help='Search victim in database (use -h/--help for available options)')
-    parser_search.add_argument('-v', '--victim', type=str, help='Specify a victim name')
-    parser_search.add_argument('-d', '--domain', type=str, help='Specify a domain name')
+    parser_search.add_argument('-v', '--victim', type=str, help='Specify a victim name or domain')
     
     parser_rss = subparsers.add_parser('rss', help='Generate RSS feeds')
 
@@ -177,7 +177,7 @@ if __name__ == '__main__':
     # Create sub-parser for 'tools duplicate'
     parser_tools_duplicate = tools_subparsers.add_parser('duplicate', help='Remove duplicate source files')
     parser_tools_order = tools_subparsers.add_parser('order', help='Order groups by alphabetic order')
-    parser_tools_blur = tools_subparsers.add_parser('blur', help='Blur a picture (need -f/--file option')
+    parser_tools_blur = tools_subparsers.add_parser('blur', help='Blur a picture (need -f/--file option)')
     parser_tools_blur.add_argument('-f', '--file', type=str, help='full path of the image to blur')
 
 
@@ -271,19 +271,21 @@ if __name__ == '__main__':
         VICTIMS_FILE = DATA_DIR + VICTIMS_FILE
         GROUPS_FILE = os.getenv('GROUPS_FILE')
         GROUPS_FILE = DATA_DIR + GROUPS_FILE
+        hudsonrockfile = DATA_DIR + 'hudsonrock.json'  
         if os.path.getmtime(VICTIMS_FILE) > (time.time() - 2700):
             ransomwarelive.stdlog('Victims database has been modified within the last 45 mins, assuming new posts discovered and generating full site')
-            hudsonrockfile = DATA_DIR + 'hudsonrock.json'  
             data = ransomwarelive.openjson(hudsonrockfile)
             # Iterate through the entries and apply the conditions
             for key, value in data.items():
                 if value['employees'] > 0 or value['users'] > 0:
                     generatesite.write_domain_info(key, value['employees'], value['users'], value['thirdparties'], value['employees_url'], value['users_url'], value['update'])
             generatesite.recentdiscoveredpage()
+            generatesite.recentattackedpage()
             generatesite.lastvictimspergroup()
             generatesite.profilepage()
             generatesite.groupprofilepage()
             generatesite.allposts()
+            rss.generate_rss_feed()
             year=datetime.now().year
             month=datetime.now().month
             graph.trend_posts_per_day()
@@ -338,7 +340,7 @@ if __name__ == '__main__':
             graph.generate_ransomware_map()
             generatesite.generate_country_reports()
         else:
-            ransomwarelive.stdlog('posts.json has not been modified within the last 45 mins, assuming no new posts discovered')    
+            ransomwarelive.stdlog('posts.json has not been modified within the last 45 mins, assuming no new posts discovered')   
         base_url = "https://www.ransomware.live"
         pages = ransomwarelive.openjson(GROUPS_FILE)
         note_directories = [directory for directory in os.listdir("./docs/notes/") if directory.lower() != ".git.md"]
@@ -397,14 +399,7 @@ if __name__ == '__main__':
     
     elif args.command =="search":
         if args.victim:
-            ransomwarelive.searchvictim(args.victim)
-            if ransomwarelive.is_fqdn(args.victim):
-                ransomwarelive.search_domain_for_infostealer(args.victim.lower())
-        elif args.domain:
-            ransomwarelive.searchvictim(args.domain,True)
-            ransomwarelive.search_domain_for_infostealer(args.domain.lower())
-        else:
-            parser.print_help()
+                ransomwarelive.searchvictim(args.victim)
     
     elif args.command == "infostealer":
         if args.domain:
