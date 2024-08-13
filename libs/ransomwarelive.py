@@ -871,6 +871,7 @@ def siteadder(name, location):
         groups.append(dict(newrec))
         with open(GROUPS_FILE, 'w', encoding='utf-8') as groupsfile:
             json.dump(groups, groupsfile, ensure_ascii=False, indent=4)
+        notif.grouptobluesky(name)
         stdlog('Ransomware.live : ' + 'record for ' + name + ' added to Group Database')
 
 
@@ -888,7 +889,6 @@ def siteappender(name, location):
     if success:
         with open(GROUPS_FILE, 'w', encoding='utf-8') as groupsfile:
             json.dump(groups, groupsfile, ensure_ascii=False, indent=4)
-            notif.grouptobluesky(name)
     else:
         errlog('Ransomware.live : Cannot append to non-existing provider')
 

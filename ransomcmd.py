@@ -47,7 +47,6 @@ import re
 ## Import Ransomware.live libs 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs')))
 import ransomwarelive 
-import notif
 from generatesite import writeline, month_name,month_digit
 import generatesite 
 import graph
@@ -301,6 +300,8 @@ if __name__ == '__main__':
             graph.trend_posts_per_day_2024()
             ransomwarelive.stdlog('generating stats page for ' +  str(year))
             currentgraph = 'docs/stats'+str(year)+'.md'
+            # Example usage:
+            plot_group_activity(year)
             with open(currentgraph, 'w', encoding='utf-8') as f:
                     f.close()
             writeline(currentgraph, '# Year '+ str(year) + ' in detail')

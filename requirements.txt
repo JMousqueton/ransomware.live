@@ -18,6 +18,7 @@ Telethon==1.36.0
 tldextract==3.4.4
 urllib3==2.2.2
 wordcloud==1.9.3
+seaborn==0.13.2
 aiohttp>=3.9.4 # not directly required, pinned by Snyk to avoid a vulnerability
 fonttools>=4.43.0 # not directly required, pinned by Snyk to avoid a vulnerability
 numpy>=1.22.2 # not directly required, pinned by Snyk to avoid a vulnerability

@@ -9,6 +9,7 @@ from wordcloud import WordCloud
 from collections import Counter
 import pandas as pd
 import folium
+import seaborn as sns
 
 from mypycountries import get_coordinates, get_country_name # https://github.com/JMousqueton/MyPyCountries 
 
@@ -926,3 +927,71 @@ def generate_execution_time_graphs():
         errlog(f'Error parsing the log file at {log_file_path}')
     except Exception as e:
         errlog(f'An unexpected error occurred: {e}')
+
+
+
+def plot_group_activity(year):
+    # Load the data
+    input_file='./data/victims.json'
+    output_file=f'./docs/graphs/group-activity-{str(year)}.png'
+    with open(input_file, 'r') as file:
+        data = json.load(file)
+
+    # Convert the JSON data into a DataFrame
+    df = pd.json_normalize(data)
+
+    # Convert the 'discovered' column to datetime
+    df['discovered'] = pd.to_datetime(df['discovered'])
+
+    # Extract year and month from the 'discovered' date
+    df['year'] = df['discovered'].dt.year
+    df['month'] = df['discovered'].dt.strftime('%b')
+
+    # Filter the data for the specified year only
+    df_year = df[df['year'] == year]
+
+    # For each group, find the first and last entry of the specified year
+    group_min_max_dates = df_year.groupby('group_name')['discovered'].agg(['min', 'max']).reset_index()
+
+    # Check for previous entries in years before the specified year
+    df_previous_years = df[df['year'] < year]
+    previous_entries = df_previous_years.groupby('group_name')['discovered'].min().reset_index()
+
+    # Check for entries in the years after the specified year
+    df_next_years = df[df['year'] > year]
+    next_entries = df_next_years.groupby('group_name')['discovered'].min().reset_index()
+
+    # Merge this information with the data for the specified year
+    merged_df = pd.merge(group_min_max_dates, previous_entries, on='group_name', how='left', suffixes=('', '_previous'))
+    merged_df = pd.merge(merged_df, next_entries, on='group_name', how='left', suffixes=('', '_next'))
+
+    # If there was a previous entry, set the start date to January of the specified year
+    month_mapping = {month: i+1 for i, month in enumerate(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])}
+    merged_df['start_month_num'] = merged_df.apply(
+        lambda x: 1 if pd.notna(x['discovered']) else month_mapping[x['min'].strftime('%b')], axis=1
+    )
+
+    # If there is a next entry in future years, set the end date to December of the specified year
+    merged_df['end_month_num'] = merged_df.apply(
+        lambda x: 12 if pd.notna(x['discovered_next']) else month_mapping[x['max'].strftime('%b')], axis=1
+    )
+
+    # Plotting the lines with the adjusted start and end dates
+    plt.figure(figsize=(18, 24))  # Increased height for more space between group names
+    for _, row in merged_df.iterrows():
+        plt.plot([row['start_month_num'], row['end_month_num']], [row['group_name'], row['group_name']], marker='o')
+
+    # Formatting the plot
+    plt.yticks(range(len(merged_df)), merged_df['group_name'])
+    plt.xticks(range(1, 13), month_mapping.keys())
+    plt.xlabel('Month')
+    plt.ylabel('Ransomware group')
+    plt.title(f'Group activity for {year}',fontsize=20)
+    plt.grid(True)
+
+    # Save the figure
+    plt.savefig(output_file)
+    add_watermark(output_file)
+
+
+
