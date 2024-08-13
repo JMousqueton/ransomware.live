@@ -121,7 +121,7 @@ def plot_posts_by_group_by_year(year):
     plt.rcParams['xtick.color'] = "#42b983"
     plt.rcParams['ytick.color'] = "#42b983"
     plt.bar(groups, counts, color="#42b983")
-    plt.title('Vicitms by group in ' + str(year))
+    plt.title('Victims by group in ' + str(year))
     plt.xlabel('Group Name\n© Ransomware.live')
     plt.xticks(rotation=90)
     plt.ylabel('# of posts')
@@ -327,7 +327,7 @@ def pie_posts_by_group():
     plt.pie(topcounts, labels=topgroups, autopct='%1.1f%%', startangle=140, labeldistance=1.1, pctdistance=0.8, colors=colours)
     plt.legend(loc='lower center', bbox_to_anchor=(0.5, -0.2), ncol=3)
     plt.text(0.5, 0.5, 'total : ' + str(sum(counts)), horizontalalignment='center', verticalalignment='center', transform=plt.gcf().transFigure)
-    plt.title('Vicitms by group')
+    plt.title('Victims by group')
     plt.savefig('docs/graphs/grouppie.png',dpi=300, bbox_inches="tight", pad_inches=0.1, frameon=False, transparent=True)
     plt.clf()
     plt.cla()
@@ -468,6 +468,7 @@ def plot_posts_by_group_by_month(year,month=0):
     plt.rcParams['axes.labelcolor'] = "#42b983"
     plt.rcParams['xtick.color'] = "#42b983"
     plt.rcParams['ytick.color'] = "#42b983"
+    plt.figure(figsize=(15, 8))  # Increase the width and height as needed
     plt.bar(groups, counts, color="#42b983")
     plt.xlabel('Group Name\n© Ransomware.live')
     plt.xticks(rotation=90)
