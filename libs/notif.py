@@ -6,7 +6,7 @@ from datetime import datetime, timezone
 from mastodon import Mastodon
 import tweepy
 
-def tobluesky(post_title,group):
+def victimtobluesky(post_title,group):
     try:
         from ransomwarelive import stdlog, errlog
         stdlog('Send Bluesky notification')
@@ -50,7 +50,51 @@ def tobluesky(post_title,group):
     except Exception as e:
         errlog(f'Error posting on bluesky : {e}')
 
-def tomattermost(post_title,group):
+def grouptobluesky(group):
+    try:
+        from ransomwarelive import stdlog, errlog
+        stdlog('Send Bluesky notification')
+        url = os.environ.get('BLUESKY_URL')
+        handle = os.environ.get('BLUESKY_HANDLE')
+        password = os.environ.get('BLUESKY_APP_PASSWORD')
+        resp = requests.post(url,
+                    json={"identifier": handle, "password": password},
+                )
+        resp.raise_for_status()
+        session = resp.json()
+        now = datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+        text= "Ransomware.live is beginning to monitor a new ransomware group : " + group.capitalize() + "."
+        startoffset = 65
+        uri = "https://ransomware.live/#/group/" + group
+        endoffset = len(text)-1 
+            # Required fields that each post must include
+        post = {
+                "$type": "app.bsky.feed.post",
+                "text": text,
+                "createdAt": now,
+                "facets": [{
+                    "index": {
+                    "byteStart": startoffset,
+                    "byteEnd": endoffset,
+                    },
+                "features": [{
+                    "$type": "app.bsky.richtext.facet#link",
+                    "uri": uri,
+                    }],
+                }],
+            }
+        resp = requests.post("https://bsky.social/xrpc/com.atproto.repo.createRecord",
+                    headers={"Authorization": "Bearer " + session["accessJwt"]},
+                    json={
+                        "repo": session["did"],
+                        "collection": "app.bsky.feed.post",
+                        "record": post,
+                    },
+            )
+    except Exception as e:
+        errlog(f'Error posting on bluesky : {e}')
+
+def victimtomattermost(post_title,group):
     from ransomwarelive import stdlog, errlog
     stdlog('Send Mattermost notification')
     webhook=os.environ.get('MATTERMOST_WEBHOOK')

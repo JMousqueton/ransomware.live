@@ -433,15 +433,14 @@ def appender(post_title, group_name, description="", website="", published="", p
     if len(post_title) == 0:
         stdlog('post_title is empty')
         return
-    # Check exclusion 
-    if isexception(post_title, group_name):
-        stdlog('Exception found for ' + post_title)
-        return
-    # limit length of post_title to 90 chars
     if len(post_title) > 90:
         post_title = post_title[:90]
     post_title = html.unescape(post_title)
     post_title = clean_string(post_title)
+    # Check exclusion 
+    if isexception(post_title, group_name):
+        stdlog('Exception found for ' + post_title)
+        return
     if existingpost(post_title, group_name) is False:
         stdlog(f'adding new post - group: {group_name}  title: {post_title}   website: {website}')
         ## Post Infostealer information 
@@ -487,7 +486,7 @@ def appender(post_title, group_name, description="", website="", published="", p
         if 'PUSH_API' in os.environ and os.environ['PUSH_API']:
             notif.toPushover(post_title, group_name)
         if 'BLUESKY_APP_PASSWORD' in os.environ and os.environ['BLUESKY_APP_PASSWORD']:
-            notif.tobluesky(post_title, group_name)
+            notif.victimtobluesky(post_title, group_name)
         if 'MATTERMOST_WEBHOOK' in os.environ and os.environ['MATTERMOST_WEBHOOK']:
             notif.tomattermost(post_title, group_name)
         ### Post screenshot
@@ -707,8 +706,6 @@ async def scrapegang(groupname,force=False):
                 filename = f"source/{group['name']}-{md5_hash(host['slug'])}.html"
                 async with async_playwright() as p:
                     try: 
-                        #browser = await p.firefox.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"})
-                        #browser = await p.chromium.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
                         if group['name'] in CHROMIUM_PROXY_GROUPS:
                             stdlog(f"Using Chromium with TOR proxy for {group['name']}")
                             browser = await p.chromium.launch(headless=True, proxy={"server": "socks5://127.0.0.1:9050"}, args=['--ignore-certificate-errors'])
@@ -730,8 +727,6 @@ async def scrapegang(groupname,force=False):
                     except Exception as e:
                         errlog(f'Scrapping failled for {host["slug"]} with error : {e}')
                     stdlog(f'Finished scraping {host["slug"]} for {group["name"]}')
-
-
 
 async def screenshot(url,filename):
     async with async_playwright() as p:
@@ -808,7 +803,7 @@ async def screenshotgangs():
                     errlog(f'Screenshot of {host["slug"]} has failled with error {e}')
                 stdlog(f'Finished screenshot{host["slug"]} for {group["name"]}')
 
-def searchvictim(name, search_website=False):
+def searchvictim(name):
     with open(VICTIMS_FILE, 'r') as file:
         data = json.load(file)
         
@@ -817,23 +812,20 @@ def searchvictim(name, search_website=False):
             data = [data]
         
         # Search logic
-        if search_website:
-            matching_posts = [
-                post for post in data if (
-                    name.lower() in post.get('website', '').lower() or 
-                    name.lower() in post.get('post_title', '').lower()
-                )
-            ]
-        else:
-            matching_posts = [
-                post for post in data if name.lower() in post.get('post_title', '').lower()
-            ]
+
+        matching_posts = [
+            post for post in data if (
+                name.lower() in post.get('website', '').lower() or 
+                name.lower() in post.get('post_title', '').lower()
+            )
+        ]
         
         total_matches = len(matching_posts)
         
         # Print matching posts with counter
         for idx, post in enumerate(matching_posts, start=1):
             if post.get('post_url',None) is not None:
+
                 hash_object = hashlib.md5()
                 # Update the hash object with the string
                 hash_object.update(post['post_url'].encode('utf-8'))
@@ -850,14 +842,21 @@ def searchvictim(name, search_website=False):
             print("\033[1m Description:\033[0m ", post.get('description', '\033[3mN/A\033[0m'))
             if is_fqdn(post.get('post_title')):
                 print("\033[1m Domain:\033[0m ", post.get('post_title', '\033[3mN/A\033[0m'))
+                website = post.get('post_title')
+            elif post.get('website') and is_fqdn(post.get('website')):
+                print("\033[1m Domain:\033[0m ", post.get('website', '\033[3mN/A\033[0m'))
+                website = post.get('website')
             else:
+                website = post.get('website')
                 print("\033[1m Website:\033[0m ", post.get('website', '\033[3mN/A\033[0m'))
             print("\033[1m Published:\033[0m ", post.get('published', '\033[3mN/A\033[0m'))
             print("\033[1m Post URL:\033[0m ", post.get('post_url', '\033[3mN/A\033[0m'))
             print(screenshot,end=" ")
             print("\033[1mCountry:\033[0m " +  post.get('country', '\033[3mN/A\033[0m'))
             print("\033[1m Activity:\033[0m ", post.get('activity', '\033[3mN/A\033[0m'))
+            print("\033[1m Infostealer:\033[0m ", search_domain_for_infostealer(website))
             print( "-"*50)
+
 
 def siteadder(name, location):
     '''
@@ -889,16 +888,20 @@ def siteappender(name, location):
     if success:
         with open(GROUPS_FILE, 'w', encoding='utf-8') as groupsfile:
             json.dump(groups, groupsfile, ensure_ascii=False, indent=4)
+            notif.grouptobluesky(name)
     else:
         errlog('Ransomware.live : Cannot append to non-existing provider')
 
 
 def search_domain_for_infostealer(domain):
-    hr_file = DATA_DIR + 'hudsonrock.json'
-    extracted = tldextract.extract(domain)
-    fqdn = f"{extracted.domain}.{extracted.suffix}"
-    data = openjson(hr_file)
-    if fqdn in data:
-        print(f"Infostealer Information about \033[1m{fqdn}\033[0m: {data[fqdn]}")
-    else:
-        print(f"Not infostealer information found for \033[1m{fqdn}\033[0m in the database.")
+    if domain:
+        hr_file = DATA_DIR + 'hudsonrock.json'
+        try:
+            extracted = tldextract.extract(domain)
+            fqdn = f"{extracted.domain}.{extracted.suffix}"
+            data = openjson(hr_file)
+            if fqdn in data:
+                result = fqdn + ' ' + str(data[fqdn])
+                return result
+        except:
+            return " Not information found in the database."
