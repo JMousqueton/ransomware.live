@@ -28,11 +28,7 @@ def main():
                     title = card.find('h5', class_='card-title').text.strip()
                     description = card.find('p', class_='card-text').text.strip()
                     link = card.find('a')['href']
-                    post_url = find_slug_by_md5('hellogookie', extract_md5_from_filename(html_doc)) + link
-                    #print(f"Title: {title}")
-                    #print(f"Description: {description}")
-                    #print(f"Link: {post_url}\n")
-                    
+                    post_url = find_slug_by_md5('hellogookie', extract_md5_from_filename(html_doc)) + link                    
                     appender(title, 'hellogookie',description,'','',post_url)
                 file.close()
                  

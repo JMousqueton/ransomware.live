@@ -19,7 +19,7 @@ from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_
 
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('cryptbb-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -40,5 +40,5 @@ def main():
                     # def appender(post_title, group_name, description="", website="", published="", post_url=""):
                     appender(victim, 'cryptbb', description, '', formatted_date, post_url)
                 file.close()
-        #except:
-        #    errlog("Failed during : " + filename)
+        except:
+            errlog("Failed during : " + filename)

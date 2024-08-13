@@ -4,7 +4,7 @@
     +----------------------------------------------+
     | Description | Website | published | post URL |
     +-----------------------+-----------+----------+
-    |       X     |         |           |     X    |
+    |       X     |         |     X     |     X    |
     +-----------------------+-----------+----------+
     Rappel : def appender(post_title, group_name, description="", website="", published="", post_url="")
 """
@@ -18,10 +18,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs
 from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_by_md5, appender
 
 def main():
-
-    # Define the date format to convert to
-    date_format = "%Y-%m-%d %H:%M:%S.%f"
-    
+    date_format = "%Y-%m-%d %H:%M:%S.%f"   
     ## Get the ransomware group name from the script name 
     script_path = os.path.abspath(__file__)
     # If it's a symbolic link find the link source 
@@ -36,7 +33,6 @@ def main():
     else:
         script_name = os.path.basename(script_path)
         group_name = script_name.replace('.py','')
-
     for filename in os.listdir('source'):
         try:
             if filename.startswith(group_name+'-'):

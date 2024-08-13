@@ -31,5 +31,5 @@ def main():
                     appender(title, 'abyss', description.replace('\n',' '))
                 file.close()
         except:
-            errlog('blackbasta: ' + 'parsing fail')
+            errlog('abyss: ' + 'parsing fail')
             pass    

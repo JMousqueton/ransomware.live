@@ -37,7 +37,7 @@ def main():
                     appender(title, 'darkrace', description, '', published, post_url)
                 file.close()
         except:
-            errlog('ragroup: ' + 'parsing fail')
+            errlog('darkrace: ' + 'parsing fail')
             pass    
 
 

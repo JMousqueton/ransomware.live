@@ -33,8 +33,8 @@ def main():
                 for card in cards:
                     title_tag = card.find('div', class_='card-title').strong
                     title = title_tag.get_text(strip=True).replace('(SOLD)','').replace('<SOLD>','').replace('<','').replace('>','').replace('<Disclose>','').replace('Updated','')
-                    # url = find_slug_by_md5('ransomhub', extract_md5_from_filename(html_doc))
-                    url = "http://ransomxifxwc5eteopdobynonjctkxxvap77yqifu2emfbecgbqdw6qd.onion"
+                    url = find_slug_by_md5('ransomhub', extract_md5_from_filename(html_doc))
+                    #url = "http://ransomxifxwc5eteopdobynonjctkxxvap77yqifu2emfbecgbqdw6qd.onion"
                     link = card.find_parent('a')['href']
                     post_date = convert_date(card.find('div', class_='card-footer').get_text(strip=True))
                     post_url= url + '/' + link
