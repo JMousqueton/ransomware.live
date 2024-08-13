@@ -10,6 +10,7 @@ from collections import Counter
 import pandas as pd
 import folium
 import seaborn as sns
+from PIL import Image
 
 from mypycountries import get_coordinates, get_country_name # https://github.com/JMousqueton/MyPyCountries 
 
@@ -976,6 +977,9 @@ def plot_group_activity(year):
         lambda x: 12 if pd.notna(x['discovered_next']) else month_mapping[x['max'].strftime('%b')], axis=1
     )
 
+    # Sort the DataFrame by group_name in reverse case-insensitive alphabetical order
+    merged_df = merged_df.sort_values(by='group_name', key=lambda x: x.str.lower(), ascending=False)
+
     # Plotting the lines with the adjusted start and end dates
     plt.figure(figsize=(18, 24))  # Increased height for more space between group names
     for _, row in merged_df.iterrows():
@@ -991,7 +995,26 @@ def plot_group_activity(year):
 
     # Save the figure
     plt.savefig(output_file)
+    create_thumbnail(output_file)
     add_watermark(output_file)
 
 
 
+def create_thumbnail(input_image_path, thumbnail_size=(256, 256)):
+    # Get the base name and extension of the input file
+    base_name, ext = os.path.splitext(input_image_path)
+    
+    # Create the output file name by appending '-small' before the extension
+    output_image_path = f"{base_name}-small{ext}"
+    # Open the image file
+    with Image.open(input_image_path) as img:
+        # Convert the image mode if necessary
+        if img.mode not in ('L', 'RGB'):
+            img = img.convert('RGB')
+        
+        # Create the thumbnail
+        img.thumbnail(thumbnail_size)
+        
+        # Save the thumbnail
+        img.save(output_image_path)
+        stdlog(f'Thumbnail saved to {output_image_path}')

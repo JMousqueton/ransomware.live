@@ -121,5 +121,6 @@ async def run_query(domain_name):
     config = query_hudsonrock(domain_name)
     
     if config:
+        stdlog(f'Processing {domain_name} ...')
         client = TelegramClient('session_name', config['api_id'], config['api_hash'])
         await query_telegram(client, config['domain_name'], config['json_file_path'], config['timer'])

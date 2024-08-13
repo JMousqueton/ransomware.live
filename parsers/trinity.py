@@ -44,12 +44,12 @@ def main():
                 soup=BeautifulSoup(file,'html.parser')
                 articles = soup.find_all('div', id=lambda x: x and x.startswith('article_'))
                 for article in articles:
-                    website = article.find_all('p')[0].text.split(':', 1)[1].strip()
+                    victim = article.find_all('p')[0].text.split(':', 1)[1].strip()
                     description = article.find_all('p')[1].text.split(':', 1)[1].strip()
                     publication_time_str = article.find_all('p')[2].text.split(':', 1)[1].strip()
                     revenue = article.find_all('p')[3].text.split(':', 1)[1].strip()
                     link = article.find_next('a')['href']
-                    victim = article.find_all('p')[4].text.split(':', 1)[1].strip()
+                    website = article.find_all('p')[4].text.split(':', 1)[1].strip()
                 
                     publication_time = datetime.strptime(publication_time_str, '%Y-%m-%d %H:%M:%S %Z')    
                     publication = publication_time.strftime('%Y-%m-%d')

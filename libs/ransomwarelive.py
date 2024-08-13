@@ -37,7 +37,9 @@ import tldextract
 
 CHROMIUM_PROXY_GROUPS = [
     "cactus",
-    "hunters"
+    "hunters",
+    "helldown",
+    "trinity"
 ]
 
 ## TODO :
@@ -250,6 +252,11 @@ def md5_file(file_path, chunk_size=8192):
 def clean_string(s):
     s = clean_markdown(s)
     s = s.replace('[DISCLOSED]', '')  # Remove [DISCLOSED]
+    s = s.replace('<Auction>','')
+    s = s.replace('(SOLD)','')
+    s = s.replace('<SOLD>','')
+    s = s.replace('<Disclose>','')
+    s = s.replace('Updated','')
     s = re.sub(' +', ' ', s)  # Replace multiple spaces with a single space
     s = s.replace('Data Leak', '')
     s = s.replace('pt.2', '')
@@ -646,10 +653,13 @@ def rename_original_image(input_path):
 
 async def scrape(force=False):
     groups = openjson(GROUPS_FILE)
+    slug_count = sum(len(group["locations"]) for group in groups)
+    counter = 0 
     for group in groups:
         stdlog(f'Scraper is working on {group["name"]}')
         for host in group['locations']:
-            stdlog(f'Scraping {host["slug"]}')
+            counter += 1
+            stdlog(f'[{counter}/{slug_count}]Scraping {host["slug"]}')
             if not host['enabled'] and force == False:
                 stdlog('Skipping disabled host')
                 continue

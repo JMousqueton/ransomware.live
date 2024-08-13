@@ -708,11 +708,11 @@ def statuspage():
 def recentattackedpage():
     '''create a markdown table for the last 200 posts based on the published value'''
     fetching_count = 200
-    stdlog('Generating recent discovered victims page')
+    stdlog('Generating recent attacked victims page')
     recentpage = 'docs/recentattackedvictims.md'
     with open(recentpage, 'w', encoding='utf-8') as f:
         f.close()
-    writeline(recentpage,'# Recent discovered victims by Ransomware.live')
+    writeline(recentpage,'# Recent victims by Ransomware.live')
     writeline(recentpage,'')
     writeline(recentpage, '> [!INFO] `Ransomware.live` provides tracking of ransomware groups and their victims. Descriptions available in the [group profiles view](profiles.md)')
     writeline(recentpage, '> ')
@@ -801,7 +801,7 @@ def recentdiscoveredpage():
     recentpage = 'docs/recent.md'
     with open(recentpage, 'w', encoding='utf-8') as f:
         f.close()
-    writeline(recentpage,'# Recent discovered victims by Ransomware.live')
+    writeline(recentpage,'# Recent victims by Ransomware.live')
     writeline(recentpage,'')
     writeline(recentpage, '> [!INFO] `Ransomware.live` provides tracking of ransomware groups and their victims. Descriptions available in the [group profiles view](profiles.md)')
     writeline(recentpage, '> ')

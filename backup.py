@@ -15,7 +15,7 @@ import logging
 #from pprint import pprint
 
 # Backup destination
-base_backup_dir = "/root/backup"
+base_backup_dir = "/root/backup/"
 # Log File (future use)
 log_file = "/var/log/backup.log"  # Specify the path to your log file
 # Enable or disable gzip compression for .diff files
@@ -57,7 +57,7 @@ week_number = datetime.datetime.now().strftime("%Y-%U")
 stdlog("Backup started for week " + week_number)
 
 # Create the week-specific backup directory
-backup_dir = os.path.join(base_backup_dir, week_number)
+backup_dir = os.path.join(base_backup_dir, week_number) +  "/data"
 try:
     os.makedirs(backup_dir, exist_ok=True)
     stdlog("Backup directory created: " + backup_dir)
