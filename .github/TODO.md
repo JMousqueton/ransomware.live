@@ -11,3 +11,9 @@
 
 ## Enhancements
 - [ ] Rewrite some parses 
+
+## New features
+- [*] Timeline of ransomware gang activity
+- [*] Include last victim for each ransomware page 
+
+
