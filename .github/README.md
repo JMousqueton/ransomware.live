@@ -12,9 +12,9 @@ You can find all ransomware victims in **json** format [here](https://data.ranso
 ### Usage  
 
 ```
-./ransomwarelive.py --help
+./ransomcmd.py --help
     
-usage: ransomwarelive.py [-h] {scrape,parse,generate,screenshot,status,search,rss,infostealer,tools} ...
+usage: ransomcmd.py [-h] {scrape,parse,generate,screenshot,status,search,rss,infostealer,tools} ...
 
 positional arguments:
   {scrape,parse,generate,screenshot,status,search,rss,infostealer,tools}
