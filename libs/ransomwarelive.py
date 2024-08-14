@@ -484,6 +484,11 @@ def appender(post_title, group_name, description="", website="", published="", p
             country = gpt_query.query(prompt)
             if country:
                 stdlog(f'Found : {country}')
+        if GPT  and description == '':
+            stdlog(f'Query GPT for "{post_title}" description')
+            gpt_query = GPTQuery()
+            prompt = f'Can you provide a detailed description the company "{post_title}" in around 400 chars and without any links ?'
+            description = gpt_query.query(prompt)
         newpost = posttemplate(post_title, group_name, str(datetime.today()),description,clean_slug(website),published,post_url,country,activity)
         posts.append(newpost)
         with open(VICTIMS_FILE, 'w', encoding='utf-8') as outfile:

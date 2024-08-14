@@ -44,7 +44,7 @@ class GPTQuery:
         return text_after
 
 
-    def query(self, prompt, max_tokens=150):
+    def query(self, prompt, max_tokens=150,topic='activity'):
         """
         Sends a prompt to the GPT-4 model and returns the main activity sector of the company.
         
@@ -72,23 +72,24 @@ class GPTQuery:
                 stop=None,
                 temperature=0.7,
             )
-            sector = response.choices[0].message['content'].strip()
-            keywords = [
-            "sorry",
-            "the website",
-            "not available",
-            "as an ai",
-            "the domain",
-            "the website",
-            " isic ",
-            "without",
-            "not possible"
-            ]
-            if any(keyword in sector.lower() for keyword in keywords):
-                sector = "Not found"
-            pattern = r"\b\w\s-\s"
-            sector = re.sub(pattern, "", sector)
-            return sector
+            result = response.choices[0].message['content'].strip()
+            if topic == 'activiy':
+                keywords = [
+                    "sorry",
+                    "the website",
+                    "not available",
+                    "as an ai",
+                    "the domain",
+                    "the website",
+                    " isic ",
+                    "without",
+                    "not possible"
+                ]
+                if any(keyword in result.lower() for keyword in keywords):
+                    result = "Not found"
+                pattern = r"\b\w\s-\s"
+                result = re.sub(pattern, "", result)
+            return result
         except Exception as e:
             errlog("API GPT : An error occurred: " + e)
             return "Not found"
