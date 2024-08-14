@@ -89,6 +89,8 @@ class GPTQuery:
                     result = "Not found"
                 pattern = r"\b\w\s-\s"
                 result = re.sub(pattern, "", result)
+                pattern = r"\b\w\s:\s"
+                result = re.sub(pattern, "", result)
             return result
         except Exception as e:
             errlog("API GPT : An error occurred: " + e)
