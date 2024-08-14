@@ -362,11 +362,17 @@ friendly_tz = custom_strftime('%B {S}, %Y', datetime.now()).lower().capitalize()
 NowTime=datetime.now()
 
 
-def writeline(file, line):
+def writeline(file, line, file2=None):
     '''write line to file'''
     with open(file, 'a', encoding='utf-8') as f:
         f.write(line + '\n')
         f.close()
+    if file2:
+        with open(file2, 'a', encoding='utf-8') as f:
+            f.write(line + '\n')
+            f.close()
+
+
 
 
 def clean_string(s):
@@ -722,7 +728,7 @@ def statuspage():
                 line = '| [' + group['name'] + '](group/' + group['name'] + ') | ' + title + ' | ' + host['fqdn'] + ' | ' + screen + ' | ' 
                 writeline(index_sheet, line)
     writeline(index_sheet, '')
-    writeline(index_sheet, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
+    #writeline(index_sheet, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
     writeline(index_sheet, '')
 
 ###########################
@@ -906,6 +912,7 @@ def recentdiscoveredpage():
 def lastvictimspergroup():
     stdlog('generating last victim per group')
     page = 'docs/lastvictimspergroup.md'
+    index_sheet = 'docs/status.md'
     with open(page, 'w', encoding='utf-8') as f:
         f.close()
     # Load the data from the JSON files
@@ -956,12 +963,12 @@ def lastvictimspergroup():
                 'website': website,
                 'date_status' : date_status
             }
-    writeline(page, '')
-    writeline(page, '# Last victim per Ransomware Group')
-    writeline(page, '')
-    writeline(page, '')
-    writeline(page, '| Ransomware | Last Victim | Date | Status[<sup>*</sup>](lastvictimspergroup?id=-legend-) |')
-    writeline(page, '|---|---|---|---|')
+    writeline(page, '',index_sheet)
+    writeline(page, '## 🎯 Last victim per Group',index_sheet)
+    writeline(page, '',index_sheet)
+    writeline(page, '',index_sheet)
+    writeline(page, '| Ransomware | Last Victim | Date | Status[<sup>*</sup>](lastvictimspergroup?id=-legend-) |',index_sheet)
+    writeline(page, '|---|---|---|---|',index_sheet)
     # Print the last post title, published date, and website for each group with a last post
     for group_name, info in last_posts_info.items():
         if info['last_post_title'] != "No posts found": 
@@ -971,18 +978,18 @@ def lastvictimspergroup():
                 search_query = urllib.parse.quote(info['last_post_title'])
                 google_search_url = f"https://www.google.com/search?q={search_query}"
                 website =  google_search_url
-            writeline(page, '| [`' + group_name + '`](group/' + group_name +') |  ['+ info['last_post_title'] + '](' + website+ ') |' + info['published_date'] + ' |' + info['date_status'] + '|')
-    writeline(page, '')
-    writeline(page, '### <u> Legend : </u>  ')
-    writeline(page, '')
-    writeline(page, '🟢  less 3 months old')
-    writeline(page, '')
-    writeline(page, '🟠  between 3 months and 6 months old')
-    writeline(page, '')
-    writeline(page, '🔴  older than 6 months')
-    writeline(page, '')
-    writeline(page, '')
-    writeline(page, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_')
+            writeline(page, '| [`' + group_name + '`](group/' + group_name +') |  ['+ info['last_post_title'] + '](' + website+ ') |' + info['published_date'] + ' |' + info['date_status'] + '|',index_sheet)
+    writeline(page, '',index_sheet)
+    writeline(page, '### <u> Legend : </u>  ',index_sheet)
+    writeline(page, '',index_sheet)
+    writeline(page, '🟢  less 3 months old',index_sheet)
+    writeline(page, '',index_sheet)
+    writeline(page, '🟠  between 3 months and 6 months old',index_sheet)
+    writeline(page, '',index_sheet)
+    writeline(page, '🔴  older than 6 months',index_sheet)
+    writeline(page, '',index_sheet)
+    writeline(page, '',index_sheet)
+    writeline(page, 'Last update : _'+ NowTime.strftime('%A %d/%m/%Y %H.%M') + ' (UTC)_',index_sheet)
     stdlog('Last victim per ransomware page generated')
 
 ###################################
