@@ -122,6 +122,7 @@ async def process_posts():
             if domain:
                 data = load_json_file(json_file_path)
                 if domain not in data:
+                    print(f'Quering {domain} for infostealer')
                     await query_telegram(domain)
                     await asyncio.sleep(timer)  # Sleep for the specified timer duration
                 else:

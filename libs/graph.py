@@ -988,9 +988,9 @@ def plot_group_activity(year):
     # Formatting the plot
     plt.yticks(range(len(merged_df)), merged_df['group_name'])
     plt.xticks(range(1, 13), month_mapping.keys())
-    plt.xlabel('Month')
+    plt.xlabel('Month\n© Ransomware.live')
     plt.ylabel('Ransomware group')
-    plt.title(f'Group activity for {year}',fontsize=20)
+    plt.title(f'Ransomware Group Activity for Year {year}',fontsize=20)
     plt.grid(True)
 
     # Save the figure

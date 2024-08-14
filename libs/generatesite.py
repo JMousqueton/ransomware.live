@@ -146,6 +146,25 @@ def postcount():
     return post_count
 
 
+def count_OpenCTI(log_file_path, user_agent="OpenCTI Connector"):
+    # Regular expression to extract the IP address and user agent from the log file
+    log_pattern = re.compile(r'(?P<ip>\b(?:\d{1,3}\.){3}\d{1,3}\b).*?"[^"]*".*?"([^"]*)".*?"(?P<user_agent>[^"]+)"')
+    unique_ips = set()
+    try: 
+        with open(log_file_path, 'r') as log_file:
+            for line in log_file:
+                match = log_pattern.search(line)
+                if match:
+                    ip = match.group('ip')
+                    ua = match.group('user_agent')
+                    if user_agent in ua:
+                        unique_ips.add(ip)
+
+        return len(unique_ips)
+    except:
+        return('0')
+
+
 def recentdiscoveredposts(top):
     '''
     create a list the last X posts (most recent)
@@ -602,6 +621,10 @@ def mainpage():
     writeline(uptime_sheet, '')
     writeline(uptime_sheet, '⚙️ Ransomware.live has `' + str(parsercount()) + '` active parsers for indexing victims')
     writeline(uptime_sheet, '')
+    if os.getenv('API_LOG',False):
+        stdlog('Get API log')
+        writeline(uptime_sheet, '🔎 Ransomware.live is being queried by `' + str(count_OpenCTI(os.getenv('API_LOG'))) + '` instances of [OpenCTI](https://filigran.io/solutions/open-cti/)')
+        writeline(uptime_sheet, '')
     writeline(uptime_sheet, 'So far, Ransomware.live has indexed `' + str(postcount()) + '` victims')
     with open(VICTIMS_FILE) as file:
         data = json.load(file)
