@@ -39,7 +39,10 @@ CHROMIUM_PROXY_GROUPS = [
     "cactus",
     "hunters",
     "helldown",
-    "trinity"
+    "trinity",
+    "akira",
+    "flocker",
+    "metaencrytor"
 ]
 
 ## TODO :
@@ -144,7 +147,8 @@ def get_country(victim,description='',website=''):
 
     result = ''
     country_name = ''
-
+    if description == None:
+        description = ''
     if description.startswith("Country:"):
         country_name = description.replace("Country:", "").strip()
     elif description.startswith("Country : "):
@@ -268,10 +272,13 @@ def clean_string(s):
     return s
 
 def clean_markdown(s):
-    chars_to_remove='|\t\b\n\r'
-    for char in chars_to_remove:
-        s = s.replace(char, ' ')
-    return s
+    try:
+        chars_to_remove='|\t\b\n\r'
+        for char in chars_to_remove:
+            s = s.replace(char, ' ')
+        return s
+    except:
+        return s
 
 def add_metadata(output):
     image = Image.open(output)
@@ -484,11 +491,13 @@ def appender(post_title, group_name, description="", website="", published="", p
             country = gpt_query.query(prompt)
             if country:
                 stdlog(f'Found : {country}')
-        if GPT  and description == '':
+        if GPT and description == '':
             stdlog(f'Query GPT for "{post_title}" description')
             gpt_query = GPTQuery()
             prompt = f'Can you provide a detailed description the company "{post_title}" in around 400 chars and without any links ?'
             description = gpt_query.query(prompt,topic='activity')
+        if description == None:
+            description = ''
         newpost = posttemplate(post_title, group_name, str(datetime.today()),description,clean_slug(website),published,post_url,country,activity)
         posts.append(newpost)
         with open(VICTIMS_FILE, 'w', encoding='utf-8') as outfile:

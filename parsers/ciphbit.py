@@ -31,7 +31,7 @@ def convert_date_format(input_date):
 
 def main():
     for filename in os.listdir('source'):
-        try:
+        #try:
             if filename.startswith('ciphbit-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -51,7 +51,7 @@ def main():
                     p_elements = h2.find_parent().find_all('p')
                     description = ' '.join(p.get_text() for p in p_elements)
                     description = description.replace('\n',' ')
-                    appender(remove_multiple_spaces(victim), 'ciphbit', remove_multiple_spaces(description),website,published)
+                    appender(victim, 'ciphbit', description,website,published)
                 file.close()
-        except:
-            errlog("Failed during : " + filename)
+        #except:
+        #    errlog("Failed during : " + filename)

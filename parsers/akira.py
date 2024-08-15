@@ -8,7 +8,7 @@
     Rappel : def appender(post_title, group_name, description="", website="", published="", post_url="")
 """
 
-import os,datetime,sys
+import os,datetime,sys, json, html
 from bs4 import BeautifulSoup
 import datetime
 
@@ -39,6 +39,6 @@ def main():
                     #published = dt_object.strftime("%Y-%m-%d %H:%M:%S.%f")
                     appender(title.replace('\n',''), 'akira', description.replace('\n',' '),'',published)
                 file.close()
-        except:
-            errlog('akira: ' + 'parsing fail')
-            pass    
+        except Exception as e:
+            errlog(f"Akira parsinf failed with error: {e}")
+            
