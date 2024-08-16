@@ -84,7 +84,7 @@ cd ${RL_HOME_DIR}
 ## Download carto pdf 
 curl https://raw.githubusercontent.com/cert-orangecyberdefense/ransomware_map/main/OCD_WorldWatch_Ransomware-ecosystem-map.pdf -o ${RL_HOME_DIR}/docs/OCD_WorldWatch_Ransomware-ecosystem-map.pdf
 
-cd ./import
+cd ./import/Ransomchats
 git fetch
 # Vérifier s'il y a des mises à jour
 if git diff --quiet HEAD origin/main; then

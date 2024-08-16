@@ -250,12 +250,12 @@ def generatenegotiationindex():
                     dir_name = 'BlackBasta'
                 case _:
                     dir_name = group_name.capitalize()
-            if is_file_less_than_days_old('./import/'+dir_name+'/'+chat_name+'.json'):
+            if is_file_less_than_days_old('./import/Ransomchats/'+dir_name+'/'+chat_name+'.json'):
                 note = '  🆕' 
             else:
                 note ='' 
 
-            with open('./import/'+dir_name+'/'+chat_name+'.json') as srcfile:
+            with open('./import/Ransomchats/'+dir_name+'/'+chat_name+'.json') as srcfile:
                     data = json.load(srcfile)
             chat_id = data['chat_id'].replace('\n',' ')
             count = sum(1 for message in data['messages'] if 'content' in message)
@@ -271,7 +271,7 @@ def generatenegotiationindex():
                     chat_id = 'Date: ' + date_object.strftime("%Y-%m-%d") 
                 except:
                     pass
-            metafile = './import/'+dir_name+'/'+chat_name+'.meta'
+            metafile = './import/Ransomchats/'+dir_name+'/'+chat_name+'.meta'
             if os.path.isfile(metafile):
                 with open(metafile, 'r') as file:
                     content = file.read().strip()

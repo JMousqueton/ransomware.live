@@ -351,8 +351,8 @@ if __name__ == '__main__':
         ransomwarelive.stdlog('sitemap.html generated')
         ransomnotes.generate_ransom_notes()
         ransomwarelive.stdlog('Ransom Notes generated')
-        for gang in negotiations.get_gangs('./import'):
-            if gang not in ['./import/parsers', './import/.git']:
+        for gang in negotiations.get_gangs('./import/Ransomchats'):
+            if gang not in ['./importRansomchats/parsers', './import/Ransomchats/.git']:
                 negotiations.parse_group(gang)
         negotiations.generatenegotiationindex()
         ransomwarelive.stdlog('Ransomware Negotiation generated')
