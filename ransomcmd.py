@@ -58,23 +58,31 @@ import mystripe
 
 SOURCE='./source'
 
-
 ## Functions
 
 def create_lock_file(LOCK_FILE):
     """Create a lock file to prevent multiple instances."""
     if os.path.exists(LOCK_FILE):
-        print("Program is already running.")
-        sys.exit(1)
-    else:
-        open(LOCK_FILE, 'w').close()
-        atexit.register(remove_lock_file,LOCK_FILE)
+        # Check the file's modification time
+        file_mtime = os.path.getmtime(LOCK_FILE)
+        current_time = time.time()
+        
+        # If the lock file is older than 3 hours (3 * 3600 seconds)
+        if current_time - file_mtime > 3 * 3600:
+            ransomwarelive.errlog("Lock file is older than 3 hours, removing it.", True)
+            remove_lock_file(LOCK_FILE)
+        else:
+            ransomwarelive.errlog("Program is already running.")
+            sys.exit(1)
+    
+    # Create the lock file
+    open(LOCK_FILE, 'w').close()
+    atexit.register(remove_lock_file, LOCK_FILE)
 
 def remove_lock_file(LOCK_FILE):
     """Remove the lock file on program exit."""
     if os.path.exists(LOCK_FILE):
         os.remove(LOCK_FILE)
-
 
 def get_process_info():
     processes = []
@@ -118,7 +126,6 @@ def check_lock_file():
         print(f"The \033[1mlock file\033[0m was created on: \033[1m{creation_time_formatted}\033[0m ({elapsed_minutes} minutes ago)")
     else:
         print("The \033[1mlock file\033[0m does not exist.")
-
 
 
 if __name__ == '__main__':
