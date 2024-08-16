@@ -108,6 +108,30 @@ else
     fi
 fi
 
+cd ./import/Ransomware-Tool-Matrix
+git fetch
+# Vérifier s'il y a des mises à jour
+if git diff --quiet HEAD origin/main; then
+    echo "Aucune mise à jour disponible."
+else
+    echo "Mise à jour détectée. Exécution de git pull..."
+    git pull
+    # Exécuter le script Python s'il y a eu une mise à jour
+    if [ $? -eq 0 ]; then
+        echo "Exécution de la mise à jour ..."
+        cd ..
+        if [ -z "$PUSH_USER" ]; then
+            curl -s \
+            --form-string "token=${PUSH_API}" \
+            --form-string "user=${PUSH_USER}" \
+            --form-string "message=New Ransomware Intelhave been added" \
+            https://api.pushover.net/1/messages.json > /dev/null
+        fi
+    else
+        echo "Erreur lors de la mise à jour du référentiel."
+    fi
+fi
+
 cd ${RL_HOME_DIR}
 SCRAPE_BEGIN_TIME=$(date +%s)
 python3 ransomcmd.py scrape

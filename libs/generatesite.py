@@ -10,7 +10,7 @@ from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
 #import datetime
 import pandas as pd
-from ransomwarelive import stdlog, errlog, openjson, clean_markdown
+from ransomwarelive import stdlog, errlog, openjson, clean_markdown, get_tools_by_group
 from countryinfo import CountryInfo
 import requests
 from bs4 import BeautifulSoup
@@ -1062,6 +1062,10 @@ def profilepage():
             for profile in group['profile']:
                 writeline(profilepage, '- ' + profile)
                 writeline(profilepage, '')
+            writeline(profilepage, '')
+            writeline(profilepage, '> provided by [Ransomware-Tool-Matrix](https://github.com/BushidoUK/Ransomware-Tool-Matrix)')
+            writeline(profilepage, '')
+                
         cpt_note = 0 
         directory = 'docs/ransomware_notes/' + group['name'] +'/'
         if directory_exists(directory):
@@ -1290,14 +1294,21 @@ def groupprofilepage():
         except:
             writeline(profilepage, '')
         ## add notes if present
-        if group['meta'] is not None:
-            writeline(profilepage, '_`' + group['meta'] + '`_')
+        #if group['meta'] is not None:  
+        #    writeline(profilepage, '_`' + group['meta'] + '`_')
+        #    writeline(profilepage, '')
+        if os.path.exists(f"docs/ttps/{group['name']}.md"):
+            writeline(profilepage, '')
+            writeline(profilepage, f"🛠️ [Tools used by {group['name']}](ttps/{group['name']}.md)")
             writeline(profilepage, '')
         if len(group['profile']):
             writeline(profilepage, '### External analysis')
             for profile in group['profile'][:10]:
                 writeline(profilepage, '- ' + profile)
                 writeline(profilepage, '')
+            writeline(profilepage, '')
+            writeline(profilepage, '> provided by [Ransomware-Tool-Matrix](https://github.com/BushidoUK/Ransomware-Tool-Matrix)')
+            writeline(profilepage, '')
         if group['parser']:
             writeline(profilepage,'')
             writeline(profilepage,'🔎 `ransomware.live`has an active parser for indexing '+ group['name']+'\'s victims')
@@ -1929,5 +1940,42 @@ def generate_country_reports():
         #stdlog('Create page for ' + country_code)
         create_country_victims_file(country_code, victims_data,html_content)
 
+def ttps():
+    with open('./data/groups.json', 'r') as json_file:
+        groups_data = json.load(json_file)
 
+    # Check each group for a StopRansomware report and replace the profile if found
+    for group in groups_data:
+        update = False
+        original_group_name = group['name']
+        group_name = group['name'].lower()
+
+        if group_name == 'lockbit':
+            group_name = 'lockbit_old'
+        elif group_name == 'lockbit3':
+            group_name = 'lockbit'
+
+        with open('template_ttps.md', 'r') as file:
+            template_content = file.read()
+        
+        new_content = template_content
+        
+        for file_tools in ['CredentialTheft', 'DefenseEvasion', 'DiscoveryEnum', 'Exfiltration', 'LOLBAS', 'Networking', 'Offsec', 'RMM-Tools']:
+            tools = get_tools_by_group(group_name, f'./import/Ransomware-Tool-Matrix/Tools/{file_tools}.md')
+            
+            if tools:
+                tools_list = ''
+                for tool in tools:   
+                    tools_list += '* ' + tool + '\n'  # Accumulate the tool list correctly
+                new_content = new_content.replace('{{' + file_tools + '}}', tools_list)
+                update = True 
+            else:
+                new_content = new_content.replace('{{' + file_tools + '}}', 'N/A')
+
+        if update:
+            new_content = new_content.replace('{{GROUPE_NAME}}', original_group_name)
+            with open(f'./docs/ttps/{original_group_name}.md', 'w') as new_file:
+                new_file.write(new_content)
+
+        
 

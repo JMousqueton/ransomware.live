@@ -33,6 +33,9 @@ import hudsonrock
 import pycountry
 import tldextract
 
+# Import for update groups
+import pandas as pd
+
 ## EXCEPTION 
 
 CHROMIUM_PROXY_GROUPS = [
@@ -581,6 +584,108 @@ def getapex(slug):
     if stripurl.subdomain:
         return stripurl.subdomain + '.' + stripurl.domain + '.' + stripurl.suffix
     return stripurl.domain + '.' + stripurl.suffix
+
+
+def get_ransomware_report(group, file_path):
+    # Read the markdown file
+    try:
+        with open(file_path, 'r') as file:
+            lines = file.readlines()
+    except:
+        stderr('File {file_path} is not found')
+        return None
+
+    # Extract the lines that contain the table
+    table_lines = [line.strip() for line in lines if '|' in line and '---' not in line]
+
+    # Parse the table data
+    data = []
+    for line in table_lines[1:]:  # Skip the header line
+        columns = line.split('|')[1:-1]  # Split by '|' and ignore the first and last empty entries
+        columns = [col.strip() for col in columns]
+        data.append(columns)
+
+    # Create DataFrame
+    df = pd.DataFrame(data, columns=["Date Published", "Ransomware/Extortionist", "#StopRansomware Report"])
+
+    # Clean the "Ransomware/Extortionist" column
+    df['Ransomware/Extortionist'] = df['Ransomware/Extortionist'].apply(lambda x: x.split()[0].split('/')[0].lower())
+
+    # Ensure the input group is lowercase
+    cleaned_group = group.lower()
+
+    # Search for the group in the DataFrame
+    result = df[df['Ransomware/Extortionist'] == cleaned_group]
+
+    # Return the report if found
+    if not result.empty:
+        return result['#StopRansomware Report'].values[0]
+    else:
+        return None
+
+
+def get_tools_by_group(ransomware_group, file_path):
+    tools_by_group = {}
+    try:
+        with open(file_path, 'r') as file:
+            lines = file.readlines()
+    except:
+        return None
+    # Parse the file to extract the tool and the associated threat groups
+    for line in lines:
+        if '|' in line and 'Tool Name' not in line:
+            parts = [part.strip() for part in line.split('|') if part.strip()]
+            if len(parts) == 2:
+                tool_name = parts[0]
+                threat_groups = [group.strip().lower().replace(' ','') for group in parts[1].split(',')]
+                tools_by_group[tool_name] = threat_groups
+
+    # Filter tools by the specified ransomware group
+    tools_used = [tool for tool, groups in tools_by_group.items() if ransomware_group in groups]
+
+    return tools_used
+
+import json
+
+def update_groups_intel():
+    # Load the JSON data from the file
+    with open('./data/groups.json', 'r') as json_file:
+        groups_data = json.load(json_file)
+
+    # Mapping for group name corrections
+    group_name_mapping = {
+        'lockbit': 'lockbit_old',
+        'lockbit3': 'lockbit',
+        'vicesociety': 'vice'
+    }
+
+    # File paths for reports
+    report_files = [
+        './import/Ransomware-Tool-Matrix/ThreatIntel/CISAThreatGroups.md',
+        './import/Ransomware-Tool-Matrix/ThreatIntel/TrendMicroThreatGroups.md',
+        './import/Ransomware-Tool-Matrix/ThreatIntel/TheDFIRReportGroups.md'
+    ]
+
+    # Check each group for a StopRansomware report and replace the profile if found
+    for group in groups_data:
+        group_name = group['name'].lower()
+        group_name = group_name_mapping.get(group_name, group_name)  # Apply name correction if needed
+
+        group['profile'] = []
+
+        for report_file in report_files:
+            report = get_ransomware_report(group_name, report_file)
+            if report:
+                report_entries = report.split(' / ')
+                group['profile'].extend(report_entries)
+
+    # Save the updated JSON back to a file
+    with open('./data/groups.json', 'w') as json_file:
+        json.dump(groups_data, json_file, indent=4)
+
+    stdlog("Groups updated successfully.")
+
+
 
 ############################
 #

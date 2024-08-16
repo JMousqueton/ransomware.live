@@ -278,6 +278,8 @@ if __name__ == '__main__':
             for key, value in data.items():
                 if value['employees'] > 0 or value['users'] > 0:
                     generatesite.write_domain_info(key, value['employees'], value['users'], value['thirdparties'], value['employees_url'], value['users_url'], value['update'])
+            ransomwarelive.update_groups_intel()
+            generatesite.ttps()
             generatesite.recentdiscoveredpage()
             generatesite.recentattackedpage()
             generatesite.lastvictimspergroup()
