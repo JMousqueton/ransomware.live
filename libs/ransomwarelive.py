@@ -45,7 +45,8 @@ CHROMIUM_PROXY_GROUPS = [
     "trinity",
     "akira",
     "flocker",
-    "metaencrytor"
+    "metaencrytor",
+    "blacksuit"
 ]
 
 ## TODO :
@@ -606,7 +607,7 @@ def get_ransomware_report(group, file_path):
         data.append(columns)
 
     # Create DataFrame
-    df = pd.DataFrame(data, columns=["Date Published", "Ransomware/Extortionist", "#StopRansomware Report"])
+    df = pd.DataFrame(data, columns=["Date Published", "Ransomware/Extortionist", "Report"])
 
     # Clean the "Ransomware/Extortionist" column
     df['Ransomware/Extortionist'] = df['Ransomware/Extortionist'].apply(lambda x: x.split()[0].split('/')[0].lower())
@@ -619,7 +620,7 @@ def get_ransomware_report(group, file_path):
 
     # Return the report if found
     if not result.empty:
-        return result['#StopRansomware Report'].values[0]
+        return result['Report'].values[0]
     else:
         return None
 
@@ -936,8 +937,6 @@ async def screenshot(url,filename):
             # Cleanup segment files
             for seg in segment_filenames:
                 os.remove(seg)
-            
-            
             
             
             
