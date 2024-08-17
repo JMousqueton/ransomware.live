@@ -785,12 +785,7 @@ def recentattackedpage():
             if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
                 screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>👀</a>'
             if len(post['country']) > 1:
-                match post['country']:
-                    case 'UK':
-                        flag = 'GB'
-                    case _:
-                        flag = post['country']
-                #country="!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':size=32x24 :no-zoom')"
+                flag = post['country']
                 country="[!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':size=32x24 :no-zoom')](country/"+flag.lower()+")"
             else:
                 country=''
@@ -874,11 +869,7 @@ def recentdiscoveredpage():
             if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
                 screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>👀</a>'
             if len(post['country']) > 1:
-                match post['country']:
-                    case 'UK':
-                        flag = 'GB'
-                    case _:
-                        flag = post['country']
+                flag = post['country']
                 country="[!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':size=32x24 :no-zoom')](country/"+flag.lower()+")"
             else:
                 country=''
@@ -1228,11 +1219,7 @@ def allposts():
             if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
                 screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>👀</a>'
             if len(post['country']) > 1:
-                match post['country']:
-                    case 'UK':
-                        flag = 'GB'
-                    case _:
-                        flag = post['country']
+                flag = post['country']
                 country="[!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':size=32x24 :no-zoom')](country/"+flag.lower()+")"
             else:
                 country=''
@@ -1297,6 +1284,10 @@ def groupprofilepage():
         #if group['meta'] is not None:  
         #    writeline(profilepage, '_`' + group['meta'] + '`_')
         #    writeline(profilepage, '')
+        if group['parser']:
+            writeline(profilepage,'')
+            writeline(profilepage,'🔎 `ransomware.live`has an active parser for indexing '+ group['name']+'\'s victims')
+            writeline(profilepage, '')  
         if os.path.exists(f"docs/ttps/{group['name']}.md"):
             writeline(profilepage, '')
             writeline(profilepage, f"🛠️ [Tools used by {group['name']}](ttps/{group['name']}.md)")
@@ -1309,10 +1300,6 @@ def groupprofilepage():
             writeline(profilepage, '')
             writeline(profilepage, '> provided by [Ransomware-Tool-Matrix](https://github.com/BushidoUK/Ransomware-Tool-Matrix)')
             writeline(profilepage, '')
-        if group['parser']:
-            writeline(profilepage,'')
-            writeline(profilepage,'🔎 `ransomware.live`has an active parser for indexing '+ group['name']+'\'s victims')
-            writeline(profilepage, '')  
         writeline(profilepage, '### URLs')
         writeline(profilepage, '| Title | Available | Last visit | fqdn | Screenshot ')
         writeline(profilepage, '|---|---|---|---|---|')        
@@ -1460,7 +1447,7 @@ def groupprofilepage():
                     hash_object.update(post['post_title'].replace('www.','').lower().encode('utf-8'))
                     # Get the hexadecimal representation of the hash
                     hex_digest = hash_object.hexdigest()
-                    website = post.get('website', '')
+                    website = post.get('website', '').lower()
                     if os.path.exists('docs/domain/'+hex_digest+'.md'):
                         infostealer=' [🔎](domain/'+hex_digest+') '
                     elif website:
@@ -1624,11 +1611,7 @@ def recentpublishedpage():
             if os.path.exists('docs/screenshots/posts/'+hex_digest+'.png'):
                 screenpost='<a href="https://images.ransomware.live/screenshots/posts/' + hex_digest + '.png" target=_blank>👀</a>'
         if len(post['country']) > 1:
-            match post['country']:
-                case 'UK':
-                    flag = 'GB'
-                case _:
-                    flag = post['country']
+            flag = post['country']
             country="[!["+flag+"](https://images.ransomware.live/flags/"+flag+".svg ':size=32x24 :no-zoom')](country/"+flag.lower()+")"
         else:
             country=''

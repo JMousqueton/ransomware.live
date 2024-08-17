@@ -309,7 +309,6 @@ if __name__ == '__main__':
             graph.trend_posts_per_day_2024()
             ransomwarelive.stdlog('generating stats page for ' +  str(year))
             currentgraph = 'docs/stats'+str(year)+'.md'
-            # Example usage:
             graph.plot_group_activity(year)
             with open(currentgraph, 'w', encoding='utf-8') as f:
                     f.close()
@@ -431,3 +430,4 @@ if __name__ == '__main__':
             ransomwarelive.blur_image(renamed_input_path, args.file)
     else:
         parser.print_help()
+

@@ -118,7 +118,7 @@ async def query_telegram(client, domain_name, json_file_path, timer):
     await client.disconnect()
 
 async def run_query(domain_name):
-    config = query_hudsonrock(domain_name)
+    config = query_hudsonrock(domain_name.lower())
     
     if config:
         stdlog(f'Processing {domain_name} ...')

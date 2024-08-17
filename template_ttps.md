@@ -1,7 +1,7 @@
 
 ## Tools used by **{{GROUPE_NAME}}**
 
-This page contains a list of which tools [`{{GROUPE_NAME}}`](group/`{{GROUPE_NAME}}) uses. 
+This page contains a list of which tools [`{{GROUPE_NAME}}`](group/{{GROUPE_NAME}}) uses. 
 
 > [!INFO]
 > This information is provided by [Ransomware-Tool-Matrix](https://github.com/BushidoUK/Ransomware-Tool-Matrix)
