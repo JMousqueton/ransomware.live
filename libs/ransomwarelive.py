@@ -267,6 +267,7 @@ def clean_string(s):
     s = s.replace('<Disclose>','')
     s = s.replace(', Updated data leak.','')
     s = s.replace('Updated','')
+    s = s.replace('uppdate','')
     s = s.replace('<','')
     s = s.replace('>','')
     s = re.sub(' +', ' ', s)  # Replace multiple spaces with a single space
