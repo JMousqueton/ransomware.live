@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Backup posts, groups and press json files 
+# Backup all files in the ./data directory 
 
 __author__ = "Julien Mousqueton"
 __copyright__ = "Copyright 2024, Ransomwarelive NG Project"
@@ -15,14 +15,13 @@ import logging
 #from pprint import pprint
 
 # Backup destination
-base_backup_dir = "/root/backup/"
+base_backup_dir = "/root/backup/"  # Directory to store backups
 # Log File (future use)
 log_file = "/var/log/backup.log"  # Specify the path to your log file
 # Enable or disable gzip compression for .diff files
 use_gzip = True  # Set to True to enable gzip compression
-# List of files to back up
-files = ["./data/victims.json", "./data/groups.json", "./data/press.json", "./data/hudsonrock.json", "/etc/nginx/sites-enabled/ransomware.conf"]
-
+# Source directory containing files to back up
+source_dir = "./data/"
 
 # Configure logging
 logging.basicConfig(
@@ -57,7 +56,7 @@ week_number = datetime.datetime.now().strftime("%Y-%U")
 stdlog("Backup started for week " + week_number)
 
 # Create the week-specific backup directory
-backup_dir = os.path.join(base_backup_dir, week_number) +  "/data"
+backup_dir = os.path.join(base_backup_dir, week_number) + "/data"
 try:
     os.makedirs(backup_dir, exist_ok=True)
     stdlog("Backup directory created: " + backup_dir)
@@ -65,18 +64,21 @@ except Exception as e:
     errlog("Failed to create backup directory " + backup_dir)
     exit(1)
 
+# Get the list of all files in the source directory
+files = [os.path.join(source_dir, file) for file in os.listdir(source_dir) if os.path.isfile(os.path.join(source_dir, file))]
+
 # Loop through the list of files to back up
 for file in files:
-    # Check if the source file exists
+    # Check if the source file exists (this should always be true as we filtered for files)
     if not os.path.exists(file):
         errlog("Source file does not exist: " + file)
         continue  # Skip this file and proceed to the next one
 
-    backup_file = os.path.join(backup_dir, f"{file}.{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.diff")
+    backup_file = os.path.join(backup_dir, f"{os.path.basename(file)}.{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}.diff")
 
     # Compare the current file with the backup (if it exists)
-    if os.path.isfile(os.path.join(backup_dir, file)):
-        with open(os.path.join(backup_dir, file), "r") as f1:
+    if os.path.isfile(os.path.join(backup_dir, os.path.basename(file))):
+        with open(os.path.join(backup_dir, os.path.basename(file)), "r") as f1:
             l1 = f1.readlines()
         with open(file, "r") as f2:
             l2 = f2.readlines()
@@ -105,7 +107,7 @@ for file in files:
                     errlog("Failed to gzip incremental file: " + backup_file)
     else:
         try:
-            shutil.copyfile(file, os.path.join(backup_dir, file))
+            shutil.copyfile(file, os.path.join(backup_dir, os.path.basename(file)))
             stdlog("Created new backup for week " + week_number + ": " + file)
         except Exception as e:
             errlog("Failed to create new backup for week " + week_number + ": " + file)
