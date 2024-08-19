@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 import os,hashlib
 from urllib.parse import urlparse
 import requests
-import deepl
 # For screenshot 
 from playwright.sync_api import sync_playwright, TimeoutError as PlaywrightTimeoutError
 # For watermark on screenshot 
@@ -14,13 +13,12 @@ from PIL import ImageDraw
 from datetime import datetime
 import time
 from dotenv import load_dotenv
+load_dotenv()
+
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs'))) 
 from ransomwarelive import stdlog, errlog
 
-load_dotenv()
-
-DEEPL_API_KEY = os.getenv('DEEPL_API_KEY')
 
 logging.basicConfig(
     format='%(asctime)s,%(msecs)d %(levelname)-8s %(message)s',
@@ -160,10 +158,6 @@ def country2flag(pays):
             flag=pays[:2]
     return "![" + pays + "](https://images.ransomware.live/flags/"+flag+".svg  ':size=32x24 :no-zoom')"
 
-def translate_text(text):
-    translator = deepl.Translator(DEEPL_API_KEY)
-    result     = translator.translate_text(text , target_lang='EN-US')
-    return result.text
 
 def recentcyberattacks():
     stdlog('Generating news markdown')
@@ -245,7 +239,7 @@ def recentcyberattacks():
 
 def allcyberattacks():
     stdlog('Generating all news markdown')
-    tweetspage = './docs/allcyberattacks.md'
+    tweetspage = 'docs/allcyberattacks.md'
     # delete contents of file
     with open(tweetspage, 'w', encoding='utf-8') as f:
         f.close()
@@ -321,4 +315,4 @@ print(
 
 recentcyberattacks()
 allcyberattacks()
-stdlog('ransomware.live: ' + 'Generating cyberattack  completed')
+stdlog('ransomware.live: ' + 'Generating news markdown completed')

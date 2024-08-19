@@ -46,7 +46,8 @@ CHROMIUM_PROXY_GROUPS = [
     "akira",
     "flocker",
     "metaencrytor",
-    "blacksuit"
+    "blacksuit",
+    "stormous"
 ]
 
 ## TODO :
@@ -800,7 +801,7 @@ async def scrape(force=False):
                         browser = await p.firefox.launch(args=['--ignore-certificate-errors'])
                     context = await browser.new_context(ignore_https_errors=True)
                     page = await context.new_page()
-                    await page.goto(host["slug"])
+                    await page.goto(host["slug"],timeout=60000)
                     await page.wait_for_timeout(10000)  # Wait for the page to fully load and execute JavaScript
                     html = await page.content()
                     with open(filename, 'w', encoding='utf-8') as file:

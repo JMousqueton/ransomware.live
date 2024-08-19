@@ -84,7 +84,7 @@ cd ${RL_HOME_DIR}
 ## Download carto pdf 
 curl https://raw.githubusercontent.com/cert-orangecyberdefense/ransomware_map/main/OCD_WorldWatch_Ransomware-ecosystem-map.pdf -o ${RL_HOME_DIR}/docs/OCD_WorldWatch_Ransomware-ecosystem-map.pdf
 
-cd ./import/Ransomchats
+cd ${RL_HOME_DIR}/import/Ransomchats
 git fetch
 # Vérifier s'il y a des mises à jour
 if git diff --quiet HEAD origin/main; then
@@ -108,7 +108,7 @@ else
     fi
 fi
 
-cd ./import/Ransomware-Tool-Matrix
+cd ${RL_HOME_DIR}/import/Ransomware-Tool-Matrix
 git fetch
 # Vérifier s'il y a des mises à jour
 if git diff --quiet HEAD origin/main; then
@@ -124,7 +124,7 @@ else
             curl -s \
             --form-string "token=${PUSH_API}" \
             --form-string "user=${PUSH_USER}" \
-            --form-string "message=New Ransomware Intelhave been added" \
+            --form-string "message=New Ransomware Intel have been added" \
             https://api.pushover.net/1/messages.json > /dev/null
         fi
     else
@@ -147,7 +147,8 @@ PARSE_EXECUTION_TIME=$((PARSE_END_TIME - PARSE_BEGIN_TIME))
 
 MARKDOWN_BEGIN_TIME=$(date +%s)
 # TODO: Need to be include in ransomwarelive library --> generatesite 
-python3 generatecyberattacks.py
+python3 get-cyberattacks-info.py
+python3 cyberattacks.py
 python3 ransomcmd.py generate
 MARKDOWN_END_TIME=$(date +%s)
 MARKDOWN_EXECUTION_TIME=$((MARKDOWN_END_TIME - MARKDOWN_BEGIN_TIME))

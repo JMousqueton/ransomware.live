@@ -50,7 +50,8 @@ def fetch_json_from_onion_url(onion_url):
         return None
 
     # Assuming the response contains JSON data, parse it
-    json_data = response.json()
+    #json_data = response.json()
+    json_data = openjson('dragon.json')
     return json_data
 
 def main():

@@ -14,7 +14,7 @@ from datetime import datetime
 
 ## Import Ransomware.live libs 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs')))
-from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_by_md5, appender
+from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_by_md5, appender, is_fqdn
 
 def main():
 
@@ -44,17 +44,31 @@ def main():
                 soup=BeautifulSoup(file,'html.parser')
                 articles = soup.find_all('div', id=lambda x: x and x.startswith('article_'))
                 for article in articles:
-                    victim = article.find_all('p')[0].text.split(':', 1)[1].strip()
+                    field1 = article.find_all('p')[0].text.split(':', 1)[1].strip()
                     description = article.find_all('p')[1].text.split(':', 1)[1].strip()
                     publication_time_str = article.find_all('p')[2].text.split(':', 1)[1].strip()
                     revenue = article.find_all('p')[3].text.split(':', 1)[1].strip()
                     link = article.find_next('a')['href']
-                    website = article.find_all('p')[4].text.split(':', 1)[1].strip()
+                    field2 = article.find_all('p')[4].text.split(':', 1)[1].strip()
+                    victim=''
+                    website=''
+                    field1 = re.sub(r'^https?://', '', field1).rstrip('/') 
+                    field2 = re.sub(r'^https?://', '', field2).rstrip('\/') 
+                    if is_fqdn(field1):
+                        website=field1
+                        if field2:
+                            victim=field2 
+                        else:
+                            victim=field1 
+                    if is_fqdn(field2):
+                        website=field2
+                        victim=field1 
                 
                     publication_time = datetime.strptime(publication_time_str, '%Y-%m-%d %H:%M:%S %Z')    
                     publication = publication_time.strftime('%Y-%m-%d')
                     if link:
                         link = find_slug_by_md5(group_name, extract_md5_from_filename(html_doc)) + link
+                        link = link.replace('article/article','article')
                     if revenue:
                         description += " - Revenue: " +  revenue
                     if publication:
