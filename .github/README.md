@@ -81,7 +81,7 @@ You can find more in [my resume](https://cv.julien.io) in English (also availabl
 
 ## 📫 Contact me
 
-You can contact me using the [following form](https://www.ransomware.live/contact.html). 
+You can contact me using the [following form](https://ransomwarelive.freshdesk.com/support/tickets/new). 
 
 ## 🤩 Credits
 
