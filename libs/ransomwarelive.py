@@ -303,11 +303,11 @@ def add_metadata(output):
 def get_metadata(image_path):
     image = Image.open(image_path)
     if isinstance(image.info, dict):
-        print(f"Metadata for {image_path}:")
+        stdlog(f"Metadata for {image_path}:")
         for key, value in image.info.items():
             print(f"{key}: {value}")
     else:
-        print(f"No metadata found for {image_path}")
+        errlog(f"No metadata found for {image_path}")
 
 def add_watermark(image_path, watermark_image_path=WATERMARK_IMAGE_PATH):
     """Adds a watermark image to the center of the input image."""
@@ -584,7 +584,6 @@ def getapex(slug):
     returns the domain for a given webpage/url slug
     '''
     stripurl = tldextract.extract(slug)
-    print(stripurl)
     if stripurl.subdomain:
         return stripurl.subdomain + '.' + stripurl.domain + '.' + stripurl.suffix
     return stripurl.domain + '.' + stripurl.suffix
@@ -596,10 +595,10 @@ def get_ransomware_report(group, file_path):
         with open(file_path, 'r') as file:
             lines = file.readlines()
     except FileNotFoundError:
-        print(f'File {file_path} not found')
+        errlog(f'File {file_path} not found')
         return None
     except Exception as e:
-        print(f'An error occurred: {str(e)}')
+        errlog(f'An error occurred: {str(e)}')
         return None
 
     # Extract the lines that contain the table
@@ -618,7 +617,7 @@ def get_ransomware_report(group, file_path):
             data.append(columns)
 
     if not data:
-        print('No valid data found in the table.')
+        errlog('No valid data found in the table.')
         return None
 
     # Create DataFrame
