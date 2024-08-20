@@ -17,7 +17,7 @@ from bs4 import BeautifulSoup
 
 ## Import Ransomware.live libs 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs')))
-from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_by_md5, appender
+from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_by_md5, appender, is_fqdn
 
 def main():
     ## Define the date format 
@@ -35,11 +35,17 @@ def main():
 
                 cards = soup.find_all('div', class_='card-container')
                 for card in cards:
-                    #title = card.find('div', class_='card-title').text
+                    victim = card.find('div', class_='card-title').text
+                    if is_fqdn(victim):
+                        website=title 
+                    else:
+                        website=''
                     link = card.find('a')['href']
-                    victim = card.find('p', class_='card-summary').text
+                    description = card.find('p', class_='card-summary').text
+                    if description != "Here's something encrypted, password is required to continue reading.":
+                        victim  = description 
                     post_url = find_slug_by_md5(group_name, extract_md5_from_filename(html_doc)) + link
-                    appender(victim, group_name, '', '','',post_url )
+                    appender(victim, group_name, victim, website,'',post_url )
         
                 ### END OF SPECIFIC CODE
 

@@ -267,7 +267,8 @@ def clean_string(s):
     s = s.replace('<Disclose>','')
     s = s.replace(', Updated data leak.','')
     s = s.replace('Updated','')
-    s = s.replace('uppdate','')
+    s = s.replace('update','')
+    s = s.replace('<disclose>','')
     s = s.replace('<','')
     s = s.replace('>','')
     s = re.sub(' +', ' ', s)  # Replace multiple spaces with a single space
@@ -594,37 +595,67 @@ def get_ransomware_report(group, file_path):
     try:
         with open(file_path, 'r') as file:
             lines = file.readlines()
-    except:
-        stderr('File {file_path} is not found')
+    except FileNotFoundError:
+        print(f'File {file_path} not found')
+        return None
+    except Exception as e:
+        print(f'An error occurred: {str(e)}')
         return None
 
     # Extract the lines that contain the table
     table_lines = [line.strip() for line in lines if '|' in line and '---' not in line]
+
+    if not table_lines:
+        errlog('No table found in the file.')
+        return None
 
     # Parse the table data
     data = []
     for line in table_lines[1:]:  # Skip the header line
         columns = line.split('|')[1:-1]  # Split by '|' and ignore the first and last empty entries
         columns = [col.strip() for col in columns]
-        data.append(columns)
+        if len(columns) == 3:  # Ensure that there are exactly three columns
+            data.append(columns)
+
+    if not data:
+        print('No valid data found in the table.')
+        return None
 
     # Create DataFrame
     df = pd.DataFrame(data, columns=["Date Published", "Ransomware/Extortionist", "Report"])
 
-    # Clean the "Ransomware/Extortionist" column
-    df['Ransomware/Extortionist'] = df['Ransomware/Extortionist'].apply(lambda x: x.split()[0].split('/')[0].lower())
+    # Function to clean and extract all group names
+    def extract_groups(text):
+        text = text.lower()
+        # Extract primary group and all aliases within parentheses
+        if '(' in text and ')' in text:
+            main_group, aliases = text.split('(', 1)
+            aliases = aliases.rstrip(')').replace(' ', '').split(',')
+            all_groups = [main_group.strip()] + aliases
+        else:
+            all_groups = [text.strip()]
+        return all_groups
 
-    # Ensure the input group is lowercase
+    # Apply the extraction function
+    df['Group List'] = df['Ransomware/Extortionist'].apply(extract_groups)
+    df['Group List'] = df['Group List'].astype(str).str.replace(" ", "").str.replace('international','')
+
+    # Flatten the list of groups and match against the input
     cleaned_group = group.lower()
 
+
+    df['Match'] = df['Group List'].apply(lambda groups: cleaned_group in groups)
+
     # Search for the group in the DataFrame
-    result = df[df['Ransomware/Extortionist'] == cleaned_group]
+    result = df[df['Match']]
 
     # Return the report if found
     if not result.empty:
-        return result['Report'].values[0]
+        return ' / '.join(f"{report}" for report in result['Report'].values)
+        # return result['Report'].values[0]
     else:
         return None
+
 
 
 def get_tools_by_group(ransomware_group, file_path):
@@ -666,7 +697,8 @@ def update_groups_intel():
     report_files = [
         './import/Ransomware-Tool-Matrix/ThreatIntel/CISAThreatGroups.md',
         './import/Ransomware-Tool-Matrix/ThreatIntel/TrendMicroThreatGroups.md',
-        './import/Ransomware-Tool-Matrix/ThreatIntel/TheDFIRReportGroups.md'
+        './import/Ransomware-Tool-Matrix/ThreatIntel/TheDFIRReportGroups.md',
+        './import/Ransomware-Tool-Matrix/ThreatIntel/ExtraThreatIntel.md'
     ]
 
     # Check each group for a StopRansomware report and replace the profile if found
@@ -945,11 +977,12 @@ async def screenshot(url,filename):
             stdlog(f"Screenshot of {url} has been saved to {filename}")
             await browser.close()
             facedetectionexception = [
-                'incransom'
+                'incransom',
+                'ransomhouse'
             ]
             if ia_detection.check_image_for_face(filename) and group not in facedetectionexception:
                         body="A new screenshot must be analysed : \n\n https://www.ransomware.live/screenshots/posts/"+os.path.basename(filename)
-                        send_email("[Action Required] Check this screenshot for any ID",body, "julien@mousqueton.io",filename)
+                        send_email("[Action Required] Check this screenshot for any ID",body, "support@ransomwarelive.freshdesk.com",filename)
             add_metadata(filename)
             add_watermark(filename)
         except Exception as e:
