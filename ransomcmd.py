@@ -429,5 +429,4 @@ if __name__ == '__main__':
         if renamed_input_path:
             ransomwarelive.blur_image(renamed_input_path, args.file)
     else:
-        ransomwarelive.update_groups_intel()
-        #parser.print_help()
+        parser.print_help()
