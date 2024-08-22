@@ -126,6 +126,21 @@ def check_lock_file():
         print(f"The \033[1mlock file\033[0m was created on: \033[1m{creation_time_formatted}\033[0m ({elapsed_minutes} minutes ago)")
     else:
         print("The \033[1mlock file\033[0m does not exist.")
+        file_path = "/var/log/ransomwarelive.log"
+        with open(file_path, "r") as file:
+            # Read all lines
+            lines = file.readlines()
+            # Get the last line
+            last_line = lines[-1]
+        fields = last_line.strip().split(',')
+        last_run = fields[0].replace(' ','\033[0m at \033[1m')
+        last_duration = int(fields[-1])
+
+        # Convert the last field from seconds to minutes
+        last_duration = last_duration / 60
+
+        # Print the extracted fields
+        print(f"Last full exectution was on \033[1m{last_run}\033[0m during \033[1m{last_duration:.0f} minutes\033[0m")
 
 
 if __name__ == '__main__':
@@ -287,6 +302,7 @@ if __name__ == '__main__':
                     generatesite.write_domain_info(key, value['employees'], value['users'], value['thirdparties'], value['employees_url'], value['users_url'], value['update'])
             ransomwarelive.update_groups_intel()
             generatesite.ttps()
+            ransomwarelive.ttps2json('./import/Ransomware-Tool-Matrix/Tools', './data/ttps.json')
             generatesite.recentdiscoveredpage()
             generatesite.recentattackedpage()
             generatesite.lastvictimspergroup()

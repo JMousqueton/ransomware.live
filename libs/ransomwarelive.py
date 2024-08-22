@@ -47,7 +47,9 @@ CHROMIUM_PROXY_GROUPS = [
     "flocker",
     "metaencrytor",
     "blacksuit",
-    "stormous"
+    "stormous",
+    "BrainCipher",
+    "incransom"
 ]
 
 ## TODO :
@@ -1128,3 +1130,74 @@ def search_domain_for_infostealer(domain):
                 return result
         except:
             return " Not information found in the database."
+
+
+def ttps2json(input_directory, output_file):
+    """
+    Converts all .md files in the input_directory into a JSON file.
+    Each file's data is stored in a list named after the filename (without .md).
+    The file "MostUsedTools.md" is excluded from processing.
+    Group names are transformed to lowercase, spaces are removed, 
+    and "lockbit" is renamed to "lockbit3".
+    
+    Parameters:
+    - input_directory: Directory containing the .md files.
+    - output_file: The path where the resulting JSON file will be saved.
+    """
+    # Initialize a dictionary to store the data
+    data = {}
+
+    # Function to process each file and append data to the dictionary
+    def process_file(file_path, list_name):
+        with open(file_path, 'r') as file:
+            lines = file.readlines()
+
+        # Find the start of the table and skip the title and separation lines
+        table_started = False
+        for line in lines:
+            if '|' in line:
+                if not table_started:
+                    table_started = True
+                    continue  # Skip the title line
+                if line.strip().startswith('|---'):
+                    continue  # Skip the separation line
+                columns = line.strip().split('|')
+                if len(columns) > 2:
+                    tool = columns[1].strip()
+                    groups = columns[2].strip()
+                    groups = [transform_group_name(group.strip().replace('*', '')) for group in groups.split(',')]
+
+                    for group in groups:
+                        if group not in data:
+                            # Initialize the group with empty lists for each potential category
+                            data[group] = {name.replace('.md', ''): [] for name in os.listdir(input_directory) if name.endswith('.md') and name != "MostUsedTools.md"}
+                        if tool not in data[group][list_name]:
+                            data[group][list_name].append(tool)
+
+    # Function to transform the group name
+    def transform_group_name(group_name):
+        # Convert to lowercase
+        group_name = group_name.lower()
+        # Remove spaces
+        group_name = group_name.replace(' ', '')
+        # Rename "lockbit" to "lockbit3"
+        if group_name == "lockbit":
+            group_name = "lockbit3"
+        return group_name
+
+    # Process each .md file in the directory, excluding "MostUsedTools.md"
+    for filename in os.listdir(input_directory):
+        if filename.endswith('.md') and filename != "MostUsedTools.md":
+            filepath = os.path.join(input_directory, filename)
+            list_name = filename.replace('.md', '')
+            process_file(filepath, list_name)
+
+    # Convert the dictionary into the desired list of dictionaries
+    json_data = [{"group_name": group, **details} for group, details in data.items()]
+
+    # Write the JSON data to the output file
+    with open(output_file, 'w') as json_file:
+        json.dump(json_data, json_file, indent=4)
+
+    stdlog(f'JSON data has been written to {output_file}')
+

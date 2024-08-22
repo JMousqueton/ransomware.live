@@ -17,7 +17,7 @@ import socks
 import json
 ## Import Ransomware.live libs 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs')))
-from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_by_md5, appender,openjson
+from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_by_md5, appender,openjson, openjson
 
 
 # Assuming Tor is running on default port 9050.
@@ -40,15 +40,16 @@ def fetch_json_from_onion_url(onion_url):
 
 
 def main():
-    #json_onion_url= 'http://incbackfgm7qa7sioq7r4tdunoaqsvzjg5i7w46bhqlfonwjgiemr7qd.onion/api/v1/blog/get/announcements'
     json_onion_url= 'http://incbacg6bfwtrlzwdbqc55gsfl763s3twdtwhp27dzuik6s6rwdcityd.onion/api/v1/blog/get/announcements?page=1&perPage=15'
     site_onion_url= 'http://incblog6qu4y4mm4zvw5nrmue6qbwtgjsxpw6b7ixzssu36tsajldoad.onion/blog/disclosures'
 
-    
+
     try:
         json_data = fetch_json_from_onion_url(json_onion_url)
+
     except:
         json_data = None
+        errlog('No Data in json')
     if json_data is not None:
         announcements = json_data['payload']['announcements']
         for announcement in announcements:

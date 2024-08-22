@@ -21,7 +21,7 @@ from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_
 def main():
     for filename in os.listdir('source'):
         #try:
-           if filename.startswith('incransom-'):
+             if filename.startswith(__name__.split('.')[-1]+'-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
@@ -31,33 +31,20 @@ def main():
                     title = section.text.strip()
                     description = div.find('span',{"class": "text-sm dark:text-gray-600"}).text.strip()
                     link = div['href']
-                    site = find_slug_by_md5('incransom', extract_md5_from_filename(html_doc))
-                    parsed_url = urlparse(site)
-                    site = parsed_url.netloc
-                    link = 'http://' +site + link
-                    date_element = div.find('div', class_='flex items-center gap-2 text-gray-600 text-sm').text.strip()
-                    date_obj = datetime.strptime(date_element, '%d.%m.%Y')
-                    current_time = datetime.now().time()
-                    updated_date_obj = datetime.combine(date_obj.date(), current_time)
-                    date = updated_date_obj.strftime('%Y-%m-%d %H:%M:%S.%f')
-                    #print(date + ' --> ' + title + ' - ' +  description + ' - ' + link)
                     appender(title,'incransom',description,'',date,link)
+
                 divs_name=soup.find_all('a', {"class":"flex flex-col justify-between w-full h-56 border-t-4 border-2 border-t-red-500 dark:border-gray-900 dark:border-t-red-500 rounded-[20px] bg-white dark:bg-navy-800"})
                 for div in divs_name:
                     section = div.find('span',{"class": "dark:text-gray-600"})
                     title = section.text.strip()
                     description = div.find('span',{"class": "text-sm dark:text-gray-600"}).text.strip()
                     link = div['href']
-                    site = find_slug_by_md5('incransom', extract_md5_from_filename(html_doc))
-                    parsed_url = urlparse(site)
-                    site = parsed_url.netloc
-                    link = 'http://' +site + link
-                    date_element = div.find('div', class_='flex items-center gap-2 text-gray-600 text-sm').text.strip()
-                    date_obj = datetime.strptime(date_element, '%d.%m.%Y')
-                    current_time = datetime.now().time()
-                    updated_date_obj = datetime.combine(date_obj.date(), current_time)
-                    date = updated_date_obj.strftime('%Y-%m-%d %H:%M:%S.%f')
-                    #print(date + ' --> ' + title + ' - ' +  description + ' - ' + link)
+                    list_div.append({"title" : title, "description" : description, 'link': link, 'slug': filename})
+                divs_name=soup.find_all('a', {"class":"announcement__container"})
+                for div in divs_name:
+                    title = div.find('span',{"class": "text-xs text-white"}).text.strip()
+                    description = ''
+                    link = div['href']
                     appender(title,'incransom',description,'',date,link)
                 file.close()
         #except:

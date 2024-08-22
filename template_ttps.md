@@ -77,7 +77,7 @@ This page contains a list of which tools [`{{GROUPE_NAME}}`](group/{{GROUPE_NAME
 
 {{Offsec}}
 
-#### **Living-off-the-Land Binaries and Scriptss**
+#### **Living-off-the-Land Binaries and Scripts**
 
 > [!TIP] 
 > Windows environments are equipped with a wide array of command-line utilities. These tools collectively provide robust support for efficient system management, troubleshooting, and optimization, helping administrators maintain secure, stable, and high-performing Windows environments.

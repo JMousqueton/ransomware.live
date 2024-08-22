@@ -43,55 +43,26 @@ def get_removal(victim, group, json_file=REMOVEREQUESTS):
         return applicant
     return None
 
-def find_matching_victims2(victim_hidden,group):
-    matching_pairs = ''
-    if '*' not in victim_hidden:
-        return matching_pairs
-    matching_pairs = "Not Found"
-    with open(VICTIMS_FILE, 'r') as json_file:
-        data = json.load(json_file)
-    victims = [entry['post_title'] for entry in data if entry['group_name'] == group and '*' not in entry['post_title']]
-    for victim in victims:
-            if len(victim) == len(victim_hidden):
-                match = True
-                for char1, char2 in zip(victim, victim_hidden):
-                    if char2 != '*' and char1 != char2:
-                        match = False
-                        break
-                if match:
-                    stdlog("Victim: " + victim_hidden + "\t could be: "+ victim)
-                    return(victim)
-
-    return matching_pairs
-
-
 def find_matching_victims(victim_hidden, group):
     matching_pairs = ''
-    
     if '*' not in victim_hidden:
         return matching_pairs
-    
     matching_pairs = "Not Found"
-    
     try:
         with open(VICTIMS_FILE, 'r') as json_file:
             data = json.load(json_file)
     except (FileNotFoundError, json.JSONDecodeError) as e:
         stdlog(f"Error reading VICTIMS_FILE: {e}")
         return matching_pairs
-    
     # Filter victims by group and exclude those with asterisks in their names
     victims = [entry['post_title'] for entry in data if entry['group_name'] == group and '*' not in entry['post_title']]
-    
     # Convert the victim_hidden pattern into a regex pattern
     regex_pattern = re.escape(victim_hidden).replace(r'\*', r'.').replace(r'\.', r'[-.\w]*').lower()
-    
     # Iterate through potential victims
     for victim in victims:
         if re.fullmatch(regex_pattern, victim.lower()):
             stdlog(f"Victim: {victim_hidden} could be: {victim}")
             return victim  # Return the first match found
-    
     return matching_pairs
 
 
