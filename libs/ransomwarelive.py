@@ -49,7 +49,8 @@ CHROMIUM_PROXY_GROUPS = [
     "blacksuit",
     "stormous",
     "BrainCipher",
-    "incransom"
+    "incransom",
+    "metaencrytor"
 ]
 
 ## TODO :

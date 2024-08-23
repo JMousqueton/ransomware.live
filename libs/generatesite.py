@@ -1010,12 +1010,14 @@ def profilepage():
     groupcpt=0
     for group in groups:
         writeline(profilepage, '## **' + group['name']+'**')
-        try: 
-            writeline(profilepage,'')
-            writeline(profilepage,'> ' + clean_markdown(group['description']))
-            writeline(profilepage, '')
-        except:
-            writeline(profilepage, '')
+        writeline(profilepage,'')
+        writeline(profilepage,'')
+        if 'description' in group:
+            if group['description']:
+                writeline(profilepage,'>[!INFO]')
+                writeline(profilepage,'> ' + group['description'])
+                writeline(profilepage, '')
+        writeline(profilepage, '')
         if group['meta'] is not None:
             writeline(profilepage, '_`' + group['meta'] + '`_')
             writeline(profilepage, '')
@@ -1276,12 +1278,14 @@ def groupprofilepage():
             f.close()
         writeline(profilepage, '# Profile for ransomware group : **' + group['name']+'**')
         writeline(profilepage, '')
-        try: 
-            writeline(profilepage,'')
-            writeline(profilepage,'> ' + group['description'].replace('\n','').replace('\r',''))
-            writeline(profilepage, '')
-        except:
-            writeline(profilepage, '')
+        writeline(profilepage, '')
+        if 'description' in group:
+            if group['description']:
+                writeline(profilepage,'>[!INFO]')
+                writeline(profilepage,'> ' + group['description'])
+                writeline(profilepage, '')
+        writeline(profilepage, '')
+        writeline(profilepage, '')
         ## add notes if present
         #if group['meta'] is not None:  
         #    writeline(profilepage, '_`' + group['meta'] + '`_')

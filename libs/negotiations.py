@@ -179,7 +179,7 @@ def parse_group(group_name):
         name = file_name.replace('_', '.')
 
         # Print the modified file name
-        stdlog("[" + group_name + "] Processing " + name + " from file : " + file_name)
+        #stdlog("[" + group_name + "] Processing " + name + " from file : " + file_name)
 
         with open(file_path) as file:
             data = json.load(file)
