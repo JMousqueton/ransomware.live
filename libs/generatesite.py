@@ -585,6 +585,14 @@ def mainpage():
     writeline(uptime_sheet, '>[!NOTE]')
     writeline(uptime_sheet, '>_`Ransomware.live` monitors the extortion sites used by ransomware groups. The information posted on this website is dynamically updated in near real-time._')
     writeline(uptime_sheet,'')
+    writeline(uptime_sheet,'')
+    writeline(uptime_sheet,'')
+    writeline(uptime_sheet, '>[!TIP]')
+    writeline(uptime_sheet, '> You can query _`ransomware.live`_ intel by requesting the **FREE** [`API`](https://api.ransomware.live), the [`RSS Feed`](https://ransomware.live/rss.xml) or [`downloading`](https://data.ransomware.live/victims.json) the database.')
+    writeline(uptime_sheet,'')
+    writeline(uptime_sheet,'')
+    writeline(uptime_sheet,'')
+    writeline(uptime_sheet,'')
     writeline(uptime_sheet, '```charty')
     writeline(uptime_sheet, '{')
     writeline(uptime_sheet, '  "title":   "🔎 Groups Monitored",')
@@ -1961,7 +1969,19 @@ def ttps():
             else:
                 new_content = new_content.replace('{{' + file_tools + '}}', 'N/A')
 
+
         if update:
+            #directory_path = '/var/www/ransomware-ng/import/Ransomware-Tool-Matrix/GroupProfiles/'
+            #files_in_directory = os.listdir(directory_path)
+            #filename = f'{group_name}.md' 
+            #for file in files_in_directory:
+            #    if file.lower() == filename.lower():
+            #        line = f"[filename](https://raw.githubusercontent.com/BushidoUK/Ransomware-Tool-Matrix/main/GroupProfiles/{file} ':include')"
+            #        print(line)
+            #    else: 
+            #        line =''
+            #new_content = new_content.replace('{{EXTRA}}', line)
+            
             new_content = new_content.replace('{{GROUPE_NAME}}', original_group_name)
             with open(f'./docs/ttps/{original_group_name}.md', 'w') as new_file:
                 new_file.write(new_content)

@@ -272,6 +272,8 @@ def clean_string(s):
     s = s.replace('Updated','')
     s = s.replace('update','')
     s = s.replace('<disclose>','')
+    if s.endswith(" PoC"):
+        s = s[:-4]  # Remove the last 4 characters
     s = s.replace('<','')
     s = s.replace('>','')
     s = re.sub(' +', ' ', s)  # Replace multiple spaces with a single space
@@ -934,47 +936,52 @@ async def screenshot(url,filename):
             await page.mouse.move(x=500, y=400)
             await page.mouse.wheel(delta_y=2000, delta_x=0)
             await page.wait_for_timeout(50000)  # Wait for the page to fully load and execute JavaScript
-            #await page.screenshot(path=filename,full_page=True)
-            
-            # Get the total height of the page
-            total_height = await page.evaluate('''() => {
-                return document.body.scrollHeight;
-            }''')
-            viewport_height = await page.evaluate('''() => {
-                return window.innerHeight;
-            }''')
-            
-            # Take screenshots in segments
-            segment_filenames = []
-            offset = 0
-            while offset < total_height:
-                await page.evaluate(f'''window.scrollTo(0, {offset});''')
-                await page.wait_for_timeout(1000)  # Wait for scrolling to finish
-                segment_filename = f"{filename}_segment_{offset}.png"
-                await page.screenshot(path=segment_filename, clip={'x': 0, 'y': 0, 'width': 1280, 'height': viewport_height})
-                segment_filenames.append(segment_filename)
-                offset += viewport_height
-            
-            await browser.close()
-            
-            # Stitch the images together
-            images = [Image.open(seg) for seg in segment_filenames]
-            total_width = images[0].width
-            total_height = sum(img.height for img in images)
-            
-            stitched_image = Image.new('RGB', (total_width, total_height))
-            y_offset = 0
-            for img in images:
-                stitched_image.paste(img, (0, y_offset))
-                y_offset += img.height
-            
-            stitched_image.save(filename)
-            
-            # Cleanup segment files
-            for seg in segment_filenames:
-                os.remove(seg)
-            
-            
+        
+            await page.screenshot(path=filename,full_page=True)
+            """
+            if group == "bianlian":
+                stdlog('Exception for bianlian')
+                await page.screenshot(path=filename,full_page=True)
+            else:
+
+                # Get the total height of the page
+                total_height = await page.evaluate('''() => {
+                    return document.body.scrollHeight;
+                }''')
+                viewport_height = await page.evaluate('''() => {
+                    return window.innerHeight;
+                }''')
+                
+                # Take screenshots in segments
+                segment_filenames = []
+                offset = 0
+                while offset < total_height:
+                    await page.evaluate(f'''window.scrollTo(0, {offset});''')
+                    await page.wait_for_timeout(1000)  # Wait for scrolling to finish
+                    segment_filename = f"{filename}_segment_{offset}.png"
+                    await page.screenshot(path=segment_filename, clip={'x': 0, 'y': 0, 'width': 1280, 'height': viewport_height})
+                    segment_filenames.append(segment_filename)
+                    offset += viewport_height
+                
+                await browser.close()
+                
+                # Stitch the images together
+                images = [Image.open(seg) for seg in segment_filenames]
+                total_width = images[0].width
+                total_height = sum(img.height for img in images)
+                
+                stitched_image = Image.new('RGB', (total_width, total_height))
+                y_offset = 0
+                for img in images:
+                    stitched_image.paste(img, (0, y_offset))
+                    y_offset += img.height
+                
+                stitched_image.save(filename)
+                
+                # Cleanup segment files
+                for seg in segment_filenames:
+                    os.remove(seg)
+            """
             
             stdlog(f"Screenshot of {url} has been saved to {filename}")
             await browser.close()

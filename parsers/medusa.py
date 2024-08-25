@@ -18,7 +18,7 @@ from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_
 
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('medusa-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -40,6 +40,6 @@ def main():
                     except:
                         pass
                 file.close()
-        #except Exception as e:
-        #   stdlog('Medusa - parsing fail with error: ' + str(e))
+        except Exception as e:
+           stdlog('Medusa - parsing fail with error: ' + str(e))
         

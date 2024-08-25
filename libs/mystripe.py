@@ -12,8 +12,7 @@ load_dotenv(dotenv_path=env_path)
 stripe.api_key = os.getenv('STRIPE_API_KEY')
 
 current_year = datetime.now().year
-# Define the output file as a global variable
-output_file = './docs/admin/budget_stripe-' + str(current_year) + '.png'
+previous_year = current_year - 1
 
 # Function to get all payments for a specific month
 def get_monthly_payments(year, month):
@@ -72,6 +71,7 @@ def get_monthly_financials(year):
 
 # Function to plot the combined graph and save it to a file
 def plot_financials(year):
+    output_file = './docs/admin/budget_stripe-' + str(year) + '.png'
     monthly_payments, monthly_payouts, payment_counts = get_monthly_financials(year)
     cumulative_payouts = [sum(monthly_payouts[:i+1]) for i in range(len(monthly_payouts))]
     months = [calendar.month_name[i] for i in range(1, 13)]
@@ -112,7 +112,7 @@ def plot_financials(year):
     plt.savefig(output_file)
 
 # Check if the script should run based on the file modification date
-def should_run():
+def should_run(output_file):
     if os.path.exists(output_file):
         file_mod_time = datetime.fromtimestamp(os.path.getmtime(output_file))
         if datetime.now() - file_mod_time < timedelta(hours=24):
@@ -164,9 +164,12 @@ def plot_payments_by_email():
     plt.savefig('./docs/admin/budget_sponsors.png')
 
 def generatestripe():
-    if should_run():
+    #output_file = './docs/admin/budget_stripe-' + str(current_year) + '.png'
+    #if should_run(output_file):
+    if True:
+        plot_financials(previous_year)
         plot_financials(current_year)
-        plot_payments_by_email()
+        #plot_payments_by_email()
         stdlog('Stripe graph generated')
     else:
         errlog("The script has been executed within the last 24 hours. Exiting.")

@@ -123,9 +123,9 @@ def check_lock_file():
         elapsed_seconds = int(current_time - creation_time)
         elapsed_minutes = elapsed_seconds // 60
         creation_time_formatted = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(creation_time))
-        print(f"The \033[1mlock file\033[0m was created on: \033[1m{creation_time_formatted}\033[0m ({elapsed_minutes} minutes ago)")
+        print(f"🟢 The \033[1mlock file\033[0m was created on: \033[1m{creation_time_formatted}\033[0m ({elapsed_minutes} minutes ago)")
     else:
-        print("The \033[1mlock file\033[0m does not exist.")
+        print("🔴 The \033[1mlock file\033[0m does not exist.")
         file_path = "/var/log/ransomwarelive.log"
         with open(file_path, "r") as file:
             # Read all lines

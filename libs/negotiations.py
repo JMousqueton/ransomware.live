@@ -302,7 +302,7 @@ def parse_group(group_name):
                             <div class="message received">
                                 <img src="https://images.ransomware.live/avatar-victim.png" alt="Avatar" class="avatar">
                                 <div class="message-bubble">
-                                    <p>{content}</p>
+                                    <p>{content.replace('> ','')}</p>
                                     <span class="timestamp">{timestamp}</span>
                                 </div>
                             </div>
@@ -311,7 +311,7 @@ def parse_group(group_name):
                 codeHTML += f'''
                              <div class="message sent">
                                 <div class="message-bubble">
-                                    <p>{content}</p>
+                                    <p>{content.replace('> ','')}</p>
                                     <span class="timestamp">{timestamp}</span>
                                 </div>
                                 <img src="https://images.ransomware.live/avatar-gang.png" alt="Avatar" class="avatar">

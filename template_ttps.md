@@ -90,3 +90,5 @@ This page contains a list of which tools [`{{GROUPE_NAME}}`](group/{{GROUPE_NAME
 
 <!-- tabs:end -->
 
+> [!NOTE]
+> This is the list of tools that have been observed during various intrusions that lead to Akira ransomware deployment.

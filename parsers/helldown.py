@@ -36,17 +36,19 @@ def main():
                 cards = soup.find_all('div', class_='card-container')
                 for card in cards:
                     victim = card.find('div', class_='card-title').text
-                    if is_fqdn(victim):
-                        website=title 
-                    else:
-                        website=''
                     link = card.find('a')['href']
                     description = card.find('p', class_='card-summary').text
-                    if description != "Here's something encrypted, password is required to continue reading.":
-                        victim  = description 
+                    if is_fqdn(victim.replace('www.','')):
+                        website=victim 
+                    elif is_fqdn(description.replace('www.','')):
+                         website=description
+                    else:
+                        website=''
+                    #if description != "Here's something encrypted, password is required to continue reading.":
+                    #    victim  = description 
                     post_url = find_slug_by_md5(group_name, extract_md5_from_filename(html_doc)) + link
-                    appender(victim, group_name, victim, website,'',post_url )
-        
+                    appender(victim, group_name, description, website,'',post_url )
+                    
                 ### END OF SPECIFIC CODE
 
         except Exception as e:
