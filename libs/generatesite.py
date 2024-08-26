@@ -2077,4 +2077,32 @@ def parse_yara():
                             output_file.write("*[Source](https://github.com/rivitna/Malware)*\n")
 
     stdlog("Finished processing .yara files.")
+    # Get all files in the directory except README.md
+    files = [f for f in os.listdir(output_directory) if os.path.isfile(os.path.join(output_directory, f)) and f != 'README.md']
+
+    # Remove .md extension, capitalize the first letter of each filename, and sort alphabetically
+    files = sorted([os.path.splitext(file)[0] for file in files], key=lambda s: s.lower())
+
+    # Format each file with capitalized name and original name in brackets
+    formatted_files = [f"[{file.capitalize()}](yara/{file})" for file in files]
+
+    # Split the list into rows with a maximum of 8 columns
+    rows = [formatted_files[i:i + 8] for i in range(0, len(formatted_files), 8)]
+
+    # Generate the markdown array with a maximum of 8 columns per row
+    markdown_array = ''
+    for row in rows:
+        markdown_array += "\n| " + " | ".join(row) + " |"
+
+    # Define the content to save in README.md
+    readme_content = '# Yara Rules for ransomware group<BR><BR>\n'
+    readme_content += '> [!INFO]\n> YARA rules are malware detection patterns that are fully customizable to identify targeted attacks and security threats specific to your environment. YARA rules are applied only to objects submitted to the internal Virtual Analyzer.'
+                            
+    readme_content += f"<BR><BR>\n\n|   |   |   |   |   |   |   |   |\n|---|---|---|---|---|---|---|---|{markdown_array}"
+
+    # Save the content to README.md
+    with open(os.path.join(output_directory, 'README.md'), 'w') as readme_file:
+        readme_file.write(readme_content)
+    
+    stdlog("Generated index for yara rules")
 
