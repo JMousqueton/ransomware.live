@@ -1306,6 +1306,10 @@ def groupprofilepage():
             writeline(profilepage, '')
             writeline(profilepage, f"🛠️ [Tools used by {group['name']}](ttps/{group['name']}.md)")
             writeline(profilepage, '')
+        if os.path.exists(f"docs/yara/{group['name'].lower()}.md"):
+            writeline(profilepage, '')
+            writeline(profilepage, f"📜 [Yara Rules for {group['name']}](yara/{group['name'].lower()}.md)")
+            writeline(profilepage, '')
         if len(group['profile']):
             writeline(profilepage, '### External analysis')
             for profile in group['profile'][:10]:
@@ -1986,5 +1990,91 @@ def ttps():
             with open(f'./docs/ttps/{original_group_name}.md', 'w') as new_file:
                 new_file.write(new_content)
 
+       
+def parse_yara():
+    """
+    Parses a directory to find all subdirectories, reads .yar files, and writes them to Markdown files.
+    
+    The root_directory and output_directory are hardcoded within this function.
+    """
+    # Hardcoded directories
+    root_directory = './import/Malware'
+    output_directory = './docs/yara'
+    group_json = './data/groups.json'
+
+    # Correlation table to map subdirectory names to other names
+    correlation_table = {
+        'blackmatter': 'darkside',
+        'blackcat': 'alphv',
+    }
+
+    # Load and parse the group.json file
+    with open(group_json, 'r') as json_file:
+        group_data = json.load(json_file)
+    
+    # Create a set of names from group.json for quick lookup
+    group_names = {entry['name'].lower() for entry in group_data}
+
+    # Create the output directory if it doesn't exist
+    os.makedirs(output_directory, exist_ok=True)
+
+    # Loop through each subdirectory in the root directory
+    for subdir in os.listdir(root_directory):
+        subdir_path = os.path.join(root_directory, subdir)
+
+        # Initialize correlation_used to False
+        correlation_used = False
         
+        # Convert the subdirectory name using the correlation table if applicable
+        mapped_name = correlation_table.get(subdir.lower(), subdir.lower())
+        
+        # Set correlation_used to True if a mapping was applied
+        if mapped_name != subdir.lower():
+            correlation_used = True
+
+        # Ensure it's a directory
+        if os.path.isdir(subdir_path):
+            # Find .yara files in the subdirectory
+            for file in os.listdir(subdir_path):
+                if file.endswith('.yar'):
+                    yara_file_path = os.path.join(subdir_path, file)
+                    
+                    # Read the content of the .yara file
+                    with open(yara_file_path, 'r') as yara_file:
+                        yara_content = yara_file.read()
+                    
+                    # Format the subdirectory name with the first letter capitalized
+                    subdir_formatted = mapped_name.lower().capitalize()
+                    
+                    # Define the output Markdown file path
+                    output_file_path = os.path.join(output_directory, f"{mapped_name.lower()}.md")
+                    
+                    # Write the formatted content to the Markdown file
+                    with open(output_file_path, 'w') as output_file:
+                        if mapped_name in group_names:
+                            output_file.write(f"## 📜&nbsp;[{subdir_formatted}](group/{subdir_formatted.lower()}) Yara Rules\n\n<BR>\n\n<BR>\n\n")
+                        else:
+                            output_file.write(f"## 📜&nbsp;{subdir_formatted} Yara Rules\n\n<BR>\n\n<BR>\n\n")
+                        output_file.write('> [!INFO]\n>YARA rules are malware detection patterns that are fully customizable to identify targeted attacks and security threats specific to your environment. YARA rules are applied only to objects submitted to the internal Virtual Analyzer.')
+                        output_file.write(f"<BR>\n\n<BR>\n\n* **{subdir_formatted.lower()}.yar**")
+                        output_file.write("\n\n```yara\n")
+                        output_file.write(yara_content)
+                        output_file.write("\n```\n\n")
+                        output_file.write("*[Source](https://github.com/rivitna/Malware)*\n")
+                    if correlation_used:
+                        subdir_formatted = subdir.lower().capitalize()
+                        output_file_path = os.path.join(output_directory, f"{subdir.lower()}.md")
+                        with open(output_file_path, 'w') as output_file:
+                            if mapped_name in group_names:
+                                output_file.write(f"## 📜&nbsp;[{subdir_formatted}](group/{subdir.lower()}) Yara Rules\n\n<BR>\n\n<BR>\n\n")
+                            else:
+                                output_file.write(f"## 📜&nbsp;{subdir_formatted} Yara Rules\n\n<BR>\n\n<BR>\n\n")
+                            output_file.write('> [!INFO]\n>YARA rules are malware detection patterns that are fully customizable to identify targeted attacks and security threats specific to your environment. YARA rules are applied only to objects submitted to the internal Virtual Analyzer.')
+                            output_file.write(f"<BR>\n\n<BR>\n\n* **{subdir_formatted.lower()}.yar**")
+                            output_file.write("\n\n```yara\n")
+                            output_file.write(yara_content)
+                            output_file.write("\n```\n\n")
+                            output_file.write("*[Source](https://github.com/rivitna/Malware)*\n")
+
+    stdlog("Finished processing .yara files.")
 

@@ -309,6 +309,7 @@ if __name__ == '__main__':
             generatesite.profilepage()
             generatesite.groupprofilepage()
             generatesite.allposts()
+            generatesite.parse_yara()
             rss.generate_rss_feed()
             year=datetime.now().year
             month=datetime.now().month
@@ -382,7 +383,8 @@ if __name__ == '__main__':
         ransomwarelive.stdlog('Ransomware Negotiation generated')
         generatesite.json2cvs()
         ### BEGIN : ADMIN ###
-        mystripe.generatestripe()
+        if os.path.getmtime('./docs/admin/budget_sponsors.png') > (time.time() - 86400):
+            mystripe.generatestripe()
         graph.generate_execution_time_graphs()
         directory_path = "./docs/admin"
         markdown_file = os.path.join('./docs', "admin.md")
