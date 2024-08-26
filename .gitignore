@@ -178,5 +178,6 @@ session_name.session
 !docs/_*.md 
 update_country.py
 dev/
+!doc/CHANGELOG.md
 etc/getASNforAPI copy.py
 etc/getASNforAPI.py
