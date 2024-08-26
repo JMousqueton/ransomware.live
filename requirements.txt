@@ -3,7 +3,7 @@ countryinfo==0.1.2
 deepl==1.18.0
 folium==0.17.0
 lxml==5.3.0
-matplotlib==3.5.0
+matplotlib==3.9.2
 openai==1.41.0
 opencv_python_headless==4.10.0.84
 pandas==2.2.2
