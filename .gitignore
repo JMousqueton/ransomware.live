@@ -178,3 +178,5 @@ session_name.session
 !docs/_*.md 
 update_country.py
 dev/
+etc/getASNforAPI copy.py
+etc/getASNforAPI.py

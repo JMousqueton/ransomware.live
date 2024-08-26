@@ -272,6 +272,7 @@ def clean_string(s):
     s = s.replace('Updated','')
     s = s.replace('update','')
     s = s.replace('<disclose>','')
+    s = s.replace(' - Press Release','')
     if s.endswith(" PoC"):
         s = s[:-4]  # Remove the last 4 characters
     s = s.replace('<','')
