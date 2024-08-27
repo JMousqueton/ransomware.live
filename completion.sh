@@ -7,13 +7,13 @@
 # To use this script, save it to your home directory and source it from your .bashrc file.
 #
 # Instructions:
-# 1. Add `source ransomcmd_completion.sh` to your ~/.bashrc file.
-# 2. Reload your bash configuration using `source ~/.bashrc`.
-# 3. Navigate to the directory containing ransomcmd.py and test the completion by typing:
+# 1. Install bash_completion
+#           sudo apt-get install bash-completion
+# 2. Add `source ransomcmd_completion.sh` to your ~/.bashrc file.
+# 3. Reload your bash configuration using `source ~/.bashrc`.
+# 4. Navigate to the directory containing ransomcmd.py and test the completion by typing:
 #    `./ransomcmd.py [Tab]`
 #
-# Script Author: [Your Name]
-# Date: [Today's Date]
 # ----------------------------------------
 
 
@@ -39,7 +39,7 @@ _ransomcmd_completions()
     # Customize completion based on the subcommand
     case "${prev}" in
         scrape)
-            opts="--group --force"
+            opts="--group"
             COMPREPLY=( $(compgen -W "${opts}" -- ${cur}) )
             return 0
             ;;
