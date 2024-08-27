@@ -21,7 +21,7 @@ def is_file_less_than_days_old(file_path):
     file_date = get_file_date(file_path)
     current_date = dt.now()
     time_difference = current_date - file_date
-    return time_difference.days < 5
+    return time_difference.days < 10
 
         
 def get_gangs(directory_path):

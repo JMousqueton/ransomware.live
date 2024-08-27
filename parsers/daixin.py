@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), 'libs
 from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_by_md5, appender
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
             if filename.startswith('daixin-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -28,11 +28,7 @@ def main():
                     website = card.find('a').get('href')
                     description_tag = card.find('p', class_='card-text')
                     description = description_tag.text.strip() if description_tag else ""
-                    print(f"Title: {title}")
-                    print(f"Website: {website}")
-                    print(f"Description: {description}")
-                    print("="*40)
-                    # appender(title, 'daixin', description, website)
+                    appender(title, 'daixin', description, website)
                 file.close()
-        #except:
-        #    stdlog("Failed during : " + filename)
+        except:
+            stdlog("Failed during : " + filename)

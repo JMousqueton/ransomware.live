@@ -309,7 +309,7 @@ if __name__ == '__main__':
             generatesite.profilepage()
             generatesite.groupprofilepage()
             generatesite.allposts()
-            generatesite.parse_yara()
+            generatesite.yara()
             rss.generate_rss_feed()
             year=datetime.now().year
             month=datetime.now().month
@@ -448,3 +448,5 @@ if __name__ == '__main__':
             ransomwarelive.blur_image(renamed_input_path, args.file)
     else:
         parser.print_help()
+        generatesite.ttps()
+        generatesite.yara()

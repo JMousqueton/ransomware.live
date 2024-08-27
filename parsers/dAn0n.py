@@ -19,7 +19,6 @@ def main():
     for filename in os.listdir('source'):
         try:
             if filename.startswith('dAn0n-'):
-                print('*')
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 # Parse the HTML

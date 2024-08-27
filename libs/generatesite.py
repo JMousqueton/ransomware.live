@@ -417,8 +417,11 @@ def generate_sitemapXML(base_url, pages, note_directories, output_file="./docs/s
         "stats?id=victims-by-month-cumulative",
         "stats?id=_2023",
         "stats?id=_2022",
+        "stats?id=_2024",
         "about",
-        "CHANGELOG"
+        "CHANGELOG",
+        "TTPs",
+        "yara"
     ]
 
     for page in static_urls:
@@ -629,7 +632,7 @@ def mainpage():
     yearminustwo = current_year - 2 
     writeline(uptime_sheet, '      { "label": "In ' +  str(current_year) + '", "value": ' + str(postsyear(current_year)) + '},')
     writeline(uptime_sheet, '      { "label": "In ' +  str(yearminusone) + '", "value": ' + str(postsyear(yearminusone)) + '},')
-    writeline(uptime_sheet, '      { "label": "In ' +  str(yearminustwo) + '", "value": ' + str(postsyear(yearminusone)) + '}')
+    writeline(uptime_sheet, '      { "label": "In ' +  str(yearminustwo) + '", "value": ' + str(postsyear(yearminustwo)) + '}')
     writeline(uptime_sheet, '  ]')
     writeline(uptime_sheet, '}')
     writeline(uptime_sheet, '```')
@@ -1989,9 +1992,38 @@ def ttps():
             new_content = new_content.replace('{{GROUPE_NAME}}', original_group_name)
             with open(f'./docs/ttps/{original_group_name}.md', 'w') as new_file:
                 new_file.write(new_content)
+    output_directory='./docs/ttps'
+    # Get all files in the directory except README.md
+    files = [f for f in os.listdir(output_directory) if os.path.isfile(os.path.join(output_directory, f)) and f != 'README.md']
+
+    # Remove .md extension, capitalize the first letter of each filename, and sort alphabetically
+    files = sorted([os.path.splitext(file)[0] for file in files], key=lambda s: s.lower())
+
+    # Format each file with capitalized name and original name in brackets
+    formatted_files = [f"[{file.capitalize()}](ttps/{file})" for file in files]
+
+    # Split the list into rows with a maximum of 8 columns
+    rows = [formatted_files[i:i + 8] for i in range(0, len(formatted_files), 8)]
+
+    # Generate the markdown array with a maximum of 8 columns per row
+    markdown_array = ''
+    for row in rows:
+        markdown_array += "\n| " + " | ".join(row) + " |"
+
+    # Define the content to save in README.md
+    readme_content = '# TTPs for ransomware groups<BR><BR>\n'
+    readme_content += '> [!INFO]\n> Tactics, techniques, and procedures (TTPs) is an essential concept in terrorism and cyber security studies. The role of TTPs in terrorism analysis is to identify individual patterns of behavior of a particular terrorist activity, or a particular terrorist organisation, and to examine and categorize more general tactics and weapons used by a particular terrorist activity, or a particular terrorist organisation.'
+                            
+    readme_content += f"<BR><BR>\n\n|   |   |   |   |   |   |   |   |\n|---|---|---|---|---|---|---|---|{markdown_array}"
+
+    # Save the content to README.md
+    with open(os.path.join(output_directory, 'README.md'), 'w') as readme_file:
+        readme_file.write(readme_content)
+    
+    stdlog("Generated index for TTPs")
 
        
-def parse_yara():
+def yara():
     """
     Parses a directory to find all subdirectories, reads .yar files, and writes them to Markdown files.
     
@@ -2006,6 +2038,8 @@ def parse_yara():
     correlation_table = {
         'blackmatter': 'darkside',
         'blackcat': 'alphv',
+        'proxuma': 'ragroup',
+        'hive': 'hunters',
     }
 
     # Load and parse the group.json file
@@ -2051,30 +2085,27 @@ def parse_yara():
                     
                     # Write the formatted content to the Markdown file
                     with open(output_file_path, 'w') as output_file:
+                        output_file.write(f"## 📜&nbsp;{subdir_formatted} Yara Rules\n\n<BR>\n\n")
                         if mapped_name in group_names:
-                            output_file.write(f"## 📜&nbsp;[{subdir_formatted}](group/{subdir_formatted.lower()}) Yara Rules\n\n<BR>\n\n<BR>\n\n")
-                        else:
-                            output_file.write(f"## 📜&nbsp;{subdir_formatted} Yara Rules\n\n<BR>\n\n<BR>\n\n")
-                        output_file.write('> [!INFO]\n>YARA rules are malware detection patterns that are fully customizable to identify targeted attacks and security threats specific to your environment. YARA rules are applied only to objects submitted to the internal Virtual Analyzer.')
+                            output_file.write(f"🔎 &nbsp; [`{subdir_formatted}`](group/{subdir_formatted.lower()}) Profile\n\n<BR>\n\n<BR>\n\n")
+                        output_file.write('> [!INFO]\n>YARA rules are malware detection patterns that are fully customizable to identify targeted attacks and security threats specific to your environment.')
                         output_file.write(f"<BR>\n\n<BR>\n\n* **{subdir_formatted.lower()}.yar**")
                         output_file.write("\n\n```yara\n")
                         output_file.write(yara_content)
                         output_file.write("\n```\n\n")
-                        output_file.write("*[Source](https://github.com/rivitna/Malware)*\n")
+                        output_file.write("*Source: the respective authors and `Ransomare.live`*\n")
                     if correlation_used:
                         subdir_formatted = subdir.lower().capitalize()
                         output_file_path = os.path.join(output_directory, f"{subdir.lower()}.md")
                         with open(output_file_path, 'w') as output_file:
+                            output_file.write(f"## 📜&nbsp;{subdir_formatted} Yara Rules\n\n<BR>\n\n")
                             if mapped_name in group_names:
-                                output_file.write(f"## 📜&nbsp;[{subdir_formatted}](group/{subdir.lower()}) Yara Rules\n\n<BR>\n\n<BR>\n\n")
-                            else:
-                                output_file.write(f"## 📜&nbsp;{subdir_formatted} Yara Rules\n\n<BR>\n\n<BR>\n\n")
-                            output_file.write('> [!INFO]\n>YARA rules are malware detection patterns that are fully customizable to identify targeted attacks and security threats specific to your environment. YARA rules are applied only to objects submitted to the internal Virtual Analyzer.')
-                            output_file.write(f"<BR>\n\n<BR>\n\n* **{subdir_formatted.lower()}.yar**")
+                                output_file.write(f"🔎 &nbsp; [`{subdir_formatted}`](group/{subdir_formatted.lower()}) Profile\n\n<BR>\n\n<BR>\n\n")
+                            output_file.write('> [!INFO]\n>YARA rules are malware detection patterns that are fully customizable to identify targeted attacks and security threats specific to your environment.')
                             output_file.write("\n\n```yara\n")
                             output_file.write(yara_content)
                             output_file.write("\n```\n\n")
-                            output_file.write("*[Source](https://github.com/rivitna/Malware)*\n")
+                            output_file.write("*Source: the respective authors and `Ransomare.live`*\n")
 
     stdlog("Finished processing .yara files.")
     # Get all files in the directory except README.md
@@ -2095,10 +2126,10 @@ def parse_yara():
         markdown_array += "\n| " + " | ".join(row) + " |"
 
     # Define the content to save in README.md
-    readme_content = '# Yara Rules for ransomware group<BR><BR>\n'
+    readme_content = '# Yara Rules for ransomware groups<BR><BR>\n'
     readme_content += '> [!INFO]\n> YARA rules are malware detection patterns that are fully customizable to identify targeted attacks and security threats specific to your environment. YARA rules are applied only to objects submitted to the internal Virtual Analyzer.'
                             
-    readme_content += f"<BR><BR>\n\n|   |   |   |   |   |   |   |   |\n|---|---|---|---|---|---|---|---|{markdown_array}"
+    readme_content += f"<BR>\n\n<BR>\n\n<BR>\n\n|   |   |   |   |   |   |   |   |\n|---|---|---|---|---|---|---|---|{markdown_array}"
 
     # Save the content to README.md
     with open(os.path.join(output_directory, 'README.md'), 'w') as readme_file:

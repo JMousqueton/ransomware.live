@@ -20,7 +20,7 @@ from ransomwarelive import stdlog, errlog, extract_md5_from_filename, find_slug_
 
 def main():
     for filename in os.listdir('source'):
-        #try:
+        try:
              if filename.startswith(__name__.split('.')[-1]+'-'):
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
@@ -45,8 +45,8 @@ def main():
                     title = div.find('span',{"class": "text-xs text-white"}).text.strip()
                     description = ''
                     link = div['href']
-                    appender(title,'incransom',description,'',date,link)
+                    appender(title,'incransom',description,'','',link)
                 file.close()
-        #except:
-        #    errlog('incransom: ' + 'parsing fail')
-        #    pass
+        except Exception as e:
+            errlog('incransom - parsing fail with error: ' + str(e) + 'in file:' + filename)
+        
