@@ -448,5 +448,3 @@ if __name__ == '__main__':
             ransomwarelive.blur_image(renamed_input_path, args.file)
     else:
         parser.print_help()
-        generatesite.ttps()
-        generatesite.yara()
