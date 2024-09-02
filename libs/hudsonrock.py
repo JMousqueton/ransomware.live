@@ -71,18 +71,18 @@ async def query_telegram(client, domain_name, json_file_path, timer):
         }
 
         patterns = {
-            'Compromised Employees': r'Compromised Employees:\s(\d+)',
-            'Compromised Users': r'Compromised Users:\s(\d+)',
-            'Employee URLs': r'Employee URLs:\s(\d+)',
-            'User URLs': r'User URLs:\s(\d+)',
-            'Third Party Domains': r'Third Party Domains:\s(\d+)',
-            'Compromised Third Party Employees': r'Compromised Third Party Employees:\s(\d+)'
+            'Compromised Employees': r'Compromised Employees:\s([\d,]+)',
+            'Compromised Users': r'Compromised Users:\s([\d,]+)',
+            'Employee URLs': r'Employee URLs:\s([\d,]+)',
+            'User URLs': r'User URLs:\s([\d,]+)',
+            'Third Party Domains': r'Third Party Domains:\s([\d,]+)',
+            'Compromised Third Party Employees': r'Compromised Third Party Employees:\s([\d,]+)'
         }
 
         for key, pattern in patterns.items():
             match = re.search(pattern, message)
             if match:
-                figures[key] = int(match.group(1))
+                figures[key] = int(match.group(1).replace(',', ''))
 
         return figures
 
@@ -124,3 +124,6 @@ async def run_query(domain_name):
         stdlog(f'Processing {domain_name} ...')
         client = TelegramClient('session_name', config['api_id'], config['api_hash'])
         await query_telegram(client, config['domain_name'], config['json_file_path'], config['timer'])
+
+# To run the query, you would call run_query with the desired domain name, e.g.:
+# asyncio.run(run_query('example.com'))
