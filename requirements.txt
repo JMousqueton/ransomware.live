@@ -8,7 +8,7 @@ openai==1.45.0
 opencv_python_headless==4.10.0.84
 pandas==2.2.2
 Pillow==10.4.0
-playwright==1.46.0
+playwright==1.47.0
 pycountry==24.6.1
 python-dotenv==1.0.1
 pytz==2024.1
