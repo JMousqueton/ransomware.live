@@ -4,7 +4,7 @@ deepl==1.18.0
 folium==0.17.0
 lxml==5.3.0
 matplotlib==3.9.2
-openai==1.44.0
+openai==1.45.0
 opencv_python_headless==4.10.0.84
 pandas==2.2.2
 Pillow==10.4.0
