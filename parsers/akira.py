@@ -37,7 +37,8 @@ def main():
                     combined_datetime = datetime.datetime.combine(dt_object.date(), current_time)
                     published = combined_datetime.strftime("%Y-%m-%d %H:%M:%S.%f")
                     #published = dt_object.strftime("%Y-%m-%d %H:%M:%S.%f")
-                    appender(title.replace('\n',''), 'akira', description.replace('\n',' '),'',published)
+                    #appender(title.replace('\n',''), 'akira', description.replace('\n',' '),'',published)
+                    appender(title.replace('\n',''), 'akira', description,'',published)
                 file.close()
         except Exception as e:
             errlog(f"Akira parsinf failed with error: {e}")

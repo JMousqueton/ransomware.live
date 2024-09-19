@@ -38,6 +38,8 @@ def main():
                     
                     # Extract the description from the post block's body
                     description = post.select_one('.post-block-text').text.strip() if post.select_one('.post-block-text') else 'No Description'
-                    appender(title,'killsec',description.replace('\n',' '),'','',url)
+                    #appender(title,'killsec',description.replace('\n',' '),'','',url)
+                    appender(title,'killsec',description,'','',url)
+                    
         except Exception as e:
             errlog(group_name + ' - parsing fail with error: ' + str(e) + 'in file:' + filename)

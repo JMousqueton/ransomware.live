@@ -29,4 +29,5 @@ def main():
                     if item in blacklist:
                         continue
                     post_url= "http://santat7kpllt6iyvqbr7q4amdv6dzrh6paatvyrzl7ry3zm72zigf4ad.onion/" + str.lower(item.replace(".","-"))
-                    appender(item, 'clop','_URL_','','',post_url)
+                    if "ARCHIVE" not in item:
+                        appender(item, 'clop','_URL_','','',post_url)

@@ -46,8 +46,9 @@ def main():
     json_onion_url= 'http://cx5u7zxbvrfyoj6ughw76oa264ucuuizmmzypwum6ear7pct4yc723qd.onion/api/search?company=&page=0'
     site_onion_url= 'http://cx5u7zxbvrfyoj6ughw76oa264ucuuizmmzypwum6ear7pct4yc723qd.onion/detail?id='
 
-    json_data = fetch_json_from_onion_url(json_onion_url)
+    # json_data = fetch_json_from_onduion_url(json_onion_url)
     try:
+        json_data = openjson('/tmp/medusa.json')
         if json_data is not None:
             for item in json_data['list']:
                 victim = item['company_name']

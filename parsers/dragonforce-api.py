@@ -51,7 +51,7 @@ def fetch_json_from_onion_url(onion_url):
 
     # Assuming the response contains JSON data, parse it
     #json_data = response.json()
-    json_data = openjson('./source/dragonforce.json')
+    json_data = openjson('/tmp/dragon.json')
     return json_data
 
 def main():

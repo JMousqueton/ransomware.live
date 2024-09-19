@@ -26,7 +26,7 @@ def main():
                 soup=BeautifulSoup(file,'html.parser')
                 post_divs = soup.find_all('div', class_='post')
                 for post_div in post_divs:
-                    post_title = post_div.find('div', class_='post-title-block').text.strip().replace('published files','').replace('...','')
+                    post_title = post_div.find('div', class_='post-title-block').text.strip().replace('published files','').replace('...','').replace('NEW','')
                     victim  = post_title.split('\n')[0].strip()
                     description = post_div.find('div', class_='post-text').text.strip()
                     link = post_div.find('a', class_='post-more-link')

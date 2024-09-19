@@ -92,4 +92,5 @@ def main():
                         +------------------------------+------------------+----------+
                         Rappel : def appender(post_title, group_name, description="", website="", published="", post_url=""):
                         """
-                        appender(title.rstrip('.'), 'alphv', description.replace('\n',' '),url,convert_date(created_dt)+'.123456','http://alphvuzxyxv6ylumd2ngp46xzq3pw6zflomrghvxeuks6kklberrbmyd.onion/' + id)
+                        #appender(title.rstrip('.'), 'alphv', description.replace('\n',' '),url,convert_date(created_dt)+'.123456','http://alphvuzxyxv6ylumd2ngp46xzq3pw6zflomrghvxeuks6kklberrbmyd.onion/' + id)
+                        appender(title.replace('\n',''), 'akira', description,'',published)

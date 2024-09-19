@@ -50,7 +50,7 @@ def main():
                         published = ''
                     p_elements = h2.find_parent().find_all('p')
                     description = ' '.join(p.get_text() for p in p_elements)
-                    description = description.replace('\n',' ')
+                    # description = description.replace('\n',' ')
                     appender(victim, 'ciphbit', description,website,published)
                 file.close()
         #except:

@@ -35,7 +35,8 @@ def main():
                     except: 
                         published = datetime.strptime(date_string, "%d.%m.%y").strftime("%Y-%m-%d %H:%M:%S.%f")
                     description = div.find('div', class_='small opacity-50').text.strip()
-                    appender(name, '8base', description.replace('\n',' '),"",published,link)
+                    #appender(name, '8base', description.replace('\n',' '),"",published,link)
+                    appender(name, '8base', description,"",published,link)
                 file.close()
         except:
            errlog('8base : ' + 'parsing fail')

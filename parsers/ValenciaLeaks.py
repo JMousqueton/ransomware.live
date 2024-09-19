@@ -8,7 +8,7 @@
     Rappel : def appender(post_title, group_name, description="", website="", published="", post_url="")
 """
 
-import os,datetime,sys
+import os,datetime,sys,re
 from bs4 import BeautifulSoup
 from datetime import datetime
 
@@ -42,14 +42,18 @@ def main():
                 html_doc='source/'+filename
                 file=open(html_doc,'r')
                 soup=BeautifulSoup(file,'html.parser')
-                containers = soup.find_all('div', class_='u-container-style')
-                for container in containers:
-                    title = container.find('h5', class_='u-text-default')  # Find the title
-                    description = container.find('p', class_='u-text')  # Find the description
-                    image = container.find('img')  # Find the image
-                    href = container.get('data-href')  # Get the href attribute
-                    if title: 
-                        
-                        appender(title.text, group_name, "","","","","" )
+                thread_boxes = soup.find_all('div', class_='thread-box')
+                for i, box in enumerate(thread_boxes, start=1):
+                    card_title = box.find('h5', class_='card-title').string if box.find('h5', class_='card-title') else "N/A"
+                    time_left = box.find('p', class_='time-left').string if box.find('p', class_='time-left') else "N/A"
+                    data_finaldate = box.get('data-finaldate', 'N/A')
+                    data_leak = box.get('data-leak', 'N/A')
+                    size = box.find('span', class_='price').string if box.find('span', class_='price') else "N/A"
+                    view_link = box.find('a', class_='btn').get('href') if box.find('a', class_='btn') else "N/A"
+                    link = find_slug_by_md5(group_name, extract_md5_from_filename(html_doc)) + view_link
+                    description = f"Data Exfiltrated : {size} - Leak Date : {data_finaldate}"
+        
+
+                    appender(card_title, group_name, description,"","",link )
         except Exception as e:
             errlog(group_name + ' - parsing fail with error: ' + str(e) + 'in file:' + filename)
