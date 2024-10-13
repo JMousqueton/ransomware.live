@@ -47,18 +47,18 @@ def main():
             stdlog(f"Requesting data from: {slug}") 
                 
             # Make the request via Tor
-            response = requests.get(slug, proxies=proxies)
+            try: 
+                response = requests.get(slug, proxies=proxies)
                 
-            if response.status_code == 200:
-                data_js_content = response.text
+                if response.status_code == 200:
+                    data_js_content = response.text
 
-                # Extract the relevant array data manually
-                data_js_content = data_js_content.strip()
-                # Remove 'let data =' and the trailing semicolon
-                if data_js_content.startswith("let data ="):
-                    data_js_content = data_js_content[len("let data ="):].strip()
+                    # Extract the relevant array data manually
+                    data_js_content = data_js_content.strip()
+                    # Remove 'let data =' and the trailing semicolon
+                    if data_js_content.startswith("let data ="):
+                        data_js_content = data_js_content[len("let data ="):].strip()
 
-                try:
                         data = eval(data_js_content)
 
                         # Process the data
@@ -73,7 +73,7 @@ def main():
 
                             appender(victim, 'abyss', description) 
 
-                except Exception as e:
+            except Exception as e:
                     errlog(f"Failed to evaluate the data: {e}")
-            else:
-                errlog(f"Failed to fetch the file from {slug}. HTTP Status Code: {response.status_code}")
+        else:
+             errlog(f"Failed to fetch the file from {slug}. HTTP Status Code: {response.status_code}")

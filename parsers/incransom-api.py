@@ -46,6 +46,7 @@ def main():
 
     try:
         json_data = fetch_json_from_onion_url(json_onion_url)
+        #json_data = openjson('/tmp/incransom.json')
 
     except:
         json_data = None
