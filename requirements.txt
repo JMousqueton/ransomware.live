@@ -7,7 +7,7 @@ matplotlib==3.9.2
 openai==1.51.2
 opencv_python_headless==4.10.0.84
 pandas==2.2.3
-Pillow==10.4.0
+Pillow==11.0.0
 playwright==1.47.0
 pycountry==24.6.1
 python-dotenv==1.0.1
