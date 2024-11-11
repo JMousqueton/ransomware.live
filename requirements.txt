@@ -17,7 +17,7 @@ SocksiPy_branch==1.01
 Telethon==1.37.0
 tldextract==5.1.2
 urllib3==2.2.3
-wordcloud==1.9.3
+wordcloud==1.9.4
 seaborn==0.13.2
 stripe>=10.7.0
 Mastodon.py>=1.8.1
