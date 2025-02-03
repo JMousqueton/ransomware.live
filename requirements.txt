@@ -11,7 +11,7 @@ Pillow==11.1.0
 playwright==1.49.1
 pycountry==24.6.1
 python-dotenv==1.0.1
-pytz==2024.2
+pytz==2025.1
 Requests==2.32.3
 SocksiPy_branch==1.01
 Telethon==1.38.1
