@@ -1,4 +1,4 @@
-beautifulsoup4==4.12.3
+beautifulsoup4==4.13.0
 countryinfo==0.1.2
 deepl==1.21.0
 folium==0.19.4
