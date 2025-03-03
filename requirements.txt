@@ -2,7 +2,7 @@ beautifulsoup4==4.13.3
 countryinfo==0.1.2
 deepl==1.21.0
 folium==0.19.4
-lxml==5.3.0
+lxml==5.3.1
 matplotlib==3.9.3
 openai==1.64.0
 opencv_python_headless==4.10.0.84
