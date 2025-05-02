@@ -38,7 +38,7 @@ def main():
                         try:
                             # Try to parse date in format like '26 apr 2025'
                             published_dt = datetime.strptime(date_str, '%d %b %Y')
-                            published = published_dt.strftime('%Y-%m-%d')
+                            published = published_dt.strftime("%Y-%m-%d %H:%M:%S.%f")
                         except Exception:
                             published = ''
                     url = div.get('data-translit')
