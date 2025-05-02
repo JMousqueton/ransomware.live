@@ -20,18 +20,32 @@ def main():
     for filename in os.listdir('source'):
         try:
             if filename.startswith('everest-'):
-                html_doc='source/'+filename
-                file=open(html_doc,'r')
-                soup=BeautifulSoup(file,'html.parser')
-                divs_name=soup.find_all('article')
-                for div in divs_name:
-                    tmp = div.find('h2', {"class": "entry-title heading-size-1"})
-                    title = tmp.a.string
-                    title = title.replace(' Data Leak','')
-                    a_tag = tmp.find('a')
-                    url = a_tag['href']
-                    description = div.find('div', {"class": "entry-content"}).p.text.strip()
-                    appender(title, 'everest',description,'','',url)
+                html_doc = 'source/' + filename
+                file = open(html_doc, 'r')
+                soup = BeautifulSoup(file, 'html.parser')
+                # Find all victim entries
+                for div in soup.find_all('div', class_='category-item js-open-chat'):
+                    # Victim name
+                    title_tag = div.find('div', class_='category-title')
+                    if not title_tag:
+                        continue
+                    title = title_tag.get_text(strip=True)
+                    # Published date
+                    date_tag = div.find('div', class_='category-date')
+                    published = ''
+                    if date_tag:
+                        date_str = date_tag.get_text(strip=True)
+                        try:
+                            # Try to parse date in format like '26 apr 2025'
+                            published_dt = datetime.strptime(date_str, '%d %b %Y')
+                            published = published_dt.strftime('%Y-%m-%d')
+                        except Exception:
+                            published = ''
+                    url = div.get('data-translit')
+                    # TODO: get base url from the groups.json for better maintainability
+                    url = "http://ransomocmou6mnbquqz44ewosbkjk3o5qjsl3orawojexfook2j7esad.onion/news/" + url
+                    # No description or website in this format
+                    appender(title, 'everest','','',published, url)
                 file.close()
         except:
             errlog("Everest - Failed during : " + filename)
