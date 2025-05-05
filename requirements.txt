@@ -10,7 +10,7 @@ pandas==2.2.3
 Pillow==11.1.0
 playwright==1.49.1
 pycountry==24.6.1
-python-dotenv==1.0.1
+python-dotenv==1.1.0
 pytz==2025.2
 Requests==2.32.3
 SocksiPy_branch==1.01
