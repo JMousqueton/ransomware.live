@@ -1,0 +1,16 @@
+pathlib
+python-dotenv
+requests
+bs4
+telethon
+tldextract
+hudsonrockapi
+lxml
+pillow
+playwright
+opencv-python
+openai
+pycountry
+smtplib
+pandas
+stix2
