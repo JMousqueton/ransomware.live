@@ -111,7 +111,7 @@ python manage.py --help
 
 ## 📜 License
 
-This project is licensed under the **MIT License**.  
+This project is licensed under the **unlicense** License**.  
 See the [LICENSE](LICENSE) file for details.
 
 ---
