@@ -122,6 +122,8 @@ This project is for **research and educational purposes only**.
 Do **not** use it for unauthorized access to systems or data.  
 The maintainers take no responsibility for misuse of the code.
 
+This project is only the parsing and scraping, not the website. 
+
 ---
 
 ## 🤝 Contributing
