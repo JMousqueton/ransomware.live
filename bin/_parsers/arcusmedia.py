@@ -20,6 +20,11 @@ load_dotenv(dotenv_path=env_path)
 home = os.getenv("RANSOMWARELIVE_HOME")
 tmp_dir = Path(home + os.getenv("TMP_DIR"))
 
+def fix_value(match):
+    label = match.group(1)  # Days / Hours / Minutes / Seconds
+    number = match.group(2) # The digits
+    return f"{label}: {number[-2:].zfill(2)} "
+
 def main():
     for filename in os.listdir(tmp_dir):
         try:
@@ -38,6 +43,7 @@ def main():
 
                     desc_tag = article.find('div', class_='entry-excerpt')
                     description = desc_tag.text.strip() if desc_tag else "No Description"
+                    description = re.sub(r"(Days|Hours|Minutes|Seconds)(\d+)", fix_value, description)
 
                     date_tag = article.find('time', class_='published')
                     date_str = date_tag['datetime'] if date_tag else "No Date"
