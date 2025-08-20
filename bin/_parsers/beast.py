@@ -4,6 +4,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 from shared_utils import find_slug_by_md5, appender, extract_md5_from_filename, errlog
+from datetime import datetime
 
 # Chargement des variables d'environnement
 env_path = Path("../.env")
@@ -38,7 +39,7 @@ def main():
                     raw_date = card.select_one(".date").text.strip()
                     for fmt in ("%d.%m.%Y", "%Y.%m.%d", "%d.%m.%y", "%m.%d.%Y"):
                         try:
-                            dt = datetime.datetime.strptime(raw_date, fmt)
+                            dt = datetime.strptime(raw_date, fmt)
                             published = dt.strftime("%Y-%m-%d 00:00:00.000000")
                             break
                         except ValueError:
