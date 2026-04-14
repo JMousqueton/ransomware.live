@@ -47,11 +47,13 @@ def main():
                         item = json.loads(line.strip())
                         title = item.get('title', '').strip()
                         post_id = item.get('id', '')
-                        website = item.get('website', '').strip().replace("https:// http", "http")  # cleaning one entry
+                        if item.get('website', ''):
+                            website = item.get('website', '').strip().replace("https:// http", "http")  # cleaning one entry
+                        else:
+                            website = ''
                         published = convert_date(item.get('updated_at', 0))
                         country_code = item.get('country', '').upper()
                         post_url = f"https://worldleaksartrjm3c6vasllvgacbi5u3mgzkluehrzhk2jz4taufuid.onion/companies/{post_id}"
-
                         appender(
                             victim=title,
                             group_name='worldleaks',

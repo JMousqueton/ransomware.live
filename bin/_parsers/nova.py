@@ -5,11 +5,23 @@ from shared_utils import find_slug_by_md5, appender, extract_md5_from_filename, 
 from pathlib import Path
 from dotenv import load_dotenv
 import pycountry
+import unicodedata
 
 env_path = Path("../.env")
 load_dotenv(dotenv_path=env_path)
 home = os.getenv("RANSOMWARELIVE_HOME")
 tmp_dir = Path(home + os.getenv("TMP_DIR"))
+
+
+def to_url_slug(text):
+    # Normalize accents (é -> e)
+    text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode()
+    # Lowercase
+    text = text.lower()
+    # Replace non-alphanumeric with hyphens
+    text = re.sub(r'[^a-z0-9]+', '-', text)
+    # Remove leading/trailing hyphens
+    return text.strip('-')
 
 def main():
     # Define the date format to convert to
@@ -52,7 +64,8 @@ def main():
 
                             # Post URL - reconstruct it using the known method
                             post_url = name_element['href'] if name_element and name_element.has_attr('href') else ""
-                            post_url = find_slug_by_md5(group_name, extract_md5_from_filename(str(html_doc))).replace('/leaks', '/') + post_url
+                            post_url = find_slug_by_md5(group_name, extract_md5_from_filename(str(html_doc))).replace('/leaks', '') + '/' + post_url
+                            post_url = post_url + to_url_slug(name)
 
                             # Published date conversion
                             try:
@@ -80,7 +93,6 @@ def main():
                             except LookupError:
                                 country_code = ""
                         
-
                             appender(
                                 victim=name.replace(' company','').strip(),
                                 group_name=group_name,
@@ -90,7 +102,6 @@ def main():
                                 post_url=post_url,
                                 country=""
                             )
-
 
                         except Exception as e:
                             errlog(f"{group_name} - parsing individual post failed with error: {str(e)} in file: {filename}")

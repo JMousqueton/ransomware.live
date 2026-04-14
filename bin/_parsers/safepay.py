@@ -3,7 +3,7 @@
 
 """
 Parser for: Safepay Blog (cards grid)
-Extracts: victim/domain, description, website, post_url, country
+Extracts: victim/domain, description, website, published, post_url, country
 """
 
 import os, sys, re
