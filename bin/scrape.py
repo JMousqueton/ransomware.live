@@ -39,6 +39,7 @@ load_dotenv(dotenv_path=env_path)
 
 home = os.getenv("RANSOMWARELIVE_HOME")
 db_dir = Path(home + os.getenv("DB_DIR"))
+uptime_dir = db_dir / "uptime"
 img_dir = Path(home + os.getenv("IMAGES_DIR"))
 tmp_dir = Path(home + os.getenv("TMP_DIR"))
 watermark = Path(home + os.getenv("WATERMARK_IMAGE_PATH"))
@@ -199,6 +200,7 @@ def release_lock(lock_file):
     try:
         fcntl.flock(lock_file, fcntl.LOCK_UN)
         lock_file.close()
+        remove_lock_file()
     except Exception as e:
         errlog(f"Error releasing lock: {e}")
 
@@ -217,6 +219,34 @@ def offline_for_more_than(last_scrape, days):
         return current_time - last_scrape_date > timedelta(days=days)
     except ValueError:
         return False
+
+def log_uptime(group_name: str, fqdn: str, available: bool, http_status):
+    """Append an uptime check result to db/uptime/<group_name>.json, pruning records older than 90 days."""
+    uptime_dir.mkdir(parents=True, exist_ok=True)
+    filepath = uptime_dir / f"{group_name}.json"
+    try:
+        if filepath.exists():
+            with filepath.open("r", encoding="utf-8") as f:
+                records = json.load(f)
+        else:
+            records = []
+    except Exception:
+        records = []
+
+    now = datetime.now(timezone.utc)
+    records.append({
+        "ts": now.isoformat(),
+        "fqdn": fqdn,
+        "up": available,
+        "status": http_status,
+    })
+
+    cutoff = now - timedelta(days=90)
+    records = [r for r in records if datetime.fromisoformat(r["ts"]) >= cutoff]
+
+    with filepath.open("w", encoding="utf-8") as f:
+        json.dump(records, f, indent=2)
+
 
 def extract_title_from_html(html_text: str) -> str:
     try:
@@ -364,7 +394,14 @@ async def scrape_group(context, group, bypass_enabled_flag, verbose):
                         stdlog(f"[{group_name}] Header fingerprint: {location['http']['fingerprint']}")
                 except Exception as e:
                     errlog(f"[{group_name}] header fingerprint failed for {slug}: {str(e).splitlines()[0]}")
-                
+
+                log_uptime(
+                    group_name,
+                    location.get("fqdn", slug),
+                    location.get("available", False),
+                    location.get("http", {}).get("status"),
+                )
+
             else:
                 if verbose:
                     stdlog(f"[{group_name}] Skipping {slug} as the file is fresh.")

@@ -42,10 +42,13 @@ def creategroup(name, location):
     location = siteschema(location)
     insertdata = {
         'name': name,
+        'altname': None,
+        'lineage': None, 
         'date': now,
         'meta': None,
         'description': None,
-        'contact': None,
+        'extensions ': None,
+        'type': { "raas": False },
         'locations': [
             location
         ],
@@ -144,7 +147,7 @@ def siteadder(name, location):
         new_group = creategroup(name, location)
         groups.append(new_group)
         write_to_file(groups, GROUPS_FILE)
-        grouptobluesky(name)
+        #grouptobluesky(name)
         stdlog(f"Ransomware.live: Added new group '{name}' to the database.")
 
 def blur_image(input_path, output_path, blur_radius=5):

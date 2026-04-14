@@ -22,6 +22,7 @@ import cv2
 #Appender
 from openai import OpenAI
 #from mistralai import Mistral
+import anthropic
 import pycountry
 
 from playwright.async_api import async_playwright
@@ -40,7 +41,7 @@ import requests
 import base64
 
 ### screenshot 
-from libcapture import capture_victim
+from libcapture import capture_victim_safe as capture_victim
 
 # Load environment variables from ../.env
 env_path = Path("../.env")
@@ -49,6 +50,7 @@ load_dotenv(dotenv_path=env_path)
 home = os.getenv("RANSOMWARELIVE_HOME")
 db_dir = Path(home + os.getenv("DB_DIR"))
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+ANTHROPIC_API_KEY = os.getenv('ANTHROPIC_API_KEY')
 proxy_address = os.getenv("TOR_PROXY_SERVER", "socks5://127.0.0.1:9050")  # Default to Tor proxy
 
 
@@ -105,34 +107,64 @@ def check_image_for_face(image_path, scaleFactor=1.1, minNeighbors=5, minSize=(3
         errlog( f"OpenCV: An error occurred: {str(e)}")
         return False
 
+# def enrich_post(title: str, description: str) -> Dict[str, Any]:
+#     OPENAPI_MODEL = "gpt-4o-mini"
+#     OPENAPI_TEMPERATURE = 0.0
+#     PROMPT_TEMPLATE = (
+#     "You are a threat intelligence assistant and tracking posts of ransomware groups. They only display alleged victim names on their leak sites.\n"
+#     "The victim name is: '{title}' and the post description is: {description}\n\n"
+#     "I need you to help me find the following information about the victim"
+#     "and answer in strict JSON with these keys ONLY:\n"
+#     "  company_name   (string)\n"
+#     "  country        (string, ISO 3166‑1 country name if known, else \"unknown\")\n"
+#     "  sector         (list, the list of sectors the victim belongs to. Use sectors from the NIS Directive\n"
+#     "  url            (string, victim's official website or \"unknown\")\n"
+#     "  summary        (string, ≤ 50 words)\n\n"
+#     "If you are uncertain about a field, put \"unknown\", but do not invent facts.\n"
+#     "For the country location, use the company address as displayed by the Google search.\n"
+#     )
+#     prompt = PROMPT_TEMPLATE.format(title=title, description=description)
+#     openai.api_key = OPENAI_API_KEY
+#     response = openai.chat.completions.create(
+#         model=OPENAPI_MODEL,
+#         temperature=OPENAPI_TEMPERATURE,
+#         response_format={"type": "json_object"},
+#         messages=[
+#             {"role": "system", "content": "You are a threat intelligence assistant supporting a CTI team tracking ransomware incidents."},
+#             {"role": "user", "content": prompt},
+#         ],
+#     )
+#     return json.loads(response.choices[0].message.content)
+
+
 def enrich_post(title: str, description: str) -> Dict[str, Any]:
-    OPENAPI_MODEL = "gpt-4o-mini"
-    OPENAPI_TEMPERATURE = 0.0
+    ANTHROPIC_MODEL = "claude-sonnet-4-6"
     PROMPT_TEMPLATE = (
-    "You are a threat intelligence assistant and tracking posts of ransomware groups. They only display alleged victim names on their leak sites.\n"
-    "The victim name is: '{title}' and the post description is: {description}\n\n"
-    "I need you to help me find the following information about the victim"
-    "and answer in strict JSON with these keys ONLY:\n"
-    "  company_name   (string)\n"
-    "  country        (string, ISO 3166‑1 country name if known, else \"unknown\")\n"
-    "  sector         (list, the list of sectors the victim belongs to. Use sectors from the NIS Directive\n"
-    "  url            (string, victim's official website or \"unknown\")\n"
-    "  summary        (string, ≤ 50 words)\n\n"
-    "If you are uncertain about a field, put \"unknown\", but do not invent facts.\n"
-    "For the country location, use the company address as displayed by the Google search.\n"    
+        "You are a threat intelligence assistant tracking posts of ransomware groups. "
+        "They only display alleged victim names on their leak sites.\n"
+        "The victim name is: '{title}' and the post description is: {description}\n\n"
+        "I need you to help me find the following information about the victim "
+        "and answer in strict JSON with these keys ONLY:\n"
+        "  company_name   (string)\n"
+        "  country        (string, ISO 3166-1 country name if known, else \"unknown\")\n"
+        "  sector         (list, the list of sectors the victim belongs to. Use sectors from the NIS Directive)\n"
+        "  url            (string, victim's official website or \"unknown\")\n"
+        "  summary        (string, <= 50 words)\n\n"
+        "If you are uncertain about a field, put \"unknown\", but do not invent facts.\n"
+        "For the country location, use the company address as displayed by the Google search.\n"
+        "Respond ONLY with the JSON object, no extra text."
     )
     prompt = PROMPT_TEMPLATE.format(title=title, description=description)
-    openai.api_key = OPENAI_API_KEY
-    response = openai.chat.completions.create(
-        model=OPENAPI_MODEL,
-        temperature=OPENAPI_TEMPERATURE,
-        response_format={"type": "json_object"},
+    client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+    response = client.messages.create(
+        model=ANTHROPIC_MODEL,
+        max_tokens=1024,
+        system="You are a threat intelligence assistant supporting a CTI team tracking ransomware incidents.",
         messages=[
-            {"role": "system", "content": "You are a threat intelligence assistant supporting a CTI team tracking ransomware incidents."},
             {"role": "user", "content": prompt},
         ],
     )
-    return json.loads(response.choices[0].message.content)
+    return json.loads(response.content[0].text)
 
 
 
@@ -648,6 +680,9 @@ def clean_title(s):
     for substring in substrings_to_remove:
         s = s.replace(substring, '')
 
+    # Remove " | Part N" (1-99) if it appears at the end of the string
+    s = re.sub(r'\s*\|\s*Part\s+\d{1,2}$', '', s)
+
     # Remove " PoC" if it appears at the end of the string
     s = re.sub(r' PoC$', '', s)
     
@@ -723,12 +758,6 @@ def appender(victim,group_name,description='',website='', published='', post_url
         #asyncio.run(take_screenshot_victim(post_url))
         capture_victim(post_url)
     
-    stdlog(f"Querying OpenAI API for '{victim}' activity...")
-    # Initialize OpenAI Client
-    client = OpenAI(
-        api_key=OPENAI_API_KEY
-    )   
-
     # List of known industry sectors
     SECTOR_LIST = [
         "Manufacturing", "Construction", "Transportation/Logistics", "Technology",
@@ -736,61 +765,116 @@ def appender(victim,group_name,description='',website='', published='', post_url
         "Business Services", "Consumer Services", "Energy", "Telecommunication",
         "Agriculture and Food Production", "Hospitality and Tourism"
     ]
+
+    ## Get Activity/Sector
+    # stdlog(f"Querying OpenAI API for '{victim}' activity...")
+    # # Initialize OpenAI Client
+    # client = OpenAI(
+    #     api_key=OPENAI_API_KEY
+    # )
+    # prompt = (
+    #     f'Using this list: {", ".join(SECTOR_LIST)}, '
+    #     f'can you determine the sector of this company: "{victim}"? '
+    #     f'Just answer with one word from the list. If you cannot pick one, answer "Not Found".'
+    # )
+    # try:
+    #     completion = client.chat.completions.create(
+    #         model="gpt-4",
+    #         messages=[{"role": "user", "content": prompt}]
+    #     )
+    #     activity = completion.choices[0].message.content.strip()
+    #     if activity != "Not Found":
+    #         if activity not in SECTOR_LIST:
+    #             activity = "Not Found"
+    # except Exception as e:
+    #     print(f"⚠️ OpenAI API error: {e}")
+    #     activity = "Not Found"
+
+    stdlog(f"Querying Anthropic API for '{victim}' activity...")
     prompt = (
-        f'Using this list: {", ".join(SECTOR_LIST)}, '
-        f'can you determine the sector of this company: "{victim}"? '
-        f'Just answer with one word from the list. If you cannot pick one, answer "Not Found".'
+        f'You are a threat intelligence analyst. Given the company name "{victim}", '
+        f'classify it into exactly one sector from this list: {", ".join(SECTOR_LIST)}. '
+        f'Reply with the exact sector name from the list, nothing else. '
+        f'If you cannot determine the sector with confidence, reply "Not Found".'
     )
     try:
-        completion = client.chat.completions.create(
-            model="gpt-4",
+        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+        completion = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=16,
             messages=[{"role": "user", "content": prompt}]
         )
-        activity = completion.choices[0].message.content.strip()
-        if activity != "Not Found":
-            if activity not in SECTOR_LIST:
-                activity = "Not Found"
+        activity = completion.content[0].text.strip()
+        if activity not in SECTOR_LIST:
+            activity = "Not Found"
     except Exception as e:
-        print(f"⚠️ OpenAI API error: {e}")
-        activity =  "Not Found"
+        print(f"⚠️ Anthropic API error: {e}")
+        activity = "Not Found"
 
-    ## Get Website 
-    if OPENAI_API_KEY and website is None and description:
-        client = OpenAI()
-        stdlog(f'Query OpenAI API for "{victim}" website')
-        prompt = f'can you give me your best guess for the domain name of "{victim}" Only give me the domain name, no extract text. if you cannot guess just answer "Not Found"'
-        completion = client.chat.completions.create(
-            model="gpt-4",
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt,
-                },
-            ],
+    ## Get Website
+    # if OPENAI_API_KEY and website is None and description:
+    #     client = OpenAI()
+    #     stdlog(f'Query OpenAI API for "{victim}" website')
+    #     prompt = f'can you give me your best guess for the domain name of "{victim}" Only give me the domain name, no extract text. if you cannot guess just answer "Not Found"'
+    #     completion = client.chat.completions.create(
+    #         model="gpt-4",
+    #         messages=[
+    #             {
+    #                 "role": "user",
+    #                 "content": prompt,
+    #             },
+    #         ],
+    #     )
+    #     website = completion.choices[0].message.content
+    #     if website == "Not Found":
+    #         website = ''
+
+    if ANTHROPIC_API_KEY and website is None and description:
+        stdlog(f'Query Anthropic API for "{victim}" website')
+        prompt = f'What is the official domain name of the company "{victim}"? Reply with only the bare domain name (e.g. example.com), no protocol, no path, no extra text. If you cannot determine it with confidence, reply "Not Found".'
+        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+        completion = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=64,
+            messages=[{"role": "user", "content": prompt}]
         )
-        website = completion.choices[0].message.content
+        website = completion.content[0].text.strip()
         if website == "Not Found":
             website = ''
 
     if website == None:
         website = ''
 
-    ### Get Country 
+    ### Get Country
     #country = get_country(victim,description,website)
-    if OPENAI_API_KEY and (country is None or len(country) < 2) and '*' not in victim:
-        stdlog(f'Query OpenAI API for "{victim}" country')
-        client = OpenAI()
-        prompt = f'I would like the 2 letters code of the country, and only the 2 letters not extra text, where the this company is located : "{victim}"'
-        completion = client.chat.completions.create(
-            model="gpt-4",
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt,
-                },
-            ],
+    # if OPENAI_API_KEY and (country is None or len(country) < 2) and '*' not in victim:
+    #     stdlog(f'Query OpenAI API for "{victim}" country')
+    #     client = OpenAI()
+    #     prompt = f'I would like the 2 letters code of the country, and only the 2 letters not extra text, where the this company is located : "{victim}"'
+    #     completion = client.chat.completions.create(
+    #         model="gpt-4",
+    #         messages=[
+    #             {
+    #                 "role": "user",
+    #                 "content": prompt,
+    #             },
+    #         ],
+    #     )
+    #     country = completion.choices[0].message.content
+    #     stdlog(f'Found : {country}')
+
+    if ANTHROPIC_API_KEY and (country is None or len(country) < 2) and '*' not in victim:
+        stdlog(f'Query Anthropic API for "{victim}" country')
+        prompt = f'What is the ISO 3166-1 alpha-2 country code (2 uppercase letters) of the country where the company "{victim}" is headquartered? Reply with only the 2-letter code, nothing else. If you cannot determine it with confidence, reply "XX".'
+        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+        completion = client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=8,
+            messages=[{"role": "user", "content": prompt}]
         )
-        country = completion.choices[0].message.content
+        country = completion.content[0].text.strip()
+        if country.upper() == 'XX':
+            country = ''
         stdlog(f'Found : {country}')
     
     if len(country) == 2:
@@ -801,22 +885,34 @@ def appender(victim,group_name,description='',website='', published='', post_url
     else:
         country = ''
         
- 
-    ### Get Description 
-    if OPENAI_API_KEY and description == '' and '*' not in victim:
-        stdlog(f'Query OpenAI API for "{victim}" description')
-        client = OpenAI()
-        prompt = f'Can you provide a detailed description for the company "{victim}" in around 400 chars and without any links ? If you cannot just answer "N/A".'
-        completion = client.chat.completions.create(
-            model="gpt-4",
-            messages=[
-                {
-                    "role": "user",
-                    "content": prompt,
-                },
-            ],
+
+    ### Get Description
+    # if OPENAI_API_KEY and description == '' and '*' not in victim:
+    #     stdlog(f'Query OpenAI API for "{victim}" description')
+    #     client = OpenAI()
+    #     prompt = f'Can you provide a detailed description for the company "{victim}" in around 400 chars and without any links ? If you cannot just answer "N/A".'
+    #     completion = client.chat.completions.create(
+    #         model="gpt-4",
+    #         messages=[
+    #             {
+    #                 "role": "user",
+    #                 "content": prompt,
+    #             },
+    #         ],
+    #     )
+    #     description = completion.choices[0].message.content
+    #     description = '[AI generated] ' + description
+
+    if ANTHROPIC_API_KEY and description == '' and '*' not in victim:
+        stdlog(f'Query Anthropic API for "{victim}" description')
+        prompt = f'You are a threat intelligence analyst. Provide a factual description of the company "{victim}" in plain text, around 400 characters, covering what it does, its industry, and its country of operation. No links, no markdown, no bullet points. If the company is unknown or you cannot find reliable information, reply "N/A".'
+        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+        completion = client.messages.create(
+            model="claude-sonnet-4-6",
+            max_tokens=256,
+            messages=[{"role": "user", "content": prompt}]
         )
-        description = completion.choices[0].message.content
+        description = completion.content[0].text.strip()
         description = '[AI generated] ' + description
 
     now = str(datetime.today())

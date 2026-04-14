@@ -1,9 +1,15 @@
+import logging
+FAIL_SILENTLY_DEFAULT = False  # change at import-time if you want
+class CaptureError(Exception):
+    pass
+
 import asyncio
 import hashlib
 import json
 import os
 import sys
 import re
+import shutil
 from pathlib import Path
 from urllib.parse import urlparse
 from PIL import Image, ImageFilter
@@ -20,7 +26,7 @@ VIEWPORT_WIDTH = 1280
 VIEWPORT_HEIGHT = 1000
 OVERLAP = 100  # px
 
-blur_gang = ['pear', 'qilin', 'rhysida']
+blur_gang = ['handala', 'pear', 'bravox','anubis', 'qilin', 'rhysida', 'cephalus', 'coinbasecartel', 'tengu', 'killsec', 'secp0']
 networkidle_gang = ['incransom']
 GROUPS_JSON_PATH = os.path.join(os.path.dirname(__file__), "../db/groups.json")
 HAAR_CASCADE_PATH = "/opt/ransomwarelive/etc/haarcascade_frontalface_default.xml"
@@ -79,13 +85,19 @@ def resolve_group_name_from_url(target_url: str) -> str | None:
     return None
 
 def blur_image(img_path: str, radius: int = 5):
+    # Create backup copy before blurring
+    base, ext = os.path.splitext(img_path)
+    backup_path = f"{base}_ORIG{ext}"
+    shutil.copy2(img_path, backup_path)
+
+    # Open and blur the image
     img = Image.open(img_path)
     blurred = img.filter(ImageFilter.GaussianBlur(radius=radius))
     blurred.save(img_path)
 
 def detect_faces_and_blur(img_path: str) -> bool:
     if not os.path.exists(HAAR_CASCADE_PATH):
-        print(f"[WARN] Haar cascade not found: {HAAR_CASCADE_PATH}")
+        shared_utils.stdlog(f"[WARN] Haar cascade not found: {HAAR_CASCADE_PATH}")
         return False
     face_cascade = cv2.CascadeClassifier(HAAR_CASCADE_PATH)
     img = cv2.imread(img_path)
@@ -94,14 +106,47 @@ def detect_faces_and_blur(img_path: str) -> bool:
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     faces = face_cascade.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=4, minSize=(30, 30))
     if len(faces) > 0:
-        print(f"[✓] Detected {len(faces)} face(s) → blurring...")
+        shared_utils.stdlog(f"[✓] Detected {len(faces)} face(s) → blurring...")
         blur_image(img_path)
         return True
     return False
 
+def detect_and_blur_faces(img_path: str) -> bool:
+    if not os.path.exists(HAAR_CASCADE_PATH):
+        shared_utils.stdlog(f"[WARN] Haar cascade not found: {HAAR_CASCADE_PATH}")
+        return False
+
+    face_cascade = cv2.CascadeClassifier(HAAR_CASCADE_PATH)
+    img = cv2.imread(img_path)
+    if img is None:
+        return False
+
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    faces = face_cascade.detectMultiScale(
+        gray, scaleFactor=1.1, minNeighbors=4, minSize=(30, 30)
+    )
+
+    if len(faces) > 0:
+        # Backup original image
+        base, ext = os.path.splitext(img_path)
+        backup_path = f"{base}_ORIG{ext}"
+        shutil.copy2(img_path, backup_path)
+
+        shared_utils.stdlog(f"[✓] Detected {len(faces)} face(s) → blurring regions...")
+        for (x, y, w, h) in faces:
+            roi = img[y:y+h, x:x+w]
+            roi_blur = cv2.GaussianBlur(roi, (99, 99), 30)  # strong blur
+            img[y:y+h, x:x+w] = roi_blur
+        cv2.imwrite(img_path, img)
+        return True
+
+    return False
+
+    return False
+
 def decide_simplewait(url: str) -> bool:
     if url_in_group_list(url, networkidle_gang):
-        print("[policy] URL forces networkidle mode")
+        shared_utils.stdlog("[policy] URL forces networkidle mode")
         return False
     return True  # default is simplewait ON
 
@@ -119,11 +164,11 @@ async def screenshot_onion(url: str) -> str:
             ignore_https_errors=True
         )
         page = await context.new_page()
-        print(f"[+] Navigating to {url} via Tor...")
+        shared_utils.stdlog(f"[+] Navigating to {url} via Tor...")
 
         if simplewait:
             await page.goto(url, timeout=60000)
-            print("[~] Waiting 8s for JS...")
+            shared_utils.stdlog("[~] Waiting 8s for JS...")
             await page.wait_for_timeout(8000)
         else:
             await page.goto(url, wait_until="networkidle", timeout=120000)
@@ -177,7 +222,8 @@ async def screenshot_onion(url: str) -> str:
     if url_in_group_list(url, blur_gang):
         blur_image(final_path)
     else:
-        detect_faces_and_blur(final_path)
+        #detect_faces_and_blur(final_path)
+        detect_and_blur_faces(final_path)
 
     if WATERMARK_PATH.exists() and os.path.exists(final_path):
         shared_utils.add_watermark(final_path, WATERMARK_PATH)
@@ -199,11 +245,11 @@ async def screenshot_onion_with_path(url: str, final_path: str) -> str:
             ignore_https_errors=True
         )
         page = await context.new_page()
-        print(f"[+] Navigating to {url} via Tor...")
+        shared_utils.stdlog(f"[+] Navigating to {url} via Tor...")
 
         if simplewait:
             await page.goto(url, timeout=60000)
-            print("[~] Waiting 8s for JS...")
+            shared_utils.stdlog("[~] Waiting 8s for JS...")
             await page.wait_for_timeout(8000)
         else:
             await page.goto(url, wait_until="networkidle", timeout=120000)
@@ -284,3 +330,51 @@ def capture_group(url: str) -> str:
     os.makedirs(GROUP_OUTPUT_DIR, exist_ok=True)
 
     return asyncio.run(screenshot_onion_with_path(url, final_path))
+
+
+
+# --- Safe wrappers added automatically ---
+
+def screenshot_onion_safe(*args, fail_silently=FAIL_SILENTLY_DEFAULT, **kwargs):
+    """Call screenshot_onion but never exit the process.
+    Returns a tuple (ok, result) where ok=False on failure and result is either the normal return or an error dict.
+    """
+    try:
+        res = screenshot_onion(*args, **kwargs)
+        return True, res
+    except Exception as e:
+        logging.warning("libcapture: screenshot_onion failed: %s", e)
+        return False, {"error": str(e), "exception_type": e.__class__.__name__}
+
+def screenshot_onion_with_path_safe(*args, fail_silently=FAIL_SILENTLY_DEFAULT, **kwargs):
+    """Call screenshot_onion_with_path but never exit the process.
+    Returns a tuple (ok, result) where ok=False on failure and result is either the normal return or an error dict.
+    """
+    try:
+        res = screenshot_onion_with_path(*args, **kwargs)
+        return True, res
+    except Exception as e:
+        logging.warning("libcapture: screenshot_onion_with_path failed: %s", e)
+        return False, {"error": str(e), "exception_type": e.__class__.__name__}
+
+def capture_victim_safe(*args, fail_silently=FAIL_SILENTLY_DEFAULT, **kwargs):
+    """Call capture_victim but never exit the process.
+    Returns a tuple (ok, result) where ok=False on failure and result is either the normal return or an error dict.
+    """
+    try:
+        res = capture_victim(*args, **kwargs)
+        return True, res
+    except Exception as e:
+        logging.warning("libcapture: capture_victim failed: %s", e)
+        return False, {"error": str(e), "exception_type": e.__class__.__name__}
+
+def capture_group_safe(*args, fail_silently=FAIL_SILENTLY_DEFAULT, **kwargs):
+    """Call capture_group but never exit the process.
+    Returns a tuple (ok, result) where ok=False on failure and result is either the normal return or an error dict.
+    """
+    try:
+        res = capture_group(*args, **kwargs)
+        return True, res
+    except Exception as e:
+        logging.warning("libcapture: capture_group failed: %s", e)
+        return False, {"error": str(e), "exception_type": e.__class__.__name__}
