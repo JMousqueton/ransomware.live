@@ -21,7 +21,7 @@ home = os.getenv("RANSOMWARELIVE_HOME")
 tmp_dir = Path(home + os.getenv("TMP_DIR"))
 
 def main():
-    pattern = r"^(FILES PART [1-9]|COMPANY's PART[1-9]|PART [1-9]|HOME|HOW TO DOWNLOAD\?|ARCHIVE|ARCHIVE[1-9]|ARCHIVE[10-99])$"
+    pattern = r"^(FILES PART [1-9]|COMPANY's PART[1-9]|COMPANIES-GROUP-[1-9]|PART [1-9]|HOME|HOW TO DOWNLOAD\?|ARCHIVE|ARCHIVE([1-9]|[1-9][0-9]))$"
 
     blacklist=['HOME', 'HOW TO DOWNLOAD?', 'ARCHIVE']
     for filename in os.listdir(tmp_dir):
@@ -36,10 +36,11 @@ def main():
                 ### for item in div.contents:
                 ###    victim = item.text.strip()
                 title_tag = item.select_one(".g-menu-item-title")
-                victim = title_tag.text.strip()
+                victim = title_tag.text.strip().replace(' - (EBS)','')
                 link_tag = item.select_one(".g-menu-item-container")
                 link = link_tag["href"].strip()
                 post_url = find_slug_by_md5('clop', extract_md5_from_filename(str(html_doc))) + str(link)
+                post_url = post_url.replace('.onion//','.onion/')
                 if not re.match(pattern, victim):
                     appender(victim, 'clop','','','',post_url)
                     

@@ -34,22 +34,22 @@ proxies = {
     'http': 'socks5h://localhost:9050',
     'https': 'socks5h://localhost:9050'
 }
+
 def get_fqdns_from_json(filename, group_name):
     # Load the JSON data from the file
-    with open(filename, 'r') as file:
+    with open(filename, 'r', encoding="utf-8") as file:
         data = json.load(file)
 
-    # Initialize a list to hold the FQDNs
     fqdns = []
 
     # Loop through each item in the JSON data (assuming top level is a list)
     for item in data:
-        # Check if the group name matches
         if item.get("name") == group_name:
-            # Loop through each location in the locations list
             for location in item.get("locations", []):
-                # Append the FQDN to the list
-                fqdns.append(location["fqdn"])
+                if location.get("enabled", False):  # only include enabled ones
+                    fqdn = location.get("fqdn")
+                    if fqdn:
+                        fqdns.append(fqdn)
             break
 
     return fqdns
@@ -90,6 +90,7 @@ def main():
                     country = item['company']['country']
                     description = unquote(item['description'][0])
                     date_created = convert_datetime(item['createdAt'])
+                    #fqdn = 'lynxblogmx3rbiwg3rpj4nds25hjsnrwkpxt5gaznetfikz4gz2csyad.onion'
                     link = 'http://' + fqdn + '/leaks/' + str(id) 
                     appender(victim,'lynx',description,None,date_created,link)
         except Exception as e:

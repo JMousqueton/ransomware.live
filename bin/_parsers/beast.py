@@ -1,81 +1,131 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+Parser for: BEAST LEAKS | Index
+Extracts per card: victim (h3), description, website, published ("Published" or ""),
+post_url (absolute). Country not present → "".
+"""
+
 import os
-import datetime
 from pathlib import Path
+from urllib.parse import urlparse, urljoin
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-from shared_utils import find_slug_by_md5, appender, extract_md5_from_filename, errlog
 from datetime import datetime
 
-# Chargement des variables d'environnement
+from shared_utils import (
+    find_slug_by_md5,
+    appender,
+    extract_md5_from_filename,
+    errlog,
+)
+
+# ---------- Env ----------
 env_path = Path("../.env")
 load_dotenv(dotenv_path=env_path)
 home = os.getenv("RANSOMWARELIVE_HOME")
 tmp_dir = Path(home + os.getenv("TMP_DIR"))
 
-def main():
-    group_name = Path(__file__).stem  # "beast"
+def get_origin(url: str) -> str:
+    """Return scheme://netloc for a URL, else empty string."""
+    try:
+        p = urlparse(url)
+        if p.scheme and p.netloc:
+            return f"{p.scheme}://{p.netloc}"
+    except Exception:
+        pass
+    return ""
 
-    for filename in os.listdir(tmp_dir):
-        if not filename.startswith(group_name + "-"):
-            continue
+def parse_file(html_path: Path, group_name: str):
+    """Parse a saved BEAST LEAKS index HTML and call appender() per card."""
+    try:
+        with open(html_path, "r", encoding="utf-8", errors="ignore") as f:
+            soup = BeautifulSoup(f, "html.parser")
+    except Exception as e:
+        errlog(f"{group_name} - failed to open/parse {html_path.name}: {e}")
+        return
 
+    # Basic guard: ensure page title matches
+    title = soup.title.string.strip() if soup.title and soup.title.string else ""
+    if title != "BEAST LEAKS | Index":
+        return
+
+    # Base origin from stored slug (so we can absolutize /card/... links)
+    slug_url = find_slug_by_md5(group_name, extract_md5_from_filename(html_path.name))
+    origin = get_origin(slug_url)
+
+    # Each card is an <a class="card ..."> inside .catalog
+    for a in soup.select("div.catalog a.card"):
         try:
-            html_path = tmp_dir / filename
-            with open(html_path, "r", encoding="utf-8") as file:
-                soup = BeautifulSoup(file, "html.parser")
+            # Victim / title
+            h3 = a.select_one(".card-head h3")
+            victim = (h3.get_text(" ", strip=True) if h3 else "").strip()
 
-                cards = soup.select("div.catalog > a.card")
-                for card in cards:
-                    victim = card.find("h3").text.strip()
-                    description = card.select_one(".card-text").get_text(" ", strip=True)
+            # Description (all text inside .card-text)
+            card_text = a.select_one(".card-text")
+            description = card_text.get_text(" ", strip=True) if card_text else ""
 
-                    website_tag = card.select_one(".website")
-                    website = website_tag.text.strip() if website_tag else ""
+            # Website
+            website_span = a.select_one(".card-info .website")
+            website = website_span.get_text(strip=True) if website_span else ""
 
-                    size_tag = card.select_one(".size")
-                    size = size_tag.text.strip() if size_tag else ""
+            # Data size
+            size_span = a.select_one(".card-info .size")
+            data_size = size_span.get_text(strip=True) if size_span else ""
+            extra_infos = { "data_size": data_size }
 
-                    published = ""
-                    raw_date = card.select_one(".date").text.strip()
-                    for fmt in ("%d.%m.%Y", "%Y.%m.%d", "%d.%m.%y", "%m.%d.%Y"):
-                        try:
-                            dt = datetime.strptime(raw_date, fmt)
-                            published = dt.strftime("%Y-%m-%d 00:00:00.000000")
-                            break
-                        except ValueError:
-                            continue
+            # Published date (normalize)
+            published = ""
+            date_span = a.select_one(".card-info .date")
+            if date_span:
+                raw_date = date_span.get_text(strip=True)
+                for fmt in ("%d.%m.%Y", "%Y.%m.%d", "%d.%m.%y", "%m.%d.%Y"):
+                    try:
+                        dt = datetime.strptime(raw_date, fmt)
+                        published = dt.strftime("%Y-%m-%d 00:00:00.000000")
+                        break
+                    except ValueError:
+                        continue
 
-                    relative_link = card.get("href", "")
-                    base_slug = find_slug_by_md5(group_name, extract_md5_from_filename(str(html_path)))
-                    post_url = base_slug + relative_link
 
-                    """
-                    # Print each field
-                    print(f"Victim      : {victim}")
-                    print(f"Group       : {group_name}")
-                    print(f"Published   : {published}")
-                    print(f"Website     : {website}")
-                    print(f"Post URL    : {post_url}")
-                    print(f"Data Size   : {size}")
-                    print(f"Description : {description}")
-                    print("-" * 80)
+            # Post URL (absolutize)
+            href = a.get("href", "").strip()
+            post_url = urljoin(origin + "/", href) if origin else href
 
-                    # Appel à appender avec extra_infos
-                    """
-                    appender(
-                        victim=victim,
-                        group_name=group_name,
-                        description=description,
-                        website=website,
-                        published=published,
-                        post_url=post_url,
-                        country="",
-                        extra_infos={"data_size": size}
-                    )
-             
-
+            if victim:
+                appender(
+                    victim=victim,
+                    group_name=group_name,
+                    description=description,
+                    website=website,
+                    published=published,
+                    post_url=post_url,
+                    country="",  # not available on this page
+                    extra_infos=extra_infos
+                )
         except Exception as e:
-            errlog(f"{group_name} - parsing fail with error: {str(e)} in file: {filename}")
+            errlog(f"{group_name} - card parse error in {html_path.name}: {e}")
+
+def main():
+    # Determine ransomware group name from script filename or symlink target
+    script_path = os.path.abspath(__file__)
+    if os.path.islink(script_path):
+        original_path = os.readlink(script_path)
+        if not os.path.isabs(original_path):
+            original_path = os.path.join(os.path.dirname(script_path), original_path)
+        group_name = os.path.basename(os.path.abspath(original_path)).replace(".py", "")
+    else:
+        group_name = os.path.basename(script_path).replace(".py", "")
+
+    try:
+        for filename in os.listdir(tmp_dir):
+            if not filename.startswith(group_name + "-"):
+                continue
+            html_path = tmp_dir / filename
+            parse_file(html_path, group_name)
+    except Exception as e:
+        errlog(f"{group_name} - parsing fail with error: {e}")
 
 if __name__ == "__main__":
     main()

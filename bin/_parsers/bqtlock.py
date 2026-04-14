@@ -67,7 +67,7 @@ def main():
                             "ransom": ransom.replace("Unpaid (", "").replace("unpaid (","").replace(" requested)", "" ) if ransom else "",
                         }
 
-                        # print(f"[+] {title} | {domain_text} | {discovered} | {post_url} | {extra_infos}")
+                        print(f"[+] {title} | {domain_text} | {post_url} | {extra_infos}")
                         
                         appender(
                             group_name=group_name,

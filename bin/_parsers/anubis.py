@@ -56,7 +56,7 @@ def main():
                     post_url = link_tag["href"] if link_tag and link_tag.has_attr("href") else "N/A"
                 
                     #appender(name, group_name, description,website,created_formatted,link)
-
+                    print(f'Victim: {victim}')
                     appender(
                         victim=victim,
                         group_name=group_name,

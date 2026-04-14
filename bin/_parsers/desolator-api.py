@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+"""
+Parser for ransomware.live
+Desolator gang API
+"""
+
 import requests,os,re,pycountry
 from datetime import datetime
 from pathlib import Path
@@ -31,6 +36,9 @@ def fetch_data():
         return {}
 
 def convert_date(date_str):
+    """
+    Convert '2025-09-01T00:00' -> '2025-09-01 00:00:00'
+    """
     if not date_str:
         return datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
     try:
@@ -40,11 +48,17 @@ def convert_date(date_str):
         return datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
 
 def clean_victim_name(display_name):
+    """
+    Remove the trailing '( Country )' part from display_name
+    """
     if not display_name:
         return ""
     return re.sub(r"\s*\([^)]*\)\s*$", "", display_name).strip()
 
 def extract_country_code(display_name):
+    """
+    Extract country name from (...) and return ISO2 code using pycountry
+    """
     if not display_name:
         return ""
     match = re.search(r"\(([^)]+)\)\s*$", display_name)

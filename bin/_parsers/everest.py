@@ -46,8 +46,9 @@ def main():
                             published = ''
                     url = div.get('data-translit')
                     # TODO: get base url from the groups.json for better maintainability
-                    url = find_slug_by_md5('everest', extract_md5_from_filename(str(html_doc))) + "news/" + url
-   
+                    url = find_slug_by_md5('everest', extract_md5_from_filename(str(html_doc))) + "news/" + url + '/'
+                    title = title.replace('- Database Leaked','')
+                    title = title.replace(' DataBase on sale for $1 Million','')
                     if title != "Total Patient Care LLC;A Sensitive Touch Home Health;Alphastar Home Health Care;Heart of Texas Home Healthcare Services Inc Data Leak":
                         appender(title, 'everest', '', '', published, url)
                     else:
