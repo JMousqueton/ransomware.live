@@ -12,4 +12,4 @@ telethon
 tldextract
 urllib3
 validators
-filelock>=3.20.1 # not directly required, pinned by Snyk to avoid a vulnerability
+filelock>=3.29.0 # not directly required, pinned by Snyk to avoid a vulnerability
