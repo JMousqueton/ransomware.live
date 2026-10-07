@@ -24,6 +24,7 @@ from openai import OpenAI
 #from mistralai import Mistral
 import anthropic
 import pycountry
+import country_resolver
 
 from playwright.async_api import async_playwright
 
@@ -863,29 +864,6 @@ def appender(victim,group_name,description='',website='', published='', post_url
     #     country = completion.choices[0].message.content
     #     stdlog(f'Found : {country}')
 
-    if ANTHROPIC_API_KEY and (country is None or len(country) < 2) and '*' not in victim:
-        stdlog(f'Query Anthropic API for "{victim}" country')
-        prompt = f'What is the ISO 3166-1 alpha-2 country code (2 uppercase letters) of the country where the company "{victim}" is headquartered? Reply with only the 2-letter code, nothing else. If you cannot determine it with confidence, reply "XX".'
-        client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-        completion = client.messages.create(
-            model="claude-haiku-4-5-20251001",
-            max_tokens=8,
-            messages=[{"role": "user", "content": prompt}]
-        )
-        country = completion.content[0].text.strip()
-        if country.upper() == 'XX':
-            country = ''
-        stdlog(f'Found : {country}')
-    
-    if len(country) == 2:
-        try:
-            pycountry.countries.get(alpha_2=country.upper())
-        except:
-            country = ''
-    else:
-        country = ''
-        
-
     ### Get Description
     # if OPENAI_API_KEY and description == '' and '*' not in victim:
     #     stdlog(f'Query OpenAI API for "{victim}" description')
@@ -914,6 +892,15 @@ def appender(victim,group_name,description='',website='', published='', post_url
         )
         description = completion.content[0].text.strip()
         description = '[AI generated] ' + description
+
+    ### Get Country (after website and description, so every signal is available)
+    description = description or ''
+    description_is_ai = description.startswith('[AI generated]')
+    llm = country_resolver.ask_llm if country_resolver.pick_provider() else None
+    country, why = country_resolver.resolve_country(
+        victim, description.replace('[AI generated] ', '', 1), website, country,
+        description_is_ai=description_is_ai, llm=llm, site=country_resolver.fetch_site_evidence)
+    stdlog(f'Country for "{victim}": {country or "(empty)"} [{why}]')
 
     now = str(datetime.today())
     if not published:
